@@ -1,0 +1,29 @@
+MULTI-LICENSE NOTICE
+====================
+
+This research-reproduction package uses the following approved license matrix.
+
+1. Software code — MIT License
+
+   The MIT License applies to executable source code and software-support files,
+   including Python, shell, and R programs; environment specifications; tests;
+   and program configuration files. See LICENSES/MIT.txt.
+
+2. Documents and data — CC BY 4.0
+
+   The Creative Commons Attribution 4.0 International license applies to the
+   authors' original non-code materials, including documentation, manuscript and
+   thesis files, figures, panels, legends, tables, provenance records, masks,
+   source data, and raw/acquisition-derived data. See
+   LICENSES/CC-BY-4.0.txt.
+
+A more specific license or attribution notice attached to a file takes
+precedence for that file. Third-party materials are not relicensed by this
+notice and remain subject to their applicable terms.
+
+Because the software/core Zenodo record contains both categories, its Zenodo
+metadata uses the controlled license identifier "other-open" and points to this
+matrix. The main-figure, supplementary-figure, and Figure S3 full-resolution
+WSI data records use "cc-by-4.0".
+
+Copyright in each work remains with its respective author or copyright holder.

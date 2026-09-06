@@ -1,0 +1,256 @@
+{
+  "schema": "apotome-public-release-plan-v1",
+  "source_author_audit": {
+    "path": "manuscript_sources/PAPER_AUTHOR_PUBMED_AUDIT_20260830.json",
+    "sha256": "aa39ec274e3655bdb0fa4adb13a5aa53d048b5424ea11f3df326dde009360c73"
+  },
+  "manuscript": {
+    "title": "Oral allulose after prior familiarization is associated with a distinct spatial c-FOS/NPY profile without detectable POMC or glial activation in mice",
+    "authors": [
+      {
+        "order": 1,
+        "display": "Nancy Segura",
+        "service_name": "Nancy Segura",
+        "zenodo_name": "Segura, Nancy",
+        "corresponding": false
+      },
+      {
+        "order": 2,
+        "display": "Vinka Azócar",
+        "service_name": "Vinka Azócar",
+        "zenodo_name": "Azócar, Vinka",
+        "corresponding": false
+      },
+      {
+        "order": 3,
+        "display": "Claudia Aguilera",
+        "service_name": "Claudia Aguilera",
+        "zenodo_name": "Aguilera, Claudia",
+        "corresponding": false
+      },
+      {
+        "order": 4,
+        "display": "Constanza Sanhueza",
+        "service_name": "Constanza Sanhueza",
+        "zenodo_name": "Sanhueza, Constanza",
+        "corresponding": false
+      },
+      {
+        "order": 5,
+        "display": "Bastían Aravena",
+        "service_name": "Bastían Aravena",
+        "zenodo_name": "Aravena, Bastían",
+        "corresponding": false
+      },
+      {
+        "order": 6,
+        "display": "Rocío Casas",
+        "service_name": "Rocío Casas",
+        "zenodo_name": "Casas, Rocío",
+        "corresponding": false
+      },
+      {
+        "order": 7,
+        "display": "Rocío Magdalena",
+        "service_name": "Rocío Magdalena",
+        "zenodo_name": "Magdalena, Rocío",
+        "corresponding": false
+      },
+      {
+        "order": 8,
+        "display": "Isidora Troncoso",
+        "service_name": "Isidora Troncoso",
+        "zenodo_name": "Troncoso, Isidora",
+        "corresponding": false
+      },
+      {
+        "order": 9,
+        "display": "Aracelly Quiroz",
+        "service_name": "Aracelly Quiroz",
+        "zenodo_name": "Quiroz, Aracelly",
+        "corresponding": false
+      },
+      {
+        "order": 10,
+        "display": "Daniela Mennickent Barros",
+        "service_name": "Daniela Mennickent Barros",
+        "zenodo_name": "Mennickent Barros, Daniela",
+        "corresponding": false
+      },
+      {
+        "order": 11,
+        "display": "Ricardo Flores",
+        "service_name": "Ricardo Flores",
+        "zenodo_name": "Flores, Ricardo",
+        "corresponding": false
+      },
+      {
+        "order": 12,
+        "display": "Francisca Espinoza",
+        "service_name": "Francisca Espinoza",
+        "zenodo_name": "Espinoza, Francisca",
+        "corresponding": false
+      },
+      {
+        "order": 13,
+        "display": "Antonia Recabal-Beyer",
+        "service_name": "Antonia Recabal-Beyer",
+        "zenodo_name": "Recabal-Beyer, Antonia",
+        "corresponding": false
+      },
+      {
+        "order": 14,
+        "display": "Roberto Elizondo",
+        "service_name": "Roberto Elizondo",
+        "zenodo_name": "Elizondo, Roberto",
+        "corresponding": false
+      },
+      {
+        "order": 15,
+        "display": "Mauricio D Dorfmann",
+        "service_name": "Mauricio D Dorfmann",
+        "zenodo_name": "Dorfmann, Mauricio D",
+        "corresponding": false
+      },
+      {
+        "order": 16,
+        "display": "María de los Ángeles García",
+        "service_name": "María de los Ángeles García",
+        "zenodo_name": "García, María de los Ángeles",
+        "corresponding": false
+      },
+      {
+        "order": 17,
+        "display": "Valentina González-Pecchi",
+        "service_name": "Valentina González-Pecchi",
+        "zenodo_name": "González-Pecchi, Valentina",
+        "corresponding": false
+      },
+      {
+        "order": 18,
+        "display": "Carlos Farkas*",
+        "service_name": "Carlos Farkas",
+        "zenodo_name": "Farkas, Carlos",
+        "corresponding": true
+      }
+    ],
+    "identity_policy": "The display list is copied exactly from the author-approved audit. The service name removes only the corresponding-author asterisk. The Zenodo name uses the separately author-confirmed Family name, Given names form. ORCIDs and affiliations must never be guessed."
+  },
+  "visibility": {
+    "zenodo": {
+      "record": "public",
+      "files": "public",
+      "access_right": "open"
+    },
+    "github": "public"
+  },
+  "licensing": {
+    "scheme": "MIT-for-code-and-CC-BY-4.0-for-documents-and-data",
+    "root_notice": "LICENSE",
+    "zenodo_license_ids": {
+      "software_core": "other-open",
+      "main_figure_data": "cc-by-4.0",
+      "supplementary_figure_data": "cc-by-4.0",
+      "figs3_wsi": "cc-by-4.0"
+    },
+    "software_core_license_matrix": {
+      "code": "MIT",
+      "documents_and_data": "CC-BY-4.0"
+    }
+  },
+  "records": {
+    "software_core": {
+      "archive_record": "software_core",
+      "resource_type": "software",
+      "title": "Oral allulose after prior familiarization is associated with a distinct spatial c-FOS/NPY profile without detectable POMC or glial activation in mice: software and figure-reproduction package",
+      "description": "Versioned scripts, environments, source tables, HIL-reviewed masks, publication graphics, thesis/manuscript deliverables, provenance, and the manifest-bound tooling needed to reconstruct the public Paper tree and reproduce all figures. This is an open mixed-license record: software code and software-support files are MIT licensed, while the authors' original documents and data are CC BY 4.0; the root LICENSE file defines the matrix. Figure 5 remains HIL-final but classifier-provisional as documented in the package.",
+      "license_input": "software_core"
+    },
+    "main_figure_data": {
+      "archive_record": "main_figure_data",
+      "resource_type": "dataset",
+      "title": "Oral allulose after prior familiarization is associated with a distinct spatial c-FOS/NPY profile without detectable POMC or glial activation in mice: main-figure source data (Figures 1–5)",
+      "description": "CC BY 4.0-licensed raw and acquisition-derived inputs used to reproduce Figures 1–5. This independently downloadable record is paired with the software core, supplementary-figure source-data, and Figure S3 full-resolution WSI records.",
+      "license_input": "main_figure_data"
+    },
+    "supplementary_figure_data": {
+      "archive_record": "supplementary_figure_data",
+      "resource_type": "dataset",
+      "title": "Oral allulose after prior familiarization is associated with a distinct spatial c-FOS/NPY profile without detectable POMC or glial activation in mice: supplementary-figure source data (Figures S1–S5)",
+      "description": "CC BY 4.0-licensed raw and acquisition-derived inputs used to reproduce Figures S1–S5. For Figure S3, this record contains the matched L2 working-resolution exports, conversion receipts, aggregate SHA-256 manifests, and downstream analysis and QC outputs; the 24 full-resolution L0 BigTIFF exports are deposited separately in the dedicated Figure S3 WSI record. HistoPLUS phenotype labels are exploratory model-predicted outputs and are not validated mouse cell identities.",
+      "license_input": "supplementary_figure_data"
+    },
+    "figs3_wsi": {
+      "archive_record": "figs3_wsi",
+      "resource_type": "dataset",
+      "title": "Oral allulose after prior familiarization is associated with a distinct spatial c-FOS/NPY profile without detectable POMC or glial activation in mice: Figure S3 full-resolution H&E whole-slide image exports",
+      "description": "CC BY 4.0-licensed full-resolution scanner-native L0 BigTIFF exports for the 24 H&E whole-slide scans used to reproduce Figure S3; each scan contains mouse kidney, liver, and spleen tissue. This record contains only the 24 exact FigS3/exports/m26-NNN/1_L0_rgb.tif image exports (NNN 001–024). The linked supplementary-figure source-data record contains the matched L2 working-resolution exports, per-slide conversion receipts, aggregate SHA-256 manifests, and downstream analysis and QC outputs. The source MDS files are not redistributed. This record is one component of the mutually cross-linked four-record reproduction release.",
+      "license_input": "figs3_wsi"
+    }
+  },
+  "record_relationships": {
+    "relationship": "isSupplementTo",
+    "all_records_are_mutually_related": true,
+    "article_doi_input": "article_doi"
+  },
+  "github": {
+    "repository_name": "allulose-sucrose-hypothalamus",
+    "visibility": "public",
+    "default_branch": "main",
+    "release_tag": "v1.0.0",
+    "release_is_draft_until_clean_room_passes": true,
+    "repository_owner_input": "github_owner"
+  },
+  "required_inputs": {
+    "licenses": [
+      "software_core",
+      "main_figure_data",
+      "supplementary_figure_data",
+      "figs3_wsi"
+    ],
+    "rights_confirmations": [
+      "all_authors_approved_public_release",
+      "software_manuscript_and_figure_redistribution_rights_confirmed",
+      "main_figure_data_redistribution_rights_confirmed",
+      "supplementary_figure_data_redistribution_rights_confirmed",
+      "histology_wsi_redistribution_rights_confirmed",
+      "third_party_materials_and_model_outputs_reviewed",
+      "no_sensitive_or_restricted_data"
+    ],
+    "credential_environment": {
+      "zenodo_sandbox": [
+        "ZENODO_SANDBOX_TOKEN"
+      ],
+      "zenodo_production": [
+        "ZENODO_TOKEN"
+      ],
+      "github": [
+        "GH_TOKEN",
+        "GITHUB_TOKEN"
+      ]
+    },
+    "credential_scope_confirmations": {
+      "zenodo_sandbox": "deposit write/actions as required by the requested sandbox operation",
+      "zenodo_production": "deposit write/actions as required by the requested production operation",
+      "github": "repository and workflow scopes needed for a public repository/release"
+    },
+    "quota_confirmations": [
+      "main_figure_data",
+      "supplementary_figure_data",
+      "figs3_wsi"
+    ],
+    "other": [
+      "release_date",
+      "github_owner",
+      "public_visibility_acknowledged",
+      "clean_room_reproduction_passed"
+    ]
+  },
+  "remote_execution_policy": {
+    "network_enabled": false,
+    "draft_creation_enabled": false,
+    "upload_enabled": false,
+    "publication_enabled": false,
+    "policy": "This repository tool validates and prepares local request documents only. Remote Zenodo/GitHub actions must be performed by a separately reviewed executor after all gates pass."
+  }
+}

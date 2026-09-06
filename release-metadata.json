@@ -1,0 +1,31 @@
+{
+  "records": {
+    "figs3_wsi": {
+      "doi": "10.5281/zenodo.22284125",
+      "doi_url": "https://doi.org/10.5281/zenodo.22284125",
+      "record_id": "22284125",
+      "record_url": "https://zenodo.org/records/22284125"
+    },
+    "main_figure_data": {
+      "doi": "10.5281/zenodo.22265241",
+      "doi_url": "https://doi.org/10.5281/zenodo.22265241",
+      "record_id": "22265241",
+      "record_url": "https://zenodo.org/records/22265241"
+    },
+    "software_core": {
+      "doi": "10.5281/zenodo.22265239",
+      "doi_url": "https://doi.org/10.5281/zenodo.22265239",
+      "record_id": "22265239",
+      "record_url": "https://zenodo.org/records/22265239"
+    },
+    "supplementary_figure_data": {
+      "doi": "10.5281/zenodo.22265243",
+      "doi_url": "https://doi.org/10.5281/zenodo.22265243",
+      "record_id": "22265243",
+      "record_url": "https://zenodo.org/records/22265243"
+    }
+  },
+  "release_tag": "v1.0.0",
+  "repository_url": "https://github.com/cfarkas/allulose-sucrose-hypothalamus",
+  "schema": "apotome-github-publication-metadata-v1"
+}

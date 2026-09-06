@@ -1,0 +1,17 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+================================================================
+
+Except where a more specific notice applies, the authors' original documents
+and data in this package are licensed under the Creative Commons Attribution
+4.0 International license.
+
+License summary:
+https://creativecommons.org/licenses/by/4.0/
+
+Legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+When reusing these materials, provide attribution to the authors listed in
+release/release_plan.json, identify the work by its title, cite the applicable
+Zenodo DOI when available, link to the license, and indicate whether changes
+were made.
