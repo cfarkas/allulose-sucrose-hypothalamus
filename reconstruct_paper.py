@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import logging
 import math
 import os
 import re
@@ -63,6 +64,18 @@ SECRET_QUERY_KEYS = {
     "token",
 }
 Opener = Callable[..., Any]
+LOG = logging.getLogger(__name__)
+LOG.addHandler(logging.NullHandler())
+
+
+def progress(label: str, count: int, total: int, last: float) -> float:
+    """Emit periodic byte progress without changing verification."""
+    now = time.monotonic()
+    if LOG.isEnabledFor(logging.INFO) and now - last >= 10:
+        LOG.info("%s: %s / %s bytes (%.1f%%)", label, f"{count:,}",
+                 f"{total:,}", 100 * count / max(total, 1))
+        return now
+    return last
 
 
 class ReconstructionError(archive.ArchiveError):
@@ -604,6 +617,8 @@ def _archive_path(root: Path, relative: str) -> Path:
 
 @contextmanager
 def verified_archive_handle(path: Path, shard: Mapping[str, Any]) -> Iterator[BinaryIO]:
+    LOG.info("VERIFY ZIP %s (%s bytes), expected SHA-256 %s", path,
+             f"{shard['compressed_bytes']:,}", shard["sha256"])
     flags = os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0)
     try:
         descriptor = os.open(path, flags)
@@ -621,12 +636,15 @@ def verified_archive_handle(path: Path, shard: Mapping[str, Any]) -> Iterator[Bi
             )
         digest = hashlib.sha256()
         count = 0
+        last = time.monotonic()
         for block in iter(lambda: handle.read(archive.CHUNK), b""):
             digest.update(block)
             count += len(block)
+            last = progress(f"HASH {path.name}", count, shard["compressed_bytes"], last)
         if count != shard["compressed_bytes"] or digest.hexdigest() != shard["sha256"]:
             raise ReconstructionError(f"Archive SHA-256 differs: {path}")
         handle.seek(0)
+        LOG.info("VERIFIED ZIP %s", path.name)
         yield handle
     finally:
         handle.close()
@@ -642,6 +660,8 @@ def download_one(
     opener: Opener,
 ) -> None:
     validate_public_https_url(url)
+    LOG.info("GET %s", url)
+    LOG.info("EXPECT %s bytes; SHA-256 %s", f"{expected_size:,}", expected_sha256)
     request = urllib.request.Request(
         url,
         headers={"User-Agent": USER_AGENT, "Accept-Encoding": "identity"},
@@ -675,6 +695,7 @@ def download_one(
             target.parent.mkdir(parents=True, exist_ok=True)
             digest = hashlib.sha256()
             count = 0
+            last = time.monotonic()
             with target.open("xb") as destination:
                 while True:
                     block = response.read(archive.CHUNK)
@@ -687,6 +708,7 @@ def download_one(
                         )
                     destination.write(block)
                     digest.update(block)
+                    last = progress("DOWNLOAD", count, expected_size, last)
     except ReconstructionError:
         raise
     except Exception as exc:
@@ -696,6 +718,7 @@ def download_one(
             f"Downloaded archive size/SHA-256 differs: {target.name}"
         )
     os.chmod(target, 0o644)
+    LOG.info("VERIFIED DOWNLOAD %s bytes; SHA-256 %s", f"{count:,}", expected_sha256)
 
 
 def _verified_partial_prefix(
@@ -870,6 +893,8 @@ def download_segmented_archive(
         entry["segments"],
         canonical_size=entry["size_bytes"],
     )
+    LOG.info("RESUME %s: %s/%s chunks already verified (%s bytes)", target.name,
+             completed, len(entry["segments"]), f"{boundary:,}")
     if observed_size != boundary:
         _truncate_partial(
             partial,
@@ -895,7 +920,9 @@ def download_segmented_archive(
         os.replace(partial, target)
         return
 
-    for segment in entry["segments"][completed:]:
+    for index, segment in enumerate(entry["segments"][completed:], start=completed + 1):
+        LOG.info("CHUNK %s/%s for %s: %s", index, len(entry["segments"]),
+                 target.name, segment["name"])
         if segment_target.exists() or segment_target.is_symlink():
             if not _regular_file_matches(
                 segment_target,
@@ -916,7 +943,7 @@ def download_segmented_archive(
                         opener=opener,
                     )
                     break
-                except ReconstructionError:
+                except ReconstructionError as exc:
                     try:
                         segment_target.unlink()
                     except FileNotFoundError:
@@ -927,6 +954,8 @@ def download_segmented_archive(
                         SEGMENT_RETRY_INITIAL_SECONDS * (2 ** (attempt - 1)),
                         SEGMENT_RETRY_MAX_SECONDS,
                     )
+                    LOG.info("RETRY %s/%s in %.0f seconds: %s", attempt + 1,
+                             SEGMENT_DOWNLOAD_ATTEMPTS, delay, exc)
                     time.sleep(delay)
 
         _append_verified_segment(
@@ -937,7 +966,10 @@ def download_segmented_archive(
         )
         boundary += segment["size_bytes"]
         segment_target.unlink()
+        LOG.info("ASSEMBLED %s: %s / %s verified bytes", target.name,
+                 f"{boundary:,}", f"{entry['size_bytes']:,}")
 
+    LOG.info("VERIFY concatenated ZIP %s; expected SHA-256 %s", target.name, entry["sha256"])
     _require_exact_file(
         partial,
         expected_size=entry["size_bytes"],
@@ -946,6 +978,7 @@ def download_segmented_archive(
     )
     os.chmod(partial, 0o644)
     os.replace(partial, target)
+    LOG.info("VERIFIED canonical ZIP %s", target)
 
 
 def _expected_resume_receipt(
@@ -1127,6 +1160,8 @@ def download_archives(
         stage = target.with_name(f".{target.name}.downloading.{os.getpid()}")
         receipt = None
 
+    LOG.info("DOWNLOAD STAGING %s; completed archives will be installed at %s", stage, target)
+
     try:
         if stage.exists() or stage.is_symlink():
             if not segmented:
@@ -1145,8 +1180,10 @@ def download_archives(
             for record in archive.RECORDS:
                 (stage / record).mkdir(mode=0o755)
 
-        for shard in _manifest_shards(document):
+        shards = _manifest_shards(document)
+        for index, shard in enumerate(shards, start=1):
             relative = shard["relative_archive_path"]
+            LOG.info("ARCHIVE %s/%s: %s", index, len(shards), relative)
             target_path = stage.joinpath(*PurePosixPath(relative).parts)
             source = urls[relative]
             if isinstance(source, str):
@@ -1160,12 +1197,14 @@ def download_archives(
                 )
             elif isinstance(source, Mapping):
                 if target_path.exists() or target_path.is_symlink():
+                    LOG.info("RECHECK retained ZIP %s", target_path)
                     _require_exact_file(
                         target_path,
                         expected_size=shard["compressed_bytes"],
                         expected_sha256=shard["sha256"],
                         label="Retained canonical archive",
                     )
+                    LOG.info("REUSED verified ZIP %s", target_path)
                     continue
                 download_segmented_archive(
                     source,
@@ -1182,6 +1221,7 @@ def download_archives(
             if receipt is None:
                 raise AssertionError("Segmented download receipt is missing")
             _validate_resume_stage(stage, document, receipt)
+        LOG.info("All archives verified; installing download directory %s", target)
         os.chmod(stage, 0o755)
         os.replace(stage, target)
         if segmented:
@@ -1222,7 +1262,7 @@ def extract_shard(
                     raise ReconstructionError(
                         f"ZIP contains duplicate members: {archive_path.name}"
                     )
-                for info, row in zip(infos, file_rows):
+                for index, (info, row) in enumerate(zip(infos, file_rows), start=1):
                     expected_mode = int(row["mode"], 8)
                     encoded_mode = info.external_attr >> 16
                     if (
@@ -1243,6 +1283,7 @@ def extract_shard(
                         )
                     digest = hashlib.sha256()
                     count = 0
+                    last = time.monotonic()
                     with zipped.open(info, mode="r") as source, target.open(
                         "xb"
                     ) as destination:
@@ -1257,6 +1298,7 @@ def extract_shard(
                                 )
                             destination.write(block)
                             digest.update(block)
+                            last = progress(f"EXTRACT {row['path']}", count, row["size_bytes"], last)
                     if (
                         count != row["size_bytes"]
                         or digest.hexdigest() != row["sha256"]
@@ -1266,6 +1308,8 @@ def extract_shard(
                         )
                     os.chmod(target, expected_mode)
                     extracted.add(row["path"])
+                    LOG.info("VERIFIED MEMBER %s/%s in %s: %s (%s bytes)",
+                             index, len(file_rows), archive_path.name, row["path"], f"{count:,}")
         except ReconstructionError:
             raise
         except Exception as exc:
@@ -1336,6 +1380,8 @@ def reconstruct_tree(
 
     grouped = _files_by_shard(document)
     extracted: set[str] = set()
+    LOG.info("RECONSTRUCT %s files, %s bytes into %s", len(document["tree"]["files"]),
+             f"{document['tree']['payload_bytes']:,}", stage)
     try:
         stage.mkdir(mode=0o700)
         for row in document["tree"]["directories"]:
@@ -1350,6 +1396,7 @@ def reconstruct_tree(
                         f"Manifest member count differs: {shard['name']}"
                     )
                 path = _archive_path(source, shard["relative_archive_path"])
+                LOG.info("EXTRACT ARCHIVE %s (%s members)", path.name, len(rows))
                 new_paths = extract_shard(path, shard, rows, stage)
                 if extracted & new_paths:
                     raise ReconstructionError("A file was extracted more than once")
@@ -1365,7 +1412,10 @@ def reconstruct_tree(
             )
         os.chmod(stage, int(document["tree"]["root_mode"], 8))
         verify_reconstructed_tree(stage, document, extracted)
+        LOG.info("VERIFIED complete tree inventory and modes; manifest tree SHA-256 %s",
+                 document["tree"]["sha256"])
         os.replace(stage, target)
+        LOG.info("INSTALLED exact Paper tree at %s", target)
     except Exception:
         if stage.exists() and not stage.is_symlink():
             shutil.rmtree(stage)
@@ -1463,11 +1513,16 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument("--timeout-seconds", type=float, default=120.0)
+    parser.add_argument("--verbose", action="store_true",
+                        help="Log every chunk, retry, checksum, archive and extracted member.")
     return parser.parse_args(argv)
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
+    if args.verbose:
+        logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s",
+                            datefmt="%Y-%m-%d %H:%M:%S")
     try:
         source, output = reconstruct(
             args.manifest,

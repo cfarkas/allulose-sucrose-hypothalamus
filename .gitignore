@@ -1,0 +1,11 @@
+# Large downloaded/reconstructed payload and local run state
+/Paper/
+/zenodo-archives/
+/.zenodo-archives.downloading/
+/.Paper.reconstructing.*/
+/logs/
+/*.log
+__pycache__/
+*.py[cod]
+/.reproduction-env/
+/REPRODUCTION_CHECK_REPORT.md

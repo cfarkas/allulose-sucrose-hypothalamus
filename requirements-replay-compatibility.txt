@@ -1,0 +1,6 @@
+# Runtime correction for the immutable v1.0.0 software archive.
+# Its environment.yml pins OpenCV 4.12.0.88, but Figure 3's accepted HIL
+# polygons were rasterized with OpenCV 4.10.0.84. OpenCV 4.12 changes 12 Water
+# and 31 Allulose mask pixels and fails the frozen polygon/mask comparison.
+# Apply after the archived main-environment setup; keep archived inputs intact.
+opencv-python-headless==4.10.0.84
