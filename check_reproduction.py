@@ -331,11 +331,11 @@ print(json.dumps({'opencv': cv2.__version__, 'masks': rows}))
         report.emit("INFO", 'Apply the documented main-environment correction: "$PAPER_PYTHON" -m pip install --no-deps -r "$REPRO_REPO/requirements-replay-compatibility.txt". Preserve the accepted masks and receipts.')
 
 
-def check_paper(report, root, manifest, envs):
+def check_paper_sources(report, root, manifest):
     paper = root / "Paper"
     if paper.is_symlink() or not paper.is_dir():
         report.emit("FAIL", f"Reconstructed Paper directory is missing or linked: {paper}; complete reconstruction first.")
-        return
+        return False
     # Authenticate executable source before invoking the shipped checks. Generated
     # publication outputs can legitimately differ after a successful rerender.
     checked = 0
@@ -351,8 +351,13 @@ def check_paper(report, root, manifest, envs):
             report.emit("FAIL", f"Manifest-bound script missing, changed, linked or wrong mode: {path}")
         checked += 1
     report.emit("INFO", f"Checked SHA-256 and modes of {checked} manifest-bound scripts.")
-    if report.failures:
+    return not report.failures
+
+
+def check_paper(report, root, manifest, envs):
+    if not check_paper_sources(report, root, manifest):
         return
+    paper = root / "Paper"
     figure3_python = os.environ.get("FIG3_PYTHON") or envs["PAPER_PYTHON"]
     check_hil_polygons(report, figure3_python, paper)
     if report.failures:
@@ -374,6 +379,7 @@ def main(argv=None):
     parser.add_argument("--stage", choices=("download", "reproduce"), default="download")
     parser.add_argument("--archive-root", type=Path, help="Existing canonical archive set; skip budgeting new downloads (still verified during reconstruction).")
     parser.add_argument("--check-zenodo", action="store_true", help="Probe one file per physical public Zenodo record, without downloading data.")
+    parser.add_argument("--system-only", action="store_true", help="Check computer/storage before software setup; does not certify scientific readiness.")
     parser.add_argument("--strict", action="store_true", help="Treat recommendations/warnings as blockers too.")
     args = parser.parse_args(argv)
     report = Report()
@@ -440,12 +446,12 @@ def main(argv=None):
             if interpreter:
                 report.emit("PASS", f"{variable}: {interpreter}")
             else:
-                report.emit("FAIL" if args.stage == "reproduce" else "INFO", f"{variable} not ready. After reconstruction run Paper/Fig1/00_create_conda_envs.sh and Paper/scripts/setup/01_create_s3_environment.sh, or set explicit interpreter paths.")
+                report.emit("FAIL" if args.stage == "reproduce" and not args.system_only else "INFO", f"{variable} not ready. After reconstruction run Paper/Fig1/00_create_conda_envs.sh and Paper/scripts/setup/01_create_s3_environment.sh, or set explicit interpreter paths.")
         if args.check_zenodo:
             check_zenodo(report, root)
         else:
             report.emit("INFO", "Zenodo connectivity not tested; add --check-zenodo for four public-file probes.")
-        if args.stage == "reproduce":
+        if args.stage == "reproduce" and not args.system_only:
             check_replay_threads(report, root)
             paper = root / "Paper"
             if not report.failures and paper.is_dir() and not paper.is_symlink():
@@ -464,7 +470,9 @@ def main(argv=None):
     if report.failures or (args.strict and report.warnings):
         report.emit("FAIL", f"Preflight blocked: {report.failures} failed checks, {report.warnings} warnings. Resolve these and rerun; no figures were reproduced.")
         return 2
-    if args.stage == "download":
+    if args.system_only:
+        report.emit("PASS", "Computer/storage check passed. Software setup and the final scientific readiness check are still required.")
+    elif args.stage == "download":
         report.emit("PASS", "READY TO DOWNLOAD/RECONSTRUCT. This does not certify scientific environments or figure reproduction; run --stage reproduce after reconstruction and environment setup.")
     else:
         report.emit("PASS", "READY TO REPRODUCE in this clone's Paper/. This was a readiness check; all-ten-figure success requires running the actual launcher.")

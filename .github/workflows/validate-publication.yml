@@ -16,5 +16,5 @@ jobs:
       - name: Validate resolved Zenodo links and manifest
         run: python3 validate_repository.py --root .
 
-      - name: Test portable preflight and download diagnostics
+      - name: Test beginner launcher, preflight, and download diagnostics
         run: python3 -m unittest discover -s tests -v

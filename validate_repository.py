@@ -28,7 +28,7 @@ def main(argv: Sequence[str] | None = None) -> int:
           f"{(result['download_bytes'] + result['tree_bytes']) / 1e9:.2f} GB before environments and work space.")
     print("[NEXT] Plan for 700 GB free on the clone filesystem + 100 GB in /tmp "
           "(800 GB if shared); these are planning allowances.")
-    print("[NEXT] Check this machine: python3 check_reproduction.py --root . --stage download --check-zenodo")
+    print("[NEXT] Check this machine: python3 reproduce.py --check-only")
     return 0
 
 

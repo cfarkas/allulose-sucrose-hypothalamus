@@ -149,6 +149,16 @@ class PreflightTests(unittest.TestCase):
             check.check_hil_polygons(report, "/main/python", Path("/Paper"))
         self.assertEqual(report.failures, 0)
 
+    def test_system_only_check_never_claims_scientific_readiness(self):
+        root = Path(__file__).resolve().parents[1]
+        with patch.object(check, "filesystem_probe"), patch.object(check, "check_storage"), patch.object(check, "find_conda", return_value=None), patch.object(check, "find_environments", return_value={"PAPER_PYTHON": None, "PAPER_S3_PYTHON": None}), patch.object(check, "check_paper") as paper, patch.object(check, "check_scientific_environment") as science, contextlib.redirect_stdout(io.StringIO()) as output:
+            status = check.main(["--root", str(root), "--stage", "reproduce", "--system-only"])
+        self.assertEqual(status, 0)
+        paper.assert_not_called()
+        science.assert_not_called()
+        self.assertIn("final scientific readiness check are still required", output.getvalue())
+        self.assertNotIn("READY TO REPRODUCE", output.getvalue())
+
     def test_non_linux_host_cannot_pass(self):
         root = Path(__file__).resolve().parents[1]
         with patch.object(check.platform, "system", return_value="Darwin"), patch.object(check, "filesystem_probe"), patch.object(check, "check_storage"), patch.object(check, "find_conda", return_value=None), patch.object(check, "find_environments", return_value={}), contextlib.redirect_stdout(io.StringIO()) as output:

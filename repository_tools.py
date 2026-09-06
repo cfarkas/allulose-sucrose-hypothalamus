@@ -557,8 +557,19 @@ def validate_repository(root_path: Path) -> dict[str, Any]:
         root / "zenodo-urls.json", manifest, metadata, transport
     )
     readme = (root / "README.md").read_text(encoding="utf-8")
-    if PLACEHOLDER_RE.search(readme):
-        raise PublicationError("README contains an unresolved publication placeholder")
+    documentation = readme
+    if "python3 reproduce.py" in readme:
+        if "(DETAILED_GUIDE.md)" not in readme or "(SETUP.md)" not in readme:
+            raise PublicationError("Beginner README must link the detailed and setup guides")
+        for relative in ("DETAILED_GUIDE.md", "SETUP.md", "reproduce.py",
+                         "check_reproduction.py", "requirements-replay-compatibility.txt",
+                         "reproduction-runtime.env"):
+            path = root / relative
+            if not path.is_file() or path.is_symlink():
+                raise PublicationError(f"Required beginner-guide file is absent: {relative}")
+        documentation += "\n" + (root / "DETAILED_GUIDE.md").read_text(encoding="utf-8")
+    if PLACEHOLDER_RE.search(documentation):
+        raise PublicationError("Published guides contain an unresolved publication placeholder")
     required_readme_values = {
         metadata["repository_url"],
         metadata["release_tag"],
@@ -571,9 +582,9 @@ def validate_repository(root_path: Path) -> dict[str, Any]:
     }
     for record in RECORDS:
         required_readme_values.update(metadata["records"][record].values())
-    missing = sorted(value for value in required_readme_values if value not in readme)
+    missing = sorted(value for value in required_readme_values if value not in documentation)
     if missing:
-        raise PublicationError(f"README omits required resolved values: {missing}")
+        raise PublicationError(f"Published guides omit required resolved values: {missing}")
     plan = load_json(root / "release_plan.json", label="release plan")
     if (
         plan.get("github", {}).get("repository_name") != "allulose-sucrose-hypothalamus"

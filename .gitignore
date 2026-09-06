@@ -9,3 +9,7 @@ __pycache__/
 *.py[cod]
 /.reproduction-env/
 /REPRODUCTION_CHECK_REPORT.md
+
+# Beginner launcher software and process lock
+/.paper-envs/
+/.reproduce.lock
