@@ -1,7 +1,23 @@
 # Reproduce the allulose–sucrose paper
 
+This study compares allulose, a sweetener with few calories, with sucrose
+(table sugar) and water in mice. It examines feeding behavior and markers of
+brain activity after prior exposure, focusing on the hypothalamus, which helps
+regulate appetite.
+
 Recreate **all 10 figures (1–5 and S1–S5)** from the published data.
 You do not need to edit code or choose analysis settings.
+
+## Paper and data on Zenodo
+
+All four records are open access. The command below downloads them automatically.
+
+| Contents | Zenodo record |
+| --- | --- |
+| Software, manuscript, and figure files | [22265239](https://zenodo.org/records/22265239) |
+| Main-figure data (1–5) | [22265241](https://zenodo.org/records/22265241) |
+| Supplementary-figure data (S1–S5) | [22265243](https://zenodo.org/records/22265243) |
+| Full-resolution tissue scans for Figure S3 | [22284125](https://zenodo.org/records/22284125) |
 
 ## 1. Prepare your computer
 
@@ -59,8 +75,12 @@ Inside this repository, open:
 - `Paper/Fig1/` through `Paper/Fig5/` for the main figures.
 - `Paper/FigS1/` through `Paper/FigS5/` for the supplementary figures.
 
-Each folder contains the figure images, PDFs, and related outputs. Run logs
-are saved in `logs/`.
+Each folder contains PNG/PDF figures and a `source_data/` folder with plotted
+values and statistics. Main figures are in English; individual panels and
+legends are available in English and Spanish.
+
+The manuscript/thesis PDF and Word files are directly inside `Paper/`.
+Run logs are saved in `logs/`.
 
 ## If something stops
 
@@ -73,8 +93,12 @@ To check your computer without downloading or installing anything:
 python3 reproduce.py --check-only
 ```
 
-For manual commands, Zenodo records, checksums, and troubleshooting, see the
-[detailed guide](DETAILED_GUIDE.md).
+For manual commands, checksums, troubleshooting, and scientific limitations,
+see the [detailed guide](DETAILED_GUIDE.md).
 
-The tested full replay reproduced all 136 figure PNGs exactly.
-[License and data-use terms](LICENSE).
+The tested full replay reproduced all 136 figure PNGs exactly. Figure 5's
+automated cell-state labels remain provisional, as explained in that guide.
+
+**Reusing this work:** cite the relevant Zenodo records using their DOIs.
+Code is MIT-licensed; original documents and data are CC BY 4.0
+([license details](LICENSE)).
