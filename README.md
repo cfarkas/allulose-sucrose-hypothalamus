@@ -189,7 +189,7 @@ Successful completion ends with all ten figure packages passing. Detailed
 per-figure inputs, outputs, validation, and provenance are documented in
 `Paper/README.txt` and each `Paper/Fig*/README.txt`.
 
-## Scientific-status notes
+## Notes
 
 - Figure 5 has complete HIL-reviewed ARC/ME/VMN anatomy, but the current
   GFAP/Iba1 microglial-state result remains classifier-provisional. Cells and
