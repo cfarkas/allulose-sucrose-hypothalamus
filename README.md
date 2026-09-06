@@ -72,7 +72,12 @@ every listed ZIP member, file size, file SHA-256, POSIX mode, path, and final
 tree inventory. It rejects missing or extra URL-map entries, redirects with
 credentials, unsafe paths, unlisted ZIP members, and an existing destination.
 
-Check this lightweight GitHub package before downloading:
+Clone this lightweight GitHub package, then validate it before downloading:
+
+```bash
+git clone https://github.com/cfarkas/allulose-sucrose-hypothalamus.git
+cd allulose-sucrose-hypothalamus
+```
 
 ```bash
 python3 validate_repository.py --root .
