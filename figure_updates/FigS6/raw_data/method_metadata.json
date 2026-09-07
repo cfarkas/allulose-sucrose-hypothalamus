@@ -1,0 +1,165 @@
+{
+  "title": "Microglial classification: morphometric proposals versus frozen DINOv2",
+  "states": [
+    "Ramified",
+    "Rod-like",
+    "Activated",
+    "Amoeboid"
+  ],
+  "reviewed_cells_n": 203,
+  "animals_n": 15,
+  "source_cells_n": 14415,
+  "human_class_counts": {
+    "Amoeboid": 71,
+    "Activated": 50,
+    "Ramified": 50,
+    "Rod-like": 32
+  },
+  "methods": {
+    "morphometric_proposals": {
+      "label": "Morphometric proposals",
+      "frozen_predictions": "morphometric_predictions.csv",
+      "description": "Standardized morphological measurements, unsupervised four-cluster K-means, and predefined morphology-based cluster-to-class mapping. Existing proposals were frozen before this comparison; no human labels fit this comparator. Its unsupervised preprocessing used the full source cell collection, including images from animals evaluated here."
+    },
+    "dino_logistic": {
+      "label": "Frozen DINOv2 + linear classifier",
+      "frozen_predictions": "dinov2_predictions.csv",
+      "description": "Externally pretrained DINOv2 ViT-S/14, with frozen weights. Close target and wider context Iba1 crops; class tokens and target-mask-weighted patch tokens, averaged over four rotations. Standardization, 32-component whitened PCA, and balanced multinomial logistic regression fitted using human labels. Regularization selected by 3-fold grouped inner validation. All learned transformations and selection excluded the outer held-out animal."
+    }
+  },
+  "validation": "Nested leave-one-animal-out outer validation; 3-fold stratified-group inner selection. Scaling, PCA, class weights and all model choices fit on training animals only.",
+  "sampling": "300 cells originally selected in equal proposed-class quotas; 203 completed human reviews from 15 animals. This selected review sample does not estimate population prevalence or constitute an independent final test cohort.",
+  "bootstrap": {
+    "unit": "animal",
+    "seed": 20260907,
+    "replicates": 2000,
+    "interval": "percentile 95%",
+    "resampling": "Paired, with replacement, 15 animals per draw. Pool all selected cells and average recalls over the four human classes. Predictions remain fixed; the models are not retrained in bootstrap draws."
+  },
+  "expected_metrics": {
+    "morphometric_proposals": {
+      "balanced_accuracy": 0.7389304577464789,
+      "accuracy": 0.7438423645320197,
+      "log_loss": 9.232857025783703,
+      "classification_report": {
+        "Ramified": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 50.0
+        },
+        "Rod-like": {
+          "precision": 0.38,
+          "recall": 0.59375,
+          "f1-score": 0.4634146341463415,
+          "support": 32.0
+        },
+        "Activated": {
+          "precision": 0.7272727272727273,
+          "recall": 0.8,
+          "f1-score": 0.7619047619047619,
+          "support": 50.0
+        },
+        "Amoeboid": {
+          "precision": 0.9791666666666666,
+          "recall": 0.6619718309859155,
+          "f1-score": 0.7899159663865546,
+          "support": 71.0
+        },
+        "accuracy": 0.7438423645320197,
+        "macro avg": {
+          "precision": 0.7466098484848485,
+          "recall": 0.7389304577464789,
+          "f1-score": 0.7288088406094144,
+          "support": 203.0
+        },
+        "weighted avg": {
+          "precision": 0.8031747275712794,
+          "recall": 0.7438423645320197,
+          "f1-score": 0.7586627586274206,
+          "support": 203.0
+        }
+      },
+      "balanced_accuracy_95_interval": [
+        0.6736398452259107,
+        0.810588202900338
+      ],
+      "paired_difference_vs_morphometry_95_interval": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "whole animal",
+      "replicates": 2000,
+      "interpretation": "Intervals resample the fixed out-of-fold predictions by animal; they do not measure model-training variability."
+    },
+    "dino_logistic": {
+      "balanced_accuracy": 0.5703697183098592,
+      "accuracy": 0.6059113300492611,
+      "log_loss": 0.9203919911002513,
+      "classification_report": {
+        "Ramified": {
+          "precision": 0.7307692307692307,
+          "recall": 0.76,
+          "f1-score": 0.7450980392156863,
+          "support": 50.0
+        },
+        "Rod-like": {
+          "precision": 0.32432432432432434,
+          "recall": 0.375,
+          "f1-score": 0.34782608695652173,
+          "support": 32.0
+        },
+        "Activated": {
+          "precision": 0.39215686274509803,
+          "recall": 0.4,
+          "f1-score": 0.39603960396039606,
+          "support": 50.0
+        },
+        "Amoeboid": {
+          "precision": 0.8412698412698413,
+          "recall": 0.7464788732394366,
+          "f1-score": 0.7910447761194029,
+          "support": 71.0
+        },
+        "accuracy": 0.6059113300492611,
+        "macro avg": {
+          "precision": 0.5721300647771236,
+          "recall": 0.5703697183098592,
+          "f1-score": 0.5700021265630018,
+          "support": 203.0
+        },
+        "weighted avg": {
+          "precision": 0.6219450334199682,
+          "recall": 0.6059113300492611,
+          "f1-score": 0.6125689460388691,
+          "support": 203.0
+        }
+      },
+      "balanced_accuracy_95_interval": [
+        0.49310232176634883,
+        0.651923540409555
+      ],
+      "paired_difference_vs_morphometry_95_interval": [
+        -0.2506279606069197,
+        -0.0783188431463062
+      ],
+      "bootstrap_unit": "whole animal",
+      "replicates": 2000,
+      "interpretation": "Intervals resample the fixed out-of-fold predictions by animal; they do not measure model-training variability."
+    }
+  },
+  "encoder": {
+    "architecture": "DINOv2 ViT-S/14",
+    "source_url": "https://github.com/facebookresearch/dinov2/tree/7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "weights_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+    "weights_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vits14/dinov2_vits14_pretrain.pth",
+    "license": "Apache-2.0"
+  },
+  "upstream_hashes": {
+    "human_labels_sha256": "55f7afafa4f5a99162eff3b4671eec04e9f0bf560b61e2d971dac9f79667bfcc",
+    "training_report_sha256": "997c82b555328d6a9dc935f9340e114b760211aa2f526726193c7071867675b1",
+    "protocol_sha256": "cb17971ac5523f2bf61867b917a3bfaea1662b71d872ed35ddc5ac804e8da505",
+    "improvement_assessment_sha256": "fc724bf881c00b5dbd7051ed42b3327e92d896a98ac4e234d24b7731f2fef846"
+  },
+  "source_run_relative_to_Paper": "analyses/Fig5/results/transfer_reviewed_20260907_v1"
+}

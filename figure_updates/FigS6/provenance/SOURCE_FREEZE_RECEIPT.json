@@ -1,0 +1,38 @@
+{
+  "figure": "FigS6",
+  "source_run": "analyses/Fig5/results/transfer_reviewed_20260907_v1",
+  "source_files": [
+    {
+      "file": "morphometric_predictions.csv",
+      "source_relative_to_Paper": "analyses/Fig5/results/transfer_reviewed_20260907_v1/validation/morphometric_proposals_out_of_fold.csv",
+      "sha256": "702801f9f218d53b6e32f21c011a95eaa56ae5f4b6bbeb3ab099abe5eda9fd07",
+      "size_bytes": 13313
+    },
+    {
+      "file": "dinov2_predictions.csv",
+      "source_relative_to_Paper": "analyses/Fig5/results/transfer_reviewed_20260907_v1/validation/dino_logistic_out_of_fold.csv",
+      "sha256": "f0a84ed579a1dd8440682a3ab73b16989ac8b7b6238913923dba5bfea53630da",
+      "size_bytes": 26098
+    },
+    {
+      "file": "validation_design.json",
+      "source_relative_to_Paper": "analyses/Fig5/results/transfer_reviewed_20260907_v1/validation/validation_design.json",
+      "sha256": "886fd2dccff44e30fd203cb564edcc2efd8d539d7d42d8950117c87bb7f98c19",
+      "size_bytes": 436387
+    },
+    {
+      "file": "human_reference.csv",
+      "derived_from": "analyses/Fig5/results/transfer_reviewed_20260907_v1/human_labels_used.csv",
+      "derivation": "Keep only cell_uid, animal_key and human class; join animal identity from validated predictions.",
+      "source_sha256": "55f7afafa4f5a99162eff3b4671eec04e9f0bf560b61e2d971dac9f79667bfcc",
+      "sha256": "6b8871b300b6b01eaf5e4ec35a92c330959bb54ad2ce822ba84b54f812ccaec2"
+    }
+  ],
+  "manifest_sha256": "6aad3bdcbff3a42b079c8d249249bb0f41fc3f604fe854402b3b5489b63fe9e6",
+  "reference": "Human review labels included only as class and pseudonymous cell/animal identity; no reviewer personal details are copied.",
+  "existing_masters_before": {
+    "Fig1/Figure_1_behavior_experiment_1.pdf": "96a22118214642f1b9779e76592a326fcdae0c966d337eaa2ff7a56fe5a6506a",
+    "Fig5/Figure_5.pdf": "164b68e93f19dd9b863212168ed5569aef22975cddab07214840cc965a631d9d",
+    "Fig5/Figure_5.png": "62d11f5e6ae5d41b1dd02b9420e5b0462ef7e8a0702c85340adaaa467c0d0692"
+  }
+}

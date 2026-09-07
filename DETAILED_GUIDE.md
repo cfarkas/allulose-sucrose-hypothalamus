@@ -1,22 +1,29 @@
 # Detailed reproduction guide
 
+> The 7 September figure scripts and S6 inputs are available in
+> [Figure updates](FIGURE_UPDATES.md). Use the normal `python3 reproduce.py` command
+> for the corrected Figure 1 and the 11-figure workflow. The archive identities,
+> ten-figure replay evidence and manual steps below describe the original release.
+> For the archived beginner workflow described below, add `--archived-release`.
+
+
 For the shortest route, follow the [three-step beginner guide](README.md).
 The manual instructions below retain the full Zenodo, checksum, software, and
 analysis details.
 
 ## Automated command: options and logs
 
-`python3 reproduce.py` performs the checks, reconstruction, software setup, and
+`python3 reproduce.py --archived-release` performs the checks, reconstruction, software setup, and
 all-ten-figure run in order. It stops on a failed check and prints success only
 when the original launcher confirms that all ten figures were installed.
 The automatic route requires the recommended free-space and available-memory
 reserves to pass; these remain planning allowances, not measured minima.
 
-- `python3 reproduce.py --check-only` checks the computer and storage. It does
+- `python3 reproduce.py --archived-release --check-only` checks the computer and storage. It does
   not download data, install software, or certify the scientific environment.
-- `python3 reproduce.py --prepare-only` downloads and unpacks data, installs the
+- `python3 reproduce.py --archived-release --prepare-only` downloads and unpacks data, installs the
   software, and runs the original readiness checks, then stops before rendering.
-- `python3 reproduce.py --archive-root /absolute/path/to/archives` reuses an
+- `python3 reproduce.py --archived-release --archive-root /absolute/path/to/archives` reuses an
   existing complete canonical ZIP set. The archives are verified again.
 
 The program finds Conda on `PATH` or in common home-directory installations,
@@ -43,7 +50,7 @@ versions before retrying; a preparation receipt does not bypass readiness checks
 
 The unchanged original figure launcher computes and verifies fresh staged results
 before installing the generated analyses and figure files into `Paper/`. Rerunning
-`python3 reproduce.py` repeats the figure calculations. The data, environments,
+`python3 reproduce.py --archived-release` repeats the figure calculations. The data, environments,
 and logs are ignored by Git and stay on your computer.
 
 This repository is the small, public reconstruction companion for:

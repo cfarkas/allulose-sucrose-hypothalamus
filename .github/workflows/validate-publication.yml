@@ -18,3 +18,30 @@ jobs:
 
       - name: Test beginner launcher, preflight, and download diagnostics
         run: python3 -m unittest discover -s tests -v
+
+      - name: Validate figure update hashes, syntax, and mirrors
+        run: python3 validate_figure_updates.py
+
+      - name: Verify saved microglial choices and portable data
+        run: python3 figure_updates/Fig5/12_microglial_choices.py --validate-only
+
+      - name: Test saved versus independent microglial choices
+        run: python3 -m unittest discover -s figure_updates/scripts/shared/tests -p test_microglia_choices.py -v
+
+  figure-s6:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-figures.txt
+      - name: Install figure environment
+        run: python -m pip install -r requirements-figures.txt
+      - name: Recompute and render supplementary Figure S6
+        run: python figure_updates/FigS6/01_make_figure_s6_microglia_classifier.py --output-dir /tmp/figure-s6 --dpi 600
+      - name: Validate bilingual panels and publication outputs
+        run: python figure_updates/scripts/utilities/07_validate_figure_outputs.py --figure FigS6 --root /tmp/figure-s6
+      - name: Test supplementary-data archive routing
+        run: python -m unittest discover -s figure_updates/release/tests -p test_build_archives.py -v

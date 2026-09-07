@@ -13,3 +13,9 @@ __pycache__/
 # Beginner launcher software and process lock
 /.paper-envs/
 /.reproduce.lock
+
+# Verified figure update backups and standalone renders
+/.figure-update-backups/
+/.figures-venv/
+/figure-renders/
+/figure_updates/analyses/

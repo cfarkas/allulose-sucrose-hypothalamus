@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-07",
+  "default_choices": 203,
+  "new_review_targets": 300,
+  "new_review_initial_choices": 0,
+  "default_choices_sha256": "55f7afafa4f5a99162eff3b4671eec04e9f0bf560b61e2d971dac9f79667bfcc",
+  "source_cells": 14415,
+  "trained_from_portable_inputs": true,
+  "training_cells": 163,
+  "validation_cells": 40,
+  "best_epoch": 36,
+  "validation_balanced_accuracy": 0.5954545454545456,
+  "byte_identical_retraining_outputs": {
+    "per_microglia_classifier_predictions.csv": true,
+    "microglia_cnn_training_history.csv": true,
+    "microglia_cnn_validation_confusion_matrix.csv": true,
+    "reviewed_label_split.csv": true
+  },
+  "optional_reviewer_http_test": "PASS: 300 cells, zero prefilled choices, real masks, waiting for human input",
+  "scope": "Review/classifier branch; published Figure 5 panels and the frozen S6 comparison retain their established inputs."
+}

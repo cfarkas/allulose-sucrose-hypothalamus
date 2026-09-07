@@ -1,0 +1,122 @@
+{
+  "byte_for_byte_verified": true,
+  "counts": {
+    "added": 0,
+    "already_identical_skipped": 20,
+    "replaced": 17,
+    "rewritten_identical": 0
+  },
+  "figure": "Fig1",
+  "files": [
+    {
+      "bytes": 54228,
+      "promoted": "Fig1/Figure_1_behavior_experiment_1.pdf",
+      "sha256": "96a22118214642f1b9779e76592a326fcdae0c966d337eaa2ff7a56fe5a6506a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/Figure_1_behavior_experiment_1.pdf"
+    },
+    {
+      "bytes": 1690894,
+      "promoted": "Fig1/Figure_1_behavior_experiment_1.png",
+      "sha256": "b90958f3103ea314b71618b4df7d640438695c09e9e745d00427127d871c4d76",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/Figure_1_behavior_experiment_1.png"
+    },
+    {
+      "bytes": 29211,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A.pdf",
+      "sha256": "a09ed923443b327c2899ac166d47edce7c1b3335d14683238968e1c358c44921",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_A.pdf"
+    },
+    {
+      "bytes": 26928,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf",
+      "sha256": "b80d485f01b4b7953a1ada8874cc76ffed98a1ed5a2ad23f7f3952c04391ec29",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 23296,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B.pdf",
+      "sha256": "fbe8991c54cd7300d157a6d283ad6b3fc8d9f533f4221d778e33d57a2ac5a0be",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_B.pdf"
+    },
+    {
+      "bytes": 335431,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B.png",
+      "sha256": "af97e2147d861ca1e65cfbf6f4142b781d460f6c5a2d6754b4ffe99211fc52df",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_B.png"
+    },
+    {
+      "bytes": 21759,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf",
+      "sha256": "f4d3e2237172b06d39e7467b42e8b7808c3b75b30b1a1281cec9e9502f995bec",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 308617,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png",
+      "sha256": "1b199fe4ebb399576c096b01b9220f1f576852a5eb1bcf128ae4b5695e629d1f",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png"
+    },
+    {
+      "bytes": 34843,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C.pdf",
+      "sha256": "69dfe37caa7ba32afa5bdae923a03cee4e3f5c3bb8ff8a01182fa1c34b8fcf78",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_C.pdf"
+    },
+    {
+      "bytes": 33286,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf",
+      "sha256": "c459529c8afc3e3c0726f3e19889425d6ba1dab6f0bbc91e0eb25fb6bf3b40b6",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 24376,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D.pdf",
+      "sha256": "a6a1f8df7827b070308c607ea840e924dbc422208fbe76090cf616c0ae5dfec1",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_D.pdf"
+    },
+    {
+      "bytes": 344511,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D.png",
+      "sha256": "d3e66333f5c3b7fa3648ac96bab4109b064a104bb25a820630102b0617f8f206",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_D.png"
+    },
+    {
+      "bytes": 22557,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf",
+      "sha256": "bf35af56f8617009975cb4460efb0d04c8ad03f5f105275e3d36a26b8035534e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 334608,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png",
+      "sha256": "bf4c731de6965a1a4e2a04ebddf8b51e3d67e7de124e98ebcb4114c9f5832f6a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png"
+    },
+    {
+      "bytes": 6102,
+      "promoted": "Fig1/provenance/Figure_1_behavior_experiment_1_manifest.json",
+      "sha256": "b6fb72e995a3b6313d403ae0324f6b1155c249fdb9f5dc32ccedb635da12b9b2",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/provenance/Figure_1_behavior_experiment_1_manifest.json"
+    },
+    {
+      "bytes": 1632,
+      "promoted": "Fig1/provenance/Figure_1_behavior_experiment_1_spanish_translation_receipt.json",
+      "sha256": "15755c90da6bbb4c9044cde77586f26b393cc467354ec64aeaf8b0acceb6e4d5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/provenance/Figure_1_behavior_experiment_1_spanish_translation_receipt.json"
+    },
+    {
+      "bytes": 2054,
+      "promoted": "Fig1/source_data/Figure_1_behavior_experiment_1_sources.csv",
+      "sha256": "506ccfdaa13518a63b22a9a3e66791db4b1fb71e9ed8c0b1d2dc1867c8cf47cf",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906/source_data/Figure_1_behavior_experiment_1_sources.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_1_behavior_experiment_1",
+  "master_name_promoted": "Figure_1_behavior_experiment_1",
+  "promoted_utc": "2026-09-07T00:36:28+00:00",
+  "replacement_policy": "copy_superseded_to_figure_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906",
+  "superseded_copied_to": "Fig1/legacy/superseded_promotion_20260907T003628Z",
+  "verified_artifacts": 37
+}

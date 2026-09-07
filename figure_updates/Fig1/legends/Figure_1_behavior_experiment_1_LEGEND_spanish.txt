@@ -1,0 +1,8 @@
+Figura 1. Experimento de una sola botella: análisis exploratorio de la cohorte de enero.
+
+(A) Trayectorias de consumo por jaula desde el día 1 hasta el día 6; las líneas gruesas y las bandas resumen jaulas con el mismo peso.
+(B) Consumo por jaula en el día 6. Los puntos son jaulas; se muestra ANOVA de una vía y comparaciones exactas con ajuste de Holm.
+(C) Cambio de peso corporal desde basal. Los puntos pálidos son ratones; la inferencia y los resúmenes permanecen equilibrados por jaula.
+(D) Cambio medio de peso corporal por jaula en el día 6. Los puntos son jaulas; se muestra ANOVA de una vía y comparaciones exactas con ajuste de Holm.
+
+La unidad experimental y de inferencia es la jaula. El análisis principal usa un valor del día 6 por jaula; las observaciones individuales de ratones en los paneles de peso son descriptivas. Las bandas de A y C son intervalos descriptivos del 95 % obtenidos por remuestreo de trayectorias completas de jaulas, conservando la dependencia longitudinal y ponderando cada jaula por igual. Los valores globales corresponden a ANOVA de una vía y las tres comparaciones exactas por pares se ajustan por Holm dentro de cada variable. La aleatorización del tratamiento no fue documentada, los tamaños muestrales son pequeños y los resultados deben interpretarse como exploratorios.

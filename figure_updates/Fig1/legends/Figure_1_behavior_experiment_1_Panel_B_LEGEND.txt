@@ -1,0 +1,1 @@
+Figure 1 panel B. Day-6 cage-consumption endpoint. Dots are cages; diamonds and intervals are bootstrap cage means and descriptive 95% intervals. One-way ANOVA p = 0.010; the three pairwise exact p values are Holm-adjusted. The exact cage-label omnibus is retained in source data as a sensitivity analysis.

@@ -336,6 +336,12 @@ def check_paper_sources(report, root, manifest):
     if paper.is_symlink() or not paper.is_dir():
         report.emit("FAIL", f"Reconstructed Paper directory is missing or linked: {paper}; complete reconstruction first.")
         return False
+    from figure_updates import effective_manifest
+    try:
+        manifest = effective_manifest(root, manifest)
+    except (OSError, ValueError, KeyError) as exc:
+        report.emit("FAIL", f"Figure update verification failed: {exc}")
+        return False
     # Authenticate executable source before invoking the shipped checks. Generated
     # publication outputs can legitimately differ after a successful rerender.
     checked = 0
@@ -475,7 +481,7 @@ def main(argv=None):
     elif args.stage == "download":
         report.emit("PASS", "READY TO DOWNLOAD/RECONSTRUCT. This does not certify scientific environments or figure reproduction; run --stage reproduce after reconstruction and environment setup.")
     else:
-        report.emit("PASS", "READY TO REPRODUCE in this clone's Paper/. This was a readiness check; all-ten-figure success requires running the actual launcher.")
+        report.emit("PASS", "READY TO REPRODUCE in this clone's Paper/. This was a readiness check; figure reproduction success requires running the actual launcher.")
     return 0
 
 

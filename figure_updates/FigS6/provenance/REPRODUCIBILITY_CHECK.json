@@ -1,0 +1,9 @@
+{
+  "figure": "FigS6",
+  "scripts": [
+    "01_make_figure_s6_microglia_classifier.py"
+  ],
+  "status": "PASS",
+  "problems": [],
+  "notes": []
+}

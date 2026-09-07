@@ -1,0 +1,34 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 33,
+    "replaced": 3
+  },
+  "figure": "Fig1",
+  "files": [
+    {
+      "bytes": 6029,
+      "promoted": "Fig1/provenance/Figure_1_behavior_experiment_1_manifest.json",
+      "sha256": "6e4d84a2655a1c7f72e9a990d6aabd669c8a20a1ff532566e681a9d57406c0d2",
+      "source": "/tmp/apotome_rebuild/Fig1/figure/provenance/Figure_1_behavior_experiment_1_manifest.json"
+    },
+    {
+      "bytes": 1031,
+      "promoted": "Fig1/provenance/README.txt",
+      "sha256": "87fcedb21e51716e9f877ceaadac9eebe0e99e6216079ff5ccce3298b91fa414",
+      "source": "/tmp/apotome_rebuild/Fig1/figure/provenance/README.txt"
+    },
+    {
+      "bytes": 1824,
+      "promoted": "Fig1/source_data/Figure_1_behavior_experiment_1_sources.csv",
+      "sha256": "a8c95b4ae83b7f43bc36e1a236150ec5e6980016dc220ecec47929bc3ec346af",
+      "source": "/tmp/apotome_rebuild/Fig1/figure/source_data/Figure_1_behavior_experiment_1_sources.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_1_behavior_experiment_1",
+  "master_name_promoted": "Figure_1_behavior_experiment_1",
+  "promoted_utc": "2026-08-25T16:41:15+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_rebuild/Fig1/figure",
+  "superseded_copied_to": "Fig1/legacy/superseded_promotion_20260825T164115Z"
+}

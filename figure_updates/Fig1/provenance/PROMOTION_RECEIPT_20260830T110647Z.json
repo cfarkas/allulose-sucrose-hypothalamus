@@ -1,0 +1,29 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 35,
+    "replaced": 2
+  },
+  "figure": "Fig1",
+  "files": [
+    {
+      "bytes": 6057,
+      "promoted": "Fig1/provenance/Figure_1_behavior_experiment_1_manifest.json",
+      "sha256": "e231008ef7b45db9fcd78968841d87c2ab2dfb93e11d93bdebd534855285dd5d",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig1/figure/provenance/Figure_1_behavior_experiment_1_manifest.json"
+    },
+    {
+      "bytes": 1964,
+      "promoted": "Fig1/source_data/Figure_1_behavior_experiment_1_sources.csv",
+      "sha256": "3f59b36e5b014ae8b81d364ac2c365eb4bb710cd649955b0869941c28f8191fd",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig1/figure/source_data/Figure_1_behavior_experiment_1_sources.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_1_behavior_experiment_1",
+  "master_name_promoted": "Figure_1_behavior_experiment_1",
+  "promoted_utc": "2026-08-30T11:06:47+00:00",
+  "replacement_policy": "validated_canonical_current_no_in_tree_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig1/figure",
+  "superseded_copied_to": null
+}

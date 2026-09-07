@@ -1,0 +1,266 @@
+{
+  "byte_for_byte_verified": true,
+  "counts": {
+    "added": 41,
+    "already_identical_skipped": 0,
+    "replaced": 0,
+    "rewritten_identical": 0
+  },
+  "figure": "FigS6",
+  "files": [
+    {
+      "bytes": 39237,
+      "promoted": "FigS6/Figure_S6.pdf",
+      "sha256": "8242d513253c157b7cd99ea794c97c38a2a7d64d57608f03fd2efc05a6d39939",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/Figure_S6.pdf"
+    },
+    {
+      "bytes": 1122783,
+      "promoted": "FigS6/Figure_S6.png",
+      "sha256": "77c545e2b9e02e374a98b381b8b3c48040c2545adc7fc0d50d490912bd33af2a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/Figure_S6.png"
+    },
+    {
+      "bytes": 3291,
+      "promoted": "FigS6/Figure_S6_caption.txt",
+      "sha256": "d626de2956329b345ac2c45336c14ff847973b159b710889b428218132d83e40",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/Figure_S6_caption.txt"
+    },
+    {
+      "bytes": 3291,
+      "promoted": "FigS6/legends/Figure_S6_LEGEND.txt",
+      "sha256": "d626de2956329b345ac2c45336c14ff847973b159b710889b428218132d83e40",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_LEGEND.txt"
+    },
+    {
+      "bytes": 3365,
+      "promoted": "FigS6/legends/Figure_S6_LEGEND_spanish.txt",
+      "sha256": "cd99bf3802ecdeeb4ce92e3b0a4fc48e2e6a26106310a5bb6aaa47b2d1306de5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2544,
+      "promoted": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND.txt",
+      "sha256": "6920792b28f76ca538d5d499261f49f3daa6355d1dc59640af2b349d20cada81",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND.txt"
+    },
+    {
+      "bytes": 2633,
+      "promoted": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND_spanish.txt",
+      "sha256": "b51cd5a006787b8330b65ef722fd3da259cd20d44a8c070756864c6e4a485994",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2382,
+      "promoted": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND.txt",
+      "sha256": "d1001c76df1a4329ae4c250e2271058775b1b36f538102d888e99b9df9c710d1",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_B_class_recall_LEGEND.txt"
+    },
+    {
+      "bytes": 2460,
+      "promoted": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND_spanish.txt",
+      "sha256": "6caf079116038cbfc230f9a2e41aacb2dd6d515398013a1f756ee860972a73c3",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_B_class_recall_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2423,
+      "promoted": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND.txt",
+      "sha256": "4c15b92f4370ca63218c28d1d46df244179246036d5aef3231a2a52cb37b59d1",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND.txt"
+    },
+    {
+      "bytes": 2479,
+      "promoted": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND_spanish.txt",
+      "sha256": "35efee63fadd3be0e1766d99aff668731b40894635d8f433458f3bf4b88ea79e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2383,
+      "promoted": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND.txt",
+      "sha256": "fb8c767f3b24f1e6ce78d91ddfc8cac175ba7b0e8e1973660f1ceed327270f58",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND.txt"
+    },
+    {
+      "bytes": 2450,
+      "promoted": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND_spanish.txt",
+      "sha256": "0c66b7e40ceb163fc94fdf2198b262cf6dd26478a7227f39620e27b9d1975b04",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 20983,
+      "promoted": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy.pdf",
+      "sha256": "73425b55a9ad7b453af4b6ec0c03efa6e96cfc1daab4b3b3c4efa4f6eb8a1285",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_A_balanced_accuracy.pdf"
+    },
+    {
+      "bytes": 199398,
+      "promoted": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy.png",
+      "sha256": "37861959d89eb5734ee5ab83e8cb5fc00d27f19cb4620fd5ddf948000c24cc1a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_A_balanced_accuracy.png"
+    },
+    {
+      "bytes": 20980,
+      "promoted": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy_spanish.pdf",
+      "sha256": "8ad0c9575ff589ed0542cda55cf27b60f85109ce7930a3872cc3fb72995a3f3a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_A_balanced_accuracy_spanish.pdf"
+    },
+    {
+      "bytes": 215536,
+      "promoted": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy_spanish.png",
+      "sha256": "9e28f1cfa71c129d9647a7e31639f4347ca1a110d542f3fbb13e9f7e15db1201",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_A_balanced_accuracy_spanish.png"
+    },
+    {
+      "bytes": 21170,
+      "promoted": "FigS6/panels/Figure_S6_panel_B_class_recall.pdf",
+      "sha256": "c5c5dcc0b365db0c3c64918a69e93eb93f55a7bb38dbb7f0bcdd560b7ab751ec",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_B_class_recall.pdf"
+    },
+    {
+      "bytes": 175658,
+      "promoted": "FigS6/panels/Figure_S6_panel_B_class_recall.png",
+      "sha256": "189457fde4f1328ff2add313cbed9254db84607fdddd9ee62a5d5a52f8abde63",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_B_class_recall.png"
+    },
+    {
+      "bytes": 19516,
+      "promoted": "FigS6/panels/Figure_S6_panel_B_class_recall_spanish.pdf",
+      "sha256": "b3eb7cf1e7aac9246cfa7bb6bbdf520d105d27fb53c10bb9e90ed6acf3677bc9",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_B_class_recall_spanish.pdf"
+    },
+    {
+      "bytes": 175914,
+      "promoted": "FigS6/panels/Figure_S6_panel_B_class_recall_spanish.png",
+      "sha256": "db4d7fa28edc70c97991028f5634b1f6ff77ab899a2417af0cfa695075965dd2",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_B_class_recall_spanish.png"
+    },
+    {
+      "bytes": 23373,
+      "promoted": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion.pdf",
+      "sha256": "cc9159ae5c6d2efa8314281ea4f01e4092caeb68dcabda86e492d0e7dbee2c09",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_C_morphometric_confusion.pdf"
+    },
+    {
+      "bytes": 326962,
+      "promoted": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion.png",
+      "sha256": "2ab31351db005c8d32ecf6eb012361dca84b1804efcad88153321e00abfa34e0",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_C_morphometric_confusion.png"
+    },
+    {
+      "bytes": 23445,
+      "promoted": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion_spanish.pdf",
+      "sha256": "dfcd93a3d7c93a3c8bc0e4499285faff95b2b1cc981b1c56b62d0e6eaedc241b",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_C_morphometric_confusion_spanish.pdf"
+    },
+    {
+      "bytes": 351332,
+      "promoted": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion_spanish.png",
+      "sha256": "c1f3b39dfe1e9eea352d18b47ffcfe2ab7cfc6a9dee43b2a384a420fc60078dd",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_C_morphometric_confusion_spanish.png"
+    },
+    {
+      "bytes": 24159,
+      "promoted": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion.pdf",
+      "sha256": "0f1f40a02c27320a4bd903415245fd4727b3443dc35cc739f891960c3cc733d4",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_D_DINOv2_confusion.pdf"
+    },
+    {
+      "bytes": 331874,
+      "promoted": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion.png",
+      "sha256": "1061097eede5e62db102cd1b7ecd739f450ffa24a2f885979d8a4c04bab91d81",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_D_DINOv2_confusion.png"
+    },
+    {
+      "bytes": 23909,
+      "promoted": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion_spanish.pdf",
+      "sha256": "38f8ea8bea463c311a76d15bb196607dd029f14a9a1853c75343db0059b518ad",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_D_DINOv2_confusion_spanish.pdf"
+    },
+    {
+      "bytes": 358037,
+      "promoted": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion_spanish.png",
+      "sha256": "4f44c0cb3250155bde274efd5c896450822e5aab13be0ac712f61d9940c62cf5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/panels/Figure_S6_panel_D_DINOv2_confusion_spanish.png"
+    },
+    {
+      "bytes": 6416,
+      "promoted": "FigS6/provenance/FIGURE_S6_BUILD_RECEIPT.json",
+      "sha256": "3d18ce218bb193c34773a1e0c151b8aa2c91917d7131fba1694ba2fbd97b9075",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/provenance/FIGURE_S6_BUILD_RECEIPT.json"
+    },
+    {
+      "bytes": 5285,
+      "promoted": "FigS6/provenance/FIGURE_S6_REPRODUCTION_VERIFICATION.json",
+      "sha256": "29dc65c2edaa8dad4a2424b8178e8d72f958382f73671afde71356a5d9b0bf81",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/provenance/FIGURE_S6_REPRODUCTION_VERIFICATION.json"
+    },
+    {
+      "bytes": 75524,
+      "promoted": "FigS6/source_data/animal_bootstrap_draws.csv",
+      "sha256": "06f641ae6e109655acf0df330eb58e7d5aa54359e98010c4093d030b117cb4a1",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/animal_bootstrap_draws.csv"
+    },
+    {
+      "bytes": 287,
+      "promoted": "FigS6/source_data/balanced_accuracy_comparison.csv",
+      "sha256": "85cb860e362b5f51b783f58dc125301902c6209208818962ecc1bb139d982eea",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/balanced_accuracy_comparison.csv"
+    },
+    {
+      "bytes": 1745,
+      "promoted": "FigS6/source_data/comparison_statistics.json",
+      "sha256": "e4140431ea7a9bbe7a3dd47621f0b3f00548057d6ee17d3f3222c7451e352b06",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/comparison_statistics.json"
+    },
+    {
+      "bytes": 104,
+      "promoted": "FigS6/source_data/dino_logistic_class_recall.csv",
+      "sha256": "9fe1c85d3215607353dab63fc23cc305eb20fa58db1cd3ad25b8f4257aa6de83",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/dino_logistic_class_recall.csv"
+    },
+    {
+      "bytes": 115,
+      "promoted": "FigS6/source_data/dino_logistic_confusion.csv",
+      "sha256": "7355177e3c2266ae7ef7385282354c3f957e4a820ee507ed2cd97e7775e55a03",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/dino_logistic_confusion.csv"
+    },
+    {
+      "bytes": 6568,
+      "promoted": "FigS6/source_data/method_metadata.json",
+      "sha256": "6dd7d7377c12673ffe51f0012bc7980c44f30ca56b7069f68e9f1e945b2e480f",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/method_metadata.json"
+    },
+    {
+      "bytes": 105,
+      "promoted": "FigS6/source_data/morphometric_proposals_class_recall.csv",
+      "sha256": "583146985f1eec21978f494e120ac00ffe28b3e1c74245a83a71219c71b63e79",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/morphometric_proposals_class_recall.csv"
+    },
+    {
+      "bytes": 112,
+      "promoted": "FigS6/source_data/morphometric_proposals_confusion.csv",
+      "sha256": "75279d326f3ad1457b1dd47549bf44197b5e884507d7798f80c33f881804f214",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/morphometric_proposals_confusion.csv"
+    },
+    {
+      "bytes": 11908,
+      "promoted": "FigS6/source_data/paired_cell_predictions.csv",
+      "sha256": "6254b610c4807ec5323ff46ef7af1bfc8f3e779255aa0349074866f6b247844a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/paired_cell_predictions.csv"
+    },
+    {
+      "bytes": 247,
+      "promoted": "FigS6/source_data/reference_cells_by_animal.csv",
+      "sha256": "bf946c5ce3296575df9cd0d6f435676f9f15fc49e72a26ef8cb55ce3e12798af",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2/source_data/reference_cells_by_animal.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S6",
+  "master_name_promoted": "Figure_S6",
+  "promoted_utc": "2026-09-07T11:54:59+00:00",
+  "replacement_policy": "copy_superseded_to_figure_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/figure/benchmark_20260907_v2",
+  "superseded_copied_to": null,
+  "verified_artifacts": 41
+}

@@ -1,0 +1,25 @@
+name: paper_apotome_s3_repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.7
+  - libvips=8.15.1
+  - poppler=24.02.0
+  - pyarrow=13.0.0
+  - pip
+  - pip:
+      - numpy==1.26.4
+      - pandas==2.2.3
+      - scipy==1.14.1
+      - scikit-image==0.24.0
+      - matplotlib==3.9.2
+      - seaborn==0.13.2
+      - shapely==2.0.6
+      - statsmodels==0.14.4
+      - tifffile==2024.9.20
+      - pillow==10.4.0
+      - pypdf==6.9.2
+      - scikit-learn==1.7.2
+      - pyvips==3.1.1
+      - opencv-python-headless==4.10.0.84
+      - openpyxl==3.1.5

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": {
+    "Fig1/Figure_1_behavior_experiment_1.pdf": true,
+    "Fig5/Figure_5.pdf": true,
+    "Fig5/Figure_5.png": true
+  }
+}

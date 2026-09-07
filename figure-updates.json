@@ -1,0 +1,1439 @@
+{
+  "schema": "apotome-figure-updates-v1",
+  "date": "2026-09-07",
+  "description": "Figure 1 Holm terminology, Figure 5 reviewed segmentation/classifier code, and supplementary Figure S6",
+  "base_manifest_sha256": "df2ebb51339fdc3cc84dd8bbfb232647570d7e2cd0f12c19a5538ff7b7dd071d",
+  "archived_figure_count": 10,
+  "updated_figure_count": 11,
+  "zenodo_status": "Existing records still describe the archived release; new versions have not been published for this update.",
+  "files": [
+    {
+      "path": "Fig1/00_create_conda_envs.sh",
+      "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
+      "size": 4242,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/01_analyze_behavior_experiment1.py",
+      "sha256": "04f5c623daeba48289a8eed6ef5790597f2f3219bd0aadf07d4a093b2875080e",
+      "size": 41208,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/02_make_figure_1_behavior.py",
+      "sha256": "0354a851c2be401d3a390d2a6c086b9268f365865f6665bc8c42c719a3258d2f",
+      "size": 40689,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/Figure_1_behavior_experiment_1.pdf",
+      "sha256": "96a22118214642f1b9779e76592a326fcdae0c966d337eaa2ff7a56fe5a6506a",
+      "size": 54228,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/Figure_1_behavior_experiment_1.png",
+      "sha256": "b90958f3103ea314b71618b4df7d640438695c09e9e745d00427127d871c4d76",
+      "size": 1690894,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/README.txt",
+      "sha256": "c6afb14301c8faa01df15243faf0478896dbddf4eee785e87d71466c27ecd217",
+      "size": 3445,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_LEGEND.txt",
+      "sha256": "a93266936fc831d8f6a949abd13d96bce7a416fa3ca17654dd26f0de02d5766e",
+      "size": 2263,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_LEGEND_spanish.txt",
+      "sha256": "c7984495ed461de63de43eeb392bf6c881bfb77231ace9e2f7529cf621fafccb",
+      "size": 1335,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_A_LEGEND.txt",
+      "sha256": "58228849678be858d4656e888110a5538002df129332ef13a71d2aa471755d4b",
+      "size": 472,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_A_spanish_LEGEND.txt",
+      "sha256": "97f300b356cb56d17f8b6ac6effd32df3823156d6dcd465a86cc16972477092c",
+      "size": 153,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_B_LEGEND.txt",
+      "sha256": "769edcc6bb81c32d78db2a44484fa8285b41a8f4a8f6dfadf28a30b80f8aa816",
+      "size": 307,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_B_spanish_LEGEND.txt",
+      "sha256": "693ececaa8157be0592443f2a275b7837ded3702194f17a4770b2e589d377a15",
+      "size": 147,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_C_LEGEND.txt",
+      "sha256": "109d46726492039606fd6680d5923ee566ce5bed84796a1764fdab20d8c730aa",
+      "size": 522,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_C_spanish_LEGEND.txt",
+      "sha256": "881be7771dde20a65aaa4f749c2a98e645022e2455d1a1ed610267dd21c99711",
+      "size": 155,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_D_LEGEND.txt",
+      "sha256": "3494f288b5907cc781fb3db03c5be0ca15fbcd7ed57c991a153133548f299fa3",
+      "size": 276,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_D_spanish_LEGEND.txt",
+      "sha256": "d1f8f645dc6fe49ee99cdac603a5a2f7d3370cc12a29e7db34e2669a22ca6215",
+      "size": 169,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/legends/Figure_1_behavior_experiment_1_caption.txt",
+      "sha256": "a93266936fc831d8f6a949abd13d96bce7a416fa3ca17654dd26f0de02d5766e",
+      "size": 2263,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A.pdf",
+      "sha256": "a09ed923443b327c2899ac166d47edce7c1b3335d14683238968e1c358c44921",
+      "size": 29211,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A.png",
+      "sha256": "ad84df529dbb7461ea62c8640d34c061ce0c8faf45a7dbaf63d807d3c18eefe7",
+      "size": 448125,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf",
+      "sha256": "b80d485f01b4b7953a1ada8874cc76ffed98a1ed5a2ad23f7f3952c04391ec29",
+      "size": 26928,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.png",
+      "sha256": "371a9fe303f54ff7f678440057e0dc408ad6689e933f093bcb25e567aa62b01f",
+      "size": 437569,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B.pdf",
+      "sha256": "fbe8991c54cd7300d157a6d283ad6b3fc8d9f533f4221d778e33d57a2ac5a0be",
+      "size": 23296,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B.png",
+      "sha256": "af97e2147d861ca1e65cfbf6f4142b781d460f6c5a2d6754b4ffe99211fc52df",
+      "size": 335431,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf",
+      "sha256": "f4d3e2237172b06d39e7467b42e8b7808c3b75b30b1a1281cec9e9502f995bec",
+      "size": 21759,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png",
+      "sha256": "1b199fe4ebb399576c096b01b9220f1f576852a5eb1bcf128ae4b5695e629d1f",
+      "size": 308617,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C.pdf",
+      "sha256": "69dfe37caa7ba32afa5bdae923a03cee4e3f5c3bb8ff8a01182fa1c34b8fcf78",
+      "size": 34843,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C.png",
+      "sha256": "ec17a622dfae08cc222166c32f1692cfc98f72b0b40585d7aef6c22f8cd11bd3",
+      "size": 425735,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf",
+      "sha256": "c459529c8afc3e3c0726f3e19889425d6ba1dab6f0bbc91e0eb25fb6bf3b40b6",
+      "size": 33286,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.png",
+      "sha256": "4a74ddac3031d0ed101da09d06afa2514b4a551562dcb45572f77c864004e3b3",
+      "size": 425095,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D.pdf",
+      "sha256": "a6a1f8df7827b070308c607ea840e924dbc422208fbe76090cf616c0ae5dfec1",
+      "size": 24376,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D.png",
+      "sha256": "d3e66333f5c3b7fa3648ac96bab4109b064a104bb25a820630102b0617f8f206",
+      "size": 344511,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf",
+      "sha256": "bf35af56f8617009975cb4460efb0d04c8ad03f5f105275e3d36a26b8035534e",
+      "size": 22557,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png",
+      "sha256": "bf4c731de6965a1a4e2a04ebddf8b51e3d67e7de124e98ebcb4114c9f5832f6a",
+      "size": 334608,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/provenance/FIGURE1_STATISTICAL_AUDIT.md",
+      "sha256": "68430a36a71a1969c705dcb1b9b735259e4f671caffa4fd82f4d5751b34b6985",
+      "size": 4292,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/Figure_1_behavior_experiment_1_manifest.json",
+      "sha256": "b6fb72e995a3b6313d403ae0324f6b1155c249fdb9f5dc32ccedb635da12b9b2",
+      "size": 6102,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/provenance/Figure_1_behavior_experiment_1_spanish_translation_receipt.json",
+      "sha256": "15755c90da6bbb4c9044cde77586f26b393cc467354ec64aeaf8b0acceb6e4d5",
+      "size": 1632,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260825T164115Z.json",
+      "sha256": "0d7b44d40bcaf5b324f9ec9de0cc5343537c9ae5b38ae71caf954d467b242d9c",
+      "size": 1322,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260825T164312Z.json",
+      "sha256": "d97c124a81d234f1864eb05c2dd80adf1ec7d4abc5fc974a0c96ab644d3cdfc6",
+      "size": 1083,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260830T031131Z.json",
+      "sha256": "01329b979277fba2fc71a8c9fcb308e2eecf42dc504af09b022a2e524b6e09b8",
+      "size": 4933,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260830T110647Z.json",
+      "sha256": "f5e5b7e7170f9bae4880b40ebed783c7112c7cee541a96a4dcf4b67d9793346d",
+      "size": 1151,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260830T144905Z.json",
+      "sha256": "5e3e2995c833d6be521110d1bfbe21d0f231295dbb6a43054d3a3d78a8a09d2d",
+      "size": 12422,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260830T155647Z.json",
+      "sha256": "bd57c4b3ebe05d12271507f203e22f0b69867b7a56cafc971f80dd5af0cd37c2",
+      "size": 12421,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260830T182449Z.json",
+      "sha256": "065d2d5f59f8d480058592069a7009f234ef774121ff776d16d7815709d8ae8c",
+      "size": 12421,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260901T050532Z.json",
+      "sha256": "ef0c7a700552240089ca93e3959f671d72fbfcce40a22deb7f114cddf07ae194",
+      "size": 12421,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260901T055936Z.json",
+      "sha256": "91c52d7f5817e91ebd3abb0f1748bb041a07034a1b600741a3c74305bc82fe5c",
+      "size": 12421,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260904T120725Z.json",
+      "sha256": "755c4c9e0ea2aa9dff2c36390e24546df3dec6135f8d15d32a2c53de2da79fc5",
+      "size": 12460,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260904T222305Z.json",
+      "sha256": "155e289c60295649262169be72616b5a3f811de1d455373f197385caed027fa0",
+      "size": 12422,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig1/provenance/PROMOTION_RECEIPT_20260907T003628Z.json",
+      "sha256": "8275e851345e2b8377a818b7fd79974902188f1cf4424ab51a601c8d6faec0e5",
+      "size": 6675,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig1/provenance/README.txt",
+      "sha256": "87fcedb21e51716e9f877ceaadac9eebe0e99e6216079ff5ccce3298b91fa414",
+      "size": 1031,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/provenance/README_REPRODUCTION_PASS.json",
+      "sha256": "efb31894a94ac6b4f4bbb62af388fbf554f95b50c082acf2a79944b51d53c304",
+      "size": 1858,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/raw_data/RAW_DATA_MANIFEST.csv",
+      "sha256": "5dff8fdc0f1cf0c5965df1d9380b13048e90be661b098adf9bc99b82a9c0a1c2",
+      "size": 1284,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/raw_data/README.txt",
+      "sha256": "26c07fdb3bd895f1603ed490246046dc50057b333772c8ee4651fc754072df18",
+      "size": 800,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/raw_data/consumption.csv",
+      "sha256": "881d1db4c72e66faee9a464a360c2b8b4c9b274cbe201d8263a30f95f6f24823",
+      "size": 6630,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/raw_data/weights.csv",
+      "sha256": "c058f4695f9ae1417468a4cacaf58b79c98a46a12d5fbff5f7546b216894d1fa",
+      "size": 6605,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/source_data/Figure_1_behavior_experiment_1_sources.csv",
+      "sha256": "506ccfdaa13518a63b22a9a3e66791db4b1fb71e9ed8c0b1d2dc1867c8cf47cf",
+      "size": 2054,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig1/source_data/Figure_1_behavior_experiment_1_statistics.csv",
+      "sha256": "243def0cba468e955071c68db137e7272c519ef336ac1883ab7fa5db2a2dfb22",
+      "size": 3694,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/source_data/Figure_1_behavior_experiment_1_trajectory_confidence_intervals.csv",
+      "sha256": "49e0e178b108c7a5e1e47d4ebd4af4b3316e835df7426d287db716195a2ec3ae",
+      "size": 2391,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig1/source_data/Figure_1_behavior_experiment_1_values.csv",
+      "sha256": "3bc205aaf4a4ed300541dc4e0b3bf4c7b09f175b740e69f6e187aa0227a4608e",
+      "size": 17722,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig5/00_create_conda_envs.sh",
+      "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
+      "size": 4242,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig5/01_analyze_gfap_iba1_microglia.py",
+      "sha256": "9db6a653a99c975415ec4cd6e39628f6829103da690830abf5cdc6bc45f4eb3f",
+      "size": 577022,
+      "mode": "0755",
+      "change": "updated"
+    },
+    {
+      "path": "Fig5/02_make_figure_5_gfap_iba1_microglia.py",
+      "sha256": "4c77cbe76d3c30b5307c962c9114bbe1a494dc3bf7e4f367fd718777698feea7",
+      "size": 197409,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig5/03_resegment_dapi_gpu.py",
+      "sha256": "6bc15c6b1b302321f801510ded4e91396e44c302f2dc34bf02c755e38578aec5",
+      "size": 20686,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig5/04_regenerate_iba1_from_reviewed_dapi.py",
+      "sha256": "988d61b545b59b46f4b2f1349f82f8c3eb8a6b71195ef4f206b57c9e3666c8ad",
+      "size": 16640,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig5/04_run_gfap_iba1_microglia_staged.sh",
+      "sha256": "db0264124ae7641f2faca42a483bdffa5033ed9d8f75fb0126562e0ade994ba4",
+      "size": 920,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "Fig5/05_review_microglia_classes.py",
+      "sha256": "46ab090e0e63c591bf35934d8c0144a159788b9982ed6c0eb9f96863d00c01d5",
+      "size": 22467,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/06_retrain_microglia_classes.py",
+      "sha256": "d20f9ddb3c674224e6bb8fb22bcfbfa52607f3fcdd4809c5ec4642b47f635793",
+      "size": 12959,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/07_refine_microglia_masks.py",
+      "sha256": "9fedbd8d9bb7e7299a26226be1abbc17512a6a334a1111f066e0ac252fd010a7",
+      "size": 12121,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/08_review_microglia_masks.py",
+      "sha256": "bb67d37eddc376b57c3f731dcae6d6034ced40d570e3e134f4b578aa04a760ee",
+      "size": 24987,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/09_improve_microglia_classifier.py",
+      "sha256": "0f2bcd3d48aa21feb9b6dfac11b86897bf6ef64c89b7ed0832c7b5ec4d2b0776",
+      "size": 44036,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/10_audit_microglia_transfer.py",
+      "sha256": "818e1d660c85632e8f5b0df0679564256b772bf474847a702e07b0de17f9c67b",
+      "size": 15857,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/11_prepare_dinov2_assets.py",
+      "sha256": "68c86a1cf5d6fa14ad67b2663cdb87092820e0ab4c99ec9ab1b5915fff82a580",
+      "size": 5533,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/12_microglial_choices.py",
+      "sha256": "201980ac9fa2e191c8cfc113c48944d769441d2c83bf64ea61c294f6e04528de",
+      "size": 13643,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/README.txt",
+      "sha256": "40ca53303a274369455d5dd37cbef47b2cc8b644f2e6af8be557bdae8f7d2482",
+      "size": 13121,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig5/microglial_review_data/README.txt",
+      "sha256": "c4d41e851571820aa0578e4c65e1a2e6137c4646f1fb24455e691be729f3cc31",
+      "size": 901,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/human_choices_203.csv",
+      "sha256": "55f7afafa4f5a99162eff3b4671eec04e9f0bf560b61e2d971dac9f79667bfcc",
+      "size": 69511,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/manifest.json",
+      "sha256": "42cb7bb9afa7092a85f4d2af8d61d57071e8c22118001f0599126d00b2d3d794",
+      "size": 4800392,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-001.zip",
+      "sha256": "45527e3f1ab05e86ab7fb30e8c556a3520de89b3e98c5e43a9d3ecdc2827f1ca",
+      "size": 4550435,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-002.zip",
+      "sha256": "6abefea4fcba90747641aa9becf7b825d916bdb6d0b2edb3bd514168a8c3a95b",
+      "size": 5969941,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-003.zip",
+      "sha256": "ca62b57790ab690396aff3e7fd619d4e5542ff6f775a417d7dd7c1f57fbe5966",
+      "size": 9106361,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-004.zip",
+      "sha256": "9c212cfb7b69ba455e72c1a3bfc10f08b6a5dc86f6d1f963c40b890039f27172",
+      "size": 9210253,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-005.zip",
+      "sha256": "82f4aab9e454516a6e21bce1ee2ff7329bed5484b9dcbf566d55ec2262d2b3ed",
+      "size": 9177822,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-006.zip",
+      "sha256": "7e6ca306632b630103f2e8a62c444a47619f9ff97dae480a4e8141f9c838d219",
+      "size": 9159597,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-007.zip",
+      "sha256": "62d0e36c2972c324681df3849741c263e2482a63afc4af51d7f4955a4a35efd1",
+      "size": 9164682,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-008.zip",
+      "sha256": "86cf682797f7cd2223443eb4dca98fbff7f90e43243101315a8e9b11f15e928e",
+      "size": 9053758,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-009.zip",
+      "sha256": "36a9d33180e7c603c67b3fcbc6890b9e25ecaca3acf4d71b86b44c0d94feeaa0",
+      "size": 9088060,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/microglial_review_data/microglial-review-010.zip",
+      "sha256": "2e6d85bd768f6cf7f90d3d47e267a9131ac9955d7bda49f7f4ee2b0dc751a2f8",
+      "size": 3085951,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/01_make_figure_s6_microglia_classifier.py",
+      "sha256": "080691192c6e191f95a8940b0145e2cf767a22b85737bfe7c8f1febf03a00f10",
+      "size": 29142,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/Figure_S6.pdf",
+      "sha256": "8242d513253c157b7cd99ea794c97c38a2a7d64d57608f03fd2efc05a6d39939",
+      "size": 39237,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/Figure_S6.png",
+      "sha256": "77c545e2b9e02e374a98b381b8b3c48040c2545adc7fc0d50d490912bd33af2a",
+      "size": 1122783,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/Figure_S6_caption.txt",
+      "sha256": "d626de2956329b345ac2c45336c14ff847973b159b710889b428218132d83e40",
+      "size": 3291,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/README.txt",
+      "sha256": "451b32d9b362846d4ed9635d695fe3c474055dd4e2c05979009d23df8762cd6c",
+      "size": 4003,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_LEGEND.txt",
+      "sha256": "d626de2956329b345ac2c45336c14ff847973b159b710889b428218132d83e40",
+      "size": 3291,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_LEGEND_spanish.txt",
+      "sha256": "cd99bf3802ecdeeb4ce92e3b0a4fc48e2e6a26106310a5bb6aaa47b2d1306de5",
+      "size": 3365,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND.txt",
+      "sha256": "6920792b28f76ca538d5d499261f49f3daa6355d1dc59640af2b349d20cada81",
+      "size": 2544,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND_spanish.txt",
+      "sha256": "b51cd5a006787b8330b65ef722fd3da259cd20d44a8c070756864c6e4a485994",
+      "size": 2633,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND.txt",
+      "sha256": "d1001c76df1a4329ae4c250e2271058775b1b36f538102d888e99b9df9c710d1",
+      "size": 2382,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND_spanish.txt",
+      "sha256": "6caf079116038cbfc230f9a2e41aacb2dd6d515398013a1f756ee860972a73c3",
+      "size": 2460,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND.txt",
+      "sha256": "4c15b92f4370ca63218c28d1d46df244179246036d5aef3231a2a52cb37b59d1",
+      "size": 2423,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND_spanish.txt",
+      "sha256": "35efee63fadd3be0e1766d99aff668731b40894635d8f433458f3bf4b88ea79e",
+      "size": 2479,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND.txt",
+      "sha256": "fb8c767f3b24f1e6ce78d91ddfc8cac175ba7b0e8e1973660f1ceed327270f58",
+      "size": 2383,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND_spanish.txt",
+      "sha256": "0c66b7e40ceb163fc94fdf2198b262cf6dd26478a7227f39620e27b9d1975b04",
+      "size": 2450,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy.pdf",
+      "sha256": "73425b55a9ad7b453af4b6ec0c03efa6e96cfc1daab4b3b3c4efa4f6eb8a1285",
+      "size": 20983,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy.png",
+      "sha256": "37861959d89eb5734ee5ab83e8cb5fc00d27f19cb4620fd5ddf948000c24cc1a",
+      "size": 199398,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy_spanish.pdf",
+      "sha256": "8ad0c9575ff589ed0542cda55cf27b60f85109ce7930a3872cc3fb72995a3f3a",
+      "size": 20980,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_A_balanced_accuracy_spanish.png",
+      "sha256": "9e28f1cfa71c129d9647a7e31639f4347ca1a110d542f3fbb13e9f7e15db1201",
+      "size": 215536,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_B_class_recall.pdf",
+      "sha256": "c5c5dcc0b365db0c3c64918a69e93eb93f55a7bb38dbb7f0bcdd560b7ab751ec",
+      "size": 21170,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_B_class_recall.png",
+      "sha256": "189457fde4f1328ff2add313cbed9254db84607fdddd9ee62a5d5a52f8abde63",
+      "size": 175658,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_B_class_recall_spanish.pdf",
+      "sha256": "b3eb7cf1e7aac9246cfa7bb6bbdf520d105d27fb53c10bb9e90ed6acf3677bc9",
+      "size": 19516,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_B_class_recall_spanish.png",
+      "sha256": "db4d7fa28edc70c97991028f5634b1f6ff77ab899a2417af0cfa695075965dd2",
+      "size": 175914,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion.pdf",
+      "sha256": "cc9159ae5c6d2efa8314281ea4f01e4092caeb68dcabda86e492d0e7dbee2c09",
+      "size": 23373,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion.png",
+      "sha256": "2ab31351db005c8d32ecf6eb012361dca84b1804efcad88153321e00abfa34e0",
+      "size": 326962,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion_spanish.pdf",
+      "sha256": "dfcd93a3d7c93a3c8bc0e4499285faff95b2b1cc981b1c56b62d0e6eaedc241b",
+      "size": 23445,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_C_morphometric_confusion_spanish.png",
+      "sha256": "c1f3b39dfe1e9eea352d18b47ffcfe2ab7cfc6a9dee43b2a384a420fc60078dd",
+      "size": 351332,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion.pdf",
+      "sha256": "0f1f40a02c27320a4bd903415245fd4727b3443dc35cc739f891960c3cc733d4",
+      "size": 24159,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion.png",
+      "sha256": "1061097eede5e62db102cd1b7ecd739f450ffa24a2f885979d8a4c04bab91d81",
+      "size": 331874,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion_spanish.pdf",
+      "sha256": "38f8ea8bea463c311a76d15bb196607dd029f14a9a1853c75343db0059b518ad",
+      "size": 23909,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/panels/Figure_S6_panel_D_DINOv2_confusion_spanish.png",
+      "sha256": "4f44c0cb3250155bde274efd5c896450822e5aab13be0ac712f61d9940c62cf5",
+      "size": 358037,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/provenance/EXISTING_FIGURES_UNCHANGED.json",
+      "sha256": "485c2bfad983960b620804c4f937b2b6af5809e3bd18b444bc3cccf7289be1f2",
+      "size": 156,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/provenance/FIGURE_S6_BUILD_RECEIPT.json",
+      "sha256": "3d18ce218bb193c34773a1e0c151b8aa2c91917d7131fba1694ba2fbd97b9075",
+      "size": 6416,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/provenance/FIGURE_S6_REPRODUCTION_VERIFICATION.json",
+      "sha256": "29dc65c2edaa8dad4a2424b8178e8d72f958382f73671afde71356a5d9b0bf81",
+      "size": 5285,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/provenance/PROMOTION_RECEIPT_20260907T115459Z.json",
+      "sha256": "dbc881c6fac0e735397ce654903345995ba2f09d80e5d7831998b4ed3f779312",
+      "size": 14401,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/provenance/REPRODUCIBILITY_CHECK.json",
+      "sha256": "9a2aa63fe50be6153b3c2f031681b0b4e7e04c9cc0d20a3b91d4634805e64c3f",
+      "size": 145,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/provenance/SOURCE_FREEZE_RECEIPT.json",
+      "sha256": "4afdfbabc0cdc1243f09fd94f6020a293401d05211af1f334396dbe4c5063c13",
+      "size": 2016,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/raw_data/RAW_DATA_MANIFEST.csv",
+      "sha256": "6aad3bdcbff3a42b079c8d249249bb0f41fc3f604fe854402b3b5489b63fe9e6",
+      "size": 499,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/raw_data/README.txt",
+      "sha256": "eb4bf3a58485f77c189bc496ada09ec6aab7ec76312383e8c38da48a24bd18df",
+      "size": 1072,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/raw_data/dinov2_predictions.csv",
+      "sha256": "f0a84ed579a1dd8440682a3ab73b16989ac8b7b6238913923dba5bfea53630da",
+      "size": 26098,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/raw_data/human_reference.csv",
+      "sha256": "6b8871b300b6b01eaf5e4ec35a92c330959bb54ad2ce822ba84b54f812ccaec2",
+      "size": 8111,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/raw_data/method_metadata.json",
+      "sha256": "6dd7d7377c12673ffe51f0012bc7980c44f30ca56b7069f68e9f1e945b2e480f",
+      "size": 6568,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/raw_data/morphometric_predictions.csv",
+      "sha256": "702801f9f218d53b6e32f21c011a95eaa56ae5f4b6bbeb3ab099abe5eda9fd07",
+      "size": 13313,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/raw_data/validation_design.json",
+      "sha256": "886fd2dccff44e30fd203cb564edcc2efd8d539d7d42d8950117c87bb7f98c19",
+      "size": 436387,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/animal_bootstrap_draws.csv",
+      "sha256": "06f641ae6e109655acf0df330eb58e7d5aa54359e98010c4093d030b117cb4a1",
+      "size": 75524,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/balanced_accuracy_comparison.csv",
+      "sha256": "85cb860e362b5f51b783f58dc125301902c6209208818962ecc1bb139d982eea",
+      "size": 287,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/comparison_statistics.json",
+      "sha256": "e4140431ea7a9bbe7a3dd47621f0b3f00548057d6ee17d3f3222c7451e352b06",
+      "size": 1745,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/dino_logistic_class_recall.csv",
+      "sha256": "9fe1c85d3215607353dab63fc23cc305eb20fa58db1cd3ad25b8f4257aa6de83",
+      "size": 104,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/dino_logistic_confusion.csv",
+      "sha256": "7355177e3c2266ae7ef7385282354c3f957e4a820ee507ed2cd97e7775e55a03",
+      "size": 115,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/method_metadata.json",
+      "sha256": "6dd7d7377c12673ffe51f0012bc7980c44f30ca56b7069f68e9f1e945b2e480f",
+      "size": 6568,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/morphometric_proposals_class_recall.csv",
+      "sha256": "583146985f1eec21978f494e120ac00ffe28b3e1c74245a83a71219c71b63e79",
+      "size": 105,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/morphometric_proposals_confusion.csv",
+      "sha256": "75279d326f3ad1457b1dd47549bf44197b5e884507d7798f80c33f881804f214",
+      "size": 112,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/paired_cell_predictions.csv",
+      "sha256": "6254b610c4807ec5323ff46ef7af1bfc8f3e779255aa0349074866f6b247844a",
+      "size": 11908,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/source_data/reference_cells_by_animal.csv",
+      "sha256": "bf946c5ce3296575df9cd0d6f435676f9f15fc49e72a26ef8cb55ce3e12798af",
+      "size": 247,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "README.txt",
+      "sha256": "08f0cd52ce3fd8f08f40ac06403b8445a15f4b00196b45b4013728d50ffab6ac",
+      "size": 11616,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "release/README.md",
+      "sha256": "43e878e754f2f757ef941eefa32d8984942885f23c84bd552cd62aa00c6a8844",
+      "size": 11462,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "release/build_archives.py",
+      "sha256": "83a02b05be9e1f67fa501f540aeb726e271097b3f2c4faa02d5b72179b3bef2c",
+      "size": 33653,
+      "mode": "0755",
+      "change": "updated"
+    },
+    {
+      "path": "release/build_microglial_review_data.py",
+      "sha256": "f72332c024d1c52fd87ae92438a5f8894f516162feabc7a0d233147321741e2f",
+      "size": 6040,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "release/export_figure_updates.py",
+      "sha256": "19e9e17aeade49f51b5c3d420b6b76c439ccfc57bef4ecbc28247d1f17e5b6df",
+      "size": 4379,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "release/github_public/build_archives.py",
+      "sha256": "83a02b05be9e1f67fa501f540aeb726e271097b3f2c4faa02d5b72179b3bef2c",
+      "size": 33653,
+      "mode": "0755",
+      "change": "updated"
+    },
+    {
+      "path": "release/github_public/figure_updates.py",
+      "sha256": "9b432082d6871195ff7e008713d04dee5a120d38b23499030b7e042ab145f246",
+      "size": 7762,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "release/reconstruct_paper.py",
+      "sha256": "1a4956e0b57fb49e9eb0d2be38292bc5f8484241f7613917f12bcc8b3cf18197",
+      "size": 56966,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "release/tests/test_build_archives.py",
+      "sha256": "b1c81952754fd8492865839d4958d12e863788992902db19de2621dc647415ea",
+      "size": 14257,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "reproduce_all_figures.sh",
+      "sha256": "8471d10e809c8bbc85e5f82ee37253a2c4ab69732ad2896fc5b8a77db85ed21e",
+      "size": 28265,
+      "mode": "0755",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/Fig1/01_analyze_behavior_experiment1.py",
+      "sha256": "04f5c623daeba48289a8eed6ef5790597f2f3219bd0aadf07d4a093b2875080e",
+      "size": 41208,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/Fig1/02_make_figure_1_behavior.py",
+      "sha256": "0354a851c2be401d3a390d2a6c086b9268f365865f6665bc8c42c719a3258d2f",
+      "size": 40689,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/Fig5/01_analyze_gfap_iba1_microglia.py",
+      "sha256": "9db6a653a99c975415ec4cd6e39628f6829103da690830abf5cdc6bc45f4eb3f",
+      "size": 577022,
+      "mode": "0755",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/Fig5/02_make_figure_5_gfap_iba1_microglia.py",
+      "sha256": "4c77cbe76d3c30b5307c962c9114bbe1a494dc3bf7e4f367fd718777698feea7",
+      "size": 197409,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/Fig5/03_resegment_dapi_gpu.py",
+      "sha256": "6bc15c6b1b302321f801510ded4e91396e44c302f2dc34bf02c755e38578aec5",
+      "size": 20686,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/Fig5/04_regenerate_iba1_from_reviewed_dapi.py",
+      "sha256": "988d61b545b59b46f4b2f1349f82f8c3eb8a6b71195ef4f206b57c9e3666c8ad",
+      "size": 16640,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/Fig5/04_run_gfap_iba1_microglia_staged.sh",
+      "sha256": "db0264124ae7641f2faca42a483bdffa5033ed9d8f75fb0126562e0ade994ba4",
+      "size": 920,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/Fig5/05_review_microglia_classes.py",
+      "sha256": "46ab090e0e63c591bf35934d8c0144a159788b9982ed6c0eb9f96863d00c01d5",
+      "size": 22467,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig5/06_retrain_microglia_classes.py",
+      "sha256": "d20f9ddb3c674224e6bb8fb22bcfbfa52607f3fcdd4809c5ec4642b47f635793",
+      "size": 12959,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig5/07_refine_microglia_masks.py",
+      "sha256": "9fedbd8d9bb7e7299a26226be1abbc17512a6a334a1111f066e0ac252fd010a7",
+      "size": 12121,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig5/08_review_microglia_masks.py",
+      "sha256": "bb67d37eddc376b57c3f731dcae6d6034ced40d570e3e134f4b578aa04a760ee",
+      "size": 24987,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig5/09_improve_microglia_classifier.py",
+      "sha256": "0f2bcd3d48aa21feb9b6dfac11b86897bf6ef64c89b7ed0832c7b5ec4d2b0776",
+      "size": 44036,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig5/10_audit_microglia_transfer.py",
+      "sha256": "818e1d660c85632e8f5b0df0679564256b772bf474847a702e07b0de17f9c67b",
+      "size": 15857,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig5/11_prepare_dinov2_assets.py",
+      "sha256": "68c86a1cf5d6fa14ad67b2663cdb87092820e0ab4c99ec9ab1b5915fff82a580",
+      "size": 5533,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig5/12_microglial_choices.py",
+      "sha256": "201980ac9fa2e191c8cfc113c48944d769441d2c83bf64ea61c294f6e04528de",
+      "size": 13643,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/FigS6/01_make_figure_s6_microglia_classifier.py",
+      "sha256": "080691192c6e191f95a8940b0145e2cf767a22b85737bfe7c8f1febf03a00f10",
+      "size": 29142,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/README.txt",
+      "sha256": "a3ba0b2ae733e68f3478eef80a4efeb50954a44768973a855e146e6643060db2",
+      "size": 4438,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/setup/00_create_conda_envs.sh",
+      "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
+      "size": 4242,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/setup/01_create_s3_environment.sh",
+      "sha256": "f5a3b38b1ca7010460ca1c9cdbd46a3114474797a513671ea896512ffc9a4f42",
+      "size": 3451,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/setup/create_environment.sh",
+      "sha256": "081b90f7afd799c362c775c1284e87d0f902997fbce0f2341190ed6c5d0f194a",
+      "size": 1743,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/setup/environment.yml",
+      "sha256": "b17cae3d26a22c6cd0588101f3d0412ba06d5b39b17033149e6ac58f47e8f91e",
+      "size": 556,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/setup/environment_s3.yml",
+      "sha256": "b7820da35917a9a5e8dcf3fe95c028b90ea444d261af78a04ab91ff41a8805c6",
+      "size": 546,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/setup/environment_s3_conda_explicit_linux-64.txt",
+      "sha256": "36c796e4fc9191eda492b6418c39c765d8207f6a58084bf3a46d515d65d79933",
+      "size": 16428,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/setup/requirements_s3_pip_lock.txt",
+      "sha256": "6abae8042cb2e194e93a0fedbb6bdd1a6efb16e983150791f80674dd5e7a44b1",
+      "size": 659,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/shared/01_annotate_regions.py",
+      "sha256": "189fbba65700a4b20db030f0ec0c018fd3e877fc6d5c594a43eb8e28c349c03d",
+      "size": 109481,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/shared/02_validate_raw_cellpose_masks.py",
+      "sha256": "020b64b1d11638dd5601702696bc482d59f0dc139e02be7457b4e89871c10dab",
+      "size": 5392,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/shared/03_safe_stage_fig45.py",
+      "sha256": "104125aa6f9151da9bbf01cec9a31d63402cd4e372fb0a454982ee9bca33e25a",
+      "size": 36914,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/shared/04_safe_stage_fig3.py",
+      "sha256": "9ed82cf9d5dbccae3eb11daef861c0402a78069ab57a5a4ee99b5c04c985c295",
+      "size": 43663,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/shared/05_annotate_microglia.py",
+      "sha256": "eef37eee12bd8c5108e8c624918b03849bcb4d1c3a693c836e51178f7e7ee245",
+      "size": 26504,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/shared/spanish_panel_text.py",
+      "sha256": "925f3748bb76773a254d4877feb8a918a22053b5aadaa9474a3fe4b9ae814708",
+      "size": 4586,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/shared/tests/test_microglia_choices.py",
+      "sha256": "8b243ac523c33e96bbd4ce5dabe00579ae94a69b9dde0b4fa97a2a9f650d847f",
+      "size": 4046,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/shared/tests/test_microglia_class_review.py",
+      "sha256": "609343131e76274856d89953ae05a29ea75175ed9474b5530175ab2b26078dab",
+      "size": 8628,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/shared/tests/test_microglia_cnn_calibration.py",
+      "sha256": "c13398b0d7974c9bd3a7d54bcb32d001624e33900b6c1e6361a5573d0ad41113",
+      "size": 4157,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/shared/tests/test_microglia_mask_refinement.py",
+      "sha256": "a7768e10c0849ecf175e3fec30ca81c6878c99d9081a4cbb212788c9ddb25658",
+      "size": 5592,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/shared/tests/test_microglia_transfer.py",
+      "sha256": "a7fe750c208ad71005ebd764af878bfcfa39c4edf729479ebcbe3b38f0dc8578",
+      "size": 6021,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/utilities/01_validate_bundle.py",
+      "sha256": "9bfbfa47d7b731725baab9aafa46abd46267a9764895bc8f046c5d4cf8bf56de",
+      "size": 14285,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/utilities/02_backup_scripts_and_tree.py",
+      "sha256": "f08e6ca516c7b7514b345a082fb3aa809db44ef5bc6e537ae823c2287d357894",
+      "size": 3906,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/03_check_reproducibility.py",
+      "sha256": "e0c4c62412dbddbf27afa7bd8792f78a550e250ad11353ee1b3c3c3bcb5bd0ea",
+      "size": 9379,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/utilities/04_promote_figure.py",
+      "sha256": "0c5ba841d9ba34073cea7be6e624289d75c45b66c12154652c3ccb3941fa1113",
+      "size": 15684,
+      "mode": "0755",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/utilities/05_refresh_promoted_timestamps.py",
+      "sha256": "5a08ec92253e343a2839bbc8f986569fc1c7c0bd50353b96d998a9a49c9de9c5",
+      "size": 5651,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/utilities/06_import_figure_s5_hil.py",
+      "sha256": "f791fd659fa07b82ddc6e8b6e2e344eb034c3efe424a10d0e58f9943e130b619",
+      "size": 18079,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/07_validate_figure_outputs.py",
+      "sha256": "66fe3db3329a3fb85aad87e35e466148615adbf6fedd2ca917f29f032c3e21f5",
+      "size": 8846,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/utilities/08_figure_progress.py",
+      "sha256": "0295e982d541d236b3cef7fea39ab6bba2634037a2ea1e60ddd4d96c99942048",
+      "size": 2707,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/09_audit_canonical_inputs.py",
+      "sha256": "a635087bc247a6c9ecd10fd31692b797a37e77991f91cdae026005e6aa6a691d",
+      "size": 6934,
+      "mode": "0755",
+      "change": "updated"
+    },
+    {
+      "path": "scripts/utilities/10_extract_thesis_literature.py",
+      "sha256": "f2d6f874b1b03d6f5540f70c9831e10ad9accb887c43b7dca604269e8b49a05c",
+      "size": 6543,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/11_collect_thesis_literature.py",
+      "sha256": "8803505b2e583a36446745587f5c2c3695046288127183407ca285e250d3d3bf",
+      "size": 10830,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/13_complete_thesis_spanish.py",
+      "sha256": "081ea275e6ac272e61f858e43bbfee5140b12d576c47158d72a492ca6cbfed13",
+      "size": 120117,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/14_validate_thesis_format.py",
+      "sha256": "6f4f55f4bbe954e681ac4393350e5d91f566f19f9ad0d468673e3dfb0ef69d4b",
+      "size": 12078,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/15_update_thesis_page_map.py",
+      "sha256": "06649d0017f6d6fe515f6167865f7427469e2e3d81b4abb4f8ccbd094a691fe5",
+      "size": 3880,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/16_refine_thesis_figure_narratives.py",
+      "sha256": "9b8f9c7dd3d014f287b9ac05cff3c71ce1e8bb507ebf1cfa147aa5d39d2b416b",
+      "size": 38210,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/17_patch_thesis_scientific_wording.py",
+      "sha256": "bf1db06fc7c8ef7f6e6433b1d3f32c51ea0d34638062a2b4add0844d6d9dcd3e",
+      "size": 15527,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/18_refresh_thesis_hil.py",
+      "sha256": "6862cd207c3fc62493c9843139dbaa7a556de77a195ba8c12992267b60633375",
+      "size": 17585,
+      "mode": "0755",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/19_update_single_bottle_consumption_wording.py",
+      "sha256": "6983e578f6137deb9e1d99715da229833c8cd53512357291158eb3a7370f3766",
+      "size": 20709,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/utilities/README.txt",
+      "sha256": "81ee95fda29d89850da97428a0bc0ad7ee69327ef6e452e9a9543c687d38f169",
+      "size": 2191,
+      "mode": "0644",
+      "change": "updated"
+    }
+  ]
+}

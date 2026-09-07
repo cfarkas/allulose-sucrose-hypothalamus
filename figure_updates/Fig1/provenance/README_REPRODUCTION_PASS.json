@@ -1,0 +1,52 @@
+{
+  "byte_identical_to_live": 18,
+  "commands": [
+    {
+      "argv": [
+        "/home/server/anaconda3/envs/paper_apotome_repro/bin/python",
+        "Fig1/scripts/canonical_snapshot_20260823/scripts/Fig1/01_analyze_behavior_experiment1.py",
+        "--consumption",
+        "Fig1/raw_data/consumption.csv",
+        "--weights",
+        "Fig1/raw_data/weights.csv",
+        "--outdir",
+        "/tmp/paper-anova-rebuild-20260823.Sm6heR/Fig1_analysis",
+        "--seed",
+        "20260814",
+        "--bootstrap",
+        "20000"
+      ],
+      "returncode": 0,
+      "script_sha256": "42ba1eb66c8f9fe44534cdb9bc1dced852a177057ece3ff053e0bbdb6b7fcdaf"
+    },
+    {
+      "argv": [
+        "/home/server/anaconda3/envs/paper_apotome_repro/bin/python",
+        "Fig1/scripts/canonical_snapshot_20260823/scripts/Fig1/02_make_figure_1_behavior.py",
+        "--analysis-dir",
+        "/tmp/paper-anova-rebuild-20260823.Sm6heR/Fig1_analysis",
+        "--output-dir",
+        "/tmp/paper-anova-rebuild-20260823.Sm6heR/Fig1_figure",
+        "--dpi",
+        "600",
+        "--seed",
+        "20260814"
+      ],
+      "returncode": 0,
+      "script_sha256": "242b9a47e56a7b7e9b671e7d48670ae20a413f01bb3b116712abed232bbdf64e"
+    }
+  ],
+  "english_spanish_geometry_pairs": "4/4",
+  "figure": "Figure 1",
+  "fresh_output": "/tmp/paper-anova-rebuild-20260823.Sm6heR/Fig1_figure",
+  "graphics_expected": 18,
+  "graphics_verified": 18,
+  "master_pdf_sha256": "4233cfbfc5aeb68a57956b53ca43eb8f7775054e3597182a7fddfbbbc49ade39",
+  "master_png_dpi": 600,
+  "master_png_sha256": "33b9bc0d36dd6ba2f46ea721d30cccf809c98652ff03ef4b34c66f5c30463571",
+  "pdf_one_page_embedded_fonts_no_type3": true,
+  "schema": "paper_readme_reproduction_pass_v1",
+  "status": "PASS_EXACT",
+  "tested_at": "2026-08-23T09:00:00-04:00",
+  "working_directory": "/media/server/STORAGE/Apotome/Paper"
+}

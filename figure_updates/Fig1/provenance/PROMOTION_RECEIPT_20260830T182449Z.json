@@ -1,0 +1,242 @@
+{
+  "byte_for_byte_verified": true,
+  "counts": {
+    "added": 0,
+    "already_identical_skipped": 0,
+    "replaced": 2,
+    "rewritten_identical": 35
+  },
+  "figure": "Fig1",
+  "files": [
+    {
+      "bytes": 54405,
+      "promoted": "Fig1/Figure_1_behavior_experiment_1.pdf",
+      "sha256": "7922b4dbfd3b6324874355a3833caaabd13fe5eec06802640118cc2cb6d14013",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/Figure_1_behavior_experiment_1.pdf"
+    },
+    {
+      "bytes": 1662113,
+      "promoted": "Fig1/Figure_1_behavior_experiment_1.png",
+      "sha256": "33b9bc0d36dd6ba2f46ea721d30cccf809c98652ff03ef4b34c66f5c30463571",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/Figure_1_behavior_experiment_1.png"
+    },
+    {
+      "bytes": 2270,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_LEGEND.txt",
+      "sha256": "dd956e991f0c1ac615c88fc6e3b6fcdc25bf277b3f79b74e683d96409863e8f1",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_LEGEND.txt"
+    },
+    {
+      "bytes": 1348,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_LEGEND_spanish.txt",
+      "sha256": "8a31316ec3f0baf7c90992cde187e764ba97399f72692894c325ef643f631b00",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 484,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_A_LEGEND.txt",
+      "sha256": "cdfd8eed8f5fda8e8aadb62b9766fd740bf6c2438948a5e8b3d7d574e89d527e",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_A_LEGEND.txt"
+    },
+    {
+      "bytes": 157,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_A_spanish_LEGEND.txt",
+      "sha256": "59096133c272610677e9cc977b8d2259cb2663a33519456013ee76b6a1f458b8",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_A_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 302,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_B_LEGEND.txt",
+      "sha256": "cb20b0152da6329463952c9de1207a1eea6ed247f6266253adfba21b911a7397",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_B_LEGEND.txt"
+    },
+    {
+      "bytes": 156,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_B_spanish_LEGEND.txt",
+      "sha256": "c5fc138f61e8109009a8d291d6ace6f906d8ac61db88cb6630c1669604f52a3c",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_B_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 522,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_C_LEGEND.txt",
+      "sha256": "109d46726492039606fd6680d5923ee566ce5bed84796a1764fdab20d8c730aa",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_C_LEGEND.txt"
+    },
+    {
+      "bytes": 155,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_C_spanish_LEGEND.txt",
+      "sha256": "881be7771dde20a65aaa4f749c2a98e645022e2455d1a1ed610267dd21c99711",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_C_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 276,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_D_LEGEND.txt",
+      "sha256": "3494f288b5907cc781fb3db03c5be0ca15fbcd7ed57c991a153133548f299fa3",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_D_LEGEND.txt"
+    },
+    {
+      "bytes": 169,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_Panel_D_spanish_LEGEND.txt",
+      "sha256": "d1f8f645dc6fe49ee99cdac603a5a2f7d3370cc12a29e7db34e2669a22ca6215",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_Panel_D_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 2270,
+      "promoted": "Fig1/legends/Figure_1_behavior_experiment_1_caption.txt",
+      "sha256": "dd956e991f0c1ac615c88fc6e3b6fcdc25bf277b3f79b74e683d96409863e8f1",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/legends/Figure_1_behavior_experiment_1_caption.txt"
+    },
+    {
+      "bytes": 28986,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A.pdf",
+      "sha256": "9477ab86d7768c15ccc70fb4a40f3c0c57b0eb22446e403418456274eaa31fdd",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_A.pdf"
+    },
+    {
+      "bytes": 458764,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A.png",
+      "sha256": "c4b5a7a04c2cf46490faf7daa664f9395f128d37e76dc8fa0b874ee5995b7aff",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_A.png"
+    },
+    {
+      "bytes": 27553,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf",
+      "sha256": "3127041446bd2dc220ac9f3079226386474802134eb5fc1ac742b9b727e36532",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 450809,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.png",
+      "sha256": "7ad3d68953cbfd1a616e95f7efd42868ca7ea8b571686cd51b78f7ff0f64f984",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_A_spanish.png"
+    },
+    {
+      "bytes": 23382,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B.pdf",
+      "sha256": "cf400f3847b9fb0cd64337354fbbdedf4b7431b348c4f44b3b8db55516398505",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_B.pdf"
+    },
+    {
+      "bytes": 318315,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B.png",
+      "sha256": "9d230a42cc216af05fc81dd9085cd6c394a4f68fc0baff594253dca9c7021cb3",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_B.png"
+    },
+    {
+      "bytes": 22259,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf",
+      "sha256": "4bf946ac7b026ff944f734eef7d7f97aafe07f2b2ad01f24f811bf7dde52bfe5",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 306620,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png",
+      "sha256": "ddc7169fa9a1e9b27d39ee2e91964300ffa462022ef73b99a40c1eebc9baec9b",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png"
+    },
+    {
+      "bytes": 34843,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C.pdf",
+      "sha256": "8b4abf84a8a347d8a9703257f8c26331b5f549026a7190b1ae206d7f5e5b1656",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_C.pdf"
+    },
+    {
+      "bytes": 425735,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C.png",
+      "sha256": "ec17a622dfae08cc222166c32f1692cfc98f72b0b40585d7aef6c22f8cd11bd3",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_C.png"
+    },
+    {
+      "bytes": 33286,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf",
+      "sha256": "a186bbfe7db1dc40d74dd2f7f276a07193ebbfb3f241d3d47c413c12cd151ed8",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 425095,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.png",
+      "sha256": "4a74ddac3031d0ed101da09d06afa2514b4a551562dcb45572f77c864004e3b3",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_C_spanish.png"
+    },
+    {
+      "bytes": 23792,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D.pdf",
+      "sha256": "aa8300937dcf1c01e9559a05a6b1f89292bfd4cf98abfdbf4e778027f160d901",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_D.pdf"
+    },
+    {
+      "bytes": 322861,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D.png",
+      "sha256": "dd0eb2749523ab037791e77a6dab22603b84e1283b9b5b780214f992a3a79c86",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_D.png"
+    },
+    {
+      "bytes": 22344,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf",
+      "sha256": "cb9d343d82599626ae9a218d8249f3e8160d2ca00686deb7842985a57db62298",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 316469,
+      "promoted": "Fig1/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png",
+      "sha256": "7ed14e10538d23645ccc1ed8acc3abcf992cd88dbb549e653f0737658ff3d1c4",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png"
+    },
+    {
+      "bytes": 4297,
+      "promoted": "Fig1/provenance/FIGURE1_STATISTICAL_AUDIT.md",
+      "sha256": "6ceb2cb5429c6220b2ee8c333a86e07213b2dc7674ba6c1d913759af9418c69d",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/provenance/FIGURE1_STATISTICAL_AUDIT.md"
+    },
+    {
+      "bytes": 6057,
+      "promoted": "Fig1/provenance/Figure_1_behavior_experiment_1_manifest.json",
+      "sha256": "3ddee644d9a36070b93ef3b9821d12409c97deffeee7cb0956586d89beb73663",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/provenance/Figure_1_behavior_experiment_1_manifest.json"
+    },
+    {
+      "bytes": 1572,
+      "promoted": "Fig1/provenance/Figure_1_behavior_experiment_1_spanish_translation_receipt.json",
+      "sha256": "a4f8c344a70b62f076c490981be32a14e015c80d63dedf9db88f1a8525ee2d70",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/provenance/Figure_1_behavior_experiment_1_spanish_translation_receipt.json"
+    },
+    {
+      "bytes": 1031,
+      "promoted": "Fig1/provenance/README.txt",
+      "sha256": "87fcedb21e51716e9f877ceaadac9eebe0e99e6216079ff5ccce3298b91fa414",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/provenance/README.txt"
+    },
+    {
+      "bytes": 1964,
+      "promoted": "Fig1/source_data/Figure_1_behavior_experiment_1_sources.csv",
+      "sha256": "8444b906b44b8dc9c25eed5a652517c7c631b27f0bc6526852cdff88d1b39d0d",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/source_data/Figure_1_behavior_experiment_1_sources.csv"
+    },
+    {
+      "bytes": 3718,
+      "promoted": "Fig1/source_data/Figure_1_behavior_experiment_1_statistics.csv",
+      "sha256": "f0ab6485bb22fab755de4431904eee36b6c2aade37968ebe65d5437efba2a1bd",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/source_data/Figure_1_behavior_experiment_1_statistics.csv"
+    },
+    {
+      "bytes": 2391,
+      "promoted": "Fig1/source_data/Figure_1_behavior_experiment_1_trajectory_confidence_intervals.csv",
+      "sha256": "49e0e178b108c7a5e1e47d4ebd4af4b3316e835df7426d287db716195a2ec3ae",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/source_data/Figure_1_behavior_experiment_1_trajectory_confidence_intervals.csv"
+    },
+    {
+      "bytes": 17722,
+      "promoted": "Fig1/source_data/Figure_1_behavior_experiment_1_values.csv",
+      "sha256": "3bc205aaf4a4ed300541dc4e0b3bf4c7b09f175b740e69f6e187aa0227a4608e",
+      "source": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure/source_data/Figure_1_behavior_experiment_1_values.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_1_behavior_experiment_1",
+  "master_name_promoted": "Figure_1_behavior_experiment_1",
+  "promoted_utc": "2026-08-30T18:24:49+00:00",
+  "replacement_policy": "validated_canonical_current_no_in_tree_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_full_rebuild_4quOEBak/Fig1/figure",
+  "superseded_copied_to": null,
+  "verified_artifacts": 37
+}

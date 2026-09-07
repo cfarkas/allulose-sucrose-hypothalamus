@@ -1,0 +1,2 @@
+# Preserve exact archived/source bytes used by the figure update hash manifest.
+figure_updates/** -text

@@ -1,0 +1,103 @@
+{
+  "n_cells": 203,
+  "n_animals": 15,
+  "bootstrap_replicates_used": 2000,
+  "methods": {
+    "morphometric_proposals": {
+      "balanced_accuracy": 0.7389304577464789,
+      "accuracy": 0.7438423645320197,
+      "ci_low": 0.6736398452259107,
+      "ci_high": 0.810588202900338,
+      "correct_n": 151,
+      "confusion_matrix": [
+        [
+          45,
+          1,
+          4,
+          0
+        ],
+        [
+          4,
+          19,
+          8,
+          1
+        ],
+        [
+          1,
+          9,
+          40,
+          0
+        ],
+        [
+          0,
+          21,
+          3,
+          47
+        ]
+      ],
+      "support": [
+        50,
+        32,
+        50,
+        71
+      ],
+      "recall": [
+        0.9,
+        0.59375,
+        0.8,
+        0.6619718309859155
+      ]
+    },
+    "dino_logistic": {
+      "balanced_accuracy": 0.5703697183098592,
+      "accuracy": 0.6059113300492611,
+      "ci_low": 0.49310232176634883,
+      "ci_high": 0.651923540409555,
+      "correct_n": 123,
+      "confusion_matrix": [
+        [
+          38,
+          2,
+          10,
+          0
+        ],
+        [
+          5,
+          12,
+          11,
+          4
+        ],
+        [
+          9,
+          15,
+          20,
+          6
+        ],
+        [
+          0,
+          8,
+          10,
+          53
+        ]
+      ],
+      "support": [
+        50,
+        32,
+        50,
+        71
+      ],
+      "recall": [
+        0.76,
+        0.375,
+        0.4,
+        0.7464788732394366
+      ]
+    }
+  },
+  "baseline_minus_dinov2": {
+    "balanced_accuracy_difference": 0.16856073943661976,
+    "ci_low": 0.07831884314630615,
+    "ci_high": 0.25062796060691955,
+    "interval_conditions_on_fixed_predictions": true
+  }
+}

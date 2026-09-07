@@ -1,0 +1,110 @@
+{
+  "analysis_directory": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/results",
+  "analysis_status": "exploratory",
+  "dpi": 600,
+  "excluded_separate_cohort": "August_E13-E14",
+  "figure": "Figure_1_behavior_experiment_1",
+  "figure_orientation": "portrait",
+  "figure_size_inches": [
+    11.2,
+    12.2
+  ],
+  "formats": [
+    "pdf",
+    "png"
+  ],
+  "graphics": [
+    "Figure_1_behavior_experiment_1.pdf",
+    "Figure_1_behavior_experiment_1.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_A.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_A.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_B.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_B.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_C.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_C.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_D.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_D.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.png",
+    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf",
+    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png"
+  ],
+  "graphics_sha256": {
+    "Figure_1_behavior_experiment_1.pdf": "96a22118214642f1b9779e76592a326fcdae0c966d337eaa2ff7a56fe5a6506a",
+    "Figure_1_behavior_experiment_1.png": "b90958f3103ea314b71618b4df7d640438695c09e9e745d00427127d871c4d76",
+    "panels/Figure_1_behavior_experiment_1_Panel_A.pdf": "a09ed923443b327c2899ac166d47edce7c1b3335d14683238968e1c358c44921",
+    "panels/Figure_1_behavior_experiment_1_Panel_A.png": "ad84df529dbb7461ea62c8640d34c061ce0c8faf45a7dbaf63d807d3c18eefe7",
+    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf": "b80d485f01b4b7953a1ada8874cc76ffed98a1ed5a2ad23f7f3952c04391ec29",
+    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.png": "371a9fe303f54ff7f678440057e0dc408ad6689e933f093bcb25e567aa62b01f",
+    "panels/Figure_1_behavior_experiment_1_Panel_B.pdf": "fbe8991c54cd7300d157a6d283ad6b3fc8d9f533f4221d778e33d57a2ac5a0be",
+    "panels/Figure_1_behavior_experiment_1_Panel_B.png": "af97e2147d861ca1e65cfbf6f4142b781d460f6c5a2d6754b4ffe99211fc52df",
+    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf": "f4d3e2237172b06d39e7467b42e8b7808c3b75b30b1a1281cec9e9502f995bec",
+    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png": "1b199fe4ebb399576c096b01b9220f1f576852a5eb1bcf128ae4b5695e629d1f",
+    "panels/Figure_1_behavior_experiment_1_Panel_C.pdf": "69dfe37caa7ba32afa5bdae923a03cee4e3f5c3bb8ff8a01182fa1c34b8fcf78",
+    "panels/Figure_1_behavior_experiment_1_Panel_C.png": "ec17a622dfae08cc222166c32f1692cfc98f72b0b40585d7aef6c22f8cd11bd3",
+    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf": "c459529c8afc3e3c0726f3e19889425d6ba1dab6f0bbc91e0eb25fb6bf3b40b6",
+    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.png": "4a74ddac3031d0ed101da09d06afa2514b4a551562dcb45572f77c864004e3b3",
+    "panels/Figure_1_behavior_experiment_1_Panel_D.pdf": "a6a1f8df7827b070308c607ea840e924dbc422208fbe76090cf616c0ae5dfec1",
+    "panels/Figure_1_behavior_experiment_1_Panel_D.png": "d3e66333f5c3b7fa3648ac96bab4109b064a104bb25a820630102b0617f8f206",
+    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf": "bf35af56f8617009975cb4460efb0d04c8ad03f5f105275e3d36a26b8035534e",
+    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png": "bf4c731de6965a1a4e2a04ebddf8b51e3d67e7de124e98ebcb4114c9f5832f6a"
+  },
+  "in_panel_explanatory_annotations": [],
+  "language_contract": {
+    "combined_figure": "English only",
+    "crop_geometry": "Spanish and English pairs use identical fixed crop boxes",
+    "spanish_translation_receipt": "provenance/Figure_1_behavior_experiment_1_spanish_translation_receipt.json",
+    "spanish_translation_receipt_sha256": "15755c90da6bbb4c9044cde77586f26b393cc467354ec64aeaf8b0acceb6e4d5",
+    "standalone_panels": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "legend_only_visual_keys": {
+    "A": "thin: cages; thick/band: equal-cage mean/95% CI",
+    "C": "pale: mice; thin: cage-day; thick/band: equal-cage mean/95% CI"
+  },
+  "output_directory": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906",
+  "p_value_annotation_style": {
+    "fontweight": "bold",
+    "layout": "vertical multiline list; text itself is not rotated",
+    "omnibus_font_size_pt": 10.1,
+    "pairwise_font_size_pt": 9.2
+  },
+  "panel_C_mouse_rows": "descriptive; treatment summaries are cage-balanced",
+  "panel_export_method": "exact crops of live axes in the combined rendered figure",
+  "primary_cohort": "January_E1-E12",
+  "primary_experimental_unit": "cage for all treatment summaries, intervals, and inferential tests",
+  "renderer_sha256": "0354a851c2be401d3a390d2a6c086b9268f365865f6665bc8c42c719a3258d2f",
+  "seed": 20260814,
+  "statistics": {
+    "displayed_omnibus": "ordinary equal-variance one-way ANOVA on independent cage endpoints",
+    "omnibus_sensitivity": "exact exhaustive cage-label allocation of the same F statistic",
+    "pairwise": "exact cage-label mean-difference tests; Holm within outcome"
+  },
+  "subpanels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "trajectory_confidence_intervals": {
+    "bootstrap_replicates": 20000,
+    "cage_weighting": "equal",
+    "level": 0.95,
+    "longitudinal_rule": "same resampled cage identities at Days 1, 3, and 6",
+    "panels": [
+      "A",
+      "C"
+    ],
+    "resampling_unit": "whole cage trajectory",
+    "small_sample_limitation": "only 3-5 cages per treatment; intervals are descriptive",
+    "type": "pointwise descriptive percentile interval",
+    "values_file": "source_data/Figure_1_behavior_experiment_1_trajectory_confidence_intervals.csv",
+    "values_sha256": "49e0e178b108c7a5e1e47d4ebd4af4b3316e835df7426d287db716195a2ec3ae"
+  }
+}

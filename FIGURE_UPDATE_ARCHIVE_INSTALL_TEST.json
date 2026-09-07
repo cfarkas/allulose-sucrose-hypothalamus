@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-07",
+  "status": "PASS",
+  "base_manifest_sha256": "df2ebb51339fdc3cc84dd8bbfb232647570d7e2cd0f12c19a5538ff7b7dd071d",
+  "update_manifest_sha256": "b8def44fe13b0d22b16442fa717626b9d87fcc71adc30f22271d3303351cecc1",
+  "archive_files_verified": 288,
+  "update_files_installed": 195,
+  "script_authentication": "PASS",
+  "repeat_installation": "PASS",
+  "scope": "Integration test with original archive scripts/reference bytes and the complete GitHub update, including portable microglial inputs. No full eleven-figure replay."
+}
