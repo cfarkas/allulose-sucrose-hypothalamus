@@ -1,7 +1,7 @@
 {
   "schema": "apotome-figure-updates-v1",
   "date": "2026-09-07",
-  "description": "Figure 1 Holm terminology, Figure 5 reviewed segmentation/classifier code, and supplementary Figure S6",
+  "description": "Figure 1 Holm terminology, Figure 5 reviewed segmentation/classifier code, and supplementary Figure S6 with benchmark definitions in its legends",
   "base_manifest_sha256": "df2ebb51339fdc3cc84dd8bbfb232647570d7e2cd0f12c19a5538ff7b7dd071d",
   "archived_figure_count": 10,
   "updated_figure_count": 11,
@@ -611,106 +611,106 @@
     },
     {
       "path": "FigS6/01_make_figure_s6_microglia_classifier.py",
-      "sha256": "080691192c6e191f95a8940b0145e2cf767a22b85737bfe7c8f1febf03a00f10",
-      "size": 29142,
+      "sha256": "b32576c8ea5171668aa4c74c90ebc7448a0e1794d782268cb1726547a783fce5",
+      "size": 28914,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/Figure_S6.pdf",
-      "sha256": "8242d513253c157b7cd99ea794c97c38a2a7d64d57608f03fd2efc05a6d39939",
-      "size": 39237,
+      "sha256": "d0ef5170122f9762fcea6b9405ae95653c4b2bc40f66ad663d268e2bbb3d70d5",
+      "size": 38701,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/Figure_S6.png",
-      "sha256": "77c545e2b9e02e374a98b381b8b3c48040c2545adc7fc0d50d490912bd33af2a",
-      "size": 1122783,
+      "sha256": "d418ed4044be6b22101423a134db612b9b6c6d4eb5407e61a6a655a8431522fb",
+      "size": 1031590,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/Figure_S6_caption.txt",
-      "sha256": "d626de2956329b345ac2c45336c14ff847973b159b710889b428218132d83e40",
-      "size": 3291,
+      "sha256": "92f19ce1e22fda170085138157d305b09b6266116991a41b472cdd252f7140b3",
+      "size": 3388,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/README.txt",
-      "sha256": "451b32d9b362846d4ed9635d695fe3c474055dd4e2c05979009d23df8762cd6c",
-      "size": 4003,
+      "sha256": "8dae78e5bbaec11738e80060122670caa3a0c7af36d1d4ff199e52ad9bbf38f0",
+      "size": 4162,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/legends/Figure_S6_LEGEND.txt",
-      "sha256": "d626de2956329b345ac2c45336c14ff847973b159b710889b428218132d83e40",
-      "size": 3291,
+      "sha256": "92f19ce1e22fda170085138157d305b09b6266116991a41b472cdd252f7140b3",
+      "size": 3388,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/legends/Figure_S6_LEGEND_spanish.txt",
-      "sha256": "cd99bf3802ecdeeb4ce92e3b0a4fc48e2e6a26106310a5bb6aaa47b2d1306de5",
-      "size": 3365,
+      "sha256": "e0e537c27e59094322c82aed6392fee5f57526d7a561e283b6f8c938376f1696",
+      "size": 3482,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND.txt",
-      "sha256": "6920792b28f76ca538d5d499261f49f3daa6355d1dc59640af2b349d20cada81",
-      "size": 2544,
+      "sha256": "2a7f501da4af8c420537e88412f8b430432524b3e75bddf8198eaaba83757635",
+      "size": 2641,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND_spanish.txt",
-      "sha256": "b51cd5a006787b8330b65ef722fd3da259cd20d44a8c070756864c6e4a485994",
-      "size": 2633,
+      "sha256": "b81386884736a95e9fa3f6265cfd939e08ead32da3c0015554228be3ca516c3c",
+      "size": 2750,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND.txt",
-      "sha256": "d1001c76df1a4329ae4c250e2271058775b1b36f538102d888e99b9df9c710d1",
-      "size": 2382,
-      "mode": "0644",
-      "change": "added"
-    },
-    {
-      "path": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND_spanish.txt",
-      "sha256": "6caf079116038cbfc230f9a2e41aacb2dd6d515398013a1f756ee860972a73c3",
-      "size": 2460,
-      "mode": "0644",
-      "change": "added"
-    },
-    {
-      "path": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND.txt",
-      "sha256": "4c15b92f4370ca63218c28d1d46df244179246036d5aef3231a2a52cb37b59d1",
-      "size": 2423,
-      "mode": "0644",
-      "change": "added"
-    },
-    {
-      "path": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND_spanish.txt",
-      "sha256": "35efee63fadd3be0e1766d99aff668731b40894635d8f433458f3bf4b88ea79e",
+      "sha256": "314e1e213676dd89ee225a3c06a607d658d8a5909d1eb2dc03d87df506094729",
       "size": 2479,
       "mode": "0644",
       "change": "added"
     },
     {
+      "path": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND_spanish.txt",
+      "sha256": "1b2293e06248cf98718565984f014f8c9864c7f92a48ae3d46da0e2cb921fa43",
+      "size": 2577,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND.txt",
+      "sha256": "9333c74a1e7835fb16446f0c0916e4f26289b58f32a98a7b76259dd80cc4c476",
+      "size": 2520,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND_spanish.txt",
+      "sha256": "0125c058d3354245e73c0aaf43860ef72eaee434e85b91d1e78b17da25b5776c",
+      "size": 2596,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
       "path": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND.txt",
-      "sha256": "fb8c767f3b24f1e6ce78d91ddfc8cac175ba7b0e8e1973660f1ceed327270f58",
-      "size": 2383,
+      "sha256": "e3df20bde898910380914333831c18a77465673f5916d3b6bbc33b26f563f2e9",
+      "size": 2480,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND_spanish.txt",
-      "sha256": "0c66b7e40ceb163fc94fdf2198b262cf6dd26478a7227f39620e27b9d1975b04",
-      "size": 2450,
+      "sha256": "fec9bf4a870defc155a609279ac73fe64e14a4660b470643671d05bc6c007ec7",
+      "size": 2567,
       "mode": "0644",
       "change": "added"
     },
@@ -835,7 +835,7 @@
     },
     {
       "path": "FigS6/provenance/FIGURE_S6_BUILD_RECEIPT.json",
-      "sha256": "3d18ce218bb193c34773a1e0c151b8aa2c91917d7131fba1694ba2fbd97b9075",
+      "sha256": "016ba3d285fb6654a3664fbbc94f86136f9b396e22c8b7e149bb8eb0e7507bfc",
       "size": 6416,
       "mode": "0644",
       "change": "added"
@@ -851,6 +851,13 @@
       "path": "FigS6/provenance/PROMOTION_RECEIPT_20260907T115459Z.json",
       "sha256": "dbc881c6fac0e735397ce654903345995ba2f09d80e5d7831998b4ed3f779312",
       "size": 14401,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS6/provenance/PROMOTION_RECEIPT_20260907T183029Z.json",
+      "sha256": "f7b1fc7d9376520c1b82e0a6e66f20846a99e0ca07ba5781b102e17cbd021622",
+      "size": 5357,
       "mode": "0644",
       "change": "added"
     },
@@ -1164,8 +1171,8 @@
     },
     {
       "path": "scripts/FigS6/01_make_figure_s6_microglia_classifier.py",
-      "sha256": "080691192c6e191f95a8940b0145e2cf767a22b85737bfe7c8f1febf03a00f10",
-      "size": 29142,
+      "sha256": "b32576c8ea5171668aa4c74c90ebc7448a0e1794d782268cb1726547a783fce5",
+      "size": 28914,
       "mode": "0644",
       "change": "added"
     },

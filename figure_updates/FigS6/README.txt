@@ -15,6 +15,9 @@ The English master has four panels:
   C  Confusion matrix for the existing morphometric proposals.
   D  Confusion matrix for animal-held-out DINOv2 predictions.
 
+The metric definitions, animal-bootstrap intervals and internal-benchmark scope
+are stated in the English and Spanish legends. The master has no footer note.
+
 The paired baseline-minus-DINOv2 difference is 16.9 percentage points, with a
 95% animal-bootstrap interval of 7.8 to 25.1 points. Intervals use 2,000 paired
 resamples of animals and fixed predictions; they do not include retraining

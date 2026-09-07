@@ -1,0 +1,104 @@
+{
+  "byte_for_byte_verified": true,
+  "counts": {
+    "added": 0,
+    "already_identical_skipped": 26,
+    "replaced": 14,
+    "rewritten_identical": 0
+  },
+  "figure": "FigS6",
+  "files": [
+    {
+      "bytes": 38701,
+      "promoted": "FigS6/Figure_S6.pdf",
+      "sha256": "d0ef5170122f9762fcea6b9405ae95653c4b2bc40f66ad663d268e2bbb3d70d5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/Figure_S6.pdf"
+    },
+    {
+      "bytes": 1031590,
+      "promoted": "FigS6/Figure_S6.png",
+      "sha256": "d418ed4044be6b22101423a134db612b9b6c6d4eb5407e61a6a655a8431522fb",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/Figure_S6.png"
+    },
+    {
+      "bytes": 3388,
+      "promoted": "FigS6/Figure_S6_caption.txt",
+      "sha256": "92f19ce1e22fda170085138157d305b09b6266116991a41b472cdd252f7140b3",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/Figure_S6_caption.txt"
+    },
+    {
+      "bytes": 3388,
+      "promoted": "FigS6/legends/Figure_S6_LEGEND.txt",
+      "sha256": "92f19ce1e22fda170085138157d305b09b6266116991a41b472cdd252f7140b3",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_LEGEND.txt"
+    },
+    {
+      "bytes": 3482,
+      "promoted": "FigS6/legends/Figure_S6_LEGEND_spanish.txt",
+      "sha256": "e0e537c27e59094322c82aed6392fee5f57526d7a561e283b6f8c938376f1696",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2641,
+      "promoted": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND.txt",
+      "sha256": "2a7f501da4af8c420537e88412f8b430432524b3e75bddf8198eaaba83757635",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND.txt"
+    },
+    {
+      "bytes": 2750,
+      "promoted": "FigS6/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND_spanish.txt",
+      "sha256": "b81386884736a95e9fa3f6265cfd939e08ead32da3c0015554228be3ca516c3c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_A_balanced_accuracy_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2479,
+      "promoted": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND.txt",
+      "sha256": "314e1e213676dd89ee225a3c06a607d658d8a5909d1eb2dc03d87df506094729",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_B_class_recall_LEGEND.txt"
+    },
+    {
+      "bytes": 2577,
+      "promoted": "FigS6/legends/Figure_S6_panel_B_class_recall_LEGEND_spanish.txt",
+      "sha256": "1b2293e06248cf98718565984f014f8c9864c7f92a48ae3d46da0e2cb921fa43",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_B_class_recall_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2520,
+      "promoted": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND.txt",
+      "sha256": "9333c74a1e7835fb16446f0c0916e4f26289b58f32a98a7b76259dd80cc4c476",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND.txt"
+    },
+    {
+      "bytes": 2596,
+      "promoted": "FigS6/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND_spanish.txt",
+      "sha256": "0125c058d3354245e73c0aaf43860ef72eaee434e85b91d1e78b17da25b5776c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_C_morphometric_confusion_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 2480,
+      "promoted": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND.txt",
+      "sha256": "e3df20bde898910380914333831c18a77465673f5916d3b6bbc33b26f563f2e9",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND.txt"
+    },
+    {
+      "bytes": 2567,
+      "promoted": "FigS6/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND_spanish.txt",
+      "sha256": "fec9bf4a870defc155a609279ac73fe64e14a4660b470643671d05bc6c007ec7",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/legends/Figure_S6_panel_D_DINOv2_confusion_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 6416,
+      "promoted": "FigS6/provenance/FIGURE_S6_BUILD_RECEIPT.json",
+      "sha256": "016ba3d285fb6654a3664fbbc94f86136f9b396e22c8b7e149bb8eb0e7507bfc",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render/provenance/FIGURE_S6_BUILD_RECEIPT.json"
+    }
+  ],
+  "master_name_in_render": "Figure_S6",
+  "master_name_promoted": "Figure_S6",
+  "promoted_utc": "2026-09-07T18:30:29+00:00",
+  "replacement_policy": "copy_superseded_to_figure_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/media/server/STORAGE/Apotome/Paper/analyses/FigS6/footer_to_legend_20260907/render",
+  "superseded_copied_to": "FigS6/legacy/superseded_promotion_20260907T183029Z",
+  "verified_artifacts": 40
+}
