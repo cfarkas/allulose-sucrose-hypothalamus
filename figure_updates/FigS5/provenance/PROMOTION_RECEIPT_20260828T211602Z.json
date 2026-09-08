@@ -1,0 +1,214 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 29,
+    "replaced": 33
+  },
+  "figure": "FigS4",
+  "files": [
+    {
+      "bytes": 22643676,
+      "promoted": "FigS4/Figure_S4.pdf",
+      "sha256": "c933a1f97303ddedcde3adbe4185fe6ff1e73bc24451e7634a59dce295121b7f",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/Figure_S4.pdf"
+    },
+    {
+      "bytes": 26579347,
+      "promoted": "FigS4/Figure_S4.png",
+      "sha256": "0404d20d99018595bcc64259fab5cc1d299079ee12921930a0022bffb818ad25",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/Figure_S4.png"
+    },
+    {
+      "bytes": 2522,
+      "promoted": "FigS4/legends/Figure_S4_LEGEND.txt",
+      "sha256": "cbcb4d0a974dbfe8643018de6cb37c7e4c14d8f81926ad0bfade804b05bea185",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/legends/Figure_S4_LEGEND.txt"
+    },
+    {
+      "bytes": 2897,
+      "promoted": "FigS4/legends/Figure_S4_LEGEND_spanish.txt",
+      "sha256": "2dda6ff34a6e18dd41ba91dcae1ce52980f617a075509ca4efa67ccbf5853f31",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/legends/Figure_S4_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 5585583,
+      "promoted": "FigS4/panels/Figure_S4_panel_A.pdf",
+      "sha256": "52c1c4929d2d37bc68c2a36be28add8b08e0e14a82a2a2283b0b171f80cf91ef",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_A.pdf"
+    },
+    {
+      "bytes": 5586368,
+      "promoted": "FigS4/panels/Figure_S4_panel_A_spanish.pdf",
+      "sha256": "c840814e39744ccec119d6c0e01c96551518184ad4b013bbc81f751e5bf49113",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 7434725,
+      "promoted": "FigS4/panels/Figure_S4_panel_B.pdf",
+      "sha256": "d7a3c1d0aa440f333d52786927b2634a8314c80b71ffd138b64f1ed58a14a7ab",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_B.pdf"
+    },
+    {
+      "bytes": 7435166,
+      "promoted": "FigS4/panels/Figure_S4_panel_B_spanish.pdf",
+      "sha256": "5a197366d0944188ff62058db0298ef38731dae1ed13b5d3b6b3dd03fa47caef",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 5513882,
+      "promoted": "FigS4/panels/Figure_S4_panel_C.pdf",
+      "sha256": "212b9e796fd006c8b5d0d98fe9773ea62e416dd4adc157d0f0ce51e9326350e4",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_C.pdf"
+    },
+    {
+      "bytes": 5514669,
+      "promoted": "FigS4/panels/Figure_S4_panel_C_spanish.pdf",
+      "sha256": "46a1f932a5b5ba454c2d2779e2a47c11db45272c7adb79ed160dfc6271d5945c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 372915,
+      "promoted": "FigS4/panels/Figure_S4_panel_D.pdf",
+      "sha256": "f5158e3bf7b7a6e1bdf7fb21d48d8b774cd4ffdf369861c341be1222cd6e695d",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_D.pdf"
+    },
+    {
+      "bytes": 372774,
+      "promoted": "FigS4/panels/Figure_S4_panel_D_spanish.pdf",
+      "sha256": "72a2360f02dd82609e111d18dafd0c21935143ae2c9536a888f96d88e41db469",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 9265390,
+      "promoted": "FigS4/panels/Figure_S4_panel_E.pdf",
+      "sha256": "3426480385d15ebe71ea607d682b93857d0a6385a5763a23cf3678296d2bae5c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_E.pdf"
+    },
+    {
+      "bytes": 9265247,
+      "promoted": "FigS4/panels/Figure_S4_panel_E_spanish.pdf",
+      "sha256": "cac15fd4f681bae6e59ec0f613932abadb60703a4c2935215881c2e142fd7b93",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_E_spanish.pdf"
+    },
+    {
+      "bytes": 7765145,
+      "promoted": "FigS4/panels/Figure_S4_panel_F.pdf",
+      "sha256": "ed0d9ab768b7847ecc0a53d56a8314f2fa581891d3fde69309f7bafa7b5e3128",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_F.pdf"
+    },
+    {
+      "bytes": 7766078,
+      "promoted": "FigS4/panels/Figure_S4_panel_F_spanish.pdf",
+      "sha256": "ce442cabe5199097702d471a01bbbfaecd356a011a381e0a9edc0341c5f82d4a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_F_spanish.pdf"
+    },
+    {
+      "bytes": 33873,
+      "promoted": "FigS4/panels/Figure_S4_panel_G.pdf",
+      "sha256": "9230b827bcf72a6f12846a0520cc2e87e37a18602ed4bea026431c69d968450a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_G.pdf"
+    },
+    {
+      "bytes": 34665,
+      "promoted": "FigS4/panels/Figure_S4_panel_G_spanish.pdf",
+      "sha256": "15523d665aba89d4a8c36b738f93ad86c917267638cd9f5c9165e3df392ffb5a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_G_spanish.pdf"
+    },
+    {
+      "bytes": 30455,
+      "promoted": "FigS4/panels/Figure_S4_panel_H.pdf",
+      "sha256": "fe6f4b831df49c3645c16acd97da629ff099287a23ff68fff1e73993899011c3",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_H.pdf"
+    },
+    {
+      "bytes": 281443,
+      "promoted": "FigS4/panels/Figure_S4_panel_H.png",
+      "sha256": "7f8fbb361f31517fd0ad33f288d665952bbe271b60faff95e28647fb68ea5caa",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_H.png"
+    },
+    {
+      "bytes": 31469,
+      "promoted": "FigS4/panels/Figure_S4_panel_H_spanish.pdf",
+      "sha256": "e20b16de7b3752c5499a54a0f3fd08a37924e942ea6f086e17938dc54c8f89ad",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_H_spanish.pdf"
+    },
+    {
+      "bytes": 294482,
+      "promoted": "FigS4/panels/Figure_S4_panel_H_spanish.png",
+      "sha256": "7367b79421c8ca2fa9a6b7f2a03ea7a9981153a273d090a1d9d9fd0fedd44578",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_H_spanish.png"
+    },
+    {
+      "bytes": 416588,
+      "promoted": "FigS4/panels/Figure_S4_panel_I.pdf",
+      "sha256": "4612dc2e1ebbaac7de0b8805407f2962672606f53d419e19e2e2a3d8fed5b7a8",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_I.pdf"
+    },
+    {
+      "bytes": 1500138,
+      "promoted": "FigS4/panels/Figure_S4_panel_I.png",
+      "sha256": "5098a857a1c6b4a77e82bbccad8cb9cb0b29581a3ba69997e987f26b9adc2fcf",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_I.png"
+    },
+    {
+      "bytes": 417624,
+      "promoted": "FigS4/panels/Figure_S4_panel_I_spanish.pdf",
+      "sha256": "407a4204bcf0fe29535c42822067e1a1f593ddb56fe0e504dcee2d786b760045",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_I_spanish.pdf"
+    },
+    {
+      "bytes": 1519020,
+      "promoted": "FigS4/panels/Figure_S4_panel_I_spanish.png",
+      "sha256": "0ae4f04db800a656e1b409ad6e8485e62119d56b605b05b50a9dbdb0b75e24ab",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_I_spanish.png"
+    },
+    {
+      "bytes": 214553,
+      "promoted": "FigS4/panels/Figure_S4_panel_J.pdf",
+      "sha256": "d3373303ed20208feb2ddeef4db774d33a4d9a24ee1b9969b6615de1af33d37e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_J.pdf"
+    },
+    {
+      "bytes": 1043095,
+      "promoted": "FigS4/panels/Figure_S4_panel_J.png",
+      "sha256": "7b186e06af9487c9015995214f14456af198bce6b0a9fb303287a2d78cbd619c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_J.png"
+    },
+    {
+      "bytes": 215088,
+      "promoted": "FigS4/panels/Figure_S4_panel_J_spanish.pdf",
+      "sha256": "4f4e962177683cc37740b53002025c4395fa1df786e8581575e7a1c6a9a3bc52",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_J_spanish.pdf"
+    },
+    {
+      "bytes": 1052281,
+      "promoted": "FigS4/panels/Figure_S4_panel_J_spanish.png",
+      "sha256": "26913a548a1a762e12c7889fa4ab81905749c14efb9bb051378026130cb86d5d",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/panels/Figure_S4_panel_J_spanish.png"
+    },
+    {
+      "bytes": 24688,
+      "promoted": "FigS4/provenance/BUILD_RECEIPT.json",
+      "sha256": "a490d56d5623220b3e061d5df2d3d179afe7d477a786e54ca99fce706baef711",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/provenance/BUILD_RECEIPT.json"
+    },
+    {
+      "bytes": 10889,
+      "promoted": "FigS4/provenance/output_manifest.csv",
+      "sha256": "8694a137f6c0d012cee1250d72c5b7b54432edb7f5ce18082cad001c6d625a8f",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/provenance/output_manifest.csv"
+    },
+    {
+      "bytes": 2815203,
+      "promoted": "FigS4/source_data/spatial_occurrence_source.csv",
+      "sha256": "161b582804bbf77e402abffd3a75cb7c2ee97a7340d6b64d5dfe1a70b175dbcb",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z/source_data/spatial_occurrence_source.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S4",
+  "master_name_promoted": "Figure_S4",
+  "promoted_utc": "2026-08-28T21:16:03+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_hil_candidate_20260828T211307841680Z",
+  "superseded_copied_to": "FigS4/legacy/superseded_promotion_20260828T211602Z"
+}

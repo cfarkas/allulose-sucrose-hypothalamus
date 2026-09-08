@@ -1,0 +1,18 @@
+{
+  "body_weight_rows": 39,
+  "consumption_rows": 15,
+  "maximum_absolute_difference": {
+    "body_weight_change_pct": 1.7763568394002505e-15,
+    "cumulative_cage_volume_removed_ml": 0.0
+  },
+  "reference_sha256": {
+    "body_weight_primary_values": "025da38d175ced44a427cdde953e00c3b97548dd291d946ab53d46b31525e127",
+    "consumption_primary_values": "9fa78d7c456592b711d38ceb20f4e6eea84eae75d85ed6f518b936edd4068d4b"
+  },
+  "references": [
+    "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/results/consumption_primary_values.csv",
+    "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/results/body_weight_primary_values.csv"
+  ],
+  "sex": "Female",
+  "status": "keys_exact_numeric_match_atol_1e-12"
+}

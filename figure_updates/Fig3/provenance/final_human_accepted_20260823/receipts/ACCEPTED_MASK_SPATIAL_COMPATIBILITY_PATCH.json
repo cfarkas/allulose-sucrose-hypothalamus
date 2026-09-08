@@ -1,0 +1,36 @@
+{
+  "canonical_live_script_modified": false,
+  "canonical_sha256": "4982263abdcb38129cd6e5891c627d8e3ee6dcde949a16a01c2d817099dd4d79",
+  "patched_sha256": "2728cf0a5faa59e3592fc8efd2d670c7d6076821054f25dfdf2e4b4ab59df674",
+  "semantic_scope": [
+    "Expected Water3 DAPI nonmodal-model inventory changed from [WATER_NPY3] to [] because the mandatory accepted mask records the modal dapi_channel model.",
+    "The associated caveat text was corrected; analysis algorithms, shell construction, statistics, conditions, and group membership were not changed."
+  ],
+  "status": "PASS",
+  "unified_diff": [
+    "--- ",
+    "+++ ",
+    "@@ -1038,7 +1038,7 @@",
+    "     dapi_nonmodal = audit.loc[",
+    "         audit[\"channel\"].eq(\"DAPI\") & ~audit[\"matches_channel_model_mode\"], \"animal_id\"",
+    "     ].tolist()",
+    "-    if dapi_nonmodal != [\"WATER_NPY3\"]:",
+    "+    if dapi_nonmodal != []:",
+    "         raise RuntimeError(f\"Unexpected DAPI model heterogeneity inventory: {dapi_nonmodal}\")",
+    "     for endpoint in ENDPOINTS:",
+    "         for suffix in (\".png\", \".pdf\"):",
+    "@@ -1233,8 +1233,8 @@",
+    "                     \"but do not eliminate acquisition confounding.\"",
+    "                 ),",
+    "                 (",
+    "-                    \"The WATER_NPY3 DAPI mask records dapi_Keyence4 rather than the modal \"",
+    "-                    \"dapi_channel model; DAPI labels define all shells and denominators.\"",
+    "+                    \"The mandatory human-accepted WATER_NPY3 DAPI mask records the modal \"",
+    "+                    \"dapi_channel model; its accepted labels define all shells and denominators.\"",
+    "                 ),",
+    "                 (",
+    "                     \"NPY masks for E7_FR7-5 and E8_FR6-1 record dapi_channel rather than the \""
+  ],
+  "v1_failure_receipt_path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v1/provenance/STAGE_FAILED.json",
+  "v1_failure_receipt_sha256": "e9fa1329e0c0ff3c6dd3d3cc39537889968b064d52d6b21dcb217ff942993c37"
+}

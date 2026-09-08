@@ -1,0 +1,1 @@
+Figure S1 panel D. Male Day-6 cage-mean body-weight endpoint. Each dot is one cage. One-way ANOVA p = 0.049; the three pairwise exact p values are Holm-adjusted within this sex and outcome. 

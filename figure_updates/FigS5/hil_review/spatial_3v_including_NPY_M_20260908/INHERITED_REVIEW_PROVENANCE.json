@@ -1,0 +1,49 @@
+{
+  "source_receipt": "FigS5/hil_review/spatial_tissue_20260828_v1/SPATIAL_TISSUE_HIL_RECEIPT.json",
+  "source_receipt_sha256": "d4894f13e040ab8366037d0782db9dc66ca687c3313b0d03799581dd9baecc98",
+  "records": [
+    {
+      "acquisition_id": "2026-07-10_AGUA-M_Water",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    },
+    {
+      "acquisition_id": "2026-07-10_FR5-5_Water",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    },
+    {
+      "acquisition_id": "2026-07-09_FR5-3_Sucrose",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    },
+    {
+      "acquisition_id": "2026-07-09_FR5-4_Sucrose",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    },
+    {
+      "acquisition_id": "2026-07-10_FR4-3_Sucrose",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    },
+    {
+      "acquisition_id": "2026-07-09_FR4-1_Allulose",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    },
+    {
+      "acquisition_id": "2026-07-09_FR5-1_Allulose",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    },
+    {
+      "acquisition_id": "2026-07-09_FR5-2_Allulose",
+      "mask_unchanged": true,
+      "points_unchanged": true
+    }
+  ],
+  "new_review_required": [
+    "2026-07-10_NPY-M_Water"
+  ]
+}

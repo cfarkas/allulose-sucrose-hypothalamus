@@ -489,6 +489,20 @@ def prepare_weights(path: Path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFram
     raw["AnimalID"] = clean_text(raw["AnimalID"])
     raw["subject_id"] = raw["E"] + "|" + raw["AnimalID"]
     raw["Date"] = pd.to_datetime(raw["Date"], errors="coerce")
+    # Author clarification, 2026-09-08: FR5-4 moved E2 -> E10 for dehydration
+    # on January 17 AFTER the day-6 measurement. Keep source labels and records.
+    raw["Treatment_source"] = raw["Treatment"]
+    raw["animal_id_reconciled"] = raw["subject_id"]
+    moved = raw["AnimalID"].eq("FR5-4") & raw["E"].isin(["E2", "E10"])
+    raw.loc[moved, "animal_id_reconciled"] = "E2|FR5-4"
+    control = raw["E"].eq("E10") & raw["AnimalID"].eq("FR6-2") & raw["Treatment"].eq("Control")
+    raw.loc[control, "Treatment"] = "Water"
+    after_transfer = moved & raw["E"].eq("E10") & raw["Date"].gt(pd.Timestamp("2025-01-17"))
+    raw.loc[after_transfer, "Treatment"] = "Water"
+    raw["author_clarification"] = ""
+    raw.loc[control, "author_clarification"] = "Control label reconciled to Water in control cage E10"
+    raw.loc[moved, "author_clarification"] = "Same animal; humane transfer for dehydration after day-6 measurement on 2025-01-17"
+    raw["post_humane_transfer"] = after_transfer
     raw["BodyWeight"] = pd.to_numeric(raw["BodyWeight"], errors="coerce")
     raw["cohort"] = assign_cohort(raw["E"], raw["Date"])
     raw["study_day"] = raw["Date"].dt.strftime("%Y-%m-%d").map(DATE_DAY_MAP)
@@ -556,7 +570,7 @@ def make_cage_design(consumption_raw: pd.DataFrame, weights_raw: pd.DataFrame) -
         c = consumption_raw.loc[consumption_raw["E"].eq(cage)]
         w = weights_raw.loc[weights_raw["E"].eq(cage)]
         january_w = w.loc[w["cohort"].eq("January_E1-E12")]
-        primary_w = january_w.loc[january_w["Treatment"].isin(CONDITIONS)]
+        primary_w = january_w.loc[january_w["primary_body_weight_row"]]
         observed_all = january_w["subject_id"].nunique()
         observed_primary = primary_w["subject_id"].nunique()
         nominal = NOMINAL_CAGE_SIZES.get(cage, np.nan)
@@ -661,6 +675,7 @@ Figure 1 is an exploratory January-cohort analysis. It does not reproduce the le
 - August add-on: E13/E14, dated August 18, 21, and 24, 2025. It contains {len(august_c)} consumption-table rows, all Bottle_Weight, and {len(august_w)} mouse-weight rows. It contains zero measured Bottle_Volume rows and is not pooled with January.
 - The raw consumption CSV contains {int(consumption_raw['measured_zero_value'].sum())} measured zero values. The apparent August zero-volume/intake values in the legacy combined output were join/fill artifacts: absent Bottle_Volume was converted to zero. This pipeline never imputes absent bottle volume.
 - E9 is retained: {e9_rows} primary rows for one mouse, with genotype explicitly represented as Unknown. The consumption file separately labels its volume record NPY, so the cross-file genotype conflict is preserved rather than guessed away.
+- Author clarification (8 September 2026): FR5-4 was transferred from allulose cage E2 to water-control cage E10 for dehydration on 17 January, after the day-6 measurement. Both cage records identify the same animal. The primary window retains its pre-transfer allulose observations; later observations are flagged as post-transfer. E10/FR6-2, originally labelled Control, is reconciled to Water. The original CSV and source labels are retained.
 - Cages containing multiple mouse-level treatment labels are flagged in cage_design_and_size_qc.csv. For the body-weight endpoint, only valid rows matching the cage bottle treatment enter the cage-balanced primary summary.
 - There are {invalid_weights} nonpositive/missing weight rows. They are flagged as invalid and never interpreted as 0-g mice. None is needed to complete the January Day 1/3/6 primary series.
 
@@ -675,7 +690,7 @@ Figure 1 is an exploratory January-cohort analysis. It does not reproduce the le
 
 ## Body weight (panels C-D)
 
-- Panel C displays {weights_primary['subject_id'].nunique()} mice descriptively, uniquely keyed by E|AnimalID. Thick summaries are cage-balanced means, not mouse-level inferential estimates.
+- Panel C displays {weights_primary['subject_id'].nunique()} mice descriptively, keyed by their primary-window cage and AnimalID, with a separate reconciled identity linking the transferred animal. Thick summaries are cage-balanced means, not mouse-level inferential estimates.
 - Day-6 inference first averages mouse percent changes within each cage, then compares Water {weight_cage_counts.get('Water', 0)}, Sucrose {weight_cage_counts.get('Sucrose', 0)}, and Allulose {weight_cage_counts.get('Allulose', 0)} cages.
 - Ordinary one-way ANOVA omnibus p={weight_p:.6g}; exact cage-label sensitivity p={weight_exact_p:.6g}. Three pairwise exact tests use Holm correction. No HC3 mouse-level model is used.
 - Descriptive mouse counts are Water {mouse_counts.get('Water', 0)}, Sucrose {mouse_counts.get('Sucrose', 0)}, Allulose {mouse_counts.get('Allulose', 0)}. They do not replace cage N for inference.
@@ -827,7 +842,7 @@ def main() -> int:
     publish_staging_output(args.outdir, final_outdir)
     print(f"[ANALYSIS] {final_outdir}")
     print(f"[AUDIT] {final_outdir / 'FIGURE1_STATISTICAL_AUDIT.md'}")
-    print("[PRIMARY N] consumption cages=12; weight cages=12; weight mice=23")
+    print(f"[PRIMARY N] consumption cages={consumption_primary['E'].nunique()}; weight cages={weight_endpoint['E'].nunique()}; weight mice={weights_primary['animal_id_reconciled'].nunique()}")
     return 0
 
 

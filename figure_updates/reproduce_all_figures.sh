@@ -22,7 +22,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 PAPER_ROOT="$SCRIPT_DIR"
-FIGS5_SPATIAL_HIL="$PAPER_ROOT/FigS5/hil_review/spatial_tissue_20260828_v1"
+FIGS5_SPATIAL_HIL="$PAPER_ROOT/FigS5/hil_review/spatial_3v_including_NPY_M_20260908"
 ENV_NAME="${PAPER_ENV:-paper_apotome_repro}"
 OUT_ARG=""
 PROMOTE_COMPAT=0
@@ -240,6 +240,20 @@ if ! REVIEW_PY="$(select_review_python "$PY" "$CONDA_BASE")"; then
   exit 2
 fi
 
+# The complete Figure 3 compositor uses PyMuPDF; it may live in a separate
+# existing interpreter from the pinned image-review environment.
+FIG3_PDF_BIN=""
+for candidate in "${FIG3_PDF_PYTHON:-}" "$REVIEW_PY" "$PY" "$CONDA_BASE/envs/lazyslide311/bin/python" "$CONDA_BASE/bin/python"; do
+  if [[ -n "$candidate" && -x "$candidate" ]] && "$candidate" -c 'import fitz; from PIL import Image' >/dev/null 2>&1; then
+    FIG3_PDF_BIN="$candidate"
+    break
+  fi
+done
+if [[ -z "$FIG3_PDF_BIN" ]]; then
+  printf '%s\n' 'Figure 3 completion requires PyMuPDF and Pillow. Set FIG3_PDF_PYTHON to an interpreter containing both.' >&2
+  exit 2
+fi
+
 export PAPER="$PAPER_ROOT"
 export FIG2_PAPER_ROOT="$PAPER_ROOT"
 export FIG4_PAPER_ROOT="$PAPER_ROOT"
@@ -306,7 +320,7 @@ printf '%s\n' '' '== Step 0: validate repository and dependencies =='
 PATH="$REVIEW_BIN:$PATH" FigS3/00_check_environment.sh --replay
 PATH="$REVIEW_BIN:$PATH" "$REVIEW_PY" FigS3/07_validate_figure_s3.py --check-only
 "$REVIEW_PY" Fig3/02a_review_cfos_npy_ventricles.py --prepare-only
-"$PY" scripts/utilities/06_import_figure_s5_hil.py --source-only
+"$PY" scripts/utilities/06_import_figure_s5_hil.py --from FigS5/hil_review/human_final_including_NPY_M_20260908 --source-only
 "$PY" FigS5/03_make_figure_s5_acth_clip_cfos.py \
   --spatial-hil-dir "$FIGS5_SPATIAL_HIL" \
   --validate-spatial-hil-source-only
@@ -578,8 +592,11 @@ figure_progress_done
 
 printf '%s\n' '' '== Step 5: S5 from anatomy HIL plus reviewed per-acquisition 3V exclusion =='
 figure_progress_start 'Figure S5'
+"$PY" FigS5/06_include_npy_m.py --root "$PAPER_ROOT"
 "$PY" FigS5/02a_july_cfos_acth_clip_human_in_loop_s5.py \
   --prepare \
+  --sample-manifest FigS5/provenance/inclusion_NPY_M_20260908/sample_manifest.csv \
+  --channel-map FigS5/provenance/inclusion_NPY_M_20260908/channel_map.csv \
   --export-dir FigS5/channel_tiffs \
   --workdir "$OUT/FigS5/work"
 "$PY" FigS5/02a_july_cfos_acth_clip_human_in_loop_s5.py \
@@ -587,6 +604,7 @@ figure_progress_start 'Figure S5'
   --export-dir FigS5/channel_tiffs \
   --workdir "$OUT/FigS5/work"
 "$PY" scripts/utilities/06_import_figure_s5_hil.py \
+  --from FigS5/hil_review/human_final_including_NPY_M_20260908 \
   --workdir "$OUT/FigS5/work"
 "$PY" FigS5/02a_july_cfos_acth_clip_human_in_loop_s5.py \
   --quantify \
@@ -734,7 +752,7 @@ replace_canonical_analysis "$OUT/Fig2/stage/analysis" "$PAPER_ROOT/analyses/Fig2
 replace_canonical_analysis "$OUT/Fig3/analysis" "$PAPER_ROOT/analyses/Fig3/results"
 replace_canonical_analysis "$OUT/Fig4/analysis" "$PAPER_ROOT/analyses/Fig4/results/human_final_run"
 replace_canonical_analysis "$OUT/Fig4/figure" "$PAPER_ROOT/analyses/Fig4/figure/human_final_render"
-replace_canonical_analysis "$OUT/FigS5/work" "$PAPER_ROOT/analyses/FigS4/july_cfos_acth_clip_work_20260828_v1"
+replace_canonical_analysis "$OUT/FigS5/work" "$PAPER_ROOT/analyses/FigS5/results/including_NPY_M_20260908"
 replace_canonical_analysis "$OUT/Fig5/analysis" "$PAPER_ROOT/analyses/Fig5/results/human_final_run"
 replace_canonical_analysis "$OUT/Fig5/figure" "$PAPER_ROOT/analyses/Fig5/figure/human_final_render"
 replace_canonical_analysis "$OUT/Fig5/microglial_choices" "$PAPER_ROOT/analyses/Fig5/results/current_microglial_choices"
@@ -742,6 +760,10 @@ replace_canonical_analysis "$OUT/FigS1/analysis" "$PAPER_ROOT/analyses/FigS1/res
 replace_canonical_analysis "$OUT/FigS2/analysis" "$PAPER_ROOT/analyses/FigS2/results"
 replace_canonical_analysis "$OUT/FigS4/analysis" "$PAPER_ROOT/analyses/FigS3/results"
 replace_canonical_analysis "$OUT/FigS6/figure" "$PAPER_ROOT/analyses/FigS6/figure/current"
+
+printf '%s\n' '' '== Complete Figure 3 with accepted sucrose and bilingual subpanels =='
+FIG3_RENDER_PYTHON="$PY" FIG3_PDF_PYTHON="$FIG3_PDF_BIN" \
+  ./Fig3/07_rebuild_complete_figure3.sh --base-panels-dir "$OUT/Fig3/out/final/panels"
 
 printf '%s\n' '' '== Final canonical tree and immutable-input validation =='
 "$PY" scripts/utilities/09_audit_canonical_inputs.py \
@@ -764,5 +786,5 @@ printf 'Previous generated analyses are recoverable at: %s\n' "$INSTALL_RECOVERY
 if ((FORCE_FIG3)); then
   printf '%s\n' 'All eleven figures were installed, including certified Figure 3 (--force).'
 else
-  printf '%s\n' 'Ten figures were installed; certified Figure 3 was validated and retained.'
+  printf '%s\n' 'Ten figures were installed; certified Figure 3 measurements were retained and its three-condition presentation was rebuilt.'
 fi

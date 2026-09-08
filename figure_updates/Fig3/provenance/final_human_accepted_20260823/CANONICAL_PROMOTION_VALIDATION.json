@@ -1,0 +1,41 @@
+{
+  "additional_preserved": [
+    "Figure_3_cFos_NPY_recovered_from_pdf.png",
+    "README.txt"
+  ],
+  "archive_files": 15,
+  "archive_root": "/media/server/STORAGE/Apotome/Paper/Fig3/provenance/superseded_pre_human_accepted_20260823",
+  "canonical_root": "/media/server/STORAGE/Apotome/Paper/Fig3",
+  "checks": [
+    "source count/bytes",
+    "regular nonsymlink sources",
+    "target confinement",
+    "exact collision set",
+    "exclusive-create backups",
+    "archive SHA/size/distinct inode",
+    "atomic mapped replacements",
+    "destination SHA/size/distinct inode"
+  ],
+  "forbidden_paths_accessed": false,
+  "mapped_bytes": 58781778,
+  "mapped_payloads": 89,
+  "readme": {
+    "archive": "/media/server/STORAGE/Apotome/Paper/Fig3/provenance/superseded_pre_human_accepted_20260823/README.txt",
+    "previous_sha256": "a8974c97f19d83cdbb6bfc4f28524e71461e19602f2fd0b886923347d98c3078",
+    "sha256": "6a2797aadf29a7c7978d3f9f68ecf7569b7f72a1c35b64d7ba65587ada44aafa",
+    "size_bytes": 2545,
+    "status": "PASS"
+  },
+  "replacements_preserved": 13,
+  "source_root": "/media/server/STORAGE/Apotome/Paper/Fig3/final_human_accepted_20260823",
+  "status": "PASS",
+  "timestamp_utc": "2026-08-23T17:21:14.478393+00:00",
+  "water_npy3_authorization": {
+    "authorization": "User explicitly authorized final render and canonical promotion using WATER_NPY3 as the stable unique identifier.",
+    "constraint": "No true animal identity was invented; caveat remains in legends and provenance.",
+    "identifier": "WATER_NPY3",
+    "status": "AUTHORIZED_STABLE_UNIQUE_IDENTIFIER",
+    "supersedes_as_promotion_blocker": "receipts/SCIENTIFIC_METADATA_BLOCKER.json",
+    "true_biological_id": "unresolved"
+  }
+}

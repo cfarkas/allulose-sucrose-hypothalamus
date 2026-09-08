@@ -1,0 +1,29 @@
+{
+  "schema": "figs5_NPY_M_author_inclusion_v1",
+  "date": "2026-09-08",
+  "author_instruction": "Include NPY-M",
+  "author_confirmed_channel_assignment": {
+    "DAPI": "DAPI",
+    "AF488": "NPY-GFP",
+    "AF546": "ACTH/CLIP",
+    "AF633": "c-FOS"
+  },
+  "genotype": "NPY-Tg",
+  "sex": "male",
+  "condition": "Water",
+  "cohort_counts": {
+    "Allulose": 3,
+    "Sucrose": 3,
+    "Water": 3
+  },
+  "previous_exclusion": "NON_WT_COHORT_REQUIRES_SEPARATE_ANALYSIS",
+  "source_sha256": {
+    "FigS5/channel_tiffs/sample_manifest.csv": "b5029da5d18c689fef52184e047cc8defbee92ab774a1623ec371b9ff580cc3f",
+    "FigS5/channel_tiffs/channel_map.csv": "b308c9fa588286697f7de307e4fbe0ff2d036cc64283c702238edfe0d8c4cb78"
+  },
+  "overlay_sha256": {
+    "sample_manifest.csv": "d6e11ed2731a0b5425fab4039809da17404d56afbccbc701b6680f133908a10c",
+    "channel_map.csv": "6f35fa9474e32caf0c0478b52c693036d2a42233449e006e8ab176d5108db4a1"
+  },
+  "raw_data_unchanged": true
+}

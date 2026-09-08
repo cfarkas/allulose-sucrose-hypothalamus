@@ -1,0 +1,333 @@
+{
+  "all_present_fonts_embedded": true,
+  "english_master_only": true,
+  "letter_title_clearance": [
+    {
+      "clear": true,
+      "horizontal_gap_points": 63.008759999999995,
+      "letter_bbox": [
+        53.109141,
+        6.924938,
+        69.559898,
+        30.015458
+      ],
+      "panel": "D",
+      "title_first_word_bbox": [
+        132.568658,
+        8.590454,
+        190.54271,
+        20.135714
+      ]
+    },
+    {
+      "clear": true,
+      "horizontal_gap_points": 35.983005000000006,
+      "letter_bbox": [
+        52.736099,
+        6.924938,
+        66.273288,
+        30.015458
+      ],
+      "panel": "E",
+      "title_first_word_bbox": [
+        102.256293,
+        8.590454,
+        160.230345,
+        20.135714
+      ]
+    }
+  ],
+  "master_height_occupancy": 0.9526315789473684,
+  "master_nonwhite_bbox": [
+    51,
+    70,
+    4729,
+    4957
+  ],
+  "master_pixels": [
+    4800,
+    5130
+  ],
+  "master_thresholds": {
+    "height_min": 0.94,
+    "width_min": 0.96
+  },
+  "master_width_occupancy": 0.9745833333333334,
+  "no_in_panel_footnotes_by_renderer_contract": true,
+  "paired_panels": [
+    {
+      "effective_dpi_en": [
+        599.9873031995937,
+        599.9345424319293
+      ],
+      "effective_dpi_es": [
+        599.9873031995937,
+        599.9345424319293
+      ],
+      "exact_page_geometry_match": true,
+      "exact_pixel_geometry_match": true,
+      "fonts": [
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 1
+        },
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 1
+        }
+      ],
+      "panel": "A",
+      "pdf_page_points_en": [
+        1134.144,
+        466.6109053585
+      ],
+      "pdf_page_points_es": [
+        1134.144,
+        466.6109053585
+      ],
+      "png_pixels_en": [
+        9451,
+        3888
+      ],
+      "png_pixels_es": [
+        9451,
+        3888
+      ]
+    },
+    {
+      "effective_dpi_en": [
+        599.9248177324866,
+        599.9631023405882
+      ],
+      "effective_dpi_es": [
+        599.9248177324866,
+        599.9631023405882
+      ],
+      "exact_page_geometry_match": true,
+      "exact_pixel_geometry_match": true,
+      "fonts": [
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 0
+        },
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 0
+        }
+      ],
+      "panel": "B",
+      "pdf_page_points_en": [
+        561.6703794212,
+        203.4125090758
+      ],
+      "pdf_page_points_es": [
+        561.6703794212,
+        203.4125090758
+      ],
+      "png_pixels_en": [
+        4680,
+        1695
+      ],
+      "png_pixels_es": [
+        4680,
+        1695
+      ]
+    },
+    {
+      "effective_dpi_en": [
+        599.9248177324866,
+        599.9631023405882
+      ],
+      "effective_dpi_es": [
+        599.9248177324866,
+        599.9631023405882
+      ],
+      "exact_page_geometry_match": true,
+      "exact_pixel_geometry_match": true,
+      "fonts": [
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 0
+        },
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 0
+        }
+      ],
+      "panel": "C",
+      "pdf_page_points_en": [
+        561.6703794212,
+        203.4125090758
+      ],
+      "pdf_page_points_es": [
+        561.6703794212,
+        203.4125090758
+      ],
+      "png_pixels_en": [
+        4680,
+        1695
+      ],
+      "png_pixels_es": [
+        4680,
+        1695
+      ]
+    },
+    {
+      "effective_dpi_en": [
+        599.9760588727723,
+        599.8644407554935
+      ],
+      "effective_dpi_es": [
+        599.9760580541649,
+        599.8644400832252
+      ],
+      "exact_page_geometry_match": true,
+      "exact_pixel_geometry_match": true,
+      "fonts": [
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 2
+        },
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 2
+        }
+      ],
+      "panel": "D",
+      "pdf_page_points_en": [
+        311.0524115756,
+        274.3819916925
+      ],
+      "pdf_page_points_es": [
+        311.052412,
+        274.381992
+      ],
+      "png_pixels_en": [
+        2592,
+        2286
+      ],
+      "png_pixels_es": [
+        2592,
+        2286
+      ]
+    },
+    {
+      "effective_dpi_en": [
+        599.9181671339919,
+        599.8644407554935
+      ],
+      "effective_dpi_es": [
+        599.9181663152266,
+        599.8644400832252
+      ],
+      "exact_page_geometry_match": true,
+      "exact_pixel_geometry_match": true,
+      "fonts": [
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 2
+        },
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 2
+        }
+      ],
+      "panel": "E",
+      "pdf_page_points_en": [
+        310.9624115756,
+        274.3819916925
+      ],
+      "pdf_page_points_es": [
+        310.962412,
+        274.381992
+      ],
+      "png_pixels_en": [
+        2591,
+        2286
+      ],
+      "png_pixels_es": [
+        2591,
+        2286
+      ]
+    },
+    {
+      "effective_dpi_en": [
+        599.9634096736374,
+        599.9539622383298
+      ],
+      "effective_dpi_es": [
+        599.9634096736374,
+        599.9539622383298
+      ],
+      "exact_page_geometry_match": true,
+      "exact_pixel_geometry_match": true,
+      "fonts": [
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 1
+        },
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 1
+        }
+      ],
+      "panel": "F",
+      "pdf_page_points_en": [
+        581.1954435516,
+        287.1820353635
+      ],
+      "pdf_page_points_es": [
+        581.1954435516,
+        287.1820353635
+      ],
+      "png_pixels_en": [
+        4843,
+        2393
+      ],
+      "png_pixels_es": [
+        4843,
+        2393
+      ]
+    },
+    {
+      "effective_dpi_en": [
+        599.9019844289136,
+        599.9539622383298
+      ],
+      "effective_dpi_es": [
+        599.9019844289136,
+        599.9539622383298
+      ],
+      "exact_page_geometry_match": true,
+      "exact_pixel_geometry_match": true,
+      "fonts": [
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 1
+        },
+        {
+          "all_present_fonts_embedded": true,
+          "font_rows": 1
+        }
+      ],
+      "panel": "G",
+      "pdf_page_points_en": [
+        584.2554435516,
+        287.1820353635
+      ],
+      "pdf_page_points_es": [
+        584.2554435516,
+        287.1820353635
+      ],
+      "png_pixels_en": [
+        4868,
+        2393
+      ],
+      "png_pixels_es": [
+        4868,
+        2393
+      ]
+    }
+  ],
+  "status": "PASS"
+}

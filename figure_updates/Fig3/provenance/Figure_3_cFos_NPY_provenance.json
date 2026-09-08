@@ -1,0 +1,998 @@
+{
+  "analysis_directory": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run",
+  "cartoons": {
+    "accepted_ventricle_hil": {
+      "Allulose": {
+        "accepted_at_utc": "2026-08-27T19:19:03.204734+00:00",
+        "analysis_role": "display annotation only; never an analysis ROI or denominator",
+        "mask_file_sha256": "c1533b1420c3b944ce5308d9643a03f10732d0fb2259e0953fda4dce8faec70f",
+        "mask_geometry": {
+          "area_px": 61652,
+          "bbox_yxyx_half_open": [
+            2,
+            629,
+            648,
+            858
+          ],
+          "binary_sha256": "456634e39b1cf977c71c613e7cd337b4aeb699ac83f1cfca29d021bd5dea7ea2",
+          "centroid_yx": [
+            380.3980892752871,
+            706.6906831895153
+          ],
+          "connected_components_8": 1,
+          "contour_path_counts": {
+            "external": 1,
+            "tree": 1
+          }
+        },
+        "mask_path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/accepted_ventricle_hil/allulose_ventricle_mask.png",
+        "method": "human-in-the-loop closed polygon in the exact registered common frame",
+        "notes": "",
+        "polygon_vertex_count": 45,
+        "raster_vertices_sha256_i32_le": "2a94e6594ba80f4c3294cc90b1ec557a13914344eea8b905fa029b8a143f8cc9",
+        "receipt_path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/accepted_ventricle_hil/allulose_ventricle_receipt.json",
+        "receipt_sha256": "12f33f21d9237283165d00841dd879f89ae43db0d2aed8625a6a0c1f7488c8e5",
+        "reviewer": "Carlos Farkas",
+        "session": "1",
+        "source_binding": {
+          "dapi_tiff_sha256": "59318a5c319d2d72c5aa3bc672742852149ea9038cdd143b0df2b5c5e9fe1f6b",
+          "raw_dapi_lumen_source_binary_sha256": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973",
+          "registered_dapi_binary_sha256": "99d8d5e4c45d9e3f475ca25ae1fbf04f697886452b0a4345fdb7375cd82640aa"
+        }
+      },
+      "Water": {
+        "accepted_at_utc": "2026-08-27T19:18:12.640945+00:00",
+        "analysis_role": "display annotation only; never an analysis ROI or denominator",
+        "mask_file_sha256": "af29c6fb929aa39baf3d8b09eec724b1da3a3e6cfbfa54fcedc4f1ccc97529ae",
+        "mask_geometry": {
+          "area_px": 35339,
+          "bbox_yxyx_half_open": [
+            8,
+            545,
+            603,
+            802
+          ],
+          "binary_sha256": "c559f0c4f2bfa8a411fcb499bc0aefba4ec8460a8f0f38a3d1fcef2754182bdc",
+          "centroid_yx": [
+            433.44721129630153,
+            689.5444975805767
+          ],
+          "connected_components_8": 1,
+          "contour_path_counts": {
+            "external": 1,
+            "tree": 1
+          }
+        },
+        "mask_path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/accepted_ventricle_hil/water_ventricle_mask.png",
+        "method": "human-in-the-loop closed polygon in the exact registered common frame",
+        "notes": "",
+        "polygon_vertex_count": 59,
+        "raster_vertices_sha256_i32_le": "d4e50267f88e59f5f8a3012564e32ffafcc96822c50a127e7d35d35d29296655",
+        "receipt_path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/accepted_ventricle_hil/water_ventricle_receipt.json",
+        "receipt_sha256": "c74d378f681895453f1582f4513357fd0680872557d14da989692a452751395c",
+        "reviewer": "Carlos Farkas",
+        "session": "1",
+        "source_binding": {
+          "dapi_tiff_sha256": "d5d40182e3d4bf396ef1277815f851d111aa90bfba3d6b2bf7083080c9657044",
+          "raw_dapi_lumen_source_binary_sha256": "1e462a1232813f3ed4b36f6893d12b114473f1ff3cf7c089bfccf363e2e70063",
+          "registered_dapi_binary_sha256": "19c1aa3aac1f80b49bc27c55d2876e81a1ee31c0a32eb31326489a11e13236bc"
+        }
+      }
+    },
+    "classification_coordinates": "complete native DAPI/c-FOS/NPY label fields before display transform",
+    "common_frame_shape_yx": [
+      866,
+      1374
+    ],
+    "common_frame_um_per_px": 0.664212669961432,
+    "count_location": "caption, panel legends, and cartoon provenance sidecar",
+    "display_field_counts": {
+      "Allulose": {
+        "cfos_positive_nuclei": 271,
+        "dual_positive_nuclei": 131,
+        "npy_positive_nuclei": 493
+      },
+      "Water": {
+        "cfos_positive_nuclei": 113,
+        "dual_positive_nuclei": 57,
+        "npy_positive_nuclei": 205
+      }
+    },
+    "external_tissue_boundaries": "binary_fill_holes(display tissue silhouette) for contouring only; original tissue mask controls fill; exactly one external gray path and no internal gray paths per view",
+    "external_tissue_outline_binary_sha256": {
+      "Allulose": "d8053c8bffd6fb5e7b44d9623e9cc786c9c14beed4f8bece1073910a3b0b660a",
+      "Water": "37492cf3f736f56f810488e0b2a497e89b2c8877976af21ae9e94e18ee5e0d9b"
+    },
+    "in_panel_method_footnotes": false,
+    "in_panel_status_counts": false,
+    "label_registration": "fixed Panel-A-derived homographies; nearest neighbor only",
+    "method_location": "caption, panel legends, and cartoon provenance sidecar",
+    "panel_roles": {
+      "B": "Water marker-positive DAPI nuclei",
+      "C": "Allulose marker-positive DAPI nuclei"
+    },
+    "panel_title_horizontal_alignment": "center",
+    "panel_title_x_figure_fraction": 0.5,
+    "same_physical_canvas_colors_titles_and_scale_bar_grammar": true,
+    "source_receipt": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_cFOS_NPY_cartoon_provenance.json",
+    "ventricular_boundary_binary_sha256": {
+      "Allulose": "456634e39b1cf977c71c613e7cd337b4aeb699ac83f1cfca29d021bd5dea7ea2",
+      "Water": "c559f0c4f2bfa8a411fcb499bc0aefba4ec8460a8f0f38a3d1fcef2754182bdc"
+    },
+    "ventricular_lumen_boundaries": "hash-bound raw-DAPI source masks; Water adds registered DAPI-label-clearance superior completion; accepted HIL closed polygons are source-, reviewer-, timestamp- and mask-hash-bound; exactly one outer black path per view; display annotations only, never analysis ROIs or denominators",
+    "ventricular_source_binary_sha256": {
+      "Allulose": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973",
+      "Water": "1e462a1232813f3ed4b36f6893d12b114473f1ff3cf7c089bfccf363e2e70063"
+    },
+    "view_title_text": [
+      "NPY-positive nuclei",
+      "c-FOS-positive nuclei",
+      "Combined status"
+    ],
+    "views_in_order": [
+      "NPY-positive DAPI nuclei",
+      "c-FOS-positive DAPI nuclei",
+      "combined/dual status"
+    ],
+    "water_superior_lumen_extension": {
+      "base_apex_xy": [
+        708,
+        219
+      ],
+      "centerline_path_sha256_i32_le": "44372b1db1143fa5c1bf90278b663ba22e9ab2152698a7e8f0b5f8b683001c67",
+      "centerline_rule": "dynamic-programming path maximizing cumulative Euclidean distance-transform values computed from the registered DAPI-label complement; fixed apex, free top endpoint, |dx|<=1, leftmost ties",
+      "centerline_top_xy": [
+        698,
+        0
+      ],
+      "corridor_x_half_open": [
+        604,
+        769
+      ],
+      "final_area_px": 35541,
+      "final_bbox_yxyx_half_open": [
+        0,
+        537,
+        606,
+        802
+      ],
+      "final_binary_sha256": "1e462a1232813f3ed4b36f6893d12b114473f1ff3cf7c089bfccf363e2e70063",
+      "top_row_x_inclusive": [
+        692,
+        704
+      ]
+    }
+  },
+  "caveats": [
+    "exploratory legacy analysis",
+    "acquisition/batch confounding",
+    "WATER_NPY3 animal identifier provisional",
+    "Panel A display stretches are independent and cannot support cross-condition intensity comparison",
+    "Panels F/G occurrence profiles jointly reflect prevalence and radial location and are not abundance-independent",
+    "PERMANOVA may reflect group-centroid and/or dispersion differences; interpret with the exact dispersion audit",
+    "F/G field coordinates are DAPI-cloud centered/whitened and are not anatomy or ventricle aligned",
+    "WATER_NPY3 DAPI model setting differs from modal DAPI; E7_FR7-5 and E8_FR6-1 NPY settings differ from modal NPY",
+    "F/G heatmap colors use separate endpoint-specific scales and cannot be compared across panels"
+  ],
+  "condition_colors": {
+    "Allulose": "#2ecc71",
+    "Sucrose": "#e31a1c",
+    "Water": "#b9e3f2"
+  },
+  "conditions": [
+    "Water",
+    "Sucrose",
+    "Allulose"
+  ],
+  "display_scale": "100 * animal ratio in D/E; source ratios used for ANOVA and exact MWU",
+  "endpoint_counts": {
+    "cfos_over_dapi": {
+      "Allulose": 3,
+      "Sucrose": 3,
+      "Water": 3
+    },
+    "double_over_npy": {
+      "Allulose": 3,
+      "Sucrose": 3,
+      "Water": 3
+    }
+  },
+  "generated_at_utc": "2026-09-01T05:27:52.361162+00:00",
+  "generator": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/scripts/Fig3/03_make_figure_3_cfos_npy.py",
+  "inputs": [
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/per_animal_cfos_npy.csv",
+      "record_type": "input",
+      "role": "animal_values",
+      "sha256": "3e8833555a8dd1565ff698eab15e4994e4b82d431ff8c1ede19dccdb2bb461f0",
+      "size_bytes": 8071
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/anova_mwu_statistics.csv",
+      "record_type": "input",
+      "role": "anova_mwu_statistics",
+      "sha256": "41a670bf72026ad1f1528bdb23cdbf7e41680049708d391037a23cf46545ffd7",
+      "size_bytes": 9892
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy.png",
+      "record_type": "input",
+      "role": "panel_A_raw_reconstruction",
+      "sha256": "cad647fbe8c4ad724867238db65fe12901ec759597e3c88025e1bd4e6a0c3e65",
+      "size_bytes": 18573023
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy.pdf",
+      "record_type": "input",
+      "role": "panel_A_raw_reconstruction_pdf",
+      "sha256": "91e15f2ff5b73ecafdfe4ac6f338a1d232cc21f4a5b2e814cf7dfa3d73cb1730",
+      "size_bytes": 13632394
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy_provenance.json",
+      "record_type": "input",
+      "role": "panel_A_raw_reconstruction_provenance",
+      "sha256": "d464ffa07351420e777c975dd552755fcd8801a8cdab4b9298d9b5f6a88f6964",
+      "size_bytes": 918013
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_B_Water_marker_positive_nuclei.png",
+      "record_type": "input",
+      "role": "panel_B_Water_marker_positive_nuclei",
+      "sha256": "6ed1650166de5f74c6f56b9ee93f09bc96761704eedeb3e8a2c7809243784165",
+      "size_bytes": 414650
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.png",
+      "record_type": "input",
+      "role": "panel_C_Allulose_marker_positive_nuclei",
+      "sha256": "647dbc447da1e9fbb8d09c519c924425e3f9e377b53f6f7e46dc27230f417970",
+      "size_bytes": 499394
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_occurrence.png",
+      "record_type": "input",
+      "role": "panel_F_cfos_spatial_occurrence",
+      "sha256": "3b59717fd1226b238a2d08716c730e1a475460710e3cfba1cead3e6122f8a08f",
+      "size_bytes": 453112
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_NPY_occurrence.png",
+      "record_type": "input",
+      "role": "panel_G_cfos_npy_spatial_occurrence",
+      "sha256": "fc3dd4ad3ceb843bba76775eb64c704f8f0fe68fcd6e6709c1635c51f03ce9e0",
+      "size_bytes": 383258
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_B_Water_marker_positive_nuclei.pdf",
+      "record_type": "input",
+      "role": "panel_B_vector",
+      "sha256": "ca6891236ec4bd863447db404f4a0bd11a32a10bbccba363a7bee38aecabe82a",
+      "size_bytes": 227896
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.pdf",
+      "record_type": "input",
+      "role": "panel_C_vector",
+      "sha256": "485d342725eec029ffe4f0b9b09d41e527da916aed2e2e89f349d734e8d2b5bc",
+      "size_bytes": 304641
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_cFOS_NPY_cartoon_provenance.json",
+      "record_type": "input",
+      "role": "cartoon_provenance",
+      "sha256": "ddacb517bb0e2c88599b5e109bf04e464b0f7d3228eee84be655bd09008a1e1f",
+      "size_bytes": 25805
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_cFOS_NPY_cartoon_provenance.csv",
+      "record_type": "input",
+      "role": "cartoon_provenance_csv",
+      "sha256": "205c19e005fe4c958c8c7a202a395e5a1b3625ff70c6543e4613bc50ff097adc",
+      "size_bytes": 15114
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/scripts/Fig3/03_make_figure_3_cfos_npy.py",
+      "record_type": "input",
+      "role": "generator",
+      "sha256": "d855867632cdeb02440a7a83935531486522806760e8f8ffc09ddad00bed57b3",
+      "size_bytes": 131905
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_GFP.tif",
+      "record_type": "input",
+      "role": "panel_A_source_01_WATER_NPY2-0001_GFP",
+      "sha256": "aa1fd314b875032d648f0eb068842353537c7fe00b2ba7e0bf33a99e665ef6e7",
+      "size_bytes": 42378926
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_fos.tif",
+      "record_type": "input",
+      "role": "panel_A_source_02_WATER_NPY2-0001_fos",
+      "sha256": "d52c02775b283a12379b579c061d13a478543bb0c21f65342d5efefd2347f03c",
+      "size_bytes": 42378926
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_dapi_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_03_WATER_NPY2-0001_dapi_seg",
+      "sha256": "fb77993b5d928e6f9fc19043e076554729db5721203f1780feba9675d2f12c0b",
+      "size_bytes": 282574685
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_fos_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_04_WATER_NPY2-0001_fos_seg",
+      "sha256": "b6e82a6c85966dba752dca04bb8e21d9a05027b44c1b3fbf465cbfc5dcfea85d",
+      "size_bytes": 284018442
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_GFP_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_05_WATER_NPY2-0001_GFP_seg",
+      "sha256": "5af0388dea2894f3d20b7794ae424bb5f66a9dd682d794744478fabcd560819d",
+      "size_bytes": 283434332
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_gfp.tif",
+      "record_type": "input",
+      "role": "panel_A_source_06_E7-FR7-5_gfp",
+      "sha256": "2a05c21b0c9ce32739ce2ee83a073b0836aee8b7daa39e04f7414753c24afda5",
+      "size_bytes": 5730002
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_fos.tif",
+      "record_type": "input",
+      "role": "panel_A_source_07_E7-FR7-5_fos",
+      "sha256": "499961aa1b74ff15544cf705dedb09b57714e72f8ad7f6a98b7d7123a4e4b796",
+      "size_bytes": 5730002
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_dapi_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_08_E7-FR7-5_dapi_seg",
+      "sha256": "5ee8adeaf5abb5ba3fd1637abbc73f5bc3634118f8fa184cbc49bea0b4abbe41",
+      "size_bytes": 38216846
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_fos_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_09_E7-FR7-5_fos_seg",
+      "sha256": "b8beb7ad8b106484c58042af943fb0ae4003d01196be3ae6ad8b2cd513eb68dc",
+      "size_bytes": 38218807
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_gfp_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_10_E7-FR7-5_gfp_seg",
+      "sha256": "2a8ff8dc72a099dd99e6c3c0a69f20d0405ce83c15603e1c31a712b8166bb9f9",
+      "size_bytes": 38691073
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_gfp.tif",
+      "record_type": "input",
+      "role": "panel_A_source_11_E8-FR6-4_ALULOSA_gfp",
+      "sha256": "4c21c8f06844f488757ce9c8e9b82b33fc7e430c6b9fe8d3e45f0a6bac897da1",
+      "size_bytes": 3922346
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_fos.tif",
+      "record_type": "input",
+      "role": "panel_A_source_12_E8-FR6-4_ALULOSA_fos",
+      "sha256": "a545e444fa819068b6ff0b1ab7d7488df543cc15f3f172126e03620a048de3c7",
+      "size_bytes": 3922346
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_dapi_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_13_E8-FR6-4_ALULOSA_dapi_seg",
+      "sha256": "f3ba80789acb7a2d1b79241236fef7fbee11d66a3f3db7c8f959e8c077965314",
+      "size_bytes": 26178306
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_fos_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_14_E8-FR6-4_ALULOSA_fos_seg",
+      "sha256": "b0df57d75a7307980a81cb34d280044e3cf6ea7b54fe82b12899838577a51dca",
+      "size_bytes": 26157113
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/project/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_gfp_seg.npy",
+      "record_type": "input",
+      "role": "panel_A_source_15_E8-FR6-4_ALULOSA_gfp_seg",
+      "sha256": "81978bcca94d0e74e6cdd5d53291283aa54e6ab9288d4531072ac4cf889c0d14",
+      "size_bytes": 26166661
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy_provenance.json",
+      "record_type": "input",
+      "role": "panel_A_source_16_Figure3_Panel_A_raw_microscopy_provenance",
+      "sha256": "d464ffa07351420e777c975dd552755fcd8801a8cdab4b9298d9b5f6a88f6964",
+      "size_bytes": 918013
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy.pdf",
+      "record_type": "input",
+      "role": "panel_A_source_17_Figure3_Panel_A_raw_microscopy",
+      "sha256": "91e15f2ff5b73ecafdfe4ac6f338a1d232cc21f4a5b2e814cf7dfa3d73cb1730",
+      "size_bytes": 13632394
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/segmentation_qc.csv",
+      "record_type": "input",
+      "role": "segmentation_qc",
+      "sha256": "ddbec7dd1996dc2bb882a0eb63bf84a25098844d2e4364629b2e2d908df6e122",
+      "size_bytes": 26835
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/source_manifest.csv",
+      "record_type": "input",
+      "role": "analysis_source_manifest",
+      "sha256": "c20068df01bfc10bcd220b2e69cb7150397587afa09e3b94b4bbeb64a3cc8bb6",
+      "size_bytes": 19264
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/statistical_test_receipts.csv",
+      "record_type": "input",
+      "role": "statistical_test_receipts",
+      "sha256": "8a4e9c136cabc0c3c42bae6254cc01e84a15de492fa2ab00fc6773fe12c46844",
+      "size_bytes": 6061
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_occurrence.pdf",
+      "record_type": "input",
+      "role": "spatial_F_vector",
+      "sha256": "30d25f7b5d37a73c45850185a720c3b254de9eaf5a37eaadc688837cdd911811",
+      "size_bytes": 46483
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+      "record_type": "input",
+      "role": "spatial_G_vector",
+      "sha256": "c54840dc3f32b772c57650ba54b89ed7a2511c9e5d1bfcd863140b51ee2ad7eb",
+      "size_bytes": 35392
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/exact_spatial_permanova.csv",
+      "record_type": "input",
+      "role": "spatial_exact_permanova",
+      "sha256": "b2bb09b19dfd3644ccf75cd1278a566ccbc57fd3aadf155b18fa96ba967f3fb7",
+      "size_bytes": 1182
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/exact_spatial_permutation_receipts.csv",
+      "record_type": "input",
+      "role": "spatial_exact_permutation_receipts",
+      "sha256": "7ad596c0f7966803ada70ba00f013638c1b81c2de5aa7145c746c10e45dbec12",
+      "size_bytes": 774183
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/exact_spatial_dispersion.csv",
+      "record_type": "input",
+      "role": "spatial_exact_dispersion",
+      "sha256": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14",
+      "size_bytes": 2158
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/exact_spatial_dispersion_permutation_receipts.csv",
+      "record_type": "input",
+      "role": "spatial_exact_dispersion_permutation_receipts",
+      "sha256": "1ea9a3a323ff71abd903ebf22f454603d432a739b0b0882859e0240d2161f2c5",
+      "size_bytes": 874598
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/animal_radial_occurrence_features.csv",
+      "record_type": "input",
+      "role": "spatial_animal_features",
+      "sha256": "57b22913a18448eebf5fdecbf3199d255b889de0969be8b2fa0fe41031b174ab",
+      "size_bytes": 30720
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/animal_spatial_counts.csv",
+      "record_type": "input",
+      "role": "spatial_animal_counts",
+      "sha256": "0a5eaccd70d203472fa1dbbfa4ded30262b8b096bbdd6c48a3c4a8ba4577c842",
+      "size_bytes": 2376
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/segmentation_model_setting_audit.csv",
+      "record_type": "input",
+      "role": "spatial_model_setting_audit",
+      "sha256": "e49342ceb5cff1376ed02bf7dadc097f45d0dfe7e2a6174d08426723d49ba6fa",
+      "size_bytes": 16484
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/spatial_distribution_provenance.json",
+      "record_type": "input",
+      "role": "spatial_provenance",
+      "sha256": "c483e90add7d3602cc46b9ddc768945b919617b1c3abbbaf324f6e738cc4f35f",
+      "size_bytes": 11598
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/spatial_english/output_manifest.csv",
+      "record_type": "input",
+      "role": "spatial_output_manifest",
+      "sha256": "69498255416ba77b599fe0e37bd3857de5c0c1753e4e7189a41410b1cc8dcba3",
+      "size_bytes": 1932
+    }
+  ],
+  "layout": {
+    "intentional_whitespace": "minimal F/G side gutters and center gap; compact D/E row preserves Figure4/5 plot proportions",
+    "nominal_figure_inches": [
+      16.0,
+      17.1
+    ],
+    "outer_bounds_normalized": {
+      "bottom": 0.025,
+      "left": 0.02,
+      "right": 0.992,
+      "top": 0.985
+    },
+    "outer_grid": "four bands: full-width equal-tile A; full-width matched side-by-side B/C; compact centered D/E; wide side-by-side F/G",
+    "outer_height_ratios": [
+      6.2,
+      2.62,
+      3.1,
+      3.72
+    ],
+    "outer_hspace": 0.055,
+    "panel_A_width_inches": 15.55,
+    "panels_B_C_width_inches_each": 7.6,
+    "panels_D_E_slot_inches_each": [
+      3.5,
+      3.1
+    ],
+    "panels_F_G_width_inches_each": 7.72,
+    "pdf_embedded_raster_dpi": 600,
+    "spatial_native_aspect_preserved": true,
+    "spatial_panel_geometry": {
+      "F": {
+        "bottom_figure_fraction": 0.024175782394722997,
+        "height_inches": 3.7639840514469474,
+        "rendered_aspect_width_over_height": 2.051282051282051,
+        "source_pixel_aspect_width_over_height": 2.051282051282051,
+        "top_figure_fraction": 0.24429180879512924,
+        "width_inches": 7.720992926045019
+      },
+      "G": {
+        "bottom_figure_fraction": 0.024175782394722997,
+        "height_inches": 3.7639840514469474,
+        "rendered_aspect_width_over_height": 2.051282051282051,
+        "source_pixel_aspect_width_over_height": 2.051282051282051,
+        "top_figure_fraction": 0.24429180879512924,
+        "width_inches": 7.720992926045019
+      }
+    },
+    "spatial_panel_label_placement": "inside the top-left source-image whitespace",
+    "spatial_row_uses_unused_bottom_margin": true,
+    "spatial_row_width_ratios": [
+      0.01,
+      7.72,
+      0.09,
+      7.72,
+      0.01
+    ],
+    "spatial_source_panel_figure_inches": [
+      6.4,
+      3.12
+    ],
+    "spatial_source_panel_layout": "moderately narrowed radial-profile plot left; enlarged condition-means heatmap right"
+  },
+  "outputs": [
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/Figure_3_cFos_NPY.pdf",
+      "record_type": "output",
+      "role": "figure_pdf",
+      "sha256": "6fd120305200ab528924f79def1ff60f17e10fc9a6c307fb26052e6ce5157ca8",
+      "size_bytes": 17970876
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/Figure_3_cFos_NPY.png",
+      "record_type": "output",
+      "role": "figure_png",
+      "sha256": "7c436dfbc44dcdf30124a54f2e38a679d008a908fc72daa7f650b401bc69b72c",
+      "size_bytes": 20310436
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/Figure_3_cFos_NPY_caption.txt",
+      "record_type": "output",
+      "role": "figure_caption",
+      "sha256": "3314725f0167fae693b1daebab47cbd5038a1d830d3e5f2f8ba1cc729323526d",
+      "size_bytes": 7479
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_LEGEND.txt",
+      "record_type": "output",
+      "role": "figure_legend",
+      "sha256": "3314725f0167fae693b1daebab47cbd5038a1d830d3e5f2f8ba1cc729323526d",
+      "size_bytes": 7479
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_animal_plot_values.csv",
+      "record_type": "output",
+      "role": "displayed_animal_values",
+      "sha256": "dac9080bc28a37e30bbf07227812e29a9aaec181bbff8b0587c16b9eda17ef3c",
+      "size_bytes": 665
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_anova_mwu_statistics_used.csv",
+      "record_type": "output",
+      "role": "displayed_anova_mwu_statistics",
+      "sha256": "0e917dcec1893868d3d30127bf389553dea1bf35ec0a9ad9fef32e7931131461",
+      "size_bytes": 2927
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv",
+      "record_type": "output",
+      "role": "supplemental_npy_dapi_animal_values",
+      "sha256": "1c0fd6f194fee2693c1a44c38516e08cf4e33aa0d7e556d1326d5885bcd7b5f9",
+      "size_bytes": 676
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv",
+      "record_type": "output",
+      "role": "supplemental_npy_dapi_statistics",
+      "sha256": "167baf1e00ce83fd34995cdf90fb1274c7a621cf7460c4251003fa43c1995970",
+      "size_bytes": 1537
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_README.txt",
+      "record_type": "output",
+      "role": "supplemental_npy_dapi_readme",
+      "sha256": "28852b47f1384549f64a402f8af426e78e13649c994e70835e859bcd89db2ba0",
+      "size_bytes": 391
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_permanova.csv",
+      "record_type": "output",
+      "role": "figure_spatial_exact_permanova",
+      "sha256": "b2bb09b19dfd3644ccf75cd1278a566ccbc57fd3aadf155b18fa96ba967f3fb7",
+      "size_bytes": 1182
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_permutation_receipts.csv",
+      "record_type": "output",
+      "role": "figure_spatial_exact_permutation_receipts",
+      "sha256": "7ad596c0f7966803ada70ba00f013638c1b81c2de5aa7145c746c10e45dbec12",
+      "size_bytes": 774183
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv",
+      "record_type": "output",
+      "role": "figure_spatial_exact_dispersion",
+      "sha256": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14",
+      "size_bytes": 2158
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion_permutation_receipts.csv",
+      "record_type": "output",
+      "role": "figure_spatial_exact_dispersion_permutation_receipts",
+      "sha256": "1ea9a3a323ff71abd903ebf22f454603d432a739b0b0882859e0240d2161f2c5",
+      "size_bytes": 874598
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_animal_radial_occurrence_features.csv",
+      "record_type": "output",
+      "role": "figure_spatial_animal_features",
+      "sha256": "57b22913a18448eebf5fdecbf3199d255b889de0969be8b2fa0fe41031b174ab",
+      "size_bytes": 30720
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_animal_counts.csv",
+      "record_type": "output",
+      "role": "figure_spatial_animal_counts",
+      "sha256": "0a5eaccd70d203472fa1dbbfa4ded30262b8b096bbdd6c48a3c4a8ba4577c842",
+      "size_bytes": 2376
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_segmentation_model_setting_audit.csv",
+      "record_type": "output",
+      "role": "figure_spatial_model_setting_audit",
+      "sha256": "e49342ceb5cff1376ed02bf7dadc097f45d0dfe7e2a6174d08426723d49ba6fa",
+      "size_bytes": 16484
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_A.pdf",
+      "record_type": "output",
+      "role": "panel_A_pdf",
+      "sha256": "765af5d8e92c9655373c10ddfab654caae8ece29cdf6e3b5db77ec90cb0e974f",
+      "size_bytes": 16169252
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_A.png",
+      "record_type": "output",
+      "role": "panel_A_png",
+      "sha256": "b46b7ec82f7606fb89487a30a8b417f51a3ceee281396d316144a625cfc8c213",
+      "size_bytes": 18000791
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_Panel_A_LEGEND.txt",
+      "record_type": "output",
+      "role": "panel_A_legend",
+      "sha256": "149536f231ad35facfdb060b4cdd7a3380e7c6e2d60096a9def56960eae9172d",
+      "size_bytes": 2249
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_B.pdf",
+      "record_type": "output",
+      "role": "panel_B_pdf",
+      "sha256": "4cd74f4d1abfe35a5666927e7b80d0f6bdf001d58ad19b0dfd54ffc2268a5966",
+      "size_bytes": 408800
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_B.png",
+      "record_type": "output",
+      "role": "panel_B_png",
+      "sha256": "a03433d844d8993ca5cd89100d4d2feaa1545c32ffb46c53ac9f7a0635a5a7bd",
+      "size_bytes": 448663
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_Panel_B_LEGEND.txt",
+      "record_type": "output",
+      "role": "panel_B_legend",
+      "sha256": "3427534e00404b33ac7dfd07be6ecc9141783b714c6fc64a74d28fe6ac8af14e",
+      "size_bytes": 2119
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_C.pdf",
+      "record_type": "output",
+      "role": "panel_C_pdf",
+      "sha256": "420a8683fa93aebd2dac639558785535f4112a11f989db9b148613a0cecaf49a",
+      "size_bytes": 506964
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_C.png",
+      "record_type": "output",
+      "role": "panel_C_png",
+      "sha256": "aac6e51c98dd94b932d73be6979d3920b17dc3c88b88ac2cd8e0f0e0b6dad66b",
+      "size_bytes": 555495
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_Panel_C_LEGEND.txt",
+      "record_type": "output",
+      "role": "panel_C_legend",
+      "sha256": "36332b04a38ed29fdc86601b80d08be6b03b28c0c13e6c2d3330e89cdf15f751",
+      "size_bytes": 2028
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_D.pdf",
+      "record_type": "output",
+      "role": "panel_D_pdf",
+      "sha256": "6a385bb7517cc0704cc1b3cf7400e1736e37073ca682f2d5a8ea62f2748484a1",
+      "size_bytes": 20972
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_D.png",
+      "record_type": "output",
+      "role": "panel_D_png",
+      "sha256": "38853688dca3142f3747cc4d1780666a755be24ade198a53463d38e7703a079e",
+      "size_bytes": 274999
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_Panel_D_LEGEND.txt",
+      "record_type": "output",
+      "role": "panel_D_legend",
+      "sha256": "8c817d9fac78947c06b807f3d7e6b1a59872479d4a5d888909eccde344ce73fa",
+      "size_bytes": 1793
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_E.pdf",
+      "record_type": "output",
+      "role": "panel_E_pdf",
+      "sha256": "a9b5e6b46fb183659bc714e8be814600b9b39e3093307fa4edafe857ee2803a6",
+      "size_bytes": 21082
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_E.png",
+      "record_type": "output",
+      "role": "panel_E_png",
+      "sha256": "ea3e3860e680d9c411572239f5b3e9d0e7f9e8e4de9ea962f4de03fc790dd18e",
+      "size_bytes": 291223
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_Panel_E_LEGEND.txt",
+      "record_type": "output",
+      "role": "panel_E_legend",
+      "sha256": "4bc8b7201b96a030ed48aadcb0b579baa6d6463627c4ebe6f4bfbe17aec2ba88",
+      "size_bytes": 1796
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_F.pdf",
+      "record_type": "output",
+      "role": "panel_F_pdf",
+      "sha256": "198cd76433fd35023d191aa746e5e0d716360a630d76eede45ee4860abbc9386",
+      "size_bytes": 473054
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_F.png",
+      "record_type": "output",
+      "role": "panel_F_png",
+      "sha256": "bb85b46a2df30c68b31a7f9ec6dafd7ada1b94d4aef63b1acaef8793e83fb20c",
+      "size_bytes": 528397
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_Panel_F_LEGEND.txt",
+      "record_type": "output",
+      "role": "panel_F_legend",
+      "sha256": "ae055635213d71aa18ad0a00209ff981534023cfff59961edd764b39c7e524e0",
+      "size_bytes": 2018
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_G.pdf",
+      "record_type": "output",
+      "role": "panel_G_pdf",
+      "sha256": "b635cedfb7628416ac47ebda6b0aaeda11b4bd897e71e0ffbfe69a774ce3b7e1",
+      "size_bytes": 407771
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/panels/Figure_3_cFos_NPY_Panel_G.png",
+      "record_type": "output",
+      "role": "panel_G_png",
+      "sha256": "40d5b677752dd66d0d364fc9391c90f40181974cb545bb468c6386f8365aa15e",
+      "size_bytes": 457611
+    },
+    {
+      "path": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/legends/Figure_3_cFos_NPY_Panel_G_LEGEND.txt",
+      "record_type": "output",
+      "role": "panel_G_legend",
+      "sha256": "8ed1a559880035f97110eeb6b68d4e9f0446fb60f9eeccf7ce69de496999b708",
+      "size_bytes": 2031
+    }
+  ],
+  "panel_a": {
+    "colors": {
+      "NPY": "green",
+      "c-FOS": "red"
+    },
+    "contour_geometry": "derived on the complete registered ROI frame, translated to inset coordinates, and clipped to the exact microscopy-image extent before axes letterboxing without adding a crop-edge closure",
+    "contour_inclusion_rule": "assigned nucleus is analysis-defined c-FOS-positive/NPY-positive and its nearest-neighbor transformed DAPI centroid lies in the half-open zoom",
+    "contour_render": {
+      "black_letterbox_stroke_allowed": false,
+      "clip_target": "microscopy image extent before axes letterboxing",
+      "linewidth_pt": 1.56,
+      "stroke_color": "black",
+      "stroke_color_hex": "#000000",
+      "stroke_count_per_path": 1,
+      "white_backing_or_shadow": false
+    },
+    "display_intensity_used_for_contour_assignment_or_selection": false,
+    "dual_positive_nuclei_with_outlined_roi_counts_by_condition": {
+      "Allulose": 36,
+      "Sucrose": 6,
+      "Water": 23
+    },
+    "inset_dual_positive_nucleus_counts_by_condition": {
+      "Allulose": 38,
+      "Sucrose": 7,
+      "Water": 24
+    },
+    "no_powerpoint_or_screenshot_pixels": true,
+    "npy_roi_assignment_rule": "one native DAPI nucleus must contain a strict >50% majority of a native NPY ROI's DAPI-overlapping pixels; ties, no-overlap, and no-majority cases fail closed",
+    "one_displayed_roi_per_nucleus_rule": "when multiple strict-majority NPY ROIs map to one eligible nucleus, display the ROI with greatest native overlap; lowest ROI ID breaks ties",
+    "outlined_npy_roi_counts_by_condition": {
+      "Allulose": 36,
+      "Sucrose": 6,
+      "Water": 23
+    },
+    "render": "fixed audited field transforms; per-field/channel percentile stretch; calibrated scale bars",
+    "roi_mapping_and_contour_receipts": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy_provenance.json",
+    "source": "raw TIFF channels plus native Cellpose masks listed and hash-bound in the Panel A sidecar",
+    "strict_majority_inset_candidate_npy_roi_counts_by_condition": {
+      "Allulose": 37,
+      "Sucrose": 6,
+      "Water": 23
+    },
+    "tile_geometry": {
+      "all_twelve_axis_boxes_equal": true,
+      "column_width_ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "grid_bounds_normalized": {
+        "bottom": 0.035,
+        "left": 0.05,
+        "right": 0.998,
+        "top": 0.925
+      },
+      "grid_rows_columns": [
+        3,
+        4
+      ],
+      "image_aspect_policy": "native pixel aspect preserved; black letterboxing within equal outer tiles where needed",
+      "inter_column_wspace": 0.01,
+      "tile_box_aspect_height_over_width": 0.63,
+      "tile_height_figure_fraction": 0.2861736334405145,
+      "tile_width_figure_fraction": 0.18141185707769458
+    },
+    "water_homologous_side_zoom": {
+      "base_xywh_half_open": [
+        887,
+        516,
+        370,
+        303
+      ],
+      "final_xywh_half_open": [
+        423,
+        516,
+        370,
+        303
+      ],
+      "rule": "exact horizontal mirror; y, width, and height unchanged"
+    },
+    "water_representative": "WATER_NPY2; exact Image 1 integer crop and 90-degree counter-clockwise orientation"
+  },
+  "panel_map": {
+    "A": "raw NPY/c-FOS microscopy, merge, and traceable zoom",
+    "B": "Water marker-positive DAPI nuclei: NPY, c-FOS, and combined/dual status",
+    "C": "Allulose marker-positive DAPI nuclei: NPY, c-FOS, and combined/dual status",
+    "D": "c-FOS-positive nuclei over DAPI nuclei",
+    "E": "c-FOS-positive NPY nuclei over NPY nuclei",
+    "F": "c-FOS-positive/DAPI field-centric six-shell radial occurrence",
+    "G": "c-FOS-positive NPY-positive/DAPI field-centric six-shell radial occurrence"
+  },
+  "schema_version": "figure3-cfos-npy-v6",
+  "spatial_analysis": {
+    "dispersion_diagnostic": {
+      "permanova_centroid_only_interpretation_allowed": false,
+      "results": {
+        "cfos_occurrence": {
+          "bh_q_value_two_endpoint_diagnostic_family": 0.0642857142857,
+          "dispersion_f": 4.71416619668,
+          "p_value_exact": 0.0642857142857
+        },
+        "double_occurrence": {
+          "bh_q_value_two_endpoint_diagnostic_family": 0.0285714285714,
+          "dispersion_f": 8.48734236894,
+          "p_value_exact": 0.0142857142857
+        }
+      },
+      "test": "exact animal-label ANOVA F on Euclidean distances to allocated group centroids"
+    },
+    "feature_transform": "arcsin(sqrt(shell positive nuclei / shell DAPI nuclei))",
+    "figure_source_data_copies": {
+      "spatial_animal_counts": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_animal_counts.csv",
+      "spatial_animal_features": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_animal_radial_occurrence_features.csv",
+      "spatial_exact_dispersion": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv",
+      "spatial_exact_dispersion_permutation_receipts": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion_permutation_receipts.csv",
+      "spatial_exact_permanova": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_permanova.csv",
+      "spatial_exact_permutation_receipts": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_exact_permutation_receipts.csv",
+      "spatial_model_setting_audit": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_spatial_segmentation_model_setting_audit.csv"
+    },
+    "inference": "exact exhaustive 1,680-allocation animal-label PERMANOVA; biological animal is the sole inferential unit",
+    "panel_inset": "descriptive 3-condition by 6-shell heatmap of condition-mean occurrence percentages; F/G use separate endpoint-specific zero-to-maximum color scales",
+    "panels": [
+      "F",
+      "G"
+    ],
+    "permanova_results": {
+      "cfos_occurrence": {
+        "bh_q_value_two_endpoint_family": 0.121428571429,
+        "p_value_exact": 0.121428571429,
+        "pseudo_f": 3.29322477547
+      },
+      "double_occurrence": {
+        "bh_q_value_two_endpoint_family": 0.0214285714286,
+        "p_value_exact": 0.0107142857143,
+        "pseudo_f": 12.5706139381
+      }
+    },
+    "profiles_are_abundance_independent": false,
+    "shells": "six equal-DAPI-density elliptical radial shells after centering and covariance whitening each animal field from its own DAPI-nucleus centroid cloud; not ventricle/anatomy registered",
+    "trained_condition_classifier": false
+  },
+  "statistics": "Panels D/E: ordinary scipy.stats.f_oneway ANOVA on animal values; raw exact exhaustive two-sided Mann-Whitney U pairwise tests without multiplicity adjustment. Panels F/G use arcsin-square-root-transformed six-shell animal vectors with exhaustive 1,680-label PERMANOVA, exact multivariate-dispersion diagnostics, and separate two-endpoint BH q families. The PERMANOVA can reflect centroid and/or dispersion differences. This is a Cellpose-derived exploratory spatial analysis, not a trained condition CNN or pooled-cell inference.",
+  "supplemental_removed_endpoint": {
+    "endpoint": "npy_over_dapi",
+    "group_counts": {
+      "Allulose": 3,
+      "Sucrose": 3,
+      "Water": 3
+    },
+    "readme_file": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_README.txt",
+    "reason": "removed from main plate at user request; values and receipts explicitly retained",
+    "statistics_file": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv",
+    "values_file": "/tmp/apotome_fig3_internal_2qOuSnA5/work/out/Paper/Fig3/english_publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv"
+  }
+}

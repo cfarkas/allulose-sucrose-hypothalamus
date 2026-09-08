@@ -1,0 +1,208 @@
+{
+  "counts": {
+    "added": 1,
+    "already_identical": 31,
+    "replaced": 31
+  },
+  "figure": "FigS4",
+  "files": [
+    {
+      "bytes": 22839626,
+      "promoted": "FigS4/Figure_S4.pdf",
+      "sha256": "e0d038b2a53ff5687143c0a22d7081d426bc4488eff9ee40a01b2e3dd3c6793c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/Figure_S4.pdf"
+    },
+    {
+      "bytes": 26858095,
+      "promoted": "FigS4/Figure_S4.png",
+      "sha256": "a17f8e1411a396c371ca5af859e2f918fa0be86b5d835ed7ffeb184999e5d857",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/Figure_S4.png"
+    },
+    {
+      "bytes": 2647,
+      "promoted": "FigS4/legends/Figure_S4_LEGEND.txt",
+      "sha256": "deab2427f1a966a2142724a43efa1d8e16b69e6e646322dff65c36f138766656",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/legends/Figure_S4_LEGEND.txt"
+    },
+    {
+      "bytes": 3063,
+      "promoted": "FigS4/legends/Figure_S4_LEGEND_spanish.txt",
+      "sha256": "e111aa51f8a170c257e20d16f0acb08c1527652385e10bf6c9949d18a4f30489",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/legends/Figure_S4_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 5585583,
+      "promoted": "FigS4/panels/Figure_S4_panel_A.pdf",
+      "sha256": "cb150ba2a18d5342a85c8541940588ea1b4a080c2dcdda7dcd4faee708fd67c6",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_A.pdf"
+    },
+    {
+      "bytes": 5586368,
+      "promoted": "FigS4/panels/Figure_S4_panel_A_spanish.pdf",
+      "sha256": "528573687696962683eb6c4b71f59da0fc8702a36e70337dbdc9dea4b43c7b5d",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 7434725,
+      "promoted": "FigS4/panels/Figure_S4_panel_B.pdf",
+      "sha256": "95ae58788686950501ba68ede3509c14b37be4ddaac29f767f3af8995c7575d9",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_B.pdf"
+    },
+    {
+      "bytes": 7435166,
+      "promoted": "FigS4/panels/Figure_S4_panel_B_spanish.pdf",
+      "sha256": "a59208ec96716e8a4e6278e419a41e8397f7ba0e2fd96faac53f8a606cd37463",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 5513882,
+      "promoted": "FigS4/panels/Figure_S4_panel_C.pdf",
+      "sha256": "9b151966807b5a4fe8882d858861258778aef240411bbcb70db6a14fe62fdff3",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_C.pdf"
+    },
+    {
+      "bytes": 5514669,
+      "promoted": "FigS4/panels/Figure_S4_panel_C_spanish.pdf",
+      "sha256": "7caa61c79995a3e2f2234d3604c492a31199c20b952416efe83f390537c1f020",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 372915,
+      "promoted": "FigS4/panels/Figure_S4_panel_D.pdf",
+      "sha256": "e26a7ed4135fca7cb29686546adda396a810085de52ace73c574201ed40303a6",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_D.pdf"
+    },
+    {
+      "bytes": 372774,
+      "promoted": "FigS4/panels/Figure_S4_panel_D_spanish.pdf",
+      "sha256": "bf1537651f31be5691971ea91e3acbe14ec2783e030fe2a6a449752615e92dea",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 9265390,
+      "promoted": "FigS4/panels/Figure_S4_panel_E.pdf",
+      "sha256": "a3996403211578e167d3922eb65ae5e18e735cd689883619d1b2e0798cc5e3e2",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_E.pdf"
+    },
+    {
+      "bytes": 9265247,
+      "promoted": "FigS4/panels/Figure_S4_panel_E_spanish.pdf",
+      "sha256": "a4b8aacb4ff5d74bcec3a156f88e5d8220196a21116e8acd603db8711c8ae002",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_E_spanish.pdf"
+    },
+    {
+      "bytes": 7765145,
+      "promoted": "FigS4/panels/Figure_S4_panel_F.pdf",
+      "sha256": "132206264eaf772a61a30947f3402254a604415372a547ed3109ac7177a41b26",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_F.pdf"
+    },
+    {
+      "bytes": 7766078,
+      "promoted": "FigS4/panels/Figure_S4_panel_F_spanish.pdf",
+      "sha256": "c8a19130b643b3b771199d83795200513ba2ab99d857e65d6bece33697b90766",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_F_spanish.pdf"
+    },
+    {
+      "bytes": 33873,
+      "promoted": "FigS4/panels/Figure_S4_panel_G.pdf",
+      "sha256": "fe08009c50b749d9386308436963a2b39a875841ba2a8363b28c7f4f68a6f31b",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_G.pdf"
+    },
+    {
+      "bytes": 34665,
+      "promoted": "FigS4/panels/Figure_S4_panel_G_spanish.pdf",
+      "sha256": "da310da5eea3a5047f29d583b28dea06ac85e22d0edfda64496d20cf2f071226",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_G_spanish.pdf"
+    },
+    {
+      "bytes": 30455,
+      "promoted": "FigS4/panels/Figure_S4_panel_H.pdf",
+      "sha256": "045bb35287ea90ce500337477ff3bd0e0db54266a4be9733f1ca6b336dfd759d",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_H.pdf"
+    },
+    {
+      "bytes": 31469,
+      "promoted": "FigS4/panels/Figure_S4_panel_H_spanish.pdf",
+      "sha256": "bd80facf30ddce56f9b6282a89c9691f7381e912004febc3671ad31eef76529c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_H_spanish.pdf"
+    },
+    {
+      "bytes": 400831,
+      "promoted": "FigS4/panels/Figure_S4_panel_I.pdf",
+      "sha256": "70e55a4c4d3044b41381cb78876f654e08b27fade8471daa8e1b5377329c4ffd",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_I.pdf"
+    },
+    {
+      "bytes": 1512504,
+      "promoted": "FigS4/panels/Figure_S4_panel_I.png",
+      "sha256": "e17069e8599033dbdd998ed9b93d97ef896746b17da99b995efd315ab4adddc5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_I.png"
+    },
+    {
+      "bytes": 401088,
+      "promoted": "FigS4/panels/Figure_S4_panel_I_spanish.pdf",
+      "sha256": "59fe77b77a206dd8eb42c4595e00e9ac4b1a4e17ba324bee9fb195dc5159dd49",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_I_spanish.pdf"
+    },
+    {
+      "bytes": 1544282,
+      "promoted": "FigS4/panels/Figure_S4_panel_I_spanish.png",
+      "sha256": "66824c26c7c1f7c35707b3545b1d979e843e845208c616444c68829fd207a1dc",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_I_spanish.png"
+    },
+    {
+      "bytes": 330452,
+      "promoted": "FigS4/panels/Figure_S4_panel_J.pdf",
+      "sha256": "7224765c03d5c5a8bd5dc894bec569a3fb4663613702de82effbd8f5a4af8be2",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_J.pdf"
+    },
+    {
+      "bytes": 1260498,
+      "promoted": "FigS4/panels/Figure_S4_panel_J.png",
+      "sha256": "ec0d4c21c57387b0a0d55fddbe0739f669dee6ef00e9f49d6320cd1651cdb42f",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_J.png"
+    },
+    {
+      "bytes": 330206,
+      "promoted": "FigS4/panels/Figure_S4_panel_J_spanish.pdf",
+      "sha256": "196fe11d2c130bb2dfacbbf9855cab727f0d4257a0777d0ed87fc9fd14074c9e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_J_spanish.pdf"
+    },
+    {
+      "bytes": 1283800,
+      "promoted": "FigS4/panels/Figure_S4_panel_J_spanish.png",
+      "sha256": "011d500484389d9df958ac0308ba0dc9e362059543006e106f7f5b5641d37ff5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/panels/Figure_S4_panel_J_spanish.png"
+    },
+    {
+      "bytes": 26129,
+      "promoted": "FigS4/provenance/BUILD_RECEIPT.json",
+      "sha256": "807101d2b2f9b1158c7297cc887b040b57dcfcb7ade2b8597700e50c833be0fb",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/provenance/BUILD_RECEIPT.json"
+    },
+    {
+      "bytes": 918,
+      "promoted": "FigS4/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json",
+      "sha256": "70a5e2003f61ce7b16c45b84f237349c2fe75887783e09bac47965596c154e81",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json"
+    },
+    {
+      "bytes": 11519,
+      "promoted": "FigS4/provenance/output_manifest.csv",
+      "sha256": "521aa5f7c23910e45b28b43ec8e4b1ee6a888a0e3eaa380becd7bd1961d68091",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/provenance/output_manifest.csv"
+    },
+    {
+      "bytes": 3518950,
+      "promoted": "FigS4/source_data/spatial_occurrence_source.csv",
+      "sha256": "99f9dd9eb413d73c78245b91297da5340cef03a8f0039022c7d4f399f6ea6a62",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z/source_data/spatial_occurrence_source.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S4",
+  "master_name_promoted": "Figure_S4",
+  "promoted_utc": "2026-08-28T21:41:39+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/media/server/STORAGE/Apotome/Paper/analyses/FigS4/figure/spatial_boundary_corrected_final_candidate_20260828T213800Z",
+  "superseded_copied_to": "FigS4/legacy/superseded_promotion_20260828T214138Z"
+}

@@ -1,4 +1,35 @@
-# Figure scripts and supplementary Figure S6 — 7 September 2026
+# Current figure scripts and data — 8 September 2026
+
+The 8 September update adds three completed changes:
+
+- **Figure 1 and sex-specific S1/S2:** the humane transfer of FR5-4 from E2
+  allulose to E10 water occurred after the day-6 measurement. Linked records
+  identify one animal and retain its original group through that endpoint;
+  E10/FR6-2 is water. The weight analysis includes 24 mice in 12 cages.
+- **Figure 3:** the complete English A–H master now includes the sucrose
+  microscopy and nuclear map. Its third ventricle was delineated by the
+  investigator on native DAPI, and the tissue outline follows the procedure
+  used for water and allulose. Quantified counts and statistics are unchanged.
+- **Figure S5:** male NPY-M is included as an NPY-GFP transgenic water animal,
+  giving three animals per condition. Its four-channel assignment and DAPI-only
+  anatomy/third-ventricle contours are saved with the other eight reviews.
+  Spatial c-FOS and double-positive profiles give exact PERMANOVA p=0.400
+  and p=0.464286, respectively (BH q=0.464286 for both). The original eight-WT
+  results are supplied as a sensitivity comparison. S5 tests first oral exposure
+  after a 16-hour fast using ACTH/CLIP as a POMC-related signal.
+
+The [Monte Carlo script](figure_updates/Fig1/03_estimate_sample_size_monte_carlo.py)
+reconstructs sample-size scenarios from the day-6 values of 12 pilot cages.
+With 500,000 simulations per size, group-specific SDs and Welch ANOVA, five
+cages per group reach 80.16% power for bottle-volume disappearance and fourteen
+reach 80.77% for cage-mean weight change. These pilot-conditional omnibus
+estimates do not establish achieved power or neuronal/glial sample sizes.
+[Source values and curves](figure_updates/Fig1/source_data/sample_size_monte_carlo/)
+and an [execution receipt](figure_updates/Fig1/provenance/SAMPLE_SIZE_MONTE_CARLO_RECEIPT.json)
+are included. See [Figure 1 instructions](figure_updates/Fig1/README.txt).
+
+The update includes figure assets and analysis code. The current thesis and
+manuscript remain local and are not distributed in this GitHub update.
 
 The current scripts and small figure inputs are directly available in
 [`figure_updates/`](figure_updates/). This directory has the same layout as the
@@ -69,9 +100,11 @@ explicit alias for the current workflow.
 
 Use `python3 reproduce.py --archived-release` to reproduce the archived
 10-figure release in an unmodified reconstruction. The previously reported
-136-PNG full replay applies to that archived release. The new S6 and corrected
-Figure 1 have separate render checks; this update does not claim a newly completed
-full eleven-figure replay.
+136-PNG full replay applies to that archived release. The corrected Figure 1, complete Figure 3, nine-animal S5 and S6 have separate
+checks. The S5 update was rebuilt from native channels, saved segmentations and
+accepted anatomy/3V masks in a fresh analysis directory; all nine per-animal
+regional values and new spatial statistics agree with the reviewed analysis.
+This update does not claim a newly completed full eleven-figure replay.
 
 ## Reuse the current choices or make your own
 

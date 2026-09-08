@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "verdict_scope": "technical staged Figure 3 A-G bundle only",
+  "sealed_root": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/sealed_final",
+  "closed_world": {
+    "manifest_rows_rehashed": 85,
+    "manifest_sha256": "ce9024608e76c287947ee92f40088a9385fa471f8cc86f9321c252a98d8c33b9",
+    "identity_failures": 0,
+    "graphics": 30,
+    "pdf": 15,
+    "png": 15,
+    "isolated_english": 14,
+    "isolated_spanish": 14,
+    "english_master": 2
+  },
+  "input_and_stage_gates": {
+    "mandatory_human_accepted_masks_bound": true,
+    "machine_masks_excluded": true,
+    "raw_input_audit_count": 75,
+    "raw_input_audit_sha256": "9272e7f85eac9786c824b7af5c40dff7334ec2bdbc7f8d936e349c94fa994f62",
+    "canonical_postflight_count": 67,
+    "canonical_postflight_sha256": "d465585e1e4458137d69632af4cdac2ef453a512053613c3287294babf47aa7e",
+    "stage00_patch_limited_to_accepted_DAPI_hash": true,
+    "spatial_patch_limited_to_stale_model_assertion_and_caveat": true
+  },
+  "graphics_gates": {
+    "paired_language_geometry": true,
+    "dpi_range": "300-600",
+    "fonts": "embedded Unicode DejaVu; no Type3",
+    "english_master_only": true,
+    "spanish_master_excluded": true,
+    "no_in_panel_footnotes": true,
+    "clipping_collision_and_clearance": "PASS",
+    "master_width_occupancy": 0.9745833333333334,
+    "master_height_occupancy": 0.9526315789473684,
+    "panel_E_letter_title_gap_points": 35.983005
+  },
+  "independent_statistics": {
+    "panel_D_anova_F": 3.5733784033399147,
+    "panel_D_anova_p": 0.09506001168062757,
+    "panel_D_exact_MWU_p": [0.2, 1.0, 0.1],
+    "panel_E_anova_F": 3.5324026169142497,
+    "panel_E_anova_p": 0.09686010417630676,
+    "panel_E_exact_MWU_p": [0.7, 0.7, 0.1],
+    "panel_F_permanova_F": 3.2932247754726496,
+    "panel_F_permanova_p": 0.12142857142857143,
+    "panel_F_dispersion_p": 0.06428571428571428,
+    "panel_G_permanova_F": 12.570613938154526,
+    "panel_G_permanova_p": 0.010714285714285714,
+    "panel_G_dispersion_p": 0.014285714285714285,
+    "enumerated_animal_labelings_per_endpoint": 1680,
+    "animals_per_condition": 3,
+    "cells_or_shells_as_n": false
+  },
+  "promotion": {
+    "map_rows": 86,
+    "map_sha256": "89889784ccfa3d29a64011cd7a8634d5ad8d4fc7dd00064762ed850f498b327d",
+    "versioned_target_root": "/media/server/STORAGE/Apotome/Paper/Fig3/final_human_accepted_20260823",
+    "target_absent_at_audit": true,
+    "status": "NOT_PROMOTED",
+    "recommendation": "Immediate copy-only promotion to the versioned technical root is recommended. Do not label publication-final."
+  },
+  "scientific_blocker": {
+    "count": 1,
+    "field": "animal_id",
+    "current_value": "WATER_NPY3",
+    "status": "provisional unique identifier",
+    "required_resolution": "Provide the true animal ID or explicitly authorize publication with the provisional identifier."
+  },
+  "live_writes_by_independent_audit": 0
+}

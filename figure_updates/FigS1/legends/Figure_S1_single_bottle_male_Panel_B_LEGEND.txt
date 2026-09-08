@@ -1,0 +1,1 @@
+Figure S1 panel B. Male Day-6 cage-consumption endpoint. Dots are cages; diamonds are cage means. One-way ANOVA p = 0.230; the three pairwise exact p values are Holm-adjusted within this sex and outcome. 

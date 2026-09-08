@@ -52,6 +52,7 @@ EXPECTED_REVIEW_MIP_PIXEL_SHA256 = {
     "2026-07-10_AGUA-M_Water": "f1bd18a6835c05c6ba7787fb4b614252864eab0228711b5d50526347b4691df7",
     "2026-07-10_FR4-3_Sucrose": "39a76fe442d192f37773c07770d538d3e7eb903f5f9d87aff147bed7773f6758",
     "2026-07-10_FR5-5_Water": "89a70d2ead3b5974c9804202259d020290e604244fe350a5b67959247a01f1d5",
+    "2026-07-10_NPY-M_Water": "c5629347d9333cd5e62f77b8458e59d239fbf0a1558e724f6ee8375c36ffc66f",
 }
 
 
@@ -142,7 +143,7 @@ def load_and_validate_source(
     if not receipt_path.is_file() or not manifest_path.is_file():
         raise FileNotFoundError(f"Accepted HIL receipt/manifest missing under {source}")
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
-    if receipt.get("schema") != "fig5_human_hil_receipt_v1":
+    if receipt.get("schema") not in {"fig5_human_hil_receipt_v1", "figs5_human_hil_receipt_v2"}:
         raise RuntimeError("Unrecognized frozen Figure 5/S5 HIL receipt schema")
     if receipt.get("status") != "human_accepted":
         raise RuntimeError("Supplementary Figure S5 HIL receipt is not human_accepted")
@@ -190,7 +191,10 @@ def load_and_validate_source(
     acquisitions = [row["acquisition_id"] for row in rows]
     if len(acquisitions) != len(set(acquisitions)):
         raise RuntimeError("HIL manifest contains duplicate acquisition IDs")
-    if set(acquisitions) != set(EXPECTED_REVIEW_MIP_PIXEL_SHA256):
+    expected_ids = set(EXPECTED_REVIEW_MIP_PIXEL_SHA256)
+    if len(acquisitions) == 8:
+        expected_ids.remove("2026-07-10_NPY-M_Water")
+    if set(acquisitions) != expected_ids:
         raise RuntimeError(
             "Canonical reviewed DAPI MIP pixel-hash inventory differs from HIL manifest"
         )

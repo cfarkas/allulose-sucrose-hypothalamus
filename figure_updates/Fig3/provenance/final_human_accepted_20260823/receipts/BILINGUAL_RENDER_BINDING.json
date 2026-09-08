@@ -1,0 +1,26 @@
+{
+  "conditions_group_membership_changed": false,
+  "display_text_only_translation": true,
+  "english_master_only": true,
+  "isolated_graphics_per_language": 14,
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "numeric_data_changed": false,
+  "paired_suffix": "_spanish.pdf/png",
+  "renderer_scripts": {
+    "02_make_cfos_npy_cartoons_spanish.py": "18010995d3d22526b258bd25cca9b331f0ba88ebfdb6356d1185bcae7374645d",
+    "03_make_figure_3_cfos_npy_spanish.py": "7710a63949702aa918d92bcb7b99937a9ce94ee5a2a9bda2c07b5d774a7067e0",
+    "05_analyze_spatial_distributions_spanish.py": "b2aa50334c11fb5b63f7847c7709e3c2ce7ba49c08d541ad42b48298181462ee"
+  },
+  "seed_changed": false,
+  "spanish_D_E_geometry_normalization": {
+    "distortion": false,
+    "method": "uniform scale and center onto exact English MediaBox; render to exact English pixel canvas",
+    "uniform_scale": 0.9910094366035348
+  },
+  "spanish_legends": 7,
+  "spanish_work_master_excluded": true,
+  "status": "PASS"
+}

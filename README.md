@@ -6,7 +6,9 @@ brain activity after prior exposure, focusing on the hypothalamus, which helps
 regulate appetite.
 
 Recreate **all 11 figures (1–5 and S1–S6)**. Figure 1 includes the corrected
-Holm terminology, and S6 compares 73.9% versus 57.0% balanced accuracy.
+Holm terminology and reconciled cage transfer. Figure 3 includes sucrose and
+its reviewed boundaries; S5 includes NPY-M (three animals per condition).
+S6 compares 73.9% versus 57.0% balanced accuracy.
 
 **Normal runs reuse the 203 saved human microglial choices without prompting.**
 To classify the cells yourself and retrain, add the optional flag:
@@ -20,7 +22,8 @@ Zenodo records.
 
 All four records are open access. The command below downloads them automatically.
 They contain the original ten-figure release; the verified GitHub update adds the
-current scripts, saved microglial review data and S6.
+current scripts, saved reviews, corrected figures, pilot-based sample-size
+calculations and S6.
 
 | Contents | Zenodo record |
 | --- | --- |
@@ -70,8 +73,9 @@ additional microglial review branch. It applies the tested settings automaticall
 against the published figures.
 
 **Keep the terminal open and the computer awake.** Downloading may take several
-hours. The figure calculations took about 37 minutes on our test server;
-allow longer on a slower computer.
+hours. The archived ten-figure calculations took about 37 minutes on our test
+server. The current eleven-figure workflow includes additional reconstruction
+steps; its total runtime has not been benchmarked.
 
 When everything has passed, you will see:
 
@@ -90,7 +94,9 @@ Each folder contains PNG/PDF figures and a `source_data/` folder with plotted
 values and statistics. Main figures are in English; individual panels and
 legends are available in English and Spanish.
 
-The manuscript/thesis PDF and Word files are directly inside `Paper/`.
+The archived Zenodo payload also contains its original documents. The current
+thesis and manuscript are maintained locally and are not included in this
+GitHub figure/code update.
 Run logs are saved in `logs/`.
 
 ## If something stops
@@ -109,7 +115,9 @@ see the [detailed guide](DETAILED_GUIDE.md).
 
 The original ten-figure replay reproduced all 136 PNGs exactly. Separate checks
 reproduced all 36 corrected Figure 1/S6 PDF/PNG files byte for byte. A complete
-new eleven-figure replay has not been rerun. Figure 5's candidate class labels
+new eleven-figure replay has not been rerun. The complete Figure 3 and
+nine-animal S5 have separate reconstruction checks; the update guide describes
+their scope. Figure 5's candidate class labels
 remain provisional, as explained in the [update guide](FIGURE_UPDATES.md).
 
 For the original ten-figure release in an unmodified reconstruction, use

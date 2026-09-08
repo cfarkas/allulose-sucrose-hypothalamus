@@ -1,0 +1,8 @@
+Figure S2. Female single bottle experiment (exploratory).
+
+(A) Female cage consumption from Day 1 through Day 6. Thin lines are complete cage trajectories; thick lines are equal-cage means. Bands are pointwise descriptive 95% intervals from whole-cage trajectory resampling (20,000 draws). Water has one cage, so its 95% interval is not estimable.
+(B) Female Day-6 cage-consumption endpoint. Dots are cages; diamonds are cage means. One-way ANOVA p = 0.032; the three pairwise exact p values are Holm-adjusted within this sex and outcome. The Water mean has no interval because it is one cage.
+(C) Female body-weight change from each mouse's Day-1 baseline. Pale points are mice, thin lines are cage-day means, and thick lines are equal-cage means; inferential weight remains at cage level. Bands use whole-cage trajectory resampling. Water has one cage, so its 95% interval is not estimable.
+(D) Female Day-6 cage-mean body-weight endpoint. Each dot is one cage. One-way ANOVA p = 0.304; the three pairwise exact p values are Holm-adjusted within this sex and outcome. The Water mean has no interval because it is one cage.
+
+All January cages were verified as single-sex in both source tables before the cage-level bottle data were assigned to sex. Female cage N is Water 1, Sucrose 2, Allulose 2. Displayed omnibus p values use ordinary one-way ANOVA; exact cage-label omnibus results are retained as sensitivity analyses. Pairwise exact p values are low-resolution. Mouse rows in body-weight panels are descriptive. No treatment-by-sex interaction was estimated or tested; differences in within-sex significance must not be interpreted as a sex difference. Treatment randomization was not documented, so the analyses are exploratory.

@@ -1,0 +1,56 @@
+{
+  "cells_as_replicates": false,
+  "experimental_unit": "biological animal",
+  "panels": [
+    {
+      "animal_count": 9,
+      "animal_n_by_condition": {
+        "Allulose": 3,
+        "Sucrose": 3,
+        "Water": 3
+      },
+      "dispersion_f": 4.71416619668,
+      "dispersion_p_exact": 0.0642857142857,
+      "endpoint": "cfos_occurrence",
+      "enumerated_labelings": 1680,
+      "extreme_labelings": 204,
+      "feature_rows": 54,
+      "p_value_exact": 0.121428571429,
+      "panel": "F",
+      "pseudo_f": 3.29322477547,
+      "r_squared": 0.523296861779,
+      "receipt_extreme_count": 204,
+      "receipt_rows": 1680,
+      "shells_per_animal": [
+        6
+      ]
+    },
+    {
+      "animal_count": 9,
+      "animal_n_by_condition": {
+        "Allulose": 3,
+        "Sucrose": 3,
+        "Water": 3
+      },
+      "dispersion_f": 8.48734236894,
+      "dispersion_p_exact": 0.0142857142857,
+      "endpoint": "double_occurrence",
+      "enumerated_labelings": 1680,
+      "extreme_labelings": 18,
+      "feature_rows": 54,
+      "p_value_exact": 0.0107142857143,
+      "panel": "G",
+      "pseudo_f": 12.5706139381,
+      "r_squared": 0.807329369804,
+      "receipt_extreme_count": 18,
+      "receipt_rows": 1680,
+      "shells_per_animal": [
+        6
+      ]
+    }
+  ],
+  "same_numeric_data_languages": true,
+  "spanish_recompute_numeric_max_abs_difference": 0.0,
+  "spanish_recompute_statistic_max_abs_difference": 0.0,
+  "status": "PASS"
+}

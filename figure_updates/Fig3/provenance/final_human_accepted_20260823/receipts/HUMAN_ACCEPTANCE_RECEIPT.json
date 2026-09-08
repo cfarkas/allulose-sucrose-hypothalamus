@@ -1,0 +1,45 @@
+{
+  "accepted_at": "2026-08-23T12:29:48-04:00",
+  "accepted_by": "user",
+  "status": "HUMAN_ACCEPTED_MANDATORY",
+  "publication_input": true,
+  "source_review_directory": "/media/server/STORAGE/Apotome/Paper/Fig3/hil_review/Water3_machine_gpu_20260823_v1",
+  "frozen_directory": "/media/server/STORAGE/Apotome/Paper/Fig3/hil_review/Water3_human_accepted_20260823_v1",
+  "review_statement": "User manually removed faulty segmentations, added missing segmentations, and explicitly required this reviewed set for Figure 3.",
+  "copy_policy": "physical_copy_reflink_disabled_distinct_inode",
+  "masks": [
+    {
+      "channel": "DAPI",
+      "image": "WATER_NPY3_S01_dapi.tif",
+      "mask": "WATER_NPY3_S01_dapi_seg.npy",
+      "shape_yx": [1419, 1898],
+      "objects": 3224,
+      "sha256": "f2fe88d7ea465247ac1eff4c388391e0b5c287b9436420b5012f6a071d2a5f82"
+    },
+    {
+      "channel": "NPY_GFP",
+      "image": "WATER_NPY3_S01_GFP.tif",
+      "mask": "WATER_NPY3_S01_GFP_seg.npy",
+      "shape_yx": [1419, 1898],
+      "objects": 196,
+      "sha256": "477a965a90b442d3b814d41405ce30083bab84e8e2f4028f42995959a70b2a0c"
+    },
+    {
+      "channel": "cFOS",
+      "image": "WATER_NPY3_S01_fos.tif",
+      "mask": "WATER_NPY3_S01_fos_seg.npy",
+      "shape_yx": [1419, 1898],
+      "objects": 54,
+      "sha256": "50a93a70f12088afb1f63aaa337636003cb242e41d0c2ae94c894efd21816648"
+    }
+  ],
+  "validation": {
+    "image_mask_geometry_match": true,
+    "finite": true,
+    "nonnegative": true,
+    "labels_contiguous": true,
+    "source_copy_sha256_match": true,
+    "distinct_inodes": true
+  }
+}
+

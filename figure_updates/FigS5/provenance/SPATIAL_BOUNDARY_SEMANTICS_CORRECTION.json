@@ -1,0 +1,32 @@
+{
+  "schema": "figs5_spatial_boundary_semantics_correction_v3",
+  "figure": "S5",
+  "finding": "The dedicated DAPI-review polygons follow the 3V cavity, not the outer tissue boundary.",
+  "cause_of_rejected_render": "The polygons were incorrectly consumed as filled tissue masks, changing the normalization box and drawing a cavity contour through the tissue.",
+  "corrective_action": "Preserve and hash-validate the immutable review; reclassify each raster polygon as a negative 3V mask; exclude in-mask nuclear centroids before I/J shell construction and endpoint calculation; force displayed density to zero inside the condition-medoid 3V; use only accepted DAPI ARC/ME/VMN anatomy for the outer-tissue crop and normalization box.",
+  "raw_images_modified": false,
+  "raw_segmentations_modified": false,
+  "review_annotations_modified": false,
+  "legacy_raster_masks_used_for_tissue_geometry": false,
+  "reviewed_raster_masks_used_as_3v_exclusion": true,
+  "ventricular_contour_drawn": true,
+  "ventricular_contour_role": "condition-medoid visible outline and zero-density display mask; native per-acquisition masks exclude nuclei from I/J",
+  "ventricular_contour_selection": "minimum summed pairwise Jaccard distance among observed condition contours; acquisition ID breaks exact ties",
+  "selected_acquisitions_by_condition": {
+    "Water": "2026-07-10_FR5-5_Water",
+    "Sucrose": "2026-07-10_FR4-3_Sucrose",
+    "Allulose": "2026-07-09_FR5-2_Allulose"
+  },
+  "review_dir": "/media/server/STORAGE/Apotome/Paper/FigS5/hil_review/spatial_3v_including_NPY_M_20260908",
+  "review_schema": "figs5_spatial_3v_hil_v2",
+  "review_receipt_sha256": "4ab8f7561683f938aefeb23debd6730d2bdddda32eb86d7b8c65c943fda27f55",
+  "ventricle_source_table": "source_data/spatial_ventricle_contour_source.csv",
+  "ventricle_source_table_sha256": "272d2f2e435cfef7d51dc96b96eed87047cfa3f0129b0a831b6a26bdcb265fcb",
+  "ventricle_exclusion_audit": "source_data/spatial_3v_exclusion_audit.csv",
+  "ventricle_exclusion_audit_sha256": "edf2852f2451243e59ac5ee7b30b10ecdc75ca6b01eda1b3c828950c31820713",
+  "excluded_totals": {
+    "dapi_nuclei": 434,
+    "cfos_nuclei": 0,
+    "double_nuclei": 0
+  }
+}

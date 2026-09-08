@@ -1,0 +1,30 @@
+{
+  "current_provenance_sha256": "cc74936c087a4313bff6764fe5a689e8ec1ac088cf6ca8dce1bfcd20c9537029",
+  "generator_path": "/media/server/STORAGE/Apotome/Paper/scripts/Fig3/00_extract_water3_channels.py",
+  "generator_sha256": "3ef4b9ac6d4c44d73bd5d6e2bafb79a856de8267f6f3d4db6c486295f0eba6e6",
+  "output_is_fresh": true,
+  "pixel_sha256": {
+    "GFP": "28fd400469901436b0a5be093d5fb4afe49c56f4905951d51e9e8b4ce23cf10e",
+    "dapi": "c9bb43c80f07a019d24e557922d6a78fb50d3f627b54fc217aa6494cd72d239c",
+    "fos": "33bc1f0fb9f625d04cef15bb711da44555a554a2c5e4df5a55d4558c08f10aef"
+  },
+  "preincident_container_sha256_receipts": {
+    "native_tiff": {
+      "GFP": "f32d2b74a0ce59ce8952d3b676351819fd1ffc7a10711587761c0bc50f37ce5e",
+      "dapi": "5fa403c79840778b86386815f992cdcc17953abaf857fe819534a52c7f0fc012",
+      "fos": "7a61c31dfc7c6ce5d69162767ec48e23373290c9b57a592caf3c37671a32dd2c"
+    },
+    "provenance": "22871c210374bcbf529dc85adcb0d2d490aa88d564438c4e691df6325c4d43b6",
+    "rgb_tiff": {
+      "GFP": "c8f5f75d558f2011e9b44354d2886a42ab1a8e8938e47fa17f2632c5b8ce7dc8",
+      "dapi": "4fb94b76b67425cff4b95c1195c096b366a316c65ddef46d56196f9f4f941880",
+      "fos": "d0b399c3eb46541a9eed3cd6aa54b0122523ecb495b6cfdca941b4b7c7cee9b7"
+    }
+  },
+  "schema_version": "figure3-water3-extraction-reconstruction-v1",
+  "segmentation_performed": false,
+  "source_lif_path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw_data/new_water_control_sp8_2026_07_20/cFos-NeuN-Npy-Ctrl-Agua-40X.lif",
+  "source_lif_sha256": "db4cbdb72c8e8af6a5ab264d1526083d4bb70c4ece54e9c9ee59a8c90d7671ab",
+  "source_lifext_path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw_data/new_water_control_sp8_2026_07_20/cFos-NeuN-Npy-Ctrl-Agua-40X.lifext",
+  "source_lifext_sha256": "1359dd14c59ad5d558312db0a6ff71bbf1ecaf2660e126fabba039903eb22fc7"
+}

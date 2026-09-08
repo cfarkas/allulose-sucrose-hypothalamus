@@ -1,0 +1,626 @@
+{
+  "schema_version": 10,
+  "figure": "S5",
+  "source_dataset": "FigS5",
+  "dpi": 600,
+  "workdir": "/tmp/figs5_reproduction_including_NPY_M_20260908",
+  "output_dir": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908",
+  "experiment": "16 h fasting; first-ever solution exposure",
+  "antibody": "ACTH/CLIP",
+  "cohort": {
+    "WT": {
+      "Water": 2,
+      "Sucrose": 3,
+      "Allulose": 3
+    },
+    "NPY-Tg": {
+      "Water": 1
+    },
+    "excluded": [],
+    "counts": {
+      "Allulose": 3,
+      "Sucrose": 3,
+      "Water": 3
+    }
+  },
+  "representative_acquisition": "2026-07-09_FR4-1_Allulose",
+  "representative_sample": "FR4-1",
+  "representative_condition": "Allulose",
+  "representative_rule": "Allulose animal closest to the Allulose median ACTH/CLIP activation fraction",
+  "acth_clip_size_rule": "reject ROI area below acquisition-specific DAPI nuclear-area fifth percentile",
+  "raw_cellpose_masks_modified": false,
+  "panel_layout": {
+    "microscopy_2x3": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "C",
+        "D"
+      ],
+      [
+        "E",
+        "F"
+      ]
+    ],
+    "right_statistics_vertical": [
+      "G",
+      "H"
+    ],
+    "bottom_spatial": [
+      "I",
+      "J"
+    ]
+  },
+  "panel_f_title_shortened": true,
+  "panel_h_regions": [
+    "ARC"
+  ],
+  "panel_f_roi_gated_natural_intensity": true,
+  "master_title_omits_figure_number": true,
+  "panel_letters_use_fixed_figure_coordinates": true,
+  "spatial_colorbars_use_dedicated_axes": true,
+  "inset_delimiter_linewidth_pt": 3.2,
+  "heatmap_tissue_boundary": "condition-consensus outer envelope of accepted DAPI-only ARC/ME/VMN anatomy masks; holes filled; thin light dashed line",
+  "heatmap_ventricle_overlay": "condition-medoid accepted HIL 3V point contour; bold white dashed line; density masked to zero inside",
+  "spatial_tissue_boundary_source": "outer envelope of accepted DAPI-only ARC/ME/VMN anatomy HIL",
+  "spatial_dedicated_review_geometry_used": false,
+  "spatial_dedicated_review_used_for_tissue_geometry": false,
+  "spatial_dedicated_review_used_for_ventricle_overlay": true,
+  "spatial_dedicated_review_used_for_ventricle_exclusion": true,
+  "spatial_dedicated_review_geometry_disposition": "native reviewed 3V masks exclude nuclei/density from I/J; condition medoids are visible outlines; outer-tissue crop/normalization unchanged",
+  "spatial_ventricle_selected_acquisitions": {
+    "Water": "2026-07-10_FR5-5_Water",
+    "Sucrose": "2026-07-10_FR4-3_Sucrose",
+    "Allulose": "2026-07-09_FR5-2_Allulose"
+  },
+  "spatial_ventricle_selection_method": "minimum summed pairwise Jaccard distance among observed condition contours; acquisition ID breaks exact ties",
+  "spatial_ventricle_source_table": "source_data/spatial_ventricle_contour_source.csv",
+  "spatial_ventricle_source_table_sha256": "272d2f2e435cfef7d51dc96b96eed87047cfa3f0129b0a831b6a26bdcb265fcb",
+  "spatial_ventricle_exclusion_audit": "source_data/spatial_3v_exclusion_audit.csv",
+  "spatial_ventricle_exclusion_audit_sha256": "edf2852f2451243e59ac5ee7b30b10ecdc75ca6b01eda1b3c828950c31820713",
+  "spatial_ventricle_excluded_totals": {
+    "dapi_nuclei": 434,
+    "cfos_nuclei": 0,
+    "double_nuclei": 0
+  },
+  "spatial_tissue_hil_schema": "figs5_spatial_3v_hil_v2",
+  "spatial_boundary_semantics_correction": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json",
+  "spatial_boundary_semantics_correction_sha256": "5be61e611174f7c3bf38bf7eea2fa38c4520edb9b5c106573db1136b1fc20f53",
+  "spatial_tissue_hil_dir": "/media/server/STORAGE/Apotome/Paper/FigS5/hil_review/spatial_3v_including_NPY_M_20260908",
+  "spatial_tissue_hil_receipt_sha256": "4ab8f7561683f938aefeb23debd6730d2bdddda32eb86d7b8c65c943fda27f55",
+  "spatial_analysis": "accepted per-acquisition 3V exclusion before six covariance-normalized equal-DAPI-density shells; arcsin-sqrt proportions; exhaustive animal-label PERMANOVA across 1680 allocations; BH across two endpoints",
+  "spatial_statistics": [
+    {
+      "endpoint": "cfos",
+      "endpoint_label": "c-FOS-positive nuclei / DAPI nuclei",
+      "test": "exact animal-label PERMANOVA",
+      "comparison": "Water|Sucrose|Allulose",
+      "n_animals": 9,
+      "n_water": 3,
+      "n_sucrose": 3,
+      "n_allulose": 3,
+      "feature_count": 6,
+      "feature_transform": "arcsin(sqrt(shell positive nuclei / shell DAPI nuclei))",
+      "distance": "Euclidean on six-shell animal vectors",
+      "pseudo_f": 1.0894760073292524,
+      "r_squared": 0.26640968314196456,
+      "p_value_exact": 0.4,
+      "extreme_labelings": 672,
+      "enumerated_labelings": 1680,
+      "permutation_exhaustive": true,
+      "experimental_unit": "biological animal",
+      "cells_as_independent_replicates": false,
+      "analysis_tier": "exploratory",
+      "ventricle_exclusion": "accepted per-acquisition DAPI-only HIL 3V mask applied before shell construction and endpoint calculation",
+      "bh_q_value_two_endpoint_family": 0.4642857142857143,
+      "multiple_testing_family": "two declared S5 ARC/ME spatial profiles: c-FOS/DAPI and c-FOS+ACTH/CLIP/DAPI"
+    },
+    {
+      "endpoint": "double",
+      "endpoint_label": "c-FOS and ACTH/CLIP double-positive nuclei / DAPI nuclei",
+      "test": "exact animal-label PERMANOVA",
+      "comparison": "Water|Sucrose|Allulose",
+      "n_animals": 9,
+      "n_water": 3,
+      "n_sucrose": 3,
+      "n_allulose": 3,
+      "feature_count": 6,
+      "feature_transform": "arcsin(sqrt(shell positive nuclei / shell DAPI nuclei))",
+      "distance": "Euclidean on six-shell animal vectors",
+      "pseudo_f": 0.9344792115521701,
+      "r_squared": 0.2375102678922311,
+      "p_value_exact": 0.4642857142857143,
+      "extreme_labelings": 780,
+      "enumerated_labelings": 1680,
+      "permutation_exhaustive": true,
+      "experimental_unit": "biological animal",
+      "cells_as_independent_replicates": false,
+      "analysis_tier": "exploratory",
+      "ventricle_exclusion": "accepted per-acquisition DAPI-only HIL 3V mask applied before shell construction and endpoint calculation",
+      "bh_q_value_two_endpoint_family": 0.4642857142857143,
+      "multiple_testing_family": "two declared S5 ARC/ME spatial profiles: c-FOS/DAPI and c-FOS+ACTH/CLIP/DAPI"
+    }
+  ],
+  "statistics_annotation": "G (ME/ARC) and H (ARC only): Kruskal-Wallis and one-way ANOVA; Sucrose-vs-Allulose Mann-Whitney only when n>=3/group, BH q and Cliff delta. I/J: exact PERMANOVA and two-endpoint BH q",
+  "analysis_script": "/media/server/STORAGE/Apotome/Paper/FigS5/02a_july_cfos_acth_clip_human_in_loop_s5.py",
+  "analysis_script_sha256": "107da8a1797460dbffebae7a84785cb9e446a2fccb3779f947d7f97a1d2f34c9",
+  "renderer_script": "/media/server/STORAGE/Apotome/Paper/FigS5/03_make_figure_s5_acth_clip_cfos.py",
+  "renderer_script_sha256": "7702283669d9aaff8c80e15dc47f2290d8ce31a8a8d8d22b9afb53f0890acc45",
+  "accepted_hil_receipt": "/media/server/STORAGE/Apotome/Paper/FigS5/hil_review/human_final_including_NPY_M_20260908/HIL_RECEIPT.json",
+  "accepted_hil_receipt_sha256": "e56b854472b550f96f1f2dbc424729441aabf9e640e550b91246971c13f229a9",
+  "english_panels": 10,
+  "spanish_panels": 10,
+  "master_language": "English only",
+  "spanish_multipanel_master": false,
+  "masters": [
+    "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/Figure_S5.png",
+    "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/Figure_S5.pdf"
+  ],
+  "outputs": [
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/Figure_S5.png",
+      "relative_path": "Figure_S5.png",
+      "bytes": 25295286,
+      "sha256": "25e60d3422353c952bc69b300b03b0047217ddb279e09eb2623ed2e98733352b",
+      "width_px": 9900,
+      "height_px": 9210,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_A.png",
+      "relative_path": "panels/Figure_S5_panel_A.png",
+      "bytes": 6208801,
+      "sha256": "44561b6795b0d6e786812cc0c6813f59d19197548dac35c523cedec252a878fd",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_A_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_A_spanish.png",
+      "bytes": 6213788,
+      "sha256": "7810038c304ef6c9b27acc2e61e94477623928270f17d41f5a1c82c48503db1f",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_B.png",
+      "relative_path": "panels/Figure_S5_panel_B.png",
+      "bytes": 8308144,
+      "sha256": "55760ecf7b9a63b5250f56a9e7c4dacd1e0e888cf46e9c24894eecefe5b9d4b4",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_B_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_B_spanish.png",
+      "bytes": 8314249,
+      "sha256": "e19e58148a75a957095edfa00431776aedf5b955de67795e6d02608a10d6480d",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_C.png",
+      "relative_path": "panels/Figure_S5_panel_C.png",
+      "bytes": 6034491,
+      "sha256": "b57fe044d214ad38325b147b713af3b9afd0c0b0038084dd88a02e393783eb08",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_C_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_C_spanish.png",
+      "bytes": 6040187,
+      "sha256": "31495677b93fcdc3f8b2aa42c356736ca1ee08623c304915d3a47e2f8e450559",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_D.png",
+      "relative_path": "panels/Figure_S5_panel_D.png",
+      "bytes": 516244,
+      "sha256": "d02143045dcad1f18eaf024a4faa090b370aee2f771865c32e0f20ceaa040c80",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_D_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_D_spanish.png",
+      "bytes": 513287,
+      "sha256": "3014192523df43874a812b93c33c72f92c4fdbec0b700879b8d635cfa14386ac",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_E.png",
+      "relative_path": "panels/Figure_S5_panel_E.png",
+      "bytes": 9308767,
+      "sha256": "14cae69d8dfe8e86525299c0c000473d794f3741cf55b392fccb913939273e6b",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_E_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_E_spanish.png",
+      "bytes": 9319008,
+      "sha256": "5151d0c615ec6b5f73da67ec7bc9a758f65b4cb2b6725dfec1bcf18104b16fc4",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_F.png",
+      "relative_path": "panels/Figure_S5_panel_F.png",
+      "bytes": 7794315,
+      "sha256": "67bc0ff3a32fac783ac0330cef5a0c87f9f7b814ab7b183fdf78df7cbd002f3f",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_F_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_F_spanish.png",
+      "bytes": 7803871,
+      "sha256": "6fe78bdcfff62d237ba6bf32f81f25af05a7815dcee87784ac9339b5b59757a1",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G.png",
+      "relative_path": "panels/Figure_S5_panel_G.png",
+      "bytes": 343972,
+      "sha256": "b65948fabbd8dd7a088dbbe68881dbf904a9d4fd338055f8d856097f2a062529",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_G_spanish.png",
+      "bytes": 360373,
+      "sha256": "7a807f381b7269a4bdfb107d5297f9dc27fbdd3282b833973c40bc60faecbc60",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H.png",
+      "relative_path": "panels/Figure_S5_panel_H.png",
+      "bytes": 278811,
+      "sha256": "062f3a7a25dae66dada2808a6162be5d8e7bab79adaa547f56f3c30ffa56e14d",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_H_spanish.png",
+      "bytes": 290371,
+      "sha256": "678f751f763f98a369482e2cedeb5bc8f3b487a3f149b83d2eecabff2f6a45ae",
+      "width_px": 3720,
+      "height_px": 2250,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I.png",
+      "relative_path": "panels/Figure_S5_panel_I.png",
+      "bytes": 805563,
+      "sha256": "279bfc3508a5d4593afc2f4dfa46fddc68565ec0e08590cc0be772fe22e1c1a7",
+      "width_px": 4860,
+      "height_px": 3750,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_I_spanish.png",
+      "bytes": 831170,
+      "sha256": "36b3ce22d4bc63d2b4d115058f6e8c1e12c487eb1ae9a43325a0943bc5e9fbd5",
+      "width_px": 4860,
+      "height_px": 3750,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J.png",
+      "relative_path": "panels/Figure_S5_panel_J.png",
+      "bytes": 780689,
+      "sha256": "a2acec5d684d8e662bf15bbdecd744a0d620c6993536fc799f3c24f4302c7ef3",
+      "width_px": 4860,
+      "height_px": 3750,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J_spanish.png",
+      "relative_path": "panels/Figure_S5_panel_J_spanish.png",
+      "bytes": 796108,
+      "sha256": "6d2d5d35b3f3e16bc0ff9a786e57ed8b9c61c7aa37080388f41afaa7796d30dc",
+      "width_px": 4860,
+      "height_px": 3750,
+      "dpi_x": 599.9988,
+      "dpi_y": 599.9988
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/Figure_S5.pdf",
+      "relative_path": "Figure_S5.pdf",
+      "bytes": 21588297,
+      "sha256": "b43042861f4e45a4352f77a246eadf2e6c9137ec113245feb43e6296009706d6"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_A.pdf",
+      "relative_path": "panels/Figure_S5_panel_A.pdf",
+      "bytes": 5585583,
+      "sha256": "6061aa4e14cb2935609fcb1a18a9a2b342403083440c24ee0b46b240736cdfd1"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_A_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_A_spanish.pdf",
+      "bytes": 5586368,
+      "sha256": "644162a46aa297a513d936d922fc873cdc69c768dfcd369d1e14a807778eedc9"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_B.pdf",
+      "relative_path": "panels/Figure_S5_panel_B.pdf",
+      "bytes": 7434725,
+      "sha256": "f9b9b54f53363c98d030de07b7bac66c76861c34c7b001f30cda81d56b3f9582"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_B_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_B_spanish.pdf",
+      "bytes": 7435166,
+      "sha256": "f2131725c46a3d351f0ff7d1a74d15a8c4b341adefae464255b648dfd4788d8a"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_C.pdf",
+      "relative_path": "panels/Figure_S5_panel_C.pdf",
+      "bytes": 5513882,
+      "sha256": "691d7f5868eb6c5c415a06d62e7d62a8e40b8f920e4316ccd3be0acce7208f46"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_C_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_C_spanish.pdf",
+      "bytes": 5514669,
+      "sha256": "2b8a0f7326d3dc2189cd1a6185a0135b411b61e756089485388e7f3315200a7c"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_D.pdf",
+      "relative_path": "panels/Figure_S5_panel_D.pdf",
+      "bytes": 373904,
+      "sha256": "a3756aa591562766869399875d11c6599e0146add4caf34cc3cde39e3c84507a"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_D_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_D_spanish.pdf",
+      "bytes": 373763,
+      "sha256": "77729d65fff028e9eb7d9d912d43a9faeb6e93a0f2ef67e9c5c886794e60bab8"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_E.pdf",
+      "relative_path": "panels/Figure_S5_panel_E.pdf",
+      "bytes": 9265765,
+      "sha256": "c3fbcc9a960b58926bf65b00da8744214ca48a564ea48af44c8fbd922a094964"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_E_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_E_spanish.pdf",
+      "bytes": 9265622,
+      "sha256": "ddf91c1b88d27845d69cf80d47edb68d51f3499004afe91b8d576d25c0ffbbde"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_F.pdf",
+      "relative_path": "panels/Figure_S5_panel_F.pdf",
+      "bytes": 7765520,
+      "sha256": "070292613698bc0f600efb5f88c32fc3edcc130204d26c9c8aa72af0d878b777"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_F_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_F_spanish.pdf",
+      "bytes": 7766453,
+      "sha256": "b31484bb0a70e34bd1beb2ec1528e929811caeb4b5db370aba5a35279630f48a"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G.pdf",
+      "relative_path": "panels/Figure_S5_panel_G.pdf",
+      "bytes": 31284,
+      "sha256": "2a566c7170797ead68bd0e4fc462410b5fefd14b1666f00ded81cb26f9d35b27"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_G_spanish.pdf",
+      "bytes": 32799,
+      "sha256": "4fc6d5ed525dfff92263c664ccd034863636472a25b76e638713e956fe4cafde"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H.pdf",
+      "relative_path": "panels/Figure_S5_panel_H.pdf",
+      "bytes": 27847,
+      "sha256": "e3dd6d5cffc9843c296b9b286d3601ee9d13ddb04fa3534358775eb1925f690e"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_H_spanish.pdf",
+      "bytes": 29576,
+      "sha256": "8dde4a44c4cae5fcd44894e5357c919cb62285754f2e171d754d8098bebacfe6"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I.pdf",
+      "relative_path": "panels/Figure_S5_panel_I.pdf",
+      "bytes": 93784,
+      "sha256": "a0f9973bbdc4c179932a44dc919583737c27b0b3a1c5d9ce18595ed4d20dffec"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_I_spanish.pdf",
+      "bytes": 94527,
+      "sha256": "2459995e05935b587d3a55d4a381608a761f747bef16ca2d1f63564e21d57280"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J.pdf",
+      "relative_path": "panels/Figure_S5_panel_J.pdf",
+      "bytes": 77528,
+      "sha256": "4b084ebb957ad493fb2c65b97edeae3d19475094e9b7928f34085880c40374fa"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J_spanish.pdf",
+      "relative_path": "panels/Figure_S5_panel_J_spanish.pdf",
+      "bytes": 77751,
+      "sha256": "b25c9b3ffa5a50e4993a892b79e5b08f40805d1cc525f403a4c2d22f5239b6fd"
+    }
+  ],
+  "ancillary_files": [
+    {
+      "relative_path": "source_data/WT_only_region_values.csv",
+      "bytes": 8060,
+      "sha256": "2d30940d26be55a842bdbdcb3461eb12f89fa9407f0295b2e7549cef23a28fd0"
+    },
+    {
+      "relative_path": "source_data/WT_only_regional_statistics.csv",
+      "bytes": 5354,
+      "sha256": "b3095749dde8ea6bbbdd6fd7cc75340ceff4fe61c5c85eeafd9cea1522869c25"
+    },
+    {
+      "relative_path": "source_data/WT_only_shell_values.csv",
+      "bytes": 23778,
+      "sha256": "e2d08365c35ceb8ac51b607b9500f5b398b48f5b49139cdc623feaf8a305bb23"
+    },
+    {
+      "relative_path": "source_data/WT_only_spatial_statistics.csv",
+      "bytes": 1358,
+      "sha256": "a2ef6ce5cc24cbec2ddbbda48a7223ead884dd38d7625a439c6d1728d6521511"
+    },
+    {
+      "relative_path": "source_data/acth_clip_dapi_size_filter_audit.csv",
+      "bytes": 3728,
+      "sha256": "4334ce070a0d727918eeea5a56fb8d261b8e7b67e2e2fb3790529155e8ad4e95"
+    },
+    {
+      "relative_path": "source_data/analysis_readme.txt",
+      "bytes": 476,
+      "sha256": "5a19c47bbd68979d3e43609dcec31e1534d5ab6354d83950259d2a4cb2f73adc"
+    },
+    {
+      "relative_path": "source_data/annotation_status.csv",
+      "bytes": 1553,
+      "sha256": "4cb0b8715b7d8e107f2b2c9777f48854e4ff4fb3024eedc2d7d53455328d536a"
+    },
+    {
+      "relative_path": "source_data/count_invariants.csv",
+      "bytes": 1934,
+      "sha256": "cd35e6d635d59d549c5906b596c30bbaeec82e45d767fce9d8a59075db78538e"
+    },
+    {
+      "relative_path": "source_data/endpoint_values_long.csv",
+      "bytes": 15735,
+      "sha256": "0d380d6a51bf947de3cb07313ce56f6aca231f72a36258b466f401a126746784"
+    },
+    {
+      "relative_path": "source_data/marker_roi_assignments.csv",
+      "bytes": 360277,
+      "sha256": "88ee7ec4e433b6c8479fd106f10b2db24cff5726600eb6e8b38417123df541e5"
+    },
+    {
+      "relative_path": "source_data/per_analysis_unit_region_summary.csv",
+      "bytes": 9007,
+      "sha256": "3f72c9e21f7e5395632f0727665b4623780b60152f96d88c39f7f18ee6d87ac7"
+    },
+    {
+      "relative_path": "source_data/per_animal_region_summary.csv",
+      "bytes": 9722,
+      "sha256": "d435d4a02c19a7a1449a4570144ac393c512fdc302d40bac41cc329bf04e23f7"
+    },
+    {
+      "relative_path": "source_data/per_image_region_summary.csv",
+      "bytes": 9007,
+      "sha256": "3f72c9e21f7e5395632f0727665b4623780b60152f96d88c39f7f18ee6d87ac7"
+    },
+    {
+      "relative_path": "source_data/per_nucleus_assignments.csv",
+      "bytes": 4480956,
+      "sha256": "2425ecbec84476f5eb0bfca528003ecf4f6af0163040891c18f515fea0df8d4f"
+    },
+    {
+      "relative_path": "source_data/spatial_3v_exclusion_audit.csv",
+      "bytes": 1157,
+      "sha256": "edf2852f2451243e59ac5ee7b30b10ecdc75ca6b01eda1b3c828950c31820713"
+    },
+    {
+      "relative_path": "source_data/spatial_exact_permanova.csv",
+      "bytes": 1375,
+      "sha256": "08f39f8ff9f12198cf3ab7103948986b076ed4d6788ec549f4fd96abc9d7f170"
+    },
+    {
+      "relative_path": "source_data/spatial_exact_permutation_receipts.csv",
+      "bytes": 387803,
+      "sha256": "9371d3d90f9f9588f35fd60ed641e5a193142f1484ee446a0837b806be0fb830"
+    },
+    {
+      "relative_path": "source_data/spatial_occurrence_source.csv",
+      "bytes": 5731089,
+      "sha256": "1af86e138273664554d5c064dfc47a809ef47f1b1b51fea36303b69029ed1413"
+    },
+    {
+      "relative_path": "source_data/spatial_radial_shell_audit.csv",
+      "bytes": 2189,
+      "sha256": "e7187f4171c2f2a8a80de247727cd8097b804801107beff74553357c7aab706d"
+    },
+    {
+      "relative_path": "source_data/spatial_radial_shell_values.csv",
+      "bytes": 26706,
+      "sha256": "922059c35520be2ef601d0233528226b24bb451283252ffff317a3d24647ad9b"
+    },
+    {
+      "relative_path": "source_data/spatial_ventricle_contour_source.csv",
+      "bytes": 159106,
+      "sha256": "272d2f2e435cfef7d51dc96b96eed87047cfa3f0129b0a831b6a26bdcb265fcb"
+    },
+    {
+      "relative_path": "source_data/statistics_all_values.csv",
+      "bytes": 6308,
+      "sha256": "752acd50cf2c0024b887f6083bc95997cd702a6794cb26beb1ed889609b96f90"
+    },
+    {
+      "relative_path": "legends/Figure_S5_LEGEND.txt",
+      "bytes": 2331,
+      "sha256": "1c39cf7e2b64f5131cfc3e4ec2cb5fde741a924e7b4e5c01c960ccbac51f29ab"
+    },
+    {
+      "relative_path": "legends/Figure_S5_LEGEND_spanish.txt",
+      "bytes": 2364,
+      "sha256": "da16dd39577595b04712262350f7a6feab3a42536a9c972186b2f42522735b19"
+    },
+    {
+      "relative_path": "provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json",
+      "bytes": 2178,
+      "sha256": "5be61e611174f7c3bf38bf7eea2fa38c4520edb9b5c106573db1136b1fc20f53"
+    }
+  ]
+}

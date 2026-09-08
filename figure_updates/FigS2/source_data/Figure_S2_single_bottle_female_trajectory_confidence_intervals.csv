@@ -1,0 +1,19 @@
+panel,Sex,Treatment,study_day,n_cages,cage_balanced_mean,ci95_low,ci95_high,ci_estimable,ci_method,bootstrap_replicates,bootstrap_seed
+A,Female,Water,1,1,0.0,,,False,not estimable: fewer than 2 cages,0,20261816
+A,Female,Water,3,1,20.0,,,False,not estimable: fewer than 2 cages,0,20261816
+A,Female,Water,6,1,40.0,,,False,not estimable: fewer than 2 cages,0,20261816
+A,Female,Sucrose,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261916
+A,Female,Sucrose,3,2,62.5,50.0,75.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261916
+A,Female,Sucrose,6,2,120.0,110.0,130.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261916
+A,Female,Allulose,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262016
+A,Female,Allulose,3,2,32.5,25.0,40.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262016
+A,Female,Allulose,6,2,40.0,35.0,45.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262016
+C,Female,Water,1,1,0.0,,,False,not estimable: fewer than 2 cages,0,20262816
+C,Female,Water,3,1,2.281148383572585,,,False,not estimable: fewer than 2 cages,0,20262816
+C,Female,Water,6,1,2.1075452721431174,,,False,not estimable: fewer than 2 cages,0,20262816
+C,Female,Sucrose,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262916
+C,Female,Sucrose,3,2,2.5495532583679363,1.867499396156094,3.2316071205797785,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262916
+C,Female,Sucrose,6,2,3.1735522031800345,1.893999516924874,4.4531048894351954,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262916
+C,Female,Allulose,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20263016
+C,Female,Allulose,3,2,-4.835436753386669,-6.312305485643314,-3.3585680211300235,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20263016
+C,Female,Allulose,6,2,-1.3509440746561252,-3.10597825197576,0.4040901026635097,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20263016

@@ -1,0 +1,54 @@
+{
+  "schema": "fig3_post_promotion_documentation_supersession_v1",
+  "created_utc": "2026-08-23T18:02:08Z",
+  "status": "PASS_ADDITIVE_SUPERSESSION",
+  "reason": "Repair stale raw-data status, record restored Water3 companions, restore exact manuscript caption/legend, add Spanish manuscript legend, and document recoverable removal of the redundant machine-review source.",
+  "sealed_promotion_receipt": {
+    "path": "CANONICAL_PROMOTION_VALIDATION.json",
+    "sha256": "d4a220904d14573a5d3b9670ea562b991bc3209d6858ea64bd4e1ee410dba8fc",
+    "interpretation": "Historical promotion-time validation; not edited. Its README hash is superseded below. Canonical master graphics were not changed by this documentation repair."
+  },
+  "readme": {
+    "pre_sha256": "6a2797aadf29a7c7978d3f9f68ecf7569b7f72a1c35b64d7ba65587ada44aafa",
+    "post_sha256": "5e167ba4bcaee427172b18e9822a6111835b0dcd88e30b731ba3359a1b8c6e04"
+  },
+  "raw_data_readme": {
+    "pre_sha256": "5da815336949f4fc62254ef4beb8b924fafe54e274d835a248a26185abd528fb",
+    "post_sha256": "fd6ae3abe7f1b5e901aeec36ba742ae8898b34e575d542930a59ad6232d2ccb0"
+  },
+  "raw_data_manifest": {
+    "pre_sha256": "b3b59f434d70f10fd452aeb24870a2036a5fe6899ad56738d82bfb572aed2fcc",
+    "post_sha256": "453142dc81a4dc61af66b30038c6a1babdd723537ad8d3025c3378f7b8b01cba",
+    "restoration_receipt": "WATER3_RAW_DATA_RESTORATION_20260823.json"
+  },
+  "cellpose_companion_manifest": {
+    "pre_sha256": "c85f8b2ec70feb08ec7a2f3c317f0177db2c7d91b1debaf756163713b76c171a",
+    "post_sha256": "d74db4a9709f179dc1a79337bfc23ec553d3a66a3f44062f1a0b82fd5d70897a",
+    "blocked_rows_after": 0
+  },
+  "manuscript_text": {
+    "Figure_3_cFos_NPY_caption.txt": {
+      "bytes": 6902,
+      "sha256": "258a968fe919095287c132d5191ad81ef67a1fdcfd3ed7c74b13c8b2d421c6b2",
+      "source": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/Figure_3_cFos_NPY_caption.txt",
+      "copy_validation": "collision-fail copy; byte comparison and SHA-256 pass"
+    },
+    "legends/Figure_3_cFos_NPY_LEGEND.txt": {
+      "bytes": 6902,
+      "sha256": "258a968fe919095287c132d5191ad81ef67a1fdcfd3ed7c74b13c8b2d421c6b2",
+      "source": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_LEGEND.txt",
+      "copy_validation": "collision-fail copy; byte comparison and SHA-256 pass"
+    },
+    "legends/Figure_3_cFos_NPY_LEGEND_spanish.txt": {
+      "bytes": 3858,
+      "sha256": "eb2e397e88914a2143fa3bb4695c0b1ae6b5beaa7e39d8a7ed6779781912c60f",
+      "language": "Spanish manuscript translation; English canonical graphics unchanged"
+    }
+  },
+  "cleanup_completion": {
+    "path": "MACHINE_REVIEW_SOURCE_CLEANUP_20260823.json",
+    "machine_source_absent": true,
+    "human_accepted_source_present": true,
+    "recoverable_hold": "/tmp/Paper_cleanup_hold_20260823/Fig3/Water3_machine_gpu_20260823_v1"
+  }
+}

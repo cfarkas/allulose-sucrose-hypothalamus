@@ -1,0 +1,109 @@
+{
+  "experimental_unit": "animal",
+  "minimum_n_gate": 3,
+  "panels": [
+    {
+      "animal_n_by_condition": {
+        "Allulose": 3,
+        "Sucrose": 3,
+        "Water": 3
+      },
+      "english_panel_text_bound": true,
+      "exact_mwu": [
+        {
+          "comparison": "Water|Sucrose",
+          "enumerated_labelings": 20.0,
+          "extreme_labelings": 4.0,
+          "p_value_raw": 0.2,
+          "statistic": 8.0
+        },
+        {
+          "comparison": "Water|Allulose",
+          "enumerated_labelings": 20.0,
+          "extreme_labelings": 20.0,
+          "p_value_raw": 1.0,
+          "statistic": 4.0
+        },
+        {
+          "comparison": "Sucrose|Allulose",
+          "enumerated_labelings": 20.0,
+          "extreme_labelings": 2.0,
+          "p_value_raw": 0.1,
+          "statistic": 0.0
+        }
+      ],
+      "mean_percent_by_condition": {
+        "Allulose": 6.752482712872323,
+        "Sucrose": 1.77628959418975,
+        "Water": 5.626045029996497
+      },
+      "one_way_anova": {
+        "df_between": 2.0,
+        "df_within": 6.0,
+        "p_value_raw": 0.0950600116806275,
+        "statistic": 3.5733784033399147
+      },
+      "panel": "D",
+      "same_numeric_source_for_languages": true,
+      "sd_percent_by_condition": {
+        "Allulose": 1.9864075160471237,
+        "Sucrose": 0.6261642363612785,
+        "Water": 3.5791858706527226
+      },
+      "source_endpoint": "cfos_over_dapi",
+      "spanish_panel_text_bound": true
+    },
+    {
+      "animal_n_by_condition": {
+        "Allulose": 3,
+        "Sucrose": 3,
+        "Water": 3
+      },
+      "english_panel_text_bound": true,
+      "exact_mwu": [
+        {
+          "comparison": "Water|Sucrose",
+          "enumerated_labelings": 20.0,
+          "extreme_labelings": 14.0,
+          "p_value_raw": 0.7,
+          "statistic": 6.0
+        },
+        {
+          "comparison": "Water|Allulose",
+          "enumerated_labelings": 20.0,
+          "extreme_labelings": 14.0,
+          "p_value_raw": 0.7,
+          "statistic": 6.0
+        },
+        {
+          "comparison": "Sucrose|Allulose",
+          "enumerated_labelings": 20.0,
+          "extreme_labelings": 2.0,
+          "p_value_raw": 0.1,
+          "statistic": 0.0
+        }
+      ],
+      "mean_percent_by_condition": {
+        "Allulose": 25.370908587527676,
+        "Sucrose": 3.64339593012655,
+        "Water": 20.40912518853695
+      },
+      "one_way_anova": {
+        "df_between": 2.0,
+        "df_within": 6.0,
+        "p_value_raw": 0.0968601041763067,
+        "statistic": 3.5324026169142497
+      },
+      "panel": "E",
+      "same_numeric_source_for_languages": true,
+      "sd_percent_by_condition": {
+        "Allulose": 1.3739977709658306,
+        "Sucrose": 2.3858385038624754,
+        "Water": 17.963918740186678
+      },
+      "source_endpoint": "double_over_npy",
+      "spanish_panel_text_bound": true
+    }
+  ],
+  "status": "PASS"
+}

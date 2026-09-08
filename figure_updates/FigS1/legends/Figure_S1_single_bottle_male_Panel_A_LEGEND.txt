@@ -1,0 +1,1 @@
+Figure S1 panel A. Male cage consumption from Day 1 through Day 6. Thin lines are complete cage trajectories; thick lines are equal-cage means. Bands are pointwise descriptive 95% intervals from whole-cage trajectory resampling (20,000 draws). 

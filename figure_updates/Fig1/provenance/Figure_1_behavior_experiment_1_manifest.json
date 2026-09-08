@@ -34,31 +34,31 @@
     "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png"
   ],
   "graphics_sha256": {
-    "Figure_1_behavior_experiment_1.pdf": "96a22118214642f1b9779e76592a326fcdae0c966d337eaa2ff7a56fe5a6506a",
-    "Figure_1_behavior_experiment_1.png": "b90958f3103ea314b71618b4df7d640438695c09e9e745d00427127d871c4d76",
-    "panels/Figure_1_behavior_experiment_1_Panel_A.pdf": "a09ed923443b327c2899ac166d47edce7c1b3335d14683238968e1c358c44921",
-    "panels/Figure_1_behavior_experiment_1_Panel_A.png": "ad84df529dbb7461ea62c8640d34c061ce0c8faf45a7dbaf63d807d3c18eefe7",
-    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf": "b80d485f01b4b7953a1ada8874cc76ffed98a1ed5a2ad23f7f3952c04391ec29",
-    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.png": "371a9fe303f54ff7f678440057e0dc408ad6689e933f093bcb25e567aa62b01f",
-    "panels/Figure_1_behavior_experiment_1_Panel_B.pdf": "fbe8991c54cd7300d157a6d283ad6b3fc8d9f533f4221d778e33d57a2ac5a0be",
-    "panels/Figure_1_behavior_experiment_1_Panel_B.png": "af97e2147d861ca1e65cfbf6f4142b781d460f6c5a2d6754b4ffe99211fc52df",
-    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf": "f4d3e2237172b06d39e7467b42e8b7808c3b75b30b1a1281cec9e9502f995bec",
-    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png": "1b199fe4ebb399576c096b01b9220f1f576852a5eb1bcf128ae4b5695e629d1f",
-    "panels/Figure_1_behavior_experiment_1_Panel_C.pdf": "69dfe37caa7ba32afa5bdae923a03cee4e3f5c3bb8ff8a01182fa1c34b8fcf78",
-    "panels/Figure_1_behavior_experiment_1_Panel_C.png": "ec17a622dfae08cc222166c32f1692cfc98f72b0b40585d7aef6c22f8cd11bd3",
-    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf": "c459529c8afc3e3c0726f3e19889425d6ba1dab6f0bbc91e0eb25fb6bf3b40b6",
-    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.png": "4a74ddac3031d0ed101da09d06afa2514b4a551562dcb45572f77c864004e3b3",
-    "panels/Figure_1_behavior_experiment_1_Panel_D.pdf": "a6a1f8df7827b070308c607ea840e924dbc422208fbe76090cf616c0ae5dfec1",
-    "panels/Figure_1_behavior_experiment_1_Panel_D.png": "d3e66333f5c3b7fa3648ac96bab4109b064a104bb25a820630102b0617f8f206",
-    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf": "bf35af56f8617009975cb4460efb0d04c8ad03f5f105275e3d36a26b8035534e",
-    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png": "bf4c731de6965a1a4e2a04ebddf8b51e3d67e7de124e98ebcb4114c9f5832f6a"
+    "Figure_1_behavior_experiment_1.pdf": "06ff14fd5b4f73ba6df15161071debdddbc1a57575b8b11559e5ccf38a2e295d",
+    "Figure_1_behavior_experiment_1.png": "4f382e286730e3b786990b55d99e7ad8a5c9cf9b44fa891037e84dbc273509c5",
+    "panels/Figure_1_behavior_experiment_1_Panel_A.pdf": "2a6a5d1d42869423f166145a8d19a84bc564982d3180552483a23b2defd38b2a",
+    "panels/Figure_1_behavior_experiment_1_Panel_A.png": "17b72ff8069ec50a126ca4e6ceeb49fccc47e44b487836549a4475bb6a3f4585",
+    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.pdf": "c6627b8afab1c2ec35bd476bfa446f14bcd103b676d3bd311601951b3fffc107",
+    "panels/Figure_1_behavior_experiment_1_Panel_A_spanish.png": "d1ce80307e758218e516bbf5ec4caa56b4d8b3f0cb911f1089fa8f85cd074bd3",
+    "panels/Figure_1_behavior_experiment_1_Panel_B.pdf": "8195d52d1ea6c17320e8917ee8255e44a3a667e5f1aba77066a36e83037ec7c9",
+    "panels/Figure_1_behavior_experiment_1_Panel_B.png": "5652f4bdea8c6e49e376f3768c8048b40fab31f10d856b84a90a6533704d3681",
+    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.pdf": "df867c815960388fe2b829025262af2fc5711de52299f3388d5ae59e02a567c2",
+    "panels/Figure_1_behavior_experiment_1_Panel_B_spanish.png": "1234e03e76d1dc58a577a6dadc9c9723040c686e1260bffb17ab6e22f5fa5f4c",
+    "panels/Figure_1_behavior_experiment_1_Panel_C.pdf": "f2d48a2d033be6f50bee0b9ec6dab567c63f414fabcb624b6b015bc47b1cdca6",
+    "panels/Figure_1_behavior_experiment_1_Panel_C.png": "61c5903af75f69960f81d88fe26e3153b8857a3b881390ab3b2b62df0b083216",
+    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.pdf": "a54672a0dcf739bb9ca98f925dad85027106c18ca2df4ef6f2d5af5e65eea4b2",
+    "panels/Figure_1_behavior_experiment_1_Panel_C_spanish.png": "3599c338c3353d92acf4a8b1a0b29705d8d28087141a3eb236ec7f83e9621088",
+    "panels/Figure_1_behavior_experiment_1_Panel_D.pdf": "0d95c2e8e0f78c953b55c91fe5d42b5fee7f3b23aae7c8f8d60130ae06b9d8f2",
+    "panels/Figure_1_behavior_experiment_1_Panel_D.png": "0751721459c1736346503a315331db69fd5450675930381263762e63fdaef1d8",
+    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.pdf": "a074fcba8059c842c75120a716b455c2a8558295e926097c1a767ae645b347c1",
+    "panels/Figure_1_behavior_experiment_1_Panel_D_spanish.png": "9c9112065307c1315bbfafd76c6889bcf7aa41be5ebbc83614c12baf44fa0c0c"
   },
   "in_panel_explanatory_annotations": [],
   "language_contract": {
     "combined_figure": "English only",
     "crop_geometry": "Spanish and English pairs use identical fixed crop boxes",
     "spanish_translation_receipt": "provenance/Figure_1_behavior_experiment_1_spanish_translation_receipt.json",
-    "spanish_translation_receipt_sha256": "15755c90da6bbb4c9044cde77586f26b393cc467354ec64aeaf8b0acceb6e4d5",
+    "spanish_translation_receipt_sha256": "c9b834ed074ec00b658af0350e5509d8b0bddb003352019ae6c8e2751f899bab",
     "standalone_panels": [
       "English",
       "Spanish"
@@ -68,7 +68,7 @@
     "A": "thin: cages; thick/band: equal-cage mean/95% CI",
     "C": "pale: mice; thin: cage-day; thick/band: equal-cage mean/95% CI"
   },
-  "output_directory": "/media/server/STORAGE/Apotome/Paper/analyses/Fig1/figure/holm_terminology_20260906",
+  "output_directory": "/media/server/STORAGE/Apotome/Paper/revision_profesional_20260906/Tesis/audit/new_documents_20260908/behavior_candidate/Fig1",
   "p_value_annotation_style": {
     "fontweight": "bold",
     "layout": "vertical multiline list; text itself is not rotated",
@@ -79,7 +79,7 @@
   "panel_export_method": "exact crops of live axes in the combined rendered figure",
   "primary_cohort": "January_E1-E12",
   "primary_experimental_unit": "cage for all treatment summaries, intervals, and inferential tests",
-  "renderer_sha256": "0354a851c2be401d3a390d2a6c086b9268f365865f6665bc8c42c719a3258d2f",
+  "renderer_sha256": "751185002bbb969c558cc65cb8d435003edcd182bf785069054955f4549a78b6",
   "seed": 20260814,
   "statistics": {
     "displayed_omnibus": "ordinary equal-variance one-way ANOVA on independent cage endpoints",
@@ -105,6 +105,6 @@
     "small_sample_limitation": "only 3-5 cages per treatment; intervals are descriptive",
     "type": "pointwise descriptive percentile interval",
     "values_file": "source_data/Figure_1_behavior_experiment_1_trajectory_confidence_intervals.csv",
-    "values_sha256": "49e0e178b108c7a5e1e47d4ebd4af4b3316e835df7426d287db716195a2ec3ae"
+    "values_sha256": "193157ea7d494c3c94b998f6bdd5b17f62b5e9a40f9db87221467a6bbb104636"
   }
 }

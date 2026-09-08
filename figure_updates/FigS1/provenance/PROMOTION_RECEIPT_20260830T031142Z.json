@@ -1,0 +1,118 @@
+{
+  "counts": {
+    "added": 1,
+    "already_identical": 22,
+    "replaced": 16
+  },
+  "figure": "FigS1",
+  "files": [
+    {
+      "bytes": 1216,
+      "promoted": "FigS1/legends/Figure_S1_single_bottle_male_LEGEND_spanish.txt",
+      "sha256": "bd7a87ecf3bc85be1cf8f98a0571e0f2eb7bc7f3b346f957fb09617577ac874b",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/legends/Figure_S1_single_bottle_male_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 29577,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_A.pdf",
+      "sha256": "9b175c1631f5f8255e682f0a26d5b83ca57ab82cd3842857128d2946cb877b78",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_A.pdf"
+    },
+    {
+      "bytes": 373625,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_A.png",
+      "sha256": "cc045c9f4f135e50f0f5913a8764fad9574fb9cb012c1fea5d963d92a9834fb7",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_A.png"
+    },
+    {
+      "bytes": 28121,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_A_spanish.pdf",
+      "sha256": "a625c24a537830f8a2c3b437b964b0fa221bebbc629b128bf7ac634d9387332b",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 377069,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_A_spanish.png",
+      "sha256": "b4b40f68d13418e3b0688ca319c752b1e3fbbdb5cd77ae7ed4db3e6b4fff2885",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_A_spanish.png"
+    },
+    {
+      "bytes": 22952,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_B.pdf",
+      "sha256": "e82c07353877ce0ac94c789e553dba31ffc73e349d3430bd0f12806b97621100",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_B.pdf"
+    },
+    {
+      "bytes": 21906,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_B_spanish.pdf",
+      "sha256": "a519baa86f0b1e9e8b7e329a66c136b709d1908338d402c99e106352285fcd7d",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 259832,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_B_spanish.png",
+      "sha256": "14a480aecc49c828424ca40bdcf7e3f4fca9fdc5748325a732490ef26e7f690f",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_B_spanish.png"
+    },
+    {
+      "bytes": 30382,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_C.pdf",
+      "sha256": "bcd4a48bded05f2cf2dbba9e555b23bf465bbadfc4867ddea023b6f2fd0e52d9",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_C.pdf"
+    },
+    {
+      "bytes": 29011,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_C_spanish.pdf",
+      "sha256": "5c7706e51f144a5920c0776c219a20253abeed36989f9cc19e9048fdaabfaf18",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 377564,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_C_spanish.png",
+      "sha256": "48b26bef4d6365a15827eda5c9771d0c2811823559f49f7a80be398198ae6615",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_C_spanish.png"
+    },
+    {
+      "bytes": 23626,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_D.pdf",
+      "sha256": "d3a3db9adbe7e54582f2f08a16e2d6d1088a7a5b1ec73aaf4f8cb6fd6944b971",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_D.pdf"
+    },
+    {
+      "bytes": 22406,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_D_spanish.pdf",
+      "sha256": "8c97cd908ff107090aa55a29a4c21474c7100afa3c605f49fbcd8fcbb0167937",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 274917,
+      "promoted": "FigS1/panels/Figure_S1_single_bottle_male_Panel_D_spanish.png",
+      "sha256": "7fc20729ca01328fb34fd16d9f1e82d5c5d0b986b355e99a08b7817de17d9ea2",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/panels/Figure_S1_single_bottle_male_Panel_D_spanish.png"
+    },
+    {
+      "bytes": 5839,
+      "promoted": "FigS1/provenance/Figure_S1_single_bottle_male_manifest.json",
+      "sha256": "a2082db7f23745e8704123e1ffeee01e8ae2b6ffb54a6866557ece3e72f4400d",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/provenance/Figure_S1_single_bottle_male_manifest.json"
+    },
+    {
+      "bytes": 2139,
+      "promoted": "FigS1/provenance/Figure_S1_single_bottle_male_spanish_translation_receipt.json",
+      "sha256": "17a4854f392ddf4320ef7d8e9082e127941b76e27622bbf530811ae7c6ed6e3b",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/provenance/Figure_S1_single_bottle_male_spanish_translation_receipt.json"
+    },
+    {
+      "bytes": 2161,
+      "promoted": "FigS1/source_data/Figure_S1_single_bottle_male_sources.csv",
+      "sha256": "91199fd1b8659026357def5eb9fdc9964d2922a7c8645b7230557622fc07a6c6",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure/source_data/Figure_S1_single_bottle_male_sources.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S1_single_bottle_male",
+  "master_name_promoted": "Figure_S1_single_bottle_male",
+  "promoted_utc": "2026-08-30T03:11:42+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_rebuild_WWkadSKO/FigS1/figure",
+  "superseded_copied_to": "FigS1/legacy/superseded_promotion_20260830T031142Z"
+}

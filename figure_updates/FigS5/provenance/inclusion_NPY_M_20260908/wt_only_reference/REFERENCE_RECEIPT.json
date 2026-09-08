@@ -1,0 +1,11 @@
+{
+  "cohort": "Eight original WT animals; Water 2, Sucrose 3, Allulose 3",
+  "source": "Accepted Figure S5 source_data before author-requested NPY-M inclusion",
+  "purpose": "WT-only sensitivity reference; original eight regional endpoints verified unchanged after NPY-M inclusion",
+  "files_sha256": {
+    "WT_only_regional_statistics.csv": "b3095749dde8ea6bbbdd6fd7cc75340ceff4fe61c5c85eeafd9cea1522869c25",
+    "WT_only_region_values.csv": "2d30940d26be55a842bdbdcb3461eb12f89fa9407f0295b2e7549cef23a28fd0",
+    "WT_only_shell_values.csv": "e2d08365c35ceb8ac51b607b9500f5b398b48f5b49139cdc623feaf8a305bb23",
+    "WT_only_spatial_statistics.csv": "a2ef6ce5cc24cbec2ddbbda48a7223ead884dd38d7625a439c6d1728d6521511"
+  }
+}

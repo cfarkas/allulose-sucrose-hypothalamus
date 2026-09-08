@@ -1,0 +1,1 @@
+Panel E. Núcleos NPY positivos que también son c-FOS positivos, expresados como porcentaje de núcleos NPY por animal. Cada punto representa un animal independiente (n=3 por condición); las barras muestran media ± DE. Se presentan ANOVA de una vía y comparaciones U de Mann–Whitney exactas.

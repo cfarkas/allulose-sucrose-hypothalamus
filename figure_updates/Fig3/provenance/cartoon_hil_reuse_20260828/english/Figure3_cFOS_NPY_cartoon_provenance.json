@@ -1,0 +1,664 @@
+{
+  "display_semantics": {
+    "colors": {
+      "DAPI": "#4f86ff",
+      "NPY": "#00e85e",
+      "c-FOS": "#ff37d4",
+      "dual": "#f2a900",
+      "lumen_outline": "black",
+      "tissue": "#e8edf2"
+    },
+    "tissue_envelope": "original registered DAPI-supported mask controls fill; binary_fill_holes supplies exactly one external gray display path and zero internal gray paths; not an anatomical ROI or denominator",
+    "ventricular_lumen_outline": "opaque clean-white interior and one black display path; hash-bound raw-DAPI source components; Water alone adds registered DAPI-label-clearance superior completion; both final lumen polygons are accepted in the dedicated HIL reviewer and bound to their source images, raster masks, reviewers and timestamps; not quantified"
+  },
+  "generated_at_utc": "2026-08-28T17:02:12.689772+00:00",
+  "generator": {
+    "path": "Fig3/02_make_cfos_npy_cartoons.py",
+    "sha256": "6f8557521291fecdfef14a1372d41d90d2347ba762dffc106e4553a3dd0f1967"
+  },
+  "matched_panel_grammar": {
+    "count_location": "Figure 3 caption, panel legends, and provenance only",
+    "in_panel_method_footnotes": false,
+    "in_panel_status_counts": false,
+    "method_location": "Figure 3 caption and panel legends",
+    "panel_title_horizontal_alignment": "center",
+    "panel_title_x_figure_fraction": 0.5,
+    "same_colors": true,
+    "same_orientation_policy": "fixed Panel-A-derived transforms into one 866x1374 physical common frame",
+    "same_physical_canvas": true,
+    "same_title_and_scale_bar_grammar": true,
+    "view_title_text": [
+      "NPY-positive nuclei",
+      "c-FOS-positive nuclei",
+      "Combined status"
+    ],
+    "views_in_order": [
+      "NPY-positive DAPI nuclei",
+      "c-FOS-positive DAPI nuclei",
+      "combined/dual status"
+    ]
+  },
+  "outputs": [
+    {
+      "bytes": 414650,
+      "path": "/tmp/fig3-hil-refresh-b6hIYu/panels/Figure3_Panel_B_Water_marker_positive_nuclei.png",
+      "sha256": "6ed1650166de5f74c6f56b9ee93f09bc96761704eedeb3e8a2c7809243784165"
+    },
+    {
+      "bytes": 227902,
+      "path": "/tmp/fig3-hil-refresh-b6hIYu/panels/Figure3_Panel_B_Water_marker_positive_nuclei.pdf",
+      "sha256": "c1ec14263c8693a1699931c720f33fc3aa8258f07192708a69b0c375eeb177c6"
+    },
+    {
+      "bytes": 499394,
+      "path": "/tmp/fig3-hil-refresh-b6hIYu/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.png",
+      "sha256": "647dbc447da1e9fbb8d09c519c924425e3f9e377b53f6f7e46dc27230f417970"
+    },
+    {
+      "bytes": 304647,
+      "path": "/tmp/fig3-hil-refresh-b6hIYu/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.pdf",
+      "sha256": "b03c8472361725379517df0997b6a14790f729337daf0013f234f9659dc13001"
+    }
+  ],
+  "panel_map": {
+    "B": "Water marker-positive DAPI nuclei: NPY, c-FOS, and combined/dual status",
+    "C": "Allulose marker-positive DAPI nuclei: NPY, c-FOS, and combined/dual status"
+  },
+  "samples": {
+    "Allulose": {
+      "analysis": {
+        "cfos_rule": {
+          "minimum_best_roi_fraction_overlapping_one_dapi_nucleus": 0.4,
+          "minimum_roi_area_px": 5
+        },
+        "classification_coordinates": "complete native label fields before display transform",
+        "display_field_counts": {
+          "cfos_positive_nuclei": 271,
+          "dual_positive_nuclei": 131,
+          "npy_positive_nuclei": 493
+        },
+        "npy_rule": {
+          "minimum_marker_fraction_of_nucleus": 0.05,
+          "minimum_marker_pixels": 1
+        },
+        "whole_field_counts": {
+          "accepted_cfos_rois": 306,
+          "cfos_positive_nuclei": 305,
+          "dual_positive_nuclei": 131,
+          "duplicate_cfos_to_nucleus_mappings": 1,
+          "npy_positive_nuclei": 494
+        },
+        "whole_field_counts_validated": true
+      },
+      "animal_id": "E8_FR6-4",
+      "condition": "Allulose",
+      "display_transform": {
+        "display_to_native_xy_homogeneous_matrix": [
+          [
+            0.991402,
+            -0.125351,
+            59.858489
+          ],
+          [
+            -0.125762,
+            -0.991309,
+            949.166712
+          ],
+          [
+            -1e-06,
+            0.0,
+            1.0
+          ]
+        ],
+        "label_interpolation": "nearest neighbor only",
+        "operation": "fixed Panel-A homography; cv2 INTER_NEAREST for labels",
+        "output_field_um_wh": [
+          912.6282085270076,
+          575.2081721866001
+        ],
+        "output_shape_yx": [
+          866,
+          1374
+        ],
+        "same_transform_for_all_masks": true
+      },
+      "external_tissue_outline": {
+        "analysis_role": "display only; never an anatomical analysis ROI or denominator",
+        "contour_path_counts": {
+          "external": 1,
+          "tree": 1
+        },
+        "fill_mask_policy": "original registered DAPI-supported tissue mask controls background fill",
+        "holes_filled_px": 4472,
+        "internal_gray_contour_path_count": 0,
+        "original_area_px": 1096130,
+        "outline_area_px": 1100602,
+        "outline_binary_sha256": "d8053c8bffd6fb5e7b44d9623e9cc786c9c14beed4f8bece1073910a3b0b660a",
+        "outline_mask_policy": "scipy.ndimage.binary_fill_holes(original tissue mask) used for display contour only"
+      },
+      "native_shape_yx": [
+        946,
+        1382
+      ],
+      "physical_size_xy_um_per_px": [
+        0.664212669961432,
+        0.664212669961432
+      ],
+      "processed_masks": {
+        "DAPI": {
+          "display_field_instances": 3068,
+          "internal_source_filename": "/media/server/STORAGE/Apotome/2025.07.28_NPY/E8-FR6-4_ALULOSA_dapi.tif",
+          "semantics": "DAPI nuclear reference",
+          "whole_field_binary_sha256": "93b8b97815048c992acc43baf629f72384e5ee4f8776ac0dc2ac8af629b2c319",
+          "whole_field_instances": 3372,
+          "whole_field_positive_pixels": 456053
+        },
+        "NPY": {
+          "display_field_instances": 264,
+          "internal_source_filename": "/media/server/STORAGE/Apotome/2025.07.28_NPY/E8-FR6-4_ALULOSA_gfp.tif",
+          "semantics": "Cellpose marker-object mask; not a cell call",
+          "whole_field_binary_sha256": "bf4fb5d11d8e563f61837a46d8cb2cfb328f89a8cda8a680b6bc1a4c32a19a0c",
+          "whole_field_instances": 265,
+          "whole_field_positive_pixels": 66601
+        },
+        "c-FOS": {
+          "display_field_instances": 291,
+          "internal_source_filename": "/media/server/STORAGE/Apotome/2025.07.28_NPY/E8-FR6-4_ALULOSA_fos.tif",
+          "semantics": "Cellpose marker-object mask; not a cell call",
+          "whole_field_binary_sha256": "27f7b4033f1866640f3b295c98681174c69576e22ac542a086939b29d472eddf",
+          "whole_field_instances": 328,
+          "whole_field_positive_pixels": 45361
+        }
+      },
+      "sample_id": "e8-fr6-4-alulosa",
+      "scalebar_um": 100.0,
+      "sources": {
+        "cfos_seg": {
+          "bytes": 26157113,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_fos_seg.npy",
+          "sha256": "b0df57d75a7307980a81cb34d280044e3cf6ea7b54fe82b12899838577a51dca"
+        },
+        "cfos_tiff": {
+          "bytes": 3922346,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_fos.tif",
+          "sha256": "a545e444fa819068b6ff0b1ab7d7488df543cc15f3f172126e03620a048de3c7"
+        },
+        "dapi_seg": {
+          "bytes": 26178306,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_dapi_seg.npy",
+          "sha256": "f3ba80789acb7a2d1b79241236fef7fbee11d66a3f3db7c8f959e8c077965314"
+        },
+        "dapi_tiff": {
+          "bytes": 3922346,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_dapi.tif",
+          "sha256": "59318a5c319d2d72c5aa3bc672742852149ea9038cdd143b0df2b5c5e9fe1f6b"
+        },
+        "npy_seg": {
+          "bytes": 26166661,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_gfp_seg.npy",
+          "sha256": "81978bcca94d0e74e6cdd5d53291283aa54e6ab9288d4531072ac4cf889c0d14"
+        },
+        "npy_tiff": {
+          "bytes": 3922346,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_gfp.tif",
+          "sha256": "4c21c8f06844f488757ce9c8e9b82b33fc7e430c6b9fe8d3e45f0a6bac897da1"
+        }
+      },
+      "ventricular_lumen_outline": {
+        "base_component_selection": "unique largest seed-intersecting component; top touch allowed; ROI lateral/bottom touch rejected",
+        "base_source": "hash-bound registered Allulose raw DAPI TIFF",
+        "base_threshold_normalized_intensity_lte": 0.08,
+        "common_frame_shape_yx": [
+          866,
+          1374
+        ],
+        "common_frame_um_per_px": 0.664212669961432,
+        "connected_components_8": 1,
+        "contour_path_counts": {
+          "external": 1,
+          "tree": 1
+        },
+        "gaussian_sigma_px": 1.5055418922648158,
+        "hole_fill_before_contouring": true,
+        "human_in_loop_annotation": {
+          "accepted_at_utc": "2026-08-27T19:19:03.204734+00:00",
+          "analysis_role": "display annotation only; never an analysis ROI or denominator",
+          "mask_file_sha256": "c1533b1420c3b944ce5308d9643a03f10732d0fb2259e0953fda4dce8faec70f",
+          "mask_geometry": {
+            "area_px": 61652,
+            "bbox_yxyx_half_open": [
+              2,
+              629,
+              648,
+              858
+            ],
+            "binary_sha256": "456634e39b1cf977c71c613e7cd337b4aeb699ac83f1cfca29d021bd5dea7ea2",
+            "centroid_yx": [
+              380.3980892752871,
+              706.6906831895153
+            ],
+            "connected_components_8": 1,
+            "contour_path_counts": {
+              "external": 1,
+              "tree": 1
+            }
+          },
+          "mask_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/allulose_ventricle_mask.png",
+          "method": "human-in-the-loop closed polygon in the exact registered common frame",
+          "notes": "",
+          "polygon_vertex_count": 45,
+          "raster_vertices_sha256_i32_le": "2a94e6594ba80f4c3294cc90b1ec557a13914344eea8b905fa029b8a143f8cc9",
+          "receipt_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/allulose_ventricle_receipt.json",
+          "receipt_sha256": "12f33f21d9237283165d00841dd879f89ae43db0d2aed8625a6a0c1f7488c8e5",
+          "reviewer": "Carlos Farkas",
+          "session": "1",
+          "source_binding": {
+            "dapi_tiff_sha256": "59318a5c319d2d72c5aa3bc672742852149ea9038cdd143b0df2b5c5e9fe1f6b",
+            "raw_dapi_lumen_source_binary_sha256": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973",
+            "registered_dapi_binary_sha256": "99d8d5e4c45d9e3f475ca25ae1fbf04f697886452b0a4345fdb7375cd82640aa"
+          }
+        },
+        "interior_cleanup": {
+          "covers_dapi_objects_and_prior_outline_pixels": true,
+          "opaque_white_fill": true,
+          "white_backing_stroke": false
+        },
+        "raw_dapi_base_component": {
+          "area_px": 62387,
+          "bbox_yxyx_half_open": [
+            0,
+            621,
+            653,
+            861
+          ],
+          "binary_sha256": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973",
+          "centroid_yx": [
+            377.91698591052625,
+            705.0579127061727
+          ],
+          "component_id": 5,
+          "contour_path_counts_before_hole_fill": {
+            "external": 1,
+            "tree": 1
+          },
+          "source": "registered raw DAPI TIFF, normalized/smoothed low-intensity component"
+        },
+        "raw_display_percentiles_0_5_99_5": [
+          1.5751953125,
+          255.0
+        ],
+        "render": "opaque white corrected midline interior followed by exactly one black outer boundary; no internal subdivision",
+        "role": "display-only ventricular annotation; never an analysis ROI or denominator",
+        "search_bounds_xyxy_half_open": [
+          412,
+          0,
+          961,
+          762
+        ],
+        "selected_area_px": 61652,
+        "selected_bbox_yxyx_half_open": [
+          2,
+          629,
+          648,
+          858
+        ],
+        "selected_binary_sha256": "456634e39b1cf977c71c613e7cd337b4aeb699ac83f1cfca29d021bd5dea7ea2",
+        "selected_centroid_yx": [
+          380.3980892752871,
+          706.6906831895153
+        ],
+        "source_final_after_completion_and_hole_fill": {
+          "area_px": 62387,
+          "bbox_yxyx_half_open": [
+            0,
+            621,
+            653,
+            861
+          ],
+          "binary_sha256": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973",
+          "centroid_yx": [
+            377.91698591052625,
+            705.0579127061727
+          ],
+          "connected_components_8": 1,
+          "contour_path_counts": {
+            "external": 1,
+            "tree": 1
+          }
+        },
+        "superior_completion": {
+          "analysis_role": "display annotation only; never an analysis ROI or denominator",
+          "applied": false,
+          "reason": "Allulose base raw-DAPI component already reaches the superior frame edge"
+        }
+      }
+    },
+    "Water": {
+      "analysis": {
+        "cfos_rule": {
+          "minimum_best_roi_fraction_overlapping_one_dapi_nucleus": 0.4,
+          "minimum_roi_area_px": 5
+        },
+        "classification_coordinates": "complete native label fields before display transform",
+        "display_field_counts": {
+          "cfos_positive_nuclei": 113,
+          "dual_positive_nuclei": 57,
+          "npy_positive_nuclei": 205
+        },
+        "npy_rule": {
+          "minimum_marker_fraction_of_nucleus": 0.05,
+          "minimum_marker_pixels": 1
+        },
+        "whole_field_counts": {
+          "accepted_cfos_rois": 774,
+          "cfos_positive_nuclei": 773,
+          "dual_positive_nuclei": 57,
+          "duplicate_cfos_to_nucleus_mappings": 1,
+          "npy_positive_nuclei": 208
+        },
+        "whole_field_counts_validated": true
+      },
+      "animal_id": "WATER_NPY2",
+      "condition": "Water",
+      "display_transform": {
+        "display_to_native_xy_homogeneous_matrix": [
+          [
+            0.0,
+            -1.1747212143924286,
+            1236.6542858319217
+          ],
+          [
+            1.1747212143924286,
+            0.0,
+            1255.9665257124016
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "label_interpolation": "nearest neighbor only",
+        "operation": "fixed Panel-A-derived homography into the shared physical common frame",
+        "output_field_um_wh": [
+          912.6282085270076,
+          575.2081721866001
+        ],
+        "output_shape_yx": [
+          866,
+          1374
+        ],
+        "same_transform_for_all_masks": true
+      },
+      "external_tissue_outline": {
+        "analysis_role": "display only; never an anatomical analysis ROI or denominator",
+        "contour_path_counts": {
+          "external": 1,
+          "tree": 1
+        },
+        "fill_mask_policy": "original registered DAPI-supported tissue mask controls background fill",
+        "holes_filled_px": 2033,
+        "internal_gray_contour_path_count": 0,
+        "original_area_px": 1130258,
+        "outline_area_px": 1132291,
+        "outline_binary_sha256": "37492cf3f736f56f810488e0b2a497e89b2c8877976af21ae9e94e18ee5e0d9b",
+        "outline_mask_policy": "scipy.ndimage.binary_fill_holes(original tissue mask) used for display contour only"
+      },
+      "native_shape_yx": [
+        3749,
+        3768
+      ],
+      "physical_size_xy_um_per_px": [
+        0.664212669961432,
+        0.664212669961432
+      ],
+      "processed_masks": {
+        "DAPI": {
+          "display_field_instances": 1612,
+          "internal_source_filename": "/media/server/STORAGE/Apotome/29.09.2025/WATER_NPY2-0001_dapi.tif",
+          "semantics": "DAPI nuclear reference",
+          "whole_field_binary_sha256": "2794f980e5d84ba621d1d270522f61564fde39817ad44e46376abb8be8f5f3eb",
+          "whole_field_instances": 11608,
+          "whole_field_positive_pixels": 2068136
+        },
+        "NPY": {
+          "display_field_instances": 172,
+          "internal_source_filename": "/media/server/STORAGE/Apotome/2025.07.28_NPY/water/WATER_NPY2-0001_GFP.tif",
+          "semantics": "Cellpose marker-object mask; not a cell call",
+          "whole_field_binary_sha256": "760cf2ca3be381b12f2accdd0cf6cd306a2ae633d68c28237d5f045872072206",
+          "whole_field_instances": 177,
+          "whole_field_positive_pixels": 48424
+        },
+        "c-FOS": {
+          "display_field_instances": 117,
+          "internal_source_filename": "/media/server/STORAGE/Apotome/29.09.2025/WATER_NPY2-0002_fos.tif",
+          "semantics": "Cellpose marker-object mask; not a cell call",
+          "whole_field_binary_sha256": "3b9edbe0717c6e0786b4ed2aa7da5fec36347e1e51efaefd9f75cfd8f9f65ba3",
+          "whole_field_instances": 822,
+          "whole_field_positive_pixels": 195771
+        }
+      },
+      "sample_id": "water-npy2-0001",
+      "scalebar_um": 100.0,
+      "sources": {
+        "cfos_seg": {
+          "bytes": 284018442,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_fos_seg.npy",
+          "sha256": "b6e82a6c85966dba752dca04bb8e21d9a05027b44c1b3fbf465cbfc5dcfea85d"
+        },
+        "cfos_tiff": {
+          "bytes": 42378926,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_fos.tif",
+          "sha256": "d52c02775b283a12379b579c061d13a478543bb0c21f65342d5efefd2347f03c"
+        },
+        "dapi_seg": {
+          "bytes": 282574685,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_dapi_seg.npy",
+          "sha256": "fb77993b5d928e6f9fc19043e076554729db5721203f1780feba9675d2f12c0b"
+        },
+        "dapi_tiff": {
+          "bytes": 42378926,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_dapi.tif",
+          "sha256": "d5d40182e3d4bf396ef1277815f851d111aa90bfba3d6b2bf7083080c9657044"
+        },
+        "npy_seg": {
+          "bytes": 283434332,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_GFP_seg.npy",
+          "sha256": "5af0388dea2894f3d20b7794ae424bb5f66a9dd682d794744478fabcd560819d"
+        },
+        "npy_tiff": {
+          "bytes": 42378926,
+          "path": "Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY2-0001_GFP.tif",
+          "sha256": "aa1fd314b875032d648f0eb068842353537c7fe00b2ba7e0bf33a99e665ef6e7"
+        }
+      },
+      "ventricular_lumen_outline": {
+        "base_component_selection": "unique largest seed-intersecting component; top touch allowed; ROI lateral/bottom touch rejected",
+        "base_source": "hash-bound registered Water raw DAPI TIFF",
+        "base_threshold_normalized_intensity_lte": 0.08,
+        "common_frame_shape_yx": [
+          866,
+          1374
+        ],
+        "common_frame_um_per_px": 0.664212669961432,
+        "connected_components_8": 1,
+        "contour_path_counts": {
+          "external": 1,
+          "tree": 1
+        },
+        "gaussian_sigma_px": 1.5055418922648158,
+        "hole_fill_before_contouring": true,
+        "human_in_loop_annotation": {
+          "accepted_at_utc": "2026-08-27T19:18:12.640945+00:00",
+          "analysis_role": "display annotation only; never an analysis ROI or denominator",
+          "mask_file_sha256": "af29c6fb929aa39baf3d8b09eec724b1da3a3e6cfbfa54fcedc4f1ccc97529ae",
+          "mask_geometry": {
+            "area_px": 35339,
+            "bbox_yxyx_half_open": [
+              8,
+              545,
+              603,
+              802
+            ],
+            "binary_sha256": "c559f0c4f2bfa8a411fcb499bc0aefba4ec8460a8f0f38a3d1fcef2754182bdc",
+            "centroid_yx": [
+              433.44721129630153,
+              689.5444975805767
+            ],
+            "connected_components_8": 1,
+            "contour_path_counts": {
+              "external": 1,
+              "tree": 1
+            }
+          },
+          "mask_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/water_ventricle_mask.png",
+          "method": "human-in-the-loop closed polygon in the exact registered common frame",
+          "notes": "",
+          "polygon_vertex_count": 59,
+          "raster_vertices_sha256_i32_le": "d4e50267f88e59f5f8a3012564e32ffafcc96822c50a127e7d35d35d29296655",
+          "receipt_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/water_ventricle_receipt.json",
+          "receipt_sha256": "c74d378f681895453f1582f4513357fd0680872557d14da989692a452751395c",
+          "reviewer": "Carlos Farkas",
+          "session": "1",
+          "source_binding": {
+            "dapi_tiff_sha256": "d5d40182e3d4bf396ef1277815f851d111aa90bfba3d6b2bf7083080c9657044",
+            "raw_dapi_lumen_source_binary_sha256": "1e462a1232813f3ed4b36f6893d12b114473f1ff3cf7c089bfccf363e2e70063",
+            "registered_dapi_binary_sha256": "19c1aa3aac1f80b49bc27c55d2876e81a1ee31c0a32eb31326489a11e13236bc"
+          }
+        },
+        "interior_cleanup": {
+          "covers_dapi_objects_and_prior_outline_pixels": true,
+          "opaque_white_fill": true,
+          "white_backing_stroke": false
+        },
+        "raw_dapi_base_component": {
+          "area_px": 29609,
+          "bbox_yxyx_half_open": [
+            219,
+            537,
+            606,
+            802
+          ],
+          "binary_sha256": "4bed23a808318227fb8b9f2e9a09c54e2bc37287383a2c3005f94bf40aba5b82",
+          "centroid_yx": [
+            474.75271032456345,
+            686.9537302847107
+          ],
+          "component_id": 12,
+          "contour_path_counts_before_hole_fill": {
+            "external": 1,
+            "tree": 8
+          },
+          "source": "registered raw DAPI TIFF, normalized/smoothed low-intensity component"
+        },
+        "raw_display_percentiles_0_5_99_5": [
+          0.15234375,
+          191.72410644531215
+        ],
+        "render": "opaque white corrected midline interior followed by exactly one black outer boundary; no internal subdivision",
+        "role": "display-only ventricular annotation; never an analysis ROI or denominator",
+        "search_bounds_xyxy_half_open": [
+          412,
+          0,
+          961,
+          762
+        ],
+        "selected_area_px": 35339,
+        "selected_bbox_yxyx_half_open": [
+          8,
+          545,
+          603,
+          802
+        ],
+        "selected_binary_sha256": "c559f0c4f2bfa8a411fcb499bc0aefba4ec8460a8f0f38a3d1fcef2754182bdc",
+        "selected_centroid_yx": [
+          433.44721129630153,
+          689.5444975805767
+        ],
+        "source_final_after_completion_and_hole_fill": {
+          "area_px": 35541,
+          "bbox_yxyx_half_open": [
+            0,
+            537,
+            606,
+            802
+          ],
+          "binary_sha256": "1e462a1232813f3ed4b36f6893d12b114473f1ff3cf7c089bfccf363e2e70063",
+          "centroid_yx": [
+            415.9878168875383,
+            685.8594862271742
+          ],
+          "connected_components_8": 1,
+          "contour_path_counts": {
+            "external": 1,
+            "tree": 1
+          }
+        },
+        "superior_completion": {
+          "analysis_role": "display annotation only; never an analysis ROI or denominator",
+          "applied": true,
+          "base_extension_overlap_px": 5,
+          "centerline_rule": "top-to-fixed-apex dynamic programming maximizing cumulative EDT; predecessor x-1/x/x+1; leftmost argmax tie-break; path is not required to remain exclusively in the label complement",
+          "centerline_top_xy": [
+            698,
+            0
+          ],
+          "centerline_total_variation_px": 106,
+          "centerline_x_range": [
+            661,
+            708
+          ],
+          "centerline_x_sha256_i32_le": "44372b1db1143fa5c1bf90278b663ba22e9ab2152698a7e8f0b5f8b683001c67",
+          "centerline_zero_clearance_pixel_count": 8,
+          "corridor_x_half_open": [
+            604,
+            769
+          ],
+          "distance_map_source": "Euclidean distance transform computed from the registered DAPI Cellpose-label complement",
+          "extension_area_px": 5618,
+          "extension_bbox_yxyx_half_open": [
+            0,
+            645,
+            222,
+            712
+          ],
+          "extension_binary_sha256": "f733aa88ee10a1960a38024b0e1537ac4a53c787f7e5f951287f4916b7068c2a",
+          "final_area_px": 35541,
+          "final_bbox_yxyx_half_open": [
+            0,
+            537,
+            606,
+            802
+          ],
+          "final_binary_sha256": "1e462a1232813f3ed4b36f6893d12b114473f1ff3cf7c089bfccf363e2e70063",
+          "final_centroid_yx": [
+            415.9878168875383,
+            685.8594862271742
+          ],
+          "final_connected_components_8": 1,
+          "final_contour_path_counts": {
+            "external": 1,
+            "tree": 1
+          },
+          "final_top_row_x_inclusive": [
+            692,
+            704
+          ],
+          "fixed_apex_xy": [
+            708,
+            219
+          ],
+          "holes_filled_px": 319,
+          "tube_radius_min_median_max_px": [
+            1,
+            10.0,
+            19
+          ],
+          "tube_radius_rule": "max(1, floor(EDT) - 1)",
+          "union_pre_fill_area_px": 35222
+        }
+      }
+    }
+  },
+  "schema_version": 9
+}

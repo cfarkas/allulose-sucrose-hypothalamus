@@ -1,0 +1,182 @@
+{
+  "animal_id": "WATER_NPY3",
+  "animal_id_status": "provisional; replace WATER_NPY3 with true animal ID before inference",
+  "bioformats_series_index": 12,
+  "biological_replicate": "yes (author-confirmed)",
+  "cellpose_input_format": "single-page RGB uint16; signal copied losslessly into legacy Water color samples",
+  "channel_order_validation": "detector emission windows, Leica LUTs, and visual morphology; OME excitation fields are mis-associated and were not used",
+  "condition": "Water",
+  "excluded_scene": "TileScan 1 Merged_Lng (processed intensities; not used)",
+  "failed_channel": "NeuN / C2 retained only in source LIF; no Cellpose TIFF exported",
+  "full_physical_channel_order": {
+    "C0": "DAPI",
+    "C1": "NPY/GFP",
+    "C2": "NeuN (failed)",
+    "C3": "c-FOS"
+  },
+  "legacy_color_encoding": {
+    "DAPI": "RGB=(0,0,I)",
+    "NPY/GFP": "RGB=(0,I,0)",
+    "c-FOS": "RGB=(I,0,I)"
+  },
+  "native_uint16_masters": [
+    {
+      "dtype": "uint16",
+      "file": "native_uint16/WATER_NPY3_S01_dapi_native16.tif",
+      "mapping_basis": "410.96\u2013468.17 nm detector band",
+      "marker": "DAPI",
+      "max": 65535,
+      "mean": 14607.191572153024,
+      "min": 0,
+      "pixel_sha256": "c9bb43c80f07a019d24e557922d6a78fb50d3f627b54fc217aa6494cd72d239c",
+      "projection": "maximum across all 21 Z planes",
+      "role": "lossless native grayscale max-projection master",
+      "saturated_65535_pixels": 20527,
+      "sha256": "f957e9e9bbc9b4a3494cc7d0f94a3be353297b8cfabb277104f856f478e9eb6f",
+      "shape_yx": [
+        1419,
+        1898
+      ],
+      "source_channel_index": 0
+    },
+    {
+      "dtype": "uint16",
+      "file": "native_uint16/WATER_NPY3_S01_GFP_native16.tif",
+      "mapping_basis": "496.01\u2013543.80 nm detector band",
+      "marker": "NPY/GFP",
+      "max": 65535,
+      "mean": 6898.633870005963,
+      "min": 0,
+      "pixel_sha256": "28fd400469901436b0a5be093d5fb4afe49c56f4905951d51e9e8b4ce23cf10e",
+      "projection": "maximum across all 21 Z planes",
+      "role": "lossless native grayscale max-projection master",
+      "saturated_65535_pixels": 17,
+      "sha256": "0434491af1889a1a40c5d86abd065a3b3d27f6aeedea33c82bbdb8d817d6d2e7",
+      "shape_yx": [
+        1419,
+        1898
+      ],
+      "source_channel_index": 1
+    },
+    {
+      "dtype": "uint16",
+      "file": "native_uint16/WATER_NPY3_S01_fos_native16.tif",
+      "mapping_basis": "644.29\u2013742.10 nm detector band",
+      "marker": "c-FOS",
+      "max": 65535,
+      "mean": 11322.153777835205,
+      "min": 0,
+      "pixel_sha256": "33bc1f0fb9f625d04cef15bb711da44555a554a2c5e4df5a55d4558c08f10aef",
+      "projection": "maximum across all 21 Z planes",
+      "role": "lossless native grayscale max-projection master",
+      "saturated_65535_pixels": 2150,
+      "sha256": "0df099b133a61468c92ba9c30fea5b81c90218764475d8de0a772836bf05817e",
+      "shape_yx": [
+        1419,
+        1898
+      ],
+      "source_channel_index": 3
+    }
+  ],
+  "not_performed": [
+    "intensity rescaling",
+    "denoising",
+    "LIGHTNING/deconvolution",
+    "segmentation",
+    "registration",
+    "8-bit conversion",
+    "contrast/gamma adjustment"
+  ],
+  "outputs": [
+    {
+      "color": "blue",
+      "dtype": "uint16",
+      "file": "WATER_NPY3_S01_dapi.tif",
+      "intensity_rescaled": false,
+      "legacy_rgb_signal_channels": [
+        0,
+        0,
+        1
+      ],
+      "marker": "DAPI",
+      "role": "Cellpose input with legacy Water hue encoding",
+      "sha256": "a19eddebca230df50a266e9531936582e3d084e97621f90ad906b80d044db877",
+      "shape_yxs": [
+        1419,
+        1898,
+        3
+      ],
+      "source_native_master": "native_uint16/WATER_NPY3_S01_dapi_native16.tif",
+      "source_pixel_sha256": "c9bb43c80f07a019d24e557922d6a78fb50d3f627b54fc217aa6494cd72d239c"
+    },
+    {
+      "color": "green",
+      "dtype": "uint16",
+      "file": "WATER_NPY3_S01_GFP.tif",
+      "intensity_rescaled": false,
+      "legacy_rgb_signal_channels": [
+        0,
+        1,
+        0
+      ],
+      "marker": "NPY/GFP",
+      "role": "Cellpose input with legacy Water hue encoding",
+      "sha256": "eee6c2984e3091dadc851d04b0a8d0220cc4e14ce3ca61a06dd12bcbb132f93e",
+      "shape_yxs": [
+        1419,
+        1898,
+        3
+      ],
+      "source_native_master": "native_uint16/WATER_NPY3_S01_GFP_native16.tif",
+      "source_pixel_sha256": "28fd400469901436b0a5be093d5fb4afe49c56f4905951d51e9e8b4ce23cf10e"
+    },
+    {
+      "color": "magenta",
+      "dtype": "uint16",
+      "file": "WATER_NPY3_S01_fos.tif",
+      "intensity_rescaled": false,
+      "legacy_rgb_signal_channels": [
+        1,
+        0,
+        1
+      ],
+      "marker": "c-FOS",
+      "role": "Cellpose input with legacy Water hue encoding",
+      "sha256": "b9164dd8ca0091c5191455f39dac24817f0574e3677efbbdcd7f8e7a7035edc2",
+      "shape_yxs": [
+        1419,
+        1898,
+        3
+      ],
+      "source_native_master": "native_uint16/WATER_NPY3_S01_fos_native16.tif",
+      "source_pixel_sha256": "33bc1f0fb9f625d04cef15bb711da44555a554a2c5e4df5a55d4558c08f10aef"
+    }
+  ],
+  "physical_size_x_um": 0.5687380073800737,
+  "physical_size_y_um": 0.5687377997179125,
+  "processing": [
+    "ordinary stitched merged scene",
+    "maximum projection across 21 Z planes",
+    "channel separation to native uint16 grayscale masters",
+    "lossless legacy-hue RGB16 encoding for Cellpose inputs"
+  ],
+  "sample_id": "WATER_NPY3_S01",
+  "selected_scene_name": "TileScan 1 Merged",
+  "software": {
+    "aicsimageio": "4.14.0",
+    "tifffile": "2023.2.28"
+  },
+  "source_lif_original_path": "/media/server/STORAGE/SP8_CMA_2026/07 - JULIO 2026/2026.07.20/cFos-NeuN-Npy-Ctrl-Agua-40X.lif",
+  "source_lif_sha256": "db4cbdb72c8e8af6a5ab264d1526083d4bb70c4ece54e9c9ee59a8c90d7671ab",
+  "source_lif_staged_path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw_data/new_water_control_sp8_2026_07_20/cFos-NeuN-Npy-Ctrl-Agua-40X.lif",
+  "source_lifext_sha256": "1359dd14c59ad5d558312db0a6ff71bbf1ecaf2660e126fabba039903eb22fc7",
+  "source_lifext_staged_path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw_data/new_water_control_sp8_2026_07_20/cFos-NeuN-Npy-Ctrl-Agua-40X.lifext",
+  "source_shape_TCZYX": [
+    1,
+    4,
+    21,
+    1419,
+    1898
+  ],
+  "z_step_um": 0.346255
+}

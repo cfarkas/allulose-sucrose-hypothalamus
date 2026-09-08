@@ -1,0 +1,420 @@
+{
+  "panel_registry": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "records": [
+    {
+      "bytes": 8077,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/per_animal_cfos_npy.csv",
+      "role": "analysis/per_animal_cfos_npy.csv",
+      "sha256": "df0619617611467472bb7fa8545698115ed503e476495c70c5ef406e2b2e8715"
+    },
+    {
+      "bytes": 9892,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/anova_mwu_statistics.csv",
+      "role": "analysis/anova_mwu_statistics.csv",
+      "sha256": "41a670bf72026ad1f1528bdb23cdbf7e41680049708d391037a23cf46545ffd7"
+    },
+    {
+      "bytes": 6061,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/statistical_test_receipts.csv",
+      "role": "analysis/statistical_test_receipts.csv",
+      "sha256": "8a4e9c136cabc0c3c42bae6254cc01e84a15de492fa2ab00fc6773fe12c46844"
+    },
+    {
+      "bytes": 27255,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/segmentation_qc.csv",
+      "role": "analysis/segmentation_qc.csv",
+      "sha256": "1fa396e3a49732d4f0c76a8917bedb3c2baab8ec9e01f1ad2e79f150b741c55c"
+    },
+    {
+      "bytes": 19714,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/source_manifest.csv",
+      "role": "analysis/source_manifest.csv",
+      "sha256": "094301c92f76afdbd863e0598e7af111f35cbee9c7cbac6d4bcd845a4c962eec"
+    },
+    {
+      "bytes": 3582,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/README.txt",
+      "role": "analysis/README.txt",
+      "sha256": "192d0787cd3ae3687c4c033c0779f3ecc06f9ac4675cc7f300378cce948b74c4"
+    },
+    {
+      "bytes": 422605,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_B_Water_marker_positive_nuclei.png",
+      "role": "analysis/panels/Figure3_Panel_B_Water_marker_positive_nuclei.png",
+      "sha256": "dec35e38681c1207b6493e595450bccc5cc688c6b34b3949e986dcfd624c98a9"
+    },
+    {
+      "bytes": 218984,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_B_Water_marker_positive_nuclei.pdf",
+      "role": "analysis/panels/Figure3_Panel_B_Water_marker_positive_nuclei.pdf",
+      "sha256": "6dc26d39c5c7f31442c690c82408bf630ad6f7b5232b387091bbde8311637d75"
+    },
+    {
+      "bytes": 498521,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.png",
+      "role": "analysis/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.png",
+      "sha256": "33081d634ef597b5a25b67484b75dd26736e545177d5d341429d785eabc1a8a5"
+    },
+    {
+      "bytes": 290984,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.pdf",
+      "role": "analysis/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.pdf",
+      "sha256": "71bacb9182b007b7f82a18c2c2129f06cf6e216299f6595553c725c79e21cfb4"
+    },
+    {
+      "bytes": 20949,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_cFOS_NPY_cartoon_provenance.json",
+      "role": "analysis/panels/Figure3_cFOS_NPY_cartoon_provenance.json",
+      "sha256": "cfc60af121fa2250b9211eec67dbcef0beb02a1af168a9ea1d169f29f7217d73"
+    },
+    {
+      "bytes": 11466,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_cFOS_NPY_cartoon_provenance.csv",
+      "role": "analysis/panels/Figure3_cFOS_NPY_cartoon_provenance.csv",
+      "sha256": "e5b3ea059018cd4ffe533e937871f220a11c3341d25373f8aba9dba034ea51f1"
+    },
+    {
+      "bytes": 10576870,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy.png",
+      "role": "analysis/panels/Figure3_Panel_A_raw_microscopy.png",
+      "sha256": "57684673ae8778a0f0bb67b7666727825e59294e45eb2b32ef7f1b1de9879ff6"
+    },
+    {
+      "bytes": 4706635,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy.pdf",
+      "role": "analysis/panels/Figure3_Panel_A_raw_microscopy.pdf",
+      "sha256": "27591b8312ca51963eb4ffde60bec63b89abd8460f765ded2d7e471157c0728b"
+    },
+    {
+      "bytes": 916993,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy_provenance.json",
+      "role": "analysis/panels/Figure3_Panel_A_raw_microscopy_provenance.json",
+      "sha256": "7d1696708bd0ae2928da63b873514b0708a41d0b3d835285fdee3ea62e6489cd"
+    },
+    {
+      "bytes": 2376,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/animal_spatial_counts.csv",
+      "role": "spatial/animal_spatial_counts.csv",
+      "sha256": "0a5eaccd70d203472fa1dbbfa4ded30262b8b096bbdd6c48a3c4a8ba4577c842"
+    },
+    {
+      "bytes": 30720,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/animal_radial_occurrence_features.csv",
+      "role": "spatial/animal_radial_occurrence_features.csv",
+      "sha256": "57b22913a18448eebf5fdecbf3199d255b889de0969be8b2fa0fe41031b174ab"
+    },
+    {
+      "bytes": 1182,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/exact_spatial_permanova.csv",
+      "role": "spatial/exact_spatial_permanova.csv",
+      "sha256": "b2bb09b19dfd3644ccf75cd1278a566ccbc57fd3aadf155b18fa96ba967f3fb7"
+    },
+    {
+      "bytes": 774183,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/exact_spatial_permutation_receipts.csv",
+      "role": "spatial/exact_spatial_permutation_receipts.csv",
+      "sha256": "7ad596c0f7966803ada70ba00f013638c1b81c2de5aa7145c746c10e45dbec12"
+    },
+    {
+      "bytes": 2158,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/exact_spatial_dispersion.csv",
+      "role": "spatial/exact_spatial_dispersion.csv",
+      "sha256": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14"
+    },
+    {
+      "bytes": 874598,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/exact_spatial_dispersion_permutation_receipts.csv",
+      "role": "spatial/exact_spatial_dispersion_permutation_receipts.csv",
+      "sha256": "1ea9a3a323ff71abd903ebf22f454603d432a739b0b0882859e0240d2161f2c5"
+    },
+    {
+      "bytes": 16646,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/segmentation_model_setting_audit.csv",
+      "role": "spatial/segmentation_model_setting_audit.csv",
+      "sha256": "b3e6a22a618226229f4f41a95fc3b52170b566f5be2a7607213b2539ae5c41ba"
+    },
+    {
+      "bytes": 461749,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/Figure3_Spatial_cFOS_occurrence.png",
+      "role": "spatial/Figure3_Spatial_cFOS_occurrence.png",
+      "sha256": "dc869e1533d4bfdc01f35aa42c2d3a9fea8c03e4079702f6af5b68a02035859e"
+    },
+    {
+      "bytes": 36710,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/Figure3_Spatial_cFOS_occurrence.pdf",
+      "role": "spatial/Figure3_Spatial_cFOS_occurrence.pdf",
+      "sha256": "4970758d2ec8adfac6b59b087c1725f646d7c63199ea81d51c56bde02d0b2471"
+    },
+    {
+      "bytes": 381555,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/Figure3_Spatial_cFOS_NPY_occurrence.png",
+      "role": "spatial/Figure3_Spatial_cFOS_NPY_occurrence.png",
+      "sha256": "16448b4ac5802a8dbee676278a5095044641229b2aa7ea366ba552f59fb1b85a"
+    },
+    {
+      "bytes": 35277,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+      "role": "spatial/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+      "sha256": "fbc038b6c703823d6cccf45a6ece577417fff00f7534213fa8102be5a40e7075"
+    },
+    {
+      "bytes": 11275,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/spatial_distribution_provenance.json",
+      "role": "spatial/spatial_distribution_provenance.json",
+      "sha256": "629f1877a783effa0f7f0e887cde4af4617e0c5080dbc6afb848deb8f48b0331"
+    },
+    {
+      "bytes": 2040,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/output_manifest.csv",
+      "role": "spatial/output_manifest.csv",
+      "sha256": "ec87a741990e5a6aa4a7a0e63088b5629d27052a57d729c629716c17da19465b"
+    },
+    {
+      "bytes": 6246426,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/Figure_3_cFos_NPY.pdf",
+      "role": "publication/Figure_3_cFos_NPY.pdf",
+      "sha256": "f3229529d25f2317f95ce3e10947e54729eb7bed17e1f82ae8a40f76552be264"
+    },
+    {
+      "bytes": 7068194,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/Figure_3_cFos_NPY.png",
+      "role": "publication/Figure_3_cFos_NPY.png",
+      "sha256": "1f886c2c6f3ae05791d468aa7988502cd322be8bdd7b09cf07b7560d70940d99"
+    },
+    {
+      "bytes": 6902,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/Figure_3_cFos_NPY_caption.txt",
+      "role": "publication/Figure_3_cFos_NPY_caption.txt",
+      "sha256": "258a968fe919095287c132d5191ad81ef67a1fdcfd3ed7c74b13c8b2d421c6b2"
+    },
+    {
+      "bytes": 5503723,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_A.pdf",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_A.pdf",
+      "sha256": "6ef2e3b0c06beb22c356aea245696711f39db18d7c82b05f92f1f55868b5e0e1"
+    },
+    {
+      "bytes": 12715519,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_A.png",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_A.png",
+      "sha256": "513a4d6e0b3cb53d9575ae97df7508b70058835a47f5701f40f26efde9f999b9"
+    },
+    {
+      "bytes": 163116,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_B.pdf",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_B.pdf",
+      "sha256": "7740e5eef580f65da2fd129501e80c1f97e814d26444e7f6c82924433537c5ad"
+    },
+    {
+      "bytes": 457667,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_B.png",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_B.png",
+      "sha256": "f927da8378343d8a8c2fe914b519ef464407ebf8e7f3ca136a42e2628b2aaec0"
+    },
+    {
+      "bytes": 198839,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_C.pdf",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_C.pdf",
+      "sha256": "daa69428cab21b5ef01d0b995f355343ef82c6dd46643ce0fbb5ec50a822cba2"
+    },
+    {
+      "bytes": 552921,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_C.png",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_C.png",
+      "sha256": "36c8c7ff4d770decc17b7d1349ad142991ec66389094844e641f06df561feb9d"
+    },
+    {
+      "bytes": 20966,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_D.pdf",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_D.pdf",
+      "sha256": "d0f2e752cdd85a650556eb4c1c441dec59fb1a0c998b956baf9cbca8309e5018"
+    },
+    {
+      "bytes": 278611,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_D.png",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_D.png",
+      "sha256": "600a1c40f87ee60f9dc970c9bad4143a415fa01628996d4b6384a14b0ce1e58a"
+    },
+    {
+      "bytes": 21076,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_E.pdf",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_E.pdf",
+      "sha256": "072ec66e1c8b4f351a7934291f7ae80aca672432776bfde700d1f283e52b514f"
+    },
+    {
+      "bytes": 295335,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_E.png",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_E.png",
+      "sha256": "3006185e783821e134f32e8739a253620aef45ed36e3f5d58d6bf9ba64aa4489"
+    },
+    {
+      "bytes": 205355,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_F.pdf",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_F.pdf",
+      "sha256": "85689d8dab83000434afd9c52d75d22a1a84f7290d638bc7aca81f2badee3554"
+    },
+    {
+      "bytes": 531699,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_F.png",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_F.png",
+      "sha256": "968f21feb89b2dbd08a12f28275ea57612f8a45148007e041c51a3ccf61c39e6"
+    },
+    {
+      "bytes": 170388,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_G.pdf",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_G.pdf",
+      "sha256": "65a4799e255271156fe26b3b7cd9eaba2e7d16c69c29eb966e569c77d4e2b03c"
+    },
+    {
+      "bytes": 455469,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/panels/Figure_3_cFos_NPY_Panel_G.png",
+      "role": "publication/panels/Figure_3_cFos_NPY_Panel_G.png",
+      "sha256": "a74af52709e9c523784a53c39d9849472b38f9e6ba976749a09ed9e19dae125b"
+    },
+    {
+      "bytes": 6902,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_LEGEND.txt",
+      "sha256": "258a968fe919095287c132d5191ad81ef67a1fdcfd3ed7c74b13c8b2d421c6b2"
+    },
+    {
+      "bytes": 2160,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_Panel_A_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_Panel_A_LEGEND.txt",
+      "sha256": "57ce387f9d17bf9146566e11fcd701590659c59eca4b5ad8d7b04a86d95ff0ea"
+    },
+    {
+      "bytes": 2119,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_Panel_B_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_Panel_B_LEGEND.txt",
+      "sha256": "3427534e00404b33ac7dfd07be6ecc9141783b714c6fc64a74d28fe6ac8af14e"
+    },
+    {
+      "bytes": 2028,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_Panel_C_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_Panel_C_LEGEND.txt",
+      "sha256": "36332b04a38ed29fdc86601b80d08be6b03b28c0c13e6c2d3330e89cdf15f751"
+    },
+    {
+      "bytes": 1793,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_Panel_D_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_Panel_D_LEGEND.txt",
+      "sha256": "8c817d9fac78947c06b807f3d7e6b1a59872479d4a5d888909eccde344ce73fa"
+    },
+    {
+      "bytes": 1796,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_Panel_E_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_Panel_E_LEGEND.txt",
+      "sha256": "4bc8b7201b96a030ed48aadcb0b579baa6d6463627c4ebe6f4bfbe17aec2ba88"
+    },
+    {
+      "bytes": 1932,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_Panel_F_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_Panel_F_LEGEND.txt",
+      "sha256": "2a149a723572b911eef0febdf978578f47809b5b1d2196f8f085f01ad837cf9f"
+    },
+    {
+      "bytes": 1945,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/legends/Figure_3_cFos_NPY_Panel_G_LEGEND.txt",
+      "role": "publication/legends/Figure_3_cFos_NPY_Panel_G_LEGEND.txt",
+      "sha256": "601eea47a45a749ebf0b3444d4e43accb1b56725d2bd385ffc1332d624c2ae08"
+    },
+    {
+      "bytes": 665,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_animal_plot_values.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_animal_plot_values.csv",
+      "sha256": "dac9080bc28a37e30bbf07227812e29a9aaec181bbff8b0587c16b9eda17ef3c"
+    },
+    {
+      "bytes": 2927,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_anova_mwu_statistics_used.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_anova_mwu_statistics_used.csv",
+      "sha256": "0e917dcec1893868d3d30127bf389553dea1bf35ec0a9ad9fef32e7931131461"
+    },
+    {
+      "bytes": 676,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv",
+      "sha256": "1c0fd6f194fee2693c1a44c38516e08cf4e33aa0d7e556d1326d5885bcd7b5f9"
+    },
+    {
+      "bytes": 1537,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv",
+      "sha256": "167baf1e00ce83fd34995cdf90fb1274c7a621cf7460c4251003fa43c1995970"
+    },
+    {
+      "bytes": 391,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_README.txt",
+      "role": "publication/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_README.txt",
+      "sha256": "28852b47f1384549f64a402f8af426e78e13649c994e70835e859bcd89db2ba0"
+    },
+    {
+      "bytes": 1182,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_permanova.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_spatial_exact_permanova.csv",
+      "sha256": "b2bb09b19dfd3644ccf75cd1278a566ccbc57fd3aadf155b18fa96ba967f3fb7"
+    },
+    {
+      "bytes": 774183,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_permutation_receipts.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_spatial_exact_permutation_receipts.csv",
+      "sha256": "7ad596c0f7966803ada70ba00f013638c1b81c2de5aa7145c746c10e45dbec12"
+    },
+    {
+      "bytes": 2158,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv",
+      "sha256": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14"
+    },
+    {
+      "bytes": 874598,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion_permutation_receipts.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion_permutation_receipts.csv",
+      "sha256": "1ea9a3a323ff71abd903ebf22f454603d432a739b0b0882859e0240d2161f2c5"
+    },
+    {
+      "bytes": 30720,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_spatial_animal_radial_occurrence_features.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_spatial_animal_radial_occurrence_features.csv",
+      "sha256": "57b22913a18448eebf5fdecbf3199d255b889de0969be8b2fa0fe41031b174ab"
+    },
+    {
+      "bytes": 2376,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_spatial_animal_counts.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_spatial_animal_counts.csv",
+      "sha256": "0a5eaccd70d203472fa1dbbfa4ded30262b8b096bbdd6c48a3c4a8ba4577c842"
+    },
+    {
+      "bytes": 16646,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/source_data/Figure_3_cFos_NPY_spatial_segmentation_model_setting_audit.csv",
+      "role": "publication/source_data/Figure_3_cFos_NPY_spatial_segmentation_model_setting_audit.csv",
+      "sha256": "b3e6a22a618226229f4f41a95fc3b52170b566f5be2a7607213b2539ae5c41ba"
+    },
+    {
+      "bytes": 43843,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/provenance/Figure_3_cFos_NPY_provenance.json",
+      "role": "publication/provenance/Figure_3_cFos_NPY_provenance.json",
+      "sha256": "b9bb0354f2c82867841660905f85e67523e9aadd58c161521d0b01ecb81e9a35"
+    },
+    {
+      "bytes": 20991,
+      "path": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3/provenance/Figure_3_cFos_NPY_manifest.csv",
+      "role": "publication/provenance/Figure_3_cFos_NPY_manifest.csv",
+      "sha256": "ea314c2ab649bdf23b817c9815b729a67053e40f742492cc42b629d74e1b2c67"
+    }
+  ],
+  "required_output_count": 67,
+  "schema_version": 1,
+  "scientific_and_provenance_inventory_complete": true,
+  "stage_root": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2",
+  "validated_at_utc": "2026-08-23T16:45:33.211940+00:00"
+}

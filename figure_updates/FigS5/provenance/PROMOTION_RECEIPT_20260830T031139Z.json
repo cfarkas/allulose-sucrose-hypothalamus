@@ -1,0 +1,178 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 38,
+    "replaced": 27
+  },
+  "figure": "FigS5",
+  "files": [
+    {
+      "bytes": 21574616,
+      "promoted": "FigS5/Figure_S5.pdf",
+      "sha256": "5105874b344f772fd0f16740de713b3eb2ce24ea0c8b485fdb000e24228e1740",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/Figure_S5.pdf"
+    },
+    {
+      "bytes": 3426,
+      "promoted": "FigS5/legends/Figure_S5_LEGEND_spanish.txt",
+      "sha256": "9a7219408b12e69dd7aab51ac58e02d6d5e56d2f7f3330a66372f7720dd03946",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/legends/Figure_S5_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 5585583,
+      "promoted": "FigS5/panels/Figure_S5_panel_A.pdf",
+      "sha256": "07a7dbea01ab52080786cc406a56c0e89c3c7dca63f8f02891d4dec281ed81ac",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_A.pdf"
+    },
+    {
+      "bytes": 5586368,
+      "promoted": "FigS5/panels/Figure_S5_panel_A_spanish.pdf",
+      "sha256": "714a3b3326cd85e05173553eb4c71193cbbb231816206f6e0b31ac3e1d977766",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 7434725,
+      "promoted": "FigS5/panels/Figure_S5_panel_B.pdf",
+      "sha256": "39fc243dc959ea31e2f5055b1caefef2efe3202b2ccde47c0798f1e7e33e83e4",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_B.pdf"
+    },
+    {
+      "bytes": 7435166,
+      "promoted": "FigS5/panels/Figure_S5_panel_B_spanish.pdf",
+      "sha256": "077a25fc5a9767ee1a216e8ca064981ba366e1eb9ba2c06d375ae87eebf83418",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 5513882,
+      "promoted": "FigS5/panels/Figure_S5_panel_C.pdf",
+      "sha256": "bf18f19923b8bf5ff80b73cd72e713c53d6a4524e7aaf87949d1edc382f8867e",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_C.pdf"
+    },
+    {
+      "bytes": 5514669,
+      "promoted": "FigS5/panels/Figure_S5_panel_C_spanish.pdf",
+      "sha256": "d292ec2b71815a1742df1f9ec08af4128bee8dd7f706c57f5a75e59aba5efb67",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 372915,
+      "promoted": "FigS5/panels/Figure_S5_panel_D.pdf",
+      "sha256": "710f16a4a8cb9a81e0072ff3336bcb791dd28bebf2d96ca401ff0e3d32b64af0",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_D.pdf"
+    },
+    {
+      "bytes": 372774,
+      "promoted": "FigS5/panels/Figure_S5_panel_D_spanish.pdf",
+      "sha256": "40efc0bfed3b33a956cfc09843ef98f70bfdbd7fa8995f646217ec6d0ea387be",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 9265390,
+      "promoted": "FigS5/panels/Figure_S5_panel_E.pdf",
+      "sha256": "a2f85114b08974ed397b8eff52eb64746ab1ff588bb3eaf2fe76c464138106f9",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_E.pdf"
+    },
+    {
+      "bytes": 9265247,
+      "promoted": "FigS5/panels/Figure_S5_panel_E_spanish.pdf",
+      "sha256": "02b35fa1ca75c6b54faca6c2b10b9d690dbe1ba321c857b9e5d696ebd3e25ac7",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_E_spanish.pdf"
+    },
+    {
+      "bytes": 7765145,
+      "promoted": "FigS5/panels/Figure_S5_panel_F.pdf",
+      "sha256": "c1361259ea731e3145c424970c83b2bd37139240418b686b8f819272015e2555",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_F.pdf"
+    },
+    {
+      "bytes": 7766078,
+      "promoted": "FigS5/panels/Figure_S5_panel_F_spanish.pdf",
+      "sha256": "d0b191b42b16dba31d3d8910b696d9b87765b75489d486fe7a79fb88b1558874",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_F_spanish.pdf"
+    },
+    {
+      "bytes": 33873,
+      "promoted": "FigS5/panels/Figure_S5_panel_G.pdf",
+      "sha256": "b88ac29893012da637ee71e6d2fa09fb138c985dac8de0d628582468d9c27767",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_G.pdf"
+    },
+    {
+      "bytes": 34665,
+      "promoted": "FigS5/panels/Figure_S5_panel_G_spanish.pdf",
+      "sha256": "ce0de79f84f89e468eabae94f84f0c36901a51c88b1e1663792d8d5b27b09239",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_G_spanish.pdf"
+    },
+    {
+      "bytes": 30455,
+      "promoted": "FigS5/panels/Figure_S5_panel_H.pdf",
+      "sha256": "8102faba5e2930305f73dee39a90803cd74c20bec2ce144747c914158e207bbe",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_H.pdf"
+    },
+    {
+      "bytes": 31469,
+      "promoted": "FigS5/panels/Figure_S5_panel_H_spanish.pdf",
+      "sha256": "fdb75d595f9038901bd6b285969f94d1b84878163cda0183767a931de724884c",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_H_spanish.pdf"
+    },
+    {
+      "bytes": 92167,
+      "promoted": "FigS5/panels/Figure_S5_panel_I.pdf",
+      "sha256": "5e7c2f28d9e5471c1c8672ff7c06d736a2905e2c088bde6146e1200212cf9ee1",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_I.pdf"
+    },
+    {
+      "bytes": 92912,
+      "promoted": "FigS5/panels/Figure_S5_panel_I_spanish.pdf",
+      "sha256": "69b0aaf3e567a7c7f7e821e4aad2d4aeb4a3ce54550d2e3ae746ea6ea620ccd4",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_I_spanish.pdf"
+    },
+    {
+      "bytes": 77115,
+      "promoted": "FigS5/panels/Figure_S5_panel_J.pdf",
+      "sha256": "b7e522cf0a3fbe6027a3a55a2e8b85a71de8caffdf7fd2498f4a697596e75ce8",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_J.pdf"
+    },
+    {
+      "bytes": 77337,
+      "promoted": "FigS5/panels/Figure_S5_panel_J_spanish.pdf",
+      "sha256": "a631b68ab3382fab6f44c62b9f25f90595c4703889c5caa1065bdf29392f295d",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/panels/Figure_S5_panel_J_spanish.pdf"
+    },
+    {
+      "bytes": 24558,
+      "promoted": "FigS5/provenance/BUILD_RECEIPT.json",
+      "sha256": "97845fde03346d39b8eeac520650c616a8546e319b52e5a4c15cc6d85f223b49",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/provenance/BUILD_RECEIPT.json"
+    },
+    {
+      "bytes": 2174,
+      "promoted": "FigS5/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json",
+      "sha256": "0db27c1b6c65e58eb1ecf9f677e91b2569f34952978bd45e002a13a3351d29c3",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json"
+    },
+    {
+      "bytes": 8361,
+      "promoted": "FigS5/provenance/output_manifest.csv",
+      "sha256": "da6053a610477248dbc5ceb74356f42dbbca3c9c88e7f7a056d2bf03337ab6ca",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/provenance/output_manifest.csv"
+    },
+    {
+      "bytes": 2055,
+      "promoted": "FigS5/source_data/annotation_status.csv",
+      "sha256": "f1a21c59f7955e3180ca5d3f34f73b032ff6cf00086d1a346f9886df7061d1e7",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/source_data/annotation_status.csv"
+    },
+    {
+      "bytes": 1358,
+      "promoted": "FigS5/source_data/spatial_exact_permanova.csv",
+      "sha256": "a2ef6ce5cc24cbec2ddbbda48a7223ead884dd38d7625a439c6d1728d6521511",
+      "source": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure/source_data/spatial_exact_permanova.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S5",
+  "master_name_promoted": "Figure_S5",
+  "promoted_utc": "2026-08-30T03:11:41+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_rebuild_WWkadSKO/FigS5/figure",
+  "superseded_copied_to": "FigS5/legacy/superseded_promotion_20260830T031139Z"
+}

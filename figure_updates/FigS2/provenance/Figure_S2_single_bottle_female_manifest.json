@@ -1,0 +1,110 @@
+{
+  "analysis_directory": "/media/server/STORAGE/Apotome/Paper/analyses/FigS2/results",
+  "analysis_status": "exploratory_low_resolution",
+  "cage_counts": {
+    "Allulose": 2,
+    "Sucrose": 2,
+    "Water": 1
+  },
+  "dpi": 600,
+  "experimental_unit": "cage",
+  "figure": "Figure_S2_single_bottle_female",
+  "figure_orientation": "portrait; two rows by two macro columns",
+  "figure_size_inches": [
+    10.8,
+    10.2
+  ],
+  "formats": [
+    "pdf",
+    "png"
+  ],
+  "graphics": [
+    "Figure_S2_single_bottle_female.pdf",
+    "Figure_S2_single_bottle_female.png",
+    "panels/Figure_S2_single_bottle_female_Panel_A.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_A.png",
+    "panels/Figure_S2_single_bottle_female_Panel_B.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_B.png",
+    "panels/Figure_S2_single_bottle_female_Panel_C.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_C.png",
+    "panels/Figure_S2_single_bottle_female_Panel_D.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_D.png",
+    "panels/Figure_S2_single_bottle_female_Panel_A_spanish.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_A_spanish.png",
+    "panels/Figure_S2_single_bottle_female_Panel_B_spanish.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_B_spanish.png",
+    "panels/Figure_S2_single_bottle_female_Panel_C_spanish.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_C_spanish.png",
+    "panels/Figure_S2_single_bottle_female_Panel_D_spanish.pdf",
+    "panels/Figure_S2_single_bottle_female_Panel_D_spanish.png"
+  ],
+  "graphics_sha256": {
+    "Figure_S2_single_bottle_female.pdf": "0a94af6ae29960b8ad9556ecf76b36e45fb0faccb5b51e49d8e071c4ef87f93b",
+    "Figure_S2_single_bottle_female.png": "ff266edfe5ca2ba5308b8cf827fef818dd85e42072646efabb902fc5e925f61d",
+    "panels/Figure_S2_single_bottle_female_Panel_A.pdf": "c39aaeb28dee0010de69aefe2ebd333823873b18293418cf47b4e87c634584cc",
+    "panels/Figure_S2_single_bottle_female_Panel_A.png": "c4ecad9bc6928d46a01c78d7b2e9a904ab56de57fcde1b8774b6ab7477dc5389",
+    "panels/Figure_S2_single_bottle_female_Panel_A_spanish.pdf": "c71ab25250ea2a5bd0ab129618585fc20c17237b1b6740f025fa06fbe23ef883",
+    "panels/Figure_S2_single_bottle_female_Panel_A_spanish.png": "364d624ad802b128efb129f7791cb1856e412949a30b0576e730fb0ad9fbfe44",
+    "panels/Figure_S2_single_bottle_female_Panel_B.pdf": "81d00e30fe6051a714e96bb813738b4e039ca4fea7b821792d0eaeffe6bd7599",
+    "panels/Figure_S2_single_bottle_female_Panel_B.png": "581759f2cbf17ac31a807522a9732e134e56207a704e7c57bb6bd07c85182dc3",
+    "panels/Figure_S2_single_bottle_female_Panel_B_spanish.pdf": "1951ab9853f40cbf52eec36136e7f6af9414cddad81fb4fbe40c351ad3714cb5",
+    "panels/Figure_S2_single_bottle_female_Panel_B_spanish.png": "31009507ff39f93a7e9d3be0aa61056e9b90a63aa50b62ef3fd93ecb5f3edc64",
+    "panels/Figure_S2_single_bottle_female_Panel_C.pdf": "d370493f577ffdbd00f15a98ebdafefdb859bdaea4d9c63ce4f7ad3ec17cd79c",
+    "panels/Figure_S2_single_bottle_female_Panel_C.png": "0efd0b882a5d571c5d5eeb7f2af81c926b99227b1536a7e395a739b2f3ff6a6c",
+    "panels/Figure_S2_single_bottle_female_Panel_C_spanish.pdf": "317536d6d3e0751306bab14d189c1873705fd98bbb6d35463c6f5ed0a9206410",
+    "panels/Figure_S2_single_bottle_female_Panel_C_spanish.png": "e141e7f48674b550bedad72724a5b8865acab16bd33bc64c80186427add350cc",
+    "panels/Figure_S2_single_bottle_female_Panel_D.pdf": "c926f55d43d1b9c53638879ecc9d2280763adb1b48304c8fb971fe74a93b0e58",
+    "panels/Figure_S2_single_bottle_female_Panel_D.png": "27fcdb46dc06206c010fc26f323e0e343c2df5a36fae2b5a8f27ac9c9143d85e",
+    "panels/Figure_S2_single_bottle_female_Panel_D_spanish.pdf": "ed655b7d8603475ec99ce8203a5ed541e3955e329695885621492935f6e36cb4",
+    "panels/Figure_S2_single_bottle_female_Panel_D_spanish.png": "da914390206e2bc2f0c92257ad923071709a0f098896a70d83d6f6ae0ed52fd5"
+  },
+  "language_contract": {
+    "combined_figure": "English only",
+    "crop_geometry": "Spanish and English pairs use identical fixed crop boxes",
+    "spanish_translation_receipt": "provenance/Figure_S2_single_bottle_female_spanish_translation_receipt.json",
+    "spanish_translation_receipt_sha256": "392481d98911a0f8a42f48210174e50138910eba6792941267c8ed0ea9b80272",
+    "standalone_panels": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "output_directory": "/media/server/STORAGE/Apotome/Paper/revision_profesional_20260906/Tesis/audit/new_documents_20260908/behavior_candidate/FigS2",
+  "p_value_annotation_style": {
+    "fontweight": "bold",
+    "layout": "vertical multiline list; text itself is not rotated",
+    "omnibus_font_size_pt": 10.1,
+    "pairwise_font_size_pt": 9.2
+  },
+  "panel_assignment": {
+    "A-D": "Female: consumption trajectory/endpoint; body-weight trajectory/endpoint"
+  },
+  "panel_export_method": "exact crops of live axes in the combined rendered figure",
+  "renderer": "/media/server/STORAGE/Apotome/Paper/scripts/FigS2/02_make_figure_s2_female.py",
+  "renderer_sha256": "fdcd513c18abc3f268fc8aede9847daa33d346cc0c17a614eae0b14637d0e7ae",
+  "seed": 20260816,
+  "sex": "Female",
+  "statistics": {
+    "endpoint": "Day 6",
+    "interaction_test": "not performed",
+    "interpretation": "exploratory; exact p values have low resolution",
+    "omnibus": "ordinary equal-variance one-way ANOVA within sex/outcome",
+    "omnibus_sensitivity": "exact exhaustive cage-label allocation of the same F statistic",
+    "pairwise": "exact exhaustive cage-label permutation; Holm within sex/outcome"
+  },
+  "subpanels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "trajectory_confidence_intervals": {
+    "bootstrap_replicates_when_estimable": 20000,
+    "group_limit": "Female Water not estimable (one cage); no band drawn",
+    "level": 0.95,
+    "resampling_unit": "whole cage trajectory",
+    "same_cage_draw_across_days": true,
+    "type": "pointwise descriptive percentile interval",
+    "values_file": "source_data/Figure_S2_single_bottle_female_trajectory_confidence_intervals.csv",
+    "values_sha256": "eb3369fb46c470eceadfb0e1a32a3af5865cfa4fc4523668f51c74f64c550e20"
+  }
+}

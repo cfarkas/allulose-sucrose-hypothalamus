@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-08",
+  "purpose": "Author-requested reconstruction from experiment 1; not the original historical planning simulation",
+  "seed": 20260908,
+  "rng": "NumPy default_rng PCG64",
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "allocation": "equal numbers of independent cages in three groups",
+  "pilot_counts": {
+    "Water": 3,
+    "Sucrose": 5,
+    "Allulose": 4
+  },
+  "distribution": "normal with pilot-estimated means and either pooled or group-specific SD",
+  "test_scope": "omnibus group difference, not pairwise contrasts or neuronal/glial outcomes",
+  "limitations": "Small pilot groups give uncertain effects and variances; these estimates do not establish adequacy of the completed study, and raw pilot effects may overestimate reproducible differences. Bottle disappearance includes possible spillage. No attrition or multiplicity inflation included.",
+  "welfare_transfer": "FR5-4 moved after day-6 measurement; original treatment at measurement retained",
+  "source_sha256": {
+    "Fig1/source_data/sample_size_pilot/consumption_primary_values.csv": "9fa78d7c456592b711d38ceb20f4e6eea84eae75d85ed6f518b936edd4068d4b",
+    "Fig1/source_data/sample_size_pilot/body_weight_cage_endpoint_values.csv": "77d86e87deaf45e7e806c2612a57ed6d2de708097f4c511fa21cb74e85683ea5"
+  },
+  "script_sha256": "ed676c14148c8a313d221b6038fe673ba3093560e49f58340b88c1ba3446540c",
+  "thresholds": [
+    {
+      "endpoint": "bottle_volume_removed_day6",
+      "scenario": "common_pooled_variance",
+      "test": "ordinary_ANOVA",
+      "n_cages_per_group": 4,
+      "total_cages": 12,
+      "simulations": 500000,
+      "rejections": 417828,
+      "power": 0.835656,
+      "mc_se": 0.0005240897817435483,
+      "null_rejection_rate": 0.05155,
+      "null_simulations": 20000,
+      "equal_allocation_effect_f": 1.1174506283066936,
+      "noncentral_F_power": 0.8354077777440867
+    },
+    {
+      "endpoint": "bottle_volume_removed_day6",
+      "scenario": "group_specific_variance",
+      "test": "Welch_ANOVA",
+      "n_cages_per_group": 5,
+      "total_cages": 15,
+      "simulations": 500000,
+      "rejections": 400818,
+      "power": 0.801636,
+      "mc_se": 0.0005639427692665275,
+      "null_rejection_rate": 0.0525,
+      "null_simulations": 20000,
+      "equal_allocation_effect_f": 1.1174506283066936,
+      "noncentral_F_power": null
+    },
+    {
+      "endpoint": "body_weight_change_day6",
+      "scenario": "common_pooled_variance",
+      "test": "ordinary_ANOVA",
+      "n_cages_per_group": 9,
+      "total_cages": 27,
+      "simulations": 500000,
+      "rejections": 417441,
+      "power": 0.834882,
+      "mc_se": 0.0005250791294195571,
+      "null_rejection_rate": 0.05105,
+      "null_simulations": 20000,
+      "equal_allocation_effect_f": 0.6642860888957861,
+      "noncentral_F_power": 0.8343309432840034
+    },
+    {
+      "endpoint": "body_weight_change_day6",
+      "scenario": "group_specific_variance",
+      "test": "Welch_ANOVA",
+      "n_cages_per_group": 14,
+      "total_cages": 42,
+      "simulations": 500000,
+      "rejections": 403844,
+      "power": 0.807688,
+      "mc_se": 0.0005573654001747866,
+      "null_rejection_rate": 0.05045,
+      "null_simulations": 20000,
+      "equal_allocation_effect_f": 0.6642860888957861,
+      "noncentral_F_power": null
+    }
+  ]
+}

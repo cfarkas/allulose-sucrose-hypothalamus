@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "created_at_utc": "2026-08-28T16:56:04Z",
+  "issue": "Rotated x-axis tick labels in master panels D and E were painted over by the later-created opaque F/G row.",
+  "scope": {
+    "updated": [
+      "Fig3/Figure_3_cFos_NPY.png",
+      "Fig3/Figure_3_cFos_NPY.pdf"
+    ],
+    "standalone_panels_changed": false,
+    "scientific_values_or_statistics_changed": false
+  },
+  "layout_validation": {
+    "previous_overlap_inches": 0.2295,
+    "previous_overlap_pixels_at_600_dpi": 137.7,
+    "corrected_clearance_inches": 0.0696,
+    "corrected_clearance_pixels_at_600_dpi": 41.76,
+    "enforced_minimum_clearance_inches": 0.04,
+    "render_time_collision_guard": true
+  },
+  "active_generators": {
+    "front": {
+      "path": "Fig3/03_make_figure_3_cfos_npy.py",
+      "sha256": "a9fb31c96504e5edda5d487e1ff65afce348caa6e41a0d2ff365e611dcb7f942"
+    },
+    "mirror": {
+      "path": "scripts/Fig3/03_make_figure_3_cfos_npy.py",
+      "sha256": "a9fb31c96504e5edda5d487e1ff65afce348caa6e41a0d2ff365e611dcb7f942"
+    },
+    "staged_driver": {
+      "path": "scripts/shared/04_safe_stage_fig3.py",
+      "sha256": "2159e20f339b8588c2c766b65b9af305448774901dd095a35d51e8cc6a8aa387"
+    }
+  },
+  "master_transition": {
+    "png": {
+      "previous_sha256": "c1dade71e78069308cea182a4c9c886dc8640f2c253df039ee9cf6956b4a1ae3",
+      "corrected_sha256": "7b47ae56874bf0485056aa0d9b05e9bb29748755594e63103d8c03c14978b6b0"
+    },
+    "pdf": {
+      "previous_sha256": "a7acd07e1e13fbf4d7eaabc844edf880ceac791ae093ca2560288621778355fb",
+      "corrected_sha256": "ce39307e1f4877d0893d0ffb67995fcb22528b13cdc2a4eb29232e5202d68930"
+    }
+  },
+  "unchanged_panel_png_sha256": {
+    "A": "513a4d6e0b3cb53d9575ae97df7508b70058835a47f5701f40f26efde9f999b9",
+    "B": "53d2727817a45f5e9045b85eeacae295a561964e3c1e9e242f630d6fd1dbd9cc",
+    "C": "6ebb5ac6d0bd3d792a65c6978a339f80f7f14f527390876e17e866a9b21e17e0",
+    "D": "600a1c40f87ee60f9dc970c9bad4143a415fa01628996d4b6384a14b0ce1e58a",
+    "E": "3006185e783821e134f32e8739a253620aef45ed36e3f5d58d6bf9ba64aa4489",
+    "F": "968f21feb89b2dbd08a12f28275ea57612f8a45148007e041c51a3ccf61c39e6",
+    "G": "a74af52709e9c523784a53c39d9849472b38f9e6ba976749a09ed9e19dae125b"
+  },
+  "preservation_validation": {
+    "panels_A_B_C_F_G_pixel_difference_count": 0,
+    "panel_D_E_values_and_statistics_unchanged": true,
+    "nominal_master_pixels": [
+      9600,
+      10260
+    ],
+    "nominal_pdf_points": [
+      1152.0,
+      1231.2
+    ],
+    "embedded_raster_dpi": 600
+  },
+  "previous_master_recovery": "Fig3/legacy/pre_midline_ventricle_purple_roi_20260827T151652Z"
+}

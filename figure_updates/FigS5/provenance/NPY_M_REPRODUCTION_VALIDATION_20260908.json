@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "date": "2026-09-08T20:36:36.435536+00:00",
+  "scope": "Nine-animal S5 fresh prepare, native segmentation audit, nine accepted anatomical imports, quantification and English/bilingual rendering",
+  "workdir": "/tmp/figs5_reproduction_including_NPY_M_20260908",
+  "candidate": "analyses/FigS5/figure/final_including_NPY_M_20260908",
+  "unchanged_numerical_tables": [
+    "per_animal_region_summary.csv",
+    "statistics_all_values.csv",
+    "spatial_exact_permanova.csv",
+    "spatial_3v_exclusion_audit.csv",
+    "fresh_quantification/per_analysis_unit_region_summary.csv",
+    "fresh_quantification/per_nucleus_assignments.csv",
+    "fresh_quantification/statistics_all_values.csv",
+    "spatial_radial_shell_values.csv"
+  ],
+  "original_eight_regional_values_unchanged": true,
+  "eight_inherited_ventricular_masks_byte_identical": true,
+  "raw_images_or_segmentations_modified": false,
+  "n_animals": 9,
+  "groups": {
+    "Water": 3,
+    "Sucrose": 3,
+    "Allulose": 3
+  },
+  "spatial_review_receipt_sha256": "4ab8f7561683f938aefeb23debd6730d2bdddda32eb86d7b8c65c943fda27f55",
+  "analysis_script_sha256": "107da8a1797460dbffebae7a84785cb9e446a2fccb3779f947d7f97a1d2f34c9",
+  "renderer_script_sha256": "7702283669d9aaff8c80e15dc47f2290d8ce31a8a8d8d22b9afb53f0890acc45"
+}

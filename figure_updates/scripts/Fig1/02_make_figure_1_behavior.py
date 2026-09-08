@@ -634,8 +634,10 @@ def write_legends(output_dir: Path, consumption_stats: pd.DataFrame, weight_stat
         "Figure 1. Single bottle experiment: exploratory analysis of the January cohort.\n\n"
         + "\n".join(f"({letter}) {text}" for letter, text in panels.items())
         + "\n\nPrimary inference uses one Day-6 value per cage. August E13/E14 are a separate "
-          "Water-only cohort with bottle-weight but no bottle-volume records and are not pooled. Control and "
-          "nonpositive weight rows are excluded; E9 is retained with genotype Unknown. Pairwise families are "
+          "Water-only cohort with bottle-weight but no bottle-volume records and are not pooled. Nonpositive "
+          "weight rows are excluded; E10/FR6-2 (source label Control) is included as Water. FR5-4 was transferred "
+          "from E2 to E10 for dehydration after the day-6 measurement; its primary measurements retain the "
+          "original Allulose assignment and subsequent observations are flagged separately. E9 is retained with genotype Unknown. Pairwise families are "
           "Holm-adjusted within outcome. Treatment randomization was not documented, sample sizes are small, "
           "and results should be presented as exploratory. Panel A/C confidence bands are descriptive: each "
           "replicate resamples entire cages with replacement and applies the same sampled cage identities at "

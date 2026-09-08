@@ -1,1 +1,1 @@
-Figure 1 panel D. Day-6 cage-mean body-weight percent change. Each dot is one cage, regardless of its mouse count. One-way ANOVA p = 0.119; the three pairwise exact p values are Holm-adjusted. The exact cage-label omnibus is retained in source data as a sensitivity analysis.
+Figure 1 panel D. Day-6 cage-mean body-weight percent change. Each dot is one cage, regardless of its mouse count. One-way ANOVA p = 0.118; the three pairwise exact p values are Holm-adjusted. The exact cage-label omnibus is retained in source data as a sensitivity analysis.

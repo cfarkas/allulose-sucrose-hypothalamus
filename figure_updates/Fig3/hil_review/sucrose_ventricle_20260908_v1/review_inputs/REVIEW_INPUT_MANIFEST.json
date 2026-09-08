@@ -1,0 +1,55 @@
+{
+  "schema": "fig3_sucrose_native_dapi_ventricle_hil_v1",
+  "condition": "Sucrose",
+  "animal_id": "E7_FR7-5",
+  "coordinate_frame_yx": [
+    848,
+    1370
+  ],
+  "display_to_native_xy": [
+    [
+      0.333764,
+      -0.942664,
+      666.501835
+    ],
+    [
+      0.942559,
+      0.333778,
+      -27.068433
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "pixel_size_um": 0.664212669961432,
+  "source_sha256": {
+    "Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_dapi.tif": "b0d6935331a4309b9fa2b8247b977f86b7be82f2ec4edbcff24f3e59fb751bfc",
+    "Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_dapi_seg.npy": "5ee8adeaf5abb5ba3fd1637abbc73f5bc3634118f8fa184cbc49bea0b4abbe41",
+    "Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_fos_seg.npy": "b8beb7ad8b106484c58042af943fb0ae4003d01196be3ae6ad8b2cd513eb68dc",
+    "Fig3/raw/legacy_experiment_2025_07_28/E7-FR7-5_gfp_seg.npy": "2a8ff8dc72a099dd99e6c3c0a69f20d0405ce83c15603e1c31a712b8166bb9f9"
+  },
+  "native_counts": {
+    "dapi_nuclei": 3241,
+    "accepted_cfos_roi_mappings": 81,
+    "duplicate_cfos_roi_mappings": 0,
+    "cfos_positive_nuclei": 81,
+    "npy_positive_nuclei": 302,
+    "dual_positive_nuclei": 19
+  },
+  "registered_dapi_labels_sha256": "cd5bdd6571b71b69ff2113d3dd1fd354bd8aec0fecc66483df1a2ab05ff48aa5",
+  "background_sha256": "59f81f009d5189aba007be0d3c0c0ce2719ac24d29fe4218445947126c08eabb",
+  "background_display": {
+    "percentiles": [
+      0.5,
+      99.7
+    ],
+    "limits": [
+      2.578125,
+      255.0
+    ],
+    "gamma": 0.55
+  },
+  "automatic_ventricle_proposal": false
+}

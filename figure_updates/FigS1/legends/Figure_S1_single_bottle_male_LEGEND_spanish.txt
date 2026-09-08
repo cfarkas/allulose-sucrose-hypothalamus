@@ -1,0 +1,8 @@
+Figura S1. Experimento de una sola botella, grupo masculino (análisis exploratorio).
+
+(A) Trayectorias masculinas de consumo por jaula desde el día 1 hasta el día 6; las líneas gruesas y bandas resumen jaulas con el mismo peso.
+(B) Consumo por jaula masculina en el día 6; se muestra ANOVA de una vía y comparaciones exactas con ajuste de Holm.
+(C) Cambio de peso corporal masculino desde basal. Los puntos de ratón son descriptivos y la inferencia permanece al nivel de jaula.
+(D) Cambio medio de peso corporal por jaula masculina en el día 6; se muestra ANOVA de una vía y comparaciones exactas con ajuste de Holm.
+
+Todas las jaulas de enero fueron verificadas como de un solo sexo; los tamaños por tratamiento son Agua n=2, Sacarosa n=3 y Alulosa n=2. La jaula es la unidad experimental y de inferencia; los puntos de ratones en los paneles de peso son descriptivos. Los valores globales mostrados usan ANOVA de una vía, las comparaciones exactas por pares se ajustan por Holm y el ómnibus exacto por etiquetas de jaula se conserva como sensibilidad. No se estimó una interacción tratamiento por sexo y las diferencias de significación entre análisis por sexo no deben interpretarse como una diferencia sexual.

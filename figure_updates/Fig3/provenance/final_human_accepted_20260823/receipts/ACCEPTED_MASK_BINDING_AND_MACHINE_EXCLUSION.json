@@ -1,0 +1,68 @@
+{
+  "all_raw_nlink1_unique_inode": true,
+  "all_required_hashes_bound": true,
+  "human_acceptance_receipt_sha256": "48e790c2cafb817da1b07cc0450a0ecb952842ed135bade44be33ba334658d4a",
+  "human_acceptance_status": "HUMAN_ACCEPTED_MANDATORY",
+  "machine_generated_mask_substitution_allowed": false,
+  "machine_mask_directory_used_as_analysis_input": false,
+  "note_on_recorded_source_filenames": "Cellpose dictionaries retain historical source TIFF metadata strings; actual analysis paths and byte hashes are the independent copies of the mandatory human-accepted masks above.",
+  "publication_input": true,
+  "raw_input_audit_sha256": "9272e7f85eac9786c824b7af5c40dff7334ec2bdbc7f8d936e349c94fa994f62",
+  "raw_input_count": 75,
+  "required_mask_bindings": [
+    {
+      "accepted_mask": "WATER_NPY3_S01_dapi_seg.npy",
+      "all_equal": true,
+      "channel": "DAPI",
+      "independent_raw_sha256": "f2fe88d7ea465247ac1eff4c388391e0b5c287b9436420b5012f6a071d2a5f82",
+      "objects": 3224,
+      "required_sha256": "f2fe88d7ea465247ac1eff4c388391e0b5c287b9436420b5012f6a071d2a5f82",
+      "spatial_audit_objects": 3224,
+      "spatial_audit_sha256": "f2fe88d7ea465247ac1eff4c388391e0b5c287b9436420b5012f6a071d2a5f82"
+    },
+    {
+      "accepted_mask": "WATER_NPY3_S01_GFP_seg.npy",
+      "all_equal": true,
+      "channel": "NPY_GFP",
+      "independent_raw_sha256": "477a965a90b442d3b814d41405ce30083bab84e8e2f4028f42995959a70b2a0c",
+      "objects": 196,
+      "required_sha256": "477a965a90b442d3b814d41405ce30083bab84e8e2f4028f42995959a70b2a0c",
+      "spatial_audit_objects": 196,
+      "spatial_audit_sha256": "477a965a90b442d3b814d41405ce30083bab84e8e2f4028f42995959a70b2a0c"
+    },
+    {
+      "accepted_mask": "WATER_NPY3_S01_fos_seg.npy",
+      "all_equal": true,
+      "channel": "cFOS",
+      "independent_raw_sha256": "50a93a70f12088afb1f63aaa337636003cb242e41d0c2ae94c894efd21816648",
+      "objects": 54,
+      "required_sha256": "50a93a70f12088afb1f63aaa337636003cb242e41d0c2ae94c894efd21816648",
+      "spatial_audit_objects": 54,
+      "spatial_audit_sha256": "50a93a70f12088afb1f63aaa337636003cb242e41d0c2ae94c894efd21816648"
+    }
+  ],
+  "stage00": {
+    "accepted_hash_patch_script_sha256": "eeef1c075b9bdd72302c39eb85323a409be4fa72b31c6a9467023a4c58451f99",
+    "canonical_script_sha256": "2b834ae47f54d0c4d9e62d0a081eeee04150e2b6a726f70749643227d2ad7659",
+    "diff_scope": "one DAPI_SEG_SHA256 constant only",
+    "display_qc_only": true,
+    "display_tiff_sha256": "45af96f64bf286f28fa9fbce7a0ac1e2db72e6895fb707a254a3fb6751a22dae",
+    "lif_sha256": "db4cbdb72c8e8af6a5ab264d1526083d4bb70c4ece54e9c9ee59a8c90d7671ab",
+    "lifext_sha256": "1359dd14c59ad5d558312db0a6ff71bbf1ecaf2660e126fabba039903eb22fc7",
+    "numeric_analysis": false,
+    "unified_diff": [
+      "--- ",
+      "+++ ",
+      "@@ -41,7 +41,7 @@",
+      " ",
+      " SOURCE_LIF_SHA256 = \"db4cbdb72c8e8af6a5ab264d1526083d4bb70c4ece54e9c9ee59a8c90d7671ab\"",
+      " SOURCE_LIFEXT_SHA256 = \"1359dd14c59ad5d558312db0a6ff71bbf1ecaf2660e126fabba039903eb22fc7\"",
+      "-DAPI_SEG_SHA256 = \"58be1372ada83b0f799c27a32037e95e8ee28b4eeaaba92825b545fc91abad87\"",
+      "+DAPI_SEG_SHA256 = \"f2fe88d7ea465247ac1eff4c388391e0b5c287b9436420b5012f6a071d2a5f82\"",
+      " EXPECTED_STACK_SHAPE = (21, 1419, 1898)",
+      " SERIES_INDEX = 12",
+      " CHANNEL_INDEX = 2"
+    ]
+  },
+  "status": "PASS"
+}

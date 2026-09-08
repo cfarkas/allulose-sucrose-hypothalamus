@@ -1,0 +1,356 @@
+{
+  "byte_for_byte_verified": true,
+  "counts": {
+    "added": 4,
+    "already_identical_skipped": 13,
+    "replaced": 52,
+    "rewritten_identical": 0
+  },
+  "figure": "FigS5",
+  "files": [
+    {
+      "bytes": 21588297,
+      "promoted": "FigS5/Figure_S5.pdf",
+      "sha256": "b43042861f4e45a4352f77a246eadf2e6c9137ec113245feb43e6296009706d6",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/Figure_S5.pdf"
+    },
+    {
+      "bytes": 25295286,
+      "promoted": "FigS5/Figure_S5.png",
+      "sha256": "25e60d3422353c952bc69b300b03b0047217ddb279e09eb2623ed2e98733352b",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/Figure_S5.png"
+    },
+    {
+      "bytes": 2331,
+      "promoted": "FigS5/legends/Figure_S5_LEGEND.txt",
+      "sha256": "1c39cf7e2b64f5131cfc3e4ec2cb5fde741a924e7b4e5c01c960ccbac51f29ab",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/legends/Figure_S5_LEGEND.txt"
+    },
+    {
+      "bytes": 2364,
+      "promoted": "FigS5/legends/Figure_S5_LEGEND_spanish.txt",
+      "sha256": "da16dd39577595b04712262350f7a6feab3a42536a9c972186b2f42522735b19",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/legends/Figure_S5_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 5585583,
+      "promoted": "FigS5/panels/Figure_S5_panel_A.pdf",
+      "sha256": "6061aa4e14cb2935609fcb1a18a9a2b342403083440c24ee0b46b240736cdfd1",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_A.pdf"
+    },
+    {
+      "bytes": 5586368,
+      "promoted": "FigS5/panels/Figure_S5_panel_A_spanish.pdf",
+      "sha256": "644162a46aa297a513d936d922fc873cdc69c768dfcd369d1e14a807778eedc9",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 7434725,
+      "promoted": "FigS5/panels/Figure_S5_panel_B.pdf",
+      "sha256": "f9b9b54f53363c98d030de07b7bac66c76861c34c7b001f30cda81d56b3f9582",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_B.pdf"
+    },
+    {
+      "bytes": 7435166,
+      "promoted": "FigS5/panels/Figure_S5_panel_B_spanish.pdf",
+      "sha256": "f2131725c46a3d351f0ff7d1a74d15a8c4b341adefae464255b648dfd4788d8a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 5513882,
+      "promoted": "FigS5/panels/Figure_S5_panel_C.pdf",
+      "sha256": "691d7f5868eb6c5c415a06d62e7d62a8e40b8f920e4316ccd3be0acce7208f46",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_C.pdf"
+    },
+    {
+      "bytes": 5514669,
+      "promoted": "FigS5/panels/Figure_S5_panel_C_spanish.pdf",
+      "sha256": "2b8a0f7326d3dc2189cd1a6185a0135b411b61e756089485388e7f3315200a7c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 373904,
+      "promoted": "FigS5/panels/Figure_S5_panel_D.pdf",
+      "sha256": "a3756aa591562766869399875d11c6599e0146add4caf34cc3cde39e3c84507a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_D.pdf"
+    },
+    {
+      "bytes": 373763,
+      "promoted": "FigS5/panels/Figure_S5_panel_D_spanish.pdf",
+      "sha256": "77729d65fff028e9eb7d9d912d43a9faeb6e93a0f2ef67e9c5c886794e60bab8",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 9265765,
+      "promoted": "FigS5/panels/Figure_S5_panel_E.pdf",
+      "sha256": "c3fbcc9a960b58926bf65b00da8744214ca48a564ea48af44c8fbd922a094964",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_E.pdf"
+    },
+    {
+      "bytes": 9265622,
+      "promoted": "FigS5/panels/Figure_S5_panel_E_spanish.pdf",
+      "sha256": "ddf91c1b88d27845d69cf80d47edb68d51f3499004afe91b8d576d25c0ffbbde",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_E_spanish.pdf"
+    },
+    {
+      "bytes": 7765520,
+      "promoted": "FigS5/panels/Figure_S5_panel_F.pdf",
+      "sha256": "070292613698bc0f600efb5f88c32fc3edcc130204d26c9c8aa72af0d878b777",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_F.pdf"
+    },
+    {
+      "bytes": 7766453,
+      "promoted": "FigS5/panels/Figure_S5_panel_F_spanish.pdf",
+      "sha256": "b31484bb0a70e34bd1beb2ec1528e929811caeb4b5db370aba5a35279630f48a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_F_spanish.pdf"
+    },
+    {
+      "bytes": 31284,
+      "promoted": "FigS5/panels/Figure_S5_panel_G.pdf",
+      "sha256": "2a566c7170797ead68bd0e4fc462410b5fefd14b1666f00ded81cb26f9d35b27",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G.pdf"
+    },
+    {
+      "bytes": 343972,
+      "promoted": "FigS5/panels/Figure_S5_panel_G.png",
+      "sha256": "b65948fabbd8dd7a088dbbe68881dbf904a9d4fd338055f8d856097f2a062529",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G.png"
+    },
+    {
+      "bytes": 32799,
+      "promoted": "FigS5/panels/Figure_S5_panel_G_spanish.pdf",
+      "sha256": "4fc6d5ed525dfff92263c664ccd034863636472a25b76e638713e956fe4cafde",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G_spanish.pdf"
+    },
+    {
+      "bytes": 360373,
+      "promoted": "FigS5/panels/Figure_S5_panel_G_spanish.png",
+      "sha256": "7a807f381b7269a4bdfb107d5297f9dc27fbdd3282b833973c40bc60faecbc60",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_G_spanish.png"
+    },
+    {
+      "bytes": 27847,
+      "promoted": "FigS5/panels/Figure_S5_panel_H.pdf",
+      "sha256": "e3dd6d5cffc9843c296b9b286d3601ee9d13ddb04fa3534358775eb1925f690e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H.pdf"
+    },
+    {
+      "bytes": 278811,
+      "promoted": "FigS5/panels/Figure_S5_panel_H.png",
+      "sha256": "062f3a7a25dae66dada2808a6162be5d8e7bab79adaa547f56f3c30ffa56e14d",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H.png"
+    },
+    {
+      "bytes": 29576,
+      "promoted": "FigS5/panels/Figure_S5_panel_H_spanish.pdf",
+      "sha256": "8dde4a44c4cae5fcd44894e5357c919cb62285754f2e171d754d8098bebacfe6",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H_spanish.pdf"
+    },
+    {
+      "bytes": 290371,
+      "promoted": "FigS5/panels/Figure_S5_panel_H_spanish.png",
+      "sha256": "678f751f763f98a369482e2cedeb5bc8f3b487a3f149b83d2eecabff2f6a45ae",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_H_spanish.png"
+    },
+    {
+      "bytes": 93784,
+      "promoted": "FigS5/panels/Figure_S5_panel_I.pdf",
+      "sha256": "a0f9973bbdc4c179932a44dc919583737c27b0b3a1c5d9ce18595ed4d20dffec",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I.pdf"
+    },
+    {
+      "bytes": 805563,
+      "promoted": "FigS5/panels/Figure_S5_panel_I.png",
+      "sha256": "279bfc3508a5d4593afc2f4dfa46fddc68565ec0e08590cc0be772fe22e1c1a7",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I.png"
+    },
+    {
+      "bytes": 94527,
+      "promoted": "FigS5/panels/Figure_S5_panel_I_spanish.pdf",
+      "sha256": "2459995e05935b587d3a55d4a381608a761f747bef16ca2d1f63564e21d57280",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I_spanish.pdf"
+    },
+    {
+      "bytes": 831170,
+      "promoted": "FigS5/panels/Figure_S5_panel_I_spanish.png",
+      "sha256": "36b3ce22d4bc63d2b4d115058f6e8c1e12c487eb1ae9a43325a0943bc5e9fbd5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_I_spanish.png"
+    },
+    {
+      "bytes": 77528,
+      "promoted": "FigS5/panels/Figure_S5_panel_J.pdf",
+      "sha256": "4b084ebb957ad493fb2c65b97edeae3d19475094e9b7928f34085880c40374fa",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J.pdf"
+    },
+    {
+      "bytes": 780689,
+      "promoted": "FigS5/panels/Figure_S5_panel_J.png",
+      "sha256": "a2acec5d684d8e662bf15bbdecd744a0d620c6993536fc799f3c24f4302c7ef3",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J.png"
+    },
+    {
+      "bytes": 77751,
+      "promoted": "FigS5/panels/Figure_S5_panel_J_spanish.pdf",
+      "sha256": "b25c9b3ffa5a50e4993a892b79e5b08f40805d1cc525f403a4c2d22f5239b6fd",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J_spanish.pdf"
+    },
+    {
+      "bytes": 796108,
+      "promoted": "FigS5/panels/Figure_S5_panel_J_spanish.png",
+      "sha256": "6d2d5d35b3f3e16bc0ff9a786e57ed8b9c61c7aa37080388f41afaa7796d30dc",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/panels/Figure_S5_panel_J_spanish.png"
+    },
+    {
+      "bytes": 27559,
+      "promoted": "FigS5/provenance/BUILD_RECEIPT.json",
+      "sha256": "7b2dcc14bef1c6342fccc11c18e0ba2475a971924aa002bf655e6c365ad5accc",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/provenance/BUILD_RECEIPT.json"
+    },
+    {
+      "bytes": 2178,
+      "promoted": "FigS5/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json",
+      "sha256": "5be61e611174f7c3bf38bf7eea2fa38c4520edb9b5c106573db1136b1fc20f53",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json"
+    },
+    {
+      "bytes": 10293,
+      "promoted": "FigS5/provenance/output_manifest.csv",
+      "sha256": "67bee594d5b7724ad5a9f518925514305e701ed778669d21f05e2d00b184323c",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/provenance/output_manifest.csv"
+    },
+    {
+      "bytes": 8060,
+      "promoted": "FigS5/source_data/WT_only_region_values.csv",
+      "sha256": "2d30940d26be55a842bdbdcb3461eb12f89fa9407f0295b2e7549cef23a28fd0",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/WT_only_region_values.csv"
+    },
+    {
+      "bytes": 5354,
+      "promoted": "FigS5/source_data/WT_only_regional_statistics.csv",
+      "sha256": "b3095749dde8ea6bbbdd6fd7cc75340ceff4fe61c5c85eeafd9cea1522869c25",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/WT_only_regional_statistics.csv"
+    },
+    {
+      "bytes": 23778,
+      "promoted": "FigS5/source_data/WT_only_shell_values.csv",
+      "sha256": "e2d08365c35ceb8ac51b607b9500f5b398b48f5b49139cdc623feaf8a305bb23",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/WT_only_shell_values.csv"
+    },
+    {
+      "bytes": 1358,
+      "promoted": "FigS5/source_data/WT_only_spatial_statistics.csv",
+      "sha256": "a2ef6ce5cc24cbec2ddbbda48a7223ead884dd38d7625a439c6d1728d6521511",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/WT_only_spatial_statistics.csv"
+    },
+    {
+      "bytes": 3728,
+      "promoted": "FigS5/source_data/acth_clip_dapi_size_filter_audit.csv",
+      "sha256": "4334ce070a0d727918eeea5a56fb8d261b8e7b67e2e2fb3790529155e8ad4e95",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/acth_clip_dapi_size_filter_audit.csv"
+    },
+    {
+      "bytes": 1553,
+      "promoted": "FigS5/source_data/annotation_status.csv",
+      "sha256": "4cb0b8715b7d8e107f2b2c9777f48854e4ff4fb3024eedc2d7d53455328d536a",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/annotation_status.csv"
+    },
+    {
+      "bytes": 1934,
+      "promoted": "FigS5/source_data/count_invariants.csv",
+      "sha256": "cd35e6d635d59d549c5906b596c30bbaeec82e45d767fce9d8a59075db78538e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/count_invariants.csv"
+    },
+    {
+      "bytes": 15735,
+      "promoted": "FigS5/source_data/endpoint_values_long.csv",
+      "sha256": "0d380d6a51bf947de3cb07313ce56f6aca231f72a36258b466f401a126746784",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/endpoint_values_long.csv"
+    },
+    {
+      "bytes": 360277,
+      "promoted": "FigS5/source_data/marker_roi_assignments.csv",
+      "sha256": "88ee7ec4e433b6c8479fd106f10b2db24cff5726600eb6e8b38417123df541e5",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/marker_roi_assignments.csv"
+    },
+    {
+      "bytes": 9007,
+      "promoted": "FigS5/source_data/per_analysis_unit_region_summary.csv",
+      "sha256": "3f72c9e21f7e5395632f0727665b4623780b60152f96d88c39f7f18ee6d87ac7",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/per_analysis_unit_region_summary.csv"
+    },
+    {
+      "bytes": 9722,
+      "promoted": "FigS5/source_data/per_animal_region_summary.csv",
+      "sha256": "d435d4a02c19a7a1449a4570144ac393c512fdc302d40bac41cc329bf04e23f7",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/per_animal_region_summary.csv"
+    },
+    {
+      "bytes": 9007,
+      "promoted": "FigS5/source_data/per_image_region_summary.csv",
+      "sha256": "3f72c9e21f7e5395632f0727665b4623780b60152f96d88c39f7f18ee6d87ac7",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/per_image_region_summary.csv"
+    },
+    {
+      "bytes": 4480956,
+      "promoted": "FigS5/source_data/per_nucleus_assignments.csv",
+      "sha256": "2425ecbec84476f5eb0bfca528003ecf4f6af0163040891c18f515fea0df8d4f",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/per_nucleus_assignments.csv"
+    },
+    {
+      "bytes": 1157,
+      "promoted": "FigS5/source_data/spatial_3v_exclusion_audit.csv",
+      "sha256": "edf2852f2451243e59ac5ee7b30b10ecdc75ca6b01eda1b3c828950c31820713",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/spatial_3v_exclusion_audit.csv"
+    },
+    {
+      "bytes": 1375,
+      "promoted": "FigS5/source_data/spatial_exact_permanova.csv",
+      "sha256": "08f39f8ff9f12198cf3ab7103948986b076ed4d6788ec549f4fd96abc9d7f170",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/spatial_exact_permanova.csv"
+    },
+    {
+      "bytes": 387803,
+      "promoted": "FigS5/source_data/spatial_exact_permutation_receipts.csv",
+      "sha256": "9371d3d90f9f9588f35fd60ed641e5a193142f1484ee446a0837b806be0fb830",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/spatial_exact_permutation_receipts.csv"
+    },
+    {
+      "bytes": 5731089,
+      "promoted": "FigS5/source_data/spatial_occurrence_source.csv",
+      "sha256": "1af86e138273664554d5c064dfc47a809ef47f1b1b51fea36303b69029ed1413",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/spatial_occurrence_source.csv"
+    },
+    {
+      "bytes": 2189,
+      "promoted": "FigS5/source_data/spatial_radial_shell_audit.csv",
+      "sha256": "e7187f4171c2f2a8a80de247727cd8097b804801107beff74553357c7aab706d",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/spatial_radial_shell_audit.csv"
+    },
+    {
+      "bytes": 26706,
+      "promoted": "FigS5/source_data/spatial_radial_shell_values.csv",
+      "sha256": "922059c35520be2ef601d0233528226b24bb451283252ffff317a3d24647ad9b",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/spatial_radial_shell_values.csv"
+    },
+    {
+      "bytes": 159106,
+      "promoted": "FigS5/source_data/spatial_ventricle_contour_source.csv",
+      "sha256": "272d2f2e435cfef7d51dc96b96eed87047cfa3f0129b0a831b6a26bdcb265fcb",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/spatial_ventricle_contour_source.csv"
+    },
+    {
+      "bytes": 6308,
+      "promoted": "FigS5/source_data/statistics_all_values.csv",
+      "sha256": "752acd50cf2c0024b887f6083bc95997cd702a6794cb26beb1ed889609b96f90",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908/source_data/statistics_all_values.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S5",
+  "master_name_promoted": "Figure_S5",
+  "promoted_utc": "2026-09-08T20:36:53+00:00",
+  "replacement_policy": "copy_superseded_to_figure_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/media/server/STORAGE/Apotome/Paper/analyses/FigS5/figure/final_including_NPY_M_20260908",
+  "superseded_copied_to": "FigS5/legacy/superseded_promotion_20260908T203651Z",
+  "verified_artifacts": 69
+}

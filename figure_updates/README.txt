@@ -90,8 +90,9 @@ Completed Figure S3 is validated, rebuilt and installed with the other figures.
 
 Supplementary Figure S5
 -----------------------
-S5 contains eight independent WT animals: Water n=2, Sucrose n=3 and Allulose
-n=3; NPY-M is excluded. ACTH/CLIP objects below the acquisition-specific DAPI
+S5 contains nine animals: Water, Sucrose and Allulose n=3 each. Eight are WT;
+NPY-M is a male NPY-transgenic Water animal included by author confirmation on
+8 September 2026. Its confirmed 546/633 channels identify ACTH/CLIP and c-FOS. ACTH/CLIP objects below the acquisition-specific DAPI
 nuclear-area fifth percentile are excluded as likely non-cell fragments. Raw
 masks are unchanged.
 
@@ -205,7 +206,6 @@ Package layout
   scripts/shared/    shared HIL/staging helpers
   scripts/utilities/ validation, HIL import and promotion tools
   analyses/          local generated working state; not required in an upload
-  recovery_archive/  reconstruction-era evidence and audits
 
 For an archive, omit machine-local analyses/, recovery_archive/, recovery_support/,
 quarantine/, docs/, .claude/, .mypy_cache/, __pycache__/, README2.txt, and

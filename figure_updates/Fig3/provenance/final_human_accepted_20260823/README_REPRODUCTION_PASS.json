@@ -1,0 +1,90 @@
+{
+  "animal_n_by_condition": {
+    "Allulose": 3,
+    "Sucrose": 3,
+    "Water": 3
+  },
+  "bilingual_geometry_pairs": "7/7",
+  "content_manifest_sha256": "5f0b0778dae09620149f5bf0f8e92696671c1a6b421c547f7647477e6191ec63",
+  "created_at": "2026-08-24T01:20:39.332887+00:00",
+  "english_master_only": true,
+  "final_root": "/tmp/fig3_readme_reproduction_20260823_v5/final",
+  "graphics": 30,
+  "minimum_raster_dpi": 300,
+  "pair_geometry": {
+    "A": {
+      "pdf_points": [
+        1134.144,
+        466.6109053585
+      ],
+      "pixels": [
+        9451,
+        3888
+      ]
+    },
+    "B": {
+      "pdf_points": [
+        561.6703794212,
+        203.4125090758
+      ],
+      "pixels": [
+        4680,
+        1695
+      ]
+    },
+    "C": {
+      "pdf_points": [
+        561.6703794212,
+        203.4125090758
+      ],
+      "pixels": [
+        4680,
+        1695
+      ]
+    },
+    "D": {
+      "pdf_points": [
+        311.0524115756,
+        274.3819916925
+      ],
+      "pixels": [
+        2592,
+        2286
+      ]
+    },
+    "E": {
+      "pdf_points": [
+        310.9624115756,
+        274.3819916925
+      ],
+      "pixels": [
+        2591,
+        2286
+      ]
+    },
+    "F": {
+      "pdf_points": [
+        581.1954435516,
+        287.1820353635
+      ],
+      "pixels": [
+        4843,
+        2393
+      ]
+    },
+    "G": {
+      "pdf_points": [
+        584.2554435516,
+        287.1820353635
+      ],
+      "pixels": [
+        4868,
+        2393
+      ]
+    }
+  },
+  "pdf_single_page_embedded_fonts_no_type3": true,
+  "raw_validation_sha256": "d29db5f75d2194053c917b371e661e345019481ad56f17b6c97f56126695b22f",
+  "schema": "fig3_readme_reproduction_pass_v1",
+  "status": "PASS"
+}

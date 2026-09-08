@@ -1,0 +1,103 @@
+{
+  "analysis_python": "/home/server/anaconda3/envs/paper_apotome_repro/bin/python",
+  "commands": [
+    {
+      "argv": [
+        "/home/server/anaconda3/envs/paper_apotome_repro/bin/python",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/scripts/Fig3/01_analyze_cfos_npy.py",
+        "--raw-root",
+        "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28",
+        "--output-dir",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run"
+      ],
+      "name": "01_analysis"
+    },
+    {
+      "argv": [
+        "/home/server/anaconda3/envs/paper_apotome_repro/bin/python",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/scripts/Fig3/02_make_cfos_npy_cartoons.py",
+        "--root",
+        "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper",
+        "--output-dir",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels",
+        "--dpi",
+        "600"
+      ],
+      "name": "02_cartoons"
+    },
+    {
+      "argv": [
+        "/home/server/anaconda3/envs/paper_apotome_repro/bin/python",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/scripts/Fig3/05_analyze_spatial_distributions.py",
+        "--raw-root",
+        "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28",
+        "--output-dir",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run",
+        "--dpi",
+        "600"
+      ],
+      "name": "05_spatial"
+    },
+    {
+      "argv": [
+        "/home/server/anaconda3/envs/paper_apotome_repro/bin/python",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/scripts/Fig3/03_make_figure_3_cfos_npy.py",
+        "--analysis-dir",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run",
+        "--output-dir",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/Fig3",
+        "--raw-root",
+        "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28",
+        "--spatial-dir",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run",
+        "--per-animal",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/per_animal_cfos_npy.csv",
+        "--statistics",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/anova_mwu_statistics.csv",
+        "--panel-b",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_B_Water_marker_positive_nuclei.png",
+        "--panel-c",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/final_run/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.png",
+        "--panel-f",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/Figure3_Spatial_cFOS_occurrence.png",
+        "--panel-g",
+        "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2/Paper/analyses/Fig3/results/spatial_distribution_run/Figure3_Spatial_cFOS_NPY_occurrence.png",
+        "--figure-name",
+        "Figure_3_cFos_NPY",
+        "--dpi",
+        "600",
+        "--panel-a-dpi",
+        "400",
+        "--seed",
+        "31"
+      ],
+      "name": "03_compositor"
+    }
+  ],
+  "created_at_utc": "2026-08-23T16:44:28.740672+00:00",
+  "expected_postflight_output_count": 67,
+  "mode": "execute",
+  "paper_root": "/tmp/fig3_human_accepted_derived_code_20260823_v2/Paper",
+  "raw_audit": "required before execution; deferred in plan-only mode",
+  "raw_project_root": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper",
+  "raw_root": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28",
+  "recovered_script_sha256": {
+    "scripts/Fig3/00_extract_water3_neun_display.py": "2b834ae47f54d0c4d9e62d0a081eeee04150e2b6a726f70749643227d2ad7659",
+    "scripts/Fig3/01_analyze_cfos_npy.py": "71f3b5f6f12c66d5de757d800d9c138164a29419696769fc5cf629cdc3786490",
+    "scripts/Fig3/02_make_cfos_npy_cartoons.py": "4b2542e09e7262ade16374917884e0ab8e86d6344a593696df13f4ead217069c",
+    "scripts/Fig3/03_make_figure_3_cfos_npy.py": "12edc1a991af769f4439ec2c7fa83865cf6b489edf3afe34832a566590cfe157",
+    "scripts/Fig3/05_analyze_spatial_distributions.py": "2728cf0a5faa59e3592fc8efd2d670c7d6076821054f25dfdf2e4b4ab59df674"
+  },
+  "safety_contract": {
+    "existing_path_reuse": false,
+    "failed_stage_preserved": true,
+    "launcher_cleanup_or_replacement": false,
+    "live_paper_writes": false,
+    "recursive_raw_traversal": false,
+    "stage_root_absent_at_plan_time": true,
+    "stage_root_direct_child_of_external_parent": true
+  },
+  "schema_version": 1,
+  "stage_parent": "/tmp/fig3_human_accepted_stage_parent_20260823",
+  "stage_root": "/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v2"
+}

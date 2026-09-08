@@ -1,0 +1,109 @@
+analysis_unit_id,acquisition_id,animal_id,condition,region,region_present,endpoint,endpoint_label,value,analysis_unit
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.208,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.08102564102564103,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.1282051282051282,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.02666666666666667,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",8.774332300082392,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,26.0,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.0,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.0025380710659898475,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.0025380710659898475,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.13157894736842105,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.12131147540983607,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.041530054644808745,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.00546448087431694,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",1.9047628722197951,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,5.0,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.0,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.022813688212927757,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.011406844106463879,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.4222222222222222,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.12184115523465704,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.04061371841155235,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.017148014440433214,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",5.5409916959271115,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,19.0,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.0,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.006036217303822937,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.004024144869215292,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.15384615384615385,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.10427807486631016,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.017379679144385027,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.00267379679144385,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.8162366002262628,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,2.0,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.003656307129798903,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.18181818181818182,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.07859733978234583,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.053204353083434096,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.009673518742442563,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",2.808186123948361,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,8.0,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.0,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.0055248618784530384,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.0013812154696132596,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.19444444444444445,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.09403669724770643,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.08256880733944955,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.016055045871559634,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",4.580311684084153,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,14.0,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.007575757575757576,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.2903225806451613,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.08624031007751938,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.030038759689922482,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.00872093023255814,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",3.2799889226359498,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,9.0,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.0055147058823529415,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.2542372881355932,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.13341493268053856,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.07221542227662178,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.01835985312117503,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",4.982275597357746,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,15.0,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.011111111111111112,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.0,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.0,acquisition
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,0.0,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ARC,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.2,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ARC,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.011936339522546418,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ARC,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.033156498673740056,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ARC,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.006631299734748011,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ARC,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",1.619805057505238,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ARC,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,5.0,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ME,True,double_over_total_acth_clip,c-FOS+ ACTH/CLIP+ / total ACTH/CLIP,0.14285714285714285,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ME,True,total_cfos_over_dapi,total c-FOS+ / DAPI,0.005025125628140704,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ME,True,total_acth_clip_over_dapi,total ACTH/CLIP+ / DAPI,0.017587939698492462,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ME,True,double_over_dapi,c-FOS+ ACTH/CLIP+ / DAPI,0.002512562814070352,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ME,True,double_per_100k_um2,"c-FOS+ ACTH/CLIP+ / 100,000 µm²",0.8099381249839015,acquisition
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,ME,True,n_double,c-FOS+ ACTH/CLIP+ nuclei,1.0,acquisition

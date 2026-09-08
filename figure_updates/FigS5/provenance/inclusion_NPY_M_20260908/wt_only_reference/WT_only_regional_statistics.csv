@@ -1,0 +1,61 @@
+endpoint,region,test,group1,group2,n1,n2,p_value,cliffs_delta,analysis_unit,insufficient_n,q_value_bh
+double_over_total_acth_clip,ME,Kruskal-Wallis,ALL,,4,,,,acquisition,,
+double_over_total_acth_clip,ME,ANOVA,ALL,,4,,,,acquisition,,
+double_over_total_acth_clip,ME,Mann-Whitney U,Water,Sucrose,0,1.0,,,acquisition,True,
+double_over_total_acth_clip,ME,Mann-Whitney U,Water,Allulose,0,3.0,,,acquisition,True,
+double_over_total_acth_clip,ME,Mann-Whitney U,Sucrose,Allulose,1,3.0,,0.0,acquisition,True,
+double_over_total_acth_clip,ARC,Kruskal-Wallis,ALL,,8,,0.29051179209304573,,acquisition,,1.0
+double_over_total_acth_clip,ARC,ANOVA,ALL,,8,,0.5245628411635634,,acquisition,,1.0
+double_over_total_acth_clip,ARC,Mann-Whitney U,Water,Sucrose,2,3.0,0.2,1.0,acquisition,True,1.0
+double_over_total_acth_clip,ARC,Mann-Whitney U,Water,Allulose,2,3.0,0.8,0.3333333333333333,acquisition,True,1.0
+double_over_total_acth_clip,ARC,Mann-Whitney U,Sucrose,Allulose,3,3.0,0.7,-0.3333333333333333,acquisition,False,1.0
+total_cfos_over_dapi,ME,Kruskal-Wallis,ALL,,8,,0.8948393168143718,,acquisition,,1.0
+total_cfos_over_dapi,ME,ANOVA,ALL,,8,,0.7228623815671905,,acquisition,,1.0
+total_cfos_over_dapi,ME,Mann-Whitney U,Water,Sucrose,2,3.0,0.8,0.3333333333333333,acquisition,True,1.0
+total_cfos_over_dapi,ME,Mann-Whitney U,Water,Allulose,2,3.0,1.0,0.0,acquisition,True,1.0
+total_cfos_over_dapi,ME,Mann-Whitney U,Sucrose,Allulose,3,3.0,1.0,-0.1111111111111111,acquisition,False,1.0
+total_cfos_over_dapi,ARC,Kruskal-Wallis,ALL,,8,,0.5658397067874226,,acquisition,,1.0
+total_cfos_over_dapi,ARC,ANOVA,ALL,,8,,0.6322576236172012,,acquisition,,1.0
+total_cfos_over_dapi,ARC,Mann-Whitney U,Water,Sucrose,2,3.0,0.8,0.3333333333333333,acquisition,True,1.0
+total_cfos_over_dapi,ARC,Mann-Whitney U,Water,Allulose,2,3.0,0.8,0.3333333333333333,acquisition,True,1.0
+total_cfos_over_dapi,ARC,Mann-Whitney U,Sucrose,Allulose,3,3.0,0.4,-0.5555555555555556,acquisition,False,1.0
+total_acth_clip_over_dapi,ME,Kruskal-Wallis,ALL,,8,,0.0541137662228217,,acquisition,,1.0
+total_acth_clip_over_dapi,ME,ANOVA,ALL,,8,,0.12135608215610602,,acquisition,,1.0
+total_acth_clip_over_dapi,ME,Mann-Whitney U,Water,Sucrose,2,3.0,0.6830913983096087,-0.3333333333333333,acquisition,True,1.0
+total_acth_clip_over_dapi,ME,Mann-Whitney U,Water,Allulose,2,3.0,0.1386406338132186,-1.0,acquisition,True,1.0
+total_acth_clip_over_dapi,ME,Mann-Whitney U,Sucrose,Allulose,3,3.0,0.07652250047505922,-1.0,acquisition,False,1.0
+total_acth_clip_over_dapi,ARC,Kruskal-Wallis,ALL,,8,,0.8948393168143702,,acquisition,,1.0
+total_acth_clip_over_dapi,ARC,ANOVA,ALL,,8,,0.8172940607576622,,acquisition,,1.0
+total_acth_clip_over_dapi,ARC,Mann-Whitney U,Water,Sucrose,2,3.0,1.0,0.0,acquisition,True,1.0
+total_acth_clip_over_dapi,ARC,Mann-Whitney U,Water,Allulose,2,3.0,0.8,-0.3333333333333333,acquisition,True,1.0
+total_acth_clip_over_dapi,ARC,Mann-Whitney U,Sucrose,Allulose,3,3.0,1.0,-0.1111111111111111,acquisition,False,1.0
+double_over_dapi,ME,Kruskal-Wallis,ALL,,8,,,,acquisition,,
+double_over_dapi,ME,ANOVA,ALL,,8,,,,acquisition,,
+double_over_dapi,ME,Mann-Whitney U,Water,Sucrose,2,3.0,1.0,0.0,acquisition,True,1.0
+double_over_dapi,ME,Mann-Whitney U,Water,Allulose,2,3.0,1.0,0.0,acquisition,True,1.0
+double_over_dapi,ME,Mann-Whitney U,Sucrose,Allulose,3,3.0,1.0,0.0,acquisition,False,1.0
+double_over_dapi,ARC,Kruskal-Wallis,ALL,,8,,0.573753420737432,,acquisition,,1.0
+double_over_dapi,ARC,ANOVA,ALL,,8,,0.6308458144000925,,acquisition,,1.0
+double_over_dapi,ARC,Mann-Whitney U,Water,Sucrose,2,3.0,0.8,0.3333333333333333,acquisition,True,1.0
+double_over_dapi,ARC,Mann-Whitney U,Water,Allulose,2,3.0,1.0,0.0,acquisition,True,1.0
+double_over_dapi,ARC,Mann-Whitney U,Sucrose,Allulose,3,3.0,0.4,-0.5555555555555556,acquisition,False,1.0
+double_per_100k_um2,ME,Kruskal-Wallis,ALL,,8,,,,acquisition,,
+double_per_100k_um2,ME,ANOVA,ALL,,8,,,,acquisition,,
+double_per_100k_um2,ME,Mann-Whitney U,Water,Sucrose,2,3.0,1.0,0.0,acquisition,True,1.0
+double_per_100k_um2,ME,Mann-Whitney U,Water,Allulose,2,3.0,1.0,0.0,acquisition,True,1.0
+double_per_100k_um2,ME,Mann-Whitney U,Sucrose,Allulose,3,3.0,1.0,0.0,acquisition,False,1.0
+double_per_100k_um2,ARC,Kruskal-Wallis,ALL,,8,,0.3888955639892235,,acquisition,,1.0
+double_per_100k_um2,ARC,ANOVA,ALL,,8,,0.487369428652476,,acquisition,,1.0
+double_per_100k_um2,ARC,Mann-Whitney U,Water,Sucrose,2,3.0,0.4,0.6666666666666666,acquisition,True,1.0
+double_per_100k_um2,ARC,Mann-Whitney U,Water,Allulose,2,3.0,0.8,-0.3333333333333333,acquisition,True,1.0
+double_per_100k_um2,ARC,Mann-Whitney U,Sucrose,Allulose,3,3.0,0.4,-0.5555555555555556,acquisition,False,1.0
+n_double,ME,Kruskal-Wallis,ALL,,8,,,,acquisition,,
+n_double,ME,ANOVA,ALL,,8,,,,acquisition,,
+n_double,ME,Mann-Whitney U,Water,Sucrose,2,3.0,1.0,0.0,acquisition,True,1.0
+n_double,ME,Mann-Whitney U,Water,Allulose,2,3.0,1.0,0.0,acquisition,True,1.0
+n_double,ME,Mann-Whitney U,Sucrose,Allulose,3,3.0,1.0,0.0,acquisition,False,1.0
+n_double,ARC,Kruskal-Wallis,ALL,,8,,0.3888955639892235,,acquisition,,1.0
+n_double,ARC,ANOVA,ALL,,8,,0.4686942156697887,,acquisition,,1.0
+n_double,ARC,Mann-Whitney U,Water,Sucrose,2,3.0,0.4,0.6666666666666666,acquisition,True,1.0
+n_double,ARC,Mann-Whitney U,Water,Allulose,2,3.0,0.8,-0.3333333333333333,acquisition,True,1.0
+n_double,ARC,Mann-Whitney U,Sucrose,Allulose,3,3.0,0.4,-0.5555555555555556,acquisition,False,1.0

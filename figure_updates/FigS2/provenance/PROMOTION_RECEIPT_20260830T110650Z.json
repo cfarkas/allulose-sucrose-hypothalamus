@@ -1,0 +1,29 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 37,
+    "replaced": 2
+  },
+  "figure": "FigS2",
+  "files": [
+    {
+      "bytes": 5965,
+      "promoted": "FigS2/provenance/Figure_S2_single_bottle_female_manifest.json",
+      "sha256": "5d6fde194a4ee528064165d51871c0f85ef4773e390ae089b80d65a3faa7178b",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/FigS2/figure/provenance/Figure_S2_single_bottle_female_manifest.json"
+    },
+    {
+      "bytes": 2220,
+      "promoted": "FigS2/source_data/Figure_S2_single_bottle_female_sources.csv",
+      "sha256": "4d8b66c43d5d635d0af896f586f5c1eb5e2b0aa617cdadb33b700ab08b37bc60",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/FigS2/figure/source_data/Figure_S2_single_bottle_female_sources.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S2_single_bottle_female",
+  "master_name_promoted": "Figure_S2_single_bottle_female",
+  "promoted_utc": "2026-08-30T11:06:50+00:00",
+  "replacement_policy": "validated_canonical_current_no_in_tree_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_full_rebuild_0MH8jcVG/FigS2/figure",
+  "superseded_copied_to": null
+}

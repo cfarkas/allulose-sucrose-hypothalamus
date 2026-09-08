@@ -10,6 +10,7 @@ Figure 1 is an exploratory January-cohort analysis. It does not reproduce the le
 - August add-on: E13/E14, dated August 18, 21, and 24, 2025. It contains 6 consumption-table rows, all Bottle_Weight, and 18 mouse-weight rows. It contains zero measured Bottle_Volume rows and is not pooled with January.
 - The raw consumption CSV contains 0 measured zero values. The apparent August zero-volume/intake values in the legacy combined output were join/fill artifacts: absent Bottle_Volume was converted to zero. This pipeline never imputes absent bottle volume.
 - E9 is retained: 3 primary rows for one mouse, with genotype explicitly represented as Unknown. The consumption file separately labels its volume record NPY, so the cross-file genotype conflict is preserved rather than guessed away.
+- Author clarification (8 September 2026): FR5-4 was transferred from allulose cage E2 to water-control cage E10 for dehydration on 17 January, after the day-6 measurement. Both cage records identify the same animal. The primary window retains its pre-transfer allulose observations; later observations are flagged as post-transfer. E10/FR6-2, originally labelled Control, is reconciled to Water. The original CSV and source labels are retained.
 - Cages containing multiple mouse-level treatment labels are flagged in cage_design_and_size_qc.csv. For the body-weight endpoint, only valid rows matching the cage bottle treatment enter the cage-balanced primary summary.
 - There are 8 nonpositive/missing weight rows. They are flagged as invalid and never interpreted as 0-g mice. None is needed to complete the January Day 1/3/6 primary series.
 
@@ -24,10 +25,10 @@ Figure 1 is an exploratory January-cohort analysis. It does not reproduce the le
 
 ## Body weight (panels C-D)
 
-- Panel C displays 23 mice descriptively, uniquely keyed by E|AnimalID. Thick summaries are cage-balanced means, not mouse-level inferential estimates.
+- Panel C displays 24 mice descriptively, keyed by their primary-window cage and AnimalID, with a separate reconciled identity linking the transferred animal. Thick summaries are cage-balanced means, not mouse-level inferential estimates.
 - Day-6 inference first averages mouse percent changes within each cage, then compares Water 3, Sucrose 5, and Allulose 4 cages.
-- Ordinary one-way ANOVA omnibus p=0.119031; exact cage-label sensitivity p=0.0743867. Three pairwise exact tests use Holm correction. No HC3 mouse-level model is used.
-- Descriptive mouse counts are Water 4, Sucrose 9, Allulose 10. They do not replace cage N for inference.
+- Ordinary one-way ANOVA omnibus p=0.117931; exact cage-label sensitivity p=0.0741703. Three pairwise exact tests use Holm correction. No HC3 mouse-level model is used.
+- Descriptive mouse counts are Water 5, Sucrose 9, Allulose 10. They do not replace cage N for inference.
 
 ## Design limitations and interpretation
 

@@ -63,12 +63,38 @@ Acceptance checks completed on 2026-08-23
 - Raw source/destination SHA-256 values match and inodes are distinct: PASS.
 - No symlinks: PASS.
 
-Authoritative graphic hashes
-----------------------------
+Current graphic hashes — 8 September 2026
+-----------------------------------------
 Combined PDF:
-  96a22118214642f1b9779e76592a326fcdae0c966d337eaa2ff7a56fe5a6506a
+  06ff14fd5b4f73ba6df15161071debdddbc1a57575b8b11559e5ccf38a2e295d
 Combined PNG:
-  b90958f3103ea314b71618b4df7d640438695c09e9e745d00427127d871c4d76
+  4f382e286730e3b786990b55d99e7ad8a5c9cf9b44fa891037e84dbc273509c5
 
 All panel hashes are recorded in
 provenance/Figure_1_behavior_experiment_1_manifest.json.
+
+Author reconciliation and sample-size reconstruction — 8 September 2026
+---------------------------------------------------------------------
+FR5-4 moved from E2 Allulose to E10 Water for dehydration immediately after
+the day-6 measurement. Its earlier measurements retain their original group.
+E10/FR6-2, originally labelled Control, is included as Water. The current
+weight summary contains 24 mice (Water/Sucrose/Allulose 5/9/10) in 12 cages
+(3/5/4). Original source labels and invalid zero entries remain available.
+
+03_estimate_sample_size_monte_carlo.py reconstructs planning scenarios from
+the day-6 cage endpoints. It uses 500,000 simulations per candidate size,
+three balanced groups, alpha 0.05 and target power 0.80. Group-specific
+variances with Welch ANOVA give minima of 5 cages/group for volume removed
+and 14 for cage-mean weight change. Common-variance ordinary ANOVA gives
+4 and 9, respectively. These pilot-based assumptions do not establish
+achieved power of completed cohorts or neuronal/glial endpoints.
+
+Run from Paper/:
+  python Fig1/03_estimate_sample_size_monte_carlo.py --replicates 500000
+
+The portable source tables are in source_data/sample_size_pilot/. Outputs
+are in analyses/Fig1/results/sample_size_monte_carlo_20260908/. The dated
+reconstruction is distinguished from the historical planning simulation.
+The verified 500,000-replicate output tables are copied into
+source_data/sample_size_monte_carlo/; their execution settings and input/script
+hashes are in provenance/SAMPLE_SIZE_MONTE_CARLO_RECEIPT.json.

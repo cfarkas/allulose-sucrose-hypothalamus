@@ -9,8 +9,8 @@ A,Allulose,1.0,4,0.0,0.0,0.0,pointwise percentile cluster bootstrap of whole cag
 A,Allulose,3.0,4,30.0,13.75,45.0,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20271014
 A,Allulose,6.0,4,38.75,32.5,45.0,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20271014
 C,Water,1.0,3,0.0,0.0,0.0,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280814
-C,Water,3.0,3,-0.3089102400388149,-2.356109054190506,2.093554340715822,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280814
-C,Water,6.0,3,-0.949907176863365,-2.524402558061259,1.086055041584903,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280814
+C,Water,3.0,3,-0.24637889241989377,-2.356109054190506,2.281148383572585,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280814
+C,Water,6.0,3,-0.6094104333439604,-2.524402558061259,2.1075452721431174,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280814
 C,Sucrose,1.0,5,0.0,0.0,0.0,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280914
 C,Sucrose,3.0,5,0.9257408618785721,-0.49614315591521463,2.3005848145267738,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280914
 C,Sucrose,6.0,5,0.5178329459407226,-1.7047944535989383,2.854661269033547,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20280914

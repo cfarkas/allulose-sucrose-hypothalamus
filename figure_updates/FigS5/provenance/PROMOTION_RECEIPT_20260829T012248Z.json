@@ -1,0 +1,208 @@
+{
+  "counts": {
+    "added": 1,
+    "already_identical": 32,
+    "replaced": 31
+  },
+  "figure": "FigS4",
+  "files": [
+    {
+      "bytes": 22952773,
+      "promoted": "FigS4/Figure_S4.pdf",
+      "sha256": "b0d720007f4621a8b252f8de75fda71d57a857c37769db77a26982570c6c7fe5",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/Figure_S4.pdf"
+    },
+    {
+      "bytes": 26996178,
+      "promoted": "FigS4/Figure_S4.png",
+      "sha256": "cf2296fca3e00d4724b38cbb29650ed031e48f352adf1df7b0cc9105c75e7f89",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/Figure_S4.png"
+    },
+    {
+      "bytes": 2641,
+      "promoted": "FigS4/legends/Figure_S4_LEGEND.txt",
+      "sha256": "0a6ae9d92b82111a2fc72e4cd23306877e01b28eb3c75192eade655a9e17e6f7",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/legends/Figure_S4_LEGEND.txt"
+    },
+    {
+      "bytes": 3085,
+      "promoted": "FigS4/legends/Figure_S4_LEGEND_spanish.txt",
+      "sha256": "b7367fbfdc0cab70e40be146605de26972544a9a86deb37d9ddcb419939aa8c7",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/legends/Figure_S4_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 5585583,
+      "promoted": "FigS4/panels/Figure_S4_panel_A.pdf",
+      "sha256": "c7e9ff300bdb98f9c7d052e8f2edb01028da9d3ffcee6116b73572d5a4975243",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_A.pdf"
+    },
+    {
+      "bytes": 5586368,
+      "promoted": "FigS4/panels/Figure_S4_panel_A_spanish.pdf",
+      "sha256": "4718ad152b890b3c5a8232f32b8d363a1a029fcef77f6e7f449c686a5365d03d",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 7434725,
+      "promoted": "FigS4/panels/Figure_S4_panel_B.pdf",
+      "sha256": "4cca9729d3b13866f0a8c4b63bbc4822980f52532f0cebf74c0c104373220ffd",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_B.pdf"
+    },
+    {
+      "bytes": 7435166,
+      "promoted": "FigS4/panels/Figure_S4_panel_B_spanish.pdf",
+      "sha256": "6401b92776f3a74d3c306ff8b22e75bb10dd00951ebe63c00bc308faeeb53d23",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 5513882,
+      "promoted": "FigS4/panels/Figure_S4_panel_C.pdf",
+      "sha256": "7f1b50de2540c3df4815567893bdd9e9f5313be6b42f71a902339e37b40ae568",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_C.pdf"
+    },
+    {
+      "bytes": 5514669,
+      "promoted": "FigS4/panels/Figure_S4_panel_C_spanish.pdf",
+      "sha256": "fd2667917f7abf8faebdb69fbdb5df70de545a0d02c05fd435c5835ee27297fb",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 372915,
+      "promoted": "FigS4/panels/Figure_S4_panel_D.pdf",
+      "sha256": "358c35b435069a071c76ae30c6b25cf8c4a1b8183edbfa69ad6eaf4837ead233",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_D.pdf"
+    },
+    {
+      "bytes": 372774,
+      "promoted": "FigS4/panels/Figure_S4_panel_D_spanish.pdf",
+      "sha256": "33c2095e314bc0c9561c1f21701ec37e374a811acf06e3b03a7472c352644cc1",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 9265390,
+      "promoted": "FigS4/panels/Figure_S4_panel_E.pdf",
+      "sha256": "a12479f82b3554ed412e6ce9635964dfc8db23c20ee36930d4f851e490e713c7",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_E.pdf"
+    },
+    {
+      "bytes": 9265247,
+      "promoted": "FigS4/panels/Figure_S4_panel_E_spanish.pdf",
+      "sha256": "0a72746e0a2379e74e6fb24c40a964501166940386d7af9a864a6311af09c6ab",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_E_spanish.pdf"
+    },
+    {
+      "bytes": 7765145,
+      "promoted": "FigS4/panels/Figure_S4_panel_F.pdf",
+      "sha256": "79a77b165058d4f3dd4a261d03847b74e09ecc96a9b1e2f8f4820cbb4f30120f",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_F.pdf"
+    },
+    {
+      "bytes": 7766078,
+      "promoted": "FigS4/panels/Figure_S4_panel_F_spanish.pdf",
+      "sha256": "446ab561d0222e20abf883ba0a1258049cc6c75f063a307c70cf71e99aca7529",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_F_spanish.pdf"
+    },
+    {
+      "bytes": 33873,
+      "promoted": "FigS4/panels/Figure_S4_panel_G.pdf",
+      "sha256": "2039fcdcc7d2705f9a08112527c761d87c80d6a02844f1f27937cadc3d5158b5",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_G.pdf"
+    },
+    {
+      "bytes": 34665,
+      "promoted": "FigS4/panels/Figure_S4_panel_G_spanish.pdf",
+      "sha256": "1375c835302a1b3822fbe0aee20617d3fe61489fe8b3b2cdd690a8603d2768af",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_G_spanish.pdf"
+    },
+    {
+      "bytes": 30455,
+      "promoted": "FigS4/panels/Figure_S4_panel_H.pdf",
+      "sha256": "e522c633d6e80114518679c75e2aeb4fd002bdb2f30fa4b22bfc900b275fb40e",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_H.pdf"
+    },
+    {
+      "bytes": 31469,
+      "promoted": "FigS4/panels/Figure_S4_panel_H_spanish.pdf",
+      "sha256": "9b3c03472beb5809dfacf286968bea91b25e07763983e715365d8e5541c39ae8",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_H_spanish.pdf"
+    },
+    {
+      "bytes": 403040,
+      "promoted": "FigS4/panels/Figure_S4_panel_I.pdf",
+      "sha256": "08274e3602c74078ad166376c946e13862803a6b4506c889db81ea320e1153b3",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_I.pdf"
+    },
+    {
+      "bytes": 1570168,
+      "promoted": "FigS4/panels/Figure_S4_panel_I.png",
+      "sha256": "3e2777aab4413cacc52da637f3ee1984f1c19a1cc3958443667332e725f3cf4b",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_I.png"
+    },
+    {
+      "bytes": 403806,
+      "promoted": "FigS4/panels/Figure_S4_panel_I_spanish.pdf",
+      "sha256": "f084e302a09bad836c5445669ed7ce12e3732d90218b3593de58508746ec0f01",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_I_spanish.pdf"
+    },
+    {
+      "bytes": 1594893,
+      "promoted": "FigS4/panels/Figure_S4_panel_I_spanish.png",
+      "sha256": "ae390ecf0a028e983a13331bac197c876360c06124e126538bfea421238ead0d",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_I_spanish.png"
+    },
+    {
+      "bytes": 332681,
+      "promoted": "FigS4/panels/Figure_S4_panel_J.pdf",
+      "sha256": "c1e6bf61910bed964ff8d1efc429a5dcda02c39fa4d381c9f550278804be3e6d",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_J.pdf"
+    },
+    {
+      "bytes": 1316909,
+      "promoted": "FigS4/panels/Figure_S4_panel_J.png",
+      "sha256": "fd18ff102d915f4f2d8f182853ed25876636fbeeb73eeec1e3f714ed48287038",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_J.png"
+    },
+    {
+      "bytes": 332935,
+      "promoted": "FigS4/panels/Figure_S4_panel_J_spanish.pdf",
+      "sha256": "4a280a1e3bd3cbe4f9c746ac65dd95b2d3f3036ac825585cd15b6c61bd05d06d",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_J_spanish.pdf"
+    },
+    {
+      "bytes": 1332646,
+      "promoted": "FigS4/panels/Figure_S4_panel_J_spanish.png",
+      "sha256": "f29b91a6072adab9af4fe7d81f0fe7026e524e5fe68d1d66bb2bf350f01c666c",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/panels/Figure_S4_panel_J_spanish.png"
+    },
+    {
+      "bytes": 24105,
+      "promoted": "FigS4/provenance/BUILD_RECEIPT.json",
+      "sha256": "b73bc25371e9cec1f9b8817f54d4a3c098b5990c87fd833aec3855fbad306d16",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/provenance/BUILD_RECEIPT.json"
+    },
+    {
+      "bytes": 1732,
+      "promoted": "FigS4/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json",
+      "sha256": "4cbd6aac1d3d0059109f929a2f67a1e5c45f3cdc394269d0236e2a466f32dc07",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/provenance/SPATIAL_BOUNDARY_SEMANTICS_CORRECTION.json"
+    },
+    {
+      "bytes": 8705,
+      "promoted": "FigS4/provenance/output_manifest.csv",
+      "sha256": "8804b8efb0ba077b38d9d9b668ce4559fed49fc9f5d63c478d8f1915ecaebae2",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/provenance/output_manifest.csv"
+    },
+    {
+      "bytes": 139887,
+      "promoted": "FigS4/source_data/spatial_ventricle_contour_source.csv",
+      "sha256": "600d294b26f93a2608c3ac69e497767a4bd7fc4b6864794587336f7c68442375",
+      "source": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1/source_data/spatial_ventricle_contour_source.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S4",
+  "master_name_promoted": "Figure_S4",
+  "promoted_utc": "2026-08-29T01:22:49+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/figs4_ventricle_overlay_candidate_20260828_v1",
+  "superseded_copied_to": "FigS4/legacy/superseded_promotion_20260829T012248Z"
+}

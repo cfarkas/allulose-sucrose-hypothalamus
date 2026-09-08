@@ -110,6 +110,9 @@ C,mouse_trajectory_descriptive,mouse_descriptive_only,E10|FR1-1,E10,E10|FR1-1,Wa
 C,mouse_trajectory_descriptive,mouse_descriptive_only,E10|FR7-2,E10,E10|FR7-2,Water,Female,Mixed,1,body_weight_change_pct,0.0
 C,mouse_trajectory_descriptive,mouse_descriptive_only,E10|FR7-2,E10,E10|FR7-2,Water,Female,Mixed,3,body_weight_change_pct,-0.3352490421455952
 C,mouse_trajectory_descriptive,mouse_descriptive_only,E10|FR7-2,E10,E10|FR7-2,Water,Female,Mixed,6,body_weight_change_pct,-0.6226053639846696
+C,mouse_trajectory_descriptive,mouse_descriptive_only,E10|FR6-2,E10,E10|FR6-2,Water,Female,Mixed,1,body_weight_change_pct,0.0
+C,mouse_trajectory_descriptive,mouse_descriptive_only,E10|FR6-2,E10,E10|FR6-2,Water,Female,Mixed,3,body_weight_change_pct,2.656336469286112
+C,mouse_trajectory_descriptive,mouse_descriptive_only,E10|FR6-2,E10,E10|FR6-2,Water,Female,Mixed,6,body_weight_change_pct,4.150525733259546
 C,mouse_trajectory_descriptive,mouse_descriptive_only,E11|FR3-3,E11,E11|FR3-3,Water,Male,POMC,1,body_weight_change_pct,0.0
 C,mouse_trajectory_descriptive,mouse_descriptive_only,E11|FR3-3,E11,E11|FR3-3,Water,Male,POMC,3,body_weight_change_pct,-2.356109054190506
 C,mouse_trajectory_descriptive,mouse_descriptive_only,E11|FR3-3,E11,E11|FR3-3,Water,Male,POMC,6,body_weight_change_pct,-2.524402558061259
@@ -120,8 +123,8 @@ C,cage_day_trajectory,cage,E1,E1,,Sucrose,,,1,body_weight_change_pct,0.0
 C,cage_day_trajectory,cage,E1,E1,,Sucrose,,,3,body_weight_change_pct,3.2316071205797785
 C,cage_day_trajectory,cage,E1,E1,,Sucrose,,,6,body_weight_change_pct,4.453104889435195
 C,cage_day_trajectory,cage,E10,E10,,Water,,,1,body_weight_change_pct,0.0
-C,cage_day_trajectory,cage,E10,E10,,Water,,,3,body_weight_change_pct,2.093554340715822
-C,cage_day_trajectory,cage,E10,E10,,Water,,,6,body_weight_change_pct,1.086055041584903
+C,cage_day_trajectory,cage,E10,E10,,Water,,,3,body_weight_change_pct,2.281148383572585
+C,cage_day_trajectory,cage,E10,E10,,Water,,,6,body_weight_change_pct,2.1075452721431174
 C,cage_day_trajectory,cage,E11,E11,,Water,,,1,body_weight_change_pct,0.0
 C,cage_day_trajectory,cage,E11,E11,,Water,,,3,body_weight_change_pct,-2.356109054190506
 C,cage_day_trajectory,cage,E11,E11,,Water,,,6,body_weight_change_pct,-2.524402558061259
@@ -161,6 +164,6 @@ D,cage_endpoint,cage,E6,E6,,Allulose,,,6,cage_mean_body_weight_change_pct,-20.84
 D,cage_endpoint,cage,E7,E7,,Sucrose,,,6,cage_mean_body_weight_change_pct,1.893999516924874
 D,cage_endpoint,cage,E8,E8,,Allulose,,,6,cage_mean_body_weight_change_pct,0.4040901026635097
 D,cage_endpoint,cage,E9,E9,,Sucrose,,,6,cage_mean_body_weight_change_pct,-0.9800078400627203
-D,cage_endpoint,cage,E10,E10,,Water,,,6,cage_mean_body_weight_change_pct,1.0860550415849028
+D,cage_endpoint,cage,E10,E10,,Water,,,6,cage_mean_body_weight_change_pct,2.1075452721431174
 D,cage_endpoint,cage,E11,E11,,Water,,,6,cage_mean_body_weight_change_pct,-2.524402558061259
 D,cage_endpoint,cage,E12,E12,,Water,,,6,cage_mean_body_weight_change_pct,-1.4113740141137396

@@ -1,0 +1,298 @@
+{
+  "schema": "figure3_complete_three_conditions_v1",
+  "reviewer": "CarlosFarkas",
+  "sucrose_hil_receipt": "Fig3/hil_review/sucrose_ventricle_20260908_v1/sucrose_ventricle_receipt.json",
+  "sucrose_hil_sha256": "41dcc079f94a8e3022415d4f3c4441707b46a72ab5aeb1be433248563be13578",
+  "native_sucrose_counts": {
+    "dapi_nuclei": 3241,
+    "accepted_cfos_roi_mappings": 81,
+    "duplicate_cfos_roi_mappings": 0,
+    "cfos_positive_nuclei": 81,
+    "npy_positive_nuclei": 302,
+    "dual_positive_nuclei": 19
+  },
+  "panel_map": {
+    "A": "microscopy: water/sucrose/allulose",
+    "B": "water nuclear assignments",
+    "C": "sucrose nuclear assignments",
+    "D": "allulose nuclear assignments",
+    "E": "whole-field c-FOS/DAPI",
+    "F": "c-FOS-positive/NPY-positive",
+    "G": "c-FOS/DAPI spatial profile",
+    "H": "double-positive/DAPI spatial profile"
+  },
+  "publication_language": "en",
+  "bilingual_outputs": "individual panels and legends only",
+  "sucrose_cartoon_receipt": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/receipt.json",
+  "sucrose_cartoon_sha256": "dd5446b0877d6b9412d98c3263e3066c3657c23f48392ee59a774410a416c196",
+  "analysis_changed": false,
+  "source_data_sha256_unchanged": {
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14",
+    "Fig3/source_data/Figure_3_cFos_NPY_animal_plot_values.csv": "dac9080bc28a37e30bbf07227812e29a9aaec181bbff8b0587c16b9eda17ef3c",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_permanova.csv": "b2bb09b19dfd3644ccf75cd1278a566ccbc57fd3aadf155b18fa96ba967f3fb7",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_segmentation_model_setting_audit.csv": "e49342ceb5cff1376ed02bf7dadc097f45d0dfe7e2a6174d08426723d49ba6fa",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion_permutation_receipts.csv": "1ea9a3a323ff71abd903ebf22f454603d432a739b0b0882859e0240d2161f2c5",
+    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv": "1c0fd6f194fee2693c1a44c38516e08cf4e33aa0d7e556d1326d5885bcd7b5f9",
+    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv": "167baf1e00ce83fd34995cdf90fb1274c7a621cf7460c4251003fa43c1995970",
+    "Fig3/source_data/Figure_3_cFos_NPY_anova_mwu_statistics_used.csv": "0e917dcec1893868d3d30127bf389553dea1bf35ec0a9ad9fef32e7931131461",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_permutation_receipts.csv": "7ad596c0f7966803ada70ba00f013638c1b81c2de5aa7145c746c10e45dbec12",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_animal_counts.csv": "0a5eaccd70d203472fa1dbbfa4ded30262b8b096bbdd6c48a3c4a8ba4577c842",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_animal_radial_occurrence_features.csv": "57b22913a18448eebf5fdecbf3199d255b889de0969be8b2fa0fe41031b174ab"
+  },
+  "figures": [
+    {
+      "language": "en",
+      "panels": [
+        {
+          "panel": "A",
+          "source": "analyses/Fig3/results/final_run/panels/Figure3_Panel_A_raw_microscopy.pdf",
+          "sha256": "91e15f2ff5b73ecafdfe4ac6f338a1d232cc21f4a5b2e814cf7dfa3d73cb1730",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "B",
+          "source": "analyses/Fig3/results/final_run/panels/Figure3_Panel_B_Water_marker_positive_nuclei.pdf",
+          "sha256": "ca6891236ec4bd863447db404f4a0bd11a32a10bbccba363a7bee38aecabe82a",
+          "removed_previous_letter": [
+            "B"
+          ]
+        },
+        {
+          "panel": "C",
+          "source": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/Sucrose_NPY_cartoon_en.pdf",
+          "sha256": "681faaab2282bfd99307ea89770be349b909acc527a3ef5876d19f7e88967c11",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "D",
+          "source": "analyses/Fig3/results/final_run/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.pdf",
+          "sha256": "485d342725eec029ffe4f0b9b09d41e527da916aed2e2e89f349d734e8d2b5bc",
+          "removed_previous_letter": [
+            "C"
+          ]
+        },
+        {
+          "panel": "E",
+          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_D.pdf",
+          "sha256": "6a385bb7517cc0704cc1b3cf7400e1736e37073ca682f2d5a8ea62f2748484a1",
+          "removed_previous_letter": [
+            "D"
+          ]
+        },
+        {
+          "panel": "F",
+          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_E.pdf",
+          "sha256": "a9b5e6b46fb183659bc714e8be814600b9b39e3093307fa4edafe857ee2803a6",
+          "removed_previous_letter": [
+            "E"
+          ]
+        },
+        {
+          "panel": "G",
+          "source": "analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_occurrence.pdf",
+          "sha256": "30d25f7b5d37a73c45850185a720c3b254de9eaf5a37eaadc688837cdd911811",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "H",
+          "source": "analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+          "sha256": "c54840dc3f32b772c57650ba54b89ed7a2511c9e5d1bfcd863140b51ee2ad7eb",
+          "removed_previous_letter": []
+        }
+      ],
+      "panel_boxes_pt": {
+        "A": [
+          18.0,
+          43.0,
+          1134.0,
+          488.6981060975227
+        ],
+        "B": [
+          18.0,
+          533.6981060975227,
+          376.6666666666667,
+          656.6282193918302
+        ],
+        "C": [
+          396.6666666666667,
+          533.6981060975227,
+          755.3333333333334,
+          656.6282193918302
+        ],
+        "D": [
+          775.3333333333334,
+          533.6981060975227,
+          1134.0,
+          656.6282193918302
+        ],
+        "E": [
+          241.2,
+          701.6282193918303,
+          566.0,
+          965.650504577159
+        ],
+        "F": [
+          586.0,
+          701.6282193918303,
+          910.8,
+          965.7269158687143
+        ],
+        "G": [
+          18.0,
+          1010.7269158687143,
+          566.0,
+          1277.8769222199205
+        ],
+        "H": [
+          586.0,
+          1010.7269158687143,
+          1134.0,
+          1277.8769222199205
+        ]
+      },
+      "size_pt": [
+        1152,
+        1295.876953125
+      ],
+      "dpi": 600,
+      "panel_sequence": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "pdf": "Fig3/Figure_3_cFos_NPY.pdf",
+      "sha256": "10844ca2a9416ce7541a96a0129e0df4e6b2d6385093752f70ed445090a8b0e1"
+    },
+    {
+      "language": "es",
+      "panels": [
+        {
+          "panel": "A",
+          "source": "analyses/Fig3/results/spanish_analysis_work/panels/Figure3_Panel_A_raw_microscopy.pdf",
+          "sha256": "3deb19553bf6cc9a320ee173098b4b26f98aedb19185ccfd16ce74cdf5160046",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "B",
+          "source": "analyses/Fig3/results/spanish_analysis_work/panels/Figure3_Panel_B_Water_marker_positive_nuclei.pdf",
+          "sha256": "9d1a091601968c96f86e77f735a91d83bb7a0f0554d83288e6d2596d13ebe7c4",
+          "removed_previous_letter": [
+            "B"
+          ]
+        },
+        {
+          "panel": "C",
+          "source": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/Sucrose_NPY_cartoon_es.pdf",
+          "sha256": "e00171566c77937dca717c52e836f948887b429594174e88fa8ae9886083fcc4",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "D",
+          "source": "analyses/Fig3/results/spanish_analysis_work/panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.pdf",
+          "sha256": "08a5bffaa6584f9bce94f89c1394314547f46d1843e608624566c8dbc9c9028a",
+          "removed_previous_letter": [
+            "C"
+          ]
+        },
+        {
+          "panel": "E",
+          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_D_spanish.pdf",
+          "sha256": "cc7fd3c5912227000e1261314c310e2c271fba57b97556815d3bfef3381fa5bd",
+          "removed_previous_letter": [
+            "D"
+          ]
+        },
+        {
+          "panel": "F",
+          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_E_spanish.pdf",
+          "sha256": "89da2ec6c6fd973df51c884b532748fc30e26b6317cf9580f2c75d078d8f6f9b",
+          "removed_previous_letter": [
+            "E"
+          ]
+        },
+        {
+          "panel": "G",
+          "source": "analyses/Fig3/results/spatial_spanish/Figure3_Spatial_cFOS_occurrence.pdf",
+          "sha256": "a8a5fc0ba25b8d92c25d23d131c1f05de714eea8ac57743a838b48759c0975ed",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "H",
+          "source": "analyses/Fig3/results/spatial_spanish/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+          "sha256": "6b40ea4c29a3d143d14d8371ef3e101ca781ed96dbe3ba3a316c7b4b2617fe72",
+          "removed_previous_letter": []
+        }
+      ],
+      "panel_boxes_pt": {
+        "A": [
+          18.0,
+          43.0,
+          1134.0,
+          488.6981060975227
+        ],
+        "B": [
+          18.0,
+          533.6981060975227,
+          376.6666666666667,
+          656.6282193918302
+        ],
+        "C": [
+          396.6666666666667,
+          533.6981060975227,
+          755.3333333333334,
+          656.6282193918302
+        ],
+        "D": [
+          775.3333333333334,
+          533.6981060975227,
+          1134.0,
+          656.6282193918302
+        ],
+        "E": [
+          241.2,
+          701.6282193918303,
+          566.0,
+          965.650504577159
+        ],
+        "F": [
+          586.0,
+          701.6282193918303,
+          910.8,
+          965.7269158687143
+        ],
+        "G": [
+          18.0,
+          1010.7269158687143,
+          566.0,
+          1277.8769222199205
+        ],
+        "H": [
+          586.0,
+          1010.7269158687143,
+          1134.0,
+          1277.8769222199205
+        ]
+      },
+      "size_pt": [
+        1152,
+        1295.876953125
+      ],
+      "dpi": 600,
+      "panel_sequence": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ]
+    }
+  ]
+}

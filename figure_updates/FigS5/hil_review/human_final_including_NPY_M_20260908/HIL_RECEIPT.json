@@ -1,0 +1,45 @@
+{
+  "accepted_pairs": 9,
+  "analysis_script": "FigS5/02a_july_cfos_acth_clip_human_in_loop_s5.py",
+  "analysis_script_sha256": "9fb560dcc425d9593061f9052633bd9d0013554fb6046e03e46464850b44752b",
+  "anatomy_channels_used": [
+    "DAPI"
+  ],
+  "created_at_utc": "2026-09-08",
+  "displayed_noninferential_regions": [
+    "VMN"
+  ],
+  "excluded_pairs": 0,
+  "figure": "S5",
+  "first_saved_at_utc": "2026-08-28T13:12:21.677103+00:00",
+  "inferential_regions": [
+    "ARC",
+    "ME"
+  ],
+  "last_saved_at_utc": "2026-09-08T16:09:46.513868+00:00",
+  "manifest_path": "FigS5/hil_review/human_final_including_NPY_M_20260908/HIL_MANIFEST.csv",
+  "manifest_sha256": "c8f7c3c36dbc897296bfae70fe4f486386c0131f9bf4738e4087b8a8e2bf745a",
+  "pending_pairs": 0,
+  "raw_cellpose_masks_modified": false,
+  "raw_images_modified": false,
+  "region_codes": {
+    "ARC": 1,
+    "ME": 2,
+    "VMN": 3,
+    "outside": 0
+  },
+  "reviewer_identity_collected": false,
+  "reviewer_identity_note": "The Figure 5 v2.1.0 local HIL did not request a reviewer-name field; no identity is inferred.",
+  "schema": "figs5_human_hil_receipt_v2",
+  "status": "human_accepted",
+  "inherited_review": {
+    "receipt": "FigS5/hil_review/human_final_20260828_v1/HIL_RECEIPT.json",
+    "sha256": "ab71d8b447fcf3585e702d737b3975aadfda449be87e3ae9ee5d7b09d0a8a51d",
+    "unchanged_pairs": 8
+  },
+  "new_review": {
+    "acquisition": "2026-07-10_NPY-M_Water",
+    "completion_confirmed_by_user": true,
+    "date": "2026-09-08"
+  }
+}

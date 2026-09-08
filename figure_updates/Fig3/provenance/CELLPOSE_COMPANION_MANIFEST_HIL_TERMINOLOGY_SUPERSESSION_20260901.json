@@ -1,0 +1,33 @@
+{
+  "schema": "fig3_cellpose_companion_manifest_hil_terminology_supersession_v1",
+  "created_utc": "2026-09-01T04:12:08Z",
+  "status": "PASS_ADDITIVE_SUPERSESSION",
+  "reason": "Replace potentially misleading Human-accepted wording with HIL-accepted in three descriptive note fields; HIL means human in the loop and does not imply human tissue.",
+  "manifest": {
+    "path": "Fig3/raw_data/CELLPOSE_COMPANION_MANIFEST.csv",
+    "pre_sha256": "d74db4a9709f179dc1a79337bfc23ec553d3a66a3f44062f1a0b82fd5d70897a",
+    "post_sha256": "cee14c12e7b732bef9883aa3f33fb8c030cc7d6b3a07135b7ea96c93da4fce85",
+    "data_rows": 49,
+    "descriptive_note_rows_changed": 3,
+    "non_note_fields_changed": false
+  },
+  "terminology": {
+    "before": "Human-accepted",
+    "after": "HIL-accepted",
+    "meaning": "accepted through a human-in-the-loop review workflow"
+  },
+  "scientific_data_changed": false,
+  "microscopy_or_mask_payloads_changed": false,
+  "paths_identifiers_statuses_and_hash_bindings_changed": false,
+  "historical_receipts_edited": false,
+  "historical_receipts_retained": [
+    {
+      "path": "Fig3/provenance/final_human_accepted_20260823/DOCUMENTATION_SUPERSESSION_20260823.json",
+      "sha256": "38821d9b113229e7bc136338f297c671b0618e22c65ea7c7babce8451e8ae2f9"
+    },
+    {
+      "path": "Fig3/provenance/final_human_accepted_20260823/WATER3_RAW_DATA_RESTORATION_20260823.json",
+      "sha256": "d6d5a487bc12dbffee16d0e0034cad863a05a1c7efc2e53ad43fc5952add8c83"
+    }
+  ]
+}

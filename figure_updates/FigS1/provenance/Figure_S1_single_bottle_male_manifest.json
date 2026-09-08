@@ -1,0 +1,110 @@
+{
+  "analysis_directory": "/media/server/STORAGE/Apotome/Paper/analyses/FigS1/results",
+  "analysis_status": "exploratory_low_resolution",
+  "cage_counts": {
+    "Allulose": 2,
+    "Sucrose": 3,
+    "Water": 2
+  },
+  "dpi": 600,
+  "experimental_unit": "cage",
+  "figure": "Figure_S1_single_bottle_male",
+  "figure_orientation": "portrait; two rows by two macro columns",
+  "figure_size_inches": [
+    10.8,
+    10.2
+  ],
+  "formats": [
+    "pdf",
+    "png"
+  ],
+  "graphics": [
+    "Figure_S1_single_bottle_male.pdf",
+    "Figure_S1_single_bottle_male.png",
+    "panels/Figure_S1_single_bottle_male_Panel_A.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_A.png",
+    "panels/Figure_S1_single_bottle_male_Panel_B.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_B.png",
+    "panels/Figure_S1_single_bottle_male_Panel_C.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_C.png",
+    "panels/Figure_S1_single_bottle_male_Panel_D.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_D.png",
+    "panels/Figure_S1_single_bottle_male_Panel_A_spanish.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_A_spanish.png",
+    "panels/Figure_S1_single_bottle_male_Panel_B_spanish.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_B_spanish.png",
+    "panels/Figure_S1_single_bottle_male_Panel_C_spanish.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_C_spanish.png",
+    "panels/Figure_S1_single_bottle_male_Panel_D_spanish.pdf",
+    "panels/Figure_S1_single_bottle_male_Panel_D_spanish.png"
+  ],
+  "graphics_sha256": {
+    "Figure_S1_single_bottle_male.pdf": "7b4a676a2aea812e4633b236107b0f44a401858279cb862409483d871e0025f8",
+    "Figure_S1_single_bottle_male.png": "83d1c4442cdc8d0ac34f63f2e6b8cb776cbcee87d198e0a76c70bde47965fa56",
+    "panels/Figure_S1_single_bottle_male_Panel_A.pdf": "04a4cdef528019095bad0d60552fe238909cc5977b2db8e602b7d15da73cb30c",
+    "panels/Figure_S1_single_bottle_male_Panel_A.png": "066832b1550ad988a8e99ab2d8804f577b94a913b1a36d2c76dd027772dcf445",
+    "panels/Figure_S1_single_bottle_male_Panel_A_spanish.pdf": "98f2b18a53f71f8933c21c8115756431880fda1380161f7d728d124051f6d4e1",
+    "panels/Figure_S1_single_bottle_male_Panel_A_spanish.png": "1a537eea9c626821110a06fbe14d3960c5b920e58e26816a218118da6a12de5f",
+    "panels/Figure_S1_single_bottle_male_Panel_B.pdf": "1459fafe8598d178140cb9a8e69a19e2de9330e272786ae7706604ec3d377ee1",
+    "panels/Figure_S1_single_bottle_male_Panel_B.png": "e82aca40183bb510d9be4cd488a5dd253493a32f2ddbbf3e5c1219d40933cf28",
+    "panels/Figure_S1_single_bottle_male_Panel_B_spanish.pdf": "78e553d03e6a67fbadfe37ca114a2f4efe0820895779c2c4a910f77abdc29d8a",
+    "panels/Figure_S1_single_bottle_male_Panel_B_spanish.png": "a48e79a01ad865811c7aff74d1e2a4cea71fd265b9c3d319452bf3dc407025ef",
+    "panels/Figure_S1_single_bottle_male_Panel_C.pdf": "2e8b52e6f9914eb4c528b7e835878e136eb44416732af18f1f8c8462a70462cd",
+    "panels/Figure_S1_single_bottle_male_Panel_C.png": "1d52a2c18c25cb8bdfdf1fc0c55f305e9463a87acc4749597e152c5efe17568a",
+    "panels/Figure_S1_single_bottle_male_Panel_C_spanish.pdf": "69b88f46919a0c36d95b0071f44d759b339eabdb301c00b8823699a999dbdff8",
+    "panels/Figure_S1_single_bottle_male_Panel_C_spanish.png": "3e92b66cf9c22db0da02aa82567ae5aca12057d37ada6720aa313898fd0a04bb",
+    "panels/Figure_S1_single_bottle_male_Panel_D.pdf": "2cbb0612a02534564bbf4dffd28aeee56d88aad8ade2bd6fd724e26935ed845c",
+    "panels/Figure_S1_single_bottle_male_Panel_D.png": "03e872a5b4b36e65edde38e68ba317781c654a9a4e393ce187c5a1d66677f1a4",
+    "panels/Figure_S1_single_bottle_male_Panel_D_spanish.pdf": "45e34dab3da416061dde1f547af5ca63c6f3a26f5c0df886f9252dd097f504ed",
+    "panels/Figure_S1_single_bottle_male_Panel_D_spanish.png": "3694575def054a6d5feb1c3c96b6dd8c9945f53650c3917b213e810ade139c76"
+  },
+  "language_contract": {
+    "combined_figure": "English only",
+    "crop_geometry": "Spanish and English pairs use identical fixed crop boxes",
+    "spanish_translation_receipt": "provenance/Figure_S1_single_bottle_male_spanish_translation_receipt.json",
+    "spanish_translation_receipt_sha256": "5e86909f314616eed5cd5fa4898d00c90e3c45b0f377f70590e5b8ed791edd7c",
+    "standalone_panels": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "output_directory": "/media/server/STORAGE/Apotome/Paper/revision_profesional_20260906/Tesis/audit/new_documents_20260908/behavior_candidate/FigS1",
+  "p_value_annotation_style": {
+    "fontweight": "bold",
+    "layout": "vertical multiline list; text itself is not rotated",
+    "omnibus_font_size_pt": 10.1,
+    "pairwise_font_size_pt": 9.2
+  },
+  "panel_assignment": {
+    "A-D": "Male: consumption trajectory/endpoint; body-weight trajectory/endpoint"
+  },
+  "panel_export_method": "exact crops of live axes in the combined rendered figure",
+  "renderer": "/media/server/STORAGE/Apotome/Paper/scripts/FigS1/02_make_figure_s1_male.py",
+  "renderer_sha256": "98fed49db7a201921b937a0dc6abf8970e1599418082df46953c9c75656ede06",
+  "seed": 20260816,
+  "sex": "Male",
+  "statistics": {
+    "endpoint": "Day 6",
+    "interaction_test": "not performed",
+    "interpretation": "exploratory; exact p values have low resolution",
+    "omnibus": "ordinary equal-variance one-way ANOVA within sex/outcome",
+    "omnibus_sensitivity": "exact exhaustive cage-label allocation of the same F statistic",
+    "pairwise": "exact exhaustive cage-label permutation; Holm within sex/outcome"
+  },
+  "subpanels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "trajectory_confidence_intervals": {
+    "bootstrap_replicates_when_estimable": 20000,
+    "group_limit": "all groups estimable",
+    "level": 0.95,
+    "resampling_unit": "whole cage trajectory",
+    "same_cage_draw_across_days": true,
+    "type": "pointwise descriptive percentile interval",
+    "values_file": "source_data/Figure_S1_single_bottle_male_trajectory_confidence_intervals.csv",
+    "values_sha256": "0b989348121f296b0f3e88fef7a0840850d6b67d936717aa3d7702e4764b762f"
+  }
+}

@@ -1,0 +1,36 @@
+SPANISH MULTIPANEL RETIREMENT RECEIPT — 2026-08-28
+====================================================
+
+Scope
+-----
+Active publication packages Fig1-Fig5 and FigS1-FigS4 were audited. Figure 7
+was excluded and not traversed by the retirement operation.
+
+Result
+------
+No active Spanish multipanel master remains. Figures 1-5 and S1-S3 already had
+English-only active masters. Figure S4 was the only active exception. Its two
+Spanish multipanel masters were moved, not deleted, to:
+
+  FigS4/legacy/retired_spanish_multipanel_masters_20260828/promoted/
+
+Retired promoted hashes
+-----------------------
+  a010c807bfdf78f572b6ef327a1b8a7c77e0100b4eb3cb1dae2ea0e2c4f1ada6  Figure_S4_es.pdf
+  225e280657183b0cc6daebaeb7134c91b748a1407475787713e7816b072c4efe  Figure_S4_es.png
+
+Local S4 candidate Spanish multipanel masters under analyses/FigS4 were also
+moved into:
+
+  analyses/FigS4/legacy/retired_spanish_multipanel_masters_20260828/
+
+Nothing was deleted. Historical receipts were not rewritten; they remain valid
+records of the earlier builds and therefore may mention the retired files.
+
+Spanish retained
+----------------
+All 20 S4 isolated Spanish A-J files remain active under FigS4/panels: ten PNG
+and ten PDF files. Spanish legends remain active. The renderer now fails closed
+if asked to compose a Spanish multipanel master, emits one English master, and
+continues to emit English/Spanish isolated subpanels at 600 dpi. The promotion
+utility now recognizes only the English S4 master variant.

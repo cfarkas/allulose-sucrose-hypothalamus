@@ -1,0 +1,34 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 35,
+    "replaced": 3
+  },
+  "figure": "FigS2",
+  "files": [
+    {
+      "bytes": 5937,
+      "promoted": "FigS2/provenance/Figure_S2_single_bottle_female_manifest.json",
+      "sha256": "8f405e378e9e338664c0f1b0f4c368275cd31b31059398241a1ecaade43ae4be",
+      "source": "/tmp/apotome_rebuild/FigS2/figure/provenance/Figure_S2_single_bottle_female_manifest.json"
+    },
+    {
+      "bytes": 1342,
+      "promoted": "FigS2/provenance/README.txt",
+      "sha256": "bc5ee97fe39bb3420a70bac2be4b35babd58c6df82fa4ec2ae4e165bed308419",
+      "source": "/tmp/apotome_rebuild/FigS2/figure/provenance/README.txt"
+    },
+    {
+      "bytes": 2066,
+      "promoted": "FigS2/source_data/Figure_S2_single_bottle_female_sources.csv",
+      "sha256": "07b4d5f8689e1b4aa8db1947816720a459abb79ecc4869c7c6086cd439a32715",
+      "source": "/tmp/apotome_rebuild/FigS2/figure/source_data/Figure_S2_single_bottle_female_sources.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S2_single_bottle_female",
+  "master_name_promoted": "Figure_S2_single_bottle_female",
+  "promoted_utc": "2026-08-25T16:41:15+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_rebuild/FigS2/figure",
+  "superseded_copied_to": "FigS2/legacy/superseded_promotion_20260825T164115Z"
+}

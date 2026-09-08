@@ -39,7 +39,13 @@ FIXED_DEPTH = re.compile(r"\.parents\[\d+\]")
 # as HERE.parent.parent, which silently resolved to Paper/scripts when they were
 # run from their scripts/Fig2 mirror, and every raw path under it then pointed
 # somewhere that does not exist.
-CHAINED_PARENT = re.compile(r"=\s*\w+\.parent\.parent\b")
+# A data-file parent traversal (e.g. sample_dir=path.parent.parent) is
+# valid. Restrict this root-portability check to root names or script aliases.
+CHAINED_PARENT = re.compile(
+    r"\b(?:PAPER(?:_ROOT|_DIR)?|ROOT(?:_DIR|_PATH)?|REPO_ROOT|BASE_DIR)\s*=\s*\w+\.parent\.parent\b"
+    r"|=\s*(?:HERE|_HERE|SCRIPT_PATH|SCRIPT_FILE)\.parent\.parent\b",
+    re.IGNORECASE,
+)
 DERIVED_PARENT = re.compile(r"^\s*(\w+)\s*=\s*(\w+)\.parent\s*$")
 SHELL_UP = re.compile(r"\$\{?SCRIPT_DIR\}?/\.\./\.\.|\$\{?script_dir\}?/\.\./\.\.")
 ABSOLUTE = re.compile(r"[\"'](/(?:media|home|mnt|data)/[^\"']+)[\"']")

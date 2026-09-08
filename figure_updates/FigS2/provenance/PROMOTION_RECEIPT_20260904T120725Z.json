@@ -1,0 +1,254 @@
+{
+  "byte_for_byte_verified": true,
+  "counts": {
+    "added": 0,
+    "already_identical_skipped": 0,
+    "replaced": 27,
+    "rewritten_identical": 12
+  },
+  "figure": "FigS2",
+  "files": [
+    {
+      "bytes": 46674,
+      "promoted": "FigS2/Figure_S2_single_bottle_female.pdf",
+      "sha256": "46c2e99ece1f353bd87552ac670bd6743929cd5d0f48b6c5f87ed439c26ba66c",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/Figure_S2_single_bottle_female.pdf"
+    },
+    {
+      "bytes": 1508848,
+      "promoted": "FigS2/Figure_S2_single_bottle_female.png",
+      "sha256": "49701328c286e09032e9f38c4c751a3b6221a39d005d25e15b08b8fdc1c2448a",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/Figure_S2_single_bottle_female.png"
+    },
+    {
+      "bytes": 1737,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_LEGEND.txt",
+      "sha256": "3e015ce5d5f16e33e19d31e96563fc8e48118306f74e21a5426fc5a00ea8a10f",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_LEGEND.txt"
+    },
+    {
+      "bytes": 1225,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_LEGEND_spanish.txt",
+      "sha256": "aa2f10902ccf1182d7e4751608bc64c25a3e7ce25ca4e46953d9b94f3437ef34",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 304,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_A_LEGEND.txt",
+      "sha256": "f5c7d3cec154b202b0723be51109ecf8394e687234794b264982170ae08a4db0",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_A_LEGEND.txt"
+    },
+    {
+      "bytes": 160,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_A_spanish_LEGEND.txt",
+      "sha256": "d8e43ad1a7c1b98ab830919ab6d5730ace17681b4d451446e0e2f1705b2db849",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_A_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 261,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_B_LEGEND.txt",
+      "sha256": "480f535636e0d8471cd27d5c758effa47b57a28c3a3f0f91e2087e00b06c92aa",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_B_LEGEND.txt"
+    },
+    {
+      "bytes": 134,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_B_spanish_LEGEND.txt",
+      "sha256": "816880ce34f9a8da78991bdb0854fbecc73c6b46137fd645cd94331f0c7595f9",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_B_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 314,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_C_LEGEND.txt",
+      "sha256": "b1e3d123d9d802fb7819285762e40561017d7e41a687ab971c081f93bf62a053",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_C_LEGEND.txt"
+    },
+    {
+      "bytes": 149,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_C_spanish_LEGEND.txt",
+      "sha256": "4c6b65646b9e6ddc4285b7e21a593157314af35fd89588206bc5069a5156e0b2",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_C_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 247,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_D_LEGEND.txt",
+      "sha256": "c7ec9924178dcb56fb753738919cf0aa25c6343dc24f70046829e94067f8a0d2",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_D_LEGEND.txt"
+    },
+    {
+      "bytes": 156,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_Panel_D_spanish_LEGEND.txt",
+      "sha256": "b7f6d9d45c8ccfeeccedde1ed3e7204c377b7522bb75e30c58d03d96c8d9f39f",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_Panel_D_spanish_LEGEND.txt"
+    },
+    {
+      "bytes": 1737,
+      "promoted": "FigS2/legends/Figure_S2_single_bottle_female_caption.txt",
+      "sha256": "3e015ce5d5f16e33e19d31e96563fc8e48118306f74e21a5426fc5a00ea8a10f",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/legends/Figure_S2_single_bottle_female_caption.txt"
+    },
+    {
+      "bytes": 29528,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_A.pdf",
+      "sha256": "6694ad27615de75a37770395528f72669e1176ea4e67636dcb5a2fe4cabc1fc3",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_A.pdf"
+    },
+    {
+      "bytes": 394684,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_A.png",
+      "sha256": "b204e6e3b5aef502a3f9b37bd25ba6c4d6fec9f451257ef2232973b1cc09e693",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_A.png"
+    },
+    {
+      "bytes": 28134,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_A_spanish.pdf",
+      "sha256": "a4493bac755b1283dfddd8f39fb10293e3d1406c92df1c19b1ef68bcd37747da",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 395722,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_A_spanish.png",
+      "sha256": "dfe9464bcf51a9559c311d4897b512a303bbb824ebefd72a61478fc87d908c24",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_A_spanish.png"
+    },
+    {
+      "bytes": 23522,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_B.pdf",
+      "sha256": "5eb268c7fa0b56211b312205f9658e9540b0390e0d162397381cc63aa83a9b86",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_B.pdf"
+    },
+    {
+      "bytes": 272647,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_B.png",
+      "sha256": "37d48f93f1e8e2aa7f1f66c2b45bf21f0f9be15e27a38a913d160d557fd019e5",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_B.png"
+    },
+    {
+      "bytes": 22085,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_B_spanish.pdf",
+      "sha256": "b962647e2bcb3b40c04bd748b4523dd9508b83423e3fbfe075c10bb8c280ba8e",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 269867,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_B_spanish.png",
+      "sha256": "b7805389731f5425ce23fbf20a6ae9ad823f3a9b16da5ef5b7f1880a34784cf8",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_B_spanish.png"
+    },
+    {
+      "bytes": 31157,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_C.pdf",
+      "sha256": "70e120a86045faa9a5ee80f6edbb6a1462ba57d38da78147116374b7ef0ff150",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_C.pdf"
+    },
+    {
+      "bytes": 399132,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_C.png",
+      "sha256": "35e1a677701bf41ed2c374ad335d4b86a965f48fda7779e25095bdddda544ea6",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_C.png"
+    },
+    {
+      "bytes": 29704,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_C_spanish.pdf",
+      "sha256": "619f76d8599e61748d9c01986b5b5cb568807384e9dc85cedb96f49cc2821de9",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 406707,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_C_spanish.png",
+      "sha256": "b3ce60740cfc24db53d2220b9db30a4ed6b5492a7f3c43446cd353b6a5ef09f8",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_C_spanish.png"
+    },
+    {
+      "bytes": 24284,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_D.pdf",
+      "sha256": "f69a8256ce263b44a1bc4c947043d3c7f7cedfcd44e8c4a3aca213d8481c81f3",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_D.pdf"
+    },
+    {
+      "bytes": 270052,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_D.png",
+      "sha256": "f5bd5cf783e91be5de4c7a0ec2f8356f4ef5135c0916dbdb84f273909234ef43",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_D.png"
+    },
+    {
+      "bytes": 22782,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_D_spanish.pdf",
+      "sha256": "5e30f39e6d6fdc12bad0cffd95da1df4912d8996659b5c338da4acb1c069587f",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_D_spanish.pdf"
+    },
+    {
+      "bytes": 276876,
+      "promoted": "FigS2/panels/Figure_S2_single_bottle_female_Panel_D_spanish.png",
+      "sha256": "130db69794809540f5f8b3ede99f63ace5e764debf31a9106bd7ca4f4b8f9217",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/panels/Figure_S2_single_bottle_female_Panel_D_spanish.png"
+    },
+    {
+      "bytes": 3096,
+      "promoted": "FigS2/provenance/FIGURE_S2_AUDIT.md",
+      "sha256": "170b3d11cf606ab5fbdc7aaf14579308d060588a536721377d8c9a59527d6829",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/provenance/FIGURE_S2_AUDIT.md"
+    },
+    {
+      "bytes": 5967,
+      "promoted": "FigS2/provenance/Figure_S2_single_bottle_female_manifest.json",
+      "sha256": "e79dea5adee70d8a0c6a25ea108c15217f77a2b7d0c13ff98e931635513e00a6",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/provenance/Figure_S2_single_bottle_female_manifest.json"
+    },
+    {
+      "bytes": 2045,
+      "promoted": "FigS2/provenance/Figure_S2_single_bottle_female_spanish_translation_receipt.json",
+      "sha256": "a1b131dff8a6b8ce9e80500fbb9e9929b6314dc3d1c491d2940316e07b8b162c",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/provenance/Figure_S2_single_bottle_female_spanish_translation_receipt.json"
+    },
+    {
+      "bytes": 694,
+      "promoted": "FigS2/provenance/Figure_S2_single_bottle_female_value_correspondence.json",
+      "sha256": "63de18b43eebaaa1561f007f2ebd0a19fa1491a0ab04b55b1426af4ba3b77aa5",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/provenance/Figure_S2_single_bottle_female_value_correspondence.json"
+    },
+    {
+      "bytes": 1342,
+      "promoted": "FigS2/provenance/README.txt",
+      "sha256": "bc5ee97fe39bb3420a70bac2be4b35babd58c6df82fa4ec2ae4e165bed308419",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/provenance/README.txt"
+    },
+    {
+      "bytes": 651,
+      "promoted": "FigS2/source_data/Figure_S2_single_bottle_female_cage_sex_assignment_audit.csv",
+      "sha256": "a0f5c503c158e7a7997b0f628cd67f960c608e79ccca633fc029174ac3311ba7",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/source_data/Figure_S2_single_bottle_female_cage_sex_assignment_audit.csv"
+    },
+    {
+      "bytes": 8447,
+      "promoted": "FigS2/source_data/Figure_S2_single_bottle_female_plotted_values.csv",
+      "sha256": "d12c62db12d7141897a5c7124b5bbdf4b8bae143ab374341100737d4c8f0763e",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/source_data/Figure_S2_single_bottle_female_plotted_values.csv"
+    },
+    {
+      "bytes": 2231,
+      "promoted": "FigS2/source_data/Figure_S2_single_bottle_female_sources.csv",
+      "sha256": "136a5642623dcb3aba937748ce377f491ab929077db5f05d3ce1e95139c74292",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/source_data/Figure_S2_single_bottle_female_sources.csv"
+    },
+    {
+      "bytes": 4493,
+      "promoted": "FigS2/source_data/Figure_S2_single_bottle_female_statistics.csv",
+      "sha256": "792d3c5acf70f9758e964382b560b4a8aac7515c89f6a900f8f236cd460c43ba",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/source_data/Figure_S2_single_bottle_female_statistics.csv"
+    },
+    {
+      "bytes": 2250,
+      "promoted": "FigS2/source_data/Figure_S2_single_bottle_female_trajectory_confidence_intervals.csv",
+      "sha256": "ce6cf9903a30c66be0c6805f2baf6059b7f75369b39683ee73e4792a302b656d",
+      "source": "/tmp/allulose-consumption-reword-v1/FigS2/figure/source_data/Figure_S2_single_bottle_female_trajectory_confidence_intervals.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S2_single_bottle_female",
+  "master_name_promoted": "Figure_S2_single_bottle_female",
+  "promoted_utc": "2026-09-04T12:07:26+00:00",
+  "replacement_policy": "validated_canonical_current_no_in_tree_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/allulose-consumption-reword-v1/FigS2/figure",
+  "superseded_copied_to": null,
+  "verified_artifacts": 39
+}

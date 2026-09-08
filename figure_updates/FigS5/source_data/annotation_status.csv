@@ -1,0 +1,10 @@
+analysis_unit_id,acquisition_id,animal_id,condition,status,annotation_json,region_mask
+2026-07-09_FR4-1_Allulose,2026-07-09_FR4-1_Allulose,FR4-1,Allulose,include,annotations/2026-07-09_FR4-1_Allulose.json,region_masks/2026-07-09_FR4-1_Allulose_regions.tif
+2026-07-09_FR5-1_Allulose,2026-07-09_FR5-1_Allulose,FR5-1,Allulose,include,annotations/2026-07-09_FR5-1_Allulose.json,region_masks/2026-07-09_FR5-1_Allulose_regions.tif
+2026-07-09_FR5-2_Allulose,2026-07-09_FR5-2_Allulose,FR5-2,Allulose,include,annotations/2026-07-09_FR5-2_Allulose.json,region_masks/2026-07-09_FR5-2_Allulose_regions.tif
+2026-07-09_FR5-3_Sucrose,2026-07-09_FR5-3_Sucrose,FR5-3,Sucrose,include,annotations/2026-07-09_FR5-3_Sucrose.json,region_masks/2026-07-09_FR5-3_Sucrose_regions.tif
+2026-07-09_FR5-4_Sucrose,2026-07-09_FR5-4_Sucrose,FR5-4,Sucrose,include,annotations/2026-07-09_FR5-4_Sucrose.json,region_masks/2026-07-09_FR5-4_Sucrose_regions.tif
+2026-07-10_FR4-3_Sucrose,2026-07-10_FR4-3_Sucrose,FR4-3,Sucrose,include,annotations/2026-07-10_FR4-3_Sucrose.json,region_masks/2026-07-10_FR4-3_Sucrose_regions.tif
+2026-07-10_AGUA-M_Water,2026-07-10_AGUA-M_Water,AGUA-M,Water,include,annotations/2026-07-10_AGUA-M_Water.json,region_masks/2026-07-10_AGUA-M_Water_regions.tif
+2026-07-10_FR5-5_Water,2026-07-10_FR5-5_Water,FR5-5,Water,include,annotations/2026-07-10_FR5-5_Water.json,region_masks/2026-07-10_FR5-5_Water_regions.tif
+2026-07-10_NPY-M_Water,2026-07-10_NPY-M_Water,NPY-M,Water,include,annotations/2026-07-10_NPY-M_Water.json,region_masks/2026-07-10_NPY-M_Water_regions.tif

@@ -1,0 +1,17 @@
+{
+  "blocker_count": 1,
+  "blockers": [
+    {
+      "current_value": "WATER_NPY3",
+      "field": "animal_id",
+      "group_membership": "Water",
+      "group_membership_changed": false,
+      "invented_identifier": false,
+      "required_resolution": "Provide the true animal ID or explicitly authorize publication with the provisional identifier.",
+      "status": "provisional unique identifier"
+    }
+  ],
+  "publication_final": false,
+  "scope": "This blocker affects final scientific metadata certification only; it does not invalidate the technical render, accepted-mask binding, animal-level computations, or output integrity.",
+  "technical_build_status": "PASS"
+}

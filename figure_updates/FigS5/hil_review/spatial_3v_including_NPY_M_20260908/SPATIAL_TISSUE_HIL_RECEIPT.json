@@ -1,0 +1,24 @@
+{
+  "schema": "figs5_spatial_3v_hil_v2",
+  "status": "human_accepted",
+  "figure": "S5",
+  "panels": [
+    "I",
+    "J"
+  ],
+  "accepted_acquisitions": 9,
+  "pending_acquisitions": 0,
+  "channels_used": [
+    "DAPI"
+  ],
+  "boundary_region": "3V",
+  "one_ventricle_polygon_per_acquisition": true,
+  "ventricular_contour_available": true,
+  "used_for_tissue_geometry": false,
+  "used_as_3v_exclusion_mask": true,
+  "raw_images_modified": false,
+  "raw_segmentations_modified": false,
+  "manifest": "SPATIAL_TISSUE_HIL_MANIFEST.csv",
+  "manifest_sha256": "f22723f3e0d6fc5445514de187d09e3e370915d2663667c463f8aa15faf29070",
+  "finalized_at_utc": "2026-09-08T20:29:03.403178+00:00"
+}

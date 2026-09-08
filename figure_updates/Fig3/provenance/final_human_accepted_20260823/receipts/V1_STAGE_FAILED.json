@@ -1,0 +1,7 @@
+{
+  "exception_type": "CalledProcessError",
+  "failed_at_utc": "2026-08-23T16:41:38.087898+00:00",
+  "message": "Command '('/home/server/anaconda3/envs/paper_apotome_repro/bin/python', '/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v1/Paper/scripts/Fig3/05_analyze_spatial_distributions.py', '--raw-root', '/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28', '--output-dir', '/tmp/fig3_human_accepted_stage_parent_20260823/fig3_human_accepted_staged_20260823_v1/Paper/analyses/Fig3/results/spatial_distribution_run', '--dpi', '600')' returned non-zero exit status 1.",
+  "schema_version": 1,
+  "stage_preserved": true
+}

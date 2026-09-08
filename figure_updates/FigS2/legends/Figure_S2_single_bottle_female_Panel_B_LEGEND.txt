@@ -1,0 +1,1 @@
+Figure S2 panel B. Female Day-6 cage-consumption endpoint. Dots are cages; diamonds are cage means. One-way ANOVA p = 0.032; the three pairwise exact p values are Holm-adjusted within this sex and outcome. The Water mean has no interval because it is one cage.

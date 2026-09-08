@@ -1,0 +1,5 @@
+endpoint,scenario,test,n_cages_per_group,total_cages,simulations,rejections,power,mc_se,null_rejection_rate,null_simulations,equal_allocation_effect_f,noncentral_F_power
+bottle_volume_removed_day6,common_pooled_variance,ordinary_ANOVA,4,12,500000,417828,0.835656,0.0005240897817435483,0.05155,20000,1.1174506283066936,0.8354077777440867
+bottle_volume_removed_day6,group_specific_variance,Welch_ANOVA,5,15,500000,400818,0.801636,0.0005639427692665275,0.0525,20000,1.1174506283066936,
+body_weight_change_day6,common_pooled_variance,ordinary_ANOVA,9,27,500000,417441,0.834882,0.0005250791294195571,0.05105,20000,0.6642860888957861,0.8343309432840034
+body_weight_change_day6,group_specific_variance,Welch_ANOVA,14,42,500000,403844,0.807688,0.0005573654001747866,0.05045,20000,0.6642860888957861,

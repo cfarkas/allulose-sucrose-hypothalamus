@@ -1,0 +1,6 @@
+E,consumption_sexes,weight_primary_sexes,single_sex_consumption,single_sex_weight_primary,sex_agrees_across_sources,consumption_treatments,weight_primary_treatments,treatment_agrees_across_sources,Sex,Treatment,n_primary_weight_mice,eligible_for_sex_stratified_cage_analysis
+E1,Female,Female,True,True,True,Sucrose,Sucrose,True,Female,Sucrose,2,True
+E2,Female,Female,True,True,True,Allulose,Allulose,True,Female,Allulose,3,True
+E7,Female,Female,True,True,True,Sucrose,Sucrose,True,Female,Sucrose,2,True
+E8,Female,Female,True,True,True,Allulose,Allulose,True,Female,Allulose,3,True
+E10,Female,Female,True,True,True,Water,Water,True,Female,Water,3,True

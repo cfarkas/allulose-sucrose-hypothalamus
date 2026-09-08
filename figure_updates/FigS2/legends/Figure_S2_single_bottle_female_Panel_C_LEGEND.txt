@@ -1,0 +1,1 @@
+Figure S2 panel C. Female body-weight change from each mouse's Day-1 baseline. Pale points are mice, thin lines are cage-day means, and thick lines are equal-cage means; inferential weight remains at cage level. Bands use whole-cage trajectory resampling. Water has one cage, so its 95% interval is not estimable.

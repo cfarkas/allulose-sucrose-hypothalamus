@@ -1,0 +1,19 @@
+panel,Sex,Treatment,study_day,n_cages,cage_balanced_mean,ci95_low,ci95_high,ci_estimable,ci_method,bootstrap_replicates,bootstrap_seed
+A,Male,Water,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261816
+A,Male,Water,3,2,10.0,10.0,10.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261816
+A,Male,Water,6,2,20.0,20.0,20.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261816
+A,Male,Sucrose,1,3,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261916
+A,Male,Sucrose,3,3,46.666666666666664,30.0,80.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261916
+A,Male,Sucrose,6,3,98.33333333333333,55.0,170.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20261916
+A,Male,Allulose,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262016
+A,Male,Allulose,3,2,27.5,5.0,50.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262016
+A,Male,Allulose,6,2,37.5,30.0,45.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262016
+C,Male,Water,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262816
+C,Male,Water,3,2,-1.5101425304161333,-2.356109054190506,-0.6641760066417607,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262816
+C,Male,Water,6,2,-1.9678882860874993,-2.524402558061259,-1.4113740141137396,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262816
+C,Male,Sucrose,1,3,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262916
+C,Male,Sucrose,3,3,-0.15680073578100415,-1.6967126193001076,1.304711039162125,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262916
+C,Male,Sucrose,6,3,-1.2526465588854852,-3.145987981618949,0.3680561450252133,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20262916
+C,Male,Allulose,1,2,0.0,0.0,0.0,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20263016
+C,Male,Allulose,3,2,-14.88550631621553,-16.633532140490388,-13.137480491940671,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20263016
+C,Male,Allulose,6,2,-15.048752927713878,-20.8416169648774,-9.255888890550354,True,pointwise percentile cluster bootstrap of whole cage trajectories,20000,20263016

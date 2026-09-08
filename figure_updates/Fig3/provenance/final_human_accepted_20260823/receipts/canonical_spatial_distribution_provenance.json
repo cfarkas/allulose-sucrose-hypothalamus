@@ -1,0 +1,241 @@
+{
+  "analysis_description": "Cellpose-derived animal-level spatial occurrence profiles; no newly trained condition classifier",
+  "analysis_tier": "exploratory",
+  "analysis_version": "fig3_spatial_distribution_v1.1_2026-08-22",
+  "animal_count": 9,
+  "base_analysis_script": "scripts/Fig3/01_analyze_cfos_npy.py",
+  "base_analysis_script_sha256": "71f3b5f6f12c66d5de757d800d9c138164a29419696769fc5cf629cdc3786490",
+  "caveats": [
+    "Only three animals and one analyzed field per condition are available.",
+    "Water acquisition batch differs from the Sucrose/Allulose legacy Apotome batch; Water3 is a 2026 Leica SP8 acquisition. Mask-derived ratios reduce but do not eliminate acquisition confounding.",
+    "The mandatory human-accepted WATER_NPY3 DAPI mask records the modal dapi_channel model; its accepted labels define all shells and denominators.",
+    "NPY masks for E7_FR7-5 and E8_FR6-1 record dapi_channel rather than the modal cfos_channel3 Cellpose model.",
+    "The double-occurrence endpoint has unequal multivariate dispersion by the exact endpoint-matched diagnostic; PERMANOVA therefore does not distinguish condition-centroid separation from dispersion heterogeneity.",
+    "The analysis was developed after data inspection and is exploratory, not preregistered confirmatory inference."
+  ],
+  "cells_as_independent_replicates": false,
+  "condition_colors": {
+    "Allulose": "#2ecc71",
+    "Sucrose": "#e31a1c",
+    "Water": "#b9e3f2"
+  },
+  "condition_counts": {
+    "Allulose": 3,
+    "Sucrose": 3,
+    "Water": 3
+  },
+  "descriptive_panel_insets": {
+    "cell_value": "arithmetic mean animal occurrence_percent within condition and shell",
+    "color_scale": "inferno; zero to endpoint-specific maximum condition mean",
+    "columns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "included": true,
+    "inferential_role": "descriptive only; no additional statistical test or replicate",
+    "rows": [
+      "Water",
+      "Sucrose",
+      "Allulose"
+    ],
+    "source": "same animal_radial_occurrence_features.csv values shown in line profiles",
+    "type": "condition-by-six-shell mean occurrence heatmap"
+  },
+  "determinism": {
+    "allocation_order": "lexicographic combinations in fixed base sample order",
+    "dpi": 600,
+    "pdf_creation_and_modification_dates": null,
+    "randomness_used": false
+  },
+  "endpoints": [
+    "cfos_occurrence",
+    "double_occurrence"
+  ],
+  "environment": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.11.0-25-generic-x86_64-with-glibc2.39",
+    "python": "3.10.20",
+    "scikit_image": "0.25.2",
+    "scipy": "1.15.3"
+  },
+  "global_results": [
+    {
+      "analysis_tier": "exploratory",
+      "bh_q_value_two_endpoint_family": 0.12142857142857143,
+      "cells_as_independent_replicates": false,
+      "comparison": "Water|Sucrose|Allulose",
+      "distance": "Euclidean on six-shell animal vectors",
+      "endpoint": "cfos_occurrence",
+      "endpoint_label": "c-FOS-positive nuclei / DAPI nuclei spatial occurrence",
+      "enumerated_labelings": 1680,
+      "experimental_unit": "biological animal",
+      "extreme_labelings": 204,
+      "feature_count": 6,
+      "feature_transform": "arcsin(sqrt(shell positive nuclei / shell DAPI nuclei))",
+      "multiple_testing_family": "two declared global spatial occurrence profiles: c-FOS/DAPI and c-FOS+NPY/DAPI",
+      "n_allulose": 3,
+      "n_animals": 9,
+      "n_sucrose": 3,
+      "n_water": 3,
+      "p_value_exact": 0.12142857142857143,
+      "permutation_exhaustive": true,
+      "pseudo_f": 3.293224775472608,
+      "r_squared": 0.5232968617786727,
+      "test": "exact animal-label PERMANOVA"
+    },
+    {
+      "analysis_tier": "exploratory",
+      "bh_q_value_two_endpoint_family": 0.02142857142857143,
+      "cells_as_independent_replicates": false,
+      "comparison": "Water|Sucrose|Allulose",
+      "distance": "Euclidean on six-shell animal vectors",
+      "endpoint": "double_occurrence",
+      "endpoint_label": "c-FOS and NPY double-positive nuclei / DAPI nuclei spatial occurrence",
+      "enumerated_labelings": 1680,
+      "experimental_unit": "biological animal",
+      "extreme_labelings": 18,
+      "feature_count": 6,
+      "feature_transform": "arcsin(sqrt(shell positive nuclei / shell DAPI nuclei))",
+      "multiple_testing_family": "two declared global spatial occurrence profiles: c-FOS/DAPI and c-FOS+NPY/DAPI",
+      "n_allulose": 3,
+      "n_animals": 9,
+      "n_sucrose": 3,
+      "n_water": 3,
+      "p_value_exact": 0.010714285714285714,
+      "permutation_exhaustive": true,
+      "pseudo_f": 12.570613938146176,
+      "r_squared": 0.80732936980408,
+      "test": "exact animal-label PERMANOVA"
+    }
+  ],
+  "mean_line_colors": {
+    "Allulose": "#159447",
+    "Sucrose": "#c51b1f",
+    "Water": "#2f91b8"
+  },
+  "method": {
+    "coordinate_normalization": "center DAPI centroid cloud and whiten by its two covariance eigenvalues; use orientation-invariant whitened radial distance",
+    "coordinate_source": "centroids of contiguous Cellpose DAPI instance labels",
+    "distance": "Euclidean between six-shell animal vectors",
+    "enumerated_labelings_per_endpoint": 1680,
+    "feature_transform": "arcsin(sqrt(positive nuclei / DAPI nuclei))",
+    "multiple_testing": "Benjamini-Hochberg across the two declared global spatial occurrence profiles",
+    "occurrence_denominator": "DAPI nuclei in the same animal and radial shell",
+    "radial_shells": 6,
+    "shell_definition": "within-animal quantiles of whitened DAPI radial distance; approximately equal DAPI nuclei per shell",
+    "test": "PERMANOVA pseudo-F with exhaustive animal-label allocation"
+  },
+  "multivariate_dispersion_diagnostic": {
+    "allocation_receipts": "exact_spatial_dispersion_permutation_receipts.csv",
+    "exact_p": "allocations with dispersion F >= observed F / 1,680",
+    "interpretation": "The double-occurrence diagnostic detects unequal multivariate dispersion; its PERMANOVA result cannot be interpreted as a pure condition-centroid difference",
+    "method": "For every 3/3/3 allocation, recompute each allocated group centroid in six-shell feature space, calculate animal Euclidean distances to that centroid, and apply a one-way ANOVA F to the distances",
+    "multiple_testing": "Benjamini-Hochberg across the two endpoint-matched diagnostics",
+    "results": [
+      {
+        "allulose_mean_distance": 0.09400013900348521,
+        "allulose_sd_distance": 0.03694451079599337,
+        "analysis_tier": "exploratory assumption diagnostic",
+        "bh_q_value_two_endpoint_diagnostic_family": 0.06428571428571428,
+        "cells_as_independent_replicates": false,
+        "centroid_definition": "allocation-specific condition centroid recomputed for every labeling",
+        "comparison": "Water|Sucrose|Allulose",
+        "dispersion_f": 4.714166196677808,
+        "distance": "Euclidean in six-shell animal feature space",
+        "endpoint": "cfos_occurrence",
+        "endpoint_label": "c-FOS-positive nuclei / DAPI nuclei spatial occurrence",
+        "enumerated_labelings": 1680,
+        "experimental_unit": "biological animal",
+        "extreme_labelings": 108,
+        "feature_count": 6,
+        "feature_transform": "arcsin(sqrt(shell positive nuclei / shell DAPI nuclei))",
+        "multiple_testing_family": "two declared multivariate-dispersion diagnostics corresponding to the two spatial endpoints",
+        "n_allulose": 3,
+        "n_animals": 9,
+        "n_sucrose": 3,
+        "n_water": 3,
+        "p_value_exact": 0.06428571428571428,
+        "permutation_exhaustive": true,
+        "small_sample_bias_adjustment": "not applied; every allocated group has n=3, so the common sqrt(3/2) distance factor leaves F and p unchanged",
+        "statistic": "one-way ANOVA F on Euclidean distances to allocated group centroids",
+        "sucrose_mean_distance": 0.061134942809985555,
+        "sucrose_sd_distance": 0.013694048175631812,
+        "test": "exact animal-label multivariate dispersion diagnostic",
+        "water_mean_distance": 0.18927363279539247,
+        "water_sd_distance": 0.08309036086469314
+      },
+      {
+        "allulose_mean_distance": 0.04498076352377981,
+        "allulose_sd_distance": 0.006998914478192651,
+        "analysis_tier": "exploratory assumption diagnostic",
+        "bh_q_value_two_endpoint_diagnostic_family": 0.02857142857142857,
+        "cells_as_independent_replicates": false,
+        "centroid_definition": "allocation-specific condition centroid recomputed for every labeling",
+        "comparison": "Water|Sucrose|Allulose",
+        "dispersion_f": 8.487342368942288,
+        "distance": "Euclidean in six-shell animal feature space",
+        "endpoint": "double_occurrence",
+        "endpoint_label": "c-FOS and NPY double-positive nuclei / DAPI nuclei spatial occurrence",
+        "enumerated_labelings": 1680,
+        "experimental_unit": "biological animal",
+        "extreme_labelings": 24,
+        "feature_count": 6,
+        "feature_transform": "arcsin(sqrt(shell positive nuclei / shell DAPI nuclei))",
+        "multiple_testing_family": "two declared multivariate-dispersion diagnostics corresponding to the two spatial endpoints",
+        "n_allulose": 3,
+        "n_animals": 9,
+        "n_sucrose": 3,
+        "n_water": 3,
+        "p_value_exact": 0.014285714285714285,
+        "permutation_exhaustive": true,
+        "small_sample_bias_adjustment": "not applied; every allocated group has n=3, so the common sqrt(3/2) distance factor leaves F and p unchanged",
+        "statistic": "one-way ANOVA F on Euclidean distances to allocated group centroids",
+        "sucrose_mean_distance": 0.04844358651817025,
+        "sucrose_sd_distance": 0.03238088013594857,
+        "test": "exact animal-label multivariate dispersion diagnostic",
+        "water_mean_distance": 0.12676944324248263,
+        "water_sd_distance": 0.03422140915675724
+      }
+    ],
+    "summary_table": "exact_spatial_dispersion.csv"
+  },
+  "raw_root": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28",
+  "registered_microscopy_insets": {
+    "included": false,
+    "reason": "Only one representative field per condition has an audited display registration; using those three insets beside all-nine-animal inference would imply unsupported section-level registration."
+  },
+  "segmentation_inputs": {
+    "all_cfos_model": true,
+    "audit_table": "segmentation_model_setting_audit.csv",
+    "count": 27,
+    "dapi_modal_model": "dapi_channel",
+    "dapi_nonmodal_animals": [],
+    "dapi_nonmodal_models": [],
+    "npy_modal_model": "cfos_channel3",
+    "npy_nonmodal_animals": [
+      "E7_FR7-5",
+      "E8_FR6-1"
+    ],
+    "npy_nonmodal_models": [
+      {
+        "animal_id": "E7_FR7-5",
+        "condition": "Sucrose",
+        "model_basename_recorded": "dapi_channel"
+      },
+      {
+        "animal_id": "E8_FR6-1",
+        "condition": "Allulose",
+        "model_basename_recorded": "dapi_channel"
+      }
+    ]
+  },
+  "spatial_analysis_script": "scripts/Fig3/05_analyze_spatial_distributions.py",
+  "spatial_analysis_script_sha256": "2728cf0a5faa59e3592fc8efd2d670c7d6076821054f25dfdf2e4b4ab59df674",
+  "statistical_unit": "biological animal"
+}

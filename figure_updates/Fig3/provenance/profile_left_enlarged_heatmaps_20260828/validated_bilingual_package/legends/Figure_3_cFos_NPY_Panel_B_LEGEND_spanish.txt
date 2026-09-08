@@ -1,0 +1,1 @@
+Panel B. Núcleos DAPI positivos para marcador en el campo representativo de Agua, mostrados como núcleos NPY positivos, núcleos c-FOS positivos y estado combinado. Los conteos del campo mostrado son 205, 113 y 57, respectivamente. Los límites tisular y ventricular son anotaciones de visualización y no regiones cuantificadas.

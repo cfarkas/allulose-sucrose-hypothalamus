@@ -1,0 +1,168 @@
+{
+  "schema": "figure3-cartoon-hil-reuse-promotion-v1",
+  "status": "promoted",
+  "generated_at_utc": "2026-08-28T17:11:02+00:00",
+  "request": "Reuse the already accepted human-in-the-loop ventricular annotations to update the Figure 3 cartoons.",
+  "scope": {
+    "updated": [
+      "English panel B (Water cartoon)",
+      "English panel C (Allulose cartoon)",
+      "Spanish panel B (Water cartoon)",
+      "Spanish panel C (Allulose cartoon)",
+      "English Figure 3 master PNG/PDF",
+      "English Figure 3 caption and master legend"
+    ],
+    "preserved": "All master pixels outside the B/C cartoon band; standalone non-cartoon panels were not promoted."
+  },
+  "accepted_hil": {
+    "Water": {
+      "mask_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/water_ventricle_mask.png",
+      "mask_file_sha256": "af29c6fb929aa39baf3d8b09eec724b1da3a3e6cfbfa54fcedc4f1ccc97529ae",
+      "mask_binary_sha256": "c559f0c4f2bfa8a411fcb499bc0aefba4ec8460a8f0f38a3d1fcef2754182bdc",
+      "receipt_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/water_ventricle_receipt.json",
+      "receipt_sha256": "c74d378f681895453f1582f4513357fd0680872557d14da989692a452751395c",
+      "reviewer": "Carlos Farkas",
+      "session": "1",
+      "accepted_at_utc": "2026-08-27T19:18:12.640945+00:00",
+      "area_px": 35339,
+      "bbox_yxyx_half_open": [
+        8,
+        545,
+        603,
+        802
+      ],
+      "connected_components_8": 1,
+      "outer_contours": 1
+    },
+    "Allulose": {
+      "mask_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/allulose_ventricle_mask.png",
+      "mask_file_sha256": "c1533b1420c3b944ce5308d9643a03f10732d0fb2259e0953fda4dce8faec70f",
+      "mask_binary_sha256": "456634e39b1cf977c71c613e7cd337b4aeb699ac83f1cfca29d021bd5dea7ea2",
+      "receipt_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/allulose_ventricle_receipt.json",
+      "receipt_sha256": "12f33f21d9237283165d00841dd879f89ae43db0d2aed8625a6a0c1f7488c8e5",
+      "reviewer": "Carlos Farkas",
+      "session": "1",
+      "accepted_at_utc": "2026-08-27T19:19:03.204734+00:00",
+      "area_px": 61652,
+      "bbox_yxyx_half_open": [
+        2,
+        629,
+        648,
+        858
+      ],
+      "connected_components_8": 1,
+      "outer_contours": 1
+    }
+  },
+  "generators": {
+    "english_cartoon": {
+      "path": "Fig3/02_make_cfos_npy_cartoons.py",
+      "sha256": "6f8557521291fecdfef14a1372d41d90d2347ba762dffc106e4553a3dd0f1967"
+    },
+    "spanish_cartoon": {
+      "path": "Fig3/reproduce_final_20260823/scripts/02_make_cfos_npy_cartoons_spanish.py",
+      "sha256": "98dc4a2bb9e2e632523bd9b3a968c0066ef1175a6c8c8da40233784a09288894"
+    },
+    "english_composer": {
+      "path": "Fig3/03_make_figure_3_cfos_npy.py",
+      "sha256": "a9fb31c96504e5edda5d487e1ff65afce348caa6e41a0d2ff365e611dcb7f942"
+    },
+    "recertification_freeze": "A temporary composer copy replaced Panel A regeneration with the hash-verified published Panel A raster and sidecar. The production composer was not modified for this HIL reuse."
+  },
+  "archived_source_renders": {
+    "directory": "Fig3/provenance/cartoon_hil_reuse_20260828",
+    "english_provenance_json_sha256": "68f9240d314fd81033fb8f4a9695fd6203f12fb54b5bc969d595c5dc3526403f",
+    "english_panel_b_png_sha256": "6ed1650166de5f74c6f56b9ee93f09bc96761704eedeb3e8a2c7809243784165",
+    "english_panel_c_png_sha256": "647dbc447da1e9fbb8d09c519c924425e3f9e377b53f6f7e46dc27230f417970",
+    "spanish_provenance_json_sha256": "ec09a8aae4ccda2798e4095ed8f4f18612274a890061dd07f175a0be6ccc2fa1",
+    "spanish_panel_b_png_sha256": "48904278bef77bd2fc80f8162debc4e94f0e3efb6c3ecfcb5da910b685a63b6a",
+    "spanish_panel_c_png_sha256": "646332daecd48fa341afdd72896f631c62285b49b147fdd82d1819192cf04eb5"
+  },
+  "promoted_outputs": {
+    "Fig3/Figure_3_cFos_NPY.png": {
+      "before_sha256": "7b47ae56874bf0485056aa0d9b05e9bb29748755594e63103d8c03c14978b6b0",
+      "after_sha256": "31555947f9b820ae5158d1ff7b933cf67e3c527ca11b9839d0ae68b267bf3788"
+    },
+    "Fig3/Figure_3_cFos_NPY.pdf": {
+      "before_sha256": "ce39307e1f4877d0893d0ffb67995fcb22528b13cdc2a4eb29232e5202d68930",
+      "after_sha256": "a0a5c51be099001e4cfa182353578b548faae7925124154336a8ce26b5a1dca4"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_B.png": {
+      "before_sha256": "53d2727817a45f5e9045b85eeacae295a561964e3c1e9e242f630d6fd1dbd9cc",
+      "after_sha256": "a03433d844d8993ca5cd89100d4d2feaa1545c32ffb46c53ac9f7a0635a5a7bd"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_C.png": {
+      "before_sha256": "6ebb5ac6d0bd3d792a65c6978a339f80f7f14f527390876e17e866a9b21e17e0",
+      "after_sha256": "aac6e51c98dd94b932d73be6979d3920b17dc3c88b88ac2cd8e0f0e0b6dad66b"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_B_spanish.png": {
+      "before_sha256": "b282e3a62b39f8fa26a8f7dec134a1ab8ae3dd36bd1d352d74a9630f9f49513c",
+      "after_sha256": "4ad2ded4d01e576be95c45cbffdef618cc3ece7e4217550c58334e2dd3d8a31b"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_C_spanish.png": {
+      "before_sha256": "dfdc5426339e1a0b3f5477f4a132a4dcb3c7cc1679cc4e0cab339c7be1bbdfa0",
+      "after_sha256": "830592ab85d194393bd46c3630a6ec17ae6b4222d7a0849a8ce91ac796ddf9db"
+    },
+    "Fig3/Figure_3_cFos_NPY_caption.txt": {
+      "before_sha256": "258a968fe919095287c132d5191ad81ef67a1fdcfd3ed7c74b13c8b2d421c6b2",
+      "after_sha256": "cc5c07278abab5aff7b6e24728166bda15db21351bfe037f9caec009975d97fc",
+      "change": "Describes the accepted source-bound HIL ventricular polygons and the already promoted purple Panel A ROI contours."
+    },
+    "Fig3/legends/Figure_3_cFos_NPY_LEGEND.txt": {
+      "before_sha256": "258a968fe919095287c132d5191ad81ef67a1fdcfd3ed7c74b13c8b2d421c6b2",
+      "after_sha256": "cc5c07278abab5aff7b6e24728166bda15db21351bfe037f9caec009975d97fc"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_B.pdf": {
+      "before_sha256": "69c0046a0bae8c6eec11a194780793822b2bbd2f4a5fa4c12e38360e77d045ea",
+      "after_sha256": "3bec44dabbbcfa0e0d3eafad37bc70a82d6e418edc2d54d7e56b8b8111a8bc28"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_C.pdf": {
+      "before_sha256": "2d8ad332abfdf4326efa2104adb7fcc2bc536e685ce24a5519c8b166a2670fbb",
+      "after_sha256": "53c7eb90dcb075f1a3c076678cd3580f83b19a57f52d7e1ffe4e50a5f4cb8557"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_B_spanish.pdf": {
+      "before_sha256": "eb1494111cf7d51808111c4f60696d70a313099c5268fdb624ece62565cfdfa0",
+      "after_sha256": "57af4d7dfbe071cd9a967cfdf56f986f531ba38b35edde2be52887cf2ca54e77"
+    },
+    "Fig3/panels/Figure_3_cFos_NPY_Panel_C_spanish.pdf": {
+      "before_sha256": "35ab2c94fa6cb4b08536dcd4d53fba4b39d09a253101c78a88fa02a763163d70",
+      "after_sha256": "e0879979c7275d1a39878d149f57ae1cbc14a3f1f3d11a2bc307f1a7f49d8d1b"
+    }
+  },
+  "validation": {
+    "master_png_shape_xy": [
+      9600,
+      10260
+    ],
+    "master_changed_pixel_count": 101129,
+    "master_difference_bbox_xyxy_half_open": [
+      880,
+      4492,
+      8924,
+      5172
+    ],
+    "all_master_pixels_outside_difference_bbox_identical": true,
+    "difference_confined_to_panels": [
+      "B",
+      "C"
+    ],
+    "panel_a_png_preserved_sha256": "513a4d6e0b3cb53d9575ae97df7508b70058835a47f5701f40f26efde9f999b9",
+    "panel_f_png_preserved_sha256": "968f21feb89b2dbd08a12f28275ea57612f8a45148007e041c51a3ccf61c39e6",
+    "panel_g_png_preserved_sha256": "a74af52709e9c523784a53c39d9849472b38f9e6ba976749a09ed9e19dae125b",
+    "tick_clearance_guard_minimum_inches": 0.04,
+    "tick_clearance_guard_passed": true,
+    "pdf_page_points": [
+      1152.0,
+      1231.2
+    ],
+    "pdf_embedded_raster_count": 5,
+    "pdf_embedded_raster_dpi": 600,
+    "pdf_fonts_embedded": true,
+    "pdf_type3_fonts": false,
+    "hil_masks_binary_filled_single_component_single_outer_contour": true
+  },
+  "backup": {
+    "path": "Fig3/legacy/pre_cartoon_hil_reuse_20260828T170944Z",
+    "recoverable": true
+  }
+}

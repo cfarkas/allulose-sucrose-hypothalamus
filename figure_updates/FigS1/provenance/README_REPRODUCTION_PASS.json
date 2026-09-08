@@ -1,0 +1,33 @@
+{
+  "analysis_files": 13,
+  "commands": [
+    {
+      "command": "python scripts/01_analyze_single_bottle_male.py --consumption raw_data/consumption.csv --weights raw_data/weights.csv --outdir /tmp/FigS1_analysis_rebuild",
+      "returncode": 0,
+      "script_sha256": "a505cef5888c3613753b87e7d986e03c55cecec74243e07725ec06469ae4a70e"
+    },
+    {
+      "command": "python scripts/02_make_figure_s1_male.py --analysis-dir /tmp/FigS1_analysis_rebuild --output-dir /tmp/FigS1_figure_rebuild --dpi 600",
+      "returncode": 0,
+      "script_sha256": "6dc9c05bb8924b66cef2f2feabf492b10b319ef042b58b81295d650248101766"
+    }
+  ],
+  "english_spanish_geometry_pairs": "4/4",
+  "figure": "Figure S1",
+  "figure_files": 39,
+  "fresh_master_pdf_sha256": "ec54732544886295074f97c7e10b4d972dfb70c1fa00f0abc1a0fb0ea31fe829",
+  "fresh_master_png_sha256": "02644a948272c62757d4c9689289a29c92e2ee37b2def79dfa56921fd56e907c",
+  "graphics_expected": 18,
+  "graphics_verified": 18,
+  "live_master_pdf_sha256": "a3637b9daf63691bde839ab916c630793b31218117e7ceb3a2ba79792f73df6c",
+  "live_master_png_sha256": "61d004ec0805e85dd31734e725829d3da11a82e671cc8be90b61f11e59eace4f",
+  "normalized_master_png_rmse": 0.02667,
+  "note": "Fresh graphics are scientifically and geometrically reproduced but not byte-identical; absolute source paths and rendering serialization differ.",
+  "pdf_one_page_embedded_fonts_no_type3": true,
+  "png_dpi": 600,
+  "schema": "paper_readme_reproduction_pass_v1",
+  "scientific_tables": "byte-identical except expected absolute-path-only *_sources.csv",
+  "status": "PASS_REPRODUCTION_EQUIVALENT",
+  "tested_at": "2026-08-23T15:24:52-04:00",
+  "working_directory": "/media/server/STORAGE/Apotome/Paper/FigS1"
+}

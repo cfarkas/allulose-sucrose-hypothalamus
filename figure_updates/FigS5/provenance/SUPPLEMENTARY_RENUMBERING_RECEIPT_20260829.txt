@@ -1,0 +1,124 @@
+SUPPLEMENTARY RENUMBERING — MULTI-ORGAN WSI INSERTED AT S3
+==========================================================
+
+Date (UTC): 2026-08-29T11:22:37+00:00
+Scope:      /media/server/STORAGE/Apotome/Paper
+Requested:  "convert Fig6 to FigS3 and rename the supplementary figures and
+            scripts if needed accordingly"
+
+1. Mapping
+----------
+The multi-organ H&E whole-slide package moved out of the main series
+into the supplementary series at S3. Inserting it there shifted the two
+supplementary figures that already occupied S3 and S4:
+
+  multi-organ WSI kidney/liver/spleen   Fig6   ->  FigS3
+  two-bottle behavior preference        FigS3  ->  FigS4
+  c-FOS and ACTH/CLIP after fasting     FigS4  ->  FigS5
+
+FigS1 (single-bottle males) and FigS2 (single-bottle females) are unchanged.
+Fig1-Fig5 are unchanged. There is no active Figure 6 or Figure 7. The same WSI
+package was built as Figure 7, renumbered to Figure 6 on 2026-08-28 and moved to
+Figure S3 on 2026-08-29; its earlier receipt in FigS3/provenance keeps the
+Figure 6 name it was written under.
+
+2. What was renamed
+-------------------
+Directories, in an order that never collides:
+
+  FigS4 -> FigS5, scripts/FigS4 -> scripts/FigS5
+  FigS3 -> FigS4, scripts/FigS3 -> scripts/FigS4
+  Fig6  -> FigS3   (no scripts mirror; see section 5)
+
+Numbered scripts and utilities:
+
+  02a_july_cfos_acth_clip_human_in_loop_s4.py -> ..._s5.py
+  03_make_figure_s4_acth_clip_cfos.py         -> 03_make_figure_s5_acth_clip_cfos.py
+  04_run_figure_s4.sh                         -> 04_run_figure_s5.sh
+  02_make_figure_s3_behavior_preference.py    -> 02_make_figure_s4_behavior_preference.py
+  scripts/utilities/06_import_figure_s4_hil.py-> 06_import_figure_s5_hil.py
+  fig6_common.py                              -> figs3_common.py
+  06_run_figure6.sh                           -> 06_run_figure_s3.sh
+  07_validate_figure6.py                      -> 07_validate_figure_s3.py
+  tests/test_fig6_pipeline.py                 -> tests/test_figs3_pipeline.py
+
+Every figure master, panel, legend, source-data table and live receipt was
+renamed with it: Figure_S4.* -> Figure_S5.*, Figure_S3_behavior_preference.* ->
+Figure_S4_behavior_preference.*, Figure_6* -> Figure_S3*. Identifiers inside the
+scripts moved too: FIG6_DIR -> FIGS3_DIR, Fig6Error -> FigS3Error, --fig6-root ->
+--figs3-root, and the workflow version tokens fig6-* -> figs3-*.
+
+158 text files were rewritten in a single simultaneous pass, so S3 -> S4 and
+S4 -> S5 could never chain into S3 -> S5.
+
+3. What was deliberately not rewritten
+--------------------------------------
+Frozen, hash-bound or historical records keep their original numbers, exactly as
+the paper run-book requires:
+
+  FigS5/hil_review/**            The accepted spatial-tissue human review. Its
+                                 manifest stores a SHA-256 per annotation file
+                                 and the receipt stores a SHA-256 of the
+                                 manifest, so editing the figs4_* schema strings
+                                 inside would break a human-accepted review that
+                                 must stay verifiable. It still validates:
+                                 06_import_figure_s5_hil.py --source-only passes.
+  */provenance/*RECEIPT*         Dated promotion, build, renumbering, retirement
+  */provenance/*manifest*        and reproduction records of events that happened
+  */provenance/output_manifest.csv  under the old numbers.
+  */legacy/**                    Superseded artifacts, preserved as evidence.
+  incident.txt                   The run-book forbids altering it.
+  docs/                          Historical command transcripts and audits;
+                                 machine-local and not part of an upload.
+
+analyses/ keeps its current directory names on purpose. The FigS5 HIL manifest
+records absolute paths into analyses/FigS4/july_cfos_acth_clip_work_20260828_v1,
+and that path is part of the hash-validated review. Read it as: analyses/FigS4 is
+working state for the package now called FigS5, and analyses/FigS3 is working
+state for the package now called FigS4. analyses/ is machine-local and is not
+part of a publication archive.
+
+4. A false match that was caught and repaired
+---------------------------------------------
+The GFAP/Iba1 package legitimately carries the name "Figure 6" in its own
+history and in internal tokens, because it was called Figure 6 while the July
+ACTH/CLIP experiment temporarily held the main Figure 5 slot. The bulk rewrite
+therefore hit it by mistake. The following were restored to their original
+values and their scripts/ mirrors re-verified byte-identical:
+
+  scripts/shared/01_annotate_regions.py   paper_figure6_render, paper_figure6_analysis
+  Fig5/01_analyze_gfap_iba1_microglia.py  paper_figure6_render_
+  Fig5/02_make_figure_5_gfap_iba1_microglia.py
+                                          figure6_multipanel_sensitivity_v2_raw_exact
+
+The prose in README.txt, scripts/README.txt and Fig5/README.txt that describes
+that history was rewritten by hand so it again says Figure 6 where it means the
+GFAP/Iba1 slot, and Supplementary Figure S3 where it means the WSI package.
+
+5. Status of the new FigS3
+--------------------------
+FigS3 stays under construction and keeps the posture it had as Fig6 and Fig7: it
+is excluded from reproduce_all_figures.sh, from the publishable bundle
+(LOCAL_ONLY in scripts/utilities/01_validate_bundle.py) and from the mirror
+parity list in scripts/utilities/03_check_reproducibility.py, and it has no
+scripts/FigS3 mirror. Renumbering it did not activate it. It has its own
+validator, which passes.
+
+6. Verification
+---------------
+  scripts/utilities/03_check_reproducibility.py            OVERALL: PASS
+      Fig1-Fig5, FigS1, FigS2, FigS4 (3 scripts) and FigS5 (7 scripts); every
+      FigN/scripts-FigN mirror byte-identical.
+  scripts/utilities/01_validate_bundle.py                  OVERALL: PASS
+      5,715 files, 149.7 GB; FigS3 excluded as working state.
+  scripts/utilities/06_import_figure_s5_hil.py --source-only
+      PASS, 8 included DAPI-only fields.
+  FigS3/05_analyze_make_figure.py --permutations 4999 --dpi 600
+      rebuilt Figure_S3.png/.pdf, six English and six Spanish panels in PNG and
+      PDF, and the bilingual legend set.
+  FigS3/07_validate_figure_s3.py                           pass, 8/8 checks
+      validator identity figs3-validator-1.3; analysis version
+      figs3-animal-composition-1.6.
+  FigS3 structural tests                                   4 tests OK (1 skipped)
+
+Nothing was deleted at any point. Every step was a move or a copy.

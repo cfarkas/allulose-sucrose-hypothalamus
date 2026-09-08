@@ -1,0 +1,387 @@
+{
+  "created_at": "2026-08-29T01:38:55.527836+00:00",
+  "mode": "validate_only",
+  "optional_provenance_records": [],
+  "project_root": "/tmp/fig3_recert_work/project",
+  "raw_root": "/tmp/fig3_recert_work/project/Fig3/raw/legacy_experiment_2025_07_28",
+  "record_count": 75,
+  "records": [
+    {
+      "bytes": 3922346,
+      "relative_path": "E7-FR7-1_NeuN.tif",
+      "sha256": "81bf24e723d1587b808fc7ed99388c52ad497f1af157b71aac99885301aa6090"
+    },
+    {
+      "bytes": 26155275,
+      "relative_path": "E7-FR7-1_NeuN_seg.npy",
+      "sha256": "b740a090eb5185577d220f5fa225bdf33451c765109c4da1886571edcd54a2f9"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E7-FR7-1_dapi.tif",
+      "sha256": "a931f7fa6d3f5e45ac61f3971d884c7b92f8fa47e37ecbedb070cc922e84c55e"
+    },
+    {
+      "bytes": 26167864,
+      "relative_path": "E7-FR7-1_dapi_seg.npy",
+      "sha256": "bc6c2a8c53bd4319439b9759d49fef135f20c0045d0389b8141ccbf5d21520da"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E7-FR7-1_fos.tif",
+      "sha256": "194d8db8be1a7443a5fe9c88bd0884ee3f395ee73d7a1556ba0c8e70b0e26eac"
+    },
+    {
+      "bytes": 26181189,
+      "relative_path": "E7-FR7-1_fos_seg.npy",
+      "sha256": "0b6b86969686532f42ad513f7a92ca6096c23b6d085074f1ef2861115133f359"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E7-FR7-1_gfp.tif",
+      "sha256": "15fa0d96d6a993cb9bfb23fa8f1095cb6dc98ce3b42a17240fe3b9c9a0a72b1c"
+    },
+    {
+      "bytes": 26523886,
+      "relative_path": "E7-FR7-1_gfp_seg.npy",
+      "sha256": "468c07903e05f97d81ba7d0108a70ae83d5e0da96f5806cbcc2d414b7b33241e"
+    },
+    {
+      "bytes": 5730002,
+      "relative_path": "E7-FR7-5_NeuN.tif",
+      "sha256": "0cb24c1c00891f35da03618487b13f01baffd817a9aa6f44ef6afd5ab6bcded9"
+    },
+    {
+      "bytes": 38219242,
+      "relative_path": "E7-FR7-5_NeuN_seg.npy",
+      "sha256": "362becdd2a9ff591b4d8ebd5e70ef2cc316932f830c07037c794a2b7481740d7"
+    },
+    {
+      "bytes": 5730002,
+      "relative_path": "E7-FR7-5_dapi.tif",
+      "sha256": "b0d6935331a4309b9fa2b8247b977f86b7be82f2ec4edbcff24f3e59fb751bfc"
+    },
+    {
+      "bytes": 38216846,
+      "relative_path": "E7-FR7-5_dapi_seg.npy",
+      "sha256": "5ee8adeaf5abb5ba3fd1637abbc73f5bc3634118f8fa184cbc49bea0b4abbe41"
+    },
+    {
+      "bytes": 5730002,
+      "relative_path": "E7-FR7-5_fos.tif",
+      "sha256": "499961aa1b74ff15544cf705dedb09b57714e72f8ad7f6a98b7d7123a4e4b796"
+    },
+    {
+      "bytes": 38218807,
+      "relative_path": "E7-FR7-5_fos_seg.npy",
+      "sha256": "b8beb7ad8b106484c58042af943fb0ae4003d01196be3ae6ad8b2cd513eb68dc"
+    },
+    {
+      "bytes": 5730002,
+      "relative_path": "E7-FR7-5_gfp.tif",
+      "sha256": "2a05c21b0c9ce32739ce2ee83a073b0836aee8b7daa39e04f7414753c24afda5"
+    },
+    {
+      "bytes": 38691073,
+      "relative_path": "E7-FR7-5_gfp_seg.npy",
+      "sha256": "2a8ff8dc72a099dd99e6c3c0a69f20d0405ce83c15603e1c31a712b8166bb9f9"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_NeuN.tif",
+      "sha256": "42212745773d40e9e6e727d3cd98afeaa5afd30e8f32c8cd102606b18f1b3798"
+    },
+    {
+      "bytes": 26155927,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_NeuN_seg.npy",
+      "sha256": "691674651bd7247a15618b65d16da0f3118b2dc24557bb39c2201e1e5d6e9cc1"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_dapi.tif",
+      "sha256": "1368b6d2d4629992032b48b7414c60c03e9cdc81a27fe98f8d056e51a7cefe07"
+    },
+    {
+      "bytes": 26158262,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_dapi_seg.npy",
+      "sha256": "e57e1d336846e6533c7bfe12ab69dc496976675adee9c5aa700b722ec07052b7"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_fos.tif",
+      "sha256": "07d64f7e7820d066616fcd23d798b0b333f8b9d24f2425feb4f87183029e27a0"
+    },
+    {
+      "bytes": 26153957,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_fos_seg.npy",
+      "sha256": "a94e59e3f6061540590e3ef3f9c470c60021aa9eb4443cef9d94fb2fa8861def"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_gfp.tif",
+      "sha256": "25dbd688704f6dba9b801087a272e2ce9796bafe350fdc65016fa8f00fb4d0c4"
+    },
+    {
+      "bytes": 26822304,
+      "relative_path": "E8 FR6-1_ALULOSA_25X_gfp_seg.npy",
+      "sha256": "2b824aead1503f2afe61d481a8df27256ef244dc66fbedd5480773d78b1a2b2d"
+    },
+    {
+      "bytes": 3937370,
+      "relative_path": "E8-FR6-3_ALULOSA_NeuN.tif",
+      "sha256": "03151b3b5bc9c5ccbadbedf48b7644fa30c726f5e728de7908676bf0092beb26"
+    },
+    {
+      "bytes": 26255987,
+      "relative_path": "E8-FR6-3_ALULOSA_NeuN_seg.npy",
+      "sha256": "e8d90d1276818619c1e7ecb357a3cd4a36c85595fef1fe0bf9ff7a0f760f8618"
+    },
+    {
+      "bytes": 3937370,
+      "relative_path": "E8-FR6-3_ALULOSA_dapi.tif",
+      "sha256": "1dbc16b60598d151611e4f69790737199bf43a6c17f5f29606fcbbd0916ec7f0"
+    },
+    {
+      "bytes": 26269209,
+      "relative_path": "E8-FR6-3_ALULOSA_dapi_seg.npy",
+      "sha256": "1436fd66b1efa5d89e9f74f43088443a09c6a9cd9b338c7bb8cda9f03b13eca2"
+    },
+    {
+      "bytes": 3937370,
+      "relative_path": "E8-FR6-3_ALULOSA_fos.tif",
+      "sha256": "3b1b05659dfa0cb059b853f8afa182e4a03ded9b57a75649357251304deb5c62"
+    },
+    {
+      "bytes": 26261138,
+      "relative_path": "E8-FR6-3_ALULOSA_fos_seg.npy",
+      "sha256": "1796f5ff8dba14c76c69facc6574d7f386b61d7e023aa1eca38ebbd9c2119454"
+    },
+    {
+      "bytes": 3937370,
+      "relative_path": "E8-FR6-3_ALULOSA_gfp.tif",
+      "sha256": "6a8bc29b396c6f9df8db50dd519932456cd686d3a9eb0a4eed20b0d432609a96"
+    },
+    {
+      "bytes": 26299747,
+      "relative_path": "E8-FR6-3_ALULOSA_gfp_seg.npy",
+      "sha256": "3abef3c65b50a70f0b640cdf2eece24b22044842b793d2de68519cfe3be14734"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8-FR6-4_ALULOSA_NeuN.tif",
+      "sha256": "2d5dda1d57a870f88c88a7afc91fbd719c17ba342cf4904600a7c96783f2109d"
+    },
+    {
+      "bytes": 26161666,
+      "relative_path": "E8-FR6-4_ALULOSA_NeuN_seg.npy",
+      "sha256": "6ba7313967c39523cc8a169b7da77cc16255cc4e05ab8ebd69666f17e3dbf4a5"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8-FR6-4_ALULOSA_dapi.tif",
+      "sha256": "59318a5c319d2d72c5aa3bc672742852149ea9038cdd143b0df2b5c5e9fe1f6b"
+    },
+    {
+      "bytes": 26178306,
+      "relative_path": "E8-FR6-4_ALULOSA_dapi_seg.npy",
+      "sha256": "f3ba80789acb7a2d1b79241236fef7fbee11d66a3f3db7c8f959e8c077965314"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8-FR6-4_ALULOSA_fos.tif",
+      "sha256": "a545e444fa819068b6ff0b1ab7d7488df543cc15f3f172126e03620a048de3c7"
+    },
+    {
+      "bytes": 26157113,
+      "relative_path": "E8-FR6-4_ALULOSA_fos_seg.npy",
+      "sha256": "b0df57d75a7307980a81cb34d280044e3cf6ea7b54fe82b12899838577a51dca"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E8-FR6-4_ALULOSA_gfp.tif",
+      "sha256": "4c21c8f06844f488757ce9c8e9b82b33fc7e430c6b9fe8d3e45f0a6bac897da1"
+    },
+    {
+      "bytes": 26166661,
+      "relative_path": "E8-FR6-4_ALULOSA_gfp_seg.npy",
+      "sha256": "81978bcca94d0e74e6cdd5d53291283aa54e6ab9288d4531072ac4cf889c0d14"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E9-FR8-1_NeuN.tif",
+      "sha256": "f52d4ae51416928a68a830c7e1030b9347049927dfa33222bdef8bbdc7f413b0"
+    },
+    {
+      "bytes": 26154511,
+      "relative_path": "E9-FR8-1_NeuN_seg.npy",
+      "sha256": "d5fbd004c8bbac5c742b0bdf6528c8959a53e571901022e90457ca3d519938a3"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E9-FR8-1_dapi.tif",
+      "sha256": "ad0c49580590499dd5d4a0e209acc3e843a7ff042fb60ceb371b653dd84fa31b"
+    },
+    {
+      "bytes": 26163473,
+      "relative_path": "E9-FR8-1_dapi_seg.npy",
+      "sha256": "604bb94ab52dc5164778cd84a891213eab35f7567f4e2664d36da6ceca9beb16"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E9-FR8-1_fos.tif",
+      "sha256": "f3f5c871429448ff2c8924082e346e42c0d5486b2c74d5e59c22e2cdcf88c910"
+    },
+    {
+      "bytes": 26162715,
+      "relative_path": "E9-FR8-1_fos_seg.npy",
+      "sha256": "ebea3ba28318a515cefca38d152b6c25f3a9f9875581197209879d0bd3ff4bfd"
+    },
+    {
+      "bytes": 3922346,
+      "relative_path": "E9-FR8-1_gfp.tif",
+      "sha256": "8e73a7ffa1ca5a7a75a1189981e16c70a095574347d1f4fa2a14cf0c387cef57"
+    },
+    {
+      "bytes": 26400794,
+      "relative_path": "E9-FR8-1_gfp_seg.npy",
+      "sha256": "6613a9de314ed044f7acaf80f42e557f312b680587a3bbaaca68e42bcd76ea85"
+    },
+    {
+      "bytes": 566,
+      "relative_path": "apotome_2025_07_28_npy_samplesheet.csv",
+      "sha256": "72a8a04698538f53eece8ff5b435eb2448a7de7cf0c5ac0a32b361e1a807f090"
+    },
+    {
+      "bytes": 24358910,
+      "relative_path": "water/WATER_NPY1-0001_GFP.tif",
+      "sha256": "a189feaef6217f70aa2e24e819868b693c38b8ddc528b29efb8c6b0401d0c926"
+    },
+    {
+      "bytes": 162424831,
+      "relative_path": "water/WATER_NPY1-0001_GFP_seg.npy",
+      "sha256": "7e10840e389a8aef1d01b3846e89c47b6582a97e5a581c214dc916e80f771b59"
+    },
+    {
+      "bytes": 24358910,
+      "relative_path": "water/WATER_NPY1-0001_NeuN.tif",
+      "sha256": "ce6cccee2ca5245c53ce8ebd931cdf49870882216ab72cecd4f5b31e8cbfd2be"
+    },
+    {
+      "bytes": 162810515,
+      "relative_path": "water/WATER_NPY1-0001_NeuN_seg.npy",
+      "sha256": "07378e5fc3d5a93cfce7c3f63e63955955f9e491d40dd0fd5e2bb874062941bf"
+    },
+    {
+      "bytes": 24358910,
+      "relative_path": "water/WATER_NPY1-0001_dapi.tif",
+      "sha256": "be0cc8986ea8a2b0de186786c05e71d6b6dcb46e8ebd4862a789d9a2a957234e"
+    },
+    {
+      "bytes": 162426731,
+      "relative_path": "water/WATER_NPY1-0001_dapi_seg.npy",
+      "sha256": "0f2ed27f48b02b6b49887d073184e0c9ed64a53b2e8e83d42da9a7b285a5e052"
+    },
+    {
+      "bytes": 24358910,
+      "relative_path": "water/WATER_NPY1-0001_fos.tif",
+      "sha256": "c104e16e464765ebe79c18c5eb0db13a3433669530019828a392d4f031fc723a"
+    },
+    {
+      "bytes": 165186891,
+      "relative_path": "water/WATER_NPY1-0001_fos_seg.npy",
+      "sha256": "3731ab03188d5acc90fdcfe8a8a69b6a0a7b22a73bb41fe20fd7dbdf04e56eef"
+    },
+    {
+      "bytes": 42378926,
+      "relative_path": "water/WATER_NPY2-0001_GFP.tif",
+      "sha256": "aa1fd314b875032d648f0eb068842353537c7fe00b2ba7e0bf33a99e665ef6e7"
+    },
+    {
+      "bytes": 283434332,
+      "relative_path": "water/WATER_NPY2-0001_GFP_seg.npy",
+      "sha256": "5af0388dea2894f3d20b7794ae424bb5f66a9dd682d794744478fabcd560819d"
+    },
+    {
+      "bytes": 42378926,
+      "relative_path": "water/WATER_NPY2-0001_NeuN.tif",
+      "sha256": "23c0864736353aea6a0b4496405e04794388d5eab91a15d5e1b1d43452d9c7ec"
+    },
+    {
+      "bytes": 282879880,
+      "relative_path": "water/WATER_NPY2-0001_NeuN_seg.npy",
+      "sha256": "216d38e8c960275cfd979337b670382eae25f0a43e05be58c117de45f22caa33"
+    },
+    {
+      "bytes": 42378926,
+      "relative_path": "water/WATER_NPY2-0001_dapi.tif",
+      "sha256": "d5d40182e3d4bf396ef1277815f851d111aa90bfba3d6b2bf7083080c9657044"
+    },
+    {
+      "bytes": 282574685,
+      "relative_path": "water/WATER_NPY2-0001_dapi_seg.npy",
+      "sha256": "fb77993b5d928e6f9fc19043e076554729db5721203f1780feba9675d2f12c0b"
+    },
+    {
+      "bytes": 42378926,
+      "relative_path": "water/WATER_NPY2-0001_fos.tif",
+      "sha256": "d52c02775b283a12379b579c061d13a478543bb0c21f65342d5efefd2347f03c"
+    },
+    {
+      "bytes": 284018442,
+      "relative_path": "water/WATER_NPY2-0001_fos_seg.npy",
+      "sha256": "b6e82a6c85966dba752dca04bb8e21d9a05027b44c1b3fbf465cbfc5dcfea85d"
+    },
+    {
+      "bytes": 6565299,
+      "relative_path": "water/WATER_NPY3_S01_GFP.tif",
+      "sha256": "eee6c2984e3091dadc851d04b0a8d0220cc4e14ce3ca61a06dd12bcbb132f93e"
+    },
+    {
+      "bytes": 53945479,
+      "relative_path": "water/WATER_NPY3_S01_GFP_seg.npy",
+      "sha256": "477a965a90b442d3b814d41405ce30083bab84e8e2f4028f42995959a70b2a0c"
+    },
+    {
+      "bytes": 4847768,
+      "relative_path": "water/WATER_NPY3_S01_NeuN_display_only.tif",
+      "sha256": "45af96f64bf286f28fa9fbce7a0ac1e2db72e6895fb707a254a3fb6751a22dae"
+    },
+    {
+      "bytes": 3015,
+      "relative_path": "water/WATER_NPY3_S01_NeuN_display_only_provenance.json",
+      "sha256": "93626ff75d90027e9e93d11c14aae623023d57b09c00625ab0147dfffd84c323"
+    },
+    {
+      "bytes": 6044540,
+      "relative_path": "water/WATER_NPY3_S01_dapi.tif",
+      "sha256": "a19eddebca230df50a266e9531936582e3d084e97621f90ad906b80d044db877"
+    },
+    {
+      "bytes": 53881374,
+      "relative_path": "water/WATER_NPY3_S01_dapi_seg.npy",
+      "sha256": "f2fe88d7ea465247ac1eff4c388391e0b5c287b9436420b5012f6a071d2a5f82"
+    },
+    {
+      "bytes": 6266,
+      "relative_path": "water/WATER_NPY3_S01_extraction_provenance.json",
+      "sha256": "cc74936c087a4313bff6764fe5a689e8ec1ac088cf6ca8dce1bfcd20c9537029"
+    },
+    {
+      "bytes": 8413489,
+      "relative_path": "water/WATER_NPY3_S01_fos.tif",
+      "sha256": "b9164dd8ca0091c5191455f39dac24817f0574e3677efbbdcd7f8e7a7035edc2"
+    },
+    {
+      "bytes": 53873392,
+      "relative_path": "water/WATER_NPY3_S01_fos_seg.npy",
+      "sha256": "50a93a70f12088afb1f63aaa337636003cb242e41d0c2ae94c894efd21816648"
+    },
+    {
+      "bytes": 219,
+      "relative_path": "water/apotome_2025_07_28_npy_water_samplesheet.csv",
+      "sha256": "81d0abd9c1b3716d1bdfaddc7d86ecbd81f51ef5f1a3272aa615b728b8d4c98f"
+    }
+  ],
+  "schema": "fig3_raw_project_validation_v1",
+  "status": "PASS"
+}

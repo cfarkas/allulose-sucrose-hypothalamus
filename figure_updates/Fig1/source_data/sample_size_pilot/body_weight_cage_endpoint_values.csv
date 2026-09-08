@@ -1,0 +1,13 @@
+E,Treatment,cage_mean_body_weight_change_pct,cage_sd_body_weight_change_pct,cage_mean_baseline_weight_g,n_mice,sexes,genotypes,cohort,study_day,experimental_unit
+E1,Sucrose,4.4531048894351954,3.7102145293584092,19.81,2,Female,POMC,January_E1-E12,6,cage
+E2,Allulose,-3.10597825197576,14.654362738350043,19.233333333333334,3,Female,POMC,January_E1-E12,6,cage
+E3,Sucrose,0.36805614502521333,0.3916210729696347,29.320000000000004,3,Male,POMC,January_E1-E12,6,cage
+E4,Sucrose,-3.1459879816189487,,28.29,1,Male,POMC,January_E1-E12,6,cage
+E5,Allulose,-9.255888890550354,10.002269611459756,25.763333333333332,3,Male,POMC,January_E1-E12,6,cage
+E6,Allulose,-20.8416169648774,,30.18,1,Male,POMC,January_E1-E12,6,cage
+E7,Sucrose,1.893999516924874,0.7412409513973635,19.05,2,Female,NPY,January_E1-E12,6,cage
+E8,Allulose,0.40409010266350975,2.1438385943602265,19.94333333333333,3,Female,NPY,January_E1-E12,6,cage
+E9,Sucrose,-0.9800078400627205,,25.51,1,Male,Unknown,January_E1-E12,6,cage
+E10,Water,2.1075452721431174,2.459643725204689,19.543333333333333,3,Female,Mixed,January_E1-E12,6,cage
+E11,Water,-2.524402558061259,,29.71,1,Male,POMC,January_E1-E12,6,cage
+E12,Water,-1.4113740141137396,,24.09,1,Male,NPY,January_E1-E12,6,cage

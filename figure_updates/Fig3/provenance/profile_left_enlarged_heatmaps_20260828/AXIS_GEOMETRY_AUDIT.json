@@ -1,0 +1,36 @@
+{
+  "canvas_inches": [
+    6.4,
+    3.12
+  ],
+  "heatmap_width_increase_percent": 49.71,
+  "measurement": "Matplotlib post-draw axes positions including heatmap colorbar allocation",
+  "profile_width_decrease_percent": 19.87,
+  "promoted": {
+    "colorbar_width_inches": 0.0913,
+    "condition_means_heatmap_width_inches": 1.5414,
+    "grid_width_ratios": [
+      2.55,
+      1.45
+    ],
+    "order": [
+      "radial profile / exact PERMANOVA",
+      "condition-means heatmap"
+    ],
+    "radial_profile_width_inches": 3.1521
+  },
+  "schema": "fig3_spatial_axis_geometry_audit_v1",
+  "status": "PASS",
+  "superseded_wrong_order": {
+    "condition_means_heatmap_width_inches": 1.0296,
+    "grid_width_ratios": [
+      1.05,
+      3.45
+    ],
+    "order": [
+      "condition-means heatmap",
+      "radial profile / exact PERMANOVA"
+    ],
+    "radial_profile_width_inches": 3.9338
+  }
+}

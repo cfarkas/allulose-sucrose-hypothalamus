@@ -1,0 +1,32 @@
+{
+  "schema": "fig3_machine_review_source_cleanup_completion_v1",
+  "completed_utc": "2026-08-23T18:02:08Z",
+  "status": "PASS_RECOVERABLE_MOVE_COMPLETE",
+  "plan": "MACHINE_REVIEW_SOURCE_CLEANUP_PLAN_20260823.json",
+  "plan_sha256": "088a95620fb66462206d45a1326f0ada3127738653e6d957bb609175d59a1288",
+  "historical_source_path": "/media/server/STORAGE/Apotome/Paper/Fig3/hil_review/Water3_machine_gpu_20260823_v1",
+  "historical_source_path_absent_after_move": true,
+  "recoverable_hold_path": "/tmp/Paper_cleanup_hold_20260823/Fig3/Water3_machine_gpu_20260823_v1",
+  "operation": "mv across filesystems; post-copy source removal performed by mv",
+  "post_move_validation": {
+    "files": 11,
+    "bytes": 182737344,
+    "all_inventory_sha256_match_plan": true,
+    "all_regular_files": true,
+    "all_destination_link_counts_one": true,
+    "human_accepted_directory_still_present": true,
+    "human_accepted_files_unchanged": true,
+    "raw_data_unchanged_by_move": true
+  },
+  "interpretation": "Sealed build receipts retain the historical source path as provenance. That path is intentionally absent after this cleanup. The immutable accepted directory and independent raw_data copies are authoritative for current use.",
+  "recovery": "Until /tmp is purged, the moved directory can be returned only by a separately authorized collision-fail move after verifying this receipt and the plan inventory.",
+  "untouched": [
+    "Fig3/raw",
+    "Fig3/raw_data",
+    "Fig3/hil_review/Water3_human_accepted_20260823_v1",
+    "Fig3/provenance/superseded_pre_human_accepted_20260823",
+    "Fig4 and Fig5 pending evidence",
+    "Minion_Data",
+    "storage_disk2"
+  ]
+}

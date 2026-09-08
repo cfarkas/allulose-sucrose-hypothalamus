@@ -1,0 +1,49 @@
+{
+  "schema": "fig3_readme_reproduction_independent_audit_v1",
+  "status": "PASS",
+  "audited_at": "2026-08-23T21:32:16-04:00",
+  "tested_command": "bash Fig3/scripts/reproduce_final_20260823/RUN_REPRODUCE_FINAL.sh /tmp/fig3_human_accepted_raw_project_20260823_v1/Paper /tmp/fig3_readme_reproduction_20260823_v5",
+  "package_manifest": {
+    "path": "Fig3/scripts/reproduce_final_20260823/SHA256_MANIFEST.tsv",
+    "sha256": "07520735726aabac6d538542b8087293f2cfbd351f46ca8f230440d637e5b7d6",
+    "entries_verified": 27
+  },
+  "runner": {
+    "path": "Fig3/scripts/reproduce_final_20260823/RUN_REPRODUCE_FINAL.sh",
+    "sha256": "861b1bf613a6e2c7353582a3fe15f474945f8ccacf5a7fd740983b587219974e"
+  },
+  "durable_receipts": {
+    "pass": {
+      "path": "Fig3/provenance/final_human_accepted_20260823/README_REPRODUCTION_PASS.json",
+      "sha256": "c151ca0c47baa0b2a79be91761bee8006c1709aaaad78fc885ff81558735d53e"
+    },
+    "raw_validation": {
+      "path": "Fig3/provenance/final_human_accepted_20260823/README_REPRODUCTION_RAW_PROJECT_VALIDATION.json",
+      "sha256": "d29db5f75d2194053c917b371e661e345019481ad56f17b6c97f56126695b22f"
+    },
+    "content_manifest": {
+      "path": "Fig3/provenance/final_human_accepted_20260823/README_REPRODUCED_CONTENT_MANIFEST.json",
+      "sha256": "5f0b0778dae09620149f5bf0f8e92696671c1a6b421c547f7647477e6191ec63"
+    }
+  },
+  "raw_inputs": {
+    "verified": 75,
+    "expected": 75,
+    "links": 0
+  },
+  "science": {
+    "animals": 9,
+    "animals_per_condition": 3,
+    "statistics_rows": 35,
+    "accepted_spatial_analyzer_sha256": "2728cf0a5faa59e3592fc8efd2d670c7d6076821054f25dfdf2e4b4ab59df674"
+  },
+  "graphics": {
+    "total": 30,
+    "bilingual_geometry_pairs_passed": 7,
+    "minimum_raster_dpi": 300,
+    "embedded_fonts_no_type3": true,
+    "byte_identical_to_live": 13,
+    "container_note": "The 15 PDFs and encoded Spanish D/E PNG containers are not byte-identical to the promoted files. Decoded Spanish D/E PNG pixels and 600-dpi PDF renders match exactly (RMSE 0), dimensions and DPI match, and decoded PDF page-content streams match. This is serialization/encoding variation, not scientific or visual variation."
+  },
+  "publication_blocker": null
+}

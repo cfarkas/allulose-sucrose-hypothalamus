@@ -1,0 +1,71 @@
+{
+  "animal_id": "WATER_NPY3",
+  "animal_id_status": "provisional; replace with true animal ID before inference",
+  "calibration": {
+    "physical_size_x_um_per_px": 0.5687380073800737,
+    "physical_size_y_um_per_px": 0.5687377997179125,
+    "z_step_um": 0.346255
+  },
+  "condition": "Water",
+  "eligibility": {
+    "cellpose_input": false,
+    "display_qc_only": true,
+    "missing_value_policy": "Water3 NeuN values must remain NaN/missing, never zero",
+    "numeric_analysis": false,
+    "segmentation_available": false
+  },
+  "failure_qc": {
+    "assessment": "Failed/unquantifiable NeuN channel: the C2 MIP is dominated by diffuse/background signal and DAPI nuclei generally lack the bright soma-like NeuN morphology present in the eight legacy NeuN fields.",
+    "c2_median_inside_dapi_masks": 11035.0,
+    "c2_median_local_dapi_ring": 11355.0,
+    "c2_median_outside_dapi_masks": 10749.0,
+    "dapi_nuclei": 3224,
+    "dapi_segmentation_path": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY3_S01_dapi_seg.npy",
+    "dapi_segmentation_sha256": "f2fe88d7ea465247ac1eff4c388391e0b5c287b9436420b5012f6a071d2a5f82"
+  },
+  "generated_at_utc": "2026-08-23T16:40:15.684026+00:00",
+  "generator": {
+    "bfconvert_path": "/home/server/anaconda3/envs/microscopy_extract/bin/bfconvert",
+    "path": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/scripts/Fig3/00_extract_water3_neun_display.py",
+    "sha256": "eeef1c075b9bdd72302c39eb85323a409be4fa72b31c6a9467023a4c58451f99"
+  },
+  "output": {
+    "bytes": 4847768,
+    "dtype": "uint16",
+    "maximum": 65535,
+    "mean": 11657.354948014712,
+    "minimum": 0,
+    "path": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28/water/WATER_NPY3_S01_NeuN_display_only.tif",
+    "saturated_65535_pixels": 949,
+    "sha256": "45af96f64bf286f28fa9fbce7a0ac1e2db72e6895fb707a254a3fb6751a22dae",
+    "shape_y_x": [
+      1419,
+      1898
+    ]
+  },
+  "processing": {
+    "denoising": false,
+    "intensity_rescaling": false,
+    "operation": "maximum projection across all 21 source Z planes",
+    "resampling": "none",
+    "segmentation": false
+  },
+  "sample_id": "WATER_NPY3_S01",
+  "schema_version": "figure3-water3-neun-display-only-v1",
+  "source": {
+    "bioformats_series_index": 12,
+    "channel_index": 2,
+    "dtype": "uint16",
+    "lif_path": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28/water/cFos-NeuN-Npy-Ctrl-Agua-40X.lif",
+    "lif_sha256": "db4cbdb72c8e8af6a5ab264d1526083d4bb70c4ece54e9c9ee59a8c90d7671ab",
+    "lifext_path": "/tmp/fig3_human_accepted_raw_project_20260823_v1/Paper/Fig3/raw/legacy_experiment_2025_07_28/water/cFos-NeuN-Npy-Ctrl-Agua-40X.lifext",
+    "lifext_sha256": "1359dd14c59ad5d558312db0a6ff71bbf1ecaf2660e126fabba039903eb22fc7",
+    "nominal_marker": "NeuN",
+    "series_name": "TileScan 1 Merged",
+    "stack_shape_z_y_x": [
+      21,
+      1419,
+      1898
+    ]
+  }
+}

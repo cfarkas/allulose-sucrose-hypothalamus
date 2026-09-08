@@ -1,0 +1,77 @@
+FIGURE NUMBERING AND PACKAGE SANITIZATION RECEIPT — 2026-08-28
+================================================================
+
+Scope
+-----
+The July 2026 ACTH/CLIP experiment was corrected from Supplementary Figure S5
+to Supplementary Figure S4. The GFAP/Iba1 package, which had been moved from
+Figure 5 to Figure 6 only to reserve the Figure-5 slot for ACTH/CLIP, was returned
+to Figure 5. Figure 7 was explicitly outside scope; no command in this operation
+targeted a path under Fig7/.
+
+Non-destructive moves
+---------------------
+- FigS5/ -> FigS4/.
+- scripts/FigS5/ -> scripts/FigS4/.
+- ACTH raw_data/, channel_tiffs/, accepted HIL and frozen source provenance from
+  the former Fig5 source-only package moved into FigS4/.
+- analyses/Fig5 ACTH work -> analyses/FigS4/.
+- Fig6/ -> Fig5/, scripts/Fig6/ -> scripts/Fig5/, and analyses/Fig6/ ->
+  analyses/Fig5/ for GFAP/Iba1.
+- Former S5 promoted artifacts were retained under
+  FigS4/legacy/pre_renumber_s5_promotion_20260828/.
+- No raw CZI, TIFF, Cellpose mask or accepted HIL receipt was deleted.
+
+Frozen HIL preservation
+-----------------------
+The receipt-bound ACTH HIL analyzer remains byte-identical:
+  ac7f7022b2c5b9302cea601b3d45236480814a17b735258cdf15c80d52c36d46
+  FigS4/02_july_cfos_acth_clip_human_in_loop.py
+
+The active relocation-safe S4 derivative is a separate file. The accepted HIL
+receipt and manifest retain their historical schema/path bytes; the S4 importer
+resolves only the documented repository-local move and verifies every hash.
+
+Figure 5 master preservation
+----------------------------
+Only the cited basename changed back to Figure_5; graphic bytes are unchanged:
+  PDF 24e8c1b7fd068781baad2af4b4eb4905c4315c7863759e4537ce9d197837a27c
+  PNG f2ae1a44ac682a9c5b102c3a3d760a023ede0627a27ac95834a90313e8fc78a4
+
+Final S4 master hashes
+----------------------
+  5770cd8b797c18a98cb3d05abd1ac21d932bd66f85efecfb5654ba074113b141  Figure_S4.pdf
+  93ff50282bc51ccde479d2afe76b2ae3b499ad1c9065383f69ad1b9d9350b48c  Figure_S4.png
+  0f26ab0debdfa36258aa89b8091733e462fbbaf7f9c2fe2c0078af16e4e4fd1f  Figure_S4_es.pdf
+  225e280657183b0cc6daebaeb7134c91b748a1407475787713e7816b072c4efe  Figure_S4_es.png
+
+The PNG masters are 9900 x 9210 pixels with 599.9988 dpi metadata. All isolated
+English/Spanish A-J PNGs likewise carry 599.9988 dpi metadata.
+
+Spatial inference
+-----------------
+Endpoint c-FOS/DAPI: pseudo-F 1.6865521337, R2 0.4028499060, exact p 0.1714285714,
+BH q 0.3428571429.
+Endpoint c-FOS+ACTH/CLIP/DAPI: pseudo-F 0.9861162281, R2 0.2828695785,
+exact p 0.4607142857, BH q 0.4607142857.
+Each endpoint enumerated all 560 condition-label allocations preserving n=2/3/3.
+The biological animal is the experimental unit.
+
+Final layout
+------------
+- Microscopy/cartoon: A-B, C-D, E-F in a 2 x 3 block.
+- Statistics: G and H stacked vertically in a wider right column.
+- Spatial panels: I and J below.
+- Spatial contours show a hole-free outer tissue envelope only; no ventricular
+  contour is inferred.
+- Master title omits the figure-number prefix as requested.
+
+Validation
+----------
+- S4 accepted-HIL source import: PASS, 8/8 included DAPI-only fields.
+- S4 pipeline self-test: PASS.
+- S4 review status: 8 annotated, 0 excluded, 0 pending.
+- scripts/utilities/03_check_reproducibility.py: OVERALL PASS.
+- scripts/utilities/01_validate_bundle.py: OVERALL PASS; Fig7 excluded as an
+  under-construction working tree.
+- Front/mirror S4 and Figure-5 numbered scripts are byte-identical.
