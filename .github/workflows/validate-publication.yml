@@ -39,6 +39,8 @@ jobs:
           cache-dependency-path: requirements-figures.txt
       - name: Install figure environment
         run: python -m pip install -r requirements-figures.txt
+      - name: Test native microscopy inside marker ROIs
+        run: python -m unittest discover -s figure_updates/Fig4/tests -p test_pomc_microscopy.py -v
       - name: Recompute and render supplementary Figure S6
         run: python figure_updates/FigS6/01_make_figure_s6_microglia_classifier.py --output-dir /tmp/figure-s6 --dpi 600
       - name: Validate bilingual panels and publication outputs

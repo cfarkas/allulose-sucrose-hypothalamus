@@ -1,7 +1,7 @@
 {
   "schema": "apotome-figure-updates-v1",
   "date": "2026-09-10",
-  "description": "Brighter DAPI quantile-ring schematic in Figure 3G only with unchanged spatial inference; corrected H&E HC3 inference, local-DAPI POMC QC, Cellpose S7 and power S8. Complete English masters and bilingual panels; current thesis and manuscripts remain local.",
+  "description": "Native microscopy intensities within the accepted ROIs in Figure 4F and its inset; Brighter DAPI quantile-ring schematic in Figure 3G only with unchanged spatial inference; corrected H&E HC3 inference, local-DAPI POMC QC, Cellpose S7 and power S8. Complete English masters and bilingual panels; current thesis and manuscripts remain local.",
   "base_manifest_sha256": "df2ebb51339fdc3cc84dd8bbfb232647570d7e2cd0f12c19a5538ff7b7dd071d",
   "archived_figure_count": 10,
   "updated_figure_count": 13,
@@ -2627,8 +2627,8 @@
     },
     {
       "path": "Fig4/03_make_figure_4_pomc_cfos.py",
-      "sha256": "2decff67382cbb4070a46f08e74f86fb90e79db2f12dc304934bbb62d7f2b9f7",
-      "size": 213888,
+      "sha256": "c52b3609ab6a0f67f87ade7c69b7854ff86343331af372216e1702ece4acf05f",
+      "size": 216304,
       "mode": "0755",
       "change": "updated"
     },
@@ -2662,43 +2662,43 @@
     },
     {
       "path": "Fig4/Figure_4.pdf",
-      "sha256": "0f29c3c007bf2b0a53a393b6a818543cf82ae8092b5e3f227640624a769bb9ca",
-      "size": 9853146,
+      "sha256": "2abaa6d67b21b41eb7c7007ca414394d0decc5c7113e46f9ba2d569ba24bd4ec",
+      "size": 9910694,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/Figure_4.png",
-      "sha256": "3c450cf409bde5acdebe56eb6fedf09b2d0803e676562a4c9fd33a9751cd5817",
-      "size": 12292710,
+      "sha256": "55b8e618dc6d7e7543c7903733ff1658fa6b891855a66863228f651234a3a2d8",
+      "size": 12353004,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/README.txt",
-      "sha256": "c5073aaa509f661d5f69fd4dabb6a56704cec12448115dd3a6c60fb914a00fab",
-      "size": 17987,
+      "sha256": "eba6c4fe9c18cd3955dd80258d43a80f89c3d6cb75f653c8d3b41db49cc2e6ae",
+      "size": 18744,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_4_LEGEND.txt",
-      "sha256": "2a8db1d5d4fe93c6159a705579a8eb86652270822c14c450627a22040ff0be55",
-      "size": 8961,
+      "sha256": "f172849c78a03c7d7604d1b56f45b9f500bd32fe9d36bfd813abc6303d412339",
+      "size": 9286,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_4_LEGEND_spanish.txt",
-      "sha256": "abf7bdfddc32a86cab4fa2785e13275807f618f5eaa02f2a7ef04065dcf9de59",
-      "size": 2628,
+      "sha256": "87916d771dc61801e65bd5eaea95df8c8fce2f63e2a81b6c327a5242f3fe3898",
+      "size": 2892,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_4_caption.txt",
-      "sha256": "2a8db1d5d4fe93c6159a705579a8eb86652270822c14c450627a22040ff0be55",
-      "size": 8961,
+      "sha256": "f172849c78a03c7d7604d1b56f45b9f500bd32fe9d36bfd813abc6303d412339",
+      "size": 9286,
       "mode": "0644",
       "change": "updated"
     },
@@ -2788,15 +2788,15 @@
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_F_microscopy_npy_gfp_LEGEND.txt",
-      "sha256": "50bf739a6eeaf7d670064f4c589b9a9f5c07a8550441e5ff791de0e4820dcc8b",
-      "size": 2069,
+      "sha256": "fce14f8b9b79570ff1584374b27951ed6e7160029762b071b2a6c824d8b359cf",
+      "size": 2390,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_F_microscopy_npy_gfp_LEGEND_spanish.txt",
-      "sha256": "e31cdd54619b2cbc1d180cf746175092c06fac6c7244e4bcda57725d9f5c2244",
-      "size": 1197,
+      "sha256": "8e7c4f5bf33ed3e5c54d88059891a3e0c0aecdaba30095a10b91ccf79a307564",
+      "size": 1461,
       "mode": "0644",
       "change": "updated"
     },
@@ -2858,15 +2858,15 @@
     },
     {
       "path": "Fig4/legends/multipanel_sensitivity_methods.txt",
-      "sha256": "5b7687065f05556d52b98ecdf99a67c40b66138ff3ad64add8b454fe294d27d9",
-      "size": 1734,
+      "sha256": "9e1561eba3b847fd45539b9f76179cccb78a2b7573d6b45469088e7446152cee",
+      "size": 1738,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_A_dapi.pdf",
-      "sha256": "2586f5e0316ccfeff5e34bd5f7fdcc886f99412cf0daf12020d24c1861b0c9b9",
-      "size": 9545636,
+      "sha256": "82e54122654d596fd12c970c3fe7c20629e30af26e58200b315c8ac602033962",
+      "size": 9603341,
       "mode": "0644",
       "change": "updated"
     },
@@ -2879,8 +2879,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_A_dapi_spanish.pdf",
-      "sha256": "7d8eaafbf053b7727222d50fe6872a5ef476e2382dbe6742cde2a5b5b139da28",
-      "size": 9576770,
+      "sha256": "a752c39f9b67b4df7d752fd736b6fa3bf328b3d05f6ff82966eb3d0b794cff04",
+      "size": 9634221,
       "mode": "0644",
       "change": "updated"
     },
@@ -2893,8 +2893,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_B_cfos.pdf",
-      "sha256": "fe9405fd72536f2f693e47892be4532261a5b9a5d2565b8c70800220fd5ea809",
-      "size": 9546128,
+      "sha256": "95b9a66c8ca2327d9216033ef5d27c1a19d4b11ea3289b399aebfcd8dceaa3e5",
+      "size": 9603821,
       "mode": "0644",
       "change": "updated"
     },
@@ -2907,8 +2907,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_B_cfos_spanish.pdf",
-      "sha256": "58037c72170a9b359c84805287395e744ac1fc458386755d6f6634e6cb860773",
-      "size": 9577227,
+      "sha256": "fe8f86795b23e33761783973ce0e62146c9441f198be1593f0363441ac88e353",
+      "size": 9634700,
       "mode": "0644",
       "change": "updated"
     },
@@ -2921,8 +2921,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_C_pomc.pdf",
-      "sha256": "9d986233ef1be97ce0872032433708a3a6cd7d79cebb2d3558d6443b2534a902",
-      "size": 9546438,
+      "sha256": "f6f249621249adacbd52362a54c2c647658f942209b7f541c42cf34f0bb0f240",
+      "size": 9604106,
       "mode": "0644",
       "change": "updated"
     },
@@ -2935,8 +2935,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_C_pomc_spanish.pdf",
-      "sha256": "c5e3cb070792e400f26abc6bf410d3408c1a30508b5da7cf2b05e82e8121bd2d",
-      "size": 9577506,
+      "sha256": "11a8e5342701ccbd15f5a78c08eeee304da4f5a115bfe07cddb027e46881fc51",
+      "size": 9634964,
       "mode": "0644",
       "change": "updated"
     },
@@ -2949,8 +2949,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_D_cellpose_cartoon.pdf",
-      "sha256": "1e674ff22e4f3e1d97e16d1297a99ab771f5d34993dcd265197efc1f09d5fe0e",
-      "size": 9828206,
+      "sha256": "e2aa95f56439589eb11b8f7ea91b2301f7af1de092bcd343568b10e56d15d8d9",
+      "size": 9885828,
       "mode": "0644",
       "change": "updated"
     },
@@ -2963,8 +2963,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_D_cellpose_cartoon_spanish.pdf",
-      "sha256": "6ca3dba9bb4f528236cf23e7fdc564d5e4552f4d730b24c6679fdb59c8834577",
-      "size": 9859365,
+      "sha256": "fa8b5733435bd4ff16ff6e1f649463ff51bcb8034819040abc4a613174ea45a1",
+      "size": 9916732,
       "mode": "0644",
       "change": "updated"
     },
@@ -2977,8 +2977,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy.pdf",
-      "sha256": "ed290c78b16f1f7e06f9ef1877d9a552ab746c2187c656c96edd9f8476945bbe",
-      "size": 9544931,
+      "sha256": "7be8aacbc23e33aa655fe1e8837cb1a6a1e58dc701de1795ef1050531a58782c",
+      "size": 9602582,
       "mode": "0644",
       "change": "updated"
     },
@@ -2991,8 +2991,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy_spanish.pdf",
-      "sha256": "0c539f1b2389446cf3c5e048ea2f146d25abc3fd9850d0c52f41c3eeeb7b37d1",
-      "size": 9576010,
+      "sha256": "0ef2997c0193474bc6d9f91d67278268833b430a7f53bd4cbacf99bce92e91ab",
+      "size": 9633468,
       "mode": "0644",
       "change": "updated"
     },
@@ -3005,36 +3005,36 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp.pdf",
-      "sha256": "fabee877f3429d71f2805edab9c07184a85bef9bdcbebeb5dd564ee842dcd358",
-      "size": 9563525,
+      "sha256": "aaa03380f57ce26088cf555fdc22ed444a0bb173af3c7dd14adb6ce2f8695c1b",
+      "size": 9621152,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp.png",
-      "sha256": "2f44b8dd35af686de9ff3e1b0937cf75f8649c8bd264189e36eb9bcbea862838",
-      "size": 2594528,
+      "sha256": "7982c098a66f30bcc5afc17db24e5072eef612778f2b09fef38621fb5c003c5e",
+      "size": 2653751,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp_spanish.pdf",
-      "sha256": "a08abbf13546354381be8b6e9df796913e1eec026e70a794853be9790be392f7",
-      "size": 9594704,
+      "sha256": "dd34819f0e99af92298a3b5d60ed120a592874373924221120932addea26c8d2",
+      "size": 9652146,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp_spanish.png",
-      "sha256": "ca0854e120262b222b2e3a9df3560286c68835ff30f9f233091f5e51692a4fb6",
-      "size": 2595337,
+      "sha256": "64dc06e23e8b54cc1a71d447b6321ada66c5f9321d7104975ca56b678b3c5159",
+      "size": 2662274,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi.pdf",
-      "sha256": "b8373412196d9690c2fadb6103cca9699cab8c46c0d32b5bdf6d25b486c96d4e",
-      "size": 9545832,
+      "sha256": "f0365887ca03cc59c954186f852a63fd55ef079c7e94f06e01117ff434933990",
+      "size": 9603468,
       "mode": "0644",
       "change": "updated"
     },
@@ -3047,8 +3047,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi_spanish.pdf",
-      "sha256": "625fb4202f5bccc31c2964108d6b5bf0602ed289a42baf1068f53fb3d174dccf",
-      "size": 9576881,
+      "sha256": "8572b2a7113b9fc9c47a947dedb62803675e40bfa87c08b017a2d8b54acfc93b",
+      "size": 9634314,
       "mode": "0644",
       "change": "updated"
     },
@@ -3061,8 +3061,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation.pdf",
-      "sha256": "e0f0886c5ac4716d17709a664c15981ec5fbc778f5eef595d52da28c9df651b8",
-      "size": 9546072,
+      "sha256": "5fd1effc40d60b012fc6edd69b48fd1809dc856c83694585c8b542a01c671e3f",
+      "size": 9603748,
       "mode": "0644",
       "change": "updated"
     },
@@ -3075,8 +3075,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation_spanish.pdf",
-      "sha256": "39861570aa924454003099e146e6476b6393d6ae27931e5271c3396dd18b6a2b",
-      "size": 9577158,
+      "sha256": "47cb3cb4baea11a30db25fa26e4b9db0b78d9af3c7cec98ca428f84c5eb51a77",
+      "size": 9634657,
       "mode": "0644",
       "change": "updated"
     },
@@ -3089,8 +3089,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_I_spatial_cfos.pdf",
-      "sha256": "2f83245ed89d11541400e4f019d274bc5146dbeb6114572c6e64b502123db40a",
-      "size": 9545554,
+      "sha256": "2d4f74380c6dabdb2bd1a2f6ab485fa92b56c1e12eb1bbec42b00ec6a995c8b4",
+      "size": 9603238,
       "mode": "0644",
       "change": "updated"
     },
@@ -3103,8 +3103,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_I_spatial_cfos_spanish.pdf",
-      "sha256": "599464b9cd39db5d0cc7ed68d6e39f5ab5601a5fe3b505fcbebed5cc072b1411",
-      "size": 9576593,
+      "sha256": "f4b3afbe7cfaf2d5d090384ea13b8a79f71a714ae6ecc23ce5765bf30270a9ac",
+      "size": 9634082,
       "mode": "0644",
       "change": "updated"
     },
@@ -3117,8 +3117,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_J_spatial_cfos_pomc.pdf",
-      "sha256": "1864b16024b84d33fa1df6ad8084c50cf0c7fabbf1b7ad8c92a3b1542bee76e5",
-      "size": 9545948,
+      "sha256": "a645b8b356664058f85a96aebaf668bad7ca612396f77c902cbe23eb88e8c156",
+      "size": 9603641,
       "mode": "0644",
       "change": "updated"
     },
@@ -3131,8 +3131,8 @@
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_J_spatial_cfos_pomc_spanish.pdf",
-      "sha256": "424513728880eb1dd56efa5121439267e3c29ab22b8a15870fb4bfd13b1408a2",
-      "size": 9577010,
+      "sha256": "cfecc8c7eab25bfb662dd4a43a1ba662c8dd5bec6d425bcb6df55f6555a5a788",
+      "size": 9634465,
       "mode": "0644",
       "change": "updated"
     },
@@ -3348,15 +3348,15 @@
     },
     {
       "path": "Fig4/provenance/multipanel_source_manifest.csv",
-      "sha256": "c2b0d2ad161a233b8e9980cf7ecc110e71abee3e20cad7aa415a5bf2dd3d12ca",
-      "size": 64933,
+      "sha256": "32a761fb36ddda65bb615c28f169960250dbbca74c4b5d300fa49d4d9cfe43cd",
+      "size": 65482,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/provenance/multipanel_spanish_translation_receipt.json",
-      "sha256": "3c0618de958992c63d1a13760d69b734d90abb2a4c5a1e40a91dfecdbcd06387",
-      "size": 1378,
+      "sha256": "d0351eac295b18ed62d575ed6b0a60c75253277ef248980818f63742ec0ab729",
+      "size": 1422,
       "mode": "0644",
       "change": "updated"
     },
@@ -3436,6 +3436,13 @@
       "size": 5852,
       "mode": "0644",
       "change": "updated"
+    },
+    {
+      "path": "Fig4/tests/test_pomc_microscopy.py",
+      "change": "added",
+      "sha256": "c74357942c81557d4d9974e9d5de7663a2a77555fa2eda6d328f71f52cd8aef8",
+      "size": 4014,
+      "mode": "0644"
     },
     {
       "path": "Fig4/tests/test_pomc_size_qc.py",
@@ -6960,8 +6967,8 @@
     },
     {
       "path": "scripts/Fig4/03_make_figure_4_pomc_cfos.py",
-      "sha256": "2decff67382cbb4070a46f08e74f86fb90e79db2f12dc304934bbb62d7f2b9f7",
-      "size": 213888,
+      "sha256": "c52b3609ab6a0f67f87ade7c69b7854ff86343331af372216e1702ece4acf05f",
+      "size": 216304,
       "mode": "0755",
       "change": "updated"
     },
@@ -7254,8 +7261,8 @@
     },
     {
       "path": "scripts/shared/03_safe_stage_fig45.py",
-      "sha256": "62e2abae2c28707356c24f9cc765b88f85057eb7ca8f9c4c6c398fd27c545788",
-      "size": 36914,
+      "sha256": "f2405fcc264823c1c71dd14f3138e3f49d91b072bb71274b18b9d98cbefca6c2",
+      "size": 37065,
       "mode": "0755",
       "change": "updated"
     },

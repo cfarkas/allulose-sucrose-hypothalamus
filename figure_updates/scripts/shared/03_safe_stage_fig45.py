@@ -77,12 +77,14 @@ from typing import Iterable, Sequence
 # Repinned 2026-08-31 after presentation terminology was standardized to HIL
 # in English and Spanish figure labels and legends.
 # Repinned 2026-09-01 after active workflow and QC presentation strings were normalized to HIL; stable CLI and receipt identifiers remain unchanged.
+# Repinned 2026-09-10 to the current publication scripts, including native
+# ROI-microscopy compositing in Figure 4F and the reviewed spatial updates.
 EXPECTED_HASHES = {
     "scripts/Fig4/02_analyze_pomc_cfos.py": "4f847cdd0521d9ef0f3c037b167ae06abf2f54f7927869867ab9e798c356b05c",
-    "scripts/Fig4/03_make_figure_4_pomc_cfos.py": "471f8b974ad35f4251f7c27deb6b895b3e8b2e7c4a65ab09b4565109755bbe2f",
-    "scripts/Fig4/05_analyze_spatial_distributions.py": "224e60de4fbb1049e070c717f9597916336bdce32440264ecadb987e90648051",
-    "scripts/Fig5/01_analyze_gfap_iba1_microglia.py": "6e889ca1d822a408ddefc303bf18989628186e828565a8cc431762990614a698",
-    "scripts/Fig5/02_make_figure_5_gfap_iba1_microglia.py": "c826581833f411c74f2cbaa27e264a9e3103850f31460f86b5bc7806f82d493c",
+    "scripts/Fig4/03_make_figure_4_pomc_cfos.py": "c52b3609ab6a0f67f87ade7c69b7854ff86343331af372216e1702ece4acf05f",
+    "scripts/Fig4/05_analyze_spatial_distributions.py": "f8495ee8c54bab4787e432401717e899d78f00802fb5c632dc0eb03402a3f412",
+    "scripts/Fig5/01_analyze_gfap_iba1_microglia.py": "9db6a653a99c975415ec4cd6e39628f6829103da690830abf5cdc6bc45f4eb3f",
+    "scripts/Fig5/02_make_figure_5_gfap_iba1_microglia.py": "4c77cbe76d3c30b5307c962c9114bbe1a494dc3bf7e4f367fd718777698feea7",
     "scripts/shared/01_annotate_regions.py": "189fbba65700a4b20db030f0ec0c018fd3e877fc6d5c594a43eb8e28c349c03d",
     "scripts/shared/02_validate_raw_cellpose_masks.py": "020b64b1d11638dd5601702696bc482d59f0dc139e02be7457b4e89871c10dab",
 }

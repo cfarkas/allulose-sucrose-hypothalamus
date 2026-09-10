@@ -5,7 +5,7 @@ Figura 4. POMC/c-FOS en ARC y ME con anatomía HIL aceptada.
 (C) Canal POMC aislado de los mismos píxeles, mostrado en ámbar. La suma recortada de A, B y C sobre coordenadas idénticas produce exactamente E.
 (D) Esquemas de segmentación Cellpose separados por canal para el campo de E. DAPI, c-FOS y POMC usan las máscaras procesadas verificadas; ARC y ME provienen únicamente de la máscara HIL aceptada.
 (E) Composición alineada 20× de DAPI, c-FOS y POMC. El recuadro muestra una célula POMC-positiva representativa y la caja discontinua identifica exactamente el campo ampliado.
-(F) Microscopía registrada DAPI/c-FOS/POMC/NPY-GFP. NPY-GFP conserva la intensidad transgénica completa; POMC conserva su intensidad real solo dentro de las ROIs aceptadas. El recuadro explica las distribuciones de ROIs.
+(F) Microscopía registrada DAPI/c-FOS/POMC/NPY-GFP. NPY-GFP conserva la intensidad transgénica completa; POMC conserva su intensidad real solo dentro de las ROIs aceptadas, con la misma escala y color que C, sin ganancia adicional. POMC y NPY-GFP usan mezcla de pantalla sobre DAPI/c-FOS. El recuadro muestra las intensidades microscópicas reales de ambos marcadores dentro de sus ROIs, con los mismos ajustes del campo completo; las máscaras no aportan rellenos uniformes de color.
 (G) Cociente c-FOS/DAPI por animal en ME y ARC.
 (H) Cociente c-FOS∧POMC/POMC total por animal en ME y ARC; es la variable primaria preespecificada de activación de POMC.
 (I) Ocurrencia espacial de núcleos c-FOS positivos en seis capas radiales con aproximadamente igual número de núcleos DAPI, resumida una vez por animal.

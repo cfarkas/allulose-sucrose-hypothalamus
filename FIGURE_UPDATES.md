@@ -1,3 +1,21 @@
+# Native microscopy in Figure 4F — 10 September 2026
+
+The main POMC overlay and the POMC/NPY-GFP inset display measured channel
+intensities inside the accepted marker ROIs. The inset's uniform marker fills
+have been removed. POMC uses the same full-field intensity normalization and
+amber tint as panel C, without additional gain. Screen compositing preserves
+variation that additive clipping could obscure. ROI membership defines support;
+it cannot supply color or change another ROI's contrast. DAPI/c-FOS and the
+ungated NPY-GFP signal retain their existing display settings.
+
+The figure renderer, its script mirror, bilingual legends and staged-run code
+pins are updated together. Five display regressions check dark source pixels,
+native intensity variation, independence from label numbering and membership,
+bright-channel compositing, and registered geometry. GitHub runs these checks
+alongside the publication checks. Figure 4 has panels A–J; the ring cartoon
+continues to appear only in Figure 3G. Source TIFFs, masks and quantitative
+results are unchanged. Updated Word/PDF manuscripts remain local.
+
 # Ring-definition schematic — 10 September 2026
 
 Figure **3G** alone shows DAPI nuclei around a schematic third ventricle, six rings with the inner two highlighted, and a single within-ring percentage formula. The third ventricle has a narrow superior neck and a flared, rounded base; DAPI points and ring colors have stronger contrast. Methods and caveats are in the legends. Inner rings 1–2 contain approximately one-third of eligible nuclei. The schematic uses illustrative DAPI nuclei; experimental measurements and inference are unchanged.

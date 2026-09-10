@@ -7,7 +7,8 @@ sum is exactly Panel E. Panel D is a channel-separated Cellpose cartoon row.
 Panel E is that three-channel merge with its deterministic POMC-positive-cell
 magnification inset. Panel F shows DAPI/c-FOS/NPY-GFP microscopy plus real POMC
 intensity strictly masked to the registered POMC ROI interiors; its smaller
-inset paints the exact POMC/NPY-GFP ROI interiors and adds dashed white tissue
+inset shows native POMC/NPY-GFP microscopy intensities inside the same ROIs,
+using the same channel display settings, and adds dashed white tissue
 and ventricular guides. Panels G-H show compact
 animal-level results with vertical primary p-value blocks. Detailed raw ANOVA/MWU
 methods and cage sensitivities are written to the legend and deterministic TXT/CSV
@@ -143,12 +144,10 @@ POMC_MERGE_LABEL_COLOR = "#ffb43d"
 # Green means NPY-GFP across the paper; Figure 3 uses this exact value.
 NPY_GFP_COLOR = "#00e85e"
 # Panel F shows the real registered POMC intensity only within accepted POMC
-# ROI interiors. The restrained gain retains intracellular intensity variation
-# without restoring the former whole-field amber saturation.
-PANEL_F_POMC_ROI_COLOR = "#e89a2f"
-PANEL_F_POMC_SIGNAL_GAIN = 0.72
-# The distribution inset paints the exact NPY-GFP ROI interiors in fluorescent
-# green. No outline, halo, or morphological dilation is applied.
+# ROI interiors, with exactly the Panel C channel display settings. Screen
+# compositing avoids the additional clipping caused by adding POMC to the base.
+# Main field and inset share intensity layers; ROIs never supply image color.
+# This bright green is used only for text; image color comes from microscopy.
 NPY_GFP_INSET_COLOR = "#00ff4f"
 # Exact per-channel contributions summed by raw_composite. Panels A-C show these
 # three views in isolation, so the merged field in Panel E is their clipped sum.
@@ -181,6 +180,7 @@ CELLPOSE_MARKERS = {"DAPI": "dapi", "POMC": "pomc", "c-FOS": "cfos", "NPY": "npy
 SPATIAL_PANEL_NAMES = ("Figure4_Spatial_cFOS_occurrence.png",
                        "Figure4_Spatial_cFOS_POMC_occurrence.png")
 SPANISH_PANEL_TEXT = {
+    "POMC (within ROIs)": "POMC (en ROIs)",
     "Tissue boundary": "Límite tisular",
     "Cellpose segmentation cartoon of the representative field":
         "Segmentación Cellpose del campo representativo",
@@ -2210,6 +2210,29 @@ def npy_gfp_display_normalize(arr: np.ndarray, gamma: float = 0.72) -> np.ndarra
     return np.power(np.clip((x - lo) / (hi - lo), 0, 1), gamma).astype(np.float32)
 
 
+def roi_microscopy_view(
+    channel: np.ndarray, roi_labels: np.ndarray, marker: str,
+) -> np.ndarray:
+    """Retain a full-field microscopy display only at exact marker-ROI pixels.
+
+    Normalize before applying the mask, so changing ROI membership cannot
+    stretch the intensity of another ROI. Label values provide support only;
+    all displayed color and within-cell variation come from the source channel.
+    """
+    channel = np.asarray(channel)
+    roi_labels = np.asarray(roi_labels)
+    if channel.ndim != 2 or channel.shape != roi_labels.shape:
+        raise ValueError("Microscopy and ROI labels must share one 2-D registered field")
+    if marker == "POMC":
+        rgb = single_channel_view(channel, marker)
+    elif marker == "NPY-GFP":
+        rgb = (npy_gfp_display_normalize(channel)[..., None]
+               * np.asarray(NPY_GFP_COMPOSITE_TINT, dtype=np.float64))
+    else:
+        raise ValueError(f"Unsupported ROI microscopy channel: {marker!r}")
+    return np.where((roi_labels > 0)[..., None], rgb, 0.0)
+
+
 def composite_with_roi_masked_pomc_signal_and_npy_gfp(
     dapi: np.ndarray, cfos: np.ndarray, pomc: np.ndarray, npy_gfp: np.ndarray,
     pomc_roi_labels: np.ndarray,
@@ -2217,11 +2240,11 @@ def composite_with_roi_masked_pomc_signal_and_npy_gfp(
     """Panel F microscopy with real POMC intensity gated by accepted ROIs.
 
     DAPI, c-FOS and POMC use the same full-field channel normalization shown in
-    A-C/E. The POMC contribution is multiplied by PANEL_F_POMC_SIGNAL_GAIN and
-    then retained only where the registered processed POMC label TIFF is > 0.
-    NPY-GFP receives its audited display window over that composite. No flat
-    ROI paint, outline, dilation, spatial filter, interpolation, or resampling
-    is used.
+    A-C/E. The exact Panel C POMC display is retained only where the registered
+    processed POMC label TIFF is > 0, then screen-composited over DAPI/c-FOS.
+    NPY-GFP receives its audited display window over that composite. No extra
+    POMC gain, ROI-specific normalization, flat ROI paint, outline, dilation,
+    spatial filter, interpolation, or resampling is used.
     """
     pomc_roi_labels = np.asarray(pomc_roi_labels)
     if not (
@@ -2241,11 +2264,9 @@ def composite_with_roi_masked_pomc_signal_and_npy_gfp(
         + single_channel_view(cfos, "c-FOS"),
         0, 1,
     )
-    pomc_signal = (
-        single_channel_view(pomc, "POMC") * PANEL_F_POMC_SIGNAL_GAIN
-    )
-    pomc_signal[~pomc_roi_mask] = 0.0
-    base = np.clip(dapi_cfos + pomc_signal, 0, 1)
+    pomc_signal = roi_microscopy_view(pomc, pomc_roi_labels, "POMC")
+    base = 1.0 - (1.0 - dapi_cfos) * (1.0 - pomc_signal)
+    base[~pomc_roi_mask] = dapi_cfos[~pomc_roi_mask]
     npy_rgb = (
         npy_gfp_display_normalize(npy_gfp)[..., None]
         * np.asarray(NPY_GFP_COMPOSITE_TINT, dtype=np.float64)
@@ -2392,15 +2413,18 @@ def add_field_identity(ax: plt.Axes, chosen: pd.Series, font_size: float = 11.0)
 
 
 def add_marker_distribution_inset(
-    ax: plt.Axes, pomc_roi_labels: np.ndarray, npy_gfp_roi_labels: np.ndarray,
+    ax: plt.Axes, pomc: np.ndarray, npy_gfp: np.ndarray,
+    pomc_roi_labels: np.ndarray, npy_gfp_roi_labels: np.ndarray,
     tissue: np.ndarray, ventricle_lumen: np.ndarray,
     um_per_px: float, scale_bar_um: float,
 ) -> Dict[str, object]:
-    """Paint exact marker ROIs plus dashed tissue and ventricular guides.
+    """Show microscopy within exact ROIs, with tissue and ventricular guides.
 
     These are the processed registered marker-label TIFFs, not DAPI-nucleus
-    surrogates. The black background carries no tissue or ARC/ME fill. Marker
-    ROIs have no contour. Thin white dashed lines delimit the DAPI-supported
+    surrogates. Each marker uses its full-field microscopy display before masking,
+    identical to its contribution to the main field. The black background carries
+    no tissue or ARC/ME fill. Marker ROIs have no contour or uniform fill.
+    Thin white dashed lines delimit the DAPI-supported
     tissue exterior and the HIL-ARC-derived ventricular lumen. There is no halo,
     dilation, smoothing, or resampling.
     """
@@ -2425,12 +2449,11 @@ def add_marker_distribution_inset(
     }
     if not pomc_mask.any() or not npy_gfp_mask.any():
         raise ValueError("Panel F requires nonempty POMC and NPY-GFP ROI label TIFFs")
-    rgb = np.zeros((*pomc_roi_labels.shape, 3), dtype=np.float32)
-    rgb[pomc_mask] = matplotlib.colors.to_rgb(PANEL_F_POMC_ROI_COLOR)
-    # Componentwise maximum makes the 137 shared pixels visible as the combined
-    # amber/green color instead of silently letting one ROI class erase the other.
-    npy_color = np.asarray(matplotlib.colors.to_rgb(NPY_GFP_INSET_COLOR), dtype=np.float32)
-    rgb[npy_gfp_mask] = np.maximum(rgb[npy_gfp_mask], npy_color)
+    pomc_rgb = roi_microscopy_view(pomc, pomc_roi_labels, "POMC")
+    npy_rgb = roi_microscopy_view(npy_gfp, npy_gfp_roi_labels, "NPY-GFP")
+    # Screen both measured signals at shared pixels without replacing either
+    # channel by a label color or clipping their sum to an opaque patch.
+    rgb = 1.0 - (1.0 - pomc_rgb) * (1.0 - npy_rgb)
 
     # Forty percent is modestly smaller than the preceding 46% inset while still
     # rendering the native ROI interiors clearly at the fixed 600 dpi export.
@@ -2454,7 +2477,7 @@ def add_marker_distribution_inset(
         iax, pomc_roi_labels.shape, um_per_px, scale_bar_um, font_size=8.0, inset=True,
     )
     entries = [
-        ("POMC ROIs", PANEL_F_POMC_ROI_COLOR, counts["POMC"]),
+        ("POMC ROIs", POMC_MERGE_LABEL_COLOR, counts["POMC"]),
         ("NPY-GFP ROIs", NPY_GFP_INSET_COLOR, counts["NPY-GFP"]),
     ]
     for index, (name, color, count) in enumerate(entries):
@@ -2482,12 +2505,17 @@ def add_marker_distribution_inset(
         "ventricle_boundary_width_pt": 1.05,
         "ventricle_boundary_linestyle": "dashed",
         "arc_me_region_contours_drawn": False,
-        "npy_gfp_color": NPY_GFP_INSET_COLOR,
-        "pomc_color": PANEL_F_POMC_ROI_COLOR,
+        "display": "registered microscopy intensities within exact marker ROIs",
+        "uniform_roi_fill": False,
+        "channel_display_settings_shared_with_main_field": True,
+        "marker_blend": "screen",
+        "npy_gfp_tint_rgb": list(NPY_GFP_COMPOSITE_TINT),
+        "pomc_tint_rgb": list(COMPOSITE_CHANNEL_TINTS["POMC"]),
         "width_percent": 40.0,
         "height_percent": 40.0,
         "source": (
-            "exact registered processed POMC/NPY-GFP label TIFF interiors; "
+            "registered POMC/NPY-GFP microscopy TIFFs gated by their exact "
+            "processed label TIFF interiors; "
             "DAPI tissue envelope; HIL-ARC-derived ventricular lumen"
         ),
     }
@@ -2502,7 +2530,7 @@ def add_merge_channel_key(
     if include_npy_gfp:
         labels.append(("NPY-GFP", NPY_GFP_INSET_COLOR))
     labels.extend([
-        ("POMC (ROI-masked)" if pomc_rois_only else "POMC",
+        ("POMC (within ROIs)" if pomc_rois_only else "POMC",
          POMC_MERGE_LABEL_COLOR),
         ("c-FOS", "#ff37d4"),
         ("DAPI", "#4f86ff"),
@@ -3333,15 +3361,19 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
         "registered TIFF in fluorescent green with a deterministic whole-field "
         "median/99.7th-percentile background display window and gamma 0.72, followed by a "
         "monotone screen blend. This true transgenic signal is not gated by the NPY-GFP ROI "
-        "mask; that ROI mask is used only in the explanatory inset. The real registered POMC "
-        "intensity uses the same full-field normalization as C/E, is reduced to display gain "
-        f"{PANEL_F_POMC_SIGNAL_GAIN:.2f}, and is then retained strictly inside the exact processed "
+        "mask; that ROI mask is used only in the inset. The real registered POMC "
+        "intensity uses exactly the same full-field normalization and amber tint as C/E, "
+        "with no additional gain. It is retained strictly inside the exact processed "
         f"POMC ROIs (n={int(panel_f_distribution['pomc_rois'])}; "
         f"{int(panel_f_distribution['pomc_roi_pixels']):,} pixels). No flat ROI paint is used, "
-        "and POMC contributes zero signal outside those ROIs. The upper-right "
-        f"inset paints those same POMC ROI interiors and {int(panel_f_distribution['npy_gfp_rois'])} "
-        f"NPY-GFP ROI interiors ({int(panel_f_distribution['npy_gfp_roi_pixels']):,} pixels) on "
-        "black. It is 40% of the panel width. Thin white dashed lines delimit the DAPI-supported "
+        "and POMC contributes zero signal outside those ROIs. POMC and NPY-GFP are "
+        "screen-composited over DAPI/c-FOS to avoid additional clipping of summed channels. "
+        "The upper-right inset shows those same POMC microscopy pixels and real NPY-GFP "
+        f"intensities within {int(panel_f_distribution['npy_gfp_rois'])} NPY-GFP ROIs "
+        f"({int(panel_f_distribution['npy_gfp_roi_pixels']):,} pixels), using the same full-field "
+        "display settings and screen blend on black. ROI labels define where signal is "
+        "shown; they never replace the measured within-cell intensity variation with a "
+        "uniform fill. The inset is 40% of the panel width. Thin white dashed lines delimit the DAPI-supported "
         "tissue exterior and HIL-ARC-derived ventricular lumen. No tissue or ARC/ME fill, marker "
         "ROI outline, ARC/ME contour, halo, dot dilation, smoothing, or resampling is present. "
         f"The {int(panel_f_distribution['overlap_pixels'])} pixels shared by the processed marker "
@@ -3411,7 +3443,11 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
         "F_microscopy_npy_gfp": (
             "(F) Microscopía registrada DAPI/c-FOS/POMC/NPY-GFP. NPY-GFP conserva la "
             "intensidad transgénica completa; POMC conserva su intensidad real solo "
-            "dentro de las ROIs aceptadas. El recuadro explica las distribuciones de ROIs."
+            "dentro de las ROIs aceptadas, con la misma escala y color que C, sin ganancia "
+            "adicional. POMC y NPY-GFP usan mezcla de pantalla sobre DAPI/c-FOS. El recuadro "
+            "muestra las intensidades microscópicas reales de ambos marcadores dentro de "
+            "sus ROIs, con los mismos ajustes del campo completo; las máscaras no aportan "
+            "rellenos uniformes de color."
         ),
         "G_cfos_dapi": (
             "(G) Cociente c-FOS/DAPI por animal en ME y ARC."
@@ -3710,7 +3746,7 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
     ax_b.imshow(composite_npy_gfp, interpolation="nearest")
     add_scalebar(ax_b, dapi.shape, args.um_per_px, args.scalebar_um)
     panel_f_distribution_info = add_marker_distribution_inset(
-        ax_b, pomc_roi_labels, npy_gfp_roi_labels,
+        ax_b, pomc, npy_gfp, pomc_roi_labels, npy_gfp_roi_labels,
         tissue_envelope, hil_ventricle_lumen,
         args.um_per_px, args.scalebar_um,
     )
@@ -3890,7 +3926,7 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         "spanish_translation_receipt_sha256": sha256_file(translation_receipt_path),
         **{f"inset_{k}": v for k, v in inset_info.items()},
         "panel_E_content": "exact A+B+C merged microscopy with registered POMC-cell magnification inset",
-        "panel_F_content": "registered DAPI/c-FOS/NPY-GFP microscopy plus real POMC intensity masked to accepted POMC ROIs; 40% ROI inset with dashed tissue/ventricle guides",
+        "panel_F_content": "registered DAPI/c-FOS/NPY-GFP microscopy plus real POMC intensity masked to accepted POMC ROIs; 40% microscopy-intensity ROI inset with dashed tissue/ventricle guides",
         **{
             f"panel_F_distribution_{key}": value
             for key, value in panel_f_distribution_info.items()
@@ -3903,10 +3939,13 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         "panel_F_pomc_roi_label_source": str(pomc_size_path),
         "panel_F_pomc_size_qc": pomc_size_qc,
         "panel_F_pomc_roi_label_sha256": sha256_file(pomc_size_path),
-        "panel_F_pomc_signal_gain": PANEL_F_POMC_SIGNAL_GAIN,
-        "panel_F_pomc_signal_normalization": "same full-field positive-pixel 0.5/99.7 percentiles and gamma 0.82 as panels C/E; gain applied before exact ROI mask",
+        "panel_F_pomc_signal_gain": 1.0,
+        "panel_F_pomc_signal_normalization": "same full-field positive-pixel 0.5/99.7 percentiles, gamma 0.82 and amber tint as panels C/E; no additional gain or ROI-specific normalization",
         "panel_F_pomc_signal_mask_method": "real normalized POMC intensity multiplied by label>0; zero contribution outside; no flat paint/outline/dilation/filter/resampling",
         "panel_F_pomc_signal_pixels_outside_roi": 0,
+        "panel_F_pomc_blend": "screen over DAPI/c-FOS; no additive clipping",
+        "panel_F_inset_uses_microscopy_intensities": True,
+        "panel_F_inset_uniform_roi_fill": False,
         "panel_F_npy_gfp_intensity_source": str(sources["npy"]),
         "panel_F_npy_gfp_intensity_sha256": sha256_file(sources["npy"]),
         "panel_F_npy_gfp_display_normalization": "whole-field percentiles 50.0/99.7; clip 0/1; gamma 0.72; no mask/filter/resampling",
@@ -3914,7 +3953,7 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         "panel_F_npy_gfp_tint_rgb": ",".join(f"{value:g}" for value in NPY_GFP_COMPOSITE_TINT),
         "panel_F_npy_gfp_microscopy_roi_gated": False,
         "panel_F_npy_gfp_roi_labels_used_in_main_microscopy": False,
-        "panel_F_npy_gfp_roi_labels_used_in_cartoon_inset": True,
+        "panel_F_npy_gfp_roi_labels_used_in_microscopy_inset": True,
         "panel_F_screen_blend_cannot_reduce_dapi_cfos_base_rgb_components": True,
         "panel_F_tissue_outline": "white dashed DAPI-supported exterior in ROI inset",
         "panel_F_ventricle_outline": "white dashed HIL-ARC-derived lumen in ROI inset",
@@ -4002,12 +4041,12 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         "panel_F_raw_npy_gfp_reconstruction_matches_analysis_labels": True,
         "panel_F_microscopy_uses_segmentation_masks": True,
         "panel_F_microscopy_segmentation_mask_scope": "POMC intensity gate only; DAPI/c-FOS/NPY-GFP are ungated microscopy intensities",
-        "panel_F_cartoon_inset_uses_segmentation_masks": True,
+        "panel_F_microscopy_inset_uses_segmentation_masks": True,
         "panel_E_displayed_regions": "",
         "panel_F_displayed_regions": "",
         "panel_F_distribution_inset_region_contour_width_pt": 0.0,
         "panel_F_distribution_inset_roi_contour_width_pt": 0.0,
-        "panel_F_distribution_inset_marker_rois_are_filled_without_outlines": True,
+        "panel_F_distribution_inset_marker_intensities_are_masked_without_outlines": True,
         "panel_F_distribution_inset_has_white_dashed_tissue_boundary": True,
         "panel_F_distribution_inset_has_white_dashed_ventricle_boundary": True,
         "panel_E_displayed_mask_is_exact_accepted_HIL": False,

@@ -188,20 +188,24 @@ the lower left is the deterministic POMC-positive-cell magnification; the dashed
 box and two leaders mark exactly the region it magnifies. No NPY-GFP intensity
 or segmentation layer is present in E.
 
-Panel F names NPY-GFP with GFP as the suffix. Its DAPI and c-FOS contributions
-use the exact registered microscopy planes, and the real NPY-GFP TIFF uses a
-deterministic median/99.7th-percentile display window and gamma 0.72 followed by
-a monotone screen blend. The NPY-GFP microscopy is not ROI-gated: its complete
-transgenic green signal is retained, including signal outside the NPY-GFP ROI
-mask. The real registered POMC TIFF uses the same full-field normalization as
-panels C/E, is reduced to display gain 0.72, and is then multiplied by the exact
-accepted POMC mask. It therefore retains 254 natural intensity levels and
-contributes at 11,759 signal-bearing pixels inside the 11,790-pixel mask, with
-zero contribution outside it. No flat POMC paint is used. The 40%-wide black
-cartoon inset fills the exact 62 POMC and 202 NPY-GFP ROI interiors without
-marker-ROI outlines. Thin white dashed lines delimit the DAPI-supported tissue
-exterior and HIL-ARC-derived ventricular lumen; no tissue/ARC/ME fill, ARC/ME
-contour, halo, dilation, smoothing, interpolation, or resampling is present.
+Panel F uses the registered microscopy TIFFs. DAPI and c-FOS retain their
+existing display settings. POMC uses exactly the same full-field intensity
+normalization and amber tint as C/E, with no extra gain, and is retained only
+within the accepted size-filtered POMC ROIs. The mask defines support only:
+zero source intensity stays dark and within-cell texture comes from microscopy.
+POMC is screen-composited over DAPI/c-FOS to avoid the extra saturation caused
+by summing bright channels. NPY-GFP retains its full-field median/99.7th-percentile
+display window, gamma 0.72, and screen blend; its main-field signal is ungated.
+
+The 40%-wide inset now shows actual POMC and NPY-GFP microscopy intensities
+within their respective ROIs, using the same full-field channel settings as
+the main image. It contains no uniform marker fill. Both signals contribute
+at overlapping pixels. Inset counts are taken directly from the displayed
+labels (52 POMC and 202 NPY-GFP ROIs in FR722 S02). Thin dashed white guides
+mark the tissue exterior and ventricular lumen. No mask dilation, smoothing,
+per-ROI contrast adjustment, or geometric resampling is applied. Display tints
+are fluorescence channel pseudocolors; their brightness and texture come from
+the registered microscopy rather than from the segmentation labels.
 
 Channel colours are fixed paper-wide: DAPI blue, c-FOS magenta, NPY-GFP green. POMC
 is amber, and was green until 2026-08-27, which collided with NPY. The medial
@@ -321,3 +325,12 @@ A–J panels; the spatial plots I/J and their legends refer to the shared method
 Rings are constructed within each reconstructed section, with corresponding-ring
 positive and DAPI counts summed across an animal before calculating percentages.
 No duplicate ring cartoon is included in this figure.
+
+Microscopy ROI update, 10 September 2026
+-----------------------------------------
+The renderer and its scripts/Fig4 mirror share one ROI-microscopy function for
+both Figure 4F views. Run the independent display regressions with:
+  python -m unittest discover -s Fig4/tests -p test_pomc_microscopy.py -v
+The tests check dark ROI pixels, native intensity variation, unchanged display
+when other labels are added, screen-blend detail, and coordinate mismatches.
+The registered source TIFFs, accepted masks, counts and inference are unchanged.

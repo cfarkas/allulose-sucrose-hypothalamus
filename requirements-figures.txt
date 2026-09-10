@@ -1,6 +1,8 @@
-# Exact versions used for the independent Figure 1/S6 render checks.
+# Exact versions used for Figure 1/S6 checks and Figure 4 microscopy regressions.
 numpy==2.2.6
 pandas==2.3.3
 matplotlib==3.10.9
 Pillow==12.2.0
 scipy==1.15.3
+scikit-image==0.25.2
+tifffile==2025.5.10

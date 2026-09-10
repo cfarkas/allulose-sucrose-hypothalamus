@@ -130,3 +130,8 @@ For the original ten-figure release in an unmodified reconstruction, use
 **Reusing this work:** cite the relevant Zenodo records using their DOIs.
 Code is MIT-licensed; original documents and data are CC BY 4.0
 ([license details](LICENSE)).
+
+Figure 4F now displays microscopy intensities inside the accepted POMC ROIs,
+including the POMC/NPY-GFP inset. No uniform marker fills are used in those
+microscopy views. The matching scripts, legends, and display regression checks
+are included in [the figure updates](FIGURE_UPDATES.md).
