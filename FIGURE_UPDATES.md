@@ -1,3 +1,15 @@
+# Ring-definition cartoons — 10 September 2026
+
+Figure **3G** and Figure **4K** show DAPI nuclei around a schematic third ventricle, six rings with the inner two highlighted, and a single within-ring percentage formula. Methods and caveats are in the legends. Inner rings 1–2 contain approximately one-third of eligible nuclei. The cartoons use illustrative DAPI nuclei; experimental measurements and inference are unchanged.
+
+The NPY profile uses one field per animal. POMC rings are constructed within each reconstructed section, and corresponding-ring numerators and denominators are summed across sections before calculating each animal's six percentages. Equal nuclear counts do not imply equal ring areas, ring thicknesses or atlas-registered anatomy.
+
+Figure 3 uses the available middle-row space: E/F at left, ring schematic G at right, and spatial panels H/I below. The English master figures contain 9 and 11 panels, respectively; all individual panels and legends are available in English and Spanish. The shared [cartoon renderer](figure_updates/scripts/shared/spatial_ring_cartoon.py) recreates the tissue schematic and uses the same ring assignments as the analysis. The Figure 3 finishing step also renders current spatial-panel layouts from certified numerical tables, preserving the historical sealed analysis.
+
+Checks include both affected spatial reruns, exact agreement with ten prior numerical tables, within-ring denominators and transforms, mathematical checks against both production shell functions, and complete figure output validation. NPY PERMANOVA p=0.010714, q=0.021429 and dispersion p=0.014286, q=0.028571 are unchanged. POMC spatial double-positive p=q=0.920080 is unchanged. A complete 13-figure raw-data replay was not required or performed for this presentation update. Current Word documents remain local; the submitted thesis was not modified.
+
+Radial shell methods have published precedents. Mehta et al. (2013), [IMACULAT](https://doi.org/10.1371/journal.pone.0061386), used equal-area elliptical shells within individual nuclei. Our custom exploratory implementation uses approximately equal numbers of DAPI nuclei across a tissue field. No claim of first use or validation of the exact hypothalamic implementation is made.
+
 # Current figure scripts and data — 9 September 2026
 
 The current update contains thirteen figures: five main figures and S1–S8.
@@ -188,3 +200,5 @@ linked to earlier versions. **No new Zenodo version was published by this GitHub
 Code remains MIT-licensed; original data/figures remain CC BY 4.0. The separate
 DINOv2 asset downloader retrieves upstream Apache-2.0 source and weights directly
 from their public hosts and verifies their frozen hashes.
+
+Local document work is now stored in `thesis_and_manuscript/`. Input resolvers accept this name and the earlier dated folder; both document-workspace names remain excluded from public bundles.

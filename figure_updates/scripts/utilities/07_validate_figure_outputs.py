@@ -123,12 +123,15 @@ def validate(figure: str, root: Path) -> dict[str, object]:
     if figure=='Fig3' and complete.exists():
         receipt=json.loads(complete.read_text())
         require(receipt['schema']=='figure3_complete_three_conditions_v1','Unknown complete Figure 3 provenance')
-        require(set(receipt['panel_map'])==set('ABCDEFGH'),'Incomplete three-condition panel map')
+        expected = 'ABCDEFGHI' if receipt.get('ring_cartoon') else 'ABCDEFGH'
+        require(set(receipt['panel_map'])==set(expected),'Incomplete three-condition panel map')
         require(receipt.get('publication_language')=='en','Complete Figure 3 must have an English master')
         master=root/'Figure_3_cFos_NPY.pdf'
         require(hashlib.sha256(master.read_bytes()).hexdigest()==next(x['sha256'] for x in receipt['figures'] if x['language']=='en'),'Master does not match complete Figure 3 receipt')
         require(not list(root.glob('Figure_3_cFos_NPY_spanish.*')),'Unexpected complete Spanish master; retain only bilingual subpanels and legends')
-        contract=replace(contract,panel_count=8)
+        contract=replace(contract,panel_count=len(expected))
+    if figure == "Fig4" and (root/"panels/Figure_ARC_ME_panel_K_ring_definition.pdf").is_file():
+        contract=replace(contract,panel_count=11)
     master_dir, panels_dir, legends_dir = output_layout(root)
     stem = master_stem(master_dir, contract)
     master_png = master_dir / f"{stem}.png"

@@ -3,7 +3,7 @@
 
 This is the Figure 3 spatial analysis applied to Figure 4's reconstructed
 ARC/ME sections. Within each reconstructed section the DAPI centroids define
-six covariance-normalized radial shells of equal DAPI density. c-FOS/DAPI and
+six covariance-normalized radial shells of approximately equal DAPI counts. c-FOS/DAPI and
 c-FOS+POMC/DAPI occurrence rates are calculated in every shell, transformed by
 arcsin(sqrt(p)), and compared between conditions by an exhaustive animal-label
 PERMANOVA over every allocation that preserves the observed group sizes.
@@ -123,7 +123,7 @@ SPANISH_PANEL_TEXT = {
     "c-FOS⁺POMC⁺ spatial occurrence": "Distribución espacial de c-FOS⁺POMC⁺",
     "c-FOS⁺ nuclei / DAPI nuclei (%)": "Núcleos c-FOS⁺ / núcleos DAPI (%)",
     "c-FOS⁺POMC⁺ nuclei / DAPI nuclei (%)": "Núcleos c-FOS⁺POMC⁺ / núcleos DAPI (%)",
-    "Equal-DAPI-density radial shell": "Capa radial de igual densidad DAPI",
+    "DAPI-count quantile ring": "Anillo por cuantiles DAPI",
     "Exact PERMANOVA p": "PERMANOVA exacta p",
     "Condition means": "Medias por condición",
     "radial shell": "capa radial",
@@ -156,7 +156,7 @@ def sha256_file(path: Path, chunk_size: int = 8 * 1024 * 1024) -> str:
 def covariance_normalized_radial_shells(
     dapi_points: np.ndarray,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """Six equal-DAPI-density shells, identical in method to Figure 3's."""
+    """Six approximately equal-DAPI-count shells, identical in method to Figure 3's."""
     centered = dapi_points - np.mean(dapi_points, axis=0, keepdims=True)
     covariance = np.cov(centered, rowvar=False)
     eigenvalues, eigenvectors = np.linalg.eigh(covariance)
@@ -240,7 +240,7 @@ def extract_features(frame: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, p
             bucket["double_occurrence"] += int(np.count_nonzero(is_double & selected))
         if max(denominators) - min(denominators) > 1:
             raise RuntimeError(
-                f"DAPI quantile shells are not equal-density for "
+                f"DAPI quantile shells are not approximately equal-count for "
                 f"{animal_id}/{section_index}: {denominators}"
             )
         audit_rows.append({
@@ -527,7 +527,7 @@ def save_panel(features: pd.DataFrame, summary: pd.DataFrame,
     axis.set_xlim(0.72, N_RADIAL_SHELLS + 0.28)
     axis.set_xticks(x_values)
     axis.set_xticklabels(["1\ninner", "2", "3", "4", "5", "6\nouter"])
-    axis.set_xlabel("Equal-DAPI-density radial shell", labelpad=3.0)
+    axis.set_xlabel("DAPI-count quantile ring", labelpad=3.0)
     axis.set_ylabel(endpoint.y_label, labelpad=4.0)
     axis.set_title(endpoint.plot_title, loc="left", fontweight="bold", pad=8.0)
     axis.text(0.98, 0.955,
@@ -652,7 +652,7 @@ def main() -> int:
         "created_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "method": (
             "Figure 3's spatial occurrence analysis applied to Figure 4's reconstructed "
-            "ARC/ME sections: six covariance-normalized equal-DAPI-density radial shells, "
+            "ARC/ME sections: six covariance-normalized approximately equal-DAPI-count radial shells, "
             "arcsin(sqrt(p)) shell occurrence, exhaustive animal-label PERMANOVA, "
             "Benjamini-Hochberg across the two endpoints"
         ),

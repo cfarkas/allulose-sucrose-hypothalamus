@@ -63,10 +63,10 @@ EXPECTED_LABELINGS = 1680
 ANALYSIS_VERSION = "fig3_spatial_distribution_v1.3_2026-08-28"
 # Display-only F/G source layout. Keep the inferential radial profile on the
 # left and use the available right-side space for a larger descriptive heatmap.
-SPATIAL_PANEL_FIGSIZE = (6.40, 3.12)
+SPATIAL_PANEL_FIGSIZE = (6.60, 3.12)
 SPATIAL_PANEL_GRID_WIDTH_RATIOS = (2.55, 1.45)
 SPATIAL_PANEL_GRID_WSPACE = 0.26
-SPATIAL_PANEL_MARGINS = {"left": 0.112, "right": 0.985, "bottom": 0.205, "top": 0.79}
+SPATIAL_PANEL_MARGINS = {"left": 0.112, "right": 0.96, "bottom": 0.27, "top": 0.79}
 SPATIAL_PROFILE_MIN_WIDTH_INCHES = 3.00
 SPATIAL_HEATMAP_MIN_WIDTH_INCHES = 1.50
 
@@ -413,7 +413,7 @@ def extract_animal_features(
 
         if max(shell_denominators) - min(shell_denominators) > 1:
             raise RuntimeError(
-                f"DAPI quantile shells are not equal-density for {sample.animal_id}: {shell_denominators}"
+                f"DAPI quantile shells are not approximately equal-count for {sample.animal_id}: {shell_denominators}"
             )
         count_rows.append({
             "animal_order": animal_order,
@@ -864,7 +864,7 @@ def save_panel(
     axis.set_xlim(0.72, N_RADIAL_SHELLS + 0.28)
     axis.set_xticks(x_values)
     axis.set_xticklabels(["1\ninner", "2", "3", "4", "5", "6\nouter"])
-    axis.set_xlabel("Equal-DAPI-density radial shell", labelpad=3.0)
+    axis.set_xlabel("DAPI-count quantile ring", labelpad=3.0)
     axis.set_ylabel(endpoint.y_label, labelpad=4.0)
     axis.set_title(endpoint.plot_title, loc="left", fontweight="bold", pad=8.0)
     axis.text(
@@ -906,7 +906,7 @@ def save_panel(
     axis.legend(
         handles=legend_handles,
         loc="upper center",
-        bbox_to_anchor=(0.5, -0.19),
+        bbox_to_anchor=(0.5, -0.30),
         ncol=3,
         frameon=False,
         columnspacing=1.3,

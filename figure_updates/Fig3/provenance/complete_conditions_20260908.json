@@ -18,13 +18,15 @@
     "D": "allulose nuclear assignments",
     "E": "whole-field c-FOS/DAPI",
     "F": "c-FOS-positive/NPY-positive",
-    "G": "c-FOS/DAPI spatial profile",
-    "H": "double-positive/DAPI spatial profile"
+    "G": "DAPI / third-ventricle quantile ring schematic",
+    "H": "c-FOS/DAPI spatial profile",
+    "I": "double-positive/DAPI spatial profile"
   },
   "publication_language": "en",
   "bilingual_outputs": "individual panels and legends only",
   "sucrose_cartoon_receipt": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/receipt.json",
   "sucrose_cartoon_sha256": "dd5446b0877d6b9412d98c3263e3066c3657c23f48392ee59a774410a416c196",
+  "ring_cartoon": "DAPI covariance-normalized quantile shells; illustration only",
   "analysis_changed": false,
   "source_data_sha256_unchanged": {
     "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14",
@@ -89,14 +91,20 @@
         },
         {
           "panel": "G",
-          "source": "analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_occurrence.pdf",
-          "sha256": "30d25f7b5d37a73c45850185a720c3b254de9eaf5a37eaadc688837cdd911811",
+          "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.pdf",
+          "sha256": "72ae98527dae0c4858eb599cf830dbb4cace88251a76d1f3640ad69241cc0e94",
           "removed_previous_letter": []
         },
         {
           "panel": "H",
-          "source": "analyses/Fig3/results/spatial_english/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
-          "sha256": "c54840dc3f32b772c57650ba54b89ed7a2511c9e5d1bfcd863140b51ee2ad7eb",
+          "source": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_occurrence.pdf",
+          "sha256": "547b61b731c77317225269c3ca43e29d3bab5fc3bbcf1f07f84e2bcbb05cf3de",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "I",
+          "source": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+          "sha256": "08d44f3505bd6c24966c3c3e842774f4dc326d7ed37bad8bb6c03fb5215e87d7",
           "removed_previous_letter": []
         }
       ],
@@ -126,33 +134,39 @@
           656.6282193918302
         ],
         "E": [
-          241.2,
+          18.0,
           701.6282193918303,
-          566.0,
-          965.650504577159
+          297.76,
+          929.0385472965334
         ],
         "F": [
-          586.0,
+          317.76,
           701.6282193918303,
-          910.8,
-          965.7269158687143
+          597.52,
+          929.1043626380527
         ],
         "G": [
-          18.0,
-          1010.7269158687143,
-          566.0,
-          1277.8769222199205
+          617.52,
+          701.6282193918303,
+          1134.0,
+          944.373815013575
         ],
         "H": [
+          18.0,
+          989.373815013575,
+          566.0,
+          1248.4283531096198
+        ],
+        "I": [
           586.0,
-          1010.7269158687143,
+          989.373815013575,
           1134.0,
-          1277.8769222199205
+          1248.4283531096198
         ]
       },
       "size_pt": [
         1152,
-        1295.876953125
+        1266.4283447265625
       ],
       "dpi": 600,
       "panel_sequence": [
@@ -163,10 +177,11 @@
         "E",
         "F",
         "G",
-        "H"
+        "H",
+        "I"
       ],
       "pdf": "Fig3/Figure_3_cFos_NPY.pdf",
-      "sha256": "10844ca2a9416ce7541a96a0129e0df4e6b2d6385093752f70ed445090a8b0e1"
+      "sha256": "f4e9c911ed49ce3858c0c362f88aff49e7c538db64dfbb160147498c9de372d0"
     },
     {
       "language": "es",
@@ -217,14 +232,20 @@
         },
         {
           "panel": "G",
-          "source": "analyses/Fig3/results/spatial_spanish/Figure3_Spatial_cFOS_occurrence.pdf",
-          "sha256": "a8a5fc0ba25b8d92c25d23d131c1f05de714eea8ac57743a838b48759c0975ed",
+          "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf",
+          "sha256": "1c128580cecdd551236db1b7a92628c9420baf344d83dff578346b399e81f88d",
           "removed_previous_letter": []
         },
         {
           "panel": "H",
-          "source": "analyses/Fig3/results/spatial_spanish/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
-          "sha256": "6b40ea4c29a3d143d14d8371ef3e101ca781ed96dbe3ba3a316c7b4b2617fe72",
+          "source": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_occurrence.pdf",
+          "sha256": "e82aea213c7cbe058db9baab828923455675a4c235b5b70a7b93f7d8e7dc6511",
+          "removed_previous_letter": []
+        },
+        {
+          "panel": "I",
+          "source": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+          "sha256": "dd8cfbb442baefcc032bf06581021b04474874ea979bacdc279068ad5190619f",
           "removed_previous_letter": []
         }
       ],
@@ -254,33 +275,39 @@
           656.6282193918302
         ],
         "E": [
-          241.2,
+          18.0,
           701.6282193918303,
-          566.0,
-          965.650504577159
+          297.76,
+          929.0385472965334
         ],
         "F": [
-          586.0,
+          317.76,
           701.6282193918303,
-          910.8,
-          965.7269158687143
+          597.52,
+          929.1043626380527
         ],
         "G": [
-          18.0,
-          1010.7269158687143,
-          566.0,
-          1277.8769222199205
+          617.52,
+          701.6282193918303,
+          1134.0,
+          944.373815013575
         ],
         "H": [
+          18.0,
+          989.373815013575,
+          566.0,
+          1248.4283531096198
+        ],
+        "I": [
           586.0,
-          1010.7269158687143,
+          989.373815013575,
           1134.0,
-          1277.8769222199205
+          1248.4283531096198
         ]
       },
       "size_pt": [
         1152,
-        1295.876953125
+        1266.4283447265625
       ],
       "dpi": 600,
       "panel_sequence": [
@@ -291,7 +318,8 @@
         "E",
         "F",
         "G",
-        "H"
+        "H",
+        "I"
       ]
     }
   ]

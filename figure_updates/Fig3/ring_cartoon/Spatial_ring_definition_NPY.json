@@ -1,0 +1,36 @@
+{
+  "schema": "spatial_ring_cartoon_v2",
+  "illustration_only": true,
+  "experimental_data_used": false,
+  "marker": "NPY",
+  "illustrative_nuclei": 360,
+  "view": "DAPI nuclei surrounding an illustrative third ventricle",
+  "shell_counts": [
+    60,
+    60,
+    60,
+    60,
+    60,
+    60
+  ],
+  "inner_shells": [
+    1,
+    2
+  ],
+  "quantile_edges": [
+    0.1221574391790043,
+    0.9010241060948528,
+    1.1848811850302667,
+    1.3928896997668425,
+    1.5923416786773472,
+    1.7641313063672484,
+    2.1788762911299364
+  ],
+  "centre": "mean of eligible DAPI centroids",
+  "distance": "covariance-normalized radius",
+  "denominator": "eligible DAPI nuclei in the same shell",
+  "files": [
+    "/tmp/nancy_rings_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY.pdf",
+    "/tmp/nancy_rings_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf"
+  ]
+}

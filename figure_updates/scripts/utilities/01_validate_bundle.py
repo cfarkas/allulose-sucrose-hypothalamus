@@ -63,6 +63,7 @@ PUBLIC_EXCLUDED_RELATIVE_PREFIXES = (
     "FigS3/registration",
     "literature_webscrap_30_08_2026",
     "revision_profesional_20260906",
+    "thesis_and_manuscript",
 )
 # These downloaded article copies are not required for figure reproduction.
 # An index-provided open-access URL is not, by itself, sufficient evidence that
@@ -133,7 +134,14 @@ def is_public_relative_path(relative: str, *, is_directory: bool) -> bool:
     )
 
 
-ARCHIVED_INPUTS = Path("revision_profesional_20260906/insumos")
+ARCHIVED_INPUTS = Path("thesis_and_manuscript/insumos")
+LEGACY_ARCHIVED_INPUTS = Path("revision_profesional_20260906/insumos")
+
+
+def archived_input_root(root: Path) -> Path:
+    current = root / ARCHIVED_INPUTS
+    return current if current.exists() else root / LEGACY_ARCHIVED_INPUTS
+
 ARCHIVED_PUBLIC_DOCUMENTS = (
     "TESIS_FINAL_NS(4)_revision_cientifica_metodos_figuras_final.docx",
     "TESIS_FINAL_NS(4)_revision_cientifica_metodos_figuras_final.pdf",
@@ -149,9 +157,9 @@ def local_input_path(root: Path, relative: str | Path) -> Path:
     if direct.exists() or direct.is_symlink():
         return direct
     if relative.parts and relative.parts[0] == "manuscript_sources":
-        archived = root / ARCHIVED_INPUTS / relative
+        archived = archived_input_root(root) / relative
     elif len(relative.parts) == 1:
-        archived = root / ARCHIVED_INPUTS / "documentos_originales" / relative
+        archived = archived_input_root(root) / "documentos_originales" / relative
     else:
         return direct
     if archived.exists() or archived.is_symlink():
@@ -166,7 +174,7 @@ def local_input_path(root: Path, relative: str | Path) -> Path:
 
 def public_entry_relative(root: Path, source: Path) -> str:
     """Use historical public names for explicitly retained archived inputs."""
-    archive = root / ARCHIVED_INPUTS
+    archive = archived_input_root(root)
     if source.is_relative_to(archive / "manuscript_sources"):
         return source.relative_to(archive).as_posix()
     if source.parent == archive / "documentos_originales" and source.name in ARCHIVED_PUBLIC_DOCUMENTS:

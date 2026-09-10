@@ -1,0 +1,70 @@
+{
+  "schema": "spatial_ring_rerun_verification_v1",
+  "figures": [
+    {
+      "figure": "Fig3",
+      "table": "animal_spatial_counts.csv",
+      "rows": 9,
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig3",
+      "table": "animal_radial_occurrence_features.csv",
+      "rows": 108,
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig3",
+      "table": "exact_spatial_permanova.csv",
+      "rows": 2,
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig3",
+      "table": "exact_spatial_permutation_receipts.csv",
+      "rows": 3360,
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig3",
+      "table": "exact_spatial_dispersion.csv",
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig3",
+      "table": "exact_spatial_dispersion_permutation_receipts.csv",
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig4",
+      "table": "animal_spatial_counts.csv",
+      "rows": 14,
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig4",
+      "table": "animal_radial_occurrence_features.csv",
+      "rows": 168,
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig4",
+      "table": "exact_spatial_permanova.csv",
+      "rows": 2,
+      "matches_previous": true
+    },
+    {
+      "figure": "Fig4",
+      "table": "exact_spatial_permutation_receipts.csv",
+      "rows": 111902,
+      "matches_previous": true
+    }
+  ],
+  "within_ring_denominators_verified": true,
+  "arcsin_sqrt_transform_verified": true,
+  "complete_six_component_animal_profiles": true,
+  "inference_unchanged": true,
+  "fig4_sections": 66,
+  "fig4_shell_count_difference_max": 1,
+  "final_Fig4_rerun_matches": true
+}

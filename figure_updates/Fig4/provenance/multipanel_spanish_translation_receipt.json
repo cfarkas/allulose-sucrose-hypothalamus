@@ -14,13 +14,14 @@
     "G",
     "H",
     "I",
-    "J"
+    "J",
+    "K"
   ],
   "raster_dpi": 600,
   "schema": "fig4_bilingual_isolated_panels_v1",
   "spanish_spatial_sources": [
-    "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/spatial/Figure4_Spatial_cFOS_occurrence_spanish.png",
-    "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/spatial/Figure4_Spatial_cFOS_POMC_occurrence_spanish.png"
+    "/tmp/nancy_rings_20260910/Paper/analyses/Fig4/results/human_final_run/spatial_final/Figure4_Spatial_cFOS_occurrence_spanish.png",
+    "/tmp/nancy_rings_20260910/Paper/analyses/Fig4/results/human_final_run/spatial_final/Figure4_Spatial_cFOS_POMC_occurrence_spanish.png"
   ],
   "text_replacements": {
     "Allulose": "Alulosa",

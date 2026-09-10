@@ -25,6 +25,10 @@ from lxml import etree
 
 ROOT = Path(__file__).resolve().parents[2]
 MANUSCRIPT_SOURCES = ROOT / "manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "thesis_and_manuscript/insumos/manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "revision_profesional_20260906/insumos/manuscript_sources"
 sys.path.insert(0, str(MANUSCRIPT_SOURCES))
 
 from caps_en import CAPS_EN  # noqa: E402

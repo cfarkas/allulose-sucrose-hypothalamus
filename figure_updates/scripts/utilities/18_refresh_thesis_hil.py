@@ -19,7 +19,12 @@ from lxml import etree
 
 
 ROOT = Path(__file__).resolve().parents[2]
-MANIFEST = ROOT / "manuscript_sources/TESIS_FINAL_NS4_spanish_panel_manifest_20260830.csv"
+MANUSCRIPT_SOURCES = ROOT / "manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "thesis_and_manuscript/insumos/manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "revision_profesional_20260906/insumos/manuscript_sources"
+MANIFEST = MANUSCRIPT_SOURCES / "TESIS_FINAL_NS4_spanish_panel_manifest_20260830.csv"
 DOCUMENT = "word/document.xml"
 RELATIONSHIPS = "word/_rels/document.xml.rels"
 W_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"

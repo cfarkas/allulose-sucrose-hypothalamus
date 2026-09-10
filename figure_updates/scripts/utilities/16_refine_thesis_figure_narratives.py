@@ -33,7 +33,14 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from manuscript_sources.thesis_figure_revision_content import (  # noqa: E402
+MANUSCRIPT_SOURCES = ROOT / "manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "thesis_and_manuscript/insumos/manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "revision_profesional_20260906/insumos/manuscript_sources"
+sys.path.insert(0, str(MANUSCRIPT_SOURCES))
+
+from thesis_figure_revision_content import (  # noqa: E402
     FIGURE_CAPTION_OVERRIDES,
     FIGURE_RESULT_NARRATIVES,
     INTRO_FIGURE_CAPTION_OVERRIDES,

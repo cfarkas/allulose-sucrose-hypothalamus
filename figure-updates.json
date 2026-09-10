@@ -1,7 +1,7 @@
 {
   "schema": "apotome-figure-updates-v1",
-  "date": "2026-09-09",
-  "description": "Corrected H&E HC3 permutation inference; uniform local-DAPI POMC size QC and threshold sensitivity; reproducible Cellpose training S7 and Monte Carlo power S8. Complete English masters, bilingual isolated panels; current thesis/manuscripts remain local.",
+  "date": "2026-09-10",
+  "description": "Explanatory DAPI quantile-ring cartoons in Figures 3G and 4K with unchanged spatial inference; corrected H&E HC3 inference, local-DAPI POMC QC, Cellpose S7 and power S8. Complete English masters and bilingual panels; current thesis and manuscripts remain local.",
   "base_manifest_sha256": "df2ebb51339fdc3cc84dd8bbfb232647570d7e2cd0f12c19a5538ff7b7dd071d",
   "archived_figure_count": 10,
   "updated_figure_count": 13,
@@ -541,17 +541,24 @@
     },
     {
       "path": "Fig3/04_complete_figure3_with_sucrose.py",
-      "sha256": "485e3fa8320085fc91949f51b4f212dbc78c608fa82883e6982816085154839a",
-      "size": 19744,
+      "sha256": "2acdb99908dd5e783814cb26f590818beb7430806d11cacf01c749f3bd0833ed",
+      "size": 22514,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "Fig3/05_analyze_spatial_distributions.py",
-      "sha256": "b7a3f57175abc7d68ffe492635c476489126f5ade3e0277bf8427923575a862b",
-      "size": 61986,
+      "sha256": "0561deaa3f540be2bf0cd5bf82c0a3ffe9fa3b4071543cf7c85cf9a182526568",
+      "size": 61989,
       "mode": "0755",
-      "change": "unchanged"
+      "change": "updated"
+    },
+    {
+      "path": "Fig3/05_analyze_spatial_distributions_spanish.py",
+      "change": "added",
+      "sha256": "15681837f98b6c052ae88070587b09dc0d69ba5c423370b4f34c069d98194888",
+      "size": 62026,
+      "mode": "0644"
     },
     {
       "path": "Fig3/06_run_figure3_staged.sh",
@@ -569,29 +576,29 @@
     },
     {
       "path": "Fig3/Figure_3_cFos_NPY.pdf",
-      "sha256": "10844ca2a9416ce7541a96a0129e0df4e6b2d6385093752f70ed445090a8b0e1",
-      "size": 14473498,
+      "sha256": "f4e9c911ed49ce3858c0c362f88aff49e7c538db64dfbb160147498c9de372d0",
+      "size": 14504446,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/Figure_3_cFos_NPY.png",
-      "sha256": "730a49642bd8890d2a6f723a35d66e64ac433e8dd455974f1322359740c9c198",
-      "size": 24730898,
+      "sha256": "8b1f623d1c86eda95d4c93ba005633c4cc6089e12d89a41aeb8a7ce05105e8b5",
+      "size": 25034065,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/Figure_3_cFos_NPY_caption.txt",
-      "sha256": "5daa3218a27a91b5a56ce26ffa4f421cfee399a942cb9a6e3b63efbecc528e8b",
-      "size": 1581,
+      "sha256": "761f56c2a1955c70d3309f8f21e98a0047dd0a68485a51d9cb38484732b18636",
+      "size": 2627,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/README.txt",
-      "sha256": "59959dc1d81829ae7c7ee27b38567a98dc2b40b094347b91893d1fc329522aed",
-      "size": 2220,
+      "sha256": "a7eec169996d6125fa8a4f764ef9118ce723200ad8bf5cdcbad2b9b52eb2cb5d",
+      "size": 3030,
       "mode": "0644",
       "change": "updated"
     },
@@ -632,15 +639,15 @@
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_LEGEND.txt",
-      "sha256": "5daa3218a27a91b5a56ce26ffa4f421cfee399a942cb9a6e3b63efbecc528e8b",
-      "size": 1581,
+      "sha256": "761f56c2a1955c70d3309f8f21e98a0047dd0a68485a51d9cb38484732b18636",
+      "size": 2627,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_LEGEND_spanish.txt",
-      "sha256": "0dc326684e3ccfe8737c27ccc5b9cfc8713280cc3d56dd68e02da276514b2f88",
-      "size": 1641,
+      "sha256": "680f6447fb7df9a41c1a27a4901c0ce9e0a2a84cdd42714da6813c4086b5dc34",
+      "size": 2768,
       "mode": "0644",
       "change": "updated"
     },
@@ -730,35 +737,49 @@
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_G_LEGEND.txt",
-      "sha256": "15e5d5571b172c3ac1469b5bd32b185c9ba019ccf37fb91601548bf12eea04e2",
-      "size": 602,
+      "sha256": "e368f8e5e05fced61520168026f8c6cb1ce39b94e0144b58a1fd9142afa2e3fa",
+      "size": 1059,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_G_LEGEND_spanish.txt",
-      "sha256": "c27e53109a83d132774da4a99db3f13b2175eec8e29b1cc2fde6efc6795f373f",
-      "size": 626,
+      "sha256": "ccde1ea3691796272043eb1e4a49b9b8a16f7da7bb8d9cdf5be5caf533acc54f",
+      "size": 1143,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_H_LEGEND.txt",
-      "sha256": "3d9c66a6319a0b1a5be4f7894509e0f2092b1e22087290377ad83a9ad6be3a81",
-      "size": 702,
+      "sha256": "db57bec95f2ceb3b92667b608ce7ebbdca4a0a722ef23d46f899004d0a6dd190",
+      "size": 602,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_H_LEGEND_spanish.txt",
-      "sha256": "ebec4c4610d4f99269a938821e020e1826999d7966358fd05dc3fac275ad95d2",
-      "size": 731,
+      "sha256": "c8c300830024208e0e04df22f0b6b74abc265d7ce584f9718f61bb0862a7617e",
+      "size": 626,
       "mode": "0644",
       "change": "added"
     },
     {
+      "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_I_LEGEND.txt",
+      "change": "added",
+      "sha256": "29564b0473452a47066ae4831ddba6f1e18c40117683af60353244b42ef35499",
+      "size": 702,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_I_LEGEND_spanish.txt",
+      "change": "added",
+      "sha256": "837a880b28893fd10af9f3f57c8b226a98584f50f80c2dd8d756eb12a198c3f2",
+      "size": 731,
+      "mode": "0644"
+    },
+    {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_A.pdf",
-      "sha256": "4228716bd7ccf13814dad94b503c3536100df45f98bd61b52d435914b8cc6332",
+      "sha256": "deec7a1cf9700d73b5a6932c5c87f076a9698f4a7c120ff333a4373a20ad832a",
       "size": 13635180,
       "mode": "0644",
       "change": "updated"
@@ -772,7 +793,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_A_spanish.pdf",
-      "sha256": "a7cdcff047b1066b7827b0798a991a8499e98381fa194530fa5d4838a68fa3c6",
+      "sha256": "2a58547334d8464ceac868f32bc2a59fad726edf08330c3b98695fb9061659e5",
       "size": 13635545,
       "mode": "0644",
       "change": "updated"
@@ -786,7 +807,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_B.pdf",
-      "sha256": "038415735aad00268e39c538ce34ae58cc0fed749677ca12a112f76d8ce294a4",
+      "sha256": "68bda0c2666967488c8a29169965a221950fa106ec97f36474015e49aab9b024",
       "size": 221385,
       "mode": "0644",
       "change": "updated"
@@ -800,7 +821,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_B_spanish.pdf",
-      "sha256": "1d751c5642f2efb18fb9acc4ba99428195e5eec32546cf73e3707005d256c372",
+      "sha256": "038d510ada79c29e29ae6f070fcb5b39efdc0a6919c6755230fdb52a0ae6d00f",
       "size": 221699,
       "mode": "0644",
       "change": "updated"
@@ -814,7 +835,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_C.pdf",
-      "sha256": "371026743bf5f1a801c062057c16a7e2a8b5eceada9480f06703137e8279fd4d",
+      "sha256": "09f482ebfe169ddd473c4ab4d735e8fd9e2e16b5f36b02ab502067fdb007aa9b",
       "size": 251452,
       "mode": "0644",
       "change": "updated"
@@ -828,7 +849,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_C_spanish.pdf",
-      "sha256": "f45fa80c9f355cd544b9019ab8cde256767d7cad0ad42234279acb51dd17e40d",
+      "sha256": "7a056ae8f6d68c086cd2a17801840ec67228e675dc9fb4387c92a0d058db829d",
       "size": 251192,
       "mode": "0644",
       "change": "updated"
@@ -842,7 +863,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_D.pdf",
-      "sha256": "c96f9b3cc30a9f681350cc69540f2b29d30d6d4332c01d03d87d4cc9c9e10e95",
+      "sha256": "f4adebb5811cd98d7fe72da8addfc77a684c981611329ff3bd1651069c3a7c7b",
       "size": 297785,
       "mode": "0644",
       "change": "updated"
@@ -856,7 +877,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_D_spanish.pdf",
-      "sha256": "b651de330d8293d60c9e63489b8aded431e765c01c35aba506d3e620245a202f",
+      "sha256": "1c8bfcbe246300c316b0d4866a974e6ac26bb3b9f6a81f74d10a45c4e25656f1",
       "size": 298197,
       "mode": "0644",
       "change": "updated"
@@ -870,7 +891,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_E.pdf",
-      "sha256": "24dd06bfa78b3a8288f329b0851542627a1b5faf45c11738a1319fc28d975d84",
+      "sha256": "b748e5b8a301374017c40277be8dc4bdacd7e6e7e8e472449a25e8cbe7b45acc",
       "size": 20109,
       "mode": "0644",
       "change": "updated"
@@ -884,8 +905,8 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_E_spanish.pdf",
-      "sha256": "90deba5dba190b8193013e72ba9826de38a83763b0216181c11787e4e64fade8",
-      "size": 19164,
+      "sha256": "81c13438c74e4c43863b7944b3208d00ef3974823c8934b66fe116a6d44d4434",
+      "size": 19161,
       "mode": "0644",
       "change": "updated"
     },
@@ -898,7 +919,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_F.pdf",
-      "sha256": "117e5d1b2fce33675fc3d8d0cf109d9332f05c2a5457bbfa784a14dd1a6459b3",
+      "sha256": "bc9f26e47baa6b3a52f3d5a43ce9a69e4ee2931bc4a7faba197951f93c8e586c",
       "size": 20244,
       "mode": "0644",
       "change": "updated"
@@ -912,7 +933,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_F_spanish.pdf",
-      "sha256": "c71ea554cef2c3bf577c617c56153a1a23da89c268a074540dc05002a76af87a",
+      "sha256": "15a411a6d7526be2540ea4105ed2c65b44285b8f1f4badc36bf88218162d99ad",
       "size": 19677,
       "mode": "0644",
       "change": "updated"
@@ -926,59 +947,87 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G.pdf",
-      "sha256": "5b7e4a488bc126e96ca13d8fab81d5bb1bb027f41b7df4d0976dc152fd9c385b",
-      "size": 44418,
+      "sha256": "4a20470b852793d59ca81f585eee3c8f89861a1b0eb3fae8b81bef1d8af7be65",
+      "size": 52790,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G.png",
-      "sha256": "543c379e45f9e3e8c3cb01bc8e8fa6f162bf92bdfb3c9026e55fbdbf80b0354c",
-      "size": 348724,
+      "sha256": "d2f9d3a805c5ec7817d4b8ddf2dd2e8e7f7ad71f4091db8bb092d0c5f6d20e39",
+      "size": 641736,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G_spanish.pdf",
-      "sha256": "3be0142f448b66c1771e3708cc62f7e6cf7d8266f50fcfef074820d9e486e5ea",
-      "size": 41708,
+      "sha256": "5686642bdca5bfd124eb51eb0450e983ca0436bb264f7165fd23feadd5ff8c55",
+      "size": 53641,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G_spanish.png",
-      "sha256": "08f0720de39871c4d51fd38de1e901d8c6f17bbbfa5717be72cf16c02a27d1eb",
-      "size": 339968,
+      "sha256": "a630a209a864c15f71bec8ab3e177fa4e9934f4ec3d744ee644222487e1cd19f",
+      "size": 654280,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_H.pdf",
-      "sha256": "033cca2a209f0dd19e414bebd9c91fb2cb25c813bec2146055c9d0900d54d18c",
-      "size": 33252,
+      "sha256": "7240d174c5f4b153fd57f6c141a479322aa3ec516f262c0c19a96908e8c4c619",
+      "size": 34908,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_H.png",
-      "sha256": "091896107786aaf51a11e1974fe7183ae0cb8cc5e94b660f9648de65c3520cae",
-      "size": 303266,
+      "sha256": "dd23ffd4434ffed9ecdaf60e7d25329e5401ca5bd182c3ed385c49b715109b48",
+      "size": 333701,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_H_spanish.pdf",
-      "sha256": "8778f9c3122ddae78258683c6a3a42efe8a1d8e87920a2809ae45c9055adca3b",
-      "size": 32312,
+      "sha256": "82818deb2c5d764c10ff722c0e018dff6c2413c2f56c333569a3f0107f5cca40",
+      "size": 34643,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_H_spanish.png",
-      "sha256": "772c2b9c5d518112215c9187a7086cf3f38d2815dca1cd9a53ac696f060a30d7",
-      "size": 299939,
+      "sha256": "e43b89e80b96b896b875bca23d8d0b1d92da704cbb5f4e1fff435ab4e50c34e4",
+      "size": 337042,
       "mode": "0644",
       "change": "added"
+    },
+    {
+      "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_I.pdf",
+      "change": "added",
+      "sha256": "b4f93122a43b6a28e39eb00c290643da0eff4ca55b8ecb10c1197d7685e8c733",
+      "size": 32879,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_I.png",
+      "change": "added",
+      "sha256": "1a37511c19a8f0ecbf255d06dd3998126e78b859359a591c276161bbee4e3787",
+      "size": 296466,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_I_spanish.pdf",
+      "change": "added",
+      "sha256": "322754b637f48c46c5b370c7c52422617ef6e2527dcd4cf58389cd4d27874447",
+      "size": 32513,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_I_spanish.png",
+      "change": "added",
+      "sha256": "ba675194098b1eedff4761605745f4bf2a4ea7e0e1ecfdc7bafe5d0086fd2c97",
+      "size": 299423,
+      "mode": "0644"
     },
     {
       "path": "Fig3/provenance/CELLPOSE_COMPANION_MANIFEST_HIL_TERMINOLOGY_SUPERSESSION_20260901.json",
@@ -1185,8 +1234,8 @@
     },
     {
       "path": "Fig3/provenance/complete_conditions_20260908.json",
-      "sha256": "d1ec13de358e57955eed1e810139f35e88e9fcff9af83c7b4b3e2f39a2144912",
-      "size": 10376,
+      "sha256": "928eee70748c29eb238ccf6991015f12e10e0925dd70f16e20d849cd0ccdda42",
+      "size": 11226,
       "mode": "0644",
       "change": "added"
     },
@@ -2353,6 +2402,76 @@
       "change": "unchanged"
     },
     {
+      "path": "Fig3/provenance/spatial_ring_verification_20260910.json",
+      "change": "added",
+      "sha256": "eb78cfbb0d924aa6b2a6e0eb66bcbab139fd78fc72a72edfb9d6680705938622",
+      "size": 1689,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.json",
+      "change": "added",
+      "sha256": "6b741ac5e218b0a2d433ecfe0c3fa836709258bc5277b690bd269fde2557ccb9",
+      "size": 909,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.pdf",
+      "change": "added",
+      "sha256": "72ae98527dae0c4858eb599cf830dbb4cace88251a76d1f3640ad69241cc0e94",
+      "size": 52751,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.png",
+      "change": "added",
+      "sha256": "6f91be405e737c15625b95b83128cfb19538a1b5f6781bac67416a2d29805a09",
+      "size": 752459,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.svg",
+      "change": "added",
+      "sha256": "8f812b72b152b3675ba95a1ac0bb72ad9b0fbd40c5788998847b5c0175cada98",
+      "size": 129411,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.txt",
+      "change": "added",
+      "sha256": "9b71c92d4f6166f1555dad439d7c09cedcd7aa994e1e7d2d17f8089cd0e37ba9",
+      "size": 1040,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf",
+      "change": "added",
+      "sha256": "1c128580cecdd551236db1b7a92628c9420baf344d83dff578346b399e81f88d",
+      "size": 53621,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.png",
+      "change": "added",
+      "sha256": "ce39402c179e2f84f1801c8b8b83ccb4851ff6e1b4c88f31601411eefed6e8da",
+      "size": 783138,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.svg",
+      "change": "added",
+      "sha256": "b36c6f13682e809f8bdbff5d993bdc276f19492820b38eedb3ec477f1b49427a",
+      "size": 131546,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.txt",
+      "change": "added",
+      "sha256": "4fcbed55f7574581658bd58ec56a6d8e1a3a4cba2659bef129a8bbda97f62108",
+      "size": 1124,
+      "mode": "0644"
+    },
+    {
       "path": "Fig3/source_data/Figure_3_cFos_NPY_animal_plot_values.csv",
       "sha256": "dac9080bc28a37e30bbf07227812e29a9aaec181bbff8b0587c16b9eda17ef3c",
       "size": 665,
@@ -2437,6 +2556,62 @@
       "change": "unchanged"
     },
     {
+      "path": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+      "change": "added",
+      "sha256": "08d44f3505bd6c24966c3c3e842774f4dc326d7ed37bad8bb6c03fb5215e87d7",
+      "size": 35006,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_NPY_occurrence.png",
+      "change": "added",
+      "sha256": "04f767c146bbd85b2fc11a6288b7d7408bdc9ec4e53dfd4dd0d55c8423cfcab0",
+      "size": 350111,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_occurrence.pdf",
+      "change": "added",
+      "sha256": "547b61b731c77317225269c3ca43e29d3bab5fc3bbcf1f07f84e2bcbb05cf3de",
+      "size": 36978,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_occurrence.png",
+      "change": "added",
+      "sha256": "b8bdcd356673b4c936d9d5b0fc0bd909f8ce52efd66c2bce90ce0d760e1fed8b",
+      "size": 399656,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+      "change": "added",
+      "sha256": "dd8cfbb442baefcc032bf06581021b04474874ea979bacdc279068ad5190619f",
+      "size": 34665,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_NPY_occurrence.png",
+      "change": "added",
+      "sha256": "06e2fd9400d1f5fab18852b4e193623d069ec6a3a9d20bf7990473a84dde4257",
+      "size": 363522,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_occurrence.pdf",
+      "change": "added",
+      "sha256": "e82aea213c7cbe058db9baab828923455675a4c235b5b70a7b93f7d8e7dc6511",
+      "size": 36737,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_occurrence.png",
+      "change": "added",
+      "sha256": "e72b63d804c7b1a19befb2bf52e3896f5b9326aa75bf9601738c9b765a764628",
+      "size": 410309,
+      "mode": "0644"
+    },
+    {
       "path": "Fig4/00_create_conda_envs.sh",
       "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
       "size": 4242,
@@ -2452,8 +2627,8 @@
     },
     {
       "path": "Fig4/03_make_figure_4_pomc_cfos.py",
-      "sha256": "471f8b974ad35f4251f7c27deb6b895b3e8b2e7c4a65ab09b4565109755bbe2f",
-      "size": 213453,
+      "sha256": "b476bdc558560837945bda94e25435d3732963b32c2b0c018aa3eb734fe0375f",
+      "size": 214257,
       "mode": "0755",
       "change": "updated"
     },
@@ -2466,10 +2641,10 @@
     },
     {
       "path": "Fig4/05_analyze_spatial_distributions.py",
-      "sha256": "224e60de4fbb1049e070c717f9597916336bdce32440264ecadb987e90648051",
-      "size": 35244,
+      "sha256": "f8495ee8c54bab4787e432401717e899d78f00802fb5c632dc0eb03402a3f412",
+      "size": 35270,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/06_prepare_npy_pomc_overlap_cellpose_inputs.py",
@@ -2487,43 +2662,43 @@
     },
     {
       "path": "Fig4/Figure_4.pdf",
-      "sha256": "9ba859fc972b6f050d0100ee64bed88d487bcb45efaddc4fd0378217bc89548b",
-      "size": 9860164,
+      "sha256": "59b94a486725e245a633123ce1f48f17476dec10a633effd83cc3c1ca53069a5",
+      "size": 9901870,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/Figure_4.png",
-      "sha256": "be2f76d0ad3885b9111ad988efdf00d5bf8c05080ce344f0a30b8ebb987a4d16",
-      "size": 12304456,
+      "sha256": "03e56c691d6170edbaaa2cf563dc5cb4b8fa2ac63fd0e4e5fb5fd80cc383f59e",
+      "size": 12944605,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/README.txt",
-      "sha256": "098231795df2dafe3474e50ddd619e8c237b19ba4952c6c135faeb43977779ea",
-      "size": 17564,
+      "sha256": "28baabdd1ccfbdc2089841c1945786c6505ded61cdee08fc4fe5c3736a7bccd1",
+      "size": 18313,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_4_LEGEND.txt",
-      "sha256": "803006eafea7c18d2c3f2a6692751640c49c8688ee437edcb43bf148f5fb61d9",
-      "size": 8778,
+      "sha256": "c2afe5debe1535c6fa2f110b92f972fe012958a04a21edef84137a9fbe1f87d0",
+      "size": 9927,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_4_LEGEND_spanish.txt",
-      "sha256": "21be282bbb421cf156638687b24e978d8a48f5e54b28dcee5d44f58f306e8f6e",
-      "size": 2432,
+      "sha256": "3b0e536da7c15dd3252b62cc2260004fd190b4bd17997bd4f75f6aea8faa4dbe",
+      "size": 3718,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_4_caption.txt",
-      "sha256": "803006eafea7c18d2c3f2a6692751640c49c8688ee437edcb43bf148f5fb61d9",
-      "size": 8778,
+      "sha256": "c2afe5debe1535c6fa2f110b92f972fe012958a04a21edef84137a9fbe1f87d0",
+      "size": 9927,
       "mode": "0644",
       "change": "updated"
     },
@@ -2546,7 +2721,7 @@
       "sha256": "6130b07e046a8e0e288ea3c5eda349d2393afcbd959d07768e39e4fa3e89fbbc",
       "size": 936,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_A_dapi_LEGEND_spanish.txt",
@@ -2560,7 +2735,7 @@
       "sha256": "aa6e416009566102d8ad4338421fe8ac62938eff1f304b817b794f91ae8212ac",
       "size": 946,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_B_cfos_LEGEND_spanish.txt",
@@ -2574,7 +2749,7 @@
       "sha256": "e979709fb52003232d360be2408a39d20a2359cf3b3353806ee3a9ebb9f26666",
       "size": 1133,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_C_pomc_LEGEND_spanish.txt",
@@ -2602,7 +2777,7 @@
       "sha256": "9205406cbe0e41ed912664d982664274ac6783963a7106951bd4a63a62495008",
       "size": 1494,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_E_microscopy_LEGEND_spanish.txt",
@@ -2630,7 +2805,7 @@
       "sha256": "bf13d8eec5d76dbdc3ab80794060fc877a7c579486e9bac74eca5ed68a9bcb17",
       "size": 838,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_G_cfos_dapi_LEGEND_spanish.txt",
@@ -2658,12 +2833,12 @@
       "sha256": "d146d4da98152ba93b705c1e9558bf6dd06acee89dd0364ae38f2cedd207b133",
       "size": 1054,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_ARC_ME_panel_I_spatial_cfos_LEGEND_spanish.txt",
-      "sha256": "4468342eada0167b672b9ddab375f4f78d154c0b5d93248f21165c730ca24ac4",
-      "size": 1102,
+      "sha256": "e6e6c3e407573adfa670ad0dc3a6046d442aa1e9c0219bb70284d8b7e8c3bd17",
+      "size": 1130,
       "mode": "0644",
       "change": "updated"
     },
@@ -2682,291 +2857,333 @@
       "change": "updated"
     },
     {
+      "path": "Fig4/legends/Figure_ARC_ME_panel_K_ring_definition_LEGEND.txt",
+      "change": "added",
+      "sha256": "0cdd4b7e4e8379c173b3eb19c9283e31bb22f239f76642f55412b92c047c62ea",
+      "size": 1186,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig4/legends/Figure_ARC_ME_panel_K_ring_definition_LEGEND_spanish.txt",
+      "change": "added",
+      "sha256": "9c8f4b380f1243d09d56ee86736d81c05e0f397509b18a3482bcdcb437af1099",
+      "size": 2232,
+      "mode": "0644"
+    },
+    {
       "path": "Fig4/legends/multipanel_sensitivity_methods.txt",
-      "sha256": "d3880ec6820e2e457d1ba2ebd7b0b6159dc729e6dd37f5ea37af7860575d1878",
-      "size": 1772,
+      "sha256": "5b7687065f05556d52b98ecdf99a67c40b66138ff3ad64add8b454fe294d27d9",
+      "size": 1734,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_A_dapi.pdf",
-      "sha256": "150a3b52f960c98df5b79ba06ffa78ec412cbf1056c7ec390b15bd4e035cdb94",
-      "size": 9553034,
+      "sha256": "22d6bc85bc742588935ea586e37727fb0e16f2896d5a50b8aef906cd3ba51cc3",
+      "size": 9579834,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_A_dapi.png",
-      "sha256": "6ad72d5f5627ab6955b9d69734b1271ebc7c795ef310451b5494210a8d3d6972",
-      "size": 1811455,
+      "sha256": "86172c938668fdae8637080cf411399be81f2285f50c810e066db6ebc983b391",
+      "size": 1811538,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_A_dapi_spanish.pdf",
-      "sha256": "c7d8bd201d5c3cac68fe7f047d89a35b036e91ca1fb7b79bab257db632dddf1f",
-      "size": 9594081,
+      "sha256": "f5052b445f411571a5d70f80eede6146b3a5ebb79a3f651a8f1cdee2ac512a50",
+      "size": 9611495,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_A_dapi_spanish.png",
-      "sha256": "7e0074b2e28a7940c0085a2a08169b9d4bb42a604f1413603f61a643de6efbda",
-      "size": 1812354,
+      "sha256": "f3279ad367b59d432f3d5bd9ccd2804dc289d9dd1658e8e41ed5e1cacd6222c7",
+      "size": 1812437,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_B_cfos.pdf",
-      "sha256": "3be5589ccf4b27be7745974119130937319b1bc7c2e64671f72f6a933a3f8417",
-      "size": 9553327,
+      "sha256": "18afdc631b0634b0aa86266e1ca165585622001c54492615ff702ad537406c15",
+      "size": 9579968,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_B_cfos.png",
-      "sha256": "bd4cfe1ce32c08894c8c6f66d658b6d2d41070230ca240f8ee48f142292978a5",
-      "size": 1404054,
+      "sha256": "e0f52bb7d93b18bfa0e4fd953e468ddeb26d409022e5a68b6b05b47a00bfa1d6",
+      "size": 1404232,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_B_cfos_spanish.pdf",
-      "sha256": "cd2b9070cec27207262eee414f2892a3b9d8961c44ed601bef23719da7466553",
-      "size": 9594382,
+      "sha256": "ad359bacd362b4b8e1ccc5c6b8d258b61f97a3ec6123af92744458e711295c51",
+      "size": 9611622,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_B_cfos_spanish.png",
-      "sha256": "17fa5231aabea141310a82b31f7f11b4494bb99d50e15154e4fd7007a8133b9b",
-      "size": 1404699,
+      "sha256": "08a52ede6c0b8b650f0bb01595a94694633440316b99e2fe1785070c3db4d8d6",
+      "size": 1404870,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_C_pomc.pdf",
-      "sha256": "5dd58f225da7e236cf46af9a557d1ecc448f2fb4e7fe13c9088fd5d764d2e6f3",
-      "size": 9553698,
+      "sha256": "a7bd891380d876eca4417530c9611acee4d13c8e310addc685b5fcf88a62bda6",
+      "size": 9580496,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_C_pomc.png",
-      "sha256": "0129d844a7030e8a18fe0d0832789ddecefba70ced7ceb823e698f2071b62c91",
-      "size": 1144459,
+      "sha256": "f6086047f965e3e9f23ab83791bdf9de3b454c7315fd49b68009b5af298f3600",
+      "size": 1144419,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_C_pomc_spanish.pdf",
-      "sha256": "5597319e87c8f7b066dfd213b2ffc2aff927f7d47949192b1f05e1a5e15334fd",
-      "size": 9594751,
+      "sha256": "3a2e3a978f1b1ec1e9748b1ec18780fb3288bfe11bb6b7077741a14d6f2f13a7",
+      "size": 9612161,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_C_pomc_spanish.png",
-      "sha256": "5aa38cab6a219c7b4790930a4514ee73f4083e7e0f58d4e6577ea0fdfa71a8e5",
-      "size": 1145610,
+      "sha256": "f02b553b75909010fb7c673d3b948c227a70f3148107de8e965191b49dbfcb5a",
+      "size": 1145560,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_D_cellpose_cartoon.pdf",
-      "sha256": "0dcaf051fc97965b6c70cc57a95c4c17bedfbb148042221044592c81f641843e",
-      "size": 9835521,
+      "sha256": "7f1ca98eff2f0fd40a18dbb0405ac31f16fa4377019c0654bbe8ef8d8aed1d01",
+      "size": 9862327,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_D_cellpose_cartoon.png",
-      "sha256": "2f34b46855989f9a868c21fba012c6b2d8ba2c3fe22ffa085de71596409bec52",
-      "size": 872817,
+      "sha256": "21045680ce23b0d8d2fec7a16918340674018b4b274d8eca35fd9e2c9db39df8",
+      "size": 872502,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_D_cellpose_cartoon_spanish.pdf",
-      "sha256": "0bc79f2a3915994a98e7112e9c49fcd3f2a1f7c4a18fb9fff6da23fc528988d6",
-      "size": 9876634,
+      "sha256": "b63cb7b02b1d8dc8e8a245491ce7551cbbf63b06f96e06e77e77bfcc2653d3da",
+      "size": 9894039,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_D_cellpose_cartoon_spanish.png",
-      "sha256": "ea5d19dbc1acb149ec428f7b067790bbd31068c63fa8eb767a1737098e53497a",
-      "size": 869094,
+      "sha256": "b9b4eb0ac530b70a1afb4dff7b22cc4d2031a95520d106429ceccc9d58fcf91b",
+      "size": 865956,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy.pdf",
-      "sha256": "4fb5bb0a81bc27f441c5ce3928e16e297c2f656a7e2cf83e610853e7f6fcd09d",
-      "size": 9552271,
+      "sha256": "2b973d9a20d1fa9d0bcae6598dd921605b7715a1210090935741d8114ca20356",
+      "size": 9578974,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy.png",
-      "sha256": "f975403474d0a60c80eac107dfdcd70d1abe6aabe07f739e5e5ff8d555f6372c",
-      "size": 2971131,
+      "sha256": "e04bde98f7876638784086b73df99340a83ce6569a66bdec6ff5e138e05f1b7a",
+      "size": 2970981,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy_spanish.pdf",
-      "sha256": "6b3e322711933a2cfe0600124ee9284d9d816e6e34ecfb8073abe6d11f8a96a5",
-      "size": 9593288,
+      "sha256": "33b0b906ff89d4f34e65da4b53a2b47bdd69bfaf8b2b2a06172b4c31a81f1b56",
+      "size": 9610596,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy_spanish.png",
-      "sha256": "aeaca56c4bef6140f82cf8f80cde3b90ce1abde893776d2c2910330b239b9419",
-      "size": 2971995,
+      "sha256": "d4d224e141b78ade2161c72932f99b62d55250fa1eb9fc6572cddc2fe9cea784",
+      "size": 2971844,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp.pdf",
-      "sha256": "efab4291bd55aeaf69512d0a13d6ccf0a51da347a364da12e2945872bacb82f8",
-      "size": 9570927,
+      "sha256": "b6763978de9f45ea610c933d13d9f7d12cb0d634db52eca25cfe34bbac7de93f",
+      "size": 9597096,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp.png",
-      "sha256": "74439b1e16ef92844e5507524b9a567ccf9b726aa7bbdea3d375d22c240335d0",
-      "size": 2594635,
+      "sha256": "858c6a36ce8925c69374ea1c895420b2e2289f9a95153e632767865e509d9cf4",
+      "size": 2594567,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp_spanish.pdf",
-      "sha256": "91714aaf9465706f3c3baa2f27574cf3c25b65921a9b34934ea06e2af865fa39",
-      "size": 9611953,
+      "sha256": "fbd3ef876521da024b47faa62c3211eb95688bd9b2cc30b6b8b573613c67ffe4",
+      "size": 9628866,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_F_microscopy_npy_gfp_spanish.png",
-      "sha256": "60133618795c3a3e02d5ea7c125bf42334528d03cbe094b3cbf2eb68b37e9d58",
-      "size": 2595466,
+      "sha256": "cd81871158ab7919d1b5ffbcfbeb2c198586940b5f18dcd3a090d46cab87d219",
+      "size": 2595373,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi.pdf",
-      "sha256": "56811e9aa7011e98732431025a845a5417a47a2b93d652a8d31f4623c4cd2bc5",
-      "size": 9552891,
+      "sha256": "ce5254e03eac3113cf3f170324a923473b1b2ecfeae7b8d8fc25a12ab9f444bf",
+      "size": 9579574,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi.png",
-      "sha256": "3eb7003d29454a038b61287a5619afc79239489dd9f6b80dce416522f2680c1f",
-      "size": 390569,
+      "sha256": "01df9f92010fa17f55eae1a30597f11e2453ced4a632d292ae954aaf332013c0",
+      "size": 337225,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi_spanish.pdf",
-      "sha256": "846bed10cd062432b7b95d8380bb45bb6eb4c3cf78d5a4a766a03d667115f0c4",
-      "size": 9593989,
+      "sha256": "387747315f232d5730087018a64709daf0d5845ee15810ed2165913c5cd0c293",
+      "size": 9611216,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi_spanish.png",
-      "sha256": "63fe5ea365ab7975d2c5281da0d8511ec8e619d25de42d7f4cc15f9ec8bbf239",
-      "size": 391678,
+      "sha256": "4772b687b32a09b6a76e54936106f8c783307c3581c778dc63f1dab490410d4a",
+      "size": 338859,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation.pdf",
-      "sha256": "cd4df2c7f2b37d55403a588667cb02c73f032158326b0aa315934a26d6df5e74",
-      "size": 9553251,
+      "sha256": "1a78cc4a18aa72c05385f77d1732ada14f5a552df43b0930003d95e0b587cc7b",
+      "size": 9579657,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation.png",
-      "sha256": "d262cba81a640a43c8c845dd6c6775c891846da80c426731c7ad889c4f4a617a",
-      "size": 354012,
+      "sha256": "2b27ad403ac8c201686e17c82b83e5f45a9bcc56eda71e86ea2581497ce48547",
+      "size": 354227,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation_spanish.pdf",
-      "sha256": "0e5214db621b0604e3f4190d8f34fc3c66f5119471614220c357f348ef3a9c62",
-      "size": 9594381,
+      "sha256": "21a2c18be3a8b96a8ea07fb1b713bbf45b832b31dad14c24d5b92c71ee8fd1e4",
+      "size": 9611303,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation_spanish.png",
-      "sha256": "a3d56f302f11cd44419d6682c69d9f84517a5efbb37514f77a0dd9efbacfaea2",
-      "size": 358343,
+      "sha256": "5020e8fd78162c99ec05110218f6ffe5c90b2eebb0b559e992df01c04b1f1570",
+      "size": 360089,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_I_spatial_cfos.pdf",
-      "sha256": "2dbdc473d371ba729eef9ca97a980666afeb54fb8ae7836c520d0b65886469b4",
-      "size": 9552836,
+      "sha256": "21dd13c0a256e35069d6d1e97ec668d4d895ca700aef25231ee3ba6118e00c58",
+      "size": 9579203,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_I_spatial_cfos.png",
-      "sha256": "a97d452c5d58d5e9df9b1d72cf617f8a2db7c0bd93f8a3be45f46dd5b8abf7ec",
-      "size": 507014,
+      "sha256": "6d48bb6ea78e104249c4ae698e5b6420678fb57574ea42a7bb85a9eac174b7d4",
+      "size": 501967,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_I_spatial_cfos_spanish.pdf",
-      "sha256": "a1f62199079613e762ae2179a8d2cf381cb7a712ce841c70c1c8449849d49f42",
-      "size": 9593814,
+      "sha256": "0bcb5029f0b8b423197f8aba108f7ebd84e7feaffd1cbcb3cb81f25fd658d141",
+      "size": 9610823,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_I_spatial_cfos_spanish.png",
-      "sha256": "f4594f269aa797726d6ee915cf09505c018760e29924074e80313f8e1b7e276c",
-      "size": 531457,
+      "sha256": "ea53a1475f78f3a8adb60815fee53c3dea384405a1671d4cd526d4c31ae9cf4f",
+      "size": 520294,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_J_spatial_cfos_pomc.pdf",
-      "sha256": "a377abe890584ed9c4647d6f41fd0c14484c01bec01da11a94a59a36a6999556",
-      "size": 9553208,
+      "sha256": "d4d31ec295fefcae8c3825533c1305cf16bdb97f8563113b120581f218b52c8d",
+      "size": 9579605,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_J_spatial_cfos_pomc.png",
-      "sha256": "f0d51984720fdd77ba25c4b04abc00eb5b5efe186c0bc8c93798cdde7453c397",
-      "size": 540391,
+      "sha256": "8077f08c3b8c00421a0a0bdb19012d849a1467c60c8ba52f1101ba430d7eb71c",
+      "size": 535950,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_J_spatial_cfos_pomc_spanish.pdf",
-      "sha256": "cd2a083c365eec168c632ad297bd69ef46e6a07d4a5b92c505fbab5c9a973c1b",
-      "size": 9594236,
+      "sha256": "e00a38c06f0e560d8666f07eac8211363b1b0cb9a66769cee67b95536b137ff8",
+      "size": 9611256,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/panels/Figure_ARC_ME_panel_J_spatial_cfos_pomc_spanish.png",
-      "sha256": "8699e9cee636a1c4afbc56199eb89f1f1213fe006ea3c2754de68bad9e389baf",
-      "size": 565169,
+      "sha256": "1343ae559f3eef4feac4ef6225345040b8ec5b017d2e199dd5c29acc7fc769d9",
+      "size": 553589,
       "mode": "0644",
       "change": "updated"
+    },
+    {
+      "path": "Fig4/panels/Figure_ARC_ME_panel_K_ring_definition.pdf",
+      "change": "added",
+      "sha256": "c2caba6d885dbb78fe6318e2e743b8a42ccbc4926ba5ccfd477a4f29834b8dab",
+      "size": 9585215,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig4/panels/Figure_ARC_ME_panel_K_ring_definition.png",
+      "change": "added",
+      "sha256": "45a03e73d38c91872d11bb12a72f32b0e5f5166ec263ce0df2ca2ae710408a7d",
+      "size": 692055,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig4/panels/Figure_ARC_ME_panel_K_ring_definition_spanish.pdf",
+      "change": "added",
+      "sha256": "61a83e161425aedadc683e63abbe54ce05e0934f5b5ed276be97af09bcad77d5",
+      "size": 9616864,
+      "mode": "0644"
+    },
+    {
+      "path": "Fig4/panels/Figure_ARC_ME_panel_K_ring_definition_spanish.png",
+      "change": "added",
+      "sha256": "b8fbf51f5945f056fdd5e6b888015527100dd76388e22458d6b3b44dbae7d565",
+      "size": 712278,
+      "mode": "0644"
     },
     {
       "path": "Fig4/provenance/HUMAN_FINAL_BUILD_ADDENDUM_20260825.json",
@@ -3173,15 +3390,15 @@
     },
     {
       "path": "Fig4/provenance/multipanel_source_manifest.csv",
-      "sha256": "f751a40c9ba526e19517d1db747556e7e9c75d50ffb8868b1d23107d9d4dc347",
-      "size": 65237,
+      "sha256": "d8b538276995c0b7e5bd0f43a42725b06597726dd0646423306afb88841c09fc",
+      "size": 64933,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig4/provenance/multipanel_spanish_translation_receipt.json",
-      "sha256": "7cd2b4c3055eeadfaced954816783832f00e32b9306b5e9e305fb0558198fdf6",
-      "size": 1392,
+      "sha256": "505566e2b9377cc8fb3331f914852475dc08dce22a91401312adbfa73ca34bdc",
+      "size": 1387,
       "mode": "0644",
       "change": "updated"
     },
@@ -3205,6 +3422,13 @@
       "size": 2088,
       "mode": "0644",
       "change": "added"
+    },
+    {
+      "path": "Fig4/provenance/spatial_ring_verification_20260910.json",
+      "change": "added",
+      "sha256": "eb78cfbb0d924aa6b2a6e0eb66bcbab139fd78fc72a72edfb9d6680705938622",
+      "size": 1689,
+      "mode": "0644"
     },
     {
       "path": "Fig4/source_data/multipanel_denominator_audit.csv",
@@ -6596,8 +6820,8 @@
     },
     {
       "path": "release/build_archives.py",
-      "sha256": "9e464659b1911ebad7b112751780cc1f85d655049b001e5dad3459477ab7e949",
-      "size": 36197,
+      "sha256": "058441eed08532672b255cefd828f102d59c419f17b6b5e967351f97c7a55d61",
+      "size": 36457,
       "mode": "0755",
       "change": "updated"
     },
@@ -6617,8 +6841,8 @@
     },
     {
       "path": "release/github_public/build_archives.py",
-      "sha256": "83a02b05be9e1f67fa501f540aeb726e271097b3f2c4faa02d5b72179b3bef2c",
-      "size": 33653,
+      "sha256": "d2c51a097690ff0a9570c9d329b60912a95b86d02a4242170294e1e25e8d783b",
+      "size": 36431,
       "mode": "0755",
       "change": "updated"
     },
@@ -6645,8 +6869,8 @@
     },
     {
       "path": "reproduce_all_figures.sh",
-      "sha256": "60317f84e568c33b2f61b4fa81983a562ce3b1c45c97ed02979d0806131f26c6",
-      "size": 30687,
+      "sha256": "fb6eba6cbe90c5c16921d969e90545f4584a91c660fc293223fb47044b54aa68",
+      "size": 30788,
       "mode": "0755",
       "change": "updated"
     },
@@ -6736,17 +6960,24 @@
     },
     {
       "path": "scripts/Fig3/04_complete_figure3_with_sucrose.py",
-      "sha256": "485e3fa8320085fc91949f51b4f212dbc78c608fa82883e6982816085154839a",
-      "size": 19744,
+      "sha256": "2acdb99908dd5e783814cb26f590818beb7430806d11cacf01c749f3bd0833ed",
+      "size": 22514,
       "mode": "0644",
       "change": "added"
     },
     {
       "path": "scripts/Fig3/05_analyze_spatial_distributions.py",
-      "sha256": "b7a3f57175abc7d68ffe492635c476489126f5ade3e0277bf8427923575a862b",
-      "size": 61986,
+      "sha256": "0561deaa3f540be2bf0cd5bf82c0a3ffe9fa3b4071543cf7c85cf9a182526568",
+      "size": 61989,
       "mode": "0755",
-      "change": "unchanged"
+      "change": "updated"
+    },
+    {
+      "path": "scripts/Fig3/05_analyze_spatial_distributions_spanish.py",
+      "change": "added",
+      "sha256": "15681837f98b6c052ae88070587b09dc0d69ba5c423370b4f34c069d98194888",
+      "size": 62026,
+      "mode": "0644"
     },
     {
       "path": "scripts/Fig3/06_run_figure3_staged.sh",
@@ -6771,8 +7002,8 @@
     },
     {
       "path": "scripts/Fig4/03_make_figure_4_pomc_cfos.py",
-      "sha256": "471f8b974ad35f4251f7c27deb6b895b3e8b2e7c4a65ab09b4565109755bbe2f",
-      "size": 213453,
+      "sha256": "b476bdc558560837945bda94e25435d3732963b32c2b0c018aa3eb734fe0375f",
+      "size": 214257,
       "mode": "0755",
       "change": "updated"
     },
@@ -6785,10 +7016,10 @@
     },
     {
       "path": "scripts/Fig4/05_analyze_spatial_distributions.py",
-      "sha256": "224e60de4fbb1049e070c717f9597916336bdce32440264ecadb987e90648051",
-      "size": 35244,
+      "sha256": "f8495ee8c54bab4787e432401717e899d78f00802fb5c632dc0eb03402a3f412",
+      "size": 35270,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/Fig4/06_prepare_npy_pomc_overlap_cellpose_inputs.py",
@@ -7106,6 +7337,13 @@
       "change": "updated"
     },
     {
+      "path": "scripts/shared/spatial_ring_cartoon.py",
+      "change": "added",
+      "sha256": "2b06a5c505a640ba5824bc0acc5653f7c4344a0f44a9eed0d2f183b74cf3f26b",
+      "size": 10491,
+      "mode": "0644"
+    },
+    {
       "path": "scripts/shared/tests/test_microglia_choices.py",
       "sha256": "8b243ac523c33e96bbd4ce5dabe00579ae94a69b9dde0b4fa97a2a9f650d847f",
       "size": 4046,
@@ -7141,9 +7379,16 @@
       "change": "added"
     },
     {
+      "path": "scripts/shared/tests/test_spatial_ring_cartoon.py",
+      "change": "added",
+      "sha256": "35ad7ffd2bbe23d66ce0131abdfcb5952d5dd824e1239c45fbdca06e62f1ecd1",
+      "size": 1839,
+      "mode": "0644"
+    },
+    {
       "path": "scripts/utilities/01_validate_bundle.py",
-      "sha256": "6e5aefe8646b2f86c2111ee5e35394d41c94d6fb96db88877cdd4d109422526d",
-      "size": 16832,
+      "sha256": "959519035b216888f4c15734277c04a5563157971403a37768cbc8b85ca3b10a",
+      "size": 17092,
       "mode": "0644",
       "change": "updated"
     },
@@ -7184,8 +7429,8 @@
     },
     {
       "path": "scripts/utilities/07_validate_figure_outputs.py",
-      "sha256": "0a0f8fe2fb21281c7360d10452dabd511dfd401ecebd6d3b024184b90c20740c",
-      "size": 9973,
+      "sha256": "a135e2ca191282b3554bee69f7abe6717e51a4a9bed2d552929b7e279f45a767",
+      "size": 10208,
       "mode": "0644",
       "change": "updated"
     },
@@ -7219,10 +7464,10 @@
     },
     {
       "path": "scripts/utilities/13_complete_thesis_spanish.py",
-      "sha256": "081ea275e6ac272e61f858e43bbfee5140b12d576c47158d72a492ca6cbfed13",
-      "size": 120117,
+      "sha256": "b893839aba86b7ca418d93ab81cce3d897ced640ffb8c744772159897e63b296",
+      "size": 120621,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/utilities/14_validate_thesis_format.py",
@@ -7240,10 +7485,10 @@
     },
     {
       "path": "scripts/utilities/16_refine_thesis_figure_narratives.py",
-      "sha256": "9b8f9c7dd3d014f287b9ac05cff3c71ce1e8bb507ebf1cfa147aa5d39d2b416b",
-      "size": 38210,
+      "sha256": "14e6e388c8036f32066982e2b39ac9a4a4e6be0c45799307581845aae5f7a0b6",
+      "size": 38531,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/utilities/17_patch_thesis_scientific_wording.py",
@@ -7254,17 +7499,17 @@
     },
     {
       "path": "scripts/utilities/18_refresh_thesis_hil.py",
-      "sha256": "6862cd207c3fc62493c9843139dbaa7a556de77a195ba8c12992267b60633375",
-      "size": 17585,
+      "sha256": "2690ec2c00501e333d12eba347bf73a57ea28de7860ae9d2081f7400b4e279ce",
+      "size": 17875,
       "mode": "0755",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/utilities/19_update_single_bottle_consumption_wording.py",
-      "sha256": "6983e578f6137deb9e1d99715da229833c8cd53512357291158eb3a7370f3766",
-      "size": 20709,
+      "sha256": "c0a66ef6d3e81f9a035c8818d0053e666eac6932bf590f7a327180cc0496b029",
+      "size": 20955,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/utilities/README.txt",

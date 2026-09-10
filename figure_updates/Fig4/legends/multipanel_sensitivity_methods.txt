@@ -1,5 +1,5 @@
 Figure 4 statistical methods
-Source: /media/server/STORAGE/Apotome/Paper/analyses/Fig4/figure/local_dapi_size_final_20260909/source_data/registered_recomputed_endpoint_values.csv
+Source: /tmp/nancy_rings_20260910/Paper/Fig4/render_final/source_data/registered_recomputed_endpoint_values.csv
 Source SHA-256: b8c23bd0ee13bf21c32c73b5e7f70fad1c2e79c7387d0544f03af58e78d916e6
 Registered section-count source: /media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/per_reconstructed_section_region_summary.csv
 Registered section-count SHA-256: 398c0c6413cfc5a3fb1ab7a0dd6e47243caf9ef1b66866e3b41fc6c13647d5b8

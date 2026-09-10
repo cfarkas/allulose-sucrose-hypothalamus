@@ -244,13 +244,13 @@ fi
 # existing interpreter from the pinned image-review environment.
 FIG3_PDF_BIN=""
 for candidate in "${FIG3_PDF_PYTHON:-}" "$REVIEW_PY" "$PY" "$CONDA_BASE/envs/lazyslide311/bin/python" "$CONDA_BASE/bin/python"; do
-  if [[ -n "$candidate" && -x "$candidate" ]] && "$candidate" -c 'import fitz; from PIL import Image' >/dev/null 2>&1; then
+  if [[ -n "$candidate" && -x "$candidate" ]] && "$candidate" -c 'import fitz, matplotlib, numpy, pandas, scipy, skimage; from PIL import Image' >/dev/null 2>&1; then
     FIG3_PDF_BIN="$candidate"
     break
   fi
 done
 if [[ -z "$FIG3_PDF_BIN" ]]; then
-  printf '%s\n' 'Figure 3 completion requires PyMuPDF and Pillow. Set FIG3_PDF_PYTHON to an interpreter containing both.' >&2
+  printf '%s\n' 'Figure 3 completion requires PyMuPDF, Pillow, Matplotlib, NumPy, pandas, SciPy and scikit-image. Set FIG3_PDF_PYTHON to an interpreter containing these packages.' >&2
   exit 2
 fi
 

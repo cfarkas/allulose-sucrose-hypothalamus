@@ -34,15 +34,24 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = ROOT / "manuscript_sources" / "TESIS_FINAL_NS4_source_20260830.docx"
+MANUSCRIPT_SOURCES = ROOT / "manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "thesis_and_manuscript/insumos/manuscript_sources"
+if not MANUSCRIPT_SOURCES.is_dir():
+    MANUSCRIPT_SOURCES = ROOT / "revision_profesional_20260906/insumos/manuscript_sources"
+SOURCE = MANUSCRIPT_SOURCES / "TESIS_FINAL_NS4_source_20260830.docx"
 DEFAULT_OUTPUT = ROOT / "TESIS_FINAL_NS(4).docx"
 WORK = Path("/tmp/thesis_ns4_work_20260830")
 MEDIA = WORK / "media" / "media"
 PRESERVED_MEDIA_NAMES = ("image27.png", "image28.png")
-LITERATURE = ROOT / "literature_webscrap_30_08_2026"
+LITERATURE = ROOT / "thesis_and_manuscript" / "insumos" / "literature_webscrap_30_08_2026"
+if not LITERATURE.is_dir():
+    LITERATURE = ROOT / "revision_profesional_20260906" / "insumos" / "literature_webscrap_30_08_2026"
+if not LITERATURE.is_dir():
+    LITERATURE = ROOT / "literature_webscrap_30_08_2026"
 BUILD_DATE = "30 de agosto de 2026"
 PAGE_MAP_PATH = (
-    ROOT / "manuscript_sources" /
+    MANUSCRIPT_SOURCES /
     "TESIS_FINAL_NS4_page_map_20260830.json"
 )
 PAPER_TITLE = (
@@ -1700,9 +1709,9 @@ def add_supplement(document: Document) -> None:
 def write_audits(output: Path, panels: list[Path], reference_count: int,
                  cited_reference_count: int,
                  source_sha: str) -> tuple[Path, Path, Path]:
-    audit_path = ROOT / "manuscript_sources" / "TESIS_FINAL_NS4_sentence_audit_20260830.csv"
-    manifest_path = ROOT / "manuscript_sources" / "TESIS_FINAL_NS4_spanish_panel_manifest_20260830.csv"
-    receipt_path = ROOT / "manuscript_sources" / "TESIS_FINAL_NS4_completion_receipt_20260830.json"
+    audit_path = MANUSCRIPT_SOURCES / "TESIS_FINAL_NS4_sentence_audit_20260830.csv"
+    manifest_path = MANUSCRIPT_SOURCES / "TESIS_FINAL_NS4_spanish_panel_manifest_20260830.csv"
+    receipt_path = MANUSCRIPT_SOURCES / "TESIS_FINAL_NS4_completion_receipt_20260830.json"
     with audit_path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle)
         writer.writerow(["section", "item", "status", "basis"])
