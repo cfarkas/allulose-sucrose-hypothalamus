@@ -130,8 +130,6 @@ def validate(figure: str, root: Path) -> dict[str, object]:
         require(hashlib.sha256(master.read_bytes()).hexdigest()==next(x['sha256'] for x in receipt['figures'] if x['language']=='en'),'Master does not match complete Figure 3 receipt')
         require(not list(root.glob('Figure_3_cFos_NPY_spanish.*')),'Unexpected complete Spanish master; retain only bilingual subpanels and legends')
         contract=replace(contract,panel_count=len(expected))
-    if figure == "Fig4" and (root/"panels/Figure_ARC_ME_panel_K_ring_definition.pdf").is_file():
-        contract=replace(contract,panel_count=11)
     master_dir, panels_dir, legends_dir = output_layout(root)
     stem = master_stem(master_dir, contract)
     master_png = master_dir / f"{stem}.png"

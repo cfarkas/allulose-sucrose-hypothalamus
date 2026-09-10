@@ -67,7 +67,6 @@ SHARED_SCRIPTS = PAPER_ROOT / "scripts" / "shared"
 if str(SHARED_SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SHARED_SCRIPTS))
 from spanish_panel_text import translate_figure_texts_to_spanish
-from spatial_ring_cartoon import draw_cartoon, caption as ring_caption
 from pomc_size_qc import filter_pomc_by_local_dapi
 
 
@@ -172,7 +171,7 @@ PANEL_FILE_SUFFIXES = {
     "A": "dapi", "B": "cfos", "C": "pomc",
     "D": "cellpose_cartoon", "E": "microscopy", "F": "microscopy_npy_gfp",
     "G": "cfos_dapi", "H": "pomc_activation",
-    "I": "spatial_cfos", "J": "spatial_cfos_pomc", "K": "ring_definition",
+    "I": "spatial_cfos", "J": "spatial_cfos_pomc",
 }
 # Cartoon order in panel D, matching panels A, B and C.
 CARTOON_MARKER_ORDER = ("DAPI", "c-FOS", "POMC")
@@ -3167,7 +3166,7 @@ def spatial_legend_descriptions(args: argparse.Namespace) -> Dict[str, str]:
     summary = pd.read_csv(summary_path).set_index("endpoint")
     shared = (
         "Within each reconstructed section the DAPI centroids define six "
-        "covariance-normalized radial shells of equal DAPI density; an animal's shell "
+        "covariance-normalized radial shells with approximately equal numbers of DAPI nuclei; an animal's shell "
         "counts are summed over its own sections, so each animal contributes one "
         "six-shell vector. Shell rates are arcsin(sqrt) transformed and compared by an "
         "exhaustive animal-label PERMANOVA on Euclidean distances, enumerating every "
@@ -3361,7 +3360,7 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
         + "(H) Animal-level c-FOS∧POMC/total-POMC ratios in ME and ARC.\n"
         + spatial_descriptions["I"]
         + spatial_descriptions["J"]
-        + "(K) " + ring_caption("POMC", "en") + "\n"
+        + "Ring construction is illustrated once in Figure 3G. Corresponding-ring positive and DAPI counts are summed across each animal's sections before calculating percentages.\n"
         + "Bars are mean ± SD; dots are biological animals; crosses mark Tukey-IQR values retained in inference. Animal omnibus values use ordinary one-way ANOVA; W–S/W–A/S–A values use unadjusted exact two-sided MWU. Cage-mean sensitivity uses the same ANOVA/MWU family, while cage-summed numerator/denominator sensitivity uses exact binomial deviance; low positive denominators are retained (W, Water; S, Sucrose; A, Allulose).\n"
         + f"Animal-level values source: {values_path}.\n\nStatistics:\n"
         + "\n".join(stat_lines) + "\n"
@@ -3381,7 +3380,6 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
         "H_pomc_activation": "(H) Animal-level c-FOS∧POMC/total POMC ratios in ME and ARC. Bars are mean ± SD; dots are animals; crosses mark IQR values retained in inference. This is the prespecified primary POMC-activation endpoint; omnibus p values use ordinary one-way ANOVA and pairwise p values use unadjusted exact two-sided MWU.\n" + "\n".join(stat_blocks["cfos_pomc_over_pomc"]) + "\n",
         "I_spatial_cfos": spatial_descriptions["I"],
         "J_spatial_cfos_pomc": spatial_descriptions["J"],
-        "K_ring_definition": "(K) " + ring_caption("POMC", "en"),
     }
     if set(panel_text) != {f"{letter}_{suffix}" for letter, suffix in PANEL_FILE_SUFFIXES.items()}:
         raise ValueError("Panel legend keys and panel file suffixes disagree")
@@ -3428,10 +3426,11 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
         ),
         "J_spatial_cfos_pomc": (
             "(J) Ocurrencia espacial de núcleos doble positivos c-FOS/POMC usando las "
-            "mismas capas y denominadores DAPI del panel I."
+            "mismas capas y denominadores DAPI del panel I. La definición de los anillos se "
+            "ilustra en la Figura 3G; los recuentos correspondientes se suman entre "
+            "las secciones de cada animal antes de calcular los porcentajes."
         ),
     }
-    spanish_panels["K_ring_definition"] = "(K) " + ring_caption("POMC", "es")
     spanish_shared = (
         "La unidad biológica es el animal. Las barras muestran media ± DE, los puntos "
         "son animales y las cruces señalan valores fuera de las cercas de Tukey, que "
@@ -3673,7 +3672,7 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
     spanish_spatial_i, spanish_spatial_j = spanish_spatial_variants(
         (spatial_i, spatial_j)
     )
-    fig = plt.figure(figsize=(13.2, 19.8), facecolor="white")
+    fig = plt.figure(figsize=(13.2, 15.1), facecolor="white")
     outer = fig.add_gridspec(
         # Row heights track each row's native 2.48:1 registered aspect, so the
         # added single-channel row does not open a letterboxed band above it.
@@ -3682,7 +3681,7 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         # The spatial row's ratio is set so its two 1.97:1 panels fill the column
         # width rather than being height-limited and shrinking away from their
         # panel letters.
-        6, 2, height_ratios=[0.54, 0.62, 0.82, 0.76, 1.02, 1.18],
+        5, 2, height_ratios=[0.54, 0.62, 0.82, 0.76, 1.02],
         left=0.035, right=0.992, bottom=0.036, top=0.984,
         wspace=0.15, hspace=0.30,
     )
@@ -3769,12 +3768,6 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         panel_title = fig.text((pos.x0+pos.x1)/2, pos.y1+0.014, title, fontsize=12.5, fontweight="bold", ha="center", va="bottom")
         panel_artists[label] = [*axes, panel_label, panel_title]
 
-    ring_box = outer[5, :].get_position(fig)
-    ring_bounds = (ring_box.x0, ring_box.y0, ring_box.width, ring_box.height)
-    ring_axes = draw_cartoon(fig, bounds=ring_bounds, marker="POMC", language="en")
-    ring_label = fig.text(ring_box.x0-.012, ring_box.y1+.012, "K", fontsize=20, fontweight="bold")
-    panel_artists["K"] = [*ring_axes, ring_label]
-
     pdf = outdir / f"{args.figure_name}.pdf"; png = outdir / f"{args.figure_name}.png"
     fig.canvas.draw()
     renderer = fig.canvas.get_renderer()
@@ -3806,9 +3799,6 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         spatial_image_artists, (spanish_spatial_i, spanish_spatial_j)
     ):
         artist.set_data(plt.imread(str(source)))
-    for axis in ring_axes:
-        axis.remove()
-    draw_cartoon(fig, bounds=ring_bounds, marker="POMC", language="es")
     fig.canvas.draw()
     for label, panel_path in spanish_panel_paths.items():
         fig.savefig(

@@ -316,11 +316,8 @@ Run 07_audit_pomc_size_sensitivity.py after the analyzer for the 0.5/1/1.5-facto
 sensitivity. See provenance/POMC_SIZE_QC_20260909.md for counts and interpretation.
 
 10 SEPTEMBER 2026 — SPATIAL RING EXPLANATION
-Panel K shows the six covariance-normalized DAPI-count quantile rings, with inner
-rings 1–2 highlighted around a schematic third ventricle. Only the within-ring
-percentage formula accompanies the drawing; methodological detail is in the
-legend. The nuclei are illustrative, not experimental observations. Rings are constructed separately within each reconstructed section;
-corresponding-ring numerator and denominator counts are summed over an animal
-before calculating the six occurrence percentages. Complete English master and
-individual A–K panels in English and Spanish are rebuilt by the standard renderer.
-See scripts/shared/spatial_ring_cartoon.py and its mathematical verification tests.
+The ring-definition cartoon appears once, in Figure 3G. Figure 4 retains its
+A–J panels; the spatial plots I/J and their legends refer to the shared method.
+Rings are constructed within each reconstructed section, with corresponding-ring
+positive and DAPI counts summed across an animal before calculating percentages.
+No duplicate ring cartoon is included in this figure.

@@ -5,6 +5,7 @@
   "marker": "NPY",
   "illustrative_nuclei": 360,
   "view": "DAPI nuclei surrounding an illustrative third ventricle",
+  "ventricle_shape": "narrow superior neck, inferior flare and rounded floor",
   "shell_counts": [
     60,
     60,
@@ -18,13 +19,13 @@
     2
   ],
   "quantile_edges": [
-    0.1221574391790043,
-    0.9010241060948528,
-    1.1848811850302667,
-    1.3928896997668425,
-    1.5923416786773472,
-    1.7641313063672484,
-    2.1788762911299364
+    0.17527649163302217,
+    0.9245913995657438,
+    1.1737348785974695,
+    1.4476836916377336,
+    1.5870970029080849,
+    1.7776304444005695,
+    2.0373968820118793
   ],
   "centre": "mean of eligible DAPI centroids",
   "distance": "covariance-normalized radius",

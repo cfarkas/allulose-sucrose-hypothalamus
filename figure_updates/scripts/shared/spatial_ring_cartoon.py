@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon
 import numpy as np
 
-COLORS = ("#bca8df", "#dccded", "#b7c8db", "#cad6e3", "#dde5ed", "#edf1f5")
+COLORS = ("#a36ade", "#c298eb", "#78adef", "#76c7eb", "#8bdfdf", "#b1efe5")
 INK = "#263443"
 POSITIVE = "#cf7b20"
 
@@ -24,7 +24,11 @@ POSITIVE = "#cf7b20"
 def ventricle_half_width(y):
     """Illustrative third-ventricle contour, not an anatomical measurement."""
     y = np.asarray(y)
-    return .08 + .24 * np.clip((y + 1.5) / 4.0, 0, 1)
+    # Narrow superior neck, widening inferiorly to a rounded, nearly flat floor.
+    taper = np.clip((1.8 - y) / 3.1, 0, 1)
+    width = .055 + .660 * taper**2.2
+    corner = .515 + .20 * np.sqrt(np.maximum(0, 1 - ((y + 1.30) / .20)**2))
+    return np.where(y < -1.30, corner, width)
 
 
 def illustrative_geometry():
@@ -77,15 +81,15 @@ def draw_cartoon(fig, bounds=(0.02, 0.03, 0.96, 0.93), marker="NPY", language="e
     for index in reversed(range(6)):
         boundary = (unit * edges[index+1]) @ transform + centre
         ax.add_patch(Polygon(boundary, closed=True, facecolor=COLORS[index],
-                             edgecolor="#7656a3" if index < 2 else "#93a5b9",
-                             linewidth=1.1 if index < 2 else .75, zorder=1))
-    ax.scatter(points[:,0], points[:,1], s=7, color="#3966b4", alpha=.80,
+                             edgecolor="#6822a7" if index < 2 else "#277ca9",
+                             linewidth=1.5 if index < 2 else 1.05, zorder=1))
+    ax.scatter(points[:,0], points[:,1], s=9.5, color="#1454d5", alpha=.98,
                linewidths=0, zorder=2)
     # Keep the ventricular lumen free of nuclei; rings remain defined by DAPI.
-    y = np.linspace(-1.5, 2.7, 100)
+    y = np.linspace(-1.5, 2.7, 400)
     half = ventricle_half_width(y)
     contour = np.concatenate((np.column_stack((-half,y)), np.column_stack((half,y))[::-1]))
-    ax.add_patch(Polygon(contour, closed=True, facecolor="white", edgecolor="#6a7c91", linewidth=1.0, zorder=3))
+    ax.add_patch(Polygon(contour, closed=True, facecolor="white", edgecolor="#18232f", linewidth=1.8, zorder=3))
     ax.plot(*centre, marker="+", color=INK, markersize=7, markeredgewidth=1.1, zorder=4)
     # Put the six labels along a right-facing radius in the original tissue view.
     direction = np.array([np.cos(.22),np.sin(.22)])
@@ -98,14 +102,14 @@ def draw_cartoon(fig, bounds=(0.02, 0.03, 0.96, 0.93), marker="NPY", language="e
                 fontweight="bold", color=INK,
                 bbox=dict(boxstyle="circle,pad=.11",fc=COLORS[index],ec="none"),zorder=5)
     es = language == "es"
-    ax.scatter([3.62], [1.9], s=22, color="#3966b4")
+    ax.scatter([3.62], [1.9], s=30, color="#1454d5")
     ax.text(3.84,1.9,"DAPI",va="center",fontsize=11*font_scale,color=INK)
-    ax.annotate("Tercer ventrículo" if es else "Third ventricle", xy=(.20,1.32), xytext=(3.60,.85),
+    ax.annotate("Tercer ventrículo" if es else "Third ventricle", xy=(float(ventricle_half_width(1.0)),1.0), xytext=(3.60,.85),
                 ha="left",va="center",fontsize=10*font_scale,color=INK,
-                arrowprops=dict(arrowstyle="-",color="#6a7c91",lw=.9,connectionstyle="angle3,angleA=0,angleB=90"))
+                arrowprops=dict(arrowstyle="-",color="#18232f",lw=1.05,connectionstyle="angle3,angleA=0,angleB=90"))
     ax.annotate("Anillos internos 1–2" if es else "Inner rings 1–2",xy=(.8,-.65),xytext=(3.60,-.65),
-                ha="left",va="center",fontsize=10*font_scale,color="#65489c",fontweight="bold",
-                arrowprops=dict(arrowstyle="-",color="#65489c",lw=1.1))
+                ha="left",va="center",fontsize=10*font_scale,color="#6822a7",fontweight="bold",
+                arrowprops=dict(arrowstyle="-",color="#6822a7",lw=1.1))
     ax.set(xlim=(-3.6,6.3),ylim=(-2.6,2.6),aspect="equal")
     formula = fig.add_axes([left+.07*width,bottom,width*.86,height*.15])
     formula.set_axis_off()
@@ -137,7 +141,8 @@ def save_cartoon(outdir, marker="NPY", dpi=600):
     receipt = {"schema": "spatial_ring_cartoon_v2", "illustration_only": True,
                "experimental_data_used": False, "marker": marker,
                "illustrative_nuclei": len(geometry[0]),
-               "view": "DAPI nuclei surrounding an illustrative third ventricle", "shell_counts": np.bincount(geometry[5]).tolist(),
+               "view": "DAPI nuclei surrounding an illustrative third ventricle",
+               "ventricle_shape": "narrow superior neck, inferior flare and rounded floor", "shell_counts": np.bincount(geometry[5]).tolist(),
                "inner_shells": [1, 2], "quantile_edges": geometry[4].tolist(),
                "centre": "mean of eligible DAPI centroids", "distance": "covariance-normalized radius",
                "denominator": "eligible DAPI nuclei in the same shell", "files": outputs}

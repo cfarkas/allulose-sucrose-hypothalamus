@@ -50,3 +50,7 @@ one-third of the eligible DAPI nuclei. One field contributes per animal.
 The shared renderer is scripts/shared/spatial_ring_cartoon.py. Figure 3 completion
 regenerates this panel and corrects the historical density wording in its plot axes.
 The certified historical analytical pipeline and its masks remain unchanged.
+
+The ring schematic in G uses a narrow superior third-ventricle neck, an inferior
+flare and rounded floor, saturated blue DAPI points and stronger ring colors.
+It is the only ring-definition cartoon in the main figures; Figure 4 refers here.

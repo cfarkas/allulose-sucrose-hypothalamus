@@ -92,7 +92,7 @@
         {
           "panel": "G",
           "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.pdf",
-          "sha256": "72ae98527dae0c4858eb599cf830dbb4cace88251a76d1f3640ad69241cc0e94",
+          "sha256": "b96437bc1ce8829913c2559e103274a20bd4cc509f2ec09d3e16723d6e2fed3b",
           "removed_previous_letter": []
         },
         {
@@ -181,7 +181,7 @@
         "I"
       ],
       "pdf": "Fig3/Figure_3_cFos_NPY.pdf",
-      "sha256": "f4e9c911ed49ce3858c0c362f88aff49e7c538db64dfbb160147498c9de372d0"
+      "sha256": "f2555307ae2f95f0d2a20a39b1482e99624a4f3aeb7073252e9416567556c69d"
     },
     {
       "language": "es",
@@ -233,7 +233,7 @@
         {
           "panel": "G",
           "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf",
-          "sha256": "1c128580cecdd551236db1b7a92628c9420baf344d83dff578346b399e81f88d",
+          "sha256": "a9a692e24b74de5aa617e7741cae0f48045c80874e10dfb7f8ed72271be08bd5",
           "removed_previous_letter": []
         },
         {

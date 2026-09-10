@@ -1,5 +1,5 @@
 # Reproduce the allulose–sucrose paper
-The 10 September update adds explanatory DAPI ring cartoons to [Figure 3G](figure_updates/Fig3/Figure_3_cFos_NPY.pdf) and [Figure 4K](figure_updates/Fig4/Figure_4.pdf), with unchanged experimental statistics. See [update details](FIGURE_UPDATES.md).
+The 10 September update introduces the DAPI ring method once in [Figure 3G](figure_updates/Fig3/Figure_3_cFos_NPY.pdf); [Figure 4](figure_updates/Fig4/Figure_4.pdf) retains its A–J data panels, with unchanged experimental statistics. See [update details](FIGURE_UPDATES.md).
 
 
 This study compares allulose, a sweetener with few calories, with sucrose
