@@ -23,6 +23,8 @@ class Contract:
 
 
 CONTRACTS = {
+    "FigS7": Contract(("Figure_S7",), 3, "Figure_S7_LEGEND.txt", "Figure_S7_LEGEND_spanish.txt"),
+    "FigS8": Contract(("Figure_S8",), 2, "Figure_S8_LEGEND.txt", "Figure_S8_LEGEND_spanish.txt"),
     "FigS6": Contract(
         ("Figure_S6",), 4,
         "Figure_S6_LEGEND.txt", "Figure_S6_LEGEND_spanish.txt",

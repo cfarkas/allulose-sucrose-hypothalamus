@@ -1,0 +1,25 @@
+endpoint,cage,condition,value,unit
+bottle_volume_removed_day6,E1,Sucrose,110.0,mL/cage
+bottle_volume_removed_day6,E10,Water,40.0,mL/cage
+bottle_volume_removed_day6,E11,Water,20.0,mL/cage
+bottle_volume_removed_day6,E12,Water,20.0,mL/cage
+bottle_volume_removed_day6,E2,Allulose,45.0,mL/cage
+bottle_volume_removed_day6,E3,Sucrose,170.0,mL/cage
+bottle_volume_removed_day6,E4,Sucrose,55.0,mL/cage
+bottle_volume_removed_day6,E5,Allulose,45.0,mL/cage
+bottle_volume_removed_day6,E6,Allulose,30.0,mL/cage
+bottle_volume_removed_day6,E7,Sucrose,130.0,mL/cage
+bottle_volume_removed_day6,E8,Allulose,35.0,mL/cage
+bottle_volume_removed_day6,E9,Sucrose,70.0,mL/cage
+body_weight_change_day6,E1,Sucrose,4.4531048894351954,percent cage-mean change
+body_weight_change_day6,E2,Allulose,-3.10597825197576,percent cage-mean change
+body_weight_change_day6,E3,Sucrose,0.3680561450252133,percent cage-mean change
+body_weight_change_day6,E4,Sucrose,-3.1459879816189487,percent cage-mean change
+body_weight_change_day6,E5,Allulose,-9.255888890550354,percent cage-mean change
+body_weight_change_day6,E6,Allulose,-20.8416169648774,percent cage-mean change
+body_weight_change_day6,E7,Sucrose,1.893999516924874,percent cage-mean change
+body_weight_change_day6,E8,Allulose,0.4040901026635097,percent cage-mean change
+body_weight_change_day6,E9,Sucrose,-0.9800078400627203,percent cage-mean change
+body_weight_change_day6,E10,Water,2.1075452721431174,percent cage-mean change
+body_weight_change_day6,E11,Water,-2.524402558061259,percent cage-mean change
+body_weight_change_day6,E12,Water,-1.4113740141137396,percent cage-mean change

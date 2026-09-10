@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 35,
+    "replaced": 2
+  },
+  "figure": "Fig4",
+  "files": [
+    {
+      "bytes": 67583,
+      "promoted": "Fig4/provenance/all_section_stitch_registration_audit.csv",
+      "sha256": "e2a22ebba5316768d6c5f0f8144bde009fa93a37913ea9fbcb16f15dfbb22cab",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/provenance/all_section_stitch_registration_audit.csv"
+    },
+    {
+      "bytes": 20255,
+      "promoted": "Fig4/provenance/multipanel_source_manifest.csv",
+      "sha256": "e05e8954224d3c7d29f9b064d7056df60a9e1dbf30796dede4996e970117feb8",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/provenance/multipanel_source_manifest.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_4",
+  "master_name_promoted": "Figure_4",
+  "promoted_utc": "2026-08-26T03:45:59+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_rebuild/Fig4/figure",
+  "superseded_copied_to": "Fig4/legacy/superseded_promotion_20260826T034559Z"
+}

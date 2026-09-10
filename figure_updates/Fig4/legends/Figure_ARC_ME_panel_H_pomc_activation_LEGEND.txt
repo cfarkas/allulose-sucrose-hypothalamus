@@ -1,0 +1,9 @@
+(H) Animal-level c-FOS∧POMC/total POMC ratios in ME and ARC. Bars are mean ± SD; dots are animals; crosses mark IQR values retained in inference. This is the prespecified primary POMC-activation endpoint; omnibus p values use ordinary one-way ANOVA and pairwise p values use unadjusted exact two-sided MWU.
+c-FOS∧POMC/POMC, ME:
+animal: one-way ANOVA p = 0.402; MWU W–S p = 0.933; MWU W–A p = 0.667; MWU S–A p = 0.286.
+cage mean: one-way ANOVA p = NA; MWU W–S p = NA; MWU W–A p = NA; MWU S–A p = 0.8.
+cage counts: deviance exact p = NA; pair W–S p = NA; pair W–A p = NA; pair S–A p = 0.5.
+c-FOS∧POMC/POMC, ARC:
+animal: one-way ANOVA p = 0.176; MWU W–S p = 0.229; MWU W–A p = 0.0476; MWU S–A p = 0.257.
+cage mean: one-way ANOVA p = 0.294; MWU W–S p = 0.333; MWU W–A p = 0.2; MWU S–A p = 0.8.
+cage counts: deviance exact p = 0.457; pair W–S p = 0.333; pair W–A p = 0.3; pair S–A p = 0.8.

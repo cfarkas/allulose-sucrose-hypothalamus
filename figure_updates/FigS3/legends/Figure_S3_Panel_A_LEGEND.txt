@@ -1,0 +1,1 @@
+Figure S3, panel A. Reproducible workflow for the 24 Motic H&E whole-slide images and a representative within-slide organ segmentation of Water animal m26-015. Liver, Kidney and Spleen are labeled in their verified top-to-bottom order; the map is cropped to the tissue so the three organs, not the slide background, fill the panel.

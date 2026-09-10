@@ -11,7 +11,7 @@ From the Paper root:
   ./reproduce_all_figures.sh --check-only
   ./reproduce_all_figures.sh --plan
 
-A normal rebuild renders only into fresh /tmp stages until all eleven figures pass.
+A normal rebuild renders only into fresh /tmp stages until all thirteen figures pass.
 It then installs current generated analyses and publication artifacts into the
 canonical Paper/analyses and Paper/FigN locations. Paper itself is the delivered
 complete package, so active scripts and raw/raw_data remain present and are
@@ -72,7 +72,7 @@ Utilities
   scripts/utilities/06_import_figure_s5_hil.py
       Hash-validating import of the accepted S5 HIL set into fresh work.
   scripts/utilities/08_figure_progress.py
-      Tqdm progress display for the eleven validated figure packages.
+      Tqdm progress display for the thirteen validated figure packages.
   scripts/utilities/09_audit_canonical_inputs.py
       Pre/post raw-data metadata and active-script SHA-256 audit.
 
@@ -87,6 +87,11 @@ Scientific readiness
   root-launcher option --force after frozen-reference validation.
 - Figure S4 still requires its documented workbook for a fresh analysis.
 
-All publication raster figures are produced at 600 dpi. Non-graphic recovery
-receipts may remain under recovery_archive/; they are historical evidence, not
-current run instructions. Superseded figure graphics are not active outputs.
+All publication raster figures are produced at 600 dpi. Superseded figure
+graphics are not active outputs.
+
+Figure S7 documents human-supervised Cellpose training; Figure S8 presents
+pilot-based sample-size curves. Both use verified source inputs and complete
+English masters with bilingual isolated panels. See FigS7/README.txt and
+FigS8/README.txt. Figure S3 uses corrected matched-HC3 residual permutations
+(99,999, base seed 1707); hepatic epithelial-like p=0.00031, BH q=0.02418.

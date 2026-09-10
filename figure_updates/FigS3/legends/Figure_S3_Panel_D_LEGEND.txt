@@ -1,0 +1,1 @@
+Figure S3, panel D. Organ-specific principal-component analysis of the centered-log-ratio composition, colored by treatment only. Each organ is an independent ordination, so each row reports its own PC1 and PC2 variance fractions.

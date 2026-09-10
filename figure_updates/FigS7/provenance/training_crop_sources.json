@@ -1,0 +1,59 @@
+[
+  {
+    "channel": "DAPI",
+    "tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/others/POMC_cFOS_20X_stiching/FR6-1/XY01/Image_XY01_00005_CH1.tif",
+    "mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/others/POMC_cFOS_20X_stiching/FR6-1/XY01/Image_XY01_00005_CH1_seg.npy",
+    "crop_xywh": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "display_percentiles": [
+      1,
+      99.7
+    ],
+    "mask_edited": false,
+    "source_tiff_sha256": "e3d1f24ff1dd630e0a965b46b20458bb4216c31a9fa7c78ba419f686dc429392",
+    "source_mask_sha256": "839a47f7adb217529265d7ece519953f98af2572b9824e0f12c0999e01f86298",
+    "display_crop_file": "DAPI.npz"
+  },
+  {
+    "channel": "c-FOS",
+    "tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/c-FOS_training/Image_XY01_CH4.tif",
+    "mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/c-FOS_training/Image_XY01_CH4_seg.npy",
+    "crop_xywh": [
+      256,
+      0,
+      512,
+      512
+    ],
+    "display_percentiles": [
+      1,
+      99.7
+    ],
+    "mask_edited": false,
+    "source_tiff_sha256": "522180a7c07e471b181998ad83f6b38ce523713339cb62108b975bbdb086ed68",
+    "source_mask_sha256": "c36c84ac540f99f1a2f218230cbc6defe8a3dcc55951238f86620c687e204c3b",
+    "display_crop_file": "c-FOS.npz"
+  },
+  {
+    "channel": "POMC",
+    "tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY02_CH3.tif",
+    "mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY02_CH3_seg.npy",
+    "crop_xywh": [
+      0,
+      208,
+      512,
+      512
+    ],
+    "display_percentiles": [
+      1,
+      99.7
+    ],
+    "mask_edited": false,
+    "source_tiff_sha256": "96c8180d3ce48b5430ca2c5e03db12a125b7084a0937c593c72ae72b588bf573",
+    "source_mask_sha256": "84e92386b13cba71f61a1c6e8068da1eca3c901d6a9b144531b6f5ce0c23a3e7",
+    "display_crop_file": "POMC.npz"
+  }
+]

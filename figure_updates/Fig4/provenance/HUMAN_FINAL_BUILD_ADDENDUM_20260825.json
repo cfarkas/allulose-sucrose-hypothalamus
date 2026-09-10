@@ -1,0 +1,64 @@
+{
+  "applies_to": "provenance/HUMAN_FINAL_BUILD_RECEIPT.json",
+  "figure_name_note": "--figure-name selects filenames only; it is used for the master PDF and PNG, the legend and the caption, and never reaches the drawn content. The bytes below prove it.",
+  "incident_reference": "incident.txt, ADDENDUM 7 \u2014 2026-08-25",
+  "note": "The build receipt is a record of the 2026-08-24T21:11:39Z build and is unchanged: the script hashes it names are the ones that produced the promoted Figure_4.pdf and Figure_4.png. This addendum records the edits made to those scripts afterwards, and the reruns that confirm they changed no output.",
+  "promoted_files_unchanged": {
+    "Fig4/Figure_4.pdf": "9ab6ee1a3ec83f4acce0476d5be6fd6dc175fc0a065fb8b3c0d2f2d331d03b20",
+    "Fig4/Figure_4.png": "71898d61e0c4db2060b06e69de105f9670fd830e3e9667ef8edeeae4d238677c"
+  },
+  "reverification": [
+    {
+      "analyzer_exit": 0,
+      "commands": [
+        "$PY Fig4/02_analyze_pomc_cfos.py",
+        "$PY Fig4/03_make_figure_4_pomc_cfos.py"
+      ],
+      "figure_pdf_byte_identical": true,
+      "figure_pdf_sha256": "9ab6ee1a3ec83f4acce0476d5be6fd6dc175fc0a065fb8b3c0d2f2d331d03b20",
+      "figure_png_byte_identical": true,
+      "figure_png_sha256": "71898d61e0c4db2060b06e69de105f9670fd830e3e9667ef8edeeae4d238677c",
+      "method": "Fig4, scripts and README.txt copied into a separate tree with no analyses/ directory; the two documented commands run there with no arguments at all",
+      "renderer_exit": 0,
+      "scripts_used": "the copies taken before the edits above",
+      "tree": "/media/server/STORAGE/Apotome/_repro_check_20260825/Paper"
+    },
+    {
+      "analysis_step": "scripts/Fig4/02_analyze_pomc_cfos.py",
+      "build_ok": true,
+      "figure_pdf_byte_identical": true,
+      "figure_pdf_sha256": "9ab6ee1a3ec83f4acce0476d5be6fd6dc175fc0a065fb8b3c0d2f2d331d03b20",
+      "figure_png_byte_identical": true,
+      "figure_png_sha256": "71898d61e0c4db2060b06e69de105f9670fd830e3e9667ef8edeeae4d238677c",
+      "method": "the reviewer's Make Figure 4 button, driven through POST /api/make-figure, over the shipped 76/76 review",
+      "render_step": "scripts/Fig4/03_make_figure_4_pomc_cfos.py --figure-name Figure_4",
+      "reported_master_files": [
+        "Figure_4.pdf",
+        "Figure_4.png"
+      ],
+      "reviewer_sha256": "37b973f96e7fbbcf696a66e994520bf646edfb5bbd18c4af2055e13969c17af3",
+      "scripts_used": "the edited copies whose hashes are recorded above"
+    }
+  ],
+  "schema": "fig4_human_final_build_addendum_v1",
+  "scripts": {
+    "scripts/Fig4/02_analyze_pomc_cfos.py": {
+      "sha256": "8fc5c28ae74fceb1578763f8a5e22fd004554c0c319f5b4af300cfc09a0f871e",
+      "superseded_sha256": "d6071b74d6bc0ce333ea3f13af65798e58b6974ae4ba9ba89b24d5d3f1bc3c20"
+    },
+    "scripts/Fig4/03_make_figure_4_pomc_cfos.py": {
+      "sha256": "74ef0c6724531ecaa9a411014b8034e2212eec008e6ab4f5bb1e752e3a1a7dd6",
+      "superseded_sha256": "b7a4029aa1e3a6101b0e4db08600988a8e12b3105ad0eda22f3864bf73c75cc1"
+    },
+    "scripts/shared/01_annotate_regions.py": {
+      "sha256": "37b973f96e7fbbcf696a66e994520bf646edfb5bbd18c4af2055e13969c17af3",
+      "superseded_sha256": "ece6aef4890ea8aa7d50476a558673e3547a75f535a49e8947aba8f7be9c742a"
+    }
+  },
+  "why": [
+    "The reviewer's Make Figure 4 button rendered into a random directory under /tmp, under the renderer's default name Figure_ARC_ME_multipanel, so a build that had succeeded left nothing a reviewer could find. It now renders into analyses/Fig4/figure and passes --figure-name Figure_4, and the page reports the master files by full path.",
+    "Every numbered script located the tree by walking up to a directory literally named Paper, so an archive unpacked under any other name could not run at all. The predicate now also accepts the directory holding README.txt and scripts/setup; the name is still tried first.",
+    "The analyzer's terminal --make-figure path had the same /tmp default and the same unpromoted name."
+  ],
+  "written_utc": "2026-08-25T02:45:00+00:00"
+}

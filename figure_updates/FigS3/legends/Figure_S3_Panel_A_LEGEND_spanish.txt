@@ -1,0 +1,1 @@
+Figura S3, panel A. Flujo de trabajo reproducible para las 24 imágenes Motic de H&E de portaobjetos completo y segmentación representativa de los órganos dentro del portaobjetos del animal de Agua m26-015. Hígado, riñón y bazo se rotulan en su orden verificado de arriba abajo; el mapa se recorta al tejido para que los tres órganos, y no el fondo del portaobjetos, ocupen el panel.

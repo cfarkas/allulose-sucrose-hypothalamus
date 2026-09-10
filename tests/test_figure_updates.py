@@ -1,4 +1,4 @@
-"""Check update installation boundaries and the eleven-figure completion contract."""
+"""Check update installation boundaries and the thirteen-figure completion contract."""
 import contextlib
 import hashlib
 import io
@@ -30,7 +30,7 @@ class FigureUpdateTests(unittest.TestCase):
         self.base = {"tree": {"files": [{"path": self.script.name, "sha256": sha(self.script.read_bytes()), "mode": "0755"}]}}
         (self.root / "manifest.json").write_text(json.dumps(self.base))
         rows = []
-        for name, data in [(self.script.name, b"# eleven-figure launcher\n"), ("FigS6/raw_data/references.csv", b"cell,label\nc1,Rod-like\n")]:
+        for name, data in [(self.script.name, b"# thirteen-figure launcher\n"), ("FigS6/raw_data/references.csv", b"cell,label\nc1,Rod-like\n")]:
             path = self.root / updates.PAYLOAD / name
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(data)
@@ -47,7 +47,7 @@ class FigureUpdateTests(unittest.TestCase):
         before = (self.root / "manifest.json").read_bytes()
         result = updates.apply_updates(self.root)
         self.assertEqual((Path(result["backup"]) / self.script.name).read_bytes(), b"# archived launcher\n")
-        self.assertEqual(self.script.read_bytes(), b"# eleven-figure launcher\n")
+        self.assertEqual(self.script.read_bytes(), b"# thirteen-figure launcher\n")
         self.assertEqual((self.root / "manifest.json").read_bytes(), before)
         self.assertEqual(updates.apply_updates(self.root)["status"], "already_installed")
         with contextlib.redirect_stdout(io.StringIO()):
@@ -136,14 +136,14 @@ class FigureUpdateTests(unittest.TestCase):
         self.assertEqual(out.getvalue().count("http://127.0.0.1:45678"), 1)
         self.assertNotIn("ordinary log", out.getvalue())
 
-    def test_updated_mode_requires_eleven_figure_completion(self):
+    def test_updated_mode_requires_thirteen_figure_completion(self):
         runner = reproduce.Runner(self.root, figure_updates=True)
         with patch.object(runner, "command", return_value=reproduce.SUCCESS_MARKER + "\n"):
             with self.assertRaisesRegex(reproduce.ReproductionError, "did not confirm completion"):
                 runner.figures()
         with patch.object(runner, "command", return_value=reproduce.UPDATED_SUCCESS_MARKER + "\n"), contextlib.redirect_stdout(io.StringIO()) as output:
             runner.figures()
-        self.assertIn("All 11 figures reproduced and verified", output.getvalue())
+        self.assertIn("All 13 figures reproduced and verified", output.getvalue())
 
 
 if __name__ == "__main__":

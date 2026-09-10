@@ -5,10 +5,12 @@ This study compares allulose, a sweetener with few calories, with sucrose
 brain activity after prior exposure, focusing on the hypothalamus, which helps
 regulate appetite.
 
-Recreate **all 11 figures (1–5 and S1–S6)**. Figure 1 includes the corrected
+Recreate **all 13 figures (1–5 and S1–S8)**. Figure 1 includes the corrected
 Holm terminology and reconciled cage transfer. Figure 3 includes sucrose and
 its reviewed boundaries; S5 includes NPY-M (three animals per condition).
-S6 compares 73.9% versus 57.0% balanced accuracy.
+S6 compares 73.9% versus 57.0% balanced accuracy. S7 documents Cellpose training; S8 shows pilot-based sample-size estimates. S3 uses corrected HC3-studentized residual permutations (hepatic epithelial-like p=0.00031, BH q=0.02418).
+
+Figure 4 now applies uniform local-DAPI size QC to POMC masks and reports threshold sensitivity. Its familiarized cohort had a 4-hour fast; the independent ACTH/CLIP experiment in S5 had a 16-hour fast. Original images and masks remain preserved.
 
 **Normal runs reuse the 203 saved human microglial choices without prompting.**
 To classify the cells yourself and retrain, add the optional flag:
@@ -23,7 +25,7 @@ Zenodo records.
 All four records are open access. The command below downloads them automatically.
 They contain the original ten-figure release; the verified GitHub update adds the
 current scripts, saved reviews, corrected figures, pilot-based sample-size
-calculations and S6.
+calculations and S6–S8.
 
 | Contents | Zenodo record |
 | --- | --- |
@@ -67,20 +69,20 @@ python3 reproduce.py
 ```
 
 The program checks your computer, downloads and unpacks all the data from
-Zenodo, installs the required software for this project, and recreates all eleven
+Zenodo, installs the required software for this project, and recreates all thirteen
 figures. It reuses the saved human choices and candidate classifier for the
 additional microglial review branch. It applies the tested settings automatically and checks the results
 against the published figures.
 
 **Keep the terminal open and the computer awake.** Downloading may take several
 hours. The archived ten-figure calculations took about 37 minutes on our test
-server. The current eleven-figure workflow includes additional reconstruction
+server. The current thirteen-figure workflow includes additional reconstruction
 steps; its total runtime has not been benchmarked.
 
 When everything has passed, you will see:
 
 ```text
-SUCCESS: All 11 figures reproduced and verified.
+SUCCESS: All 13 figures reproduced and verified.
 ```
 
 ## Find your results
@@ -88,7 +90,7 @@ SUCCESS: All 11 figures reproduced and verified.
 Inside this repository, open:
 
 - `Paper/Fig1/` through `Paper/Fig5/` for the main figures.
-- `Paper/FigS1/` through `Paper/FigS6/` for the supplementary figures.
+- `Paper/FigS1/` through `Paper/FigS8/` for the supplementary figures.
 
 Each folder contains PNG/PDF figures and a `source_data/` folder with plotted
 values and statistics. Main figures are in English; individual panels and
@@ -115,7 +117,7 @@ see the [detailed guide](DETAILED_GUIDE.md).
 
 The original ten-figure replay reproduced all 136 PNGs exactly. Separate checks
 reproduced all 36 corrected Figure 1/S6 PDF/PNG files byte for byte. A complete
-new eleven-figure replay has not been rerun. The complete Figure 3 and
+new thirteen-figure replay has not been rerun. The complete Figure 3 and
 nine-animal S5 have separate reconstruction checks; the update guide describes
 their scope. Figure 5's candidate class labels
 remain provisional, as explained in the [update guide](FIGURE_UPDATES.md).

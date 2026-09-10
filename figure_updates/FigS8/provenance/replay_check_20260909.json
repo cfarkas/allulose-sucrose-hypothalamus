@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "comparison": "independent replay PNG byte equality",
+  "files": [
+    "FigS8/Figure_S8.png",
+    "FigS8/panels/Figure_S8_Panel_A.png",
+    "FigS8/panels/Figure_S8_Panel_A_spanish.png",
+    "FigS8/panels/Figure_S8_Panel_B.png",
+    "FigS8/panels/Figure_S8_Panel_B_spanish.png"
+  ]
+}

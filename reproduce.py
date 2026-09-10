@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduce the current eleven figures, reusing the saved human microglial choices."""
+"""Reproduce the current thirteen figures, reusing the saved human microglial choices."""
 from __future__ import annotations
 
 import argparse
@@ -25,7 +25,7 @@ from reconstruct_paper import load_manifest
 from figure_updates import apply_updates, load_updates, RECEIPT
 
 SUCCESS_MARKER = "All ten figures were installed, including certified Figure 3 (--force)."
-UPDATED_SUCCESS_MARKER = "All eleven figures were installed, including certified Figure 3 (--force)."
+UPDATED_SUCCESS_MARKER = "All thirteen figures were installed, including certified Figure 3 (--force)."
 SETUP_FILES = (
     "scripts/setup/environment.yml",
     "scripts/setup/environment_s3_conda_explicit_linux-64.txt",
@@ -233,7 +233,7 @@ class Runner:
                       "--stage", "reproduce", "--strict"], "04-readiness.log")
 
     def figures(self):
-        count = 11 if self.figure_updates else 10
+        count = 13 if self.figure_updates else 10
         marker = UPDATED_SUCCESS_MARKER if self.figure_updates else SUCCESS_MARKER
         command = ["bash", "./reproduce_all_figures.sh", "--output", self.paper, "--force"]
         if self.do_microglial_choices:
@@ -267,7 +267,7 @@ def main(argv=None):
     modes.add_argument("--prepare-only", action="store_true", help="Download, install software, and check readiness; stop before running figures.")
     parser.add_argument("--do_microglial_choices", "--do-microglial-choices", action="store_true", help="Optional: open a blank 300-cell microglial review and retrain; enables --figure-updates. Default reuses the current 203 saved choices without prompting.")
     editions = parser.add_mutually_exclusive_group()
-    editions.add_argument("--figure-updates", action="store_true", help="Use the current eleven-figure workflow (the default).")
+    editions.add_argument("--figure-updates", action="store_true", help="Use the current thirteen-figure workflow (the default).")
     editions.add_argument("--archived-release", action="store_true", help="Reproduce only the original ten-figure Zenodo release in an unmodified Paper tree.")
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parent, help="Repository folder (defaults to this script's folder).")
     parser.add_argument("--archive-root", type=Path, help="Advanced: reuse an existing complete set of downloaded ZIP archives.")
@@ -283,7 +283,7 @@ def main(argv=None):
                 fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
             except BlockingIOError:
                 raise ReproductionError("Another reproduction is already running in this folder. Use its terminal to follow progress.") from None
-            print(f"Paper reproduction: {10 if args.archived_release else 11} figures\nA new download is about 240 GB; plan for 800 GB free space including work files.", flush=True)
+            print(f"Paper reproduction: {10 if args.archived_release else 13} figures\nA new download is about 240 GB; plan for 800 GB free space including work files.", flush=True)
             runner = Runner(args.root, args.archive_root.expanduser().absolute() if args.archive_root else None, figure_updates=not args.archived_release, do_microglial_choices=args.do_microglial_choices)
             runner.execute(check_only=args.check_only, prepare_only=args.prepare_only)
     except KeyboardInterrupt:

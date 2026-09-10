@@ -1,0 +1,33 @@
+analysis_family,endpoint,source_endpoint,region,test,group1,group2,statistic,p_value_raw,df_between,df_within,extreme_labelings,enumerated_labelings,effect_size,effect_size_definition,experimental_unit,no_plus_one,permutation_unit
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ME,One-way ANOVA,all,,2.5773150822482696,0.17012366636308762,2.0,5.0,,,,ordinary one-way ANOVA of arithmetic cage means,cage,,
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ME,Mann-Whitney U,Water,Sucrose,0.0,0.2,,,2.0,10.0,1.0,Cliff's delta (Sucrose minus Water),,True,cage
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ME,Mann-Whitney U,Water,Allulose,0.0,0.2,,,2.0,10.0,1.0,Cliff's delta (Allulose minus Water),,True,cage
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ME,Mann-Whitney U,Sucrose,Allulose,7.0,0.4,,,8.0,20.0,-0.5555555555555556,Cliff's delta (Allulose minus Sucrose),,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ME,binomial deviance,all,,90.51193376767489,0.4607142857142857,,,258.0,560.0,,global likelihood-ratio deviance,,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ME,binomial deviance,Water,Sucrose,87.38883701094304,0.1,,,1.0,10.0,0.0767125771878566,pooled proportion difference (Sucrose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ME,binomial deviance,Water,Allulose,12.505810813984837,0.7,,,7.0,10.0,0.02082451060623297,pooled proportion difference (Allulose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ME,binomial deviance,Sucrose,Allulose,49.47344930932593,0.7,,,14.0,20.0,-0.055888066581623624,pooled proportion difference (Allulose minus Sucrose),,True,cage
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ARC,One-way ANOVA,all,,0.6878385467418766,0.5446396153507168,2.0,5.0,,,,ordinary one-way ANOVA of arithmetic cage means,cage,,
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ARC,Mann-Whitney U,Water,Sucrose,1.0,0.4,,,4.0,10.0,0.6666666666666666,Cliff's delta (Sucrose minus Water),,True,cage
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ARC,Mann-Whitney U,Water,Allulose,2.0,0.8,,,8.0,10.0,0.3333333333333333,Cliff's delta (Allulose minus Water),,True,cage
+cage_mean_anova,cfos_over_dapi,total_cfos_activation_fraction,ARC,Mann-Whitney U,Sucrose,Allulose,3.0,0.7,,,14.0,20.0,0.3333333333333333,Cliff's delta (Allulose minus Sucrose),,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ARC,binomial deviance,all,,74.08013326387675,0.8,,,448.0,560.0,,global likelihood-ratio deviance,,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ARC,binomial deviance,Water,Sucrose,35.23936806965088,0.5,,,5.0,10.0,0.017027446176492683,pooled proportion difference (Sucrose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ARC,binomial deviance,Water,Allulose,74.07873238039622,0.6,,,6.0,10.0,0.02397206136153153,pooled proportion difference (Allulose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_over_dapi,total_cfos_activation_fraction,ARC,binomial deviance,Sucrose,Allulose,8.70341710666412,0.8,,,16.0,20.0,0.0069446151850388466,pooled proportion difference (Allulose minus Sucrose),,True,cage
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,One-way ANOVA,all,,,,,,,,,ordinary one-way ANOVA of arithmetic cage means,cage,,
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,Mann-Whitney U,Water,Sucrose,,,,,0.0,0.0,0.0,Cliff's delta (Sucrose minus Water),,True,cage
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,Mann-Whitney U,Water,Allulose,,,,,0.0,0.0,-0.3333333333333333,Cliff's delta (Allulose minus Water),,True,cage
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,Mann-Whitney U,Sucrose,Allulose,4.0,0.8,,,8.0,10.0,-0.3333333333333333,Cliff's delta (Allulose minus Sucrose),,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,binomial deviance,all,,,,,,0.0,0.0,,global likelihood-ratio deviance,,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,binomial deviance,Water,Sucrose,,,,,0.0,0.0,0.11764705882352944,pooled proportion difference (Sucrose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,binomial deviance,Water,Allulose,,,,,0.0,0.0,-0.19485294117647056,pooled proportion difference (Allulose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ME,binomial deviance,Sucrose,Allulose,4.51723876382515,0.5,,,5.0,10.0,-0.3125,pooled proportion difference (Allulose minus Sucrose),,True,cage
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,One-way ANOVA,all,,1.6911446929612322,0.293587696562508,2.0,4.0,,,,ordinary one-way ANOVA of arithmetic cage means,cage,,
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,Mann-Whitney U,Water,Sucrose,0.0,0.3333333333333333,,,2.0,6.0,1.0,Cliff's delta (Sucrose minus Water),,True,cage
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,Mann-Whitney U,Water,Allulose,0.0,0.2,,,2.0,10.0,1.0,Cliff's delta (Allulose minus Water),,True,cage
+cage_mean_anova,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,Mann-Whitney U,Sucrose,Allulose,2.0,0.8,,,8.0,10.0,0.3333333333333333,Cliff's delta (Allulose minus Sucrose),,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,binomial deviance,all,,25.452157589308058,0.45714285714285713,,,96.0,210.0,,global likelihood-ratio deviance,,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,binomial deviance,Water,Sucrose,6.056186090683617,0.3333333333333333,,,2.0,6.0,0.03561905980046831,pooled proportion difference (Sucrose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,binomial deviance,Water,Allulose,25.050802867497012,0.3,,,3.0,10.0,0.07043274675279912,pooled proportion difference (Allulose minus Water),,True,cage
+cage_count_binomial_deviance,cfos_pomc_over_pomc,primary_pomc_activation_fraction,ARC,binomial deviance,Sucrose,Allulose,6.4942459588692,0.8,,,8.0,10.0,0.03481368695233081,pooled proportion difference (Allulose minus Sucrose),,True,cage

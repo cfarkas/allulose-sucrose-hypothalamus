@@ -52,7 +52,7 @@ LOCAL_ONLY = {
     "__pycache__",
 }
 LOCAL_ONLY_ROOT_PREFIXES = ("apotome_rebuild_",)
-LOCAL_ONLY_FILES = {"README2.txt"}
+LOCAL_ONLY_FILES = {"README2.txt", "TESIS_FINAL_07_09_2026 .docx", "Tesis_revisada_CF.docx"}
 LOCAL_ONLY_FILE_SUFFIXES = (".orig", ".rej")
 # The Allen atlas experiment and former Figure S3 cross-slide organ-alignment
 # experiment were not used for the intended paper analyses. Exclude both exact
@@ -62,6 +62,7 @@ PUBLIC_EXCLUDED_RELATIVE_PREFIXES = (
     "Fig4/figure_bundle_v3/raw_data/allen_p56_snapshot",
     "FigS3/registration",
     "literature_webscrap_30_08_2026",
+    "revision_profesional_20260906",
 )
 # These downloaded article copies are not required for figure reproduction.
 # An index-provided open-access URL is not, by itself, sufficient evidence that
@@ -83,6 +84,8 @@ NUMBERED_SCRIPT_ROOTS = (
     "FigS4",
     "FigS5",
     "FigS6",
+    "FigS7",
+    "FigS8",
 )
 FIGURES = NUMBERED_SCRIPT_ROOTS
 SOURCE_ONLY_FIGURES: dict[str, str] = {}
@@ -130,6 +133,60 @@ def is_public_relative_path(relative: str, *, is_directory: bool) -> bool:
     )
 
 
+ARCHIVED_INPUTS = Path("revision_profesional_20260906/insumos")
+ARCHIVED_PUBLIC_DOCUMENTS = (
+    "TESIS_FINAL_NS(4)_revision_cientifica_metodos_figuras_final.docx",
+    "TESIS_FINAL_NS(4)_revision_cientifica_metodos_figuras_final.pdf",
+)
+
+
+def local_input_path(root: Path, relative: str | Path) -> Path:
+    """Resolve a historical input without recreating files in the working root."""
+    relative = Path(relative)
+    if relative.is_absolute() or ".." in relative.parts:
+        raise ValueError(f"Expected a root-relative input: {relative}")
+    direct = root / relative
+    if direct.exists() or direct.is_symlink():
+        return direct
+    if relative.parts and relative.parts[0] == "manuscript_sources":
+        archived = root / ARCHIVED_INPUTS / relative
+    elif len(relative.parts) == 1:
+        archived = root / ARCHIVED_INPUTS / "documentos_originales" / relative
+    else:
+        return direct
+    if archived.exists() or archived.is_symlink():
+        for parent in (archived, *archived.parents):
+            if parent == root:
+                break
+            if parent.is_symlink():
+                raise ValueError(f"Archived input may not use a symlink: {parent}")
+        return archived
+    return direct
+
+
+def public_entry_relative(root: Path, source: Path) -> str:
+    """Use historical public names for explicitly retained archived inputs."""
+    archive = root / ARCHIVED_INPUTS
+    if source.is_relative_to(archive / "manuscript_sources"):
+        return source.relative_to(archive).as_posix()
+    if source.parent == archive / "documentos_originales" and source.name in ARCHIVED_PUBLIC_DOCUMENTS:
+        return source.name
+    return source.relative_to(root).as_posix()
+
+
+def archived_public_entries(root: Path):
+    manuscript = root / "manuscript_sources"
+    stored = local_input_path(root, "manuscript_sources")
+    if not manuscript.exists() and not manuscript.is_symlink() and stored.exists():
+        yield stored
+        if not stored.is_symlink():
+            yield from bundle_entries(stored)
+    for name in ARCHIVED_PUBLIC_DOCUMENTS:
+        source = local_input_path(root, name)
+        if source != root / name and (source.is_file() or source.is_symlink()):
+            yield source
+
+
 def bundle_entries(root: Path):
     """Every path that would be packed into the archive."""
     for directory, dirnames, filenames in os.walk(root, followlinks=False):
@@ -149,6 +206,9 @@ def bundle_entries(root: Path):
             if not is_public_relative_path(relative, is_directory=False):
                 continue
             yield path
+    # Only the previously public source folder and sanitized thesis pair are
+    # included from the local archive; working documents stay private.
+    yield from archived_public_entries(root)
 
 
 def check_symlinks(entries) -> list[str]:

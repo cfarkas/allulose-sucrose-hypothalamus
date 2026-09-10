@@ -60,6 +60,8 @@ RENDER_SUBDIRS = {
     "FigS3": "FigS3/figure",
     "FigS4": "FigS4/figure",
     "FigS6": "FigS6/figure",
+    "FigS7": "FigS7/figure",
+    "FigS8": "FigS8/figure",
 }
 # Promoted bytes asserted by a frozen reproduction bundle: refresh only what is
 # byte-identical, never skip the whole figure because the rest differs.
@@ -72,7 +74,7 @@ def main() -> int:
     parser.add_argument("--out", type=Path, default=Path("/tmp/apotome_rebuild"),
                         help="The run-book's $OUT, holding this rebuild's renders.")
     parser.add_argument("--figure", choices=sorted(RENDER_SUBDIRS), action="append",
-                        help="Limit to one figure; repeatable. Default is all eleven.")
+                        help="Limit to one figure; repeatable. Default is all thirteen.")
     parser.add_argument("--apply", action="store_true",
                         help="Rewrite the files. Without it nothing is written.")
     args = parser.parse_args()

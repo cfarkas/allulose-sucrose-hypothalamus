@@ -1,0 +1,10 @@
+{
+  "action": "preserve_existing_english_panel_E_byte_for_byte",
+  "reason": "user explicitly requested that the previous panel E remain intact",
+  "source_pdf": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy.pdf",
+  "source_pdf_sha256": "1e0cb6b71cd1d5252075dbb4936bf620e4dda75137725be38e21f54d5bd2cde0",
+  "source_png": "Fig4/panels/Figure_ARC_ME_panel_E_microscopy.png",
+  "source_png_sha256": "d4f3a11dc493c789eeb2c0fcd450bce2bd62ecdb5c8ca4bca33bcc7ad38fd66b",
+  "renderer_control_result": "patched and unmodified control renders were pixel-identical; the prior promoted E was preserved as an explicit user-facing continuity choice",
+  "spanish_panel_E": "new 600-dpi Spanish isolated export generated from the same E composition"
+}

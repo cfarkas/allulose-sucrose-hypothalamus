@@ -52,6 +52,8 @@ PROMOTED_MASTER = {
     "Fig5": "Figure_5",
     "FigS5": "Figure_S5",
     "FigS6": "Figure_S6",
+    "FigS7": "Figure_S7",
+    "FigS8": "Figure_S8",
     "FigS1": "Figure_S1_single_bottle_male",
     "FigS2": "Figure_S2_single_bottle_female",
     "FigS3": "Figure_S3",

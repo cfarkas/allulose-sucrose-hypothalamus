@@ -1,0 +1,277 @@
+{
+  "analysis": {
+    "animals": 15,
+    "command": "$PY Fig4/02_analyze_pomc_cfos.py --input Fig4/raw_data --output analyses/Fig4/results/human_final_run --manual-region-dir Fig4/hil_review/human_final_20260824_v1 --require-manual-regions --prepared-review-dir Fig4/hil_review/prepared_review_input_20260824 --no-auto-conda",
+    "output": "analyses/Fig4/results/human_final_run",
+    "per_cell_rows": 231625,
+    "reconstructed_sections": 76,
+    "region_source": "manual_region_tiff for every quantified section"
+  },
+  "built_utc": "2026-08-24T21:11:39+00:00",
+  "environment": {
+    "conda_env": "paper_apotome_repro",
+    "python": "/home/server/anaconda3/envs/paper_apotome_repro/bin/python"
+  },
+  "human_review": {
+    "accepted_root": "Fig4/hil_review/human_final_20260824_v1",
+    "accepted_sections": 76,
+    "binding": "every receipt was validated against the reviewed reconstructed DAPI SHA-256, the stitch-registration output hash, the accepted mask hash, the image dimensions and the sample/section/animal identity",
+    "expected_sections": 76,
+    "prepared_review_input": "Fig4/hil_review/prepared_review_input_20260824",
+    "reviewer": "CarlosFarkas"
+  },
+  "independent_reproduction": {
+    "commands": [
+      "$PY Fig4/02_analyze_pomc_cfos.py --output <fresh> --no-auto-conda",
+      "$PY Fig4/03_make_figure_4_pomc_cfos.py --analysis-dir <fresh> --outdir <fresh> --scalebar-um 100 --inset-field-um 50 --inset-scalebar-um 20 --um-per-px 0.755 --dpi 600"
+    ],
+    "figure_pdf_byte_identical": true,
+    "figure_png_byte_identical": true,
+    "max_channel_difference": 0,
+    "method": "both documented commands rerun with default --input, --manual-region-dir and --prepared-review-dir, writing a fresh analysis and render directory outside the tree, then compared with the promoted files",
+    "source_data_byte_identical": [
+      "multipanel_statistics.csv",
+      "registered_recomputed_animal_values.csv",
+      "registered_recomputed_endpoint_values.csv"
+    ],
+    "verified_utc": "2026-08-24T21:31:22+00:00"
+  },
+  "note": "Nothing was overwritten. The superseded machine-provisional preview Figure_ARC_ME_multipanel.png/.pdf and figure_bundle_v3 remain in place and untouched.",
+  "overwritten_or_deleted": [],
+  "promoted_file_count": 37,
+  "promoted_files": [
+    {
+      "bytes": 1065423,
+      "promoted": "Fig4/Figure_4.pdf",
+      "sha256": "9ab6ee1a3ec83f4acce0476d5be6fd6dc175fc0a065fb8b3c0d2f2d331d03b20",
+      "source": "analyses/Fig4/figure/human_final_render/Figure_ARC_ME_multipanel.pdf"
+    },
+    {
+      "bytes": 10991224,
+      "promoted": "Fig4/Figure_4.png",
+      "sha256": "71898d61e0c4db2060b06e69de105f9670fd830e3e9667ef8edeeae4d238677c",
+      "source": "analyses/Fig4/figure/human_final_render/Figure_ARC_ME_multipanel.png"
+    },
+    {
+      "bytes": 688948,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_A_dapi.pdf",
+      "sha256": "73f06d35908dd7e29be09380b0b82f8b5fe91c1486864b44c66988c48a73352b",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_A_dapi.pdf"
+    },
+    {
+      "bytes": 1820949,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_A_dapi.png",
+      "sha256": "60cbfc1f0b6e2e24c351e62babda1c2183e78b31e09cadcf3ea48e8a4b6e6e1b",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_A_dapi.png"
+    },
+    {
+      "bytes": 689177,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_B_cfos.pdf",
+      "sha256": "f1b7c735d7744cd8d62827e233fc21ae34a988d3ac26f27ccfa878249f8b5329",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_B_cfos.pdf"
+    },
+    {
+      "bytes": 1401121,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_B_cfos.png",
+      "sha256": "d007bbfdb882a69dd40564e9fcc6cfe57559f15d7e869ad1b32535a88f593623",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_B_cfos.png"
+    },
+    {
+      "bytes": 689309,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_C_pomc.pdf",
+      "sha256": "49b9450c879641a2bab2b92b8d184e434bc800eb8bb5009f1f4999dea64552fe",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_C_pomc.pdf"
+    },
+    {
+      "bytes": 1026143,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_C_pomc.png",
+      "sha256": "a376014d7b48c7efb380066593fc27552e2e531fd5abeeb74193bff8ed23d880",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_C_pomc.png"
+    },
+    {
+      "bytes": 688993,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_D_microscopy.pdf",
+      "sha256": "420c846567cabd25d2f8f0d204350251063054ff8a014614f7dc2b6391156a21",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_D_microscopy.pdf"
+    },
+    {
+      "bytes": 2805126,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_D_microscopy.png",
+      "sha256": "19b9fea6c3b87fb8fdf2c71be6ed794a03d92303bc25d39cba2ddb9aa4755228",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_D_microscopy.png"
+    },
+    {
+      "bytes": 773559,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_E_anatomy.pdf",
+      "sha256": "d232a27fb1bc7bf6407f4b080a1420b2724f023663bedd8a02aacb23987a10a8",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_E_anatomy.pdf"
+    },
+    {
+      "bytes": 1975375,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_E_anatomy.png",
+      "sha256": "d8dcd5b5a0600f7eedf96aa7ab713f2b7bc8eecdeaf241a47c64a16baadeafe1",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_E_anatomy.png"
+    },
+    {
+      "bytes": 972913,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_F_cellpose_cartoon.pdf",
+      "sha256": "df7bc21f9c21ad4cb31966352c7090df71cb0d600f78112d9df10f69cc4e8d1c",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_F_cellpose_cartoon.pdf"
+    },
+    {
+      "bytes": 887444,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_F_cellpose_cartoon.png",
+      "sha256": "a74af21501b70f2764e92c0d164d0d97f489113aec8a586a326277f1cc99bb00",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_F_cellpose_cartoon.png"
+    },
+    {
+      "bytes": 689548,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi.pdf",
+      "sha256": "0f4b5b62b7305c2802aa3a5d381e7c01ceec7d8a06d2df4b27f307afd0a3bf9b",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_G_cfos_dapi.pdf"
+    },
+    {
+      "bytes": 336068,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi.png",
+      "sha256": "a8bc6535c025af5a88ad1cc5cdc1f442340490a66346cf2d93046d3ce2595618",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_G_cfos_dapi.png"
+    },
+    {
+      "bytes": 689701,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation.pdf",
+      "sha256": "cddebbb32da3634c561e0f90214c1ebf6573f8a31d9117773bf1ef9819a6d68b",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_H_pomc_activation.pdf"
+    },
+    {
+      "bytes": 346344,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation.png",
+      "sha256": "06b5a16840641ce29bf73363fdae637592ed83d8a71e2115640a726b79828458",
+      "source": "analyses/Fig4/figure/human_final_render/panels/Figure_ARC_ME_panel_H_pomc_activation.png"
+    },
+    {
+      "bytes": 4796,
+      "promoted": "Fig4/legends/Figure_ARC_ME_multipanel_LEGEND.txt",
+      "sha256": "eda342900b748ec1635315bc7556ef1f597657d07ed2286228bfdf5c9311cd2d",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_multipanel_LEGEND.txt"
+    },
+    {
+      "bytes": 4796,
+      "promoted": "Fig4/legends/Figure_ARC_ME_multipanel_caption.txt",
+      "sha256": "eda342900b748ec1635315bc7556ef1f597657d07ed2286228bfdf5c9311cd2d",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_multipanel_caption.txt"
+    },
+    {
+      "bytes": 822,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_A_dapi_LEGEND.txt",
+      "sha256": "f44289e0ee38bd25df4a69993c911c7c0e643df142dfb707e012b1f7e100e461",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_A_dapi_LEGEND.txt"
+    },
+    {
+      "bytes": 832,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_B_cfos_LEGEND.txt",
+      "sha256": "60a6f5400839e6e6ed1123bece760532591786f75024d0c7ac7d9b4946191edb",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_B_cfos_LEGEND.txt"
+    },
+    {
+      "bytes": 1019,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_C_pomc_LEGEND.txt",
+      "sha256": "6ef348b4bf05b6a14a1d3c4ea39801b71b664f47a8b566011c9e0ab3532d605c",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_C_pomc_LEGEND.txt"
+    },
+    {
+      "bytes": 1048,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_D_microscopy_LEGEND.txt",
+      "sha256": "c64a3ca565c66ad870e6b2d49b281850a085a0c6f19c77d9620864f2704faba7",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_D_microscopy_LEGEND.txt"
+    },
+    {
+      "bytes": 1277,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_E_anatomy_LEGEND.txt",
+      "sha256": "521e7fbb56066661d56da62a9cbd54b35a41af053f747a56d7fec7f34b98abe8",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_E_anatomy_LEGEND.txt"
+    },
+    {
+      "bytes": 1451,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_F_cellpose_cartoon_LEGEND.txt",
+      "sha256": "d840a27c7749a1802d491090ea611a16a22e1c67043a4c2e94a957a5d742c7a4",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_F_cellpose_cartoon_LEGEND.txt"
+    },
+    {
+      "bytes": 838,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_G_cfos_dapi_LEGEND.txt",
+      "sha256": "bf13d8eec5d76dbdc3ab80794060fc877a7c579486e9bac74eca5ed68a9bcb17",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_G_cfos_dapi_LEGEND.txt"
+    },
+    {
+      "bytes": 922,
+      "promoted": "Fig4/legends/Figure_ARC_ME_panel_H_pomc_activation_LEGEND.txt",
+      "sha256": "76a3d014c27a68963b23bbcd0e37c753ce30120502d991029b971559f563ca51",
+      "source": "analyses/Fig4/figure/human_final_render/legends/Figure_ARC_ME_panel_H_pomc_activation_LEGEND.txt"
+    },
+    {
+      "bytes": 1751,
+      "promoted": "Fig4/legends/multipanel_sensitivity_methods.txt",
+      "sha256": "33c12a7915b64f5a80dbb0b3bb53c40bf63676f68dd1043f762a895eddf7e6ab",
+      "source": "analyses/Fig4/figure/human_final_render/legends/multipanel_sensitivity_methods.txt"
+    },
+    {
+      "bytes": 7559,
+      "promoted": "Fig4/source_data/multipanel_denominator_audit.csv",
+      "sha256": "83350a2331029ad3955fc0c6c677b768b54eb94d143808f1808cbd126d10f0da",
+      "source": "analyses/Fig4/figure/human_final_render/source_data/multipanel_denominator_audit.csv"
+    },
+    {
+      "bytes": 4589,
+      "promoted": "Fig4/source_data/multipanel_sensitivity_cage_values.csv",
+      "sha256": "dd3a076f7eae894c1b83685f32fae2edbfbf2e987a2f782c598cb045bff04b31",
+      "source": "analyses/Fig4/figure/human_final_render/source_data/multipanel_sensitivity_cage_values.csv"
+    },
+    {
+      "bytes": 6647,
+      "promoted": "Fig4/source_data/multipanel_sensitivity_statistics.csv",
+      "sha256": "5f68311ad7fd550e8f3d1c091d55d0948309300aaffacbcbb6e91f41ad085460",
+      "source": "analyses/Fig4/figure/human_final_render/source_data/multipanel_sensitivity_statistics.csv"
+    },
+    {
+      "bytes": 3455,
+      "promoted": "Fig4/source_data/multipanel_statistics.csv",
+      "sha256": "ba134004c32d40d1bde30994e12e98fbc84fb89619bff34c9fd5a6d6370188e0",
+      "source": "analyses/Fig4/figure/human_final_render/source_data/multipanel_statistics.csv"
+    },
+    {
+      "bytes": 2603,
+      "promoted": "Fig4/source_data/registered_recomputed_animal_values.csv",
+      "sha256": "b27e3cb3c3ff446eb5f082ac4f4993c632318d956edd400bcfef20e1d19c1ea1",
+      "source": "analyses/Fig4/figure/human_final_render/source_data/registered_recomputed_animal_values.csv"
+    },
+    {
+      "bytes": 5877,
+      "promoted": "Fig4/source_data/registered_recomputed_endpoint_values.csv",
+      "sha256": "49e167c35065d75b3335a343da0cfb3e5f14ea9e8b223d9d114ffc1efbb37102",
+      "source": "analyses/Fig4/figure/human_final_render/source_data/registered_recomputed_endpoint_values.csv"
+    },
+    {
+      "bytes": 71794,
+      "promoted": "Fig4/provenance/all_section_stitch_registration_audit.csv",
+      "sha256": "74edec13dd3e90042fd9a766af1a5deab685323b286dd55dc505911820803639",
+      "source": "analyses/Fig4/figure/human_final_render/provenance/all_section_stitch_registration_audit.csv"
+    },
+    {
+      "bytes": 21539,
+      "promoted": "Fig4/provenance/multipanel_source_manifest.csv",
+      "sha256": "e98a985defd82ef60c5f846847143adf97ba5da388892d52e847304268dfc7d8",
+      "source": "analyses/Fig4/figure/human_final_render/provenance/multipanel_source_manifest.csv"
+    }
+  ],
+  "render": {
+    "command": "$PY Fig4/03_make_figure_4_pomc_cfos.py --analysis-dir analyses/Fig4/results/human_final_run --manual-region-dir Fig4/hil_review/human_final_20260824_v1 --require-manual-regions --outdir analyses/Fig4/figure/human_final_render --scalebar-um 100 --inset-field-um 50 --inset-scalebar-um 20 --um-per-px 0.755 --dpi 600",
+    "output": "analyses/Fig4/figure/human_final_render"
+  },
+  "schema": "fig4_human_final_build_receipt_v1",
+  "scripts": {
+    "Fig4/02_analyze_pomc_cfos.py": "d6071b74d6bc0ce333ea3f13af65798e58b6974ae4ba9ba89b24d5d3f1bc3c20",
+    "Fig4/03_make_figure_4_pomc_cfos.py": "b7a4029aa1e3a6101b0e4db08600988a8e12b3105ad0eda22f3864bf73c75cc1",
+    "scripts/shared/01_annotate_regions.py": "ece6aef4890ea8aa7d50476a558673e3547a75f535a49e8947aba8f7be9c742a"
+  },
+  "status": "HUMAN_FINAL"
+}

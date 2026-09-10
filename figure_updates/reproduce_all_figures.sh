@@ -6,7 +6,7 @@
 #   ./reproduce_all_figures.sh
 #
 # Every figure is first rendered and validated in isolated /tmp storage, then
-# installed into the existing FigN/ and analyses/ layout only after all eleven
+# installed into the existing FigN/ and analyses/ layout only after all thirteen
 # packages pass. Raw data and active scripts remain immutable package inputs.
 # Supplementary Figure S5 reuses the accepted DAPI-only anatomy HIL and
 # hash-audits the separate 3V-exclusion review.
@@ -41,7 +41,7 @@ usage() {
   cat <<'EOF'
 Usage: ./reproduce_all_figures.sh [options]
 
-Rebuild Figures 1-5 plus S1-S6, including S3 from its completed WSI receipts
+Rebuild Figures 1-5 plus S1-S8, including S3 from its completed WSI receipts
 and S5 from accepted HIL anatomy. All figure graphics are rendered at 600 dpi.
 
 Options:
@@ -56,13 +56,13 @@ Options:
   --output PATH      Canonical output root. PATH must be this Paper directory.
   --out PATH         Backward-compatible alias for --output.
   --promote          Accepted for compatibility; canonical installation is now
-                     automatic after all eleven staged builds pass.
+                     automatic after all thirteen staged builds pass.
   --force            Also install the validated certified Figure 3 rebuild.
                      Without it, Figure 3 is verified but remains unchanged.
   -h, --help         Show this help.
 
 The canonical output is this existing Paper tree. Every analysis and render is
-first produced in fresh /tmp staging. Only after all eleven figures pass validation
+first produced in fresh /tmp staging. Only after all thirteen figures pass validation
 are current generated analyses and publication artifacts installed into the
 canonical analyses/ and FigN/ paths. Active scripts, raw, raw_data, accepted HIL
 inputs and figure READMEs remain in place and are audited before and after the
@@ -296,6 +296,8 @@ Plan (no commands were run):
      completed, fully validated WSI/HistoPLUS receipts.
  10. Rebuild Figure S4 at 600 dpi.
  11. Recompute and render Figure S6 from frozen human-reference/prediction tables at 600 dpi; no classifier retraining.
+ 12. Render Figure S7 from verified training crops, masks and recorded losses.
+ 13. Render Figure S8 from the pilot-based Monte Carlo power curves.
      Every rebuild step ends by validating its master, bilingual panel pairs and bilingual figure legends.
 
 Run ./reproduce_all_figures.sh to execute this plan.
@@ -436,9 +438,9 @@ replace_canonical_analysis() {
   printf '[OK] canonical analysis installed: %s\n' "$relative_target"
 
 }
-# Keep one truthful terminal bar across the eleven figure packages. A unit advances
+# Keep one truthful terminal bar across the thirteen figure packages. A unit advances
 # only after that figure's renderer and strict output validator both succeed.
-FIGURE_TOTAL=11
+FIGURE_TOTAL=13
 FIGURE_PROGRESS_FD=""
 FIGURE_PROGRESS_PID_VALUE=""
 CURRENT_FIGURE=""
@@ -578,6 +580,7 @@ printf '%s\n' '' '== Step 4: Figure 4 =='
 figure_progress_start 'Figure 4'
 "$PY" Fig4/02_analyze_pomc_cfos.py \
   --output "$OUT/Fig4/analysis" --no-auto-conda </dev/null
+"$PY" Fig4/07_audit_pomc_size_sensitivity.py --analysis-dir "$OUT/Fig4/analysis"
 "$PY" Fig4/05_analyze_spatial_distributions.py \
   --analysis-dir "$OUT/Fig4/analysis" \
   --output-dir "$OUT/Fig4/analysis/spatial" \
@@ -675,7 +678,7 @@ figure_progress_start 'Figure S3'
 PATH="$REVIEW_BIN:$PATH" "$REVIEW_PY" FigS3/05_analyze_make_figure.py \
   --figs3-root "$PAPER_ROOT/FigS3" \
   --output-root "$OUT/FigS3/figure" \
-  --permutations 4999 \
+  --permutations 99999 \
   --dpi 600
 validate_render FigS3 "$OUT/FigS3/figure"
 figure_progress_done
@@ -699,6 +702,18 @@ figure_progress_start 'Figure S6'
 validate_render FigS6 "$OUT/FigS6/figure"
 figure_progress_done
 
+printf '%s\n' '' '== Step 12: Figure S7 =='
+figure_progress_start 'Figure S7'
+"$PY" FigS7/01_make_figure_s7_training.py --output-dir "$OUT/FigS7/figure" --dpi 600
+validate_render FigS7 "$OUT/FigS7/figure"
+figure_progress_done
+
+printf '%s\n' '' '== Step 13: Figure S8 =='
+figure_progress_start 'Figure S8'
+"$PY" FigS8/01_make_figure_s8_power.py --output-dir "$OUT/FigS8/figure" --dpi 600
+validate_render FigS8 "$OUT/FigS8/figure"
+figure_progress_done
+
 finish_figure_progress
 
 printf '%s\n' '' '== Byte-for-byte reproduction against shipped raster images =='
@@ -713,6 +728,8 @@ verify_reference_images FigS2 "$OUT/FigS2/figure"
 verify_reference_images FigS3 "$OUT/FigS3/figure"
 verify_reference_images FigS4 "$OUT/FigS4/figure"
 verify_reference_images FigS6 "$OUT/FigS6/figure"
+verify_reference_images FigS7 "$OUT/FigS7/figure"
+verify_reference_images FigS8 "$OUT/FigS8/figure"
 
 printf '%s\n' '' '== All rebuilds passed: install canonical figure packages =='
 promote_canonical Fig1 "$OUT/Fig1/figure"
@@ -728,6 +745,8 @@ promote_canonical FigS2 "$OUT/FigS2/figure"
 promote_canonical FigS3 "$OUT/FigS3/figure"
 promote_canonical FigS4 "$OUT/FigS4/figure"
 promote_canonical FigS6 "$OUT/FigS6/figure"
+promote_canonical FigS7 "$OUT/FigS7/figure"
+promote_canonical FigS8 "$OUT/FigS8/figure"
 
 printf '%s\n' '' '== Byte-for-byte staged-to-canonical publication audit =='
 verify_canonical_bytes Fig1 "$OUT/Fig1/figure"
@@ -745,6 +764,8 @@ verify_canonical_bytes FigS2 "$OUT/FigS2/figure"
 verify_canonical_bytes FigS3 "$OUT/FigS3/figure"
 verify_canonical_bytes FigS4 "$OUT/FigS4/figure"
 verify_canonical_bytes FigS6 "$OUT/FigS6/figure"
+verify_canonical_bytes FigS7 "$OUT/FigS7/figure"
+verify_canonical_bytes FigS8 "$OUT/FigS8/figure"
 
 printf '%s\n' '' '== Install fresh generated analyses into the canonical tree =='
 replace_canonical_analysis "$OUT/Fig1/analysis" "$PAPER_ROOT/analyses/Fig1/results"
@@ -760,6 +781,8 @@ replace_canonical_analysis "$OUT/FigS1/analysis" "$PAPER_ROOT/analyses/FigS1/res
 replace_canonical_analysis "$OUT/FigS2/analysis" "$PAPER_ROOT/analyses/FigS2/results"
 replace_canonical_analysis "$OUT/FigS4/analysis" "$PAPER_ROOT/analyses/FigS3/results"
 replace_canonical_analysis "$OUT/FigS6/figure" "$PAPER_ROOT/analyses/FigS6/figure/current"
+replace_canonical_analysis "$OUT/FigS7/figure" "$PAPER_ROOT/analyses/FigS7/figure/current"
+replace_canonical_analysis "$OUT/FigS8/figure" "$PAPER_ROOT/analyses/FigS8/figure/current"
 
 printf '%s\n' '' '== Complete Figure 3 with accepted sucrose and bilingual subpanels =='
 FIG3_RENDER_PYTHON="$PY" FIG3_PDF_PYTHON="$FIG3_PDF_BIN" \
@@ -784,7 +807,7 @@ printf 'Canonical output: %s\n' "$PAPER_ROOT"
 printf '%s\n' 'Raw data and active scripts are present and unchanged.'
 printf 'Previous generated analyses are recoverable at: %s\n' "$INSTALL_RECOVERY_ROOT"
 if ((FORCE_FIG3)); then
-  printf '%s\n' 'All eleven figures were installed, including certified Figure 3 (--force).'
+  printf '%s\n' 'All thirteen figures were installed, including certified Figure 3 (--force).'
 else
   printf '%s\n' 'Ten figures were installed; certified Figure 3 measurements were retained and its three-condition presentation was rebuilt.'
 fi

@@ -16,7 +16,7 @@ From the directory containing this file:
 The launcher finds the paper_apotome_repro Python environment, validates the
 active repository and renders every established figure at 600 dpi into fresh
 temporary stages. A tqdm bar advances only after each staged render passes.
-Only after all eleven figures validate are the current analyses and publication
+Only after all thirteen figures validate are the current analyses and publication
 artifacts installed into their canonical analyses/ and FigN/ locations. The
 Paper folder itself remains the complete delivered package: active scripts,
 raw/raw_data, HIL inputs, source data, figures, panels, legends and provenance.
@@ -73,7 +73,7 @@ figure tree.
 
 Canonical installation
 ----------------------
-Every normal run stages and validates all eleven figures before installing current
+Every normal run stages and validates all thirteen figures before installing current
 outputs into this Paper tree. To include the frozen/certified Figure 3:
 
   ./reproduce_all_figures.sh --output "$PWD" --force
@@ -234,3 +234,9 @@ Original choices remain intact. The new data are included directly in GitHub
 under Fig5/microglial_review_data/. The review/candidate outputs are retained in
 analyses/Fig5/results/current_microglial_choices/. Published Figure 5 and S6
 retain their established comparison inputs. See Fig5/README.txt for details.
+
+Figure S7 documents human-supervised Cellpose training; Figure S8 presents
+pilot-based sample-size curves. Both use verified source inputs and complete
+English masters with bilingual isolated panels. See FigS7/README.txt and
+FigS8/README.txt. Figure S3 uses corrected matched-HC3 residual permutations
+(99,999, base seed 1707); hepatic epithelial-like p=0.00031, BH q=0.02418.

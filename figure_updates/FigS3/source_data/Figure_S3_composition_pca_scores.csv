@@ -1,0 +1,73 @@
+sample_id,treatment,cohort,organ,PC1,PC2,PC1_variance_fraction,PC2_variance_fraction,composition_classes_used,composition_class_count
+m26-001,Sucrose,NPY,Kidney,0.940989701162831,-0.544135631669521,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-002,Sucrose,NPY,Kidney,-0.10285092270522522,-1.6678000711862522,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-003,Sucrose,POMC,Kidney,0.5752827914871537,-0.273990494288626,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-004,Sucrose,NPY,Kidney,0.05622175737087254,-1.0620088197346478,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-005,Sucrose,POMC,Kidney,0.2785588666128449,-0.23165265253375367,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-006,Sucrose,POMC,Kidney,0.8373182532728185,0.2635640940874051,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-007,Sucrose,POMC,Kidney,0.6029572116366504,-0.4948251747928818,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-008,Allulose,POMC,Kidney,1.1278589163226425,-0.14648170976094987,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-009,Allulose,POMC,Kidney,-1.2969929551037893,-2.84772113325606,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-010,Allulose,POMC,Kidney,-0.512642670370957,-1.0945726658460768,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-011,Allulose,POMC,Kidney,0.19969429197500776,1.0122837197143801,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-012,Allulose,NPY,Kidney,0.9974213969417951,0.43667836641721625,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-013,Allulose,POMC,Kidney,0.38228919589845045,0.02167978816461158,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-014,Allulose,NPY,Kidney,0.6861842717726949,0.8082922333788902,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-015,Water,POMC,Kidney,0.12320415020803743,0.48950079774881017,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-016,Water,POMC,Kidney,0.16793360581624572,0.7936071405508187,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-017,Water,POMC,Kidney,0.1430605179077009,0.05483566386392713,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-018,Water,POMC,Kidney,1.535532383185176,0.7601564941482413,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-019,Water,NPY,Kidney,-1.025309049190589,-0.16932347207478138,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-020,Water,NPY,Kidney,-0.20552817077691454,1.516045057341275,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-021,Water,NPY,Kidney,0.2098392476000237,0.8814602722473031,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-022,Allulose,POMC,Kidney,-0.09122205581014864,0.17287872647569813,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-023,Sucrose,POMC,Kidney,-1.0732262207485483,0.00912075468298612,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-024,Sucrose,POMC,Kidney,-4.556574514464788,1.3124087163219835,0.4559464238247349,0.3086770456838352,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-001,Sucrose,NPY,Liver,-1.102131118731493,-1.2247471037859616,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-002,Sucrose,NPY,Liver,2.4109319058408287,-0.4530993620199013,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-003,Sucrose,POMC,Liver,1.1996467566901865,0.44639704622924725,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-004,Sucrose,NPY,Liver,0.03281251652972239,-2.891444322580626,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-005,Sucrose,POMC,Liver,-0.6250448968841718,1.2720081024782903,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-006,Sucrose,POMC,Liver,0.44033960500578884,-1.907401877124092,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-007,Sucrose,POMC,Liver,-0.4655943477785829,1.7786450615940954,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-008,Allulose,POMC,Liver,-1.3231738492015463,-0.16523322998865986,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-009,Allulose,POMC,Liver,-1.3077125142056634,0.35917735952093843,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-010,Allulose,POMC,Liver,-3.1987264631587493,0.2187428044623032,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-011,Allulose,POMC,Liver,-3.7084538831203213,1.6065839834341475,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-012,Allulose,NPY,Liver,-0.8549006438671969,-1.4732388359853814,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-013,Allulose,POMC,Liver,-2.0946629329045234,-0.956179879427016,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-014,Allulose,NPY,Liver,-2.5092207631769745,0.01974822730723136,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-015,Water,POMC,Liver,2.1160603430245635,-0.8311296359975933,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-016,Water,POMC,Liver,2.000907315165777,0.48078173622978837,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-017,Water,POMC,Liver,1.5316469602512366,0.8238775069031493,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-018,Water,POMC,Liver,1.3881272880794926,0.8538845164934002,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-019,Water,NPY,Liver,0.08167054138974539,0.3011964029544305,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-020,Water,NPY,Liver,0.35246270171124117,0.11893095091028671,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-021,Water,NPY,Liver,-0.1100249936505655,-0.25802349194400365,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-022,Allulose,POMC,Liver,1.4519209887842779,-0.5965744478085078,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-023,Sucrose,POMC,Liver,1.90532761891774,2.7630383332740394,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-024,Sucrose,POMC,Liver,2.387791865289194,-0.28593984512960113,0.5281156438401031,0.2560082527271288,Lymphocytes|Fibroblasts|Neutrophils|Macrophages|Muscle Cell|Epithelial|Apoptotic Body,7
+m26-001,Sucrose,NPY,Spleen,-1.4546966159001933,0.26619690716529476,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-002,Sucrose,NPY,Spleen,2.073870227545226,-0.19277194938171824,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-003,Sucrose,POMC,Spleen,1.969957864187322,-2.1379297372043196,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-004,Sucrose,NPY,Spleen,-0.8082394989159409,-0.10470486936880391,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-005,Sucrose,POMC,Spleen,1.0578262433525452,-1.9725553980520154,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-006,Sucrose,POMC,Spleen,-1.6324095027026218,-0.041393736519952304,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-007,Sucrose,POMC,Spleen,-1.822712315299003,0.6301055510461662,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-008,Allulose,POMC,Spleen,-2.2590277644558387,-0.18737639318291333,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-009,Allulose,POMC,Spleen,0.18771403588157476,-2.128109919699193,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-010,Allulose,POMC,Spleen,-4.302553466923985,0.4706436647065538,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-011,Allulose,POMC,Spleen,0.1729089131715691,-1.1103052942908795,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-012,Allulose,NPY,Spleen,-0.7514871220985899,0.2613318868977344,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-013,Allulose,POMC,Spleen,2.54707235259019,1.1308633011965052,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-014,Allulose,NPY,Spleen,0.752257667173998,2.0234890838488377,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-015,Water,POMC,Spleen,1.132591541705783,-0.2870976366796174,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-016,Water,POMC,Spleen,1.0586708663606537,-0.7130218738811676,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-017,Water,POMC,Spleen,-0.38464594714621203,-0.4857512071940581,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-018,Water,POMC,Spleen,0.07719350072472331,-0.14162749773532143,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-019,Water,NPY,Spleen,0.048153815122223165,-0.7319938827409258,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-020,Water,NPY,Spleen,-0.6549672362377628,0.27781511490531274,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-021,Water,NPY,Spleen,0.41642061373550465,2.5742271242465278,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-022,Allulose,POMC,Spleen,0.4933004482636867,1.9000910552952073,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-023,Sucrose,POMC,Spleen,2.665583760613896,1.7203855984876153,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9
+m26-024,Sucrose,POMC,Spleen,-0.5827823807487542,-1.0205098918648692,0.5099830757560833,0.3061057634345023,Lymphocytes|Fibroblasts|Plasmocytes|Neutrophils|Macrophages|Muscle Cell|Endothelial Cell|Epithelial|Apoptotic Body,9

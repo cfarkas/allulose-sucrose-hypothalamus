@@ -1,0 +1,10 @@
+Figure 4 statistical methods
+Source: /media/server/STORAGE/Apotome/Paper/analyses/Fig4/figure/local_dapi_size_final_20260909/source_data/registered_recomputed_endpoint_values.csv
+Source SHA-256: b8c23bd0ee13bf21c32c73b5e7f70fad1c2e79c7387d0544f03af58e78d916e6
+Registered section-count source: /media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/per_reconstructed_section_region_summary.csv
+Registered section-count SHA-256: 398c0c6413cfc5a3fb1ab7a0dd6e47243caf9ef1b66866e3b41fc6c13647d5b8
+Animal endpoints were reaggregated by this figure maker from the current registered/HIL section-region counts; legacy plot-value and definitive-statistics CSVs were not used.
+Displayed animal analysis: ordinary equal-variance one-way ANOVA F; unadjusted exact exhaustive two-sided rank-sum/Mann-Whitney U pair tests. The displayed pairwise order is W–S, W–A, S–A; reported p values are raw.
+Cage-mean sensitivity: animal ratios are averaged arithmetically within each cage; the same ordinary one-way ANOVA and unadjusted exact two-sided MWU tests use cages as independent units.
+Count-aware sensitivity: numerator and denominator counts are summed within cage; the statistic is 2*sum_g[y_g*log(p_g/p_0)+(n_g-y_g)*log((1-p_g)/(1-p_0))], with zero terms omitted. Whole-cage labels are exhaustively permuted while preserving condition cage counts; reported p values are raw.
+Every exact MWU or deviance p value is extreme_labelings/enumerated_labelings; no Monte-Carlo plus-one correction is used. Positive denominators below 10 are flagged and retained. A zero or missing denominator is intrinsically non-estimable, is retained in the audit, and does not contribute a ratio or binomial likelihood. No finite positive-denominator value is filtered.

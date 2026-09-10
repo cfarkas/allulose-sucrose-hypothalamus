@@ -1,0 +1,1 @@
+Figure S3, panel F. Cohort-adjusted centered-log-ratio effects of Sucrose and Allulose relative to Water for every eligible model-predicted cell type, within each organ. Bars are the cohort-adjusted CLR effect and whiskers are HC3 95% confidence intervals. Asterisks encode global Benjamini–Hochberg q values, *<0.05, **<0.01, ***<0.001 and ****<0.0001.

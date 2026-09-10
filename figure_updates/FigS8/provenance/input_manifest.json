@@ -1,0 +1,15 @@
+{
+  "schema": "apotome-method-figure-inputs-v1",
+  "files": [
+    {
+      "path": "source_data/pilot_cage_values.csv",
+      "sha256": "886eec8a96fa4bbefc327a89b5638b6b5a6452ae3043348b42771b44f17020bc",
+      "bytes": 1600
+    },
+    {
+      "path": "source_data/power_curves.csv",
+      "sha256": "936066b5a4334d3ca45d3f7575691304520e2d22b9d1ce61ec107b55e4774548",
+      "bytes": 5038
+    }
+  ]
+}

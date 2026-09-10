@@ -1,0 +1,1 @@
+Figura S3, panel B. Distancia de Mahalanobis con validación cruzada, sobre la razón logarítmica centrada, de cada animal respecto a la composición de Agua, por órgano. Las cajas son el rango intercuartílico, los puntos son animales individuales y los controles de Agua se evalúan dejando uno fuera. Sobre cada órgano se indica el valor p del ANOVA de una vía por tratamiento.

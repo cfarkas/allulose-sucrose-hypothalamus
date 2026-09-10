@@ -1,0 +1,53 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 69,
+    "replaced": 6
+  },
+  "figure": "Fig4",
+  "files": [
+    {
+      "bytes": 8498,
+      "promoted": "Fig4/legends/Figure_4_LEGEND.txt",
+      "sha256": "1f6399ca6380bcfc7a1a39145d239b967989d6b66633b301f725d159c7a0f16e",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig4/figure/legends/Figure_4_LEGEND.txt"
+    },
+    {
+      "bytes": 8498,
+      "promoted": "Fig4/legends/Figure_4_caption.txt",
+      "sha256": "1f6399ca6380bcfc7a1a39145d239b967989d6b66633b301f725d159c7a0f16e",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig4/figure/legends/Figure_4_caption.txt"
+    },
+    {
+      "bytes": 1697,
+      "promoted": "Fig4/legends/multipanel_sensitivity_methods.txt",
+      "sha256": "89bcf936c37ded058df387c8b6381d5cedb246cd74a9cfbf1365c556f13ba031",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig4/figure/legends/multipanel_sensitivity_methods.txt"
+    },
+    {
+      "bytes": 68647,
+      "promoted": "Fig4/provenance/all_section_stitch_registration_audit.csv",
+      "sha256": "448dbe4fc5437caeaad97acefee2bc17728fd1a27a46dbf7fffd4405d9bbb88a",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig4/figure/provenance/all_section_stitch_registration_audit.csv"
+    },
+    {
+      "bytes": 25641,
+      "promoted": "Fig4/provenance/multipanel_source_manifest.csv",
+      "sha256": "d552d16cb658d621b87da3b57534fe28184006fcf1c59458a9771aa6a85ffa3c",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig4/figure/provenance/multipanel_source_manifest.csv"
+    },
+    {
+      "bytes": 1322,
+      "promoted": "Fig4/provenance/multipanel_spanish_translation_receipt.json",
+      "sha256": "0a8cb68714585fcb32329cc44f7d2485941a9d68f0b629270e2489334620d7bc",
+      "source": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig4/figure/provenance/multipanel_spanish_translation_receipt.json"
+    }
+  ],
+  "master_name_in_render": "Figure_4",
+  "master_name_promoted": "Figure_4",
+  "promoted_utc": "2026-08-30T11:06:49+00:00",
+  "replacement_policy": "validated_canonical_current_no_in_tree_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_full_rebuild_0MH8jcVG/Fig4/figure",
+  "superseded_copied_to": null
+}

@@ -78,8 +78,8 @@ from typing import Iterable, Sequence
 # in English and Spanish figure labels and legends.
 # Repinned 2026-09-01 after active workflow and QC presentation strings were normalized to HIL; stable CLI and receipt identifiers remain unchanged.
 EXPECTED_HASHES = {
-    "scripts/Fig4/02_analyze_pomc_cfos.py": "16972072df3385fe6375d924071a5b69225c7e911516bf9d9e08dbadcf024657",
-    "scripts/Fig4/03_make_figure_4_pomc_cfos.py": "64fc942270c311b94152db69b67ec6aa8a59d9c9714ce9d251797f04f9ec9002",
+    "scripts/Fig4/02_analyze_pomc_cfos.py": "4f847cdd0521d9ef0f3c037b167ae06abf2f54f7927869867ab9e798c356b05c",
+    "scripts/Fig4/03_make_figure_4_pomc_cfos.py": "471f8b974ad35f4251f7c27deb6b895b3e8b2e7c4a65ab09b4565109755bbe2f",
     "scripts/Fig4/05_analyze_spatial_distributions.py": "224e60de4fbb1049e070c717f9597916336bdce32440264ecadb987e90648051",
     "scripts/Fig5/01_analyze_gfap_iba1_microglia.py": "6e889ca1d822a408ddefc303bf18989628186e828565a8cc431762990614a698",
     "scripts/Fig5/02_make_figure_5_gfap_iba1_microglia.py": "c826581833f411c74f2cbaa27e264a9e3103850f31460f86b5bc7806f82d493c",

@@ -1,0 +1,75 @@
+{
+  "schema": "apotome-method-figure-inputs-v1",
+  "files": [
+    {
+      "path": "raw_data/DAPI.npz",
+      "sha256": "5aeb7288a6fed701d5255b83c87522476a1d710238a76668d4143faf4e41610e",
+      "bytes": 220826
+    },
+    {
+      "path": "raw_data/POMC.npz",
+      "sha256": "5f212b131b1b2a951f32181ab7cd9f83034455e8defb06133fa20da7fd90557e",
+      "bytes": 113447
+    },
+    {
+      "path": "raw_data/c-FOS.npz",
+      "sha256": "4b3db38e997e3da52567d2357b437ff80660e88ada8757145f791f50f9ea1ad2",
+      "bytes": 146762
+    },
+    {
+      "path": "source_data/training_losses.csv",
+      "sha256": "ee62fe793284444c6e51816230dd8a530188b7540ecad39b9e6550df45fcd1f6",
+      "bytes": 199594
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S01_left.npz",
+      "sha256": "3172ef95e8b2df666fcafc185c1220f94d522ddd6c5f6056f8062dbbeee322b9",
+      "bytes": 331813
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S01_right.npz",
+      "sha256": "5260f530e4ef47dba91d4c1c043b5e9b922abcafb6f67bbe6a294e9559f6bd1d",
+      "bytes": 296155
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S02_left.npz",
+      "sha256": "250ac2fe3de432934fd50fddd84d62bb2f7115f0254de18856c39a31df8f1288",
+      "bytes": 375693
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S02_right.npz",
+      "sha256": "a410df6b1078f8cb65f662450f8e2ac3038017153b040868ba6c8ccd2d36b833",
+      "bytes": 297518
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S03_left.npz",
+      "sha256": "6247e1cb11f29e239dc1c93f8c4ee2a0e179b6dd71f751a09acc1dd99703f674",
+      "bytes": 371729
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S03_right.npz",
+      "sha256": "6a5bcf4ef5278fa5f8be70c0c4cd6cd8eb8eb79dc31f06ab66e670d9d73917e3",
+      "bytes": 280349
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S04_left.npz",
+      "sha256": "c4181f35dc6125b00d52f076d56025166393a7515111e4bb7d5967884b573548",
+      "bytes": 329573
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S04_right.npz",
+      "sha256": "ace212fd5b09803f3e80d7d3764ec1b389ea4ec3d5eb38cd3e96c7296489f35c",
+      "bytes": 283269
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S05_left.npz",
+      "sha256": "3351a51e22ef25de095a1a1bd6d31a2a8411477b737971f6d94cac00eee0fab4",
+      "bytes": 402660
+    },
+    {
+      "path": "raw_data/pomc_training_size_reference/FR6-1_S05_right.npz",
+      "sha256": "883dadf25f496f74ab5c01bf26781e03eca6f0524d131942c7f80310c2586ced",
+      "bytes": 304622
+    }
+  ]
+}

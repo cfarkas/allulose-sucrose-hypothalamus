@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "check": "metadata_and_control_definition",
+      "organ_rows": 72,
+      "slides": 24,
+      "status": "pass"
+    },
+    {
+      "check": "L0_L2_exports",
+      "slides": 24,
+      "status": "pass",
+      "tiffs": 48
+    },
+    {
+      "check": "three_organs_per_wsi_and_identity_audit",
+      "human_reviewed": true,
+      "placement_order": "Liver-Kidney-Spleen",
+      "slides": 24,
+      "status": "pass",
+      "version": "figs3-three-organ-cv-1.1"
+    },
+    {
+      "check": "organ_identity_migration_geometry",
+      "minimum_geometry_fraction": 1.0,
+      "slides": 24,
+      "status": "pass"
+    },
+    {
+      "check": "segmentation_only_no_image_registration",
+      "status": "pass"
+    },
+    {
+      "check": "inference_and_tile_balance",
+      "phenotype_rows": 1008,
+      "selected_tiles": 1728,
+      "slides": 24,
+      "status": "pass"
+    },
+    {
+      "check": "representative_selection_without_alignment",
+      "median_tissue_fraction": 0.3894749939671815,
+      "sample_id": "m26-015",
+      "status": "pass"
+    },
+    {
+      "cell_barplot_rows": 936,
+      "check": "animal_level_statistics_cell_examples_and_barplots",
+      "classical_tests": 36,
+      "composition_tests": 78,
+      "deviation_anova_tests": 3,
+      "deviation_tests": 6,
+      "panel_e_global_q_lt_0_05": 0,
+      "panel_e_nominal_permutation_p_lt_0_05": 6,
+      "significant_cell_example_rows": 2,
+      "status": "pass"
+    },
+    {
+      "check": "figure_artifacts_and_bilingual_legends",
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "languages": [
+        "english",
+        "spanish"
+      ],
+      "panels_per_language": 6,
+      "png_height": 7380,
+      "png_width": 9000,
+      "status": "pass"
+    }
+  ],
+  "created_utc": "2026-09-09T22:11:30.018594+00:00",
+  "publication_interpretation": "data-complete exploratory model-predicted phenotypes; cross-species labels not validated",
+  "sha256_manifest": "/media/server/STORAGE/Apotome/Paper/FigS3/provenance/SHA256_MANIFEST.tsv",
+  "sha256_manifest_sha256": "23e5025f0c2bd24a6eab2caddc594358c4fdbceae792c66b2b1fb72c32249d7a",
+  "status": "pass",
+  "validator": "figs3-validator-1.4"
+}

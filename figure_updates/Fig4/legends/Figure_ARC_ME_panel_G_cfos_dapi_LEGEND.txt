@@ -1,0 +1,9 @@
+(G) Animal-level c-FOS/DAPI ratios in ME and ARC. Bars are mean ± SD; dots are animals; crosses mark IQR values retained in inference. Omnibus p values use ordinary one-way ANOVA; pairwise p values use unadjusted exact two-sided MWU.
+c-FOS/DAPI, ME:
+animal: one-way ANOVA p = 0.151; MWU W–S p = 0.0714; MWU W–A p = 0.167; MWU S–A p = 0.329.
+cage mean: one-way ANOVA p = 0.17; MWU W–S p = 0.2; MWU W–A p = 0.2; MWU S–A p = 0.4.
+cage counts: deviance exact p = 0.461; pair W–S p = 0.1; pair W–A p = 0.7; pair S–A p = 0.7.
+c-FOS/DAPI, ARC:
+animal: one-way ANOVA p = 0.635; MWU W–S p = 0.393; MWU W–A p = 0.714; MWU S–A p = 1.
+cage mean: one-way ANOVA p = 0.545; MWU W–S p = 0.4; MWU W–A p = 0.8; MWU S–A p = 0.7.
+cage counts: deviance exact p = 0.8; pair W–S p = 0.5; pair W–A p = 0.6; pair S–A p = 0.8.

@@ -1,0 +1,937 @@
+sample_id,treatment,cohort,organ,model_class_raw,clr_value,analysis_eligible,detected_animals,total_class_count,eligibility_rule,pseudocount_applied,phenotype_display,pseudocount
+m26-001,Sucrose,NPY,Kidney,Lymphocytes,-2.066964471537863,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-002,Sucrose,NPY,Kidney,Lymphocytes,-2.5591328935387407,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-003,Sucrose,POMC,Kidney,Lymphocytes,-1.7681065189868965,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-004,Sucrose,NPY,Kidney,Lymphocytes,-2.452423315923917,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-005,Sucrose,POMC,Kidney,Lymphocytes,-2.5552661923290003,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-006,Sucrose,POMC,Kidney,Lymphocytes,-1.9792413866056142,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-007,Sucrose,POMC,Kidney,Lymphocytes,-2.144360942696592,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-008,Allulose,POMC,Kidney,Lymphocytes,-2.323648439124009,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-009,Allulose,POMC,Kidney,Lymphocytes,-1.4225108828381416,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-010,Allulose,POMC,Kidney,Lymphocytes,-2.734457682586992,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-011,Allulose,POMC,Kidney,Lymphocytes,-2.37348532046048,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-012,Allulose,NPY,Kidney,Lymphocytes,-2.110162860524193,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-013,Allulose,POMC,Kidney,Lymphocytes,-2.733109227349729,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-014,Allulose,NPY,Kidney,Lymphocytes,-2.232331566274997,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-015,Water,POMC,Kidney,Lymphocytes,-2.9630581756591665,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-016,Water,POMC,Kidney,Lymphocytes,-2.756210910226818,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-017,Water,POMC,Kidney,Lymphocytes,-2.5972709381553343,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-018,Water,POMC,Kidney,Lymphocytes,-2.77009799533403,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-019,Water,NPY,Kidney,Lymphocytes,-3.614113224011077,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-020,Water,NPY,Kidney,Lymphocytes,-3.038753151931197,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-021,Water,NPY,Kidney,Lymphocytes,-1.8441032872450616,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-022,Allulose,POMC,Kidney,Lymphocytes,-2.505243777694731,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-023,Sucrose,POMC,Kidney,Lymphocytes,-2.4140796414384953,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-024,Sucrose,POMC,Kidney,Lymphocytes,-2.1792850200708678,True,24,508,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-001,Sucrose,NPY,Kidney,Fibroblasts,1.179172725914194,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-002,Sucrose,NPY,Kidney,Fibroblasts,0.19711940938134687,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-003,Sucrose,POMC,Kidney,Fibroblasts,1.12173599835709,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-004,Sucrose,NPY,Kidney,Fibroblasts,0.9639732854716354,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-005,Sucrose,POMC,Kidney,Fibroblasts,1.5547666289015472,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-006,Sucrose,POMC,Kidney,Fibroblasts,1.1924362266030553,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-007,Sucrose,POMC,Kidney,Fibroblasts,1.0115570320191276,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-008,Allulose,POMC,Kidney,Fibroblasts,1.6280642126430336,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-009,Allulose,POMC,Kidney,Fibroblasts,0.15191251175085707,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-010,Allulose,POMC,Kidney,Fibroblasts,0.8307792110316687,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-011,Allulose,POMC,Kidney,Fibroblasts,1.944810547562399,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-012,Allulose,NPY,Kidney,Fibroblasts,1.349643334091859,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-013,Allulose,POMC,Kidney,Fibroblasts,0.8647508283770384,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-014,Allulose,NPY,Kidney,Fibroblasts,1.9972558860868,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-015,Water,POMC,Kidney,Fibroblasts,1.8614837514194824,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-016,Water,POMC,Kidney,Fibroblasts,1.9005673354198525,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-017,Water,POMC,Kidney,Fibroblasts,0.9921229647437966,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-018,Water,POMC,Kidney,Fibroblasts,2.7098828167634124,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-019,Water,NPY,Kidney,Fibroblasts,1.1527118819624098,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-020,Water,NPY,Kidney,Fibroblasts,1.960235636778735,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-021,Water,NPY,Kidney,Fibroblasts,1.795029663199623,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-022,Allulose,POMC,Kidney,Fibroblasts,1.5838489223724213,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-023,Sucrose,POMC,Kidney,Fibroblasts,1.5290896081378849,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-024,Sucrose,POMC,Kidney,Fibroblasts,1.5238367907586121,True,24,23255,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-001,Sucrose,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-002,Sucrose,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-003,Sucrose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-004,Sucrose,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-005,Sucrose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-006,Sucrose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-007,Sucrose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-008,Allulose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-009,Allulose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-010,Allulose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-011,Allulose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-012,Allulose,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-013,Allulose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-014,Allulose,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-015,Water,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-016,Water,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-017,Water,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-018,Water,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-019,Water,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-020,Water,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-021,Water,NPY,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-022,Allulose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-023,Sucrose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-024,Sucrose,POMC,Kidney,Plasmocytes,,False,6,9,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-001,Sucrose,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-002,Sucrose,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-003,Sucrose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-004,Sucrose,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-005,Sucrose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-006,Sucrose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-007,Sucrose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-008,Allulose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-009,Allulose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-010,Allulose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-011,Allulose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-012,Allulose,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-013,Allulose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-014,Allulose,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-015,Water,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-016,Water,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-017,Water,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-018,Water,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-019,Water,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-020,Water,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-021,Water,NPY,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-022,Allulose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-023,Sucrose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-024,Sucrose,POMC,Kidney,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-001,Sucrose,NPY,Kidney,Neutrophils,-3.877073079434114,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-002,Sucrose,NPY,Kidney,Neutrophils,-3.0217564154868537,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-003,Sucrose,POMC,Kidney,Neutrophils,-4.2248422918082005,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-004,Sucrose,NPY,Kidney,Neutrophils,-3.018818790844718,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-005,Sucrose,POMC,Kidney,Neutrophils,-3.6538784809971103,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-006,Sucrose,POMC,Kidney,Neutrophils,-4.958166541843223,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-007,Sucrose,POMC,Kidney,Neutrophils,-4.024673809266092,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-008,Allulose,POMC,Kidney,Neutrophils,-4.427782593394218,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-009,Allulose,POMC,Kidney,Neutrophils,-2.063290077880771,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-010,Allulose,POMC,Kidney,Neutrophils,-2.314603837026728,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-011,Allulose,POMC,Kidney,Neutrophils,-4.771380593258851,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-012,Allulose,NPY,Kidney,Neutrophils,-4.622468484500308,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-013,Allulose,POMC,Kidney,Neutrophils,-4.006074903162616,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-014,Allulose,NPY,Kidney,Neutrophils,-4.429556143611215,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-015,Water,POMC,Kidney,Neutrophils,-3.8503613706600692,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-016,Water,POMC,Kidney,Neutrophils,-4.442609863797047,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-017,Water,POMC,Kidney,Neutrophils,-4.147868350566501,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-018,Water,POMC,Kidney,Neutrophils,-3.768626825445156,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-019,Water,NPY,Kidney,Neutrophils,-2.7931326719412466,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-020,Water,NPY,Kidney,Neutrophils,-4.373754218663538,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-021,Water,NPY,Kidney,Neutrophils,-4.677316631301277,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-022,Allulose,POMC,Kidney,Neutrophils,-3.863367261847925,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-023,Sucrose,POMC,Kidney,Neutrophils,-3.2025370018027655,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-024,Sucrose,POMC,Kidney,Neutrophils,-2.734810822754765,True,24,147,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-001,Sucrose,NPY,Kidney,Macrophages,2.283899803155446,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-002,Sucrose,NPY,Kidney,Macrophages,1.6254585465311377,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-003,Sucrose,POMC,Kidney,Macrophages,1.9961895744117943,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-004,Sucrose,NPY,Kidney,Macrophages,1.6223618326664067,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-005,Sucrose,POMC,Kidney,Macrophages,1.5821542327990938,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-006,Sucrose,POMC,Kidney,Macrophages,1.9631628571660311,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-007,Sucrose,POMC,Kidney,Macrophages,2.085314240025997,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-008,Allulose,POMC,Kidney,Macrophages,2.42213168589807,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-009,Allulose,POMC,Kidney,Macrophages,0.517235918509503,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-010,Allulose,POMC,Kidney,Macrophages,1.0467631218374671,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-011,Allulose,POMC,Kidney,Macrophages,1.2439632276390742,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-012,Allulose,NPY,Kidney,Macrophages,2.0575493741573916,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-013,Allulose,POMC,Kidney,Macrophages,2.0118229010135207,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-014,Allulose,NPY,Kidney,Macrophages,2.048338870428035,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-015,Water,POMC,Kidney,Macrophages,1.4078777723205569,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-016,Water,POMC,Kidney,Macrophages,1.6446193052953144,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-017,Water,POMC,Kidney,Macrophages,1.850358991492298,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-018,Water,POMC,Kidney,Macrophages,2.5446623881658113,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-019,Water,NPY,Kidney,Macrophages,1.0805652191652313,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-020,Water,NPY,Kidney,Macrophages,1.3118642853649929,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-021,Water,NPY,Kidney,Macrophages,1.519941828785801,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-022,Allulose,POMC,Kidney,Macrophages,1.4628894733893527,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-023,Sucrose,POMC,Kidney,Macrophages,0.6459070219825094,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-024,Sucrose,POMC,Kidney,Macrophages,-1.3998097560224245,True,24,28448,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-001,Sucrose,NPY,Kidney,Muscle Cell,-2.2676351670000137,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-002,Sucrose,NPY,Kidney,Muscle Cell,-2.141397692838763,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-003,Sucrose,POMC,Kidney,Muscle Cell,-1.8681899775438788,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-004,Sucrose,NPY,Kidney,Muscle Cell,-2.1715209304575147,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-005,Sucrose,POMC,Kidney,Muscle Cell,-1.9283683973102557,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-006,Sucrose,POMC,Kidney,Muscle Cell,-1.5908707118567502,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-007,Sucrose,POMC,Kidney,Muscle Cell,-1.9592185095609955,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-008,Allulose,POMC,Kidney,Muscle Cell,-2.2305580160579974,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-009,Allulose,POMC,Kidney,Muscle Cell,-2.736234551123197,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-010,Allulose,POMC,Kidney,Muscle Cell,-1.8996599849640203,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-011,Allulose,POMC,Kidney,Muscle Cell,-1.1250607535637105,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-012,Allulose,NPY,Kidney,Muscle Cell,-1.6102069089951065,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-013,Allulose,POMC,Kidney,Muscle Cell,-1.2791562177560234,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-014,Allulose,NPY,Kidney,Muscle Cell,-1.4642830775419338,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-015,Water,POMC,Kidney,Muscle Cell,-1.4018223650429436,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-016,Water,POMC,Kidney,Muscle Cell,-1.1467729977927177,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-017,Water,POMC,Kidney,Muscle Cell,-1.2185811764206629,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-018,Water,POMC,Kidney,Muscle Cell,-2.280549770015324,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-019,Water,NPY,Kidney,Muscle Cell,-0.8940146843926922,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-020,Water,NPY,Kidney,Muscle Cell,-0.40346230511141545,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-021,Water,NPY,Kidney,Muscle Cell,-1.145090987232718,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-022,Allulose,POMC,Kidney,Muscle Cell,-1.4066314890266218,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-023,Sucrose,POMC,Kidney,Muscle Cell,-1.1181079186118907,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-024,Sucrose,POMC,Kidney,Muscle Cell,1.6163883481238572,True,24,2471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-001,Sucrose,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-002,Sucrose,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-003,Sucrose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-004,Sucrose,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-005,Sucrose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-006,Sucrose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-007,Sucrose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-008,Allulose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-009,Allulose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-010,Allulose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-011,Allulose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-012,Allulose,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-013,Allulose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-014,Allulose,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-015,Water,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-016,Water,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-017,Water,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-018,Water,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-019,Water,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-020,Water,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-021,Water,NPY,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-022,Allulose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-023,Sucrose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-024,Sucrose,POMC,Kidney,Endothelial Cell,,False,11,305,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-001,Sucrose,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-002,Sucrose,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-003,Sucrose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-004,Sucrose,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-005,Sucrose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-006,Sucrose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-007,Sucrose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-008,Allulose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-009,Allulose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-010,Allulose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-011,Allulose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-012,Allulose,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-013,Allulose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-014,Allulose,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-015,Water,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-016,Water,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-017,Water,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-018,Water,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-019,Water,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-020,Water,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-021,Water,NPY,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-022,Allulose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-023,Sucrose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-024,Sucrose,POMC,Kidney,Red blood cell,,False,1,26,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-001,Sucrose,NPY,Kidney,Epithelial,3.593783967879385,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-002,Sucrose,NPY,Kidney,Epithelial,3.795752312444837,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-003,Sucrose,POMC,Kidney,Epithelial,3.360213040456018,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-004,Sucrose,NPY,Kidney,Epithelial,3.6518268153703968,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-005,Sucrose,POMC,Kidney,Epithelial,3.7480569592072728,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-006,Sucrose,POMC,Kidney,Epithelial,3.8330660829836356,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-007,Sucrose,POMC,Kidney,Epithelial,3.4958016094966875,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-008,Allulose,POMC,Kidney,Epithelial,3.322659933417441,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-009,Allulose,POMC,Kidney,Epithelial,2.8708901694915694,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-010,Allulose,POMC,Kidney,Epithelial,4.2041641122228945,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-011,Allulose,POMC,Kidney,Epithelial,3.9027593652866464,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-012,Allulose,NPY,Kidney,Epithelial,4.133164012789258,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-013,Allulose,POMC,Kidney,Epithelial,3.9700788858911333,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-014,Allulose,NPY,Kidney,Epithelial,3.3755109006472734,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-015,Water,POMC,Kidney,Epithelial,3.988713988739745,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-016,Water,POMC,Kidney,Epithelial,3.449393816242472,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-017,Water,POMC,Kidney,Epithelial,3.5918639400513124,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-018,Water,POMC,Kidney,Epithelial,3.8455443568115153,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-019,Water,NPY,Kidney,Epithelial,3.6842703674247765,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-020,Water,NPY,Kidney,Epithelial,3.902996656860161,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-021,Water,NPY,Kidney,Epithelial,3.370768529700838,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-022,Allulose,POMC,Kidney,Epithelial,3.4157216620816033,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-023,Sucrose,POMC,Kidney,Epithelial,3.3205552967004706,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-024,Sucrose,POMC,Kidney,Epithelial,1.7037986633293867,True,24,190306,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-001,Sucrose,NPY,Kidney,Apoptotic Body,1.1548162210229682,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-002,Sucrose,NPY,Kidney,Apoptotic Body,2.10395673350704,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-003,Sucrose,POMC,Kidney,Apoptotic Body,1.38300017511407,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-004,Sucrose,NPY,Kidney,Apoptotic Body,1.4046011037177109,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-005,Sucrose,POMC,Kidney,Apoptotic Body,1.2525352497284503,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-006,Sucrose,POMC,Kidney,Apoptotic Body,1.5396134735528628,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-007,Sucrose,POMC,Kidney,Apoptotic Body,1.5355803799818677,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-008,Allulose,POMC,Kidney,Apoptotic Body,1.6091332166176828,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-009,Allulose,POMC,Kidney,Apoptotic Body,2.6819969120901774,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-010,Allulose,POMC,Kidney,Apoptotic Body,0.8670150594857136,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-011,Allulose,POMC,Kidney,Apoptotic Body,1.1783935267949222,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-012,Allulose,NPY,Kidney,Apoptotic Body,0.8024815329810946,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-013,Allulose,POMC,Kidney,Apoptotic Body,1.171687732986677,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-014,Allulose,NPY,Kidney,Apoptotic Body,0.7050651302660311,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-015,Water,POMC,Kidney,Apoptotic Body,0.9571663988823969,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-016,Water,POMC,Kidney,Apoptotic Body,1.3510133148589434,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-017,Water,POMC,Kidney,Apoptotic Body,1.5293745688550877,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-018,Water,POMC,Kidney,Apoptotic Body,-0.2808149709462304,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-019,Water,NPY,Kidney,Apoptotic Body,1.3837131117925976,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-020,Water,NPY,Kidney,Apoptotic Body,0.640873096702256,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-021,Water,NPY,Kidney,Apoptotic Body,0.9807708840927938,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-022,Allulose,POMC,Kidney,Apoptotic Body,1.312782470725904,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-023,Sucrose,POMC,Kidney,Apoptotic Body,1.2391726350322898,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-024,Sucrose,POMC,Kidney,Apoptotic Body,1.4698817966362012,True,24,20825,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-001,Sucrose,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-002,Sucrose,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-003,Sucrose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-004,Sucrose,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-005,Sucrose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-006,Sucrose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-007,Sucrose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-008,Allulose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-009,Allulose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-010,Allulose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-011,Allulose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-012,Allulose,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-013,Allulose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-014,Allulose,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-015,Water,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-016,Water,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-017,Water,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-018,Water,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-019,Water,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-020,Water,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-021,Water,NPY,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-022,Allulose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-023,Sucrose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-024,Sucrose,POMC,Kidney,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-001,Sucrose,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-002,Sucrose,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-003,Sucrose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-004,Sucrose,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-005,Sucrose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-006,Sucrose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-007,Sucrose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-008,Allulose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-009,Allulose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-010,Allulose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-011,Allulose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-012,Allulose,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-013,Allulose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-014,Allulose,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-015,Water,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-016,Water,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-017,Water,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-018,Water,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-019,Water,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-020,Water,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-021,Water,NPY,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-022,Allulose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-023,Sucrose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-024,Sucrose,POMC,Kidney,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-001,Sucrose,NPY,Liver,Lymphocytes,-1.0488942505217298,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-002,Sucrose,NPY,Liver,Lymphocytes,-2.350657455172149,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-003,Sucrose,POMC,Liver,Lymphocytes,-2.50517900634508,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-004,Sucrose,NPY,Liver,Lymphocytes,-1.3256907255418424,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-005,Sucrose,POMC,Liver,Lymphocytes,-1.5724278454004583,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-006,Sucrose,POMC,Liver,Lymphocytes,-1.8965441048454283,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-007,Sucrose,POMC,Liver,Lymphocytes,-1.218929352518018,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-008,Allulose,POMC,Liver,Lymphocytes,-1.2551644340101848,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-009,Allulose,POMC,Liver,Lymphocytes,-1.0883553042812895,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-010,Allulose,POMC,Liver,Lymphocytes,-0.5787786204775709,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-011,Allulose,POMC,Liver,Lymphocytes,-0.3177629312902699,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-012,Allulose,NPY,Liver,Lymphocytes,-1.5153793712285348,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-013,Allulose,POMC,Liver,Lymphocytes,-1.7607698585150402,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-014,Allulose,NPY,Liver,Lymphocytes,-0.8260386437251963,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-015,Water,POMC,Liver,Lymphocytes,-2.0528196563339325,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-016,Water,POMC,Liver,Lymphocytes,-2.1633920285946973,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-017,Water,POMC,Liver,Lymphocytes,-2.7686832220294386,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-018,Water,POMC,Liver,Lymphocytes,-2.742729160621082,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-019,Water,NPY,Liver,Lymphocytes,-2.0157528742756927,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-020,Water,NPY,Liver,Lymphocytes,-2.05330329458809,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-021,Water,NPY,Liver,Lymphocytes,-1.19192027261199,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-022,Allulose,POMC,Liver,Lymphocytes,-2.174597849755356,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-023,Sucrose,POMC,Liver,Lymphocytes,-2.263692444841211,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-024,Sucrose,POMC,Liver,Lymphocytes,-2.9098322391471996,True,24,874,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-001,Sucrose,NPY,Liver,Fibroblasts,1.3057977592677423,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-002,Sucrose,NPY,Liver,Fibroblasts,1.2493907852351716,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-003,Sucrose,POMC,Liver,Fibroblasts,1.4046193040609545,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-004,Sucrose,NPY,Liver,Fibroblasts,0.73338351331356,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-005,Sucrose,POMC,Liver,Fibroblasts,0.8579906191034721,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-006,Sucrose,POMC,Liver,Fibroblasts,1.9313957833721762,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-007,Sucrose,POMC,Liver,Fibroblasts,1.0724824398779025,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-008,Allulose,POMC,Liver,Fibroblasts,0.5852215466580275,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-009,Allulose,POMC,Liver,Fibroblasts,0.33841316476637573,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-010,Allulose,POMC,Liver,Fibroblasts,-0.1618131242490901,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-011,Allulose,POMC,Liver,Fibroblasts,0.17457218107808847,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-012,Allulose,NPY,Liver,Fibroblasts,-0.2526063091380659,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-013,Allulose,POMC,Liver,Fibroblasts,0.6691432151425531,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-014,Allulose,NPY,Liver,Fibroblasts,-0.4822671046223723,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-015,Water,POMC,Liver,Fibroblasts,-0.443381743899832,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-016,Water,POMC,Liver,Fibroblasts,1.0912018788755833,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-017,Water,POMC,Liver,Fibroblasts,1.0109505953529614,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-018,Water,POMC,Liver,Fibroblasts,2.2599961439516822,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-019,Water,NPY,Liver,Fibroblasts,0.6013255486207902,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-020,Water,NPY,Liver,Fibroblasts,-0.5208264232901176,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-021,Water,NPY,Liver,Fibroblasts,0.5566997039554478,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-022,Allulose,POMC,Liver,Fibroblasts,0.11885475967541659,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-023,Sucrose,POMC,Liver,Fibroblasts,-0.004909974505558523,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-024,Sucrose,POMC,Liver,Fibroblasts,0.6681156542594548,True,24,6320,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-001,Sucrose,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-002,Sucrose,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-003,Sucrose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-004,Sucrose,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-005,Sucrose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-006,Sucrose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-007,Sucrose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-008,Allulose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-009,Allulose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-010,Allulose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-011,Allulose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-012,Allulose,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-013,Allulose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-014,Allulose,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-015,Water,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-016,Water,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-017,Water,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-018,Water,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-019,Water,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-020,Water,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-021,Water,NPY,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-022,Allulose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-023,Sucrose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-024,Sucrose,POMC,Liver,Plasmocytes,,False,12,38,detected_animals>=18 and total_class_count>=24 within organ,False,Plasmocyte-like,0.5
+m26-001,Sucrose,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-002,Sucrose,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-003,Sucrose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-004,Sucrose,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-005,Sucrose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-006,Sucrose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-007,Sucrose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-008,Allulose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-009,Allulose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-010,Allulose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-011,Allulose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-012,Allulose,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-013,Allulose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-014,Allulose,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-015,Water,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-016,Water,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-017,Water,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-018,Water,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-019,Water,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-020,Water,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-021,Water,NPY,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-022,Allulose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-023,Sucrose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-024,Sucrose,POMC,Liver,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-001,Sucrose,NPY,Liver,Neutrophils,-1.9308959089172526,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-002,Sucrose,NPY,Liver,Neutrophils,-0.6642585016019202,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-003,Sucrose,POMC,Liver,Neutrophils,-1.0914856710370753,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-004,Sucrose,NPY,Liver,Neutrophils,-1.5408021051587877,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-005,Sucrose,POMC,Liver,Neutrophils,-2.235722062810723,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-006,Sucrose,POMC,Liver,Neutrophils,-0.841894939598435,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-007,Sucrose,POMC,Liver,Neutrophils,-2.317541641186128,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-008,Allulose,POMC,Liver,Neutrophils,-2.3958882080284214,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-009,Allulose,POMC,Liver,Neutrophils,-2.222369520000315,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-010,Allulose,POMC,Liver,Neutrophils,-2.7823323328654372,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-011,Allulose,POMC,Liver,Neutrophils,-3.247050105436108,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-012,Allulose,NPY,Liver,Neutrophils,-1.3354079917795336,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-013,Allulose,POMC,Liver,Neutrophils,-2.3443548365634594,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-014,Allulose,NPY,Liver,Neutrophils,-3.190317305724582,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-015,Water,POMC,Liver,Neutrophils,-0.8290442247118168,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-016,Water,POMC,Liver,Neutrophils,-0.7111396996830086,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-017,Water,POMC,Liver,Neutrophils,-1.2426269185343894,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-018,Water,POMC,Liver,Neutrophils,-0.9662371635238158,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-019,Water,NPY,Liver,Neutrophils,-1.9323712653366423,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-020,Water,NPY,Liver,Neutrophils,-0.7540203104578294,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-021,Water,NPY,Liver,Neutrophils,-1.9540603246588861,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-022,Allulose,POMC,Liver,Neutrophils,-0.811293006860164,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-023,Sucrose,POMC,Liver,Neutrophils,-0.546040947766878,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-024,Sucrose,POMC,Liver,Neutrophils,-0.17546472972761595,True,24,512,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-001,Sucrose,NPY,Liver,Macrophages,0.9206545566707236,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-002,Sucrose,NPY,Liver,Macrophages,-1.015656388439809,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-003,Sucrose,POMC,Liver,Macrophages,-0.6248661397755804,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-004,Sucrose,NPY,Liver,Macrophages,1.970146140462487,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-005,Sucrose,POMC,Liver,Macrophages,-0.9913979629612193,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-006,Sucrose,POMC,Liver,Macrophages,0.7585135661162714,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-007,Sucrose,POMC,Liver,Macrophages,-0.5998901441117943,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-008,Allulose,POMC,Liver,Macrophages,0.8021263648820618,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-009,Allulose,POMC,Liver,Macrophages,0.46749836201870476,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-010,Allulose,POMC,Liver,Macrophages,0.7713817413323212,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-011,Allulose,POMC,Liver,Macrophages,-0.20252766771268504,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-012,Allulose,NPY,Liver,Macrophages,0.7396120246424251,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-013,Allulose,POMC,Liver,Macrophages,1.5073972580700377,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-014,Allulose,NPY,Liver,Macrophages,0.6789879700184098,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-015,Water,POMC,Liver,Macrophages,0.3080343447840894,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-016,Water,POMC,Liver,Macrophages,-0.5909953878409455,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-017,Water,POMC,Liver,Macrophages,-0.6645490677592312,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-018,Water,POMC,Liver,Macrophages,-0.7217838256228553,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-019,Water,NPY,Liver,Macrophages,0.09049992485479974,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-020,Water,NPY,Liver,Macrophages,-0.33186032377749486,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-021,Water,NPY,Liver,Macrophages,0.6706082675042726,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-022,Allulose,POMC,Liver,Macrophages,-0.1536525147571286,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-023,Sucrose,POMC,Liver,Macrophages,-2.263692444841211,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-024,Sucrose,POMC,Liver,Macrophages,-0.6274498534706732,True,24,5454,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-001,Sucrose,NPY,Liver,Muscle Cell,-3.2840380627202426,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-002,Sucrose,NPY,Liver,Muscle Cell,-3.9600953676062494,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-003,Sucrose,POMC,Liver,Muscle Cell,-2.50517900634508,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-004,Sucrose,NPY,Liver,Muscle Cell,-4.759677930026988,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-005,Sucrose,POMC,Liver,Muscle Cell,-1.6349482023817927,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-006,Sucrose,POMC,Liver,Muscle Cell,-4.231919020662465,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-007,Sucrose,POMC,Liver,Muscle Cell,-0.9432234711129532,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-008,Allulose,POMC,Liver,Muscle Cell,-2.1663137663839214,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-009,Allulose,POMC,Liver,Muscle Cell,-1.75574998873882,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-010,Allulose,POMC,Liver,Muscle Cell,-1.4473312661330975,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-011,Allulose,POMC,Liver,Muscle Cell,-0.4026945848266501,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-012,Allulose,NPY,Liver,Muscle Cell,-3.5808346709336303,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-013,Allulose,POMC,Liver,Muscle Cell,-2.422826452004955,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-014,Allulose,NPY,Liver,Muscle Cell,-1.9246509323933063,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-015,Water,POMC,Liver,Muscle Cell,-3.662257568768033,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-016,Water,POMC,Liver,Muscle Cell,-2.6153771523377545,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-017,Water,POMC,Liver,Muscle Cell,-2.18089655712732,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-018,Water,POMC,Liver,Muscle Cell,-2.09610199569603,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-019,Water,NPY,Liver,Muscle Cell,-2.206808111038402,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-020,Water,NPY,Liver,Muscle Cell,-2.515926816536203,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-021,Water,NPY,Liver,Muscle Cell,-2.56496940698186,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-022,Allulose,POMC,Liver,Muscle Cell,-3.473880833885617,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-023,Sucrose,POMC,Liver,Muscle Cell,-0.9137657278921951,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-024,Sucrose,POMC,Liver,Muscle Cell,-3.420657862913191,True,21,471,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-001,Sucrose,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-002,Sucrose,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-003,Sucrose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-004,Sucrose,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-005,Sucrose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-006,Sucrose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-007,Sucrose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-008,Allulose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-009,Allulose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-010,Allulose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-011,Allulose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-012,Allulose,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-013,Allulose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-014,Allulose,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-015,Water,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-016,Water,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-017,Water,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-018,Water,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-019,Water,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-020,Water,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-021,Water,NPY,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-022,Allulose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-023,Sucrose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-024,Sucrose,POMC,Liver,Endothelial Cell,,False,2,3,detected_animals>=18 and total_class_count>=24 within organ,False,Endothelial-like,0.5
+m26-001,Sucrose,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-002,Sucrose,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-003,Sucrose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-004,Sucrose,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-005,Sucrose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-006,Sucrose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-007,Sucrose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-008,Allulose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-009,Allulose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-010,Allulose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-011,Allulose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-012,Allulose,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-013,Allulose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-014,Allulose,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-015,Water,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-016,Water,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-017,Water,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-018,Water,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-019,Water,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-020,Water,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-021,Water,NPY,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-022,Allulose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-023,Sucrose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-024,Sucrose,POMC,Liver,Red blood cell,,False,2,2,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-001,Sucrose,NPY,Liver,Epithelial,1.7407002137182959,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-002,Sucrose,NPY,Liver,Epithelial,1.706331320506183,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-003,Sucrose,POMC,Liver,Epithelial,1.3590533352467173,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-004,Sucrose,NPY,Liver,Epithelial,1.4648804992483715,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-005,Sucrose,POMC,Liver,Epithelial,2.3486449955476054,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-006,Sucrose,POMC,Liver,Epithelial,1.5248774892793533,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-007,Sucrose,POMC,Liver,Epithelial,0.6467491065330444,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-008,Allulose,POMC,Liver,Epithelial,1.697918575207876,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-009,Allulose,POMC,Liver,Epithelial,1.5337896272364728,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-010,Allulose,POMC,Liver,Epithelial,2.7954549067123597,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-011,Allulose,POMC,Liver,Epithelial,2.9074034987376023,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-012,Allulose,NPY,Liver,Epithelial,3.164532388962002,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-013,Allulose,POMC,Liver,Epithelial,2.559241385039391,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-014,Allulose,NPY,Liver,Epithelial,3.1253694268986747,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-015,Water,POMC,Liver,Epithelial,1.0651302499443078,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-016,Water,POMC,Liver,Epithelial,0.31391002180808414,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-017,Water,POMC,Liver,Epithelial,1.2458963717237994,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-018,Water,POMC,Liver,Epithelial,0.6182773404578281,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-019,Water,NPY,Liver,Epithelial,1.6388501453090618,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-020,Water,NPY,Liver,Epithelial,2.4880194894092558,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-021,Water,NPY,Liver,Epithelial,0.7840108926981815,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-022,Allulose,POMC,Liver,Epithelial,1.8652585271826747,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-023,Sucrose,POMC,Liver,Epithelial,1.0633969646672226,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-024,Sucrose,POMC,Liver,Epithelial,1.6355879424351176,True,24,28638,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-001,Sucrose,NPY,Liver,Apoptotic Body,2.2966756925024603,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-002,Sucrose,NPY,Liver,Apoptotic Body,5.034945607078773,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-003,Sucrose,POMC,Liver,Apoptotic Body,3.963037184195141,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-004,Sucrose,NPY,Liver,Apoptotic Body,3.457760607703199,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-005,Sucrose,POMC,Liver,Apoptotic Body,3.227860458903114,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-006,Sucrose,POMC,Liver,Apoptotic Body,2.7555712263385255,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-007,Sucrose,POMC,Liver,Apoptotic Body,3.360353062517946,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-008,Allulose,POMC,Liver,Apoptotic Body,2.7320999216745627,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-009,Allulose,POMC,Liver,Apoptotic Body,2.726773658998874,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-010,Allulose,POMC,Liver,Apoptotic Body,1.4034186956805146,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-011,Allulose,POMC,Liver,Apoptotic Body,1.088059609450022,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-012,Allulose,NPY,Liver,Apoptotic Body,2.7800839294753414,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-013,Allulose,POMC,Liver,Apoptotic Body,1.7921692888314709,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-014,Allulose,NPY,Liver,Apoptotic Body,2.6189165895483733,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-015,Water,POMC,Liver,Apoptotic Body,5.614338598985215,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-016,Water,POMC,Liver,Apoptotic Body,4.675792367772737,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-017,Water,POMC,Liver,Apoptotic Body,4.599908798373616,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-018,Water,POMC,Liver,Apoptotic Body,3.64857866105427,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-019,Water,NPY,Liver,Apoptotic Body,3.824256631866084,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-020,Water,NPY,Liver,Apoptotic Body,3.6879176792404786,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-021,Water,NPY,Liver,Apoptotic Body,3.6996311400948345,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-022,Allulose,POMC,Liver,Apoptotic Body,4.6293109184001695,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-023,Sucrose,POMC,Liver,Apoptotic Body,4.928704575179827,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-024,Sucrose,POMC,Liver,Apoptotic Body,4.8297010885641045,True,24,78022,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-001,Sucrose,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-002,Sucrose,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-003,Sucrose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-004,Sucrose,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-005,Sucrose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-006,Sucrose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-007,Sucrose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-008,Allulose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-009,Allulose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-010,Allulose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-011,Allulose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-012,Allulose,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-013,Allulose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-014,Allulose,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-015,Water,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-016,Water,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-017,Water,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-018,Water,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-019,Water,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-020,Water,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-021,Water,NPY,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-022,Allulose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-023,Sucrose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-024,Sucrose,POMC,Liver,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-001,Sucrose,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-002,Sucrose,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-003,Sucrose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-004,Sucrose,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-005,Sucrose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-006,Sucrose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-007,Sucrose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-008,Allulose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-009,Allulose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-010,Allulose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-011,Allulose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-012,Allulose,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-013,Allulose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-014,Allulose,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-015,Water,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-016,Water,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-017,Water,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-018,Water,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-019,Water,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-020,Water,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-021,Water,NPY,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-022,Allulose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-023,Sucrose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-024,Sucrose,POMC,Liver,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-001,Sucrose,NPY,Spleen,Lymphocytes,2.1899883499332153,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-002,Sucrose,NPY,Spleen,Lymphocytes,1.1721710604415239,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-003,Sucrose,POMC,Spleen,Lymphocytes,0.30803234952307257,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-004,Sucrose,NPY,Spleen,Lymphocytes,1.9866329291152898,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-005,Sucrose,POMC,Spleen,Lymphocytes,0.5868298001752619,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-006,Sucrose,POMC,Spleen,Lymphocytes,2.031975847086447,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-007,Sucrose,POMC,Spleen,Lymphocytes,2.4785425730879815,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-008,Allulose,POMC,Spleen,Lymphocytes,2.0740775503392217,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-009,Allulose,POMC,Spleen,Lymphocytes,1.4509751062358864,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-010,Allulose,POMC,Spleen,Lymphocytes,2.9350506445895745,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-011,Allulose,POMC,Spleen,Lymphocytes,1.3010529827537614,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-012,Allulose,NPY,Spleen,Lymphocytes,1.9857072775507114,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-013,Allulose,POMC,Spleen,Lymphocytes,2.15168511297117,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-014,Allulose,NPY,Spleen,Lymphocytes,2.5653000640840395,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-015,Water,POMC,Spleen,Lymphocytes,1.9734564443958948,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-016,Water,POMC,Spleen,Lymphocytes,1.2863211311502942,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-017,Water,POMC,Spleen,Lymphocytes,1.6385640315973937,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-018,Water,POMC,Spleen,Lymphocytes,1.906020836763922,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-019,Water,NPY,Spleen,Lymphocytes,1.4288377062021258,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-020,Water,NPY,Spleen,Lymphocytes,2.120786245030555,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-021,Water,NPY,Spleen,Lymphocytes,2.8737862240440712,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-022,Allulose,POMC,Spleen,Lymphocytes,2.5139253524335237,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-023,Sucrose,POMC,Spleen,Lymphocytes,2.455744592036768,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-024,Sucrose,POMC,Spleen,Lymphocytes,1.7892444480630858,True,24,59305,detected_animals>=18 and total_class_count>=24 within organ,True,Lymphocyte-like,0.5
+m26-001,Sucrose,NPY,Spleen,Fibroblasts,4.9215042745993465,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-002,Sucrose,NPY,Spleen,Fibroblasts,3.7912430453339425,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-003,Sucrose,POMC,Spleen,Fibroblasts,3.1875682504079648,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-004,Sucrose,NPY,Spleen,Fibroblasts,4.111188935607521,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-005,Sucrose,POMC,Spleen,Fibroblasts,4.197605267749625,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-006,Sucrose,POMC,Spleen,Fibroblasts,4.796096057607091,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-007,Sucrose,POMC,Spleen,Fibroblasts,4.843767382776487,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-008,Allulose,POMC,Spleen,Fibroblasts,4.434187775651777,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-009,Allulose,POMC,Spleen,Fibroblasts,3.345849123466873,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-010,Allulose,POMC,Spleen,Fibroblasts,5.461576504438908,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-011,Allulose,POMC,Spleen,Fibroblasts,4.0072840995111205,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-012,Allulose,NPY,Spleen,Fibroblasts,4.594838503488081,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-013,Allulose,POMC,Spleen,Fibroblasts,3.2506301526614,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-014,Allulose,NPY,Spleen,Fibroblasts,4.067647815006414,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-015,Water,POMC,Spleen,Fibroblasts,3.4719743002064423,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-016,Water,POMC,Spleen,Fibroblasts,3.489158655418652,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-017,Water,POMC,Spleen,Fibroblasts,3.9635699077193323,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-018,Water,POMC,Spleen,Fibroblasts,4.027317387876306,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-019,Water,NPY,Spleen,Fibroblasts,4.079631134172949,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-020,Water,NPY,Spleen,Fibroblasts,4.552366092247594,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-021,Water,NPY,Spleen,Fibroblasts,4.229119415255313,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-022,Allulose,POMC,Spleen,Fibroblasts,4.089316300134712,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-023,Sucrose,POMC,Spleen,Fibroblasts,2.9767486044040106,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-024,Sucrose,POMC,Spleen,Fibroblasts,3.8976437228738154,True,24,419312,detected_animals>=18 and total_class_count>=24 within organ,True,Fibroblast-like,0.5
+m26-001,Sucrose,NPY,Spleen,Plasmocytes,-3.988252104318102,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-002,Sucrose,NPY,Spleen,Plasmocytes,-1.8136996633648685,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-003,Sucrose,POMC,Spleen,Plasmocytes,-3.2398343803140524,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-004,Sucrose,NPY,Spleen,Plasmocytes,-3.9944204666923744,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-005,Sucrose,POMC,Spleen,Plasmocytes,-3.4802226197588313,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-006,Sucrose,POMC,Spleen,Plasmocytes,-4.101422195910202,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-007,Sucrose,POMC,Spleen,Plasmocytes,-3.8911681328868495,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-008,Allulose,POMC,Spleen,Plasmocytes,-4.797359465968803,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-009,Allulose,POMC,Spleen,Plasmocytes,-3.8702594618724753,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-010,Allulose,POMC,Spleen,Plasmocytes,-5.554771350030531,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-011,Allulose,POMC,Spleen,Plasmocytes,-4.092987701385927,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-012,Allulose,NPY,Spleen,Plasmocytes,-3.590533158445443,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-013,Allulose,POMC,Spleen,Plasmocytes,-1.4711177738516028,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-014,Allulose,NPY,Spleen,Plasmocytes,-1.9072831650493987,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-015,Water,POMC,Spleen,Plasmocytes,-2.6025225640760934,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-016,Water,POMC,Spleen,Plasmocytes,-2.9933891302469893,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-017,Water,POMC,Spleen,Plasmocytes,-4.032006308852694,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-018,Water,POMC,Spleen,Plasmocytes,-3.6257030259278826,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-019,Water,NPY,Spleen,Plasmocytes,-3.7231685410749895,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-020,Water,NPY,Spleen,Plasmocytes,-3.742069836871587,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-021,Water,NPY,Spleen,Plasmocytes,-1.7495932306910156,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-022,Allulose,POMC,Spleen,Plasmocytes,-2.064468472520196,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-023,Sucrose,POMC,Spleen,Plasmocytes,-0.8459136475111277,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-024,Sucrose,POMC,Spleen,Plasmocytes,-4.0001595492936906,True,23,808,detected_animals>=18 and total_class_count>=24 within organ,True,Plasmocyte-like,0.5
+m26-001,Sucrose,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-002,Sucrose,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-003,Sucrose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-004,Sucrose,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-005,Sucrose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-006,Sucrose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-007,Sucrose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-008,Allulose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-009,Allulose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-010,Allulose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-011,Allulose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-012,Allulose,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-013,Allulose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-014,Allulose,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-015,Water,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-016,Water,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-017,Water,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-018,Water,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-019,Water,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-020,Water,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-021,Water,NPY,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-022,Allulose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-023,Sucrose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-024,Sucrose,POMC,Spleen,Eosinophils,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Eosinophil-like,0.5
+m26-001,Sucrose,NPY,Spleen,Neutrophils,-2.4376546919069346,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-002,Sucrose,NPY,Spleen,Neutrophils,-0.9771401611987978,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-003,Sucrose,POMC,Spleen,Neutrophils,-0.21623320775126942,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-004,Sucrose,NPY,Spleen,Neutrophils,-2.3849825542582748,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-005,Sucrose,POMC,Spleen,Neutrophils,-1.110698044089676,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-006,Sucrose,POMC,Spleen,Neutrophils,-2.343564278357828,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-007,Sucrose,POMC,Spleen,Neutrophils,-2.654405505737923,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-008,Allulose,POMC,Spleen,Neutrophils,-3.331022397175376,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-009,Allulose,POMC,Spleen,Neutrophils,-2.0054748576295305,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-010,Allulose,POMC,Spleen,Neutrophils,-3.94533343759643,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-011,Allulose,POMC,Spleen,Neutrophils,-0.5746809115768619,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-012,Allulose,NPY,Spleen,Neutrophils,-2.185190602354859,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-013,Allulose,POMC,Spleen,Neutrophils,-0.6929081547478084,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-014,Allulose,NPY,Spleen,Neutrophils,-1.891657847146318,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-015,Water,POMC,Spleen,Neutrophils,-1.0831776951690313,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-016,Water,POMC,Spleen,Neutrophils,-1.1578851120560771,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-017,Water,POMC,Spleen,Neutrophils,-2.1449366598203135,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-018,Water,POMC,Spleen,Neutrophils,-1.2471320259559153,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-019,Water,NPY,Spleen,Neutrophils,-1.9501012048590871,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-020,Water,NPY,Spleen,Neutrophils,-2.062427665764239,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-021,Water,NPY,Spleen,Neutrophils,-2.3070745460978053,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-022,Allulose,POMC,Spleen,Neutrophils,-1.8225548185239955,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-023,Sucrose,POMC,Spleen,Neutrophils,-1.34152985261359,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-024,Sucrose,POMC,Spleen,Neutrophils,-1.979214214295463,True,24,1925,detected_animals>=18 and total_class_count>=24 within organ,True,Neutrophil-like,0.5
+m26-001,Sucrose,NPY,Spleen,Macrophages,2.98595949849899,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-002,Sucrose,NPY,Spleen,Macrophages,1.9339335046296906,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-003,Sucrose,POMC,Spleen,Macrophages,1.83234582811208,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-004,Sucrose,NPY,Spleen,Macrophages,3.0902848252818056,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-005,Sucrose,POMC,Spleen,Macrophages,2.1978474917688806,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-006,Sucrose,POMC,Spleen,Macrophages,3.0241826459250354,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-007,Sucrose,POMC,Spleen,Macrophages,3.0661177767924426,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-008,Allulose,POMC,Spleen,Macrophages,3.253237617335038,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-009,Allulose,POMC,Spleen,Macrophages,1.8428731035228338,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-010,Allulose,POMC,Spleen,Macrophages,3.562027277537288,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-011,Allulose,POMC,Spleen,Macrophages,2.586954047978792,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-012,Allulose,NPY,Spleen,Macrophages,2.6740365788737974,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-013,Allulose,POMC,Spleen,Macrophages,2.079412291165749,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-014,Allulose,NPY,Spleen,Macrophages,2.478770782174529,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-015,Water,POMC,Spleen,Macrophages,2.34732783895104,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-016,Water,POMC,Spleen,Macrophages,1.71261916559794,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-017,Water,POMC,Spleen,Macrophages,2.5569201686808256,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-018,Water,POMC,Spleen,Macrophages,2.3921215490224377,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-019,Water,NPY,Spleen,Macrophages,1.9713115409188982,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-020,Water,NPY,Spleen,Macrophages,2.4657882587257594,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-021,Water,NPY,Spleen,Macrophages,2.572896598399409,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-022,Allulose,POMC,Spleen,Macrophages,2.4991118803753904,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-023,Sucrose,POMC,Spleen,Macrophages,1.5405718032639544,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-024,Sucrose,POMC,Spleen,Macrophages,2.5167057053052,True,24,83798,detected_animals>=18 and total_class_count>=24 within organ,True,Macrophage-like,0.5
+m26-001,Sucrose,NPY,Spleen,Muscle Cell,-1.4233027468565647,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-002,Sucrose,NPY,Spleen,Muscle Cell,-2.822966851697129,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-003,Sucrose,POMC,Spleen,Muscle Cell,-2.3322773284086518,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-004,Sucrose,NPY,Spleen,Muscle Cell,-2.179130500054126,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-005,Sucrose,POMC,Spleen,Muscle Cell,-2.3816103310907213,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-006,Sucrose,POMC,Spleen,Muscle Cell,-0.9317366152327731,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-007,Sucrose,POMC,Spleen,Muscle Cell,-0.9010069043823146,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-008,Allulose,POMC,Spleen,Muscle Cell,-1.4300636359823296,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-009,Allulose,POMC,Spleen,Muscle Cell,-1.3628799562324163,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-010,Allulose,POMC,Spleen,Muscle Cell,-0.013507804872104678,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-011,Allulose,POMC,Spleen,Muscle Cell,-1.6156856509831456,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-012,Allulose,NPY,Spleen,Muscle Cell,-1.7610333612345421,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-013,Allulose,POMC,Spleen,Muscle Cell,-3.435896407211299,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-014,Allulose,NPY,Spleen,Muscle Cell,-2.67393280760227,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-015,Water,POMC,Spleen,Muscle Cell,-1.8716350555333015,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-016,Water,POMC,Spleen,Muscle Cell,-1.8016864185128676,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-017,Water,POMC,Spleen,Muscle Cell,-2.2741483913003195,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-018,Water,POMC,Spleen,Muscle Cell,-1.860611803781989,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-019,Water,NPY,Spleen,Muscle Cell,-2.1591930027176467,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-020,Water,NPY,Spleen,Muscle Cell,-1.935272490278992,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-021,Water,NPY,Spleen,Muscle Cell,-2.6616195637787126,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-022,Allulose,POMC,Spleen,Muscle Cell,-2.3008572505844267,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-023,Sucrose,POMC,Spleen,Muscle Cell,-3.2146806473864746,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-024,Sucrose,POMC,Spleen,Muscle Cell,-1.0750448429536528,True,24,1120,detected_animals>=18 and total_class_count>=24 within organ,True,Muscle-like,0.5
+m26-001,Sucrose,NPY,Spleen,Endothelial Cell,-1.9638703398212929,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-002,Sucrose,NPY,Spleen,Endothelial Cell,-2.479195312594304,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-003,Sucrose,POMC,Spleen,Endothelial Cell,-2.1412220916459432,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-004,Sucrose,NPY,Spleen,Endothelial Cell,-1.365619637244306,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-005,Sucrose,POMC,Spleen,Endothelial Cell,-2.677876147233894,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-006,Sucrose,POMC,Spleen,Endothelial Cell,-2.214352546877822,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-007,Sucrose,POMC,Spleen,Endothelial Cell,-2.081059524990599,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-008,Allulose,POMC,Spleen,Endothelial Cell,-0.8397259492886056,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-009,Allulose,POMC,Spleen,Endothelial Cell,-2.6045930885411996,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-010,Allulose,POMC,Spleen,Endothelial Cell,-1.411636623638998,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-011,Allulose,POMC,Spleen,Endothelial Cell,-2.2282030971429814,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-012,Allulose,NPY,Spleen,Endothelial Cell,-1.6895743972523967,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-013,Allulose,POMC,Spleen,Endothelial Cell,-1.8626615434411589,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-014,Allulose,NPY,Spleen,Endothelial Cell,-1.3533075499902365,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-015,Water,POMC,Spleen,Endothelial Cell,-3.0157097182781682,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-016,Water,POMC,Spleen,Endothelial Cell,-1.703014891005838,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-017,Water,POMC,Spleen,Endothelial Cell,-0.9140564025744533,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-018,Water,POMC,Spleen,Endothelial Cell,-1.7579576497219058,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-019,Water,NPY,Spleen,Endothelial Cell,-1.1582191836134523,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-020,Water,NPY,Spleen,Endothelial Cell,-1.4125772909576177,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-021,Water,NPY,Spleen,Endothelial Cell,-1.2285634367507825,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-022,Allulose,POMC,Spleen,Endothelial Cell,-1.4650537696229575,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-023,Sucrose,POMC,Spleen,Endothelial Cell,-1.4436013833959587,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-024,Sucrose,POMC,Spleen,Endothelial Cell,-2.39072163685959,True,24,1320,detected_animals>=18 and total_class_count>=24 within organ,True,Endothelial-like,0.5
+m26-001,Sucrose,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-002,Sucrose,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-003,Sucrose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-004,Sucrose,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-005,Sucrose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-006,Sucrose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-007,Sucrose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-008,Allulose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-009,Allulose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-010,Allulose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-011,Allulose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-012,Allulose,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-013,Allulose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-014,Allulose,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-015,Water,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-016,Water,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-017,Water,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-018,Water,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-019,Water,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-020,Water,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-021,Water,NPY,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-022,Allulose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-023,Sucrose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-024,Sucrose,POMC,Spleen,Red blood cell,,False,1,1,detected_animals>=18 and total_class_count>=24 within organ,False,RBC-like,0.5
+m26-001,Sucrose,NPY,Spleen,Epithelial,0.6325101764298262,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-002,Sucrose,NPY,Spleen,Epithelial,2.3303247428006504,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-003,Sucrose,POMC,Spleen,Epithelial,2.1646040821425245,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-004,Sucrose,NPY,Spleen,Epithelial,1.3533671048537492,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-005,Sucrose,POMC,Spleen,Epithelial,1.6614409367438285,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-006,Sucrose,POMC,Spleen,Epithelial,1.030840586307752,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-007,Sucrose,POMC,Spleen,Epithelial,0.3992913082615406,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-008,Allulose,POMC,Spleen,Epithelial,1.1999214664606184,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-009,Allulose,POMC,Spleen,Epithelial,2.879991033712219,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-010,Allulose,POMC,Spleen,Epithelial,0.47831487176827103,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-011,Allulose,POMC,Spleen,Epithelial,0.6535242061368423,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-012,Allulose,NPY,Spleen,Epithelial,1.0092378628648766,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-013,Allulose,POMC,Spleen,Epithelial,0.46764629745091346,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-014,Allulose,NPY,Spleen,Epithelial,-0.09089510166830372,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-015,Water,POMC,Spleen,Epithelial,0.9251945060793192,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-016,Water,POMC,Spleen,Epithelial,0.932681090906716,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-017,Water,POMC,Spleen,Epithelial,1.314148387109503,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-018,Water,POMC,Spleen,Epithelial,0.47650527275443233,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-019,Water,NPY,Spleen,Epithelial,1.6474694870526734,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-020,Water,NPY,Spleen,Epithelial,0.7196497939842441,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-021,Water,NPY,Spleen,Epithelial,0.03788357674503828,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-022,Allulose,POMC,Spleen,Epithelial,0.1649798364832229,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-023,Sucrose,POMC,Spleen,Epithelial,0.3224575027235157,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-024,Sucrose,POMC,Spleen,Epithelial,0.8722580639869637,True,24,24348,detected_animals>=18 and total_class_count>=24 within organ,True,Epithelial-like,0.5
+m26-001,Sucrose,NPY,Spleen,Apoptotic Body,-0.9168824165584901,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-002,Sucrose,NPY,Spleen,Apoptotic Body,-1.1346703643507086,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-003,Sucrose,POMC,Spleen,Apoptotic Body,0.43701649793427677,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-004,Sucrose,NPY,Spleen,Apoptotic Body,-0.6173206366092803,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-005,Sucrose,POMC,Spleen,Apoptotic Body,1.0066836457355257,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-006,Sucrose,POMC,Spleen,Apoptotic Body,-1.2920195005477044,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-007,Sucrose,POMC,Spleen,Apoptotic Body,-1.2600789729207689,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-008,Allulose,POMC,Spleen,Apoptotic Body,-0.5632529613715445,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-009,Allulose,POMC,Spleen,Apoptotic Body,0.3235189973378123,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-010,Allulose,POMC,Spleen,Apoptotic Body,-1.5117200821959802,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-011,Allulose,POMC,Spleen,Apoptotic Body,-0.03725797529160513,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-012,Allulose,NPY,Spleen,Apoptotic Body,-1.0374887034902258,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-013,Allulose,POMC,Spleen,Apoptotic Body,-0.48678997499736365,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-014,Allulose,NPY,Spleen,Apoptotic Body,-1.1946421898084516,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-015,Water,POMC,Spleen,Apoptotic Body,-0.14490805657610073,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-016,Water,POMC,Spleen,Apoptotic Body,0.23519550874817252,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-017,Water,POMC,Spleen,Apoptotic Body,-0.10805473255927378,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-018,Water,POMC,Spleen,Apoptotic Body,-0.31056054102940056,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-019,Water,NPY,Spleen,Apoptotic Body,-0.13656793608147133,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-020,Water,NPY,Spleen,Apoptotic Body,-0.7062431061157186,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-021,Water,NPY,Spleen,Apoptotic Body,-1.7668350371255217,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-022,Allulose,POMC,Spleen,Apoptotic Body,-1.6143990581752776,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-023,Sucrose,POMC,Spleen,Apoptotic Body,-0.4497969715210983,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-024,Sucrose,POMC,Spleen,Apoptotic Body,0.3692883031733305,True,24,5445,detected_animals>=18 and total_class_count>=24 within organ,True,Apoptotic-like,0.5
+m26-001,Sucrose,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-002,Sucrose,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-003,Sucrose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-004,Sucrose,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-005,Sucrose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-006,Sucrose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-007,Sucrose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-008,Allulose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-009,Allulose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-010,Allulose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-011,Allulose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-012,Allulose,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-013,Allulose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-014,Allulose,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-015,Water,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-016,Water,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-017,Water,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-018,Water,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-019,Water,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-020,Water,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-021,Water,NPY,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-022,Allulose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-023,Sucrose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-024,Sucrose,POMC,Spleen,Mitotic Figures,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Mitotic-like,0.5
+m26-001,Sucrose,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-002,Sucrose,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-003,Sucrose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-004,Sucrose,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-005,Sucrose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-006,Sucrose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-007,Sucrose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-008,Allulose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-009,Allulose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-010,Allulose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-011,Allulose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-012,Allulose,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-013,Allulose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-014,Allulose,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-015,Water,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-016,Water,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-017,Water,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-018,Water,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-019,Water,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-020,Water,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-021,Water,NPY,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-022,Allulose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-023,Sucrose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5
+m26-024,Sucrose,POMC,Spleen,Minor Stromal Cell,,False,0,0,detected_animals>=18 and total_class_count>=24 within organ,False,Minor stromal-like,0.5

@@ -1,0 +1,108 @@
+{
+  "figure": "S8",
+  "status": "complete",
+  "inputs": {
+    "schema": "apotome-method-figure-inputs-v1",
+    "files": [
+      {
+        "path": "source_data/pilot_cage_values.csv",
+        "sha256": "886eec8a96fa4bbefc327a89b5638b6b5a6452ae3043348b42771b44f17020bc",
+        "bytes": 1600
+      },
+      {
+        "path": "source_data/power_curves.csv",
+        "sha256": "936066b5a4334d3ca45d3f7575691304520e2d22b9d1ce61ec107b55e4774548",
+        "bytes": 5038
+      }
+    ]
+  },
+  "dpi": 600,
+  "master_language": "English",
+  "panel_languages": [
+    "English",
+    "Spanish"
+  ],
+  "raw_images_or_quantification_modified": false,
+  "outputs": [
+    {
+      "path": "Figure_S8.pdf",
+      "sha256": "aea8210df7e570c37b33a7e6bd36c8b70cc6291f7023242ba8913d66dd21ac89",
+      "bytes": 20076
+    },
+    {
+      "path": "Figure_S8.png",
+      "sha256": "9f5e81c5328d6fa299f92feb610f20dd3b8c53acbb7e8e6eb2d1f0f9d4acf4f5",
+      "bytes": 307084
+    },
+    {
+      "path": "legends/Figure_S8_LEGEND.txt",
+      "sha256": "e77a95a53af19292ec93b53e3f806f8e1b9e3ca7526fc65093cb91b3f2d437b2",
+      "bytes": 975
+    },
+    {
+      "path": "legends/Figure_S8_LEGEND_spanish.txt",
+      "sha256": "783514c4b6484a1cf3dbe4bdcc755e75fbae42422e69c596b55d5a050abbf7d5",
+      "bytes": 1125
+    },
+    {
+      "path": "legends/Figure_S8_Panel_A_LEGEND.txt",
+      "sha256": "ef0bcc738fc900d48cb526a944836d2a4b25a53892f49fe016f706ee50d97303",
+      "bytes": 993
+    },
+    {
+      "path": "legends/Figure_S8_Panel_A_LEGEND_spanish.txt",
+      "sha256": "4b498a31ab2af68ed38773f89feeb2b28f37cb13f6b0a91362c7aaab8f4c628d",
+      "bytes": 1142
+    },
+    {
+      "path": "legends/Figure_S8_Panel_B_LEGEND.txt",
+      "sha256": "24506dc7eade39c007cb59c620ca9905cc94d9060b01a9e7c0adc250906bf006",
+      "bytes": 993
+    },
+    {
+      "path": "legends/Figure_S8_Panel_B_LEGEND_spanish.txt",
+      "sha256": "287a47fd097beb2e742d7fdb77140e326835a7003899f0633493cf1fa3e6550e",
+      "bytes": 1142
+    },
+    {
+      "path": "panels/Figure_S8_Panel_A.pdf",
+      "sha256": "64dcd7f02e2e65f876c8df17676c4d9da6998b82f31936c659af6d7f0302052d",
+      "bytes": 19843
+    },
+    {
+      "path": "panels/Figure_S8_Panel_A.png",
+      "sha256": "a1e3a55fe8a2a030c3d25d0e0214125a1a6e55c4210d48474a333409980109a9",
+      "bytes": 189505
+    },
+    {
+      "path": "panels/Figure_S8_Panel_A_spanish.pdf",
+      "sha256": "e384700097e4f8d539dff5fa13fb586178f8a1d8f88e922cd451895f9545d187",
+      "bytes": 20149
+    },
+    {
+      "path": "panels/Figure_S8_Panel_A_spanish.png",
+      "sha256": "aae6333daf79d7c15f65c1bb85c3cc4ea4a0d2bfb2e9150f980f7ac807c90e3c",
+      "bytes": 185594
+    },
+    {
+      "path": "panels/Figure_S8_Panel_B.pdf",
+      "sha256": "47ad042bbe3aae26e9111a2c2b0993f718ce7aeb831170c9769d7a7fa1c2d92b",
+      "bytes": 20098
+    },
+    {
+      "path": "panels/Figure_S8_Panel_B.png",
+      "sha256": "d649ff4c6b29f1309ce44005efbca8924ebe3a5081ce5e552da85e3dc4ae83c8",
+      "bytes": 217539
+    },
+    {
+      "path": "panels/Figure_S8_Panel_B_spanish.pdf",
+      "sha256": "e7c7f1145f515a754de25ee457c4e76d0a06b04145bd7f36f2c9cc2989aa7df4",
+      "bytes": 20401
+    },
+    {
+      "path": "panels/Figure_S8_Panel_B_spanish.png",
+      "sha256": "489323d45c2f3f2d241da96004dfd512072cfc80bc2d753077fe0e94062eafd7",
+      "bytes": 210304
+    }
+  ]
+}

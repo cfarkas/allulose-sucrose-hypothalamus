@@ -1,4 +1,20 @@
-# Current figure scripts and data — 8 September 2026
+# Current figure scripts and data — 9 September 2026
+
+The current update contains thirteen figures: five main figures and S1–S8.
+The complete masters remain English; isolated panels and captions are bilingual.
+The current thesis and manuscripts remain local and are not uploaded.
+
+- **Figure 4 POMC size QC:** all 76 reconstructed sections were reanalysed using the same local-DAPI area threshold across conditions. Of 3,403 processed POMC objects, 780 were excluded. In the familiarized, 4-hour-fast cohort, ARC c-FOS/POMC was higher under allulose than water (nominal exact p=0.047619; global p=0.176454; cage-mean p=0.200). Direction was retained across 0.5/1.0/1.5 thresholds, while nominal significance depended on the criterion. Original masks and images were retained; [methods and sensitivity](figure_updates/Fig4/provenance/POMC_SIZE_QC_20260909.md) are provided. S7 displays derived training masks after size QC, without retraining archived models.
+- **S3 statistical correction:** observed and permuted treatment coefficients now use the same HC3 standard errors. Each coefficient-specific Freedman–Lane null retains the other treatment contrast and source cohort. The fixed 99,999-permutation analysis gives hepatic epithelial-like Allulose/Water CLR ratio 4.06 (95% CI 2.22–7.42), p=0.00031 and global BH q=0.02418. Six classical contrasts are nominal, including lower hepatic nuclear density; none passes BH. Images, sampling, effects and confidence intervals are unchanged. The [correction report](figure_updates/FigS3/provenance/STATISTICAL_CORRECTION_20260909.md) and complete previous/corrected comparison are included.
+- **S7 training documentation:** [code and inputs](figure_updates/FigS7/) include original training-image crops, reviewed masks and recorded loss curves, bound to their sources by SHA-256. Human correction is distinguished from independent evaluation.
+- **S8 sample-size planning:** [code and inputs](figure_updates/FigS8/) render the recorded pilot-based Monte Carlo power curves. The underlying simulation is [Figure 1's estimator](figure_updates/Fig1/03_estimate_sample_size_monte_carlo.py). These are planning estimates for the pilot outcomes.
+
+Verification covers the independent per-permutation HC3 reference test, the full S3 data/figure gate, and byte-identical PNG replays for all S7/S8 masters and panels. The full thirteen-figure raw-data replay has not been rerun; the launcher and authenticated update installation are checked separately. Existing archived Zenodo hashes and records remain unchanged.
+
+Repository checks: `python -m pytest tests -q` (59 passed). Targeted numerical checks: `python -m pytest figure_updates/Fig4/tests/test_pomc_size_qc.py figure_updates/FigS3/tests/test_hc3_permutation.py -q` (5 passed). The bundled full-data pipeline tests require the reconstructed Paper tree and its raw-data exports; they are run in that tree.
+
+## 8 September update, retained
+
 
 The 8 September update adds three completed changes:
 
@@ -33,7 +49,7 @@ manuscript remain local and are not distributed in this GitHub update.
 
 The current scripts and small figure inputs are directly available in
 [`figure_updates/`](figure_updates/). This directory has the same layout as the
-reconstructed `Paper/` directory. Its 11-figure launcher includes S6.
+reconstructed `Paper/` directory. Its current launcher includes thirteen figures (1–5 and S1–S8).
 
 - [Figure 1](figure_updates/Fig1/): the renderer now says **“exact, Holm-adjusted”**;
   the exact comparisons and Holm adjustment are unchanged. Corrected reference
@@ -80,7 +96,7 @@ partitions. It needs no GPU, microscopy download, pretrained weights or retraini
 Use a different output directory for a subsequent render. Figure 1 can also be
 rerun directly from the small package; see its [instructions](figure_updates/Fig1/README.txt).
 
-## Reproduce all eleven figures
+## Reproduce all thirteen figures
 
 With the same computer requirements as the [main guide](README.md), run:
 
@@ -89,7 +105,7 @@ python3 reproduce.py
 ```
 
 This downloads/reuses the original Zenodo release, authenticates the source
-update, installs its files with backups, and invokes the eleven-figure launcher.
+update, installs its files with backups, and invokes the thirteen-figure launcher.
 The original `manifest.json`, archive chunks, hashes and DOIs remain fixed.
 `figure-updates.json` separately binds each added/replaced file by hash and mode.
 Unrecognized local edits stop installation before any files are replaced; use a
@@ -104,7 +120,7 @@ Use `python3 reproduce.py --archived-release` to reproduce the archived
 checks. The S5 update was rebuilt from native channels, saved segmentations and
 accepted anatomy/3V masks in a fresh analysis directory; all nine per-animal
 regional values and new spatial statistics agree with the reviewed analysis.
-This update does not claim a newly completed full eleven-figure replay.
+This update does not claim a newly completed full thirteen-figure replay.
 
 ## Reuse the current choices or make your own
 

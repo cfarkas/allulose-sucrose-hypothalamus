@@ -1,0 +1,140 @@
+{
+  "byte_for_byte_verified": true,
+  "counts": {
+    "added": 1,
+    "already_identical_skipped": 4,
+    "replaced": 19,
+    "rewritten_identical": 0
+  },
+  "figure": "FigS7",
+  "files": [
+    {
+      "bytes": 3244916,
+      "promoted": "FigS7/Figure_S7.pdf",
+      "sha256": "8472b438d80a6af8e8eaae0cc0a9ac1274f3e7ad0b7a355aa40806d41b4e9820",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/Figure_S7.pdf"
+    },
+    {
+      "bytes": 4666109,
+      "promoted": "FigS7/Figure_S7.png",
+      "sha256": "cb20fcfa79ea0d49beff4c5b18358411746e85b5719c91638a81ca2de241a09e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/Figure_S7.png"
+    },
+    {
+      "bytes": 962,
+      "promoted": "FigS7/legends/Figure_S7_LEGEND.txt",
+      "sha256": "23df15f80f854dba161f986b851ed931fe53a79601efbc64bcd7ad959b5d3836",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_LEGEND.txt"
+    },
+    {
+      "bytes": 1145,
+      "promoted": "FigS7/legends/Figure_S7_LEGEND_spanish.txt",
+      "sha256": "1ba7e700ef70d7d57344e34b1d4ac39c1d0a7e062213bc0c3202f2b8bf73eacb",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 980,
+      "promoted": "FigS7/legends/Figure_S7_Panel_A_LEGEND.txt",
+      "sha256": "60aaa73be972fdea992be582c8d2bb328b7449aae2453f1a3c17f5575e45633e",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_Panel_A_LEGEND.txt"
+    },
+    {
+      "bytes": 1162,
+      "promoted": "FigS7/legends/Figure_S7_Panel_A_LEGEND_spanish.txt",
+      "sha256": "c5332b4f7a33da8640a44cf651b5d214d836853e80d300e8c149ebadbed75466",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_Panel_A_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 980,
+      "promoted": "FigS7/legends/Figure_S7_Panel_B_LEGEND.txt",
+      "sha256": "87388e3326b65d311f32f6028dbe6f9e32fce40ba1b02362786ee9edd0bef2f4",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_Panel_B_LEGEND.txt"
+    },
+    {
+      "bytes": 1162,
+      "promoted": "FigS7/legends/Figure_S7_Panel_B_LEGEND_spanish.txt",
+      "sha256": "905ad65a077058712739f8dc60c32062d43b750dfaac8e574487e09307c4d2b2",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_Panel_B_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 980,
+      "promoted": "FigS7/legends/Figure_S7_Panel_C_LEGEND.txt",
+      "sha256": "a87d5401c8a43f0794e6f444e5afd613160f6ee59bfbb0517c5cb455fb441abe",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_Panel_C_LEGEND.txt"
+    },
+    {
+      "bytes": 1162,
+      "promoted": "FigS7/legends/Figure_S7_Panel_C_LEGEND_spanish.txt",
+      "sha256": "f9ce46dff50142d60657b1f180db273aabae490ee79bf3261b768a895b711269",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/legends/Figure_S7_Panel_C_LEGEND_spanish.txt"
+    },
+    {
+      "bytes": 3193545,
+      "promoted": "FigS7/panels/Figure_S7_Panel_A.pdf",
+      "sha256": "558df16099b5b3e070d815214443dee8f87be9fd96d96fbaaa429dc7c81511a1",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_A.pdf"
+    },
+    {
+      "bytes": 3194850,
+      "promoted": "FigS7/panels/Figure_S7_Panel_A_spanish.pdf",
+      "sha256": "e4656682d242de9e7e4aaafb5d1573c5f6f07feba45617b2edc6f0075428acd7",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_A_spanish.pdf"
+    },
+    {
+      "bytes": 3193536,
+      "promoted": "FigS7/panels/Figure_S7_Panel_B.pdf",
+      "sha256": "e78fc07a935c47ccd3aa436ef443f8dcc6678ef654ae62d311c2669940622d94",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_B.pdf"
+    },
+    {
+      "bytes": 3954078,
+      "promoted": "FigS7/panels/Figure_S7_Panel_B.png",
+      "sha256": "926a094c7ce1c257f0a14284217f02420cf5e612b706effceca611afe2385fc4",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_B.png"
+    },
+    {
+      "bytes": 3194844,
+      "promoted": "FigS7/panels/Figure_S7_Panel_B_spanish.pdf",
+      "sha256": "96745efed0d5163f7d136eff0f65e8507d207243c960a23a860c3e75de389224",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_B_spanish.pdf"
+    },
+    {
+      "bytes": 3962691,
+      "promoted": "FigS7/panels/Figure_S7_Panel_B_spanish.png",
+      "sha256": "919539f4b901808c94052d6710591addb5b44731b3edaa77680b6a84115802f9",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_B_spanish.png"
+    },
+    {
+      "bytes": 3244917,
+      "promoted": "FigS7/panels/Figure_S7_Panel_C.pdf",
+      "sha256": "b7038f7ae8a895102522944e3ad11aaf522ad61bc173789bfaa5541e4e7efd78",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_C.pdf"
+    },
+    {
+      "bytes": 3246238,
+      "promoted": "FigS7/panels/Figure_S7_Panel_C_spanish.pdf",
+      "sha256": "920f48045ecfc5090409674321184ab24873f42572fa0c21ae10a292d8508bb3",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/panels/Figure_S7_Panel_C_spanish.pdf"
+    },
+    {
+      "bytes": 6899,
+      "promoted": "FigS7/provenance/render_receipt.json",
+      "sha256": "772135cf6d193c3796c8946887bb621fb2960c5bffdaced7c925e148c7c90647",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/provenance/render_receipt.json"
+    },
+    {
+      "bytes": 43128,
+      "promoted": "FigS7/source_data/pomc_training_size_qc.csv",
+      "sha256": "09e93a99ae6d671dc5599953e2e8b6780dd44bc621e137df1881a0912e417cb8",
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909/source_data/pomc_training_size_qc.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_S7",
+  "master_name_promoted": "Figure_S7",
+  "promoted_utc": "2026-09-10T00:47:38+00:00",
+  "replacement_policy": "copy_superseded_to_figure_legacy",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/media/server/STORAGE/Apotome/Paper/analyses/FigS7/figure/local_dapi_size_20260909",
+  "superseded_copied_to": "FigS7/legacy/superseded_promotion_20260910T004738Z",
+  "verified_artifacts": 24
+}

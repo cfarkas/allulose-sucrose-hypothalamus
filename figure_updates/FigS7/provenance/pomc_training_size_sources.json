@@ -1,0 +1,172 @@
+[
+  {
+    "field": "FR6-1_S01_left",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S01_left.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY01_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY01_CH3_seg.npy",
+    "source_mask_sha256": "19705b32a887d733b1fc8cb5b5db44463506f231445b8f5362a80c341a438917",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S01_left/Image_S01_left_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S01/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      0,
+      0
+    ],
+    "objects_before": 31,
+    "objects_removed": 7,
+    "objects_after": 24,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S01_right",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S01_right.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY02_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY02_CH3_seg.npy",
+    "source_mask_sha256": "84e92386b13cba71f61a1c6e8068da1eca3c901d6a9b144531b6f5ce0c23a3e7",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S01_right/Image_S01_right_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S01/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      920,
+      7
+    ],
+    "objects_before": 24,
+    "objects_removed": 9,
+    "objects_after": 15,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S02_left",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S02_left.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY03_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY03_CH3_seg.npy",
+    "source_mask_sha256": "e5d187746bb2cbd76c23ac3df8ba68c1bb364fa64a6537cafd928bcf62fbe2a8",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S02_left/Image_S02_left_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S02/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      0,
+      0
+    ],
+    "objects_before": 47,
+    "objects_removed": 6,
+    "objects_after": 41,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S02_right",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S02_right.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY04_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY04_CH3_seg.npy",
+    "source_mask_sha256": "e69db208ed7ccd9653472b6d93cfa14e48078906723577be7c3c058a15fc20c4",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S02_right/Image_S02_right_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S02/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      960,
+      0
+    ],
+    "objects_before": 48,
+    "objects_removed": 3,
+    "objects_after": 45,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S03_left",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S03_left.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY05_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY05_CH3_seg.npy",
+    "source_mask_sha256": "9b3c1f824dd9748cfa1505a1013a3bf8e469378a2e68e5b92397e68f8c719a6f",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S03_left/Image_S03_left_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S03/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      0,
+      14
+    ],
+    "objects_before": 42,
+    "objects_removed": 9,
+    "objects_after": 33,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S03_right",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S03_right.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY06_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY06_CH3_seg.npy",
+    "source_mask_sha256": "fdad57668bb0c11dcc8c62a5a6d737f2e35e7a60d915a7f5e986f82acdd0d894",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S03_right/Image_S03_right_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S03/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      932,
+      0
+    ],
+    "objects_before": 29,
+    "objects_removed": 3,
+    "objects_after": 26,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S04_left",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S04_left.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY07_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY07_CH3_seg.npy",
+    "source_mask_sha256": "f6426633c5e58e8f0c74c3df7df12e5e05f4ce6c903514d9281860e9197011a3",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S04_left/Image_S04_left_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S04/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      0,
+      2
+    ],
+    "objects_before": 25,
+    "objects_removed": 1,
+    "objects_after": 24,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S04_right",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S04_right.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY08_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY08_CH3_seg.npy",
+    "source_mask_sha256": "699aa53cc07ed1da94befe092d6c167f3930483902ae42545aedd5b30d939972",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S04_right/Image_S04_right_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S04/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      854,
+      0
+    ],
+    "objects_before": 38,
+    "objects_removed": 6,
+    "objects_after": 32,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S05_left",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S05_left.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY09_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY09_CH3_seg.npy",
+    "source_mask_sha256": "4105f3a606fe2996a79a97556e095b756a9e854025f83ac32521051975b7b56f",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S05_left/Image_S05_left_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S05/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      0,
+      0
+    ],
+    "objects_before": 39,
+    "objects_removed": 11,
+    "objects_after": 28,
+    "originals_modified": false
+  },
+  {
+    "field": "FR6-1_S05_right",
+    "input": "raw_data/pomc_training_size_reference/FR6-1_S05_right.npz",
+    "source_tiff": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY10_CH3.tif",
+    "source_mask": "/media/server/STORAGE/Apotome/Inmunos_UW_Nancy/20x/FR6-1/Image_XY10_CH3_seg.npy",
+    "source_mask_sha256": "f0c38b016eb7b1af1d8ddf247c39530ec006dc36ba92d26a7311776d94a6c742",
+    "matching_quantification_tiff": "/media/server/STORAGE/Apotome/Paper/Fig4/raw_data/FR6-1/S05_right/Image_S05_right_POMC.tif",
+    "regional_mask_source": "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/reconstructed_sections/FR6-1/FR6-1_S05/reconstructed_ARC_ME_accepted_mask.tif",
+    "native_to_registered_offset_xy": [
+      960,
+      0
+    ],
+    "objects_before": 23,
+    "objects_removed": 12,
+    "objects_after": 11,
+    "originals_modified": false
+  }
+]

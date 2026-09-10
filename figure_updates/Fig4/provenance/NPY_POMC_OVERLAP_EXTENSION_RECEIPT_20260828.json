@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-08-28",
+  "figure": 4,
+  "purpose": "Add two NPY-transgenic animals for a solution-blind NPY/POMC overlap endpoint",
+  "planned_final_animal_n": 4,
+  "existing_animals": ["FR722", "FR6-1"],
+  "new_animals": [
+    {"animal_id": "FR7-5", "condition_metadata": "Sucrose"},
+    {"animal_id": "FR8-1", "condition_metadata": "Allulose"}
+  ],
+  "overlap_grouping": "pooled_regardless_of_solution",
+  "figure4_marker_name": "POMC",
+  "channel_mapping": {
+    "DAPI": "DAPI",
+    "AF488": "NPY",
+    "AF546": "POMC",
+    "AF633": "c-FOS"
+  },
+  "raw_copy_policy": {
+    "operation": "copy",
+    "source_files_deleted": false,
+    "reason": "incident.txt requires explicit confirmation before destructive moves",
+    "different_inodes_verified": true,
+    "source_copy_sha256_equal": true
+  },
+  "czi_sha256": {
+    "FR7-5": "e4c04c7a9d889363be3792ac90fa53eaf706ece5187d6fd5a779083903fd9d43",
+    "FR8-1": "1b90dc0c28a9bb88d4f6d16820c90ca604432d3ec4dc1d5ac09cabb909b13c3c"
+  },
+  "channel_stacks": {
+    "count": 8,
+    "format": "uint16 OME-TIFF ZYX",
+    "all_exported_and_validated": true,
+    "manifest_sha256": "fd278f0803526eef211f4611746f191183029b992ad369e6596b7ba65f3c8869",
+    "channel_map_sha256": "0e08a8408f107513531878a09b8324ec8622ca14ab03caec6ffde57ca0051dff",
+    "sample_manifest_sha256": "0324da3d00c68c5a914a1eb96eb01d0e82c1c20ccc08ad86772be2c20fd25b3b"
+  },
+  "cellpose_inputs": {
+    "count": 8,
+    "format": "native-resolution uint16 maximum-intensity TIFF",
+    "ready_for_segmentation": true,
+    "segmentations_claimed": false,
+    "manifest_sha256": "0827bdd497d0d4d7e57de0be0b6d867c7ecd75a228be7cadbb9d7a68f980a53c",
+    "preparation_script_sha256": "459b3f45c66e09c1e4638d8cc55e8ac9791ccc2fe0285eccb06ed06f0c5aebb0"
+  }
+}

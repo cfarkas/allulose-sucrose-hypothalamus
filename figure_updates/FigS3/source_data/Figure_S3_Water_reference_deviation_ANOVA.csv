@@ -1,0 +1,4 @@
+organ,test,outcome,factor,f_statistic,p_value,df_between,df_within,n_animals
+Kidney,one-way ANOVA,cross-validated CLR Mahalanobis distance from Water,treatment,0.2697534335864612,0.7661735493167138,2,21,24
+Liver,one-way ANOVA,cross-validated CLR Mahalanobis distance from Water,treatment,1.9650667937530786,0.16507991447693407,2,21,24
+Spleen,one-way ANOVA,cross-validated CLR Mahalanobis distance from Water,treatment,0.16825152928818002,0.8462692298416613,2,21,24

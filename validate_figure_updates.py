@@ -20,7 +20,7 @@ def main():
         elif path.suffix == ".sh":
             subprocess.run(["bash", "-n", path], check=True)
             scripts += 1
-    for figure in ("Fig1", "Fig5", "FigS6"):
+    for figure in ("Fig1", "Fig4", "Fig5", "FigS6", "FigS7", "FigS8"):
         for path in (payload / figure).iterdir():
             if path.suffix not in {".py", ".sh"}:
                 continue

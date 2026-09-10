@@ -1,0 +1,373 @@
+{
+  "Water_reference_deviation_one_way_ANOVA": [
+    {
+      "df_between": 2,
+      "df_within": 21,
+      "f_statistic": 0.2697534335864612,
+      "factor": "treatment",
+      "n_animals": 24,
+      "organ": "Kidney",
+      "outcome": "cross-validated CLR Mahalanobis distance from Water",
+      "p_value": 0.7661735493167138,
+      "test": "one-way ANOVA"
+    },
+    {
+      "df_between": 2,
+      "df_within": 21,
+      "f_statistic": 1.9650667937530786,
+      "factor": "treatment",
+      "n_animals": 24,
+      "organ": "Liver",
+      "outcome": "cross-validated CLR Mahalanobis distance from Water",
+      "p_value": 0.16507991447693407,
+      "test": "one-way ANOVA"
+    },
+    {
+      "df_between": 2,
+      "df_within": 21,
+      "f_statistic": 0.16825152928818002,
+      "factor": "treatment",
+      "n_animals": 24,
+      "organ": "Spleen",
+      "outcome": "cross-validated CLR Mahalanobis distance from Water",
+      "p_value": 0.8462692298416613,
+      "test": "one-way ANOVA"
+    }
+  ],
+  "agual_sin_cerebro_handling": "m26-016 included in Water; note retained only as provenance",
+  "analysis_version": "figs3-animal-composition-1.8",
+  "animal_count": 24,
+  "biological_unit": "animal",
+  "cell_barplots": {
+    "count_transform": "log10(displayed class objects in 24 sampled tiles + 1)",
+    "displayed_classes": 13,
+    "fraction_denominator": "all 13 retained displayed model outputs within animal-organ",
+    "inferential_role": "descriptive; inference is the CLR contrast",
+    "rows": 936
+  },
+  "composition_prevalence_filter": {
+    "eligible_classes_by_organ": {
+      "Kidney": [
+        "Apoptotic Body",
+        "Epithelial",
+        "Fibroblasts",
+        "Lymphocytes",
+        "Macrophages",
+        "Muscle Cell",
+        "Neutrophils"
+      ],
+      "Liver": [
+        "Apoptotic Body",
+        "Epithelial",
+        "Fibroblasts",
+        "Lymphocytes",
+        "Macrophages",
+        "Muscle Cell",
+        "Neutrophils"
+      ],
+      "Spleen": [
+        "Apoptotic Body",
+        "Endothelial Cell",
+        "Epithelial",
+        "Fibroblasts",
+        "Lymphocytes",
+        "Macrophages",
+        "Muscle Cell",
+        "Neutrophils",
+        "Plasmocytes"
+      ]
+    },
+    "filtered_classes_retained_as_raw_counts_and_marked_not_tested": true,
+    "minimum_detected_animals_within_organ": 18,
+    "minimum_total_class_count_within_organ": 24
+  },
+  "composition_pseudocount": 0.5,
+  "created_utc": "2026-09-09T22:10:07.751341+00:00",
+  "excluded_model_classes_from_composition_and_figure": [
+    "Cancer cell"
+  ],
+  "histoPLUS_cross_species_validated": false,
+  "image_registration_performed": false,
+  "interpretation": "exploratory model-predicted nuclear phenotypes; sugar-associated, not causal",
+  "language_policy": {
+    "isolated_panels": "English and Spanish",
+    "legends": "English and Spanish, figure-level and per panel",
+    "multipanel_master": "English only"
+  },
+  "master_figure_size_inches": [
+    15.0,
+    12.3
+  ],
+  "multiple_testing": "Benjamini-Hochberg globally within endpoint family and within organ",
+  "organs_per_wsi": [
+    "Kidney",
+    "Liver",
+    "Spleen"
+  ],
+  "outputs": [
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/Figure_S3.png",
+      "sha256": "f9f31db69df28289d15f46bf8ff1ceb8d4dcd12fbc981740beac5541ccda8a4e",
+      "size_bytes": 23094788
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/Figure_S3.pdf",
+      "sha256": "a40d22c8449d2bf7d65c0fb77aff19bc39838436ea4b1b82f6329e7948bc685c",
+      "size_bytes": 775928
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/provenance/Figure_S3_spanish_translation_receipt.json",
+      "sha256": "0daaea777394daca02f1b9774a349ecc69c24a699232f627386b9ffc7e6545ac",
+      "size_bytes": 3386
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_LEGEND.txt",
+      "sha256": "e35c7de2335d7797a7fcd8c55dbcf69b8457830a387263dd594d4d21eb79d053",
+      "size_bytes": 4321
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_LEGEND_spanish.txt",
+      "sha256": "29c0b3b765e306154bf919c0cba326d9cf19226499ff8e2d2304f45201b6bb23",
+      "size_bytes": 5209
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_A_LEGEND.txt",
+      "sha256": "8d789bbc0293e20d16b5a3ead9bdcae61a3004aaedab26bdb986dccf550f5b49",
+      "size_bytes": 332
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_A_LEGEND_spanish.txt",
+      "sha256": "f32b80fa36676d4ed2d731e13d428644f6261cf2146635f6134e77e221479224",
+      "size_bytes": 390
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_B_LEGEND.txt",
+      "sha256": "234386fc695f21f26591a24bc31cba8366c68cad7dad15364842f6da9e2cf9eb",
+      "size_bytes": 306
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_B_LEGEND_spanish.txt",
+      "sha256": "ce83051b8f0732f90ceb95f925369eb6d32fe6716505d31a522067838b58548c",
+      "size_bytes": 385
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_C_LEGEND.txt",
+      "sha256": "07b2770940221ea5415980e3415546eba8e2d417efefe0a5a24cfb52a8911ea7",
+      "size_bytes": 659
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_C_LEGEND_spanish.txt",
+      "sha256": "7f365b79e89923e71ca18a94fd8b243c0a5082ad56aa52a3058d59977f885547",
+      "size_bytes": 794
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_D_LEGEND.txt",
+      "sha256": "91c1fdebf0983ec54f6a5759bc04f91f5e03931b5b052f6ec810922dc9f24fb6",
+      "size_bytes": 231
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_D_LEGEND_spanish.txt",
+      "sha256": "b15df0985a7bc220e89a4bdb04727647e5bc271ef7a4fe0e2f8d3ccb82953723",
+      "size_bytes": 277
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_E_LEGEND.txt",
+      "sha256": "62735eb03e86b5ff56db1353d2215b42b9df61d212ce4dc935b0d93dccac9912",
+      "size_bytes": 422
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_E_LEGEND_spanish.txt",
+      "sha256": "34855071a8dc302a06c96bcd34bbb50e07e11466c30977c9deb9c4a2c037801e",
+      "size_bytes": 528
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_F_LEGEND.txt",
+      "sha256": "4344c3f0d12edd57f1faf658aed8e2efaee93cf9243c6665c3b66232778b590c",
+      "size_bytes": 356
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/legends/Figure_S3_Panel_F_LEGEND_spanish.txt",
+      "sha256": "291738643142d50efb9d94baad9c19c19fe436464f3cefa4b85967275832ff67",
+      "size_bytes": 449
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_animal_phenotype_counts.csv",
+      "sha256": "0e99c2d6b0f5de3273bd5e748ff237ce378722f76c7a0404720fae57fd320f7c",
+      "size_bytes": 5847
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_animal_composition_clr.csv",
+      "sha256": "f3c08a5fa366755ea721c30102e45a460d5b54f72143aae016a0f0828960834a",
+      "size_bytes": 139696
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_composition_contrasts.csv",
+      "sha256": "49624893409f5b2e537d9f4bb0dd3bcdd9cf2e7a03facfa66aeaa04f0b00b068",
+      "size_bytes": 25263
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_displayed_cell_barplot_values.csv",
+      "sha256": "6ce694fda70ccb792c69a1b0444885a3c74e8118e086111d856435c5bd0a3e05",
+      "size_bytes": 98775
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_significant_cell_example_manifest.csv",
+      "sha256": "246837c30cd90de97c715dbe7ee1c80c4bba8183662f79dd86fb53231e7b46f7",
+      "size_bytes": 1245
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_Water_reference_deviation_values.csv",
+      "sha256": "8192e9ddb6404c08f48a8fc8b08c2c276e78f08c67b6da59e4a885fa231cf7b3",
+      "size_bytes": 16358
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_Water_reference_deviation_contrasts.csv",
+      "sha256": "d6cbf33fb0a8b276a247c9f0f46bd838a395f17bfa9d79cb37522ee0b7f4d746",
+      "size_bytes": 1449
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_Water_reference_deviation_ANOVA.csv",
+      "sha256": "f0d33f7337aef040913d8fab2cf63148d65ba3c4c8eda6dd888f442c23129596",
+      "size_bytes": 465
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_composition_pca_scores.csv",
+      "sha256": "cf7a7c1d8f989f26ee08e5481bb18d3475eef8212add09353b174f360de71adc",
+      "size_bytes": 14667
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_classical_cv_animal_values.csv",
+      "sha256": "80b1a77cebc87ca71fec39a590030366487b39ad9b13ca4702b949b17d438adb",
+      "size_bytes": 13857
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/FigS3/source_data/Figure_S3_classical_cv_contrasts.csv",
+      "sha256": "3550392cc12c25bf293bf31f91a6ecc5540fe0addacd04a7cbb8c8390557ac98",
+      "size_bytes": 10708
+    }
+  ],
+  "panel_F_effect_barplots": {
+    "bars": "cohort-adjusted CLR treatment effect vs Water",
+    "heatmap_displayed": false,
+    "panels": "Kidney, Liver, Spleen",
+    "source": "Figure_S3_composition_contrasts.csv",
+    "stars": "global BH q-value thresholds",
+    "whiskers": "HC3 95% confidence interval"
+  },
+  "panel_letters_in_reading_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "pca_explained_variance": {
+    "Kidney": [
+      0.4559464238247349,
+      0.3086770456838352
+    ],
+    "Liver": [
+      0.5281156438401031,
+      0.2560082527271288
+    ],
+    "Spleen": [
+      0.5099830757560833,
+      0.3061057634345023
+    ]
+  },
+  "permutation_method": "Freedman-Lane residual permutation; contrast-specific nuisance model; matched observed/permuted HC3 t statistics",
+  "permutation_nuisance_columns": "intercept, other treatment contrast, source cohort",
+  "permutation_p_estimator": "(1 + extreme permutations) / (1 + permutations)",
+  "permutation_seed": 1707,
+  "permutation_statistic": "HC3-studentized treatment coefficient",
+  "permutations": 99999,
+  "representative_sample_id": "m26-015",
+  "representative_sample_selection": {
+    "candidate_tissue_fractions": {
+      "m26-015": 0.3894749939671815,
+      "m26-016": 0.43728500419009514,
+      "m26-017": 0.40403814735652516,
+      "m26-018": 0.16777585587411556,
+      "m26-019": 0.31189360035409175,
+      "m26-020": 0.3664038521902902,
+      "m26-021": 0.3963858981092437
+    },
+    "eligible_sample_count": 7,
+    "eligible_treatment": "Water",
+    "median_tissue_fraction": 0.3894749939671815,
+    "method": "Water animal closest to median whole-slide tissue fraction; sample_id breaks exact ties",
+    "metric_source": "organ_segmentation/<sample_id>/segmentation_receipt.json:tissue_fraction",
+    "selected_sample_id": "m26-015",
+    "selected_tissue_fraction": 0.3894749939671815
+  },
+  "sampled_counts_extrapolated_to_whole_organ": false,
+  "significant_cell_example_insets": {
+    "display_rule": "global BH q<0.05 only; strongest contrast displayed",
+    "displayed_contrasts": 1,
+    "manifest": [
+      {
+        "contrast": "Allulose vs Water",
+        "displayed_cell_count_in_tile": 205,
+        "effect_clr": 1.4011510734406034,
+        "group_median_displayed_class_fraction": 0.03636363636363636,
+        "model_class_raw": "Epithelial",
+        "multiplicative_relative_abundance": 4.059870487363215,
+        "organ": "Liver",
+        "outline_definition": "true HistoPLUS/LazySlide model-output nuclear polygon",
+        "phenotype_display": "Epithelial-like",
+        "q_value_global": 0.02418,
+        "sample_displayed_class_fraction": 0.03636363636363636,
+        "sample_id": "m26-018",
+        "selection_rule": "animal closest to treatment median displayed-class fraction; positive tile closest to selected-animal displayed-class fraction",
+        "source_l0_path": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-018/1_L0_rgb.tif",
+        "target_cell_count_in_tile": 7,
+        "tile_displayed_class_fraction": 0.03414634146341464,
+        "tile_uid": "m26-018_liver_009",
+        "treatment_displayed": "Water"
+      },
+      {
+        "contrast": "Allulose vs Water",
+        "displayed_cell_count_in_tile": 309,
+        "effect_clr": 1.4011510734406034,
+        "group_median_displayed_class_fraction": 0.525208798799806,
+        "model_class_raw": "Epithelial",
+        "multiplicative_relative_abundance": 4.059870487363215,
+        "organ": "Liver",
+        "outline_definition": "true HistoPLUS/LazySlide model-output nuclear polygon",
+        "phenotype_display": "Epithelial-like",
+        "q_value_global": 0.02418,
+        "sample_displayed_class_fraction": 0.5483084862385321,
+        "sample_id": "m26-012",
+        "selection_rule": "animal closest to treatment median displayed-class fraction; positive tile closest to selected-animal displayed-class fraction",
+        "source_l0_path": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-012/1_L0_rgb.tif",
+        "target_cell_count_in_tile": 173,
+        "tile_displayed_class_fraction": 0.5598705501618123,
+        "tile_uid": "m26-012_liver_015",
+        "treatment_displayed": "Allulose"
+      }
+    ]
+  },
+  "significant_global_q_lt_0_05": {
+    "Water_reference_deviation_contrasts": 0,
+    "classical_cv_contrasts": 0,
+    "composition_contrasts": 1
+  },
+  "software": {
+    "matplotlib": "3.9.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "python": "3.12.7",
+    "seaborn": "0.13.2",
+    "shapely": "2.0.6",
+    "sklearn": "1.7.2",
+    "statsmodels": "0.14.4"
+  },
+  "status": "complete",
+  "tiles_per_animal_organ": 24,
+  "treatment_counts": {
+    "Allulose": 8,
+    "Sucrose": 9,
+    "Water": 7
+  }
+}

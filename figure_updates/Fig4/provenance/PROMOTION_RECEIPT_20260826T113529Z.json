@@ -1,0 +1,70 @@
+{
+  "counts": {
+    "added": 0,
+    "already_identical": 28,
+    "replaced": 9
+  },
+  "figure": "Fig4",
+  "files": [
+    {
+      "bytes": 7742891,
+      "promoted": "Fig4/Figure_4.pdf",
+      "sha256": "cc759f3aefda39c280f5a9dccb2be1b1268e36c2e833c80e4ad7bf57d90e704b",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/Figure_4.pdf"
+    },
+    {
+      "bytes": 7366406,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_A_dapi.pdf",
+      "sha256": "a2f948b8b4a2e5dff772e52c62fc47f5a2db0813a23ad08d3c31a6ed514e6c3b",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_A_dapi.pdf"
+    },
+    {
+      "bytes": 7366648,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_B_cfos.pdf",
+      "sha256": "3169fe3754c4c7402c0c1ff0d441e197269ec4440b84f7c02104c05d0f4cc5f6",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_B_cfos.pdf"
+    },
+    {
+      "bytes": 7366781,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_C_pomc.pdf",
+      "sha256": "a8a5eee7df919e07d04bbe8eb7e0f178b54b8fd564aa78d4401f4ac8a0b45120",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_C_pomc.pdf"
+    },
+    {
+      "bytes": 7366462,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_D_microscopy.pdf",
+      "sha256": "3495da93c7aac088a046778ca59db21b9b9c33b6c3ade7565d4ae5b3f12b0978",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_D_microscopy.pdf"
+    },
+    {
+      "bytes": 7451029,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_E_anatomy.pdf",
+      "sha256": "4ff43216146576f1d9b3e3df2a822ecf9e76d6108a0d20df9481022e4497e79a",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_E_anatomy.pdf"
+    },
+    {
+      "bytes": 7650380,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_F_cellpose_cartoon.pdf",
+      "sha256": "fa9a0314d6209cfe8e8231345e1478e543f1bb18df6b0f9a0d163005f0ca7cfa",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_F_cellpose_cartoon.pdf"
+    },
+    {
+      "bytes": 7367018,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_G_cfos_dapi.pdf",
+      "sha256": "8b0b2cbc1d5b6e864ea6adbfaba6f708861bb38ad1326c7721518274960c91bc",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_G_cfos_dapi.pdf"
+    },
+    {
+      "bytes": 7367173,
+      "promoted": "Fig4/panels/Figure_ARC_ME_panel_H_pomc_activation.pdf",
+      "sha256": "a62af3b049ba304451e75406d65d44e9c636c7b4076b9c843d6e02a0a2d8ad02",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/panels/Figure_ARC_ME_panel_H_pomc_activation.pdf"
+    }
+  ],
+  "master_name_in_render": "Figure_4",
+  "master_name_promoted": "Figure_4",
+  "promoted_utc": "2026-08-26T11:35:29+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_rebuild/Fig4/figure",
+  "superseded_copied_to": "Fig4/legacy/superseded_promotion_20260826T113529Z"
+}

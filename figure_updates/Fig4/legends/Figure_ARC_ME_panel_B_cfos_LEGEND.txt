@@ -1,0 +1,4 @@
+Representative section: FR-722 (Allulose), source FR722, section 2.
+Corrected registration fig4_stitch_registration_v1/dapi_integer_overlap_v1: status verified_overlap; method DAPI SIFT/RANSAC followed by raw-intensity NCC; right origin x=828 px, right y shift=0 px, right medial crop=26 px, overlap=132 px, gap=0 px; raw NCC 0.995, gradient NCC 0.947, best score NA, second score NA, uniqueness margin NA. Registration used DAPI only; the identical integer placement/crop was applied without resampling to every channel and mask. Panels A-F share the exact registered field; DAPI TIFF SHA-256 74ac8aaa6f3bd214ebe622d06b77e13ef8ecb2991a818377a1401db1ab31a869; NPY-GFP TIFF SHA-256 2ae2210407a1a638e0719cd2681a47de422b4792c7e0916a87877b6c6b889444.
+Single-channel scale bars: 100 µm.
+(B) Isolated c-FOS channel of the same registered pixels, shown in the magenta tint it contributes to the Panel E merge. The field is labeled FR722 S02, Allulose.

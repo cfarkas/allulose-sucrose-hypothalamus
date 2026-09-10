@@ -1,0 +1,1 @@
+Figure S3, panel B. Cross-validated centered-log-ratio Mahalanobis distance of each animal from the Water composition, by organ. Boxes are the interquartile range, points are individual animals, and Water controls are evaluated leave-one-out. One-way treatment ANOVA p values are printed above each organ.

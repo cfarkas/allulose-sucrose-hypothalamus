@@ -1,0 +1,46 @@
+{
+  "counts": {
+    "added": 2,
+    "already_identical": 32,
+    "replaced": 3
+  },
+  "figure": "Fig4",
+  "files": [
+    {
+      "bytes": 4753,
+      "promoted": "Fig4/legends/Figure_4_LEGEND.txt",
+      "sha256": "a7ecdc92b6dae083b5775ea9159a634da9b1b22d9c69266497aa559cdf6cd108",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/legends/Figure_4_LEGEND.txt"
+    },
+    {
+      "bytes": 4753,
+      "promoted": "Fig4/legends/Figure_4_caption.txt",
+      "sha256": "a7ecdc92b6dae083b5775ea9159a634da9b1b22d9c69266497aa559cdf6cd108",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/legends/Figure_4_caption.txt"
+    },
+    {
+      "bytes": 1669,
+      "promoted": "Fig4/legends/multipanel_sensitivity_methods.txt",
+      "sha256": "f5a36d5affe58d1195298c517ca190554763609abdd423006c915e7fb84a1fbb",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/legends/multipanel_sensitivity_methods.txt"
+    },
+    {
+      "bytes": 68830,
+      "promoted": "Fig4/provenance/all_section_stitch_registration_audit.csv",
+      "sha256": "43d541931eb2ef82bce21d611a5657af1ba661aa789c10a05673228f8d3848f1",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/provenance/all_section_stitch_registration_audit.csv"
+    },
+    {
+      "bytes": 20303,
+      "promoted": "Fig4/provenance/multipanel_source_manifest.csv",
+      "sha256": "f74e7c995feab6c5ffb8e15cf43e29594e6d8c7c6a5ee270ba4947ba371f4573",
+      "source": "/tmp/apotome_rebuild/Fig4/figure/provenance/multipanel_source_manifest.csv"
+    }
+  ],
+  "master_name_in_render": "Figure_4",
+  "master_name_promoted": "Figure_4",
+  "promoted_utc": "2026-08-25T16:41:16+00:00",
+  "schema": "figure_promotion_receipt_v1",
+  "source_render_dir": "/tmp/apotome_rebuild/Fig4/figure",
+  "superseded_copied_to": "Fig4/legacy/superseded_promotion_20260825T164116Z"
+}

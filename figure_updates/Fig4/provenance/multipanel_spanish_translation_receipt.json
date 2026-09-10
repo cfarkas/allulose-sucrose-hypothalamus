@@ -1,0 +1,41 @@
+{
+  "isolated_panel_locales": [
+    "en",
+    "es"
+  ],
+  "master_language": "en",
+  "panel_letters": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J"
+  ],
+  "raster_dpi": 600,
+  "schema": "fig4_bilingual_isolated_panels_v1",
+  "spanish_spatial_sources": [
+    "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/spatial/Figure4_Spatial_cFOS_occurrence_spanish.png",
+    "/media/server/STORAGE/Apotome/Paper/analyses/Fig4/results/local_dapi_size_20260909/spatial/Figure4_Spatial_cFOS_POMC_occurrence_spanish.png"
+  ],
+  "text_replacements": {
+    "Allulose": "Alulosa",
+    "Cellpose segmentation cartoon of the representative field": "Segmentación Cellpose del campo representativo",
+    "FR722 S02  ·  Allulose": "FR722 S02  ·  Alulosa",
+    "One-way ANOVA p = 0.151": "ANOVA de una vía p = 0.151",
+    "One-way ANOVA p = 0.176": "ANOVA de una vía p = 0.176",
+    "One-way ANOVA p = 0.402": "ANOVA de una vía p = 0.402",
+    "One-way ANOVA p = 0.635": "ANOVA de una vía p = 0.635",
+    "POMC activation per animal": "Activación de POMC por animal",
+    "Sucrose": "Sacarosa",
+    "Tissue boundary": "Límite tisular",
+    "Water": "Agua",
+    "c-FOS/DAPI per animal": "c-FOS/DAPI por animal",
+    "c-FOS/DAPI ratio": "Razón c-FOS/DAPI",
+    "c-FOS∧POMC /\nPOMC ratio": "Razón c-FOS∧POMC /\nPOMC"
+  }
+}

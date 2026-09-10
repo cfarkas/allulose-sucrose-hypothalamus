@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "comparison": "independent replay PNG byte equality",
+  "files": [
+    "FigS7/Figure_S7.png",
+    "FigS7/panels/Figure_S7_Panel_A.png",
+    "FigS7/panels/Figure_S7_Panel_A_spanish.png",
+    "FigS7/panels/Figure_S7_Panel_B.png",
+    "FigS7/panels/Figure_S7_Panel_B_spanish.png",
+    "FigS7/panels/Figure_S7_Panel_C.png",
+    "FigS7/panels/Figure_S7_Panel_C_spanish.png"
+  ],
+  "verified_utc": "2026-09-10T01:00:52.936304+00:00",
+  "includes_local_dapi_POMC_size_qc": true,
+  "sha256": {
+    "FigS7/Figure_S7.png": "cb20fcfa79ea0d49beff4c5b18358411746e85b5719c91638a81ca2de241a09e",
+    "FigS7/panels/Figure_S7_Panel_A.png": "5b7ad57453ce2ace0c4fb2e2f0558caed95a0b1f89f0559e0261c392fd4e694b",
+    "FigS7/panels/Figure_S7_Panel_A_spanish.png": "5d366734f5d8360fc7a1dfbf2ca6d782390cb92b79792db60165e6cf8df634dd",
+    "FigS7/panels/Figure_S7_Panel_B.png": "926a094c7ce1c257f0a14284217f02420cf5e612b706effceca611afe2385fc4",
+    "FigS7/panels/Figure_S7_Panel_B_spanish.png": "919539f4b901808c94052d6710591addb5b44731b3edaa77680b6a84115802f9",
+    "FigS7/panels/Figure_S7_Panel_C.png": "c56d092ac5438b008b7ca4d5f262ff7c6a5fe3e5e9cf9be494570260e69e873e",
+    "FigS7/panels/Figure_S7_Panel_C_spanish.png": "d629ca6fe3d52413e63ba98d67c9f057e3f97a45ecff15a30b771965337658be"
+  }
+}

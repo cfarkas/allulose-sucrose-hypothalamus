@@ -1,0 +1,1 @@
+Figura S3, panel D. Análisis de componentes principales por órgano de la composición en razón logarítmica centrada, coloreado solo por tratamiento. Cada órgano es una ordenación independiente, por lo que cada fila indica sus propias fracciones de varianza de PC1 y PC2.
