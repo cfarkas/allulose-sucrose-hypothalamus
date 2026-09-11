@@ -135,3 +135,7 @@ Figure 4F now displays microscopy intensities inside the accepted POMC ROIs,
 including the POMC/NPY-GFP inset. No uniform marker fills are used in those
 microscopy views. The matching scripts, legends, and display regression checks
 are included in [the figure updates](FIGURE_UPDATES.md).
+
+Figure 3G places the illustrative inner rings near the third-ventricle floor.
+All six rings still follow the DAPI mean and count quantiles; the updated shared
+renderer and Figure 3 scripts reproduce this placement. The cartoon appears once.

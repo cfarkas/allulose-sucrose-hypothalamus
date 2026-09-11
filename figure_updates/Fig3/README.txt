@@ -54,3 +54,13 @@ The certified historical analytical pipeline and its masks remain unchanged.
 The ring schematic in G uses a narrow superior third-ventricle neck, an inferior
 flare and rounded floor, saturated blue DAPI points and stronger ring colors.
 It is the only ring-definition cartoon in the main figures; Figure 4 refers here.
+
+Ring schematic placement, 11 September 2026
+------------------------------------------
+Figure 3G positions the illustrative nuclear distribution near the floor of the
+third ventricle, placing rings 1–2 at that level. All six rings remain concentric
+around the mean of the displayed DAPI nuclei and contain 60 illustrative nuclei
+each. The ventricular floor is a drawing landmark, not an analytical origin.
+The shared spatial_ring_cartoon.py renderer supplies the standalone schematic,
+the complete Figure 3 builder, bilingual panels, and manuscript legends. Figure 4
+refers to Figure 3G and does not repeat the cartoon.

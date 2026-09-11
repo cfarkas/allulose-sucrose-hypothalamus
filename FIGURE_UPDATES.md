@@ -1,3 +1,12 @@
+# Inner-ring placement — 11 September 2026
+
+Figure 3G now places rings 1–2 near the floor of the third ventricle. All six
+rings remain concentric about the illustrative DAPI mean and contain 60 nuclei
+each. The legend distinguishes this illustrative placement from the analytical
+origin, which remains the mean of each field's eligible DAPI nuclei. The shared
+renderer and both Figure 3 builder copies reproduce the revised schematic.
+The 16 Figure 3 data-panel PNGs and all Figure 4 assets are unchanged.
+
 # Native microscopy in Figure 4F — 10 September 2026
 
 The main POMC overlay and the POMC/NPY-GFP inset display measured channel

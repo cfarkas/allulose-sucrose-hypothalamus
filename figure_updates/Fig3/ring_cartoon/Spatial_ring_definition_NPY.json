@@ -19,19 +19,25 @@
     2
   ],
   "quantile_edges": [
-    0.17527649163302217,
-    0.9245913995657438,
-    1.1737348785974695,
-    1.4476836916377336,
-    1.5870970029080849,
-    1.7776304444005695,
-    2.0373968820118793
+    0.08736805075309273,
+    0.9163872182325684,
+    1.1878624930422395,
+    1.3905133716940004,
+    1.608958084308027,
+    1.7584029690192304,
+    2.141599439198915
   ],
+  "illustrative_nuclear_mean_xy": [
+    0.06952163516890125,
+    -1.5003945423933993
+  ],
+  "ventricular_floor_y": -1.5,
+  "layout": "inner rings near the ventricular floor; all six rings share the DAPI mean",
   "centre": "mean of eligible DAPI centroids",
   "distance": "covariance-normalized radius",
   "denominator": "eligible DAPI nuclei in the same shell",
   "files": [
-    "/tmp/nancy_rings_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY.pdf",
-    "/tmp/nancy_rings_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf"
+    "/tmp/ring_floor_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY.pdf",
+    "/tmp/ring_floor_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf"
   ]
 }

@@ -18,7 +18,7 @@
     "D": "allulose nuclear assignments",
     "E": "whole-field c-FOS/DAPI",
     "F": "c-FOS-positive/NPY-positive",
-    "G": "DAPI / third-ventricle quantile ring schematic",
+    "G": "DAPI quantile rings with inner rings near the third-ventricle floor",
     "H": "c-FOS/DAPI spatial profile",
     "I": "double-positive/DAPI spatial profile"
   },
@@ -26,7 +26,7 @@
   "bilingual_outputs": "individual panels and legends only",
   "sucrose_cartoon_receipt": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/receipt.json",
   "sucrose_cartoon_sha256": "dd5446b0877d6b9412d98c3263e3066c3657c23f48392ee59a774410a416c196",
-  "ring_cartoon": "DAPI covariance-normalized quantile shells; illustration only",
+  "ring_cartoon": "DAPI covariance-normalized quantile shells; illustrative mean near the third-ventricle floor; no anatomical anchor in the analysis",
   "analysis_changed": false,
   "source_data_sha256_unchanged": {
     "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14",
@@ -92,7 +92,7 @@
         {
           "panel": "G",
           "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.pdf",
-          "sha256": "b96437bc1ce8829913c2559e103274a20bd4cc509f2ec09d3e16723d6e2fed3b",
+          "sha256": "f9d24252430c2377a0684fa6e7a485ba17ba9b5be198419842ae7199bb3c1bdc",
           "removed_previous_letter": []
         },
         {
@@ -181,7 +181,7 @@
         "I"
       ],
       "pdf": "Fig3/Figure_3_cFos_NPY.pdf",
-      "sha256": "f2555307ae2f95f0d2a20a39b1482e99624a4f3aeb7073252e9416567556c69d"
+      "sha256": "e729f0c15cbc106b7ed208aadf7ed7b97e74fa28b4b4f2235a1d0c32128333e8"
     },
     {
       "language": "es",
@@ -233,7 +233,7 @@
         {
           "panel": "G",
           "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf",
-          "sha256": "a9a692e24b74de5aa617e7741cae0f48045c80874e10dfb7f8ed72271be08bd5",
+          "sha256": "a59f3d09f27e880f5766bdb4ac2fdf047b238c36aa624baf26157a2bee3f14e9",
           "removed_previous_letter": []
         },
         {
