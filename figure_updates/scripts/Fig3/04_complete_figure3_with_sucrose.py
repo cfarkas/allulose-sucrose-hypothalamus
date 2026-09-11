@@ -14,7 +14,7 @@ import fitz
 from PIL import Image
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
-def clean(source):
+def clean(source, remove_panel_labels=True):
     doc=fitz.open(source);page=doc[0];oldtext=page.get_text()
     streams=sorted(hashlib.sha256(doc.xref_stream_raw(x[0])).hexdigest() for x in page.get_images(full=True))
     removed=[]
@@ -29,7 +29,7 @@ def clean(source):
     for b in page.get_text('dict',flags=fitz.TEXTFLAGS_DICT & ~fitz.TEXT_PRESERVE_IMAGES)['blocks']:
         for line in b.get('lines',[]):
             for s in line['spans']:
-                if re.fullmatch('[A-J]',s['text'].strip()) and s['size']>=14:
+                if remove_panel_labels and re.fullmatch('[A-J]',s['text'].strip()) and s['size']>=14:
                     rect=fitz.Rect(s['bbox']);x=(rect.x0+rect.x1)/2;y=(rect.y0+rect.y1)/2
                     page.add_redact_annot(fitz.Rect(x-.1,y-.1,x+.1,y+.1),fill=False);removed.append(s['text'])
     if removed or axis_replacements:page.apply_redactions(images=0,graphics=0,text=0)
@@ -116,10 +116,10 @@ def main():
           'I':spatial_render[lang]/'Figure3_Spatial_cFOS_NPY_occurrence.pdf'}
         cleaned={};source_records=[]
         for letter,source in sources.items():
-            doc,removed=clean(source);cleaned[letter]=doc
+            doc,removed=clean(source, remove_panel_labels=(letter != "G"));cleaned[letter]=doc
             source_records.append({'panel':letter,'source':str(source.relative_to(root)),'sha256':sha(source),'removed_previous_letter':removed})
         width=1152;mar=18;gap=20;labelgap=25;y=mar;layout={}
-        for row,ratios in [('A',[1]),('BCD',[1,1,1]),('EFG',[.26,.26,.48]),('HI',[1,1])]:
+        for row,ratios in [('A',[1]),('BCD',[1,1,1]),('EFG',[.34,.34,.32]),('HI',[1,1])]:
             available=width-2*mar-gap*(len(row)-1)
             cells=[available*r/sum(ratios) for r in ratios]
             heights=[cell*cleaned[letter][0].rect.height/cleaned[letter][0].rect.width for letter,cell in zip(row,cells)]
@@ -136,7 +136,7 @@ def main():
             ip.show_pdf_page(fitz.Rect(0,labelgap,src.rect.width,src.rect.height+labelgap),cleaned[letter],0);ip.insert_text((4,18),letter,fontsize=18,fontname='hebo')
             target=out/'panels'/f'Figure_3_cFos_NPY_Panel_{letter}{suffix}.pdf';item.save(target,garbage=4,deflate=True)
             ip.get_pixmap(dpi=args.dpi,alpha=False).save(target.with_suffix('.png'))
-        record={'language':lang,'panels':source_records,'panel_boxes_pt':{k:list(v) for k,v in layout.items()},'size_pt':[width,page.rect.height],'dpi':args.dpi,'panel_sequence':list('ABCDEFGHI')}
+        record={'language':lang,'panels':source_records,'panel_boxes_pt':{k:list(v) for k,v in layout.items()},'size_pt':[width,page.rect.height],'dpi':args.dpi,'middle_row_width_ratios':[.34,.34,.32],'panel_sequence':list('ABCDEFGHI')}
         if lang == 'en':
             target=out/'Figure_3_cFos_NPY.pdf';master.save(target,garbage=4,deflate=True)
             page.get_pixmap(dpi=args.dpi,alpha=False).save(target.with_suffix('.png'))
@@ -145,7 +145,7 @@ def main():
         records.append(record)
         print('Completed English master and panels' if lang=='en' else 'Completed Spanish individual panels',flush=True)
     assert before=={str(f.relative_to(root)):sha(f) for f in source_tables}
-    receipt={'schema':'figure3_complete_three_conditions_v1','reviewer':rec['reviewer'],'sucrose_hil_receipt':str((hil/'sucrose_ventricle_receipt.json').relative_to(root)),'sucrose_hil_sha256':sha(hil/'sucrose_ventricle_receipt.json'),'native_sucrose_counts':manifest['native_counts'],'panel_map':{'A':'microscopy: water/sucrose/allulose','B':'water nuclear assignments','C':'sucrose nuclear assignments','D':'allulose nuclear assignments','E':'whole-field c-FOS/DAPI','F':'c-FOS-positive/NPY-positive','G':'DAPI quantile rings with inner rings near the third-ventricle floor','H':'c-FOS/DAPI spatial profile','I':'double-positive/DAPI spatial profile'},'publication_language':'en', 'bilingual_outputs':'individual panels and legends only', 'sucrose_cartoon_receipt':str((stage/'sucrose_panels/receipt.json').relative_to(root)), 'sucrose_cartoon_sha256':sha(stage/'sucrose_panels/receipt.json'), 'ring_cartoon':'DAPI covariance-normalized quantile shells; illustrative mean near the third-ventricle floor; no anatomical anchor in the analysis','analysis_changed':False,'source_data_sha256_unchanged':before,'figures':records}
+    receipt={'schema':'figure3_complete_three_conditions_v1','reviewer':rec['reviewer'],'sucrose_hil_receipt':str((hil/'sucrose_ventricle_receipt.json').relative_to(root)),'sucrose_hil_sha256':sha(hil/'sucrose_ventricle_receipt.json'),'native_sucrose_counts':manifest['native_counts'],'panel_map':{'A':'microscopy: water/sucrose/allulose','B':'water nuclear assignments','C':'sucrose nuclear assignments','D':'allulose nuclear assignments','E':'whole-field c-FOS/DAPI','F':'c-FOS-positive/NPY-positive','G':'DAPI quantile rings near an enlarged third-ventricle floor; one occurrence equation identifying H/I numerators','H':'c-FOS/DAPI spatial profile','I':'double-positive/DAPI spatial profile'},'publication_language':'en', 'bilingual_outputs':'individual panels and legends only', 'sucrose_cartoon_receipt':str((stage/'sucrose_panels/receipt.json').relative_to(root)), 'sucrose_cartoon_sha256':sha(stage/'sucrose_panels/receipt.json'), 'ring_cartoon':'DAPI covariance-normalized quantile shells; illustrative mean near the floor of an enlarged third ventricle; no anatomical anchor in the analysis; H and I use the same rings and DAPI denominators with separate c-FOS and double-positive numerators','analysis_changed':False,'source_data_sha256_unchanged':before,'figures':records}
     (out/'provenance/complete_conditions_20260908.json').write_text(json.dumps(receipt,indent=2)+'\n')
     write_legends(out)
     print('Verified unchanged source measurements and complete A–I coverage; English master with bilingual panels and legends.')

@@ -1,11 +1,24 @@
-# Inner-ring placement — 11 September 2026
+# Ring schematic and H/I profiles — 11 September 2026
 
-Figure 3G now places rings 1–2 near the floor of the third ventricle. All six
+Figure 3G enlarges the third-ventricle contour twofold about its fixed floor,
+so the rings are approximately half their previous size relative to the
+ventricle. Rings 1–2 remain near the floor; labels follow the lower arc. All six
 rings remain concentric about the illustrative DAPI mean and contain 60 nuclei
 each. The legend distinguishes this illustrative placement from the analytical
 origin, which remains the mean of each field's eligible DAPI nuclei. The shared
 renderer and both Figure 3 builder copies reproduce the revised schematic.
-The 16 Figure 3 data-panel PNGs and all Figure 4 assets are unchanged.
+The schematic labels the DAPI mean and shows dashed continuations of the
+elliptical distance boundaries through the empty lumen. One equation maps
+H to all c-FOS-positive nuclei and I to c-FOS/NPY double-positive nuclei,
+with all DAPI nuclei in the same ring as both denominators. All 108 animal-by-ring
+percentages agree with their stored counts; H/I share boundaries and denominators.
+The six nuclear counts for each animal differ by at most one.
+The E/F/G middle row now allocates 34%/34%/32% of its available width,
+increasing E and F by approximately 31% each and reducing G by one-third.
+A compact vector canvas keeps the single formula legible. Panel proportions
+are preserved; no data panel is cropped or stretched.
+Three existing geometry tests pass. The 16 Figure 3 data-panel PNGs, numerical
+source tables and all Figure 4 assets are unchanged.
 
 # Native microscopy in Figure 4F — 10 September 2026
 
@@ -27,7 +40,7 @@ results are unchanged. Updated Word/PDF manuscripts remain local.
 
 # Ring-definition schematic — 10 September 2026
 
-Figure **3G** alone shows DAPI nuclei around a schematic third ventricle, six rings with the inner two highlighted, and a single within-ring percentage formula. The third ventricle has a narrow superior neck and a flared, rounded base; DAPI points and ring colors have stronger contrast. Methods and caveats are in the legends. Inner rings 1–2 contain approximately one-third of eligible nuclei. The schematic uses illustrative DAPI nuclei; experimental measurements and inference are unchanged.
+Figure **3G** alone shows DAPI nuclei around a schematic third ventricle, six rings with the inner two highlighted, and one within-ring percentage equation identifying H and I. The third ventricle has a narrow superior neck and a flared, rounded base; DAPI points and ring colors have stronger contrast. Methods and caveats are in the legends. Inner rings 1–2 contain approximately one-third of eligible nuclei. The schematic uses illustrative DAPI nuclei; experimental measurements and inference are unchanged.
 
 The NPY profile uses one field per animal. POMC rings are constructed within each reconstructed section, and corresponding-ring numerators and denominators are summed across sections before calculating each animal's six percentages. Equal nuclear counts do not imply equal ring areas, ring thicknesses or atlas-registered anatomy.
 

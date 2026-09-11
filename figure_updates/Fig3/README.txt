@@ -43,7 +43,7 @@ and remain under provenance/ as superseded records.
 
 10 SEPTEMBER 2026 — SPATIAL RING EXPLANATION
 Panel G shows illustrative DAPI nuclei around the third ventricle, six quantile
-rings with the inner two highlighted, and one within-ring occurrence formula.
+rings with the inner two highlighted, and one within-ring occurrence equation identifying H and I.
 E and F occupy the left of the same row; spatial profiles are H and I below.
 The illustration is not experimental data. Inner rings 1–2 contain approximately
 one-third of the eligible DAPI nuclei. One field contributes per animal.
@@ -64,3 +64,29 @@ each. The ventricular floor is a drawing landmark, not an analytical origin.
 The shared spatial_ring_cartoon.py renderer supplies the standalone schematic,
 the complete Figure 3 builder, bilingual panels, and manuscript legends. Figure 4
 refers to Figure 3G and does not repeat the cartoon.
+
+Schematic relative size, 11 September 2026
+----------------------------------------
+The third-ventricle contour in Figure 3G is enlarged twofold about its floor.
+The rings appear approximately half as large relative to the ventricle, with
+ring numbers spread across the lower arc for readability. Illustrative DAPI
+nuclei are regenerated outside the enlarged lumen and still define six equal-
+count rings around their mean. This is a schematic scaling change only.
+
+Connection to spatial profiles, 11 September 2026
+The schematic identifies the DAPI mean with + and continues each covariance
+ellipse across the empty illustrative lumen using dashed lines. The ventricle
+does not define the analysis origin or ring boundaries. A single equation explicitly
+maps H to all c-FOS-positive nuclei and I to c-FOS/NPY double-positive nuclei;
+both use all DAPI nuclei in the same ring. The numerator identifies the endpoint (H or I); the DAPI denominator is
+shown once. The legend explains individual-animal percentages and arithmetic means.
+All 108 stored percentages agree with their counts; H/I use identical ring
+boundaries and denominators. The nucleus counts of each animal's six rings
+differ by at most one. These checks preserve the experimental results.
+
+Final middle-row layout, 11 September 2026
+E and F each receive 34% of the available row width and G receives 32%
+(previously 26%, 26%, 48%). The schematic uses a compact 7.2 x 5.4 inch
+vector canvas with one formula and a two-line numerator. H/I labels within
+the schematic are retained by the assembler. Data panels are not cropped
+or stretched; their standalone outputs and underlying measurements are intact.

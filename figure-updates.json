@@ -1,7 +1,7 @@
 {
   "schema": "apotome-figure-updates-v1",
   "date": "2026-09-11",
-  "description": "Native microscopy intensities within the accepted ROIs in Figure 4F and its inset; DAPI quantile-ring schematic with inner rings near the third-ventricle floor in Figure 3G only with unchanged spatial inference; corrected H&E HC3 inference, local-DAPI POMC QC, Cellpose S7 and power S8. Complete English masters and bilingual panels; current thesis and manuscripts remain local.",
+  "description": "Native microscopy intensities within the accepted ROIs in Figure 4F and its inset; DAPI quantile-ring schematic with a twofold enlarged third ventricle, DAPI mean, and a single occurrence equation identifying H/I numerators in Figure 3G only with unchanged spatial inference; corrected H&E HC3 inference, local-DAPI POMC QC, Cellpose S7 and power S8. Complete English masters and bilingual panels; current thesis and manuscripts remain local.",
   "base_manifest_sha256": "df2ebb51339fdc3cc84dd8bbfb232647570d7e2cd0f12c19a5538ff7b7dd071d",
   "archived_figure_count": 10,
   "updated_figure_count": 13,
@@ -541,8 +541,8 @@
     },
     {
       "path": "Fig3/04_complete_figure3_with_sucrose.py",
-      "sha256": "58146bfe7401fb89b5c01136626770f4c407815ef8d7bb451e3331f271e2f28d",
-      "size": 22604,
+      "sha256": "5a06bf03dcacc2e7f17003a4b72cab530075657be84dd65fc755b33d0fcd6d5e",
+      "size": 22890,
       "mode": "0644",
       "change": "added"
     },
@@ -576,29 +576,29 @@
     },
     {
       "path": "Fig3/Figure_3_cFos_NPY.pdf",
-      "sha256": "e729f0c15cbc106b7ed208aadf7ed7b97e74fa28b4b4f2235a1d0c32128333e8",
-      "size": 14508986,
+      "sha256": "42def4855ac4141b3d92d97f9b25414965fe1a4b1e13ee989d0d12e41333323c",
+      "size": 14591568,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/Figure_3_cFos_NPY.png",
-      "sha256": "5bda897bcb0362dc5836f869a85f5c0beed75307224d4af4e8f12127507a91f6",
-      "size": 25050485,
+      "sha256": "e8204fb33fd31fb099de6d5bd16fbf88de2c490c5e70ae7fe2a06fc5b875a0c8",
+      "size": 25044374,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/Figure_3_cFos_NPY_caption.txt",
-      "sha256": "600ffc6e6a3db31829d4b1e733e3523c8e1cba708254a70d8134f8aab48ae3e4",
-      "size": 2751,
+      "sha256": "7689f8429c090f5b4a227cd63a70d742a09b66b73ce79b702864dbf66da82ca4",
+      "size": 3198,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/README.txt",
-      "sha256": "e1bf39a4743e6b03a4ea87bc3c17f56070e19612cec58eeb932a18820297bbc6",
-      "size": 3895,
+      "sha256": "803f01fa8b9a5ff8726d8b11e8df3a772671afbf5847b459c857ed5a6c7f7685",
+      "size": 5585,
       "mode": "0644",
       "change": "updated"
     },
@@ -639,15 +639,15 @@
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_LEGEND.txt",
-      "sha256": "600ffc6e6a3db31829d4b1e733e3523c8e1cba708254a70d8134f8aab48ae3e4",
-      "size": 2751,
+      "sha256": "7689f8429c090f5b4a227cd63a70d742a09b66b73ce79b702864dbf66da82ca4",
+      "size": 3198,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_LEGEND_spanish.txt",
-      "sha256": "5f55dac389c5f602d98e33d791fa8a35383d7fecc8989871b32c3f716f14e3b9",
-      "size": 2882,
+      "sha256": "a39c08133d74f822b20f75e957f7152df651f2f829c714e55c51248806db194c",
+      "size": 3426,
       "mode": "0644",
       "change": "updated"
     },
@@ -737,15 +737,15 @@
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_G_LEGEND.txt",
-      "sha256": "ac7e9164405657b59201023bb9773698b1c311cf2fb7fdb7381dc3f012ba4802",
-      "size": 1183,
+      "sha256": "ce51481a8bf65c302b7b484675b1fb0c9f1331952019e36e5cac32d91575199d",
+      "size": 1630,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/legends/Figure_3_cFos_NPY_Panel_G_LEGEND_spanish.txt",
-      "sha256": "3079cb16f15c0e055f047be018085343ecc3d7b6bb577448617b0c06030c3d7a",
-      "size": 1257,
+      "sha256": "91883b24849261aa02fc32a537dc0fdcfeae19d590b9f0381e2d20491ccd0b6f",
+      "size": 1801,
       "mode": "0644",
       "change": "updated"
     },
@@ -779,7 +779,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_A.pdf",
-      "sha256": "91473a5c631d0ba1475196d14b10474f103fea4023b79f566d81a99da9559fff",
+      "sha256": "8b4642559b0fe4d97d618a033c8fe412be5bac6b329f8c702aab438005383301",
       "size": 13635180,
       "mode": "0644",
       "change": "updated"
@@ -793,7 +793,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_A_spanish.pdf",
-      "sha256": "0578eceec1cebee0706d91db99138a356cc7704ec299cd43aca51c2371aa1833",
+      "sha256": "7769c2c2576d9b2b8fd9f17f31138ec4be26c0b4428b1a0f5566816354d48fae",
       "size": 13635545,
       "mode": "0644",
       "change": "updated"
@@ -807,7 +807,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_B.pdf",
-      "sha256": "1491bd8302fcc2109c2728461d75c739d7a0e8587c8fdfef90e0eeb95f796c46",
+      "sha256": "50ad7256ccf2c38c13b309211a2467af28f1dcaf1ed57c5fcaddb69399e7bc0b",
       "size": 221385,
       "mode": "0644",
       "change": "updated"
@@ -821,7 +821,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_B_spanish.pdf",
-      "sha256": "4c9419b8ab1b0785ca03b6a0f25b4bbdef0980a5494c8ed5d0ec78f2d29221ff",
+      "sha256": "3d457caf2be897ed709325faaefba1de21d258b346969d6bf258c4a9384f139b",
       "size": 221699,
       "mode": "0644",
       "change": "updated"
@@ -835,7 +835,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_C.pdf",
-      "sha256": "7697608da871a5d4fb93527a19d24692e5009dcc8e601ceea0016a18ea4c5634",
+      "sha256": "22ea6c7fa2c8a31e6b69836f510d793b03d628323f24ee7133ffab9b1f7e9847",
       "size": 251452,
       "mode": "0644",
       "change": "updated"
@@ -849,7 +849,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_C_spanish.pdf",
-      "sha256": "3f5677d9161fd5140505ba351266611913d5a6b305ea0d92ba1ad7eb41e2d8c1",
+      "sha256": "6e44efee77a5d9fd7f8c3b67062d1c1e32bb91cb36b6a2d7ef050bcbf11b7085",
       "size": 251192,
       "mode": "0644",
       "change": "updated"
@@ -863,7 +863,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_D.pdf",
-      "sha256": "9542477426dc09a7d7d18dd483dab4f551b648e3a47c4188adce13b3e724c3c9",
+      "sha256": "3dd0b4bc5bc5db4c2b1330915b236b5c59f2b15d16e26c2ccdff2a6994abd218",
       "size": 297785,
       "mode": "0644",
       "change": "updated"
@@ -877,7 +877,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_D_spanish.pdf",
-      "sha256": "8c624c0eee3dd444d3f4112ca1d9fe99bb9afee1fc31d26b4eaef812dd97840f",
+      "sha256": "0210310c8d3b2702ec9e74fcaf31be67eee81e768f288968c0cc111342d5ef86",
       "size": 298197,
       "mode": "0644",
       "change": "updated"
@@ -891,7 +891,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_E.pdf",
-      "sha256": "5866ae0355179fc1fc04013b8a403792c39a70f4820c04f1b92f4240bee9003b",
+      "sha256": "93e953d1af87165eeef666f73787607ea7fd8bc465231621755a63649d06e08c",
       "size": 20109,
       "mode": "0644",
       "change": "updated"
@@ -905,7 +905,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_E_spanish.pdf",
-      "sha256": "f630c258cbfada1b4f8bc1d4972aeaddae2596e89ebfee1190efe1be1dd08200",
+      "sha256": "be58f2dd85f1174e92f680ffb3b48ce94ceb46b9e633d84991085a05766e2fca",
       "size": 19164,
       "mode": "0644",
       "change": "updated"
@@ -919,7 +919,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_F.pdf",
-      "sha256": "6c7982db13593c12d92589a04364d4d1ad5635527f8930a02160c2f3b02676f6",
+      "sha256": "40451ce2a280b341b2e47f7b7af1ed96e09d6b5d183e388f71930b0cad74df72",
       "size": 20244,
       "mode": "0644",
       "change": "updated"
@@ -933,7 +933,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_F_spanish.pdf",
-      "sha256": "3059e41ac0d2e7ab076496b38ffeaeeea89cb3dca32d5b8996b9875af0652924",
+      "sha256": "5c3ed8e3314d6352d78c7a1bfb8ee30532778e893a89523280c161b0d88d3815",
       "size": 19677,
       "mode": "0644",
       "change": "updated"
@@ -947,35 +947,35 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G.pdf",
-      "sha256": "173212c16a3b6567e54f5c9a4d1e03de5b692eb3c26b30627c2e16cb7d1d4be5",
-      "size": 57330,
+      "sha256": "286efc24b8af38109345a1a403cef1a523b9233b606103103a88703f1a1e8cf0",
+      "size": 140599,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G.png",
-      "sha256": "692b06b16867b40ae25fdaf450f5ff343d49d16f585f44a610d54e3153acb6c3",
-      "size": 673274,
+      "sha256": "f267969f8cf46d0942c215986292af707da4db0bd8257b885c8238d81eb47cbb",
+      "size": 507902,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G_spanish.pdf",
-      "sha256": "d1a7dede2bcb25067a4b0b0f961124044b2e30978f5271a9d02850a9d1f1003e",
-      "size": 58189,
+      "sha256": "8d6a74cd5a60250db1643c1dd079228e451e971d365c0488714a6cc86151cd5a",
+      "size": 140571,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_G_spanish.png",
-      "sha256": "70acc50b17380276b896f0a4130f04b9d46dac1c7bdddfcf77f3ae22a5c7cfca",
-      "size": 685849,
+      "sha256": "3a723bb7357bab0c40dc34eb7865a797e88db63e09edfe25619f3bfe42e51ee0",
+      "size": 522015,
       "mode": "0644",
       "change": "updated"
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_H.pdf",
-      "sha256": "b7c3007abc708a995e1d1830316b168144846e4f27a60656c15b3afd176749e2",
+      "sha256": "89126babfa0aa5f85434d7555f4485f8246ac6311488a7ccba9867df7e1704ef",
       "size": 34908,
       "mode": "0644",
       "change": "added"
@@ -989,7 +989,7 @@
     },
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_H_spanish.pdf",
-      "sha256": "89c09469cce933305c81b1f76ba2114139abfd7e7b162ecfd5867cd8d8920085",
+      "sha256": "98fa6d3722c2383eedb3709871ce01216c18b56c830741e5cccfa008f5d9136c",
       "size": 34643,
       "mode": "0644",
       "change": "added"
@@ -1004,7 +1004,7 @@
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_I.pdf",
       "change": "added",
-      "sha256": "f1248c356349ad62ead3ab0f3832de107b8f60131abd3d2ead235b0977e8767c",
+      "sha256": "b9f6ccee500994521186307767879a76c1a0058c9d60f4704825a9cbec3a6841",
       "size": 32879,
       "mode": "0644"
     },
@@ -1018,7 +1018,7 @@
     {
       "path": "Fig3/panels/Figure_3_cFos_NPY_Panel_I_spanish.pdf",
       "change": "added",
-      "sha256": "fb9fa593b342c12d6861dbaead988b559caf7a84891a782c792138fb8e82042c",
+      "sha256": "1314100bf4c09832063c317877ec7bf4be15b3b6e7069c3532648af690a90a36",
       "size": 32513,
       "mode": "0644"
     },
@@ -1234,8 +1234,8 @@
     },
     {
       "path": "Fig3/provenance/complete_conditions_20260908.json",
-      "sha256": "7c1c7c16d55716362cef82928926e58576e60adcd902f258d080784adba782d8",
-      "size": 11316,
+      "sha256": "4fe3388a4e892172c226c50dd5758388fe538f36dca65e925bb0abaa30e99d40",
+      "size": 11745,
       "mode": "0644",
       "change": "added"
     },
@@ -2411,64 +2411,64 @@
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.json",
       "change": "added",
-      "sha256": "c4d0dc85f9a61bde619feb139fd848648048f220e65ef6dbd5fed8f32c85ca62",
-      "size": 1195,
+      "sha256": "989a5219f79b0820d7226e721259eba94011ead01f428e459b8a0634f5d39daa",
+      "size": 1954,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.pdf",
       "change": "added",
-      "sha256": "f9d24252430c2377a0684fa6e7a485ba17ba9b5be198419842ae7199bb3c1bdc",
-      "size": 57326,
+      "sha256": "ced14d848938d3e0b0bd50ccb5f94ee9719acc36a97a3e4de019b6bd16b9ba04",
+      "size": 141079,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.png",
       "change": "added",
-      "sha256": "a347c01f890d1c7a69918b3d2d4d55f34709fe0fb57b4119c980bca83f799167",
-      "size": 801665,
+      "sha256": "d56e54ffcbbac9bf3655d5e624be932d95edb108533561e93157789d23594341",
+      "size": 621275,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.svg",
       "change": "added",
-      "sha256": "87ab14145c9099b3f00c07cb96d76b0467fc98e0ca151aa664a80584cb4f92aa",
-      "size": 143655,
+      "sha256": "7d4556faf2e9d5028fcd569efb78672b0ae886e95f663e20121044645a3c4795",
+      "size": 220967,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.txt",
       "change": "added",
-      "sha256": "546f02f4c805c860c056529fadba279b9028dc615ccf088c2d866d6c97b2b266",
-      "size": 1164,
+      "sha256": "870c6d57d09479a65c1956ce16256229d7bd0261d9aca6dbf4baf0e5ff810164",
+      "size": 1611,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf",
       "change": "added",
-      "sha256": "a59f3d09f27e880f5766bdb4ac2fdf047b238c36aa624baf26157a2bee3f14e9",
-      "size": 58201,
+      "sha256": "bdc60279852fd06e069833ffb856ae85b4ca3884fbd7010724d7b0cd2c117ab7",
+      "size": 141067,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.png",
       "change": "added",
-      "sha256": "007d486db1d88334b2ec247622ddb6e3249ad0529f8c955f7d7d96264e047e8d",
-      "size": 832236,
+      "sha256": "c7f9e8020d8815179f5bec4f3f4d51844d2bcdeb2162c45736773474569ceb0f",
+      "size": 651144,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.svg",
       "change": "added",
-      "sha256": "880c7b2e257705f0c0e2f24c7cb220b3aac455194401e59e7c4072c8c80cbead",
-      "size": 145791,
+      "sha256": "1962e18e5b1279c78f6411355b00ba1afd7db1677e1e9e87a5d6921f2b46b0a8",
+      "size": 221748,
       "mode": "0644"
     },
     {
       "path": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.txt",
       "change": "added",
-      "sha256": "55220741487078d583fd332d0ec8dc030f80f22504270d36f306038f058dfead",
-      "size": 1238,
+      "sha256": "d2adfa502528f76a56d6d16a020fd51754182499674a9d54ae9402c1ea2c39eb",
+      "size": 1782,
       "mode": "0644"
     },
     {
@@ -6925,8 +6925,8 @@
     },
     {
       "path": "scripts/Fig3/04_complete_figure3_with_sucrose.py",
-      "sha256": "58146bfe7401fb89b5c01136626770f4c407815ef8d7bb451e3331f271e2f28d",
-      "size": 22604,
+      "sha256": "5a06bf03dcacc2e7f17003a4b72cab530075657be84dd65fc755b33d0fcd6d5e",
+      "size": 22890,
       "mode": "0644",
       "change": "added"
     },
@@ -7304,8 +7304,8 @@
     {
       "path": "scripts/shared/spatial_ring_cartoon.py",
       "change": "added",
-      "sha256": "ab056b4bbbed445e728bcac302ccaeb42bb5edd151bdcf0486a068a5a33332ba",
-      "size": 11481,
+      "sha256": "9378c3a06cb4e47196497856b5608de4104b2279ef1a71341a0095286d3b48e6",
+      "size": 15207,
       "mode": "0644"
     },
     {

@@ -18,7 +18,7 @@
     "D": "allulose nuclear assignments",
     "E": "whole-field c-FOS/DAPI",
     "F": "c-FOS-positive/NPY-positive",
-    "G": "DAPI quantile rings with inner rings near the third-ventricle floor",
+    "G": "DAPI quantile rings near an enlarged third-ventricle floor; one occurrence equation identifying H/I numerators",
     "H": "c-FOS/DAPI spatial profile",
     "I": "double-positive/DAPI spatial profile"
   },
@@ -26,7 +26,7 @@
   "bilingual_outputs": "individual panels and legends only",
   "sucrose_cartoon_receipt": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/receipt.json",
   "sucrose_cartoon_sha256": "dd5446b0877d6b9412d98c3263e3066c3657c23f48392ee59a774410a416c196",
-  "ring_cartoon": "DAPI covariance-normalized quantile shells; illustrative mean near the third-ventricle floor; no anatomical anchor in the analysis",
+  "ring_cartoon": "DAPI covariance-normalized quantile shells; illustrative mean near the floor of an enlarged third ventricle; no anatomical anchor in the analysis; H and I use the same rings and DAPI denominators with separate c-FOS and double-positive numerators",
   "analysis_changed": false,
   "source_data_sha256_unchanged": {
     "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14",
@@ -92,7 +92,7 @@
         {
           "panel": "G",
           "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.pdf",
-          "sha256": "f9d24252430c2377a0684fa6e7a485ba17ba9b5be198419842ae7199bb3c1bdc",
+          "sha256": "ced14d848938d3e0b0bd50ccb5f94ee9719acc36a97a3e4de019b6bd16b9ba04",
           "removed_previous_letter": []
         },
         {
@@ -136,39 +136,44 @@
         "E": [
           18.0,
           701.6282193918303,
-          297.76,
-          929.0385472965334
+          383.84000000000003,
+          999.0109558825959
         ],
         "F": [
-          317.76,
+          403.84000000000003,
           701.6282193918303,
-          597.52,
-          929.1043626380527
+          769.6800000000001,
+          999.0970220984289
         ],
         "G": [
-          617.52,
+          789.6800000000001,
           701.6282193918303,
           1134.0,
-          944.373815013575
+          959.8681991221312
         ],
         "H": [
           18.0,
-          989.373815013575,
+          1044.0970220984289,
           566.0,
-          1248.4283531096198
+          1303.1515601944736
         ],
         "I": [
           586.0,
-          989.373815013575,
+          1044.0970220984289,
           1134.0,
-          1248.4283531096198
+          1303.1515601944736
         ]
       },
       "size_pt": [
         1152,
-        1266.4283447265625
+        1321.151611328125
       ],
       "dpi": 600,
+      "middle_row_width_ratios": [
+        0.34,
+        0.34,
+        0.32
+      ],
       "panel_sequence": [
         "A",
         "B",
@@ -181,7 +186,7 @@
         "I"
       ],
       "pdf": "Fig3/Figure_3_cFos_NPY.pdf",
-      "sha256": "e729f0c15cbc106b7ed208aadf7ed7b97e74fa28b4b4f2235a1d0c32128333e8"
+      "sha256": "42def4855ac4141b3d92d97f9b25414965fe1a4b1e13ee989d0d12e41333323c"
     },
     {
       "language": "es",
@@ -233,7 +238,7 @@
         {
           "panel": "G",
           "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf",
-          "sha256": "a59f3d09f27e880f5766bdb4ac2fdf047b238c36aa624baf26157a2bee3f14e9",
+          "sha256": "bdc60279852fd06e069833ffb856ae85b4ca3884fbd7010724d7b0cd2c117ab7",
           "removed_previous_letter": []
         },
         {
@@ -277,39 +282,44 @@
         "E": [
           18.0,
           701.6282193918303,
-          297.76,
-          929.0385472965334
+          383.84000000000003,
+          999.0109558825959
         ],
         "F": [
-          317.76,
+          403.84000000000003,
           701.6282193918303,
-          597.52,
-          929.1043626380527
+          769.6800000000001,
+          999.0970220984289
         ],
         "G": [
-          617.52,
+          789.6800000000001,
           701.6282193918303,
           1134.0,
-          944.373815013575
+          959.8681991221312
         ],
         "H": [
           18.0,
-          989.373815013575,
+          1044.0970220984289,
           566.0,
-          1248.4283531096198
+          1303.1515601944736
         ],
         "I": [
           586.0,
-          989.373815013575,
+          1044.0970220984289,
           1134.0,
-          1248.4283531096198
+          1303.1515601944736
         ]
       },
       "size_pt": [
         1152,
-        1266.4283447265625
+        1321.151611328125
       ],
       "dpi": 600,
+      "middle_row_width_ratios": [
+        0.34,
+        0.34,
+        0.32
+      ],
       "panel_sequence": [
         "A",
         "B",

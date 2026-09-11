@@ -1,5 +1,5 @@
 {
-  "schema": "spatial_ring_cartoon_v2",
+  "schema": "spatial_ring_cartoon_v3",
   "illustration_only": true,
   "experimental_data_used": false,
   "marker": "NPY",
@@ -19,25 +19,45 @@
     2
   ],
   "quantile_edges": [
-    0.08736805075309273,
-    0.9163872182325684,
-    1.1878624930422395,
-    1.3905133716940004,
-    1.608958084308027,
-    1.7584029690192304,
-    2.141599439198915
+    0.26832162511058216,
+    0.9660741092038092,
+    1.1863863703241404,
+    1.3728534386421956,
+    1.548364675487222,
+    1.7219182305929503,
+    2.222518050427815
   ],
   "illustrative_nuclear_mean_xy": [
-    0.06952163516890125,
-    -1.5003945423933993
+    0.048951894156963695,
+    -1.4600987040999065
   ],
   "ventricular_floor_y": -1.5,
-  "layout": "inner rings near the ventricular floor; all six rings share the DAPI mean",
+  "ventricle_scale_xy": 2.0,
+  "layout": "enlarged third ventricle; inner rings near its floor; all six rings share the DAPI mean",
   "centre": "mean of eligible DAPI centroids",
   "distance": "covariance-normalized radius",
   "denominator": "eligible DAPI nuclei in the same shell",
+  "formula_count": 1,
+  "profile_endpoints": [
+    {
+      "panel": "H",
+      "endpoint": "cfos_occurrence",
+      "numerator": "all c-FOS-positive DAPI nuclei",
+      "denominator": "all DAPI nuclei in the same ring"
+    },
+    {
+      "panel": "I",
+      "endpoint": "double_occurrence",
+      "numerator": "c-FOS/NPY double-positive DAPI nuclei",
+      "denominator": "all DAPI nuclei in the same ring"
+    }
+  ],
+  "plot_values": "100 * positive count / DAPI count, separately for each animal and ring",
+  "group_summary": "arithmetic mean of animal percentages",
+  "anatomical_outline_used_for_ring_assignment": false,
+  "ring_boundaries_in_lumen": "dashed continuation; no nuclei in the illustrative lumen",
   "files": [
-    "/tmp/ring_floor_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY.pdf",
-    "/tmp/ring_floor_20260910/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf"
+    "/tmp/ring_scale_20260911/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY.pdf",
+    "/tmp/ring_scale_20260911/Paper/Fig3/render_final/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf"
   ]
 }
