@@ -22,6 +22,10 @@ The [figure scripts, new review data, and S6 inputs](FIGURE_UPDATES.md) are incl
 directly in GitHub. The original microscopy is downloaded from the existing
 Zenodo records.
 
+## Trained models
+
+[Download the 21 project-trained model binaries and 13 training-loss arrays](models/README.md), with SHA-256 checksums, model roles and a download helper. The archive distinguishes manuscript checkpoints from earlier iterations and development candidates.
+
 ## Paper and data on Zenodo
 
 All four records are open access. The command below downloads them automatically.
