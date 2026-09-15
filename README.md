@@ -1,37 +1,46 @@
 # Reproduce the allulose–sucrose paper
-The 10 September update introduces the DAPI ring method once in [Figure 3G](figure_updates/Fig3/Figure_3_cFos_NPY.pdf); [Figure 4](figure_updates/Fig4/Figure_4.pdf) retains its A–J data panels, with unchanged experimental statistics. See [update details](FIGURE_UPDATES.md).
-
 
 This study compares allulose, a sweetener with few calories, with sucrose
 (table sugar) and water in mice. It examines feeding behavior and markers of
 brain activity after prior exposure, focusing on the hypothalamus, which helps
 regulate appetite.
 
-Recreate **all 13 figures (1–5 and S1–S8)**. Figure 1 includes the corrected
-Holm terminology and reconciled cage transfer. Figure 3 includes sucrose and
-its reviewed boundaries; S5 includes NPY-M (three animals per condition).
-S6 compares 73.9% versus 57.0% balanced accuracy. S7 documents Cellpose training; S8 shows pilot-based sample-size estimates. S3 uses corrected HC3-studentized residual permutations (hepatic epithelial-like p=0.00031, BH q=0.02418).
+This repository provides the code and inputs to reproduce **all 13 figures
+(1–5 and S1–S8)**. It includes analysis scripts, figure source tables, saved
+human microglial labels and trained-model downloads. The workflow retrieves
+the large microscopy datasets from Zenodo.
 
-Figure 4 now applies uniform local-DAPI size QC to POMC masks and reports threshold sensitivity. Its familiarized cohort had a 4-hour fast; the independent ACTH/CLIP experiment in S5 had a 16-hour fast. Original images and masks remain preserved.
+## Figures and analyses
+
+| Figures | Contents |
+| --- | --- |
+| 1, S1 and S2 | Single-bottle fluid consumption and body-weight change |
+| 2–4 | Hypothalamic c-FOS labeling, NPY/POMC co-labeling and spatial profiles |
+| 5 and S6 | Glial signals, microglial morphology and comparison with human review |
+| S3 | Liver, kidney and spleen histology |
+| S4 | Two-bottle consumption and food intake |
+| S5 | ACTH/CLIP-associated c-FOS labeling after first oral exposure |
+| S7 and S8 | Cellpose training and pilot-based sample-size estimates |
+
+The [figure guide](FIGURE_GUIDE.md) explains the analyses, source inputs and
+validation for each figure, including the DAPI ring method illustrated in
+[Figure 3G](figure_updates/Fig3/Figure_3_cFos_NPY.pdf).
 
 **Normal runs reuse the 203 saved human microglial choices without prompting.**
 To classify the cells yourself and retrain, add the optional flag:
 `python3 reproduce.py --do_microglial_choices`.
 
-The [figure scripts, new review data, and S6 inputs](FIGURE_UPDATES.md) are included
-directly in GitHub. The original microscopy is downloaded from the existing
-Zenodo records.
-
 ## Trained models
 
-[Download the 21 project-trained model binaries and 13 training-loss arrays](models/README.md), with SHA-256 checksums, model roles and a download helper. The archive distinguishes manuscript checkpoints from earlier iterations and development candidates.
+[Download the 21 project-trained model binaries and 13 training-loss arrays](models/README.md).
+The model guide provides SHA-256 checksums, model roles and a download helper,
+and identifies the manuscript checkpoints and development candidates.
 
 ## Paper and data on Zenodo
 
-All four records are open access. The command below downloads them automatically.
-They contain the original ten-figure release; the verified GitHub update adds the
-current scripts, saved reviews, corrected figures, pilot-based sample-size
-calculations and S6–S8.
+Four open-access records provide the software archive and source data. The
+reproduction command downloads these records and combines them with the figure
+scripts and inputs supplied in this repository.
 
 | Contents | Zenodo record |
 | --- | --- |
@@ -44,7 +53,7 @@ calculations and S6–S8.
 
 Use a computer with:
 
-- **A 64-bit Linux computer with an Intel or AMD processor.** A GPU is not needed.
+- **A 64-bit Linux operating system and an Intel or AMD processor.** A GPU is not needed.
 - **About 800 GB of free disk space** and **at least 32 GiB of available RAM**.
 - **Python 3.10 or newer, Git, and Conda.** [Install these first if needed →](SETUP.md)
 
@@ -74,16 +83,13 @@ Run:
 python3 reproduce.py
 ```
 
-The program checks your computer, downloads and unpacks all the data from
-Zenodo, installs the required software for this project, and recreates all thirteen
-figures. It reuses the saved human choices and candidate classifier for the
-additional microglial review branch. It applies the tested settings automatically and checks the results
-against the published figures.
+The program checks your computer, downloads and unpacks the data from Zenodo,
+installs the required software, and recreates all thirteen figures. It reuses
+the saved human choices and candidate classifier for the microglial review
+branch, applies the tested settings and checks the figure outputs.
 
 **Keep the terminal open and the computer awake.** Downloading may take several
-hours. The archived ten-figure calculations took about 37 minutes on our test
-server. The current thirteen-figure workflow includes additional reconstruction
-steps; its total runtime has not been benchmarked.
+hours. Total runtime for the thirteen-figure workflow has not been benchmarked.
 
 When everything has passed, you will see:
 
@@ -99,13 +105,8 @@ Inside this repository, open:
 - `Paper/FigS1/` through `Paper/FigS8/` for the supplementary figures.
 
 Each folder contains PNG/PDF figures and a `source_data/` folder with plotted
-values and statistics. Main figures are in English; individual panels and
-legends are available in English and Spanish.
-
-The archived Zenodo payload also contains its original documents. The current
-thesis and manuscript are maintained locally and are not included in this
-GitHub figure/code update.
-Run logs are saved in `logs/`.
+values and statistics. Complete figures are in English; individual panels and
+legends are available in English and Spanish. Run logs are saved in `logs/`.
 
 ## If something stops
 
@@ -118,31 +119,24 @@ To check your computer without downloading or installing anything:
 python3 reproduce.py --check-only
 ```
 
-For manual commands, checksums, troubleshooting, and scientific limitations,
+For manual commands, checksums, troubleshooting and software requirements,
 see the [detailed guide](DETAILED_GUIDE.md).
 
-The original ten-figure replay reproduced all 136 PNGs exactly. Separate checks
-reproduced all 36 corrected Figure 1/S6 PDF/PNG files byte for byte. A complete
-new thirteen-figure replay has not been rerun. The complete Figure 3 and
-nine-animal S5 have separate reconstruction checks; the update guide describes
-their scope. Figure 5's candidate class labels
-remain provisional, as explained in the [update guide](FIGURE_UPDATES.md).
+## Verification and interpretation
 
-For the original ten-figure release in an unmodified reconstruction, use
-`python3 reproduce.py --archived-release`.
+Validation includes an end-to-end replay of the archived ten-figure package,
+with all 136 PNGs matching its reference files, and separate reconstruction,
+numerical and display checks for the thirteen-figure workflow. A complete
+end-to-end replay of all thirteen figures has not been performed. The
+[figure guide](FIGURE_GUIDE.md#verification) describes the scope of those checks.
+
+Figure 5's classifier-derived labels are provisional morphological assignments.
+The S6 benchmark uses an internal human-review sample; morphology alone does
+not establish functional microglial activation.
+
+To reproduce the ten-figure package associated with `v1.0.0`, use
+`python3 reproduce.py --archived-release` in an unmodified reconstruction.
 
 **Reusing this work:** cite the relevant Zenodo records using their DOIs.
 Code is MIT-licensed; original documents and data are CC BY 4.0
 ([license details](LICENSE)).
-
-Figure 4F now displays microscopy intensities inside the accepted POMC ROIs,
-including the POMC/NPY-GFP inset. No uniform marker fills are used in those
-microscopy views. The matching scripts, legends, and display regression checks
-are included in [the figure updates](FIGURE_UPDATES.md).
-
-Figure 3G enlarges the schematic third ventricle twofold, making the rings
-approximately half as large relative to it. Inner rings remain near the floor.
-All six rings follow the illustrative DAPI mean and count quantiles; the shared
-renderer and Figure 3 scripts reproduce these proportions. A DAPI-mean key and
-one equation connect the rings to both spatial profiles; the numerator identifies
-H or I and the shared within-ring DAPI denominator is shown once. E/F each receive 34% of the middle row and G receives 32%. The cartoon appears once.

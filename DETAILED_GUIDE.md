@@ -1,15 +1,12 @@
 # Detailed reproduction guide
 
-> The 7 September figure scripts and S6 inputs are available in
-> [Figure updates](FIGURE_UPDATES.md). Use the normal `python3 reproduce.py` command
-> for the corrected Figure 1 and the 11-figure workflow. The archive identities,
-> ten-figure replay evidence and manual steps below describe the original release.
-> For the archived beginner workflow described below, add `--archived-release`.
+Use `python3 reproduce.py` to reproduce all thirteen figures (1–5 and S1–S8).
+The [three-step guide](README.md) covers that workflow, and the
+[figure guide](FIGURE_GUIDE.md) explains its analyses, source inputs and validation.
 
-
-For the shortest route, follow the [three-step beginner guide](README.md).
-The manual instructions below retain the full Zenodo, checksum, software, and
-analysis details.
+The manual instructions below describe the ten-figure `v1.0.0` archive and its
+`--archived-release` replay, including Zenodo identities, checksums, software
+requirements and analysis details.
 
 ## Automated command: options and logs
 
@@ -678,8 +675,8 @@ For an additional post-run check, from `Paper/`:
 
 ### Completed cloned-directory validation
 
-A full local integration run on **6 September 2026** rebuilt and installed all
-ten figures in this clone using the OpenCV correction and 64-thread runtime
+A full local integration run rebuilt and installed all ten archived figures
+using the OpenCV correction and 64-thread runtime
 profile above. **All 136 publication PNGs matched the shipped references byte
 for byte.** The final installed-artifact checks, raw-input/script audit and
 bundle checks passed. The figure replay took **36 minutes 58 seconds** on the
