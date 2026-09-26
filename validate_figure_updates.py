@@ -20,8 +20,11 @@ def main():
         elif path.suffix == ".sh":
             subprocess.run(["bash", "-n", path], check=True)
             scripts += 1
-    for figure in ("Fig1", "Fig3", "Fig4", "Fig5", "FigS6", "FigS7", "FigS8"):
-        for path in (payload / figure).iterdir():
+    for folder in sorted(payload.glob("Fig*")):
+        if not folder.is_dir():
+            continue
+        figure = folder.name
+        for path in folder.iterdir():
             if path.suffix not in {".py", ".sh"}:
                 continue
             mirror = (payload / "scripts/setup" / path.name if path.name == "00_create_conda_envs.sh"

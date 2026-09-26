@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """Unequal-variance abundance tests for Figure 3.
 
-The Water group spans a far wider range than either sugar group, and its
-spread coincides with acquisition batch, so the equal-variance assumption of
-the classical one-way ANOVA does not hold. This module adds tests that remain
-valid under unequal variances and reports effect sizes that carry more
-information than a p-value at these group sizes:
+The Water group has a wider observed range than either sugar group, with
+acquisition-batch differences. This module reports unequal-variance statistics
+and fully enumerated label-permutation reference distributions. Enumeration
+is exact computationally; finite-sample test validity still requires
+exchangeability. Studentization gives asymptotic robustness under suitable
+unequal-variance nulls, not guaranteed finite-sample validity at n=3-5.
 
 * Brown-Forsythe test of equal variance (Levene's test on absolute deviations
-  from the group median), which documents the heteroscedasticity instead of
-  assuming it away.
+  from the group median), a low-powered diagnostic at these sample sizes.
 * Welch's one-way ANOVA, the unequal-variance omnibus.
 * An exact studentized permutation test per pair: the Welch t statistic
   recomputed over every distinct allocation of the pooled animal values.
-  Unlike a rank test, it targets a difference in means and stays valid when the
-  two groups have different variances.
-* Hodges-Lehmann median shift with an exact distribution-free confidence
-  interval, and Cliff's delta.
+  It targets a difference in means, subject to the exchangeability caveat.
+* Hodges-Lehmann median pairwise difference and a rank interval, whose exact
+  coverage assumes a continuous common-shape location-shift model, plus
+  Cliff's delta. Heteroscedasticity or ties can invalidate that coverage.
 
 Every test uses the biological animal as the unit and the same endpoint-specific
 included set as the rest of Figure 3. All results remain exploratory: the Water
@@ -50,7 +50,11 @@ CAVEAT = ("Exploratory. The Water group's dispersion coincides with acquisition 
 
 def welch_anova(groups: list[np.ndarray]) -> dict:
     """Welch's heteroscedastic one-way F test."""
+    groups = [np.asarray(group, dtype=float) for group in groups]
     counts = np.array([len(group) for group in groups], dtype=float)
+    if len(groups) < 2 or (counts < 2).any() or any(not np.isfinite(g).all() for g in groups):
+        return dict(statistic=np.nan, df1=np.nan, df2=np.nan, p_value=np.nan,
+                    status="not_estimable_zero_variance_or_singleton_group")
     means = np.array([group.mean() for group in groups])
     variances = np.array([group.var(ddof=1) for group in groups])
     k = len(groups)
@@ -95,9 +99,9 @@ def welch_t(left: np.ndarray, right: np.ndarray) -> float:
 def exact_studentized_permutation(left: np.ndarray, right: np.ndarray) -> dict:
     """Enumerate every allocation of the pooled values and studentize each one.
 
-    Studentizing is what keeps a label permutation meaningful when the two
-    groups have different variances: the permutation null of an unstudentized
-    mean difference is not the null of interest under heteroscedasticity.
+    Finite-sample exactness requires exchangeable observations. Studentizing
+    can improve asymptotic robustness, but does not remove this qualification
+    for very small unequal-variance samples.
     """
     n_left, n_right = len(left), len(right)
     if min(n_left, n_right) < 2:
@@ -122,11 +126,10 @@ def exact_studentized_permutation(left: np.ndarray, right: np.ndarray) -> dict:
 def exact_permutation_welch_anova(groups: list[np.ndarray]) -> dict:
     """Welch's F with its null obtained by enumerating every animal allocation.
 
-    The F approximation to Welch's statistic relies on denominator degrees of
-    freedom that are themselves estimated from three-animal variances, so at
-    these group sizes it is anti-conservative. Enumerating all distinct
-    allocations of the pooled animal values replaces that approximation with
-    the finite-sample reference distribution of the same robust statistic.
+    The parametric Welch approximation and label-permutation distribution have
+    different assumptions. Enumeration is finite-sample exact only under
+    exchangeability, not under an arbitrary equal-means/unequal-variance null.
+    Support any number of groups and refuse undefined permutation statistics.
     """
     counts = [len(group) for group in groups]
     if len(groups) < 2 or min(counts) < 2:
@@ -139,18 +142,26 @@ def exact_permutation_welch_anova(groups: list[np.ndarray]) -> dict:
         return dict(statistic=np.nan, p_value=np.nan, enumerated_labelings=0, extreme_labelings=0,
                     minimum_attainable_p=np.nan, status="not_estimable_zero_variance_group")
     candidates = []
-    remaining_first = list(combinations(range(total_n), counts[0]))
-    for first in remaining_first:
-        rest = [index for index in range(total_n) if index not in set(first)]
-        for second in combinations(rest, counts[1]):
-            third = [index for index in rest if index not in set(second)]
-            split = [pooled[list(first)], pooled[list(second)], pooled[third]]
-            value = welch_anova(split)["statistic"]
-            candidates.append(value if np.isfinite(value) else np.inf)
+    def splits(remaining, sizes):
+        if len(sizes) == 1:
+            yield [pooled[list(remaining)]]
+            return
+        for chosen in combinations(remaining, sizes[0]):
+            selected = set(chosen)
+            rest = tuple(i for i in remaining if i not in selected)
+            for tail in splits(rest, sizes[1:]):
+                yield [pooled[list(chosen)], *tail]
+
+    for split in splits(tuple(range(total_n)), counts):
+        candidates.append(welch_anova(split)["statistic"])
     candidates = np.asarray(candidates, dtype=float)
-    finite = candidates[np.isfinite(candidates)]
+    if not np.isfinite(candidates).all():
+        return dict(statistic=float(observed), p_value=np.nan,
+                    enumerated_labelings=len(candidates), extreme_labelings=0,
+                    minimum_attainable_p=np.nan,
+                    status="not_estimable_degenerate_permutation")
     extreme = int((candidates >= observed - 1e-12).sum())
-    floor = int((candidates >= (finite.max() if len(finite) else observed) - 1e-12).sum()) / len(candidates)
+    floor = int((candidates >= candidates.max() - 1e-12).sum()) / len(candidates)
     return dict(statistic=float(observed), p_value=extreme / len(candidates),
                 enumerated_labelings=int(len(candidates)), extreme_labelings=extreme,
                 minimum_attainable_p=float(floor), status="estimable")
@@ -230,13 +241,14 @@ def rows_for(domain: str, endpoint: str, groups: dict[str, np.ndarray]) -> list[
                      **permuted,
                      note=("Welch's robust F with its null enumerated over every distinct animal allocation; "
                            "no degrees-of-freedom approximation. minimum_attainable_p is the smallest p this "
-                           "number of animals can produce.")))
+                           "dataset can produce. Exact test validity requires exchangeability; "
+                           "studentization alone does not ensure small-sample validity under unequal variances.")))
     welch = welch_anova(ordered)
     rows.append(dict(**base, test="welch_one_way_anova", group_a="", group_b="", role="parametric omnibus",
                      **welch,
-                     note=("Unequal-variance omnibus using the Welch-Satterthwaite F approximation. Its denominator "
-                           "degrees of freedom are estimated from three-animal variances, so it is anti-conservative "
-                           "here; read the enumerated permutation p above instead.")))
+                     note=("Unequal-variance omnibus using the Welch-Satterthwaite F approximation. "
+                           "Small-sample variances are uncertain; no design-specific calibration study "
+                           "establishes whether this approximation is conservative or anti-conservative.")))
     if min(len(group) for group in ordered) >= 2:
         classical = f_oneway(*ordered)
         rows.append(dict(**base, test="classical_one_way_anova", group_a="", group_b="", role="sensitivity",
@@ -259,7 +271,9 @@ def rows_for(domain: str, endpoint: str, groups: dict[str, np.ndarray]) -> list[
                              "effect_ci_status": shift.get("ci_status", ""),
                          },
                          cliffs_delta=cliffs_delta(left, right) if len(left) and len(right) else np.nan,
-                         note="Welch t recomputed over every distinct allocation of the pooled animal values."))
+                         note=("Welch t recomputed over every distinct allocation of the pooled animal values. "
+                               "Exactness requires exchangeability. Rank-interval coverage assumes a continuous "
+                               "common-shape location-shift model; it is not guaranteed with unequal variances or ties.")))
     return rows
 
 
@@ -289,10 +303,11 @@ def run(analysis_dir: Path) -> pd.DataFrame:
     table = table.reindex(columns=[name for name in ordered if name in table.columns])
     table.to_csv(analysis_dir / "abundance_robust_statistics.csv", index=False)
     plan = dict(schema="fig3-robust-abundance-v1",
-                motivation=("The Water group's variance greatly exceeds the sugar groups' and coincides with "
-                            "acquisition batch, so the classical equal-variance ANOVA is not appropriate."),
+                motivation=("The Water group has a wider observed range with acquisition-batch differences; "
+                            "report unequal-variance statistics alongside the original ANOVA."),
                 equal_variance_check="Brown-Forsythe (Levene on absolute deviations from the group median)",
-                omnibus="Welch's robust F with an exact enumerated permutation null",
+                omnibus="Welch's F with a fully enumerated label-permutation reference distribution",
+                validity="Exact under exchangeability; asymptotic studentization robustness does not guarantee validity at n=3-5 under unequal variances or batch confounding.",
                 parametric_omnibus="Welch's unequal-variance one-way ANOVA, reported as a comparison only",
                 resolution_limit=("minimum_attainable_p records the smallest p each exact test can return at these "
                                   "group sizes; a 3-versus-3 contrast cannot fall below 0.10"),

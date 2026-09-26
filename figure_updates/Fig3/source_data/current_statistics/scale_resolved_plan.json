@@ -1,0 +1,39 @@
+{
+  "schema": "fig3-scale-resolved-envelope-v1",
+  "question": "Do conditions differ in how activated cells are spatially arranged, at any distance in the examined range?",
+  "curve": "count of positive-positive pairs within r, standardized by its exact conditional random-labelling mean and standard deviation",
+  "moments": "exact; E[T]=P*p2 and E[T^2]=P*p2+2(Q*p3+R*p4) with p_k the probability that k named cells are all positive",
+  "geometry": "conditional on observed positions and field boundaries; no inference to unobserved tissue and no removal of cross-acquisition differences",
+  "strata": "acquisition by tissue side; independent under the null, so counts and moments add within an animal",
+  "radii_um": [
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0,
+    70.0,
+    80.0,
+    90.0,
+    100.0,
+    110.0,
+    120.0,
+    130.0,
+    140.0,
+    150.0
+  ],
+  "test": "one-way F at each radius, studentized by its permutation mean and standard deviation, maximum taken over radii",
+  "null": "exhaustive enumeration of animal-label allocations, the observed allocation included; exact test validity requires exchangeability",
+  "validity": "Studentization is across radii in the permutation distribution, not a heteroscedastic groupwise Welch correction.",
+  "multiplicity": "the maximum over radii controls the error across the whole curve; Holm then covers the two endpoints",
+  "alpha": 0.05,
+  "cohort": "NPY",
+  "unit": "biological animal",
+  "regions": [
+    "FIELD"
+  ],
+  "caveat": "Exploratory. The random-labelling null conditions on observed cell positions, not on unobserved tissue or detection differences. Two Water animals share the sugar microscope, but acquisition/staining batches remain confounded. Finite-sample label-permutation validity requires exchangeable animal curves; studentizing F over radii does not remove groupwise heteroscedasticity. Marker curves require two or more positive cells.",
+  "references": [
+    "Myllymaki et al. 2017 J. R. Stat. Soc. B 79:381",
+    "Baddeley, Rubak & Turner 2015, Spatial Point Patterns, chapters 7 and 14"
+  ]
+}

@@ -17,9 +17,9 @@ of pairs sharing a vertex,
     E[T2] = P p2 + 2 (Q p3 + R p4),   R = C(P,2) - Q
 
 with p_k the probability that k named cells are all positive when m of N are.
-These are exact, so no simulation is needed for the per-animal curve, and the
-geometry cancels: the same point configuration appears in observed and
-expected, which is why no edge correction enters here.
+These moments are exact, so no simulation is needed for the per-animal curve.
+The null conditions on the observed geometry. It does not remove differences
+in sampling window, tissue coverage, section depth or marker detection.
 
 Strata are independent under the null, so counts and moments add within an
 animal and z(r) = (sum T - sum E) / sqrt(sum Var) is that animal's clustering
@@ -56,9 +56,35 @@ REGION_CODES = {"NPY": {"FIELD": 1}, "POMC": {"ARC": 1}}
 COHORT_UNIT = {"NPY": "animal", "POMC": "cage"}
 RADII_UM = tuple(float(r) for r in range(20, 151, 10))
 ALPHA = 0.05
-CAVEAT = ("Exploratory. Random labelling holds every cell position fixed, so the comparison concerns "
-          "which cells are activated rather than where cells are. Water acquisition remains confounded "
-          "with condition.")
+CAVEATS = {
+    "NPY": ("Exploratory. The random-labelling null conditions on observed cell positions, not on "
+            "unobserved tissue or detection differences. Two Water animals share the sugar microscope, "
+            "but acquisition/staining batches remain confounded. Finite-sample label-permutation "
+            "validity requires exchangeable animal curves; studentizing F over radii does not "
+            "remove groupwise heteroscedasticity. Marker curves require two or more positive cells."),
+    "POMC": ("Exploratory ARC analysis with biological cages as independent units. The random-labelling "
+             "null conditions on observed cell positions; it does not remove acquisition or sampling "
+             "differences. Finite-sample label-permutation validity requires exchangeable cage curves; "
+             "studentizing F over radii does not remove groupwise heteroscedasticity.")}
+
+
+def resolve_geometry_path(value: str, bundle: Path) -> Path:
+    """Resolve archived Paper paths inside the current tree before old absolutes."""
+    path = Path(value)
+    paper = next((parent for parent in (bundle, *bundle.parents)
+                  if (parent / "scripts/shared").is_dir()), None)
+    candidates = [bundle / path] if not path.is_absolute() else []
+    if paper is not None:
+        if not path.is_absolute():
+            candidates.append(paper / path)
+        elif "Paper" in path.parts:
+            relative = Path(*path.parts[path.parts.index("Paper") + 1:])
+            candidates.insert(0, paper / relative)
+    candidates.append(path)
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate
+    raise FileNotFoundError(f"Missing geometry for {value}; restore the geometry inputs in the current Paper tree")
 
 
 def pair_statistics(xy: np.ndarray, labels: np.ndarray, radii: np.ndarray):
@@ -112,7 +138,7 @@ def animal_curves(bundle: Path, radii: np.ndarray, cohort: str = "NPY") -> pd.Da
         cells[column] = cells[column].astype(str).str.lower().isin(("true", "1"))
     rows = []
     for record in manifest.to_dict("records"):
-        with np.load(record["geometry_path"]) as archive:
+        with np.load(resolve_geometry_path(record["geometry_path"], bundle)) as archive:
             side_map, roi = archive["side"], archive["roi"]
         for region, code in regions.items():
             frame = cells.loc[cells.acquisition_id.eq(record["acquisition_id"]) & cells.region.eq(region)].copy()
@@ -170,6 +196,12 @@ def one_way_f(values: np.ndarray, labels: np.ndarray) -> np.ndarray:
 
 def envelope_test(values: np.ndarray, labels: np.ndarray, radii: np.ndarray, alpha: float = ALPHA) -> dict:
     """Studentized maximum-deviation global envelope over an exact enumeration."""
+    values, labels, radii = np.asarray(values, float), np.asarray(labels), np.asarray(radii, float)
+    if (values.ndim != 2 or values.shape != (len(labels), len(radii))
+            or not len(radii) or not np.isfinite(values).all() or not 0 < alpha < 1):
+        raise ValueError("The envelope needs finite unit-by-radius values, matching labels/radii and 0 < alpha < 1")
+    if not set(labels).issubset(CONDITIONS) or len(set(labels)) < 2:
+        raise ValueError("At least two known treatment groups are required")
     statistics = []
     observed_index = None
     for index, assigned in enumerate(permutation.allocations(labels)):
@@ -179,13 +211,16 @@ def envelope_test(values: np.ndarray, labels: np.ndarray, radii: np.ndarray, alp
     statistics = np.asarray(statistics, dtype=float)
     if observed_index is None:
         raise ValueError("The observed allocation was absent from the enumeration")
-    finite = np.isfinite(statistics)
-    centre = np.where(finite.all(axis=0), statistics.mean(axis=0), np.nanmean(np.where(finite, statistics, np.nan), axis=0))
-    spread = np.where(finite.all(axis=0), statistics.std(axis=0, ddof=1),
-                      np.nanstd(np.where(finite, statistics, np.nan), axis=0, ddof=1))
-    spread = np.where(spread > 0, spread, np.nan)
-    deviation = (statistics - centre) / spread
-    extremes = np.nanmax(deviation, axis=1)
+    if not np.isfinite(statistics).all():
+        raise ValueError("Undefined or infinite F in the permutation distribution; the studentized envelope is not estimable")
+    centre = statistics.mean(axis=0)
+    spread = statistics.std(axis=0, ddof=1)
+    informative = spread > 0
+    deviation = np.zeros_like(statistics)
+    deviation[:, informative] = (statistics[:, informative] - centre[informative]) / spread[informative]
+    # Invariant radii provide no evidence. An entirely invariant dataset must
+    # return p=1, not p=0 from comparisons against an all-NaN maximum.
+    extremes = deviation[:, informative].max(axis=1) if informative.any() else np.zeros(len(statistics))
     observed_extreme = extremes[observed_index]
     p_value = float(np.mean(extremes >= observed_extreme - 1e-12))
     ordered = np.sort(extremes)[::-1]
@@ -211,7 +246,9 @@ def run(bundle: Path, radii=RADII_UM, alpha: float = ALPHA, cohort: str = "NPY")
         for endpoint in ENDPOINTS:
             block = curves.loc[curves.endpoint.eq(endpoint) & curves.region.eq(region)]
             wide = block.pivot_table(index=["animal_id", "condition", "cage"], columns="radius_um", values="z")
-            usable = wide.dropna()
+            # pivot_table can drop a radius with no finite values. Reindex so
+            # that the claimed full distance range is actually required.
+            usable = wide.reindex(columns=radii).dropna()
             if eligibility is not None and cohort == "NPY":
                 allowed = eligibility.loc[eligibility.endpoint.eq(endpoint) & eligibility.include_in_main.astype(str).str.lower().isin(["true", "1"]), "animal_id"]
                 usable = usable.loc[usable.index.get_level_values("animal_id").isin(set(allowed))]
@@ -225,7 +262,7 @@ def run(bundle: Path, radii=RADII_UM, alpha: float = ALPHA, cohort: str = "NPY")
             base = dict(cohort=cohort, region=region, endpoint=endpoint,
                         radii_um=";".join(f"{r:g}" for r in radii), **counts,
                         test="studentized_maximum_deviation_global_envelope",
-                        unit=f"biological {unit}", selection_caveat=CAVEAT)
+                        unit=f"biological {unit}", selection_caveat=CAVEATS[cohort])
             if min(counts.values()) < 2 or len(usable) < 4:
                 results.append(dict(**base, status=f"fewer_than_two_estimable_{unit}s_in_a_condition",
                                     p_value=np.nan, allocations=0, extreme_allocations=0,
@@ -258,14 +295,15 @@ def run(bundle: Path, radii=RADII_UM, alpha: float = ALPHA, cohort: str = "NPY")
                 question="Do conditions differ in how activated cells are spatially arranged, at any distance in the examined range?",
                 curve="count of positive-positive pairs within r, standardized by its exact conditional random-labelling mean and standard deviation",
                 moments="exact; E[T]=P*p2 and E[T^2]=P*p2+2(Q*p3+R*p4) with p_k the probability that k named cells are all positive",
-                geometry="cancels between observed and expected because random labelling keeps every position fixed; no edge correction applies",
+                geometry="conditional on observed positions and field boundaries; no inference to unobserved tissue and no removal of cross-acquisition differences",
                 strata="acquisition by tissue side; independent under the null, so counts and moments add within an animal",
                 radii_um=[float(r) for r in radii],
                 test="one-way F at each radius, studentized by its permutation mean and standard deviation, maximum taken over radii",
-                null="exhaustive enumeration of animal-label allocations, the observed allocation included",
+                null=f"exhaustive enumeration of {unit}-label allocations, the observed allocation included; exact test validity requires exchangeability",
+                validity="Studentization is across radii in the permutation distribution, not a heteroscedastic groupwise Welch correction.",
                 multiplicity="the maximum over radii controls the error across the whole curve; Holm then covers the two endpoints",
                 alpha=alpha, cohort=cohort, unit=f"biological {unit}",
-                regions=list(REGION_CODES[cohort]), caveat=CAVEAT,
+                regions=list(REGION_CODES[cohort]), caveat=CAVEATS[cohort],
                 references=["Myllymaki et al. 2017 J. R. Stat. Soc. B 79:381",
                             "Baddeley, Rubak & Turner 2015, Spatial Point Patterns, chapters 7 and 14"])
     (bundle / "scale_resolved_plan.json").write_text(json.dumps(plan, indent=2) + "\n")

@@ -5,10 +5,36 @@ This study compares allulose, a sweetener with few calories, with sucrose
 brain activity after prior exposure, focusing on the hypothalamus, which helps
 regulate appetite.
 
-This repository provides the code and inputs to reproduce **all 13 figures
+This repository contains code and source tables for **all 13 figures
 (1–5 and S1–S8)**. It includes analysis scripts, figure source tables, saved
 human microglial labels and trained-model downloads. The workflow retrieves
-the large microscopy datasets from Zenodo.
+the archived microscopy datasets from Zenodo. Later figure updates are tracked
+separately from that fixed archive.
+
+## Current NPY and POMC statistics — 26 September 2026
+
+The current Figure 3 includes **five water, three sucrose and three allulose
+animals**. Its NPY-associated spatial comparison uses three estimable water
+animals and gives nominal p=0.0285714, **Holm p=0.0571429**. The Figure 4
+spatial comparisons use biological cages and are nonsignificant. These are
+exploratory analyses with acquisition/batch and independence limitations.
+
+Recompute all current cell-pair moments, spatial curves, envelope tests and
+NPY abundance statistics without downloading microscopy:
+
+```bash
+python3 -m venv .figures-venv
+.figures-venv/bin/python -m pip install -r requirements-figures.txt
+.figures-venv/bin/python figure_updates/scripts/shared/recheck_current_statistics.py
+```
+
+The [NPY inputs](figure_updates/Fig3/source_data/current_statistics/) and
+[POMC inputs](figure_updates/Fig4/source_data/current_statistics/) contain
+reviewed cell coordinates, classifications, geometry maps and reference
+results. This check begins after segmentation. The two September water
+acquisitions postdate the Zenodo archive; the archived download alone cannot
+recreate their raw-image segmentation. Old six-shell Figure 3–4 tests are
+historical and should not be substituted for these results.
 
 ## Figures and analyses
 
@@ -23,7 +49,7 @@ the large microscopy datasets from Zenodo.
 | S7 and S8 | Cellpose training and pilot-based sample-size estimates |
 
 The [figure guide](FIGURE_GUIDE.md) explains the analyses, source inputs and
-validation for each figure, including the DAPI ring method illustrated in
+validation for each figure, including the cell-pair illustration in
 [Figure 3G](figure_updates/Fig3/Figure_3_cFos_NPY.pdf).
 
 **Normal runs reuse the 203 saved human microglial choices without prompting.**
@@ -35,6 +61,9 @@ To classify the cells yourself and retrain, add the optional flag:
 [Download the 21 project-trained model binaries and 13 training-loss arrays](models/README.md).
 The model guide provides SHA-256 checksums, model roles and a download helper,
 and identifies the manuscript checkpoints and development candidates.
+The [model implementation notes](figure_updates/Fig5/source_data/deep_learning_implementation.md)
+describe TinyMorphCNN's architecture and 79,780 parameters, frozen DINOv2
+features, downstream fitting, training settings and computational hardware.
 
 ## Paper and data on Zenodo
 

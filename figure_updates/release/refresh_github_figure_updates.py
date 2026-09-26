@@ -86,6 +86,8 @@ def main() -> int:
     parser.add_argument("--zenodo-status", default=("Existing records still describe the archived release; new versions "
                                                     "have not been published for this update."))
     parser.add_argument("--no-additions", action="store_true", help="Refresh tracked files only; add nothing new")
+    parser.add_argument("--add-path", action="append", default=[],
+                        help="Explicit Paper-relative file or directory to add after review (repeatable)")
     args = parser.parse_args()
 
     repository = args.repository.expanduser().resolve()
@@ -97,6 +99,22 @@ def main() -> int:
     previous = {row["path"]: row["sha256"] for row in manifest["files"]}
 
     additions = [] if args.no_additions else candidate_additions(tracked)
+    if args.no_additions and args.add_path:
+        parser.error("--no-additions cannot be combined with --add-path")
+    for relative in args.add_path:
+        path = Path(relative)
+        if path.is_absolute() or ".." in path.parts:
+            parser.error(f"Expected a Paper-relative path without traversal: {relative}")
+        source = PAPER / path
+        if not source.exists() or source.is_symlink():
+            parser.error(f"Missing or linked explicit addition: {relative}")
+        candidates = source.rglob("*") if source.is_dir() else [source]
+        for item in candidates:
+            if not item.is_file() or any(part in SKIP_PARTS for part in item.relative_to(PAPER).parts):
+                continue
+            if item.is_symlink() or PAPER.resolve() not in item.resolve().parents:
+                parser.error(f"Explicit addition leaves the Paper tree: {item}")
+            additions.append(item.relative_to(PAPER).as_posix())
     rows, counts = [], {"unchanged": 0, "updated": 0, "added": 0, "removed": 0}
     for relative in sorted(tracked | set(additions)):
         source, target = PAPER / relative, payload / relative

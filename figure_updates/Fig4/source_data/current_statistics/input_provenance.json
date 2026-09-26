@@ -1,0 +1,397 @@
+{
+  "cohort": "POMC",
+  "source_analysis": "analyses/fig4_scale_resolved_20260925",
+  "source_cell_table_sha256": "9973c0bf8f836bef4d309aa99d4557f736be7d66e8cf46a5a84bf7ef65b8cd4c",
+  "source_acquisition_manifest_sha256": "b1cf331bfdb3e86ccc2469692f0350c633455ca7f6f9ba4f1999f29490ee88fe",
+  "cell_columns_retained": [
+    "acquisition_id",
+    "region",
+    "y_px",
+    "x_px",
+    "cell_id",
+    "in_tissue",
+    "accepted_legacy",
+    "marker_channel_present",
+    "x_um",
+    "y_um",
+    "is_cfos"
+  ],
+  "geometry": [
+    {
+      "acquisition_id": "FR6-1__S01",
+      "path": "inputs/geometry/FR6-1__S01.npz",
+      "sha256": "2c50805e8a666962ec595497340df83abb656307d1686ce3eeae2ef75dbef154"
+    },
+    {
+      "acquisition_id": "FR6-1__S02",
+      "path": "inputs/geometry/FR6-1__S02.npz",
+      "sha256": "87db4bce327b814d4e16694bbb731cc4f32d25134a30fda0931a5e9d95b7c5d9"
+    },
+    {
+      "acquisition_id": "FR6-1__S03",
+      "path": "inputs/geometry/FR6-1__S03.npz",
+      "sha256": "6ef468344d201d8e918af57bda40639fa461716f5b50ce7652810e76cacbacc2"
+    },
+    {
+      "acquisition_id": "FR6-1__S04",
+      "path": "inputs/geometry/FR6-1__S04.npz",
+      "sha256": "94ab92cbc6eb634a3e0d7657cc55fc74e1237b8b0c02114872b51338ce5d1831"
+    },
+    {
+      "acquisition_id": "FR6-1__S05",
+      "path": "inputs/geometry/FR6-1__S05.npz",
+      "sha256": "7792cbe4a8adfac01b61387b544c40c969a5e620ce6c1e2b6f0a1c9bf5083eee"
+    },
+    {
+      "acquisition_id": "FR6-2__S01",
+      "path": "inputs/geometry/FR6-2__S01.npz",
+      "sha256": "bdd11f78483f6f6aa9ff837c096da2aa7584ea1a81bf9bed53738aba43eb951c"
+    },
+    {
+      "acquisition_id": "FR6-2__S02",
+      "path": "inputs/geometry/FR6-2__S02.npz",
+      "sha256": "d3d3c0af79b88546bf47f4bca00473c5c92ec81ceff15eb23ea80d30704fb39b"
+    },
+    {
+      "acquisition_id": "FR6-2__S03",
+      "path": "inputs/geometry/FR6-2__S03.npz",
+      "sha256": "22ed514728f105dde3053e1293504e7117b865ab438b1befd694bb1e344f32f5"
+    },
+    {
+      "acquisition_id": "FR6-2__S04",
+      "path": "inputs/geometry/FR6-2__S04.npz",
+      "sha256": "2180195e623b0f3d5e28ec58d80c97730e76bc8dfb248c740e8b3eef0b69e511"
+    },
+    {
+      "acquisition_id": "FR6-2__S05",
+      "path": "inputs/geometry/FR6-2__S05.npz",
+      "sha256": "c33b572015d4ee1de29b0cfc47fbb4ed7ab53a4b6d567f4968a2c68c8fb4a70e"
+    },
+    {
+      "acquisition_id": "FR6-3__S01",
+      "path": "inputs/geometry/FR6-3__S01.npz",
+      "sha256": "19152607bb6ac45fc0ea29d5dd426a4f5660a36b9e41f9e5c1ba1b8cc102022c"
+    },
+    {
+      "acquisition_id": "FR6-3__S02",
+      "path": "inputs/geometry/FR6-3__S02.npz",
+      "sha256": "3ff751cbe81ff34b84c7451b7adc094a51ec37e8fa8cc439b2006212ca8f0408"
+    },
+    {
+      "acquisition_id": "FR6-3__S03",
+      "path": "inputs/geometry/FR6-3__S03.npz",
+      "sha256": "05ebaa4cbec5479fdf0dfecb77e94533b412ffcb7f8f4f85564a5a6e3d7226d2"
+    },
+    {
+      "acquisition_id": "FR6-3__S04",
+      "path": "inputs/geometry/FR6-3__S04.npz",
+      "sha256": "d099f192ed4a6689eb144f87dd2b4a5d5339fadf823c7613c04c1be9347de768"
+    },
+    {
+      "acquisition_id": "FR6-3__S05",
+      "path": "inputs/geometry/FR6-3__S05.npz",
+      "sha256": "a2aa02831b7f8c98bfb81b3eec3e768e01c2c2652cf490b87eeb6c3fe58b8d56"
+    },
+    {
+      "acquisition_id": "FR6-5__S01",
+      "path": "inputs/geometry/FR6-5__S01.npz",
+      "sha256": "510d4ad5651fab513a8f60961ab8ca118d9c5c752c118c7846b6beb6f6ed02aa"
+    },
+    {
+      "acquisition_id": "FR6-5__S02",
+      "path": "inputs/geometry/FR6-5__S02.npz",
+      "sha256": "0797e651ddef2c54180eb820211611db159bc69268357436c6aacdc607d1fa9a"
+    },
+    {
+      "acquisition_id": "FR6-5__S03",
+      "path": "inputs/geometry/FR6-5__S03.npz",
+      "sha256": "9f526a7b34a26e48f43f22c6af67336e9e98eb35f2cb35f4bb71ead2690eb1f3"
+    },
+    {
+      "acquisition_id": "FR6-5__S04",
+      "path": "inputs/geometry/FR6-5__S04.npz",
+      "sha256": "dbe7d468d161f93391f9ed3ca304fb6d66dd081dc039a652355191cce5c347e9"
+    },
+    {
+      "acquisition_id": "FR6-5__S05",
+      "path": "inputs/geometry/FR6-5__S05.npz",
+      "sha256": "7dd56e8540086ac47415dfa895466ee5e1246ad2b991726d9820bf2e114b792e"
+    },
+    {
+      "acquisition_id": "FR7-1__S01",
+      "path": "inputs/geometry/FR7-1__S01.npz",
+      "sha256": "80b5eaffa9372409f55e24c88cd5dac5fe864474df5462e62f4e14246ffe6f83"
+    },
+    {
+      "acquisition_id": "FR7-1__S02",
+      "path": "inputs/geometry/FR7-1__S02.npz",
+      "sha256": "1e297f5258064f4e41722492fbc346b12e42e62f0cc8510dc688a346a90a7a4b"
+    },
+    {
+      "acquisition_id": "FR7-1__S03",
+      "path": "inputs/geometry/FR7-1__S03.npz",
+      "sha256": "7d78c68353714e05ef5f3e373220a1b5f3e0674e996ae855b1c976818d0b3220"
+    },
+    {
+      "acquisition_id": "FR7-1__S04",
+      "path": "inputs/geometry/FR7-1__S04.npz",
+      "sha256": "4ed879b058d85f45df38f12c7713760ca30c9809d0626f032f29af4b91301096"
+    },
+    {
+      "acquisition_id": "FR7-1__S05",
+      "path": "inputs/geometry/FR7-1__S05.npz",
+      "sha256": "05f25a1d73002612412e45941f34cd8025271160c775b9485e7b61fb368ef7bc"
+    },
+    {
+      "acquisition_id": "FR7-2__S01",
+      "path": "inputs/geometry/FR7-2__S01.npz",
+      "sha256": "57dc427b3fc948f34e217a8ba4f3c915f883ea1b25bb955dcf22335c32b263e1"
+    },
+    {
+      "acquisition_id": "FR7-2__S02",
+      "path": "inputs/geometry/FR7-2__S02.npz",
+      "sha256": "6bb5bda504ae15d13cdcf148cc87002d22cf75647c1c4751c7f0d799f2b20a05"
+    },
+    {
+      "acquisition_id": "FR7-2__S03",
+      "path": "inputs/geometry/FR7-2__S03.npz",
+      "sha256": "f3b84986c490d3228129cc105adaa65bc1896c2f83d5d684f0f88b79efb04116"
+    },
+    {
+      "acquisition_id": "FR7-2__S04",
+      "path": "inputs/geometry/FR7-2__S04.npz",
+      "sha256": "13a5a1aef61eefc3bc71f532e95b2a37a3b695bb5cde40980d541e43f14f4499"
+    },
+    {
+      "acquisition_id": "FR7-2__S05",
+      "path": "inputs/geometry/FR7-2__S05.npz",
+      "sha256": "5e7b9e1c58b21d47f553d9ed6daea982fc1682e20506488792d398f416b56f93"
+    },
+    {
+      "acquisition_id": "FR721(R)__S01",
+      "path": "inputs/geometry/FR721(R)__S01.npz",
+      "sha256": "e43a4e7f3b5d0bb57db7ea33a9033ce2dcfbc29fa03fd616ec287f5cafe6047e"
+    },
+    {
+      "acquisition_id": "FR721(R)__S02",
+      "path": "inputs/geometry/FR721(R)__S02.npz",
+      "sha256": "acb4437b1489f3bf3198aa1b67904d91a9db801906ffd689fc618c8b12b2dc05"
+    },
+    {
+      "acquisition_id": "FR722__S01",
+      "path": "inputs/geometry/FR722__S01.npz",
+      "sha256": "2f3b5014845cae50e60fb0925bd8f8e530039ea6352393035277b284b1cd46e6"
+    },
+    {
+      "acquisition_id": "FR722__S02",
+      "path": "inputs/geometry/FR722__S02.npz",
+      "sha256": "1a14439ca1e86f78e3a3e85da54cf015d79e4fcce7b82461e195da5167a1e66c"
+    },
+    {
+      "acquisition_id": "FR722__S03",
+      "path": "inputs/geometry/FR722__S03.npz",
+      "sha256": "45ce6d5f97ba664792415770ca3074ff84761da69a66304b46fe5400b0865299"
+    },
+    {
+      "acquisition_id": "FR722__S04",
+      "path": "inputs/geometry/FR722__S04.npz",
+      "sha256": "520e49cca0b9b8051a560e64147f8adbc703cc3f8322f6503ae3a3a120e5c734"
+    },
+    {
+      "acquisition_id": "FR722__S05",
+      "path": "inputs/geometry/FR722__S05.npz",
+      "sha256": "3709ee260810223a4f4cd386dc4033af9730b93cde5889a3534776ed24cc5a48"
+    },
+    {
+      "acquisition_id": "FR722(R)__S01",
+      "path": "inputs/geometry/FR722(R)__S01.npz",
+      "sha256": "ba385ea9a7156d5df51c87d3cf3146830fb4b021337087fce06cc06b4c5cddce"
+    },
+    {
+      "acquisition_id": "FR722(R)__S02",
+      "path": "inputs/geometry/FR722(R)__S02.npz",
+      "sha256": "9eb3bd63600a4eb8cd367b82e708f2f7518d7e3cc7802a04be8c30e1310b377c"
+    },
+    {
+      "acquisition_id": "FR722(R)__S03",
+      "path": "inputs/geometry/FR722(R)__S03.npz",
+      "sha256": "43d32a8b9c86007a9f029c114bd442f813d76ef418f313084dedb97afb7c928a"
+    },
+    {
+      "acquisition_id": "FR722(RV)__S01",
+      "path": "inputs/geometry/FR722(RV)__S01.npz",
+      "sha256": "cf2332f663f762c4af450fc8db0f548379f9a6d573a3126f7bb9e901e387650d"
+    },
+    {
+      "acquisition_id": "FR722(RV)__S02",
+      "path": "inputs/geometry/FR722(RV)__S02.npz",
+      "sha256": "95e41fdcda187510a09efd22876278b66c42c69c4ead299f62b6f4cc9b458959"
+    },
+    {
+      "acquisition_id": "FR722(RV)__S03",
+      "path": "inputs/geometry/FR722(RV)__S03.npz",
+      "sha256": "c782ba44b80042eb206e1d9fc8f88bed93ce934d3517c773bbd33362be8e8447"
+    },
+    {
+      "acquisition_id": "FR722(RV)__S04",
+      "path": "inputs/geometry/FR722(RV)__S04.npz",
+      "sha256": "a8d40051df27018fd83518959bbf208a975180f2474db5b84c7a81d895756eb2"
+    },
+    {
+      "acquisition_id": "FR723__S01",
+      "path": "inputs/geometry/FR723__S01.npz",
+      "sha256": "526c053e93d5d27f61740c105f2a79f9bee77c52e667e675501e10a1b8a50d7b"
+    },
+    {
+      "acquisition_id": "FR723__S02",
+      "path": "inputs/geometry/FR723__S02.npz",
+      "sha256": "542f017e586b48c9e40c17293c14f4917267411d699e928b706770c4d8eb1391"
+    },
+    {
+      "acquisition_id": "FR723__S03",
+      "path": "inputs/geometry/FR723__S03.npz",
+      "sha256": "bc09b92d7d9f0cfe211edfd830153a77f240062628016c2f27f0dd2642b85fbe"
+    },
+    {
+      "acquisition_id": "FR723__S04",
+      "path": "inputs/geometry/FR723__S04.npz",
+      "sha256": "6fe126f66870c7395c8b6343944f8b7ec212bb9a463bba74782301b64f0463c8"
+    },
+    {
+      "acquisition_id": "FR723__S05",
+      "path": "inputs/geometry/FR723__S05.npz",
+      "sha256": "4f79ef8107545f5d634bd730a11d573b0b16be076b31f5566aaaffa70cb6cb6b"
+    },
+    {
+      "acquisition_id": "FR724__S01",
+      "path": "inputs/geometry/FR724__S01.npz",
+      "sha256": "2c5db2635f4e6d77622a7d740913879c8bf43f90a120cc47243d12b11727a7b2"
+    },
+    {
+      "acquisition_id": "FR724__S02",
+      "path": "inputs/geometry/FR724__S02.npz",
+      "sha256": "d63f31ad8e1ce7d4005c19241fe51b79fec620490c21157786feebefc4a0f1c0"
+    },
+    {
+      "acquisition_id": "FR724__S03",
+      "path": "inputs/geometry/FR724__S03.npz",
+      "sha256": "d0d540b6134243b4014ee995292eae277c5e948e4247fe3510fadb0eda7e4559"
+    },
+    {
+      "acquisition_id": "FR724__S04",
+      "path": "inputs/geometry/FR724__S04.npz",
+      "sha256": "54047b3297fc96df3a38a59aac43b8befab72d58e33ecf92275ef838643a9cdd"
+    },
+    {
+      "acquisition_id": "FR724__S05",
+      "path": "inputs/geometry/FR724__S05.npz",
+      "sha256": "f00997cd04a367d660b6169d77e2dee5809ad75675f7fbde6402a4af82e08ea1"
+    },
+    {
+      "acquisition_id": "FR724(R)__S01",
+      "path": "inputs/geometry/FR724(R)__S01.npz",
+      "sha256": "8b1551a92a13a001ffa389e707dc962af821da5762427fcd43aa4d16cf139088"
+    },
+    {
+      "acquisition_id": "FR724(R)__S02",
+      "path": "inputs/geometry/FR724(R)__S02.npz",
+      "sha256": "bb73125d371873edb124bf747f74727c666e22a8da14c5a419c16f61b0e1c5c0"
+    },
+    {
+      "acquisition_id": "FR7-3__S01",
+      "path": "inputs/geometry/FR7-3__S01.npz",
+      "sha256": "eed0aaec4e01f5fd206d765d89a2404586651aafb9abfd42daa68285822ca2e4"
+    },
+    {
+      "acquisition_id": "FR7-3__S02",
+      "path": "inputs/geometry/FR7-3__S02.npz",
+      "sha256": "4a38c5b6c2f9a5f9911e61b6611a6f066de1f8e31125362d4419c51d51bcc654"
+    },
+    {
+      "acquisition_id": "FR7-3__S03",
+      "path": "inputs/geometry/FR7-3__S03.npz",
+      "sha256": "402595122df43b4eaa71a00796d193fc4b42289f3376601599c19856d8873c4e"
+    },
+    {
+      "acquisition_id": "FR7-3__S04",
+      "path": "inputs/geometry/FR7-3__S04.npz",
+      "sha256": "824e75aabf33cf198d6dfb02c489dd4905f39073007b663d9d5305f4b84f537d"
+    },
+    {
+      "acquisition_id": "FR7-3__S05",
+      "path": "inputs/geometry/FR7-3__S05.npz",
+      "sha256": "47096ac9f71c49c7ea40321c0ab4c70e3cc762283644c4e2d25bff2e9187ee5a"
+    },
+    {
+      "acquisition_id": "FR7-4__S01",
+      "path": "inputs/geometry/FR7-4__S01.npz",
+      "sha256": "3a4bf6d6d7aa20b703feb2884ffd68bdf5aebbc7498979b79794989886825eab"
+    },
+    {
+      "acquisition_id": "FR7-4__S02",
+      "path": "inputs/geometry/FR7-4__S02.npz",
+      "sha256": "aeac5e2803d9b67922ccd5137bb50834aea4a313a348c6f2136666c0be9d7e3a"
+    },
+    {
+      "acquisition_id": "FR7-4__S03",
+      "path": "inputs/geometry/FR7-4__S03.npz",
+      "sha256": "75cd91391f1049afa11d4c941286dcc0644af514d22385f9b6f8800b2adcca86"
+    },
+    {
+      "acquisition_id": "FR7-4__S04",
+      "path": "inputs/geometry/FR7-4__S04.npz",
+      "sha256": "0f56efb412b651412320ab5fb5fe4e62d0b4396953aa67d84d7b2203beddbd32"
+    },
+    {
+      "acquisition_id": "FR7-4__S05",
+      "path": "inputs/geometry/FR7-4__S05.npz",
+      "sha256": "d36f8c62b0c47ae05c1d5f144e570222ca183db153cd72f10a22b2ae653c5e2a"
+    },
+    {
+      "acquisition_id": "FR8-1(R)__S01",
+      "path": "inputs/geometry/FR8-1(R)__S01.npz",
+      "sha256": "5fe270e031deb78bfb687302f4edbceff010e2e927e76b62860c1b1e1ad18738"
+    },
+    {
+      "acquisition_id": "FR8-1(R)__S02",
+      "path": "inputs/geometry/FR8-1(R)__S02.npz",
+      "sha256": "2e56f50d4e0576159495345948f8370aad4ebbe1c9b9c4b0e9a881235ba571f8"
+    },
+    {
+      "acquisition_id": "FR8-1(R)__S03",
+      "path": "inputs/geometry/FR8-1(R)__S03.npz",
+      "sha256": "a0a5218e1c010ec1fafb59508a0981d1115fab4cb6aa9c2864d111d241a776f3"
+    },
+    {
+      "acquisition_id": "FR8-1(R)__S04",
+      "path": "inputs/geometry/FR8-1(R)__S04.npz",
+      "sha256": "3e7910cfd751f610a3a45d5f5473baaa5f27d2e89c7da93f192e04680953b37a"
+    },
+    {
+      "acquisition_id": "FR8-3__S01",
+      "path": "inputs/geometry/FR8-3__S01.npz",
+      "sha256": "ae19785659fd9704c368dd7e96bcae0dc987aff40d7ee234ddb3c41ef07e69e7"
+    },
+    {
+      "acquisition_id": "FR8-3__S02",
+      "path": "inputs/geometry/FR8-3__S02.npz",
+      "sha256": "3b843c972dc1f827b02e32fc422841ffcf1a64cb21627b6ee5a67d2891acc8f1"
+    },
+    {
+      "acquisition_id": "FR8-3__S03",
+      "path": "inputs/geometry/FR8-3__S03.npz",
+      "sha256": "10100c77bb2a516d4c705084e28563317c016cd6017d63e35a86ec78ba07be83"
+    },
+    {
+      "acquisition_id": "FR8-3__S04",
+      "path": "inputs/geometry/FR8-3__S04.npz",
+      "sha256": "6f9d8a5f9cb371e2c0c8239133f23e6536cc5555af03ceaf32e125ec5527283c"
+    },
+    {
+      "acquisition_id": "FR8-3__S05",
+      "path": "inputs/geometry/FR8-3__S05.npz",
+      "sha256": "207fbd21157bf961fbd3f5a0153e13d9cb0cc162c6b40d5dc25e9f469d8e7005"
+    }
+  ],
+  "scope": "Numerical reproduction after reviewed segmentation and classification; raw microscopy is not included."
+}

@@ -39,6 +39,10 @@ jobs:
           cache-dependency-path: requirements-figures.txt
       - name: Install figure environment
         run: python -m pip install -r requirements-figures.txt
+      - name: Test statistical edge cases and portable Figure S3 paths
+        run: python -m unittest discover -s figure_updates/scripts/shared -p 'test_fig*py' -v
+      - name: Recompute current NPY and POMC statistics from cell coordinates
+        run: python figure_updates/scripts/shared/recheck_current_statistics.py
       - name: Test native microscopy inside marker ROIs
         run: python -m unittest discover -s figure_updates/Fig4/tests -p test_pomc_microscopy.py -v
       - name: Recompute and render supplementary Figure S6
