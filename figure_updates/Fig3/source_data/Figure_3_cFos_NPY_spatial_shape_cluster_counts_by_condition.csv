@@ -1,0 +1,7 @@
+cohort,endpoint,region,condition,total_clusters,clustered_positives,total_positive_cells,animals,animals_with_clusters,marker_available_animals,interpretation,recorded_animals,analysis_set
+NPY,cfos,FIELD,Allulose,97,347,582,3,3,3,"Descriptive totals; animals/cages, not clusters, are the comparison units",3,endpoint-specific IQR included and estimable animals
+NPY,cfos,FIELD,Sucrose,18,41,157,3,3,3,"Descriptive totals; animals/cages, not clusters, are the comparison units",3,endpoint-specific IQR included and estimable animals
+NPY,cfos,FIELD,Water,269,809,1479,5,5,5,"Descriptive totals; animals/cages, not clusters, are the comparison units",5,endpoint-specific IQR included and estimable animals
+NPY,marker_cfos,FIELD,Allulose,43,259,288,3,3,3,"Descriptive totals; animals/cages, not clusters, are the comparison units",3,endpoint-specific IQR included and estimable animals
+NPY,marker_cfos,FIELD,Sucrose,7,16,36,3,2,3,"Descriptive totals; animals/cages, not clusters, are the comparison units",3,endpoint-specific IQR included and estimable animals
+NPY,marker_cfos,FIELD,Water,21,127,151,3,2,3,"Descriptive totals; animals/cages, not clusters, are the comparison units",5,endpoint-specific IQR included and estimable animals

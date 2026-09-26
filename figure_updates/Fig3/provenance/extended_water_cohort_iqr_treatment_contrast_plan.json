@@ -1,0 +1,23 @@
+{
+  "schema": "fig3-water-extended-pairwise-spatial-v1",
+  "experimental_unit": "biological animal",
+  "comparisons": [
+    "Allulose - Water",
+    "Allulose - Sucrose",
+    "Water - Sucrose"
+  ],
+  "endpoints": [
+    "cfos",
+    "marker_cfos"
+  ],
+  "metrics": [
+    "core_enrichment",
+    "cluster_excess"
+  ],
+  "statistic": "two-sided absolute difference of animal means",
+  "permutations": "all distinct pairwise animal-label allocations, conditional on fixed eligible animals",
+  "multiplicity": "Holm separately across six Figure 3 comparisons per metric (two endpoints by three comparisons)",
+  "other_figures_contribute": false,
+  "graph_panel_annotation": "Observed clustering fraction is shown, but its comparison uses observed-minus-expected clustering excess",
+  "selection_caveat": "Exploratory after endpoint-specific within-condition IQR exclusion; filter held fixed during permutations, not selection-adjusted inference. Small groups give unstable quartiles; flags do not establish measurement error."
+}

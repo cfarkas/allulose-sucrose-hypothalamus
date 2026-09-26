@@ -1,5 +1,1 @@
-Supplemental Figure 3 endpoint retained after removal from the main plate
-Endpoint: NPY-positive nuclei / DAPI nuclei (npy_over_dapi).
-The values are animal-level ratios; the percent column is 100 times the ratio.
-Statistics are the original ordinary one-way ANOVA plus raw exact two-sided MWU receipts.
-This endpoint is intentionally not displayed in panels D-G and has not been discarded.
+Supplementary NPY/DAPI abundance for the 11 cohort animals (Water/Sucrose/Allulose n=5/3/3). Not a panel in the master. Animal points are count-pooled within animal, with no excluded outliers. ANOVA and exact two-sided Mann-Whitney p-values are nominal, unadjusted and exploratory across acquisition/cohort. See Figure_3_cFos_NPY_spatial_shape_README.md for methods and limitations.

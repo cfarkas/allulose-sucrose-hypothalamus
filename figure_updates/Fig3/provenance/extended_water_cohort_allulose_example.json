@@ -1,0 +1,276 @@
+{
+  "schema": "fig3_allulose_anatomical_example_v1",
+  "animal_id": "E8_FR6-4",
+  "condition": "Allulose",
+  "same_field_as_panel": "D",
+  "analysis_changed": false,
+  "new_segmentation": false,
+  "display_frame_yx": [
+    866,
+    1374
+  ],
+  "orientation": "Unchanged reviewed Panel-D frame; dorsal at top, ventral median eminence at bottom",
+  "display_to_native_xy": [
+    [
+      0.991402,
+      -0.125351,
+      59.858489
+    ],
+    [
+      -0.125762,
+      -0.991309,
+      949.166712
+    ],
+    [
+      -1e-06,
+      0.0,
+      1.0
+    ]
+  ],
+  "native_to_display_xy": [
+    [
+      0.9928076660637288,
+      -0.1255405062889114,
+      59.73090281886994
+    ],
+    [
+      -0.12500152597369799,
+      -0.9929607556449815,
+      949.9676980480622
+    ],
+    [
+      9.928076660637288e-07,
+      -1.2554050628891138e-07,
+      1.0000597309028187
+    ]
+  ],
+  "native_pixel_um_xy": [
+    0.664212669961432,
+    0.664212669961432
+  ],
+  "display_um_per_px": 0.664212669961432,
+  "display_rule": "Complete reviewed bilateral window; exact homogeneous point transform; accepted display-only tissue and ventricular outlines",
+  "marker_cells_native": 494,
+  "marker_cells_visible": 492,
+  "double_positive_cells_native": 131,
+  "double_positive_cells_visible": 131,
+  "graph_checks": [
+    {
+      "hemifield": "SIDE_A",
+      "N": 265,
+      "m": 75,
+      "graph_edges": 922,
+      "cluster_count": 10,
+      "clustered_cells": 64,
+      "membership_identical": true
+    },
+    {
+      "hemifield": "SIDE_B",
+      "N": 229,
+      "m": 56,
+      "graph_edges": 796,
+      "cluster_count": 8,
+      "clustered_cells": 50,
+      "membership_identical": true
+    }
+  ],
+  "contours": [
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/contours/NPY_E8_FR6-4__S01_FIELD_side1.npz",
+      "sha256": "71b2fd7c4d1694e514505df8d0212d16499844859172caeb136a5af05ec71c46"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/contours/NPY_E8_FR6-4__S01_FIELD_side2.npz",
+      "sha256": "bb562d4583056ef36f8f5bdd77cbe8175d35d9dc1738bdf8f68923419b9028a3"
+    }
+  ],
+  "tissue_outline": {
+    "fill_mask_policy": "original registered DAPI-supported tissue mask controls background fill",
+    "outline_mask_policy": "scipy.ndimage.binary_fill_holes(original tissue mask) used for display contour only",
+    "original_area_px": 1096130,
+    "outline_area_px": 1100602,
+    "holes_filled_px": 4472,
+    "outline_binary_sha256": "d8053c8bffd6fb5e7b44d9623e9cc786c9c14beed4f8bece1073910a3b0b660a",
+    "contour_path_counts": {
+      "external": 1,
+      "tree": 1
+    },
+    "internal_gray_contour_path_count": 0,
+    "analysis_role": "display only; never an anatomical analysis ROI or denominator"
+  },
+  "ventricle_outline": {
+    "role": "display-only ventricular annotation; never an analysis ROI or denominator",
+    "base_source": "hash-bound registered Allulose raw DAPI TIFF",
+    "common_frame_shape_yx": [
+      866,
+      1374
+    ],
+    "common_frame_um_per_px": 0.664212669961432,
+    "raw_display_percentiles_0_5_99_5": [
+      1.5751953125,
+      255.0
+    ],
+    "gaussian_sigma_px": 1.5055418922648158,
+    "base_threshold_normalized_intensity_lte": 0.08,
+    "search_bounds_xyxy_half_open": [
+      412,
+      0,
+      961,
+      762
+    ],
+    "base_component_selection": "unique largest seed-intersecting component; top touch allowed; ROI lateral/bottom touch rejected",
+    "raw_dapi_base_component": {
+      "source": "registered raw DAPI TIFF, normalized/smoothed low-intensity component",
+      "component_id": 5,
+      "area_px": 62387,
+      "bbox_yxyx_half_open": [
+        0,
+        621,
+        653,
+        861
+      ],
+      "centroid_yx": [
+        377.91698591052625,
+        705.0579127061727
+      ],
+      "binary_sha256": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973",
+      "contour_path_counts_before_hole_fill": {
+        "external": 1,
+        "tree": 1
+      }
+    },
+    "superior_completion": {
+      "applied": false,
+      "reason": "Allulose base raw-DAPI component already reaches the superior frame edge",
+      "analysis_role": "display annotation only; never an analysis ROI or denominator"
+    },
+    "source_final_after_completion_and_hole_fill": {
+      "area_px": 62387,
+      "bbox_yxyx_half_open": [
+        0,
+        621,
+        653,
+        861
+      ],
+      "centroid_yx": [
+        377.91698591052625,
+        705.0579127061727
+      ],
+      "binary_sha256": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973",
+      "connected_components_8": 1,
+      "contour_path_counts": {
+        "external": 1,
+        "tree": 1
+      }
+    },
+    "human_in_loop_annotation": {
+      "method": "human-in-the-loop closed polygon in the exact registered common frame",
+      "analysis_role": "display annotation only; never an analysis ROI or denominator",
+      "receipt_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/allulose_ventricle_receipt.json",
+      "receipt_sha256": "12f33f21d9237283165d00841dd879f89ae43db0d2aed8625a6a0c1f7488c8e5",
+      "mask_path": "Fig3/hil_review/ventricle_cartoon_20260827_v1/allulose_ventricle_mask.png",
+      "mask_file_sha256": "c1533b1420c3b944ce5308d9643a03f10732d0fb2259e0953fda4dce8faec70f",
+      "reviewer": "Carlos Farkas",
+      "session": "1",
+      "accepted_at_utc": "2026-08-27T19:19:03.204734+00:00",
+      "notes": "",
+      "polygon_vertex_count": 45,
+      "raster_vertices_sha256_i32_le": "2a94e6594ba80f4c3294cc90b1ec557a13914344eea8b905fa029b8a143f8cc9",
+      "source_binding": {
+        "dapi_tiff_sha256": "59318a5c319d2d72c5aa3bc672742852149ea9038cdd143b0df2b5c5e9fe1f6b",
+        "registered_dapi_binary_sha256": "99d8d5e4c45d9e3f475ca25ae1fbf04f697886452b0a4345fdb7375cd82640aa",
+        "raw_dapi_lumen_source_binary_sha256": "c4521d0f26dc6c1eb160343ef6f91a1516d16c53f1e65f6b8336e8977490b973"
+      },
+      "mask_geometry": {
+        "area_px": 61652,
+        "bbox_yxyx_half_open": [
+          2,
+          629,
+          648,
+          858
+        ],
+        "centroid_yx": [
+          380.3980892752871,
+          706.6906831895153
+        ],
+        "binary_sha256": "456634e39b1cf977c71c613e7cd337b4aeb699ac83f1cfca29d021bd5dea7ea2",
+        "connected_components_8": 1,
+        "contour_path_counts": {
+          "external": 1,
+          "tree": 1
+        }
+      }
+    },
+    "hole_fill_before_contouring": true,
+    "selected_area_px": 61652,
+    "selected_bbox_yxyx_half_open": [
+      2,
+      629,
+      648,
+      858
+    ],
+    "selected_centroid_yx": [
+      380.3980892752871,
+      706.6906831895153
+    ],
+    "selected_binary_sha256": "456634e39b1cf977c71c613e7cd337b4aeb699ac83f1cfca29d021bd5dea7ea2",
+    "connected_components_8": 1,
+    "contour_path_counts": {
+      "external": 1,
+      "tree": 1
+    },
+    "render": "opaque white corrected midline interior followed by exactly one black outer boundary; no internal subdivision",
+    "interior_cleanup": {
+      "opaque_white_fill": true,
+      "covers_dapi_objects_and_prior_outline_pixels": true,
+      "white_backing_stroke": false
+    }
+  },
+  "hil_receipt": {
+    "path": "/media/server/STORAGE/Apotome/Paper/Fig3/hil_review/ventricle_cartoon_20260827_v1/allulose_ventricle_receipt.json",
+    "sha256": "12f33f21d9237283165d00841dd879f89ae43db0d2aed8625a6a0c1f7488c8e5"
+  },
+  "native_sources": {
+    "dapi_tiff": {
+      "path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_dapi.tif",
+      "sha256": "59318a5c319d2d72c5aa3bc672742852149ea9038cdd143b0df2b5c5e9fe1f6b"
+    },
+    "npy_tiff": {
+      "path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_gfp.tif",
+      "sha256": "4c21c8f06844f488757ce9c8e9b82b33fc7e430c6b9fe8d3e45f0a6bac897da1"
+    },
+    "cfos_tiff": {
+      "path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_fos.tif",
+      "sha256": "a545e444fa819068b6ff0b1ab7d7488df543cc15f3f172126e03620a048de3c7"
+    },
+    "dapi_seg": {
+      "path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_dapi_seg.npy",
+      "sha256": "f3ba80789acb7a2d1b79241236fef7fbee11d66a3f3db7c8f959e8c077965314"
+    },
+    "npy_seg": {
+      "path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_gfp_seg.npy",
+      "sha256": "81978bcca94d0e74e6cdd5d53291283aa54e6ab9288d4531072ac4cf889c0d14"
+    },
+    "cfos_seg": {
+      "path": "/media/server/STORAGE/Apotome/Paper/Fig3/raw/legacy_experiment_2025_07_28/E8-FR6-4_ALULOSA_fos_seg.npy",
+      "sha256": "b0df57d75a7307980a81cb34d280044e3cf6ea7b54fe82b12899838577a51dca"
+    }
+  },
+  "input_sha256": {
+    "inputs/NPY_cells.csv.gz": "d1a20abcd6f7deb1151f43823d6847249cdab932f3d6e5bb6325f4ebe7d81d70",
+    "inputs/NPY_acquisition_manifest.csv": "20390665ec743c66930bc0e1093fcbdf6b1a6998b488f26568fc50918bb3f4d6",
+    "stratum_metrics.csv": "6fbf3f0f203bb454757313848ec42d4199653f8c9376a64b101b53ff0eaf1c12",
+    "cluster_membership.csv.gz": "567079a1856520e1ac7de294d80ce8934e2ab47c65fa89737ee9e41891612dc2"
+  },
+  "geometry": {
+    "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/geometry/E8_FR6-4__S01_geometry.npz",
+    "sha256": "8b9a5d463ec0cbe9af8ab498deb65633d6271bacc04106c6b983232832f5768d"
+  },
+  "cartoon_script_sha256": "6f8557521291fecdfef14a1372d41d90d2347ba762dffc106e4553a3dd0f1967",
+  "module_sha256": "d902a6d9ab46fff647542733d91497a1cce3ea26a0d03fa27fed616befb5595e",
+  "example_sha256": "9aec07c55e0e5b0fe695b9e0e51e3482ca4c9ab5809a627bd3b4eabbdd78c44c",
+  "legacy_example_preserved": {
+    "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/example_npy.npz",
+    "sha256": "16bccb4d9b5051cc4fc1cba5f361364b35ef53f3441159696664f9046aec7a0d"
+  }
+}

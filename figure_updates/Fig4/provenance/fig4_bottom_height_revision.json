@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "scope": "Only Figure 4 I/J heights and comparison annotations changed",
+  "height_factor": 1.33,
+  "A_H_standalone_files_byte_identical": 32,
+  "A_H_master_png_pixels_unchanged_above_y": 6793,
+  "A_H_master_pdf_max_pixel_difference_at_144dpi": 0,
+  "A_H_physical_coordinates_and_scale_unchanged": true,
+  "source_tables_byte_identical": true,
+  "no_segmentation_or_statistical_recalculation": true,
+  "source_table_hashes": {
+    "/media/server/STORAGE/Apotome/Paper/analyses/spatial_shape_20260920/unit_metrics.csv": "c89f0f40cc404ff335f489a27214f34f821384b733688612561ea04adface86c",
+    "/media/server/STORAGE/Apotome/Paper/analyses/spatial_shape_20260920/treatment_contrasts.csv": "e4a22dddf4597340551c90d0690474f2cfc831ef88faf391ec7b2c2b4b99a16e"
+  },
+  "panels": [
+    {
+      "panel": "I",
+      "language": "en",
+      "old_width_pt": 450.2756652832031,
+      "new_width_pt": 450.2756652832031,
+      "old_height_pt": 244.17356872558594,
+      "new_height_pt": 324.75084640502934,
+      "height_ratio": 1.33,
+      "png_size": [
+        3752,
+        2705
+      ],
+      "isotropic_plot_scale": 0.9783198161984387,
+      "statistics_recomputed": false
+    },
+    {
+      "panel": "I",
+      "language": "es",
+      "old_width_pt": 450.2756652832031,
+      "new_width_pt": 450.2756652832031,
+      "old_height_pt": 244.17356872558594,
+      "new_height_pt": 324.75084640502934,
+      "height_ratio": 1.33,
+      "png_size": [
+        3752,
+        2705
+      ],
+      "isotropic_plot_scale": 0.9783198161984387,
+      "statistics_recomputed": false
+    },
+    {
+      "panel": "J",
+      "language": "en",
+      "old_width_pt": 450.2756652832031,
+      "new_width_pt": 450.2756652832031,
+      "old_height_pt": 244.17356872558594,
+      "new_height_pt": 324.75084640502934,
+      "height_ratio": 1.33,
+      "png_size": [
+        3752,
+        2705
+      ],
+      "isotropic_plot_scale": 0.9783198161984387,
+      "statistics_recomputed": false
+    },
+    {
+      "panel": "J",
+      "language": "es",
+      "old_width_pt": 450.2756652832031,
+      "new_width_pt": 450.2756652832031,
+      "old_height_pt": 244.17356872558594,
+      "new_height_pt": 324.75084640502934,
+      "height_ratio": 1.33,
+      "png_size": [
+        3752,
+        2705
+      ],
+      "isotropic_plot_scale": 0.9783198161984387,
+      "statistics_recomputed": false
+    }
+  ],
+  "master_height_increase_pt": 80.57727767944338,
+  "master_size_pt": [
+    965.7140502929688,
+    1144.2659912109375
+  ],
+  "master_png_size": [
+    8050,
+    9536
+  ],
+  "comparison_source": "/media/server/STORAGE/Apotome/Paper/analyses/spatial_shape_20260920/treatment_contrasts.csv",
+  "render_script_sha256": "29661eab3fa5f10d2d37330f69cfbf2875218cfae73650862b176c600aab35ea",
+  "assembly_script_sha256": "7e76f9706436f771ef38b629dd21e2c08299b64e434da0b043d357c129e15293",
+  "render_only_revision": true,
+  "bilingual_comparison_labels_verified_against_existing_table": {
+    "nominal_p": {
+      "NS": 22,
+      "NE": 10,
+      "significant": 0
+    },
+    "Holm": {
+      "NS": 22,
+      "NE": 10,
+      "significant": 0
+    }
+  }
+}

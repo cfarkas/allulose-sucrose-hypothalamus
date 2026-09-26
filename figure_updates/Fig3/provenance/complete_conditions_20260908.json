@@ -16,31 +16,17 @@
     "B": "water nuclear assignments",
     "C": "sucrose nuclear assignments",
     "D": "allulose nuclear assignments",
-    "E": "whole-field c-FOS/DAPI",
-    "F": "c-FOS-positive/NPY-positive",
-    "G": "DAPI quantile rings near an enlarged third-ventricle floor; one occurrence equation identifying H/I numerators",
-    "H": "c-FOS/DAPI spatial profile",
-    "I": "double-positive/DAPI spatial profile"
+    "E": "c-FOS-positive nuclei as a percentage of DAPI nuclei. Counts are summed across each animal's fields/sections before computing its percentage; animals have equal weight. Water/Sucrose/Allulose: n=5/3/3. Circles denote animals from the original experiment; bars show mean ± SD. The within-condition 1.5×IQR rule was applied separately by endpoint to this experiment; no outliers were flagged and all 11 animals were retained. The Water group is far more dispersed than either sugar group and its spread coincides with acquisition batch, so the omnibus does not assume a common variance. Welch's robust F with its null enumerated over all 9240 distinct animal allocations: F=7.642, p=0.075. Brown–Forsythe test of equal variance: p=0.375. The Welch F approximation gives p=0.042; its degrees of freedom are estimated from three-animal variances and it is anti-conservative at these group sizes. Exact studentized permutation (Welch t over every animal-label allocation): Water–Sucrose: p=0.429; Water–Allulose: p=0.250; Sucrose–Allulose: p=0.100. At these group sizes no exact test can return p<0.1. Equal-variance one-way ANOVA (sensitivity): F=2.367, p=0.156. Two-sided Mann–Whitney tests use exact animal-label enumeration with average ranks for ties: Water–Sucrose: p=1.000; Water–Allulose: p=0.393; Sucrose–Allulose: p=0.100; p values are nominal, without adjustment, preserving the original abundance analysis. The pooled cohort/platform comparison is exploratory; condition and acquisition are incompletely balanced, so these comparisons do not isolate a treatment effect. Accepted cell ROIs and the Figure 3 association rules are retained; no new segmentation or ROI redrawing is performed.",
+    "F": "c-FOS/NPY double-positive nuclei as a percentage of NPY-positive nuclei. Counts are summed across each animal's fields/sections before computing its percentage; animals have equal weight. Water/Sucrose/Allulose: n=5/3/3. Circles denote animals from the original experiment; bars show mean ± SD. The within-condition 1.5×IQR rule was applied separately by endpoint to this experiment; no outliers were flagged and all 11 animals were retained. The Water group is far more dispersed than either sugar group and its spread coincides with acquisition batch, so the omnibus does not assume a common variance. Welch's robust F with its null enumerated over all 9240 distinct animal allocations: F=82.34, p=0.017. Brown–Forsythe test of equal variance: p=0.332. The Welch F approximation gives p=0.00021; its degrees of freedom are estimated from three-animal variances and it is anti-conservative at these group sizes. Exact studentized permutation (Welch t over every animal-label allocation): Water–Sucrose: p=0.464; Water–Allulose: p=0.196; Sucrose–Allulose: p=0.100. At these group sizes no exact test can return p<0.1. Equal-variance one-way ANOVA (sensitivity): F=2.548, p=0.139. Two-sided Mann–Whitney tests use exact animal-label enumeration with average ranks for ties: Water–Sucrose: p=0.786; Water–Allulose: p=0.786; Sucrose–Allulose: p=0.100; p values are nominal, without adjustment, preserving the original abundance analysis. The pooled cohort/platform comparison is exploratory; condition and acquisition are incompletely balanced, so these comparisons do not isolate a treatment effect. Accepted cell ROIs and the Figure 3 association rules are retained; no new segmentation or ROI redrawing is performed.",
+    "G": "Example from the bilateral Allulose hypothalamic field E8_FR6-4, also shown in D. The accepted registered display frame, external tissue outline and ventricular polygon are reused; the third ventricle (3V) is dorsal and the median eminence (ME) is ventral. These outlines are display annotations and do not change analysis regions or denominators. Gray points are NPY-positive centroids without c-FOS; orange points are c-FOS/NPY double-positive centroids. The 156 orange segments join every pair of activated cells closer than 20 um, the smallest radius the analysis sweeps. They are counted pairs, not anatomical connections, and proximity does not establish functional connectivity. At larger radii the counted pairs fill the field and the picture would stop showing structure. The four black dashed circles, centred on one activated cell marked in white, show four of the radii panels H and I sweep, at true scale and labelled above in um: 20, 70, 110, 150 um. Every activated cell inside a circle forms one counted pair with the central cell; for this cell the counts are 5, 17, 33, 43, and how they grow with r is what the curves in H and I summarise. The cell was chosen as the one with the median number of neighbours at the smallest radius among activated cells whose largest circle fits inside the displayed frame, so it is typical rather than selected for effect. The analysis repeats that count for every activated cell, not only the marked one, and within each tissue side. The accepted bilateral window displays 492 of 494 NPY centroids and all 131 double positives; two NPY-only centroids lie outside the original display crop and remain in the analysis. Scale bar, 100 um. This is a descriptive method example, not an individual statistical comparison.",
+    "H": "Scale-resolved spatial organization of c-FOS⁺. Left: for each animal, the observed number of positive–positive pairs closer than r, expressed in standard deviations from its own random-labelling null. Random labelling holds every cell position, stratum and positive count fixed and permutes only which cells are positive; the null mean and variance are exact, so field geometry cancels and no edge correction applies. Pairs are counted within all DAPI-associated centroids, by acquisition and tissue side. Thin lines are animals, thick lines are condition means, and the reference is 0. Right: the between-condition F at each radius with its global 95% envelope, obtained by exhaustive enumeration of 9240 animal-label allocations. The test is the studentized maximum deviation over the whole 20–150 µm range, so one p-value covers every distance: p=0.220, Holm p=0.220 with n=5/3/3 estimable animals. At these group sizes no exact test can return p<0.00022. The observed curve does not exit the envelope at any radius. The earlier scalar measures are retained and tested separately, with no joint test: density-contour enrichment: exact three-condition test over 9240 allocations, p=0.193, Holm p=0.580; Allulose–Sucrose within the shared platform, p=0.200, Holm p=0.600. clustering excess: exact three-condition test over 9240 allocations, p=0.459, Holm p=0.580; Allulose–Sucrose within the shared platform, p=0.200, Holm p=0.600. Proximity does not establish functional connectivity, and Water acquisition remains confounded with condition.",
+    "I": "Scale-resolved spatial organization of c-FOS⁺NPY⁺. Left: for each animal, the observed number of positive–positive pairs closer than r, expressed in standard deviations from its own random-labelling null. Random labelling holds every cell position, stratum and positive count fixed and permutes only which cells are positive; the null mean and variance are exact, so field geometry cancels and no edge correction applies. Pairs are counted within NPY-positive centroids, by acquisition and tissue side. Thin lines are animals, thick lines are condition means, and the reference is 0. Right: the between-condition F at each radius with its global 95% envelope, obtained by exhaustive enumeration of 1680 animal-label allocations. The test is the studentized maximum deviation over the whole 20–150 µm range, so one p-value covers every distance: p=0.029, Holm p=0.057 with n=3/3/3 estimable animals. At these group sizes no exact test can return p<0.004. The observed curve exits the envelope between 30–150 µm. The earlier scalar measures are retained and tested separately, with no joint test: density-contour enrichment: exact three-condition test over 1680 allocations, p=0.032, Holm p=0.129; Allulose–Sucrose within the shared platform, p=0.100, Holm p=0.400. clustering excess: exact three-condition test over 1680 allocations, p=0.264, Holm p=0.580; Allulose–Sucrose within the shared platform, p=0.500, Holm p=0.600. Proximity does not establish functional connectivity, and Water acquisition remains confounded with condition."
   },
   "publication_language": "en",
   "bilingual_outputs": "individual panels and legends only",
   "sucrose_cartoon_receipt": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/receipt.json",
   "sucrose_cartoon_sha256": "dd5446b0877d6b9412d98c3263e3066c3657c23f48392ee59a774410a416c196",
-  "ring_cartoon": "DAPI covariance-normalized quantile shells; illustrative mean near the floor of an enlarged third ventricle; no anatomical anchor in the analysis; H and I use the same rings and DAPI denominators with separate c-FOS and double-positive numerators",
-  "analysis_changed": false,
-  "source_data_sha256_unchanged": {
-    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion.csv": "e62c16242f6c4347edf77b25185c42150630aeb528c59db51fb070b7313acf14",
-    "Fig3/source_data/Figure_3_cFos_NPY_animal_plot_values.csv": "dac9080bc28a37e30bbf07227812e29a9aaec181bbff8b0587c16b9eda17ef3c",
-    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_permanova.csv": "b2bb09b19dfd3644ccf75cd1278a566ccbc57fd3aadf155b18fa96ba967f3fb7",
-    "Fig3/source_data/Figure_3_cFos_NPY_spatial_segmentation_model_setting_audit.csv": "e49342ceb5cff1376ed02bf7dadc097f45d0dfe7e2a6174d08426723d49ba6fa",
-    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_dispersion_permutation_receipts.csv": "1ea9a3a323ff71abd903ebf22f454603d432a739b0b0882859e0240d2161f2c5",
-    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv": "1c0fd6f194fee2693c1a44c38516e08cf4e33aa0d7e556d1326d5885bcd7b5f9",
-    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv": "167baf1e00ce83fd34995cdf90fb1274c7a621cf7460c4251003fa43c1995970",
-    "Fig3/source_data/Figure_3_cFos_NPY_anova_mwu_statistics_used.csv": "0e917dcec1893868d3d30127bf389553dea1bf35ec0a9ad9fef32e7931131461",
-    "Fig3/source_data/Figure_3_cFos_NPY_spatial_exact_permutation_receipts.csv": "7ad596c0f7966803ada70ba00f013638c1b81c2de5aa7145c746c10e45dbec12",
-    "Fig3/source_data/Figure_3_cFos_NPY_spatial_animal_counts.csv": "0a5eaccd70d203472fa1dbbfa4ded30262b8b096bbdd6c48a3c4a8ba4577c842",
-    "Fig3/source_data/Figure_3_cFos_NPY_spatial_animal_radial_occurrence_features.csv": "57b22913a18448eebf5fdecbf3199d255b889de0969be8b2fa0fe41031b174ab"
-  },
+  "analysis_changed": true,
   "figures": [
     {
       "language": "en",
@@ -62,7 +48,7 @@
         {
           "panel": "C",
           "source": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/Sucrose_NPY_cartoon_en.pdf",
-          "sha256": "681faaab2282bfd99307ea89770be349b909acc527a3ef5876d19f7e88967c11",
+          "sha256": "36c2b7714bd434fba107f51bf68437378a7383b15f2c1e125a489c2eb8481aa7",
           "removed_previous_letter": []
         },
         {
@@ -75,36 +61,32 @@
         },
         {
           "panel": "E",
-          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_D.pdf",
-          "sha256": "6a385bb7517cc0704cc1b3cf7400e1736e37073ca682f2d5a8ea62f2748484a1",
-          "removed_previous_letter": [
-            "D"
-          ]
+          "source": "analyses/fig3_water_extended_20260924/quantitative_inputs/Figure_3_cFos_NPY_Panel_D.pdf",
+          "sha256": "a4f38b5b3a580eec6ecb01b722e85880c2ca7975acacdc2b562b6092c9cd472b",
+          "removed_previous_letter": []
         },
         {
           "panel": "F",
-          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_E.pdf",
-          "sha256": "a9b5e6b46fb183659bc714e8be814600b9b39e3093307fa4edafe857ee2803a6",
-          "removed_previous_letter": [
-            "E"
-          ]
+          "source": "analyses/fig3_water_extended_20260924/quantitative_inputs/Figure_3_cFos_NPY_Panel_E.pdf",
+          "sha256": "13cf867cd724b1c285829194ccccb897b15c3420603fd0ff078fce12dfe91baa",
+          "removed_previous_letter": []
         },
         {
           "panel": "G",
-          "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY.pdf",
-          "sha256": "ced14d848938d3e0b0bd50ccb5f94ee9719acc36a97a3e4de019b6bd16b9ba04",
+          "source": "analyses/fig3_water_extended_20260924/spatial_panels/Fig3/Spatial_shape_definition_NPY.pdf",
+          "sha256": "89d1a7cef5fda844d3b508858f371926a686f54f118f22da1c89018da90b0fff",
           "removed_previous_letter": []
         },
         {
           "panel": "H",
-          "source": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_occurrence.pdf",
-          "sha256": "547b61b731c77317225269c3ca43e29d3bab5fc3bbcf1f07f84e2bcbb05cf3de",
+          "source": "analyses/fig3_water_extended_20260924/spatial_panels/Fig3/en/Figure3_Spatial_cFOS_occurrence.pdf",
+          "sha256": "8e1f01e3aeb5539df4307759c084d02aa3d6b462f4bd4f51bace8720d9f8f625",
           "removed_previous_letter": []
         },
         {
           "panel": "I",
-          "source": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
-          "sha256": "08d44f3505bd6c24966c3c3e842774f4dc326d7ed37bad8bb6c03fb5215e87d7",
+          "source": "analyses/fig3_water_extended_20260924/spatial_panels/Fig3/en/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+          "sha256": "12ead46d947e9f22b7d2dfc8d447937537efdd022d7c43eb78e97fd4750bbc80",
           "removed_previous_letter": []
         }
       ],
@@ -137,36 +119,36 @@
           18.0,
           701.6282193918303,
           383.84000000000003,
-          999.0109558825959
+          999.0111198195152
         ],
         "F": [
           403.84000000000003,
           701.6282193918303,
           769.6800000000001,
-          999.0970220984289
+          999.0111198195152
         ],
         "G": [
           789.6800000000001,
           701.6282193918303,
           1134.0,
-          959.8681991221312
+          981.5180164160273
         ],
         "H": [
           18.0,
-          1044.0970220984289,
+          1044.0111198195152,
           566.0,
-          1303.1515601944736
+          1303.06565791556
         ],
         "I": [
           586.0,
-          1044.0970220984289,
+          1044.0111198195152,
           1134.0,
-          1303.1515601944736
+          1303.06565791556
         ]
       },
       "size_pt": [
         1152,
-        1321.151611328125
+        1321.065673828125
       ],
       "dpi": 600,
       "middle_row_width_ratios": [
@@ -185,8 +167,8 @@
         "H",
         "I"
       ],
-      "pdf": "Fig3/Figure_3_cFos_NPY.pdf",
-      "sha256": "42def4855ac4141b3d92d97f9b25414965fe1a4b1e13ee989d0d12e41333323c"
+      "pdf": "analyses/fig3_water_extended_20260924/assembled/Fig3/Figure_3_cFos_NPY.pdf",
+      "sha256": "808511b9d87d917d836e394f10db1115b2c397544014c7821cc815539aadf256"
     },
     {
       "language": "es",
@@ -208,7 +190,7 @@
         {
           "panel": "C",
           "source": "analyses/Fig3/results/complete_conditions_20260908/sucrose_panels/Sucrose_NPY_cartoon_es.pdf",
-          "sha256": "e00171566c77937dca717c52e836f948887b429594174e88fa8ae9886083fcc4",
+          "sha256": "08e68106a193a6b69e004250e871ed5688281ad06cc4a3751a55c3e1eaca61ab",
           "removed_previous_letter": []
         },
         {
@@ -221,36 +203,32 @@
         },
         {
           "panel": "E",
-          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_D_spanish.pdf",
-          "sha256": "cc7fd3c5912227000e1261314c310e2c271fba57b97556815d3bfef3381fa5bd",
-          "removed_previous_letter": [
-            "D"
-          ]
+          "source": "analyses/fig3_water_extended_20260924/quantitative_inputs/Figure_3_cFos_NPY_Panel_D_spanish.pdf",
+          "sha256": "a213b4a768c6ad9b88a0c83838f35db1d296ed6659ede14255b918059c6abdda",
+          "removed_previous_letter": []
         },
         {
           "panel": "F",
-          "source": "analyses/Fig3/results/complete_conditions_20260908/quantitative_inputs/Figure_3_cFos_NPY_Panel_E_spanish.pdf",
-          "sha256": "89da2ec6c6fd973df51c884b532748fc30e26b6317cf9580f2c75d078d8f6f9b",
-          "removed_previous_letter": [
-            "E"
-          ]
+          "source": "analyses/fig3_water_extended_20260924/quantitative_inputs/Figure_3_cFos_NPY_Panel_E_spanish.pdf",
+          "sha256": "913766a820d7e21f7e1075659ed053c704a3645bba1b814b0dc218c1971470b6",
+          "removed_previous_letter": []
         },
         {
           "panel": "G",
-          "source": "Fig3/ring_cartoon/Spatial_ring_definition_NPY_spanish.pdf",
-          "sha256": "bdc60279852fd06e069833ffb856ae85b4ca3884fbd7010724d7b0cd2c117ab7",
+          "source": "analyses/fig3_water_extended_20260924/spatial_panels/Fig3/Spatial_shape_definition_NPY_spanish.pdf",
+          "sha256": "6cf3b96bfbec82f7b33368f8761186b6f7b10379dd37b00f4f13410b23c9a1e4",
           "removed_previous_letter": []
         },
         {
           "panel": "H",
-          "source": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_occurrence.pdf",
-          "sha256": "e82aea213c7cbe058db9baab828923455675a4c235b5b70a7b93f7d8e7dc6511",
+          "source": "analyses/fig3_water_extended_20260924/spatial_panels/Fig3/es/Figure3_Spatial_cFOS_occurrence.pdf",
+          "sha256": "f8d6fa7fe53a9ae3d934fd0a976591e43a7b39b04a770791fc6060aa7d44f2ac",
           "removed_previous_letter": []
         },
         {
           "panel": "I",
-          "source": "Fig3/spatial_panels/es/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
-          "sha256": "dd8cfbb442baefcc032bf06581021b04474874ea979bacdc279068ad5190619f",
+          "source": "analyses/fig3_water_extended_20260924/spatial_panels/Fig3/es/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+          "sha256": "6eaebad3171e8d6f23c998a28a6fa18efbbb77a85afad3c9d6216ff3c794f90b",
           "removed_previous_letter": []
         }
       ],
@@ -283,36 +261,36 @@
           18.0,
           701.6282193918303,
           383.84000000000003,
-          999.0109558825959
+          999.0111198195152
         ],
         "F": [
           403.84000000000003,
           701.6282193918303,
           769.6800000000001,
-          999.0970220984289
+          999.0111198195152
         ],
         "G": [
           789.6800000000001,
           701.6282193918303,
           1134.0,
-          959.8681991221312
+          981.5180164160273
         ],
         "H": [
           18.0,
-          1044.0970220984289,
+          1044.0111198195152,
           566.0,
-          1303.1515601944736
+          1303.06565791556
         ],
         "I": [
           586.0,
-          1044.0970220984289,
+          1044.0111198195152,
           1134.0,
-          1303.1515601944736
+          1303.06565791556
         ]
       },
       "size_pt": [
         1152,
-        1321.151611328125
+        1321.065673828125
       ],
       "dpi": 600,
       "middle_row_width_ratios": [
@@ -332,5 +310,73 @@
         "I"
       ]
     }
-  ]
+  ],
+  "nonspatial_analysis_changed": true,
+  "shape_spatial_source": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/spatial_panels/Fig3",
+  "shape_spatial_legend_source": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/spatial_panels/Fig3/legends.json",
+  "shape_spatial_legend_sha256": "3c82db97e1c042e5552dcff886fb65c8a4bc9c78d4c86e1f28630ebc3a6c7a5b",
+  "shape_schematic": {
+    "en": {
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/spatial_panels/Fig3/Spatial_shape_definition_NPY.pdf",
+      "sha256": "89d1a7cef5fda844d3b508858f371926a686f54f118f22da1c89018da90b0fff"
+    },
+    "es": {
+      "source": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/spatial_panels/Fig3/Spatial_shape_definition_NPY_spanish.pdf",
+      "sha256": "6cf3b96bfbec82f7b33368f8761186b6f7b10379dd37b00f4f13410b23c9a1e4"
+    }
+  },
+  "quantitative_analysis_changed": true,
+  "quantitative_legend_source": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/quantitative_legends.json",
+  "quantitative_legend_sha256": "dd9f3aab6856c912175b7db8d4cba392e64faae8aab6ca69a3a43351ad4b6fb7",
+  "quantitative_panels_source": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/quantitative_inputs",
+  "source_data_sha256_at_assembly_start": {
+    "Fig3/source_data/Figure_3_cFos_NPY_animal_plot_values.csv": "012d130b71fe831440f6ebe93aacadf6586495625d7704f83cc11eca3990e24e",
+    "Fig3/source_data/Figure_3_cFos_NPY_legacy_nine_segmentation_model_setting_audit.csv": "e49342ceb5cff1376ed02bf7dadc097f45d0dfe7e2a6174d08426723d49ba6fa",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_outlier_feature_ledger.csv": "05a33df10e5219850291991a59ee07d8aea8c07a587d40006c1c15352dd7c413",
+    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv": "a86d593fde9a9594343ef0f98567c85e18ce57ab8175787b6860d8f64b805671",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_bandwidth_sensitivity_condition_summary.csv": "fc4a8b6fcd9bd96d442dbba0c372b6b841bf767eba8802c81bf6f17338681fad",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_condition_summary.csv": "1ed47b905aaea26512209298ca81869ad56f5d3e24856141ef257767bf2cc358",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_eligibility.csv": "cf17ebbb86386acefd3ae9740f8444f29b10296393a29e8ea9efb22d3bce4564",
+    "Fig3/source_data/Figure_3_cFos_NPY_animal_roster.csv": "88d80664b981e42e7c28729a1154a7bdd61a8238483708d3e1a0ebccfc4cafc5",
+    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv": "f799d7ea67ee023638afb35d39511c275c82fc7e4a392c6d3426adfe1f1cf54a",
+    "Fig3/source_data/Figure_3_cFos_NPY_anova_mwu_statistics_used.csv": "adf533d90e8d2d173da10430b93f3a61b2b7037f70646d1eb4477f569667a799",
+    "Fig3/source_data/Figure_3_cFos_NPY_abundance_robust_statistics.csv": "1002be2f3b2c868c8a317fd1d1c6e2cbe6e0ac4761790b494abacbd617de7d52"
+  },
+  "assembly_only_source_data_unchanged": true,
+  "source_data_sha256_after_publication": {
+    "Fig3/source_data/Figure_3_cFos_NPY_abundance_robust_plan.json": "2199d32b04c28096e974c868acfdbf32d799e5fe9e44801508920e0cd30d92b4",
+    "Fig3/source_data/Figure_3_cFos_NPY_abundance_robust_statistics.csv": "e210a1f583bf82968fd1a5502e64b47e57c443ab1fe015d9c40208e98ab85745",
+    "Fig3/source_data/Figure_3_cFos_NPY_allulose_example.npz": "9aec07c55e0e5b0fe695b9e0e51e3482ca4c9ab5809a627bd3b4eabbdd78c44c",
+    "Fig3/source_data/Figure_3_cFos_NPY_animal_plot_values.csv": "046238b7ada48f1b5f3f149b89bff7820af9b2c2efcb1e4f1e3191cef31c273b",
+    "Fig3/source_data/Figure_3_cFos_NPY_animal_roster.csv": "800cf58500caade167e6d8266ee2c50a2ca1b7595355aba984951864f352a1f0",
+    "Fig3/source_data/Figure_3_cFos_NPY_anova_mwu_statistics_used.csv": "99edfa04e2c1d1bd90dc12fb11e34778b5e59aec2093ae52fa6fada45f02e077",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_bandwidth_sensitivity_condition_summary.csv": "d886e87d99cb3a28092709dda0327aab1ca571c008c665cdebbf01aafee30ed3",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_condition_summary.csv": "7fcd6c4cc017b0019addcf781cd1b96d1c939d2d51ac06ba6bf73c01975d4d97",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_eligibility.csv": "4367a94729f30b23a8a454bc543b75ab58470587494b14995c6db67f4c47a174",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_outlier_feature_ledger.csv": "5ce0b5ff771652d99b3f8086f9fb8937141e40fbcd345ad9401323b903b5bc6e",
+    "Fig3/source_data/Figure_3_cFos_NPY_iqr_spatial_eligibility.csv": "5ef02da35a5eaa53ba8f3638e7a933f430a15569553e191aed789f89ff81cc99",
+    "Fig3/source_data/Figure_3_cFos_NPY_legacy_nine_segmentation_model_setting_audit.csv": "e49342ceb5cff1376ed02bf7dadc097f45d0dfe7e2a6174d08426723d49ba6fa",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_animal_counts.csv": "9e7c012a80ea8d2cfe63f1cf3b0bc7189ba4f52fc766689a0949adf381c39d65",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_feature_eligibility.csv": "3bf598935c16baa5e79a465bd0243eff41b41087c4996944c228bb1e4eb5ffe5",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_permanova.csv": "ec558a59669bca3edf166a7c556ee8c534fc110c8ef2399c2ff0ae219a8d5d30",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_permanova_features.csv": "61887baa7be8c162ae9a836d80c4c8e26a3160f2fc6cacdcb4d212766e152b70",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_permanova_permutations.csv.gz": "94633bec8a23f61587164179db31b949e3ff0aa00a6f5d731e29fd0e3cdb8908",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_permanova_scaling.csv": "cc51612d28eec3fe84c80649efd4134aacaeeadb0d7f1b6d27c570b1bd4f3595",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_README.md": "6d3f3520b49ac15bfeba7c66d0f8e13feaa3584371237fdb5baa446fbd1cbe1c",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_animal_metrics.csv": "2a0cb8f60afe6aaf782eb819225d9ca74474dbee07281ecef869a78feea4f003",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_bandwidth_sensitivity_condition_summary.csv": "d886e87d99cb3a28092709dda0327aab1ca571c008c665cdebbf01aafee30ed3",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_cluster_counts_by_condition.csv": "9c3f7fc724a3db78f821693a041ef608af3eeaaeb540577618256bd6b7e22461",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_cluster_membership.csv.gz": "567079a1856520e1ac7de294d80ce8934e2ab47c65fa89737ee9e41891612dc2",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_condition_summary.csv": "7fcd6c4cc017b0019addcf781cd1b96d1c939d2d51ac06ba6bf73c01975d4d97",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_contour_manifest.csv": "5c480c7731aeca1a9e299bba8da558bfec6cee8a108bc01a8f306655b8b09445",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_stratum_metrics.csv": "6fbf3f0f203bb454757313848ec42d4199653f8c9376a64b101b53ff0eaf1c12",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_treatment_contrasts.csv": "d3bfa0f23398bf605146359b1894ccf6881855c9f6835d1f78de1be4038b5f4c",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_shape_unit_metrics.csv": "fd37695efec2b4da31a4939993ffaae2b43eea88cfad81d99609ef217b079f5f",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_sugar_platform_permutations.csv.gz": "0417a4db91f8577b384c43969c48c284cfa760373c5054bdc84e1a305b414d9e",
+    "Fig3/source_data/Figure_3_cFos_NPY_spatial_sugar_platform_sensitivity.csv": "5937a4fd6b7a75c08a6086edece63735707eeb1c2c37607e528cc1033680d843",
+    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_README.txt": "4bb709a5cefc420162cf202c448a98d4b08ca4c4c5d990be592a2cd9464ada2c",
+    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_animal_values.csv": "0c6e3afe16f702061c9ed75b3b3d2c1658828a6fdb264111066bf768607d8bfc",
+    "Fig3/source_data/Figure_3_cFos_NPY_supplemental_NPY_DAPI_anova_mwu_statistics.csv": "6eea01bb53ed61fc5b59a2c79cccfaacb778ee9a1d3129dde4f469763cfb7719"
+  },
+  "publication_analysis_directory": "analyses/fig3_water_extended_20260924"
 }

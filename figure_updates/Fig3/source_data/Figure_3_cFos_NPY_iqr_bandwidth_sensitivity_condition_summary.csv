@@ -1,0 +1,19 @@
+cohort,endpoint,region,condition,bandwidth_um,animals,units,unit_type,core_enrichment_mean,core_enrichment_units,core_enrichment_animals,interpretation
+NPY,cfos,FIELD,Allulose,20.0,3,3,animal,2.274675975138979,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Sucrose,20.0,3,3,animal,1.402659922493756,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Water,20.0,5,5,animal,1.1585314338875212,5,5,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Allulose,20.0,3,3,animal,1.0610142536551332,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Sucrose,20.0,3,3,animal,0.8944921714588644,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Water,20.0,5,5,animal,1.049418522051495,4,4,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Allulose,40.0,3,3,animal,1.891163131032352,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Sucrose,40.0,3,3,animal,1.518039194818675,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Water,40.0,5,5,animal,1.0768092671215663,5,5,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Allulose,40.0,3,3,animal,1.0511852418869922,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Sucrose,40.0,3,3,animal,0.935625266361635,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Water,40.0,5,5,animal,1.0628474705842328,4,4,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Allulose,80.0,3,3,animal,1.4135175448399615,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Sucrose,80.0,3,3,animal,1.2448894447607353,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,cfos,FIELD,Water,80.0,5,5,animal,1.1368754659668787,5,5,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Allulose,80.0,3,3,animal,1.017434023958228,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Sucrose,80.0,3,3,animal,1.0521751915328614,3,3,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests
+NPY,marker_cfos,FIELD,Water,80.0,5,5,animal,1.0773597450474548,4,4,Descriptive contour bandwidth sensitivity; same primary graphs; no additional hypothesis tests

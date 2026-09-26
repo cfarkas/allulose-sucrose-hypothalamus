@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "animals": 11,
+  "conditions": {
+    "Allulose": 3,
+    "Sucrose": 3,
+    "Water": 5
+  },
+  "original_nine_observed_counts_unchanged": true,
+  "original_nine_spatial_values_unchanged": false,
+  "declared_methodology_change": "Marker density footprint changed from a raw truncated-kernel sum to a Diggle edge-corrected estimate; kernel mass falling outside DAPI-supported tissue is now divided out, so the 80% contour is no longer pulled away from the tissue boundary where the arcuate marker band lies.",
+  "original_spatial_values_changed_by_declaration": 17,
+  "cohort_only": true,
+  "no_other_experiment_rows": true,
+  "immutable_input_hashes_verified": true,
+  "acquisitions": 11,
+  "missing_conditional_features_not_imputed": true,
+  "original_images_and_masks_modified": false,
+  "iqr_outlier_count": 0,
+  "pairwise_figure3_only_family_size": 6,
+  "unequal_variance_tests_written": true,
+  "scale_resolved_envelope_tests": 2,
+  "joint_two_measure_permanova_performed": false,
+  "no_figure4_data_in_statistics": true
+}

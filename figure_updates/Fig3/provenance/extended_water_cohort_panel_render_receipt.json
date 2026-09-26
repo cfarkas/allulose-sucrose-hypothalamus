@@ -1,0 +1,60 @@
+{
+  "analysis_dir": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924",
+  "output_dir": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924",
+  "dpi": 600,
+  "statistics_recomputed": false,
+  "statistical_unit": "animal",
+  "shape_metrics_unchanged": [
+    "core_enrichment",
+    "cluster_fraction",
+    "cluster_expected_fraction",
+    "cluster_excess"
+  ],
+  "point_shapes": {
+    "original_animals": "circle"
+  },
+  "input_sha256": {
+    "animal_plot_values.csv": "046238b7ada48f1b5f3f149b89bff7820af9b2c2efcb1e4f1e3191cef31c273b",
+    "abundance_statistics.csv": "ded02ed52a51b397affb6d01ec3a6fda27237382e77044d2f37b01020f5d1890",
+    "unit_metrics.csv": "fd37695efec2b4da31a4939993ffaae2b43eea88cfad81d99609ef217b079f5f",
+    "spatial_permanova.csv": "ec558a59669bca3edf166a7c556ee8c534fc110c8ef2399c2ff0ae219a8d5d30",
+    "spatial_sugar_platform_sensitivity.csv": "5937a4fd6b7a75c08a6086edece63735707eeb1c2c37607e528cc1033680d843",
+    "treatment_contrasts.csv": "d3bfa0f23398bf605146359b1894ccf6881855c9f6835d1f78de1be4038b5f4c",
+    "abundance_robust_statistics.csv": "e210a1f583bf82968fd1a5502e64b47e57c443ab1fe015d9c40208e98ab85745",
+    "scale_resolved_curves.csv": "9ea3b92f389c0bc4f27491e110210bb25aacc885c2425b55890511f5968e9999",
+    "scale_resolved_envelope.csv": "5d678582dad6b6f05416caf6031c257966e759a626588e300c4fa5cc2a2c8dba",
+    "scale_resolved_test.csv": "bbc3b075545b7b4b7afcd9d0654caf539d7e026bcd9daffb81e66b1c7377c739"
+  },
+  "example_sha256": "9aec07c55e0e5b0fe695b9e0e51e3482ca4c9ab5809a627bd3b4eabbdd78c44c",
+  "source_sha256": "235120f296351d720f89e292400b5d03085d62c31e1a9dea79a97d3b4879a904",
+  "files": {
+    "examples/example_allulose_npy.npz": "9aec07c55e0e5b0fe695b9e0e51e3482ca4c9ab5809a627bd3b4eabbdd78c44c",
+    "examples/example_allulose_npy_provenance.json": "d3d454a0d282613d0306f2deeac17ecc931d5c79665e2e0d24a1416362666b00",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_D.pdf": "a4f38b5b3a580eec6ecb01b722e85880c2ca7975acacdc2b562b6092c9cd472b",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_D.png": "09303621cd6a2b9f139fd7e4c77d5e5b844198f6b1fde1ff7c3b3f1f2c8b1e24",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_E.pdf": "13cf867cd724b1c285829194ccccb897b15c3420603fd0ff078fce12dfe91baa",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_E.png": "1aab5d22326c79f78cb1e8c359472b0efc53bc81df32fbe20a4d80ca2472505e",
+    "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_occurrence.pdf": "8e1f01e3aeb5539df4307759c084d02aa3d6b462f4bd4f51bace8720d9f8f625",
+    "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_occurrence.png": "e349ec2ebf470d3b4c28cb6cac4b9f0d7fb4f636e4e19b0adb3a3d4986606ba8",
+    "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_occurrence_envelope.json": "7c03f655e139d31da3eb02a094b7c69dc60eb4108960dd15b4e5916334f34db0",
+    "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_NPY_occurrence.pdf": "12ead46d947e9f22b7d2dfc8d447937537efdd022d7c43eb78e97fd4750bbc80",
+    "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_NPY_occurrence.png": "fa344c48da568374d4ec1ca8dc07aae575110191bcdefc0971c43b589690c81d",
+    "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_NPY_occurrence_envelope.json": "97bd253f1cbc7cb37ae15268cda7085c461fb142f42b5638fd2195242100121f",
+    "spatial_panels/Fig3/Spatial_shape_definition_NPY.pdf": "89d1a7cef5fda844d3b508858f371926a686f54f118f22da1c89018da90b0fff",
+    "spatial_panels/Fig3/Spatial_shape_definition_NPY.png": "af55b21f29b06e15df47aac61bd930b802983a191f2fc81cf0ca3076c778ac18",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_D_spanish.pdf": "a213b4a768c6ad9b88a0c83838f35db1d296ed6659ede14255b918059c6abdda",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_D_spanish.png": "768c8dea8e0e94bba8b6a58f07b0925c6115f16b623e90ec08aff85181c7e949",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_E_spanish.pdf": "913766a820d7e21f7e1075659ed053c704a3645bba1b814b0dc218c1971470b6",
+    "quantitative_inputs/Figure_3_cFos_NPY_Panel_E_spanish.png": "c1b36554492192155a2bc55d46fc8b4e2ca158f35795b41062c50378df0c4cea",
+    "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_occurrence.pdf": "f8d6fa7fe53a9ae3d934fd0a976591e43a7b39b04a770791fc6060aa7d44f2ac",
+    "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_occurrence.png": "73f88dd50c0c27189e539e6590e2d3f7c2717394584bd0e8debc5fda388cbcfa",
+    "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_occurrence_envelope.json": "7c03f655e139d31da3eb02a094b7c69dc60eb4108960dd15b4e5916334f34db0",
+    "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_NPY_occurrence.pdf": "6eaebad3171e8d6f23c998a28a6fa18efbbb77a85afad3c9d6216ff3c794f90b",
+    "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_NPY_occurrence.png": "e09567fb24d51bc4a17df014d07e5195858d72df1cff56b5073203799e7c64d6",
+    "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_NPY_occurrence_envelope.json": "97bd253f1cbc7cb37ae15268cda7085c461fb142f42b5638fd2195242100121f",
+    "spatial_panels/Fig3/Spatial_shape_definition_NPY_spanish.pdf": "6cf3b96bfbec82f7b33368f8761186b6f7b10379dd37b00f4f13410b23c9a1e4",
+    "spatial_panels/Fig3/Spatial_shape_definition_NPY_spanish.png": "1a75021496087808faa3ad2f311de82b0ea48d4dc51b6a16070c108d0a29bb13",
+    "quantitative_legends.json": "dd9f3aab6856c912175b7db8d4cba392e64faae8aab6ca69a3a43351ad4b6fb7",
+    "spatial_panels/Fig3/legends.json": "3c82db97e1c042e5552dcff886fb65c8a4bc9c78d4c86e1f28630ebc3a6c7a5b"
+  }
+}

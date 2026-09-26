@@ -3,7 +3,7 @@
 
 Use after 03_make_figure_3_cfos_npy.py. The accepted sucrose HIL polygon is
 mandatory. Quantitative inputs retain their original D/E identities internally;
-the final paper labels are A–I, including an explanatory ring cartoon. No analysis or source measurement is changed.
+the final paper labels are A–I, including an explanatory spatial-method cartoon. An optional shape-spatial bundle replaces G–I while preserving A–F.
 """
 from pathlib import Path
 import argparse,hashlib,json,re,shutil,sys,importlib.util
@@ -53,9 +53,46 @@ for lang in ("en", "es"):
     LEGENDS[lang]["panels"]={letter:panels[letter] for letter in "ABCDEFGHI"}
     LEGENDS[lang]["body"]=LEGENDS[lang]["body"].replace("G–H,", "G, "+ring_caption("NPY",lang)+" H–I,")
 
-def write_legends(out):
+def load_shape_spatial_bundle(folder):
+    """Validate externally computed bilingual spatial panels and their own legends."""
+    folder = Path(folder).expanduser().resolve()
+    legend_path = folder/'legends.json'
+    legends = json.loads(legend_path.read_text(encoding='utf-8'))
+    for lang in ('en', 'es'):
+        for letter in 'GHI':
+            if not isinstance(legends.get(lang, {}).get(letter), str) or not legends[lang][letter].strip():
+                raise ValueError(f'Missing {lang} panel {letter} legend in {legend_path}')
+    panels = {}
+    for lang, suffix in [('en', ''), ('es', '_spanish')]:
+        panels[lang] = {
+            'G': folder/f'Spatial_shape_definition_NPY{suffix}.pdf',
+            'H': folder/lang/'Figure3_Spatial_cFOS_occurrence.pdf',
+            'I': folder/lang/'Figure3_Spatial_cFOS_NPY_occurrence.pdf',
+        }
+        for letter, path in panels[lang].items():
+            if not path.is_file() or path.read_bytes()[:4] != b'%PDF':
+                raise ValueError(f'Missing or invalid {lang} panel {letter} PDF: {path}')
+    return {'directory': folder, 'legend_path': legend_path, 'legends': legends, 'panels': panels}
+
+
+def figure_legends(shape_legends=None, quantitative_legends=None):
+    """Keep A–F descriptions and replace every former spatial claim together."""
+    result = json.loads(json.dumps(LEGENDS))
+    if quantitative_legends is not None:
+        for lang in ('en', 'es'):
+            for letter in 'EF':
+                result[lang]['panels'][letter] = quantitative_legends[lang][letter].strip()
+    if shape_legends is not None:
+        for lang, data in result.items():
+            for letter in 'GHI':
+                data['panels'][letter] = shape_legends[lang][letter].strip()
+            data['body'] = '\n'.join(f"{letter}, {data['panels'][letter]}" for letter in 'ABCDEFGHI')
+    return result
+
+
+def write_legends(out, shape_legends=None, quantitative_legends=None):
     folder=out/'legends';folder.mkdir(exist_ok=True)
-    for lang,data in LEGENDS.items():
+    for lang,data in figure_legends(shape_legends, quantitative_legends).items():
         suffix='' if lang=='en' else '_spanish';heading='Figure' if lang=='en' else 'Figura'
         body=heading+' 3. '+data['title']+'\n\n'+data['body']+'\n'
         (folder/f'Figure_3_cFos_NPY_LEGEND{suffix}.txt').write_text(body)
@@ -80,10 +117,18 @@ def refresh_spatial_panels(root, out, dpi):
     return result
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path.cwd());p.add_argument('--output-dir',type=Path);p.add_argument('--base-panels-dir',type=Path);p.add_argument('--dpi',type=int,default=600);args=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path.cwd());p.add_argument('--output-dir',type=Path);p.add_argument('--base-panels-dir',type=Path);p.add_argument('--dpi',type=int,default=600);p.add_argument('--quantitative-legends-json',type=Path,help='Bilingual E/F legends for an extended quantitative cohort');p.add_argument('--no-cache-base-panels',action='store_true',help='Read supplied quantitative panels directly without changing legacy cached inputs');p.add_argument('--shape-spatial-dir',type=Path,help='Bilingual closed-shape spatial panels, schematic, and legends.json replacing G–I');args=p.parse_args()
     if args.dpi<300:raise ValueError('Publication exports require at least 300 dpi')
     root=args.root.resolve();out=args.output_dir or root/'Fig3';analysis=root/'analyses/Fig3/results';stage=analysis/'complete_conditions_20260908';quant=args.base_panels_dir or stage/'quantitative_inputs'
-    if args.base_panels_dir:
+    shape_bundle=load_shape_spatial_bundle(args.shape_spatial_dir) if args.shape_spatial_dir else None
+    quantitative_legends = None
+    if args.quantitative_legends_json:
+        quantitative_legends = json.loads(args.quantitative_legends_json.read_text())
+        for lang in ('en', 'es'):
+            for letter in 'EF':
+                if not isinstance(quantitative_legends.get(lang, {}).get(letter), str) or not quantitative_legends[lang][letter].strip():
+                    raise ValueError(f'Missing quantitative legend: {lang} {letter}')
+    if args.base_panels_dir and not args.no_cache_base_panels:
         cache=stage/'quantitative_inputs';cache.mkdir(parents=True,exist_ok=True)
         for letter in 'DE':
             for suffix in ('','_spanish'):
@@ -98,10 +143,15 @@ def main():
     cartoon_receipt=json.loads((stage/'sucrose_panels/receipt.json').read_text())
     assert cartoon_receipt['ventricle_hil_receipt_sha256']==sha(hil/'sucrose_ventricle_receipt.json')
     source_tables=list((root/'Fig3/source_data').glob('*.csv'))
+    if shape_bundle:
+        source_tables=[path for path in source_tables if '_spatial_' not in path.name]
     before={str(f.relative_to(root)):sha(f) for f in source_tables}
     out.mkdir(parents=True,exist_ok=True);(out/'panels').mkdir(exist_ok=True);(out/'provenance').mkdir(exist_ok=True)
-    save_cartoon(out/'ring_cartoon', marker='NPY', dpi=args.dpi)
-    spatial_render=refresh_spatial_panels(root,out,args.dpi)
+    if shape_bundle is None:
+        save_cartoon(out/'ring_cartoon', marker='NPY', dpi=args.dpi)
+        spatial_render=refresh_spatial_panels(root,out,args.dpi)
+    else:
+        spatial_render={lang:shape_bundle['directory']/lang for lang in ('en','es')}
     records=[]
     for lang,suffix,folder,spatial in [('en','','final_run','spatial_english'),('es','_spanish','spanish_analysis_work','spatial_spanish')]:
         sources={
@@ -111,13 +161,13 @@ def main():
           'D':analysis/folder/'panels/Figure3_Panel_C_Allulose_marker_positive_nuclei.pdf',
           'E':quant/f'Figure_3_cFos_NPY_Panel_D{suffix}.pdf',
           'F':quant/f'Figure_3_cFos_NPY_Panel_E{suffix}.pdf',
-          'G':out/'ring_cartoon'/f'Spatial_ring_definition_NPY{suffix}.pdf',
+          'G':shape_bundle['panels'][lang]['G'] if shape_bundle else out/'ring_cartoon'/f'Spatial_ring_definition_NPY{suffix}.pdf',
           'H':spatial_render[lang]/'Figure3_Spatial_cFOS_occurrence.pdf',
           'I':spatial_render[lang]/'Figure3_Spatial_cFOS_NPY_occurrence.pdf'}
         cleaned={};source_records=[]
         for letter,source in sources.items():
             doc,removed=clean(source, remove_panel_labels=(letter != "G"));cleaned[letter]=doc
-            source_records.append({'panel':letter,'source':str(source.relative_to(root)),'sha256':sha(source),'removed_previous_letter':removed})
+            source_records.append({'panel':letter,'source':str(source.relative_to(root)) if source.is_relative_to(root) else str(source),'sha256':sha(source),'removed_previous_letter':removed})
         width=1152;mar=18;gap=20;labelgap=25;y=mar;layout={}
         for row,ratios in [('A',[1]),('BCD',[1,1,1]),('EFG',[.34,.34,.32]),('HI',[1,1])]:
             available=width-2*mar-gap*(len(row)-1)
@@ -146,7 +196,26 @@ def main():
         print('Completed English master and panels' if lang=='en' else 'Completed Spanish individual panels',flush=True)
     assert before=={str(f.relative_to(root)):sha(f) for f in source_tables}
     receipt={'schema':'figure3_complete_three_conditions_v1','reviewer':rec['reviewer'],'sucrose_hil_receipt':str((hil/'sucrose_ventricle_receipt.json').relative_to(root)),'sucrose_hil_sha256':sha(hil/'sucrose_ventricle_receipt.json'),'native_sucrose_counts':manifest['native_counts'],'panel_map':{'A':'microscopy: water/sucrose/allulose','B':'water nuclear assignments','C':'sucrose nuclear assignments','D':'allulose nuclear assignments','E':'whole-field c-FOS/DAPI','F':'c-FOS-positive/NPY-positive','G':'DAPI quantile rings near an enlarged third-ventricle floor; one occurrence equation identifying H/I numerators','H':'c-FOS/DAPI spatial profile','I':'double-positive/DAPI spatial profile'},'publication_language':'en', 'bilingual_outputs':'individual panels and legends only', 'sucrose_cartoon_receipt':str((stage/'sucrose_panels/receipt.json').relative_to(root)), 'sucrose_cartoon_sha256':sha(stage/'sucrose_panels/receipt.json'), 'ring_cartoon':'DAPI covariance-normalized quantile shells; illustrative mean near the floor of an enlarged third ventricle; no anatomical anchor in the analysis; H and I use the same rings and DAPI denominators with separate c-FOS and double-positive numerators','analysis_changed':False,'source_data_sha256_unchanged':before,'figures':records}
+    if shape_bundle:
+        receipt.pop('ring_cartoon', None)
+        receipt.update({
+            'analysis_changed': True,
+            'nonspatial_analysis_changed': quantitative_legends is not None,
+            'shape_spatial_source': str(shape_bundle['directory']),
+            'shape_spatial_legend_source': str(shape_bundle['legend_path']),
+            'shape_spatial_legend_sha256': sha(shape_bundle['legend_path']),
+            'shape_schematic': {
+                lang: {'source':str(shape_bundle['panels'][lang]['G']), 'sha256':sha(shape_bundle['panels'][lang]['G'])}
+                for lang in ('en','es')
+            },
+        })
+        receipt['panel_map'].update({letter:shape_bundle['legends']['en'][letter] for letter in 'GHI'})
+    if quantitative_legends is not None:
+        receipt.update(quantitative_analysis_changed=True, quantitative_legend_source=str(args.quantitative_legends_json), quantitative_legend_sha256=sha(args.quantitative_legends_json), quantitative_panels_source=str(quant))
+        receipt['source_data_sha256_at_assembly_start']=receipt.pop('source_data_sha256_unchanged')
+        receipt['assembly_only_source_data_unchanged']=True
+        receipt['panel_map'].update({letter:quantitative_legends['en'][letter] for letter in 'EF'})
     (out/'provenance/complete_conditions_20260908.json').write_text(json.dumps(receipt,indent=2)+'\n')
-    write_legends(out)
-    print('Verified unchanged source measurements and complete A–I coverage; English master with bilingual panels and legends.')
+    write_legends(out, shape_bundle['legends'] if shape_bundle else None, quantitative_legends)
+    print('Verified source inputs and complete A–I coverage; English master with bilingual panels and legends.' if shape_bundle else 'Verified unchanged source measurements and complete A–I coverage; English master with bilingual panels and legends.')
 if __name__=='__main__':main()

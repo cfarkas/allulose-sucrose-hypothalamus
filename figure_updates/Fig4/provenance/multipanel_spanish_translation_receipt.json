@@ -19,8 +19,8 @@
   "raster_dpi": 600,
   "schema": "fig4_bilingual_isolated_panels_v1",
   "spanish_spatial_sources": [
-    "/tmp/nancy_rings_20260910/Paper/analyses/Fig4/results/human_final_run/spatial_final/Figure4_Spatial_cFOS_occurrence_spanish.png",
-    "/tmp/nancy_rings_20260910/Paper/analyses/Fig4/results/human_final_run/spatial_final/Figure4_Spatial_cFOS_POMC_occurrence_spanish.png"
+    "/media/server/STORAGE/Apotome/Paper/analyses/fig4_height_20260920/assembled/Fig4/spatial_panels/Figure4_Spatial_cFOS_occurrence_spanish.png",
+    "/media/server/STORAGE/Apotome/Paper/analyses/fig4_height_20260920/assembled/Fig4/spatial_panels/Figure4_Spatial_cFOS_POMC_occurrence_spanish.png"
   ],
   "text_replacements": {
     "Allulose": "Alulosa",
@@ -38,5 +38,6 @@
     "c-FOS/DAPI per animal": "c-FOS/DAPI por animal",
     "c-FOS/DAPI ratio": "Razón c-FOS/DAPI",
     "c-FOS∧POMC /\nPOMC ratio": "Razón c-FOS∧POMC /\nPOMC"
-  }
+  },
+  "bottom_panel_height_factor": 1.33
 }

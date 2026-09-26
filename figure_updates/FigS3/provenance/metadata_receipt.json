@@ -1,0 +1,24 @@
+{
+  "cohort_counts": {
+    "NPY": 8,
+    "POMC": 16
+  },
+  "created_utc": "2026-08-28T12:49:51.948646+00:00",
+  "normalization_note": "Raw labels are retained beside standardized English labels.",
+  "organs_per_wsi": [
+    "Kidney",
+    "Liver",
+    "Spleen"
+  ],
+  "sample_organ_row_count": 72,
+  "slide_count": 24,
+  "source_excel": "/media/server/STORAGE/Motic_AnatomiaPatologica_2025/HE_Liver_Spleen_Kidney_Nancy_2026/EXCEL_ORGANOS.xlsx",
+  "source_excel_sha256": "d88e4025aa51723c7d3632825a2a35848c42a5f89b186fbf547b363fd29f2b27",
+  "source_root": "/media/server/STORAGE/Motic_AnatomiaPatologica_2025/HE_Liver_Spleen_Kidney_Nancy_2026",
+  "status": "complete",
+  "treatment_counts": {
+    "Allulose": 8,
+    "Sucrose": 9,
+    "Water": 7
+  }
+}

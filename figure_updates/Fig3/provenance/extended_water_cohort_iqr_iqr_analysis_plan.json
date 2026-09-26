@@ -1,0 +1,26 @@
+{
+  "schema": "fig3-keyence-iqr-main-v1",
+  "rule": "strictly outside Q1 - 1.5*IQR or Q3 + 1.5*IQR",
+  "quantile_method": "numpy.quantile(method=linear)",
+  "stratification": "within condition and endpoint/feature",
+  "replication_unit": "biological animal",
+  "abundance_endpoints": [
+    "cfos_over_dapi",
+    "double_over_npy",
+    "npy_over_dapi"
+  ],
+  "spatial_endpoints": [
+    "cfos",
+    "marker_cfos"
+  ],
+  "spatial_features": [
+    "core_enrichment",
+    "cluster_excess"
+  ],
+  "spatial_exclusion": "union of flags on core_enrichment and cluster_excess within the same joint endpoint",
+  "missingness": "nonfinite values excluded from quartiles and never flagged as outliers",
+  "iteration": "single pass; do not recompute fences after removing flags",
+  "selection_caveat": "Exploratory after endpoint-specific within-condition IQR exclusion; filter held fixed during permutations, not selection-adjusted inference. Small groups give unstable quartiles; flags do not establish measurement error.",
+  "cohort_selection": "exclude Keyence before quartiles; original nine-animal experiment only",
+  "original_data": "parent mixed-experiment results retained separately; not the main experiment"
+}

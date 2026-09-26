@@ -117,13 +117,61 @@ def panel_letter(path: Path) -> str:
     return str(match.group(1))
 
 
+
+def validate_quantitative_extension(receipt: dict[str, object]) -> None:
+    """Accept changed E/F only with a traceable, bilingual replacement bundle."""
+    require(receipt.get('quantitative_analysis_changed') is True,
+            'Quantitative extension must explicitly declare the analysis change')
+    require(receipt.get('nonspatial_analysis_changed') is True,
+            'Quantitative extension must declare changed nonspatial analysis')
+    paper = Path(__file__).resolve().parents[2]
+
+    def source_path(value: object, label: str) -> Path:
+        require(isinstance(value, str) and bool(value.strip()), f'{label} source is missing')
+        path = Path(value)
+        return (path if path.is_absolute() else paper / path).resolve()
+
+    legend_path = source_path(receipt.get('quantitative_legend_source'), 'Quantitative legend')
+    require(legend_path.is_file(), f'Quantitative legend source is missing: {legend_path}')
+    require(hashlib.sha256(legend_path.read_bytes()).hexdigest() == receipt.get('quantitative_legend_sha256'),
+            'Quantitative legend source does not match its declared hash')
+    legends = json.loads(legend_path.read_text(encoding='utf-8'))
+    panels_path = source_path(receipt.get('quantitative_panels_source'), 'Quantitative panels')
+    require(panels_path.is_dir(), f'Quantitative panel source directory is missing: {panels_path}')
+    for language in ('en', 'es'):
+        require(isinstance(legends.get(language), dict) and all(
+            isinstance(legends[language].get(letter), str) and legends[language][letter].strip()
+            for letter in ('E', 'F')), f'Quantitative legends lack bilingual E/F entries: {language}')
+        figures = [item for item in receipt['figures'] if item.get('language') == language]
+        require(len(figures) == 1, f'Quantitative extension lacks unique {language} panel provenance')
+        panels = [item for item in figures[0]['panels'] if item.get('panel') in ('E', 'F')]
+        require(len(panels) == 2 and {item['panel'] for item in panels} == {'E', 'F'},
+                f'Quantitative extension lacks E/F source records: {language}')
+        for panel in panels:
+            path = source_path(panel.get('source'), f"Quantitative panel {panel['panel']} ({language})")
+            require(path.parent == panels_path and path.is_file(),
+                    f'Quantitative panel is absent from the declared source directory: {path}')
+            require(hashlib.sha256(path.read_bytes()).hexdigest() == panel.get('sha256'),
+                    f'Quantitative panel source does not match its declared hash: {path}')
+            if language == 'en':
+                require(receipt['panel_map'].get(panel['panel']) == legends[language][panel['panel']],
+                        f"Quantitative panel {panel['panel']} legend disagrees with its declared source")
+
+
 def validate(figure: str, root: Path) -> dict[str, object]:
     contract = CONTRACTS[figure]
     complete=root/'provenance/complete_conditions_20260908.json'
     if figure=='Fig3' and complete.exists():
         receipt=json.loads(complete.read_text())
         require(receipt['schema']=='figure3_complete_three_conditions_v1','Unknown complete Figure 3 provenance')
-        expected = 'ABCDEFGHI' if receipt.get('ring_cartoon') else 'ABCDEFGH'
+        expected = 'ABCDEFGHI' if receipt.get('ring_cartoon') or receipt.get('shape_schematic') else 'ABCDEFGH'
+        if receipt.get('shape_schematic'):
+            require(receipt.get('analysis_changed') is True, 'Shape-spatial replacement must declare the analysis change')
+            if receipt.get('quantitative_analysis_changed') is True:
+                validate_quantitative_extension(receipt)
+            else:
+                require(receipt.get('nonspatial_analysis_changed') is False, 'Shape-spatial replacement must preserve nonspatial analysis')
+            require(bool(receipt.get('shape_spatial_source')), 'Shape-spatial source is missing')
         require(set(receipt['panel_map'])==set(expected),'Incomplete three-condition panel map')
         require(receipt.get('publication_language')=='en','Complete Figure 3 must have an English master')
         master=root/'Figure_3_cFos_NPY.pdf'

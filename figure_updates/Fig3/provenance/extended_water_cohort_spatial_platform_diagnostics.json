@@ -1,0 +1,180 @@
+{
+  "roster_design": {
+    "n_animals": 11,
+    "nuisance_rank": 4,
+    "nuisance_columns": 6,
+    "full_rank": 5,
+    "full_columns": 8,
+    "estimable_condition_degrees_of_freedom": 1,
+    "requested_condition_degrees_of_freedom": 2,
+    "all_three_condition_contrasts_identifiable": false,
+    "condition_platform_counts": {
+      "Leica_SP8": {
+        "Allulose": 0,
+        "Sucrose": 0,
+        "Water": 3
+      },
+      "Zeiss_LSM780": {
+        "Allulose": 0,
+        "Sucrose": 0,
+        "Water": 2
+      },
+      "Zeiss_legacy": {
+        "Allulose": 3,
+        "Sucrose": 3,
+        "Water": 0
+      }
+    },
+    "condition_cohort_counts": {
+      "Water_2026": {
+        "Allulose": 0,
+        "Sucrose": 0,
+        "Water": 1
+      },
+      "Water_2026_LSM780": {
+        "Allulose": 0,
+        "Sucrose": 0,
+        "Water": 2
+      },
+      "legacy_Water": {
+        "Allulose": 0,
+        "Sucrose": 0,
+        "Water": 2
+      },
+      "single_bottle_2025": {
+        "Allulose": 3,
+        "Sucrose": 3,
+        "Water": 0
+      }
+    }
+  },
+  "endpoint_designs": {
+    "cfos": {
+      "n_animals": 11,
+      "nuisance_rank": 4,
+      "nuisance_columns": 6,
+      "full_rank": 5,
+      "full_columns": 8,
+      "estimable_condition_degrees_of_freedom": 1,
+      "requested_condition_degrees_of_freedom": 2,
+      "all_three_condition_contrasts_identifiable": false,
+      "condition_platform_counts": {
+        "Leica_SP8": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 3
+        },
+        "Zeiss_LSM780": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 2
+        },
+        "Zeiss_legacy": {
+          "Allulose": 3,
+          "Sucrose": 3,
+          "Water": 0
+        }
+      },
+      "condition_cohort_counts": {
+        "Water_2026": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 1
+        },
+        "Water_2026_LSM780": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 2
+        },
+        "legacy_Water": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 2
+        },
+        "single_bottle_2025": {
+          "Allulose": 3,
+          "Sucrose": 3,
+          "Water": 0
+        }
+      }
+    },
+    "marker_cfos": {
+      "n_animals": 9,
+      "nuisance_rank": 3,
+      "nuisance_columns": 5,
+      "full_rank": 4,
+      "full_columns": 7,
+      "estimable_condition_degrees_of_freedom": 1,
+      "requested_condition_degrees_of_freedom": 2,
+      "all_three_condition_contrasts_identifiable": false,
+      "condition_platform_counts": {
+        "Leica_SP8": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 2
+        },
+        "Zeiss_LSM780": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 1
+        },
+        "Zeiss_legacy": {
+          "Allulose": 3,
+          "Sucrose": 3,
+          "Water": 0
+        }
+      },
+      "condition_cohort_counts": {
+        "Water_2026_LSM780": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 1
+        },
+        "legacy_Water": {
+          "Allulose": 0,
+          "Sucrose": 0,
+          "Water": 2
+        },
+        "single_bottle_2025": {
+          "Allulose": 3,
+          "Sucrose": 3,
+          "Water": 0
+        }
+      }
+    }
+  },
+  "water_platform_adjustment": "A Water contrast is not identified when Water has no platform/cohort overlap with sugar animals; omitting Leica Water removes that contrast rather than estimating it.",
+  "cage_status": "Animal-level exploratory inference; recorded cage strings alone do not establish independent treatment assignment.",
+  "cage_counts": [
+    {
+      "condition": "Allulose",
+      "biological_cohort": "single_bottle_2025",
+      "cage": "unknown",
+      "animals": 3
+    },
+    {
+      "condition": "Sucrose",
+      "biological_cohort": "single_bottle_2025",
+      "cage": "unknown",
+      "animals": 3
+    },
+    {
+      "condition": "Water",
+      "biological_cohort": "Water_2026",
+      "cage": "unknown",
+      "animals": 1
+    },
+    {
+      "condition": "Water",
+      "biological_cohort": "Water_2026_LSM780",
+      "cage": "unknown",
+      "animals": 2
+    },
+    {
+      "condition": "Water",
+      "biological_cohort": "legacy_Water",
+      "cage": "unknown",
+      "animals": 2
+    }
+  ]
+}

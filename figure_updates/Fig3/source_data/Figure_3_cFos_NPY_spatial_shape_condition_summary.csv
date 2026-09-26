@@ -1,0 +1,7 @@
+cohort,endpoint,region,condition,animals,units,unit_type,core_enrichment_mean,core_enrichment_units,core_enrichment_animals,cluster_fraction_mean,cluster_fraction_units,cluster_fraction_animals,cluster_expected_fraction_mean,cluster_expected_fraction_units,cluster_expected_fraction_animals,cluster_excess_mean,cluster_excess_units,cluster_excess_animals,recorded_animals,analysis_set
+NPY,cfos,FIELD,Allulose,3,3,animal,1.8911631310323516,3,3,0.5812826745203794,3,3,0.3802458077573485,3,3,0.2010368667630309,3,3,3,endpoint-specific IQR included and estimable animals
+NPY,cfos,FIELD,Sucrose,3,3,animal,1.518039194818675,3,3,0.25896345017792044,3,3,0.11326275403665424,3,3,0.1457006961412661,3,3,3,endpoint-specific IQR included and estimable animals
+NPY,cfos,FIELD,Water,5,5,animal,1.0768092671215663,5,5,0.3736207097163359,5,5,0.21198356255147766,5,5,0.16163714716485816,5,5,5,endpoint-specific IQR included and estimable animals
+NPY,marker_cfos,FIELD,Allulose,3,3,animal,1.0511852418869922,3,3,0.9060732616573971,3,3,0.8576407368884178,3,3,0.048432524768979225,3,3,3,endpoint-specific IQR included and estimable animals
+NPY,marker_cfos,FIELD,Sucrose,3,3,animal,0.9356252663616349,3,3,0.3421052631578947,3,3,0.20186572406105782,3,3,0.1402395390968368,3,3,3,endpoint-specific IQR included and estimable animals
+NPY,marker_cfos,FIELD,Water,3,3,animal,1.049164592813609,3,3,0.5647088736333588,3,3,0.5970101761264849,3,3,-0.032301302493126134,3,3,5,endpoint-specific IQR included and estimable animals

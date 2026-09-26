@@ -92,6 +92,43 @@ class ArchiveBuilderTests(unittest.TestCase):
             jobs=jobs,
         )
 
+    def test_archived_public_sources_keep_names_and_private_inputs_stay_local(self) -> None:
+        folder = "revision_profesional_20260906/insumos/"
+        source = self.write(folder + "manuscript_sources/source.json", b"retained source")
+        name = archive.ARCHIVED_PUBLIC_DOCUMENTS[0]
+        self.write(folder + "documentos_originales/" + name, b"sanitized public thesis")
+        self.write(folder + "documentos_originales/private-original.docx", b"private input")
+        self.write("revision_profesional_20260906/Tesis/review.docx", b"current review")
+        self.write("TESIS_FINAL_07_09_2026 .docx", b"active input")
+        self.write("Tesis_revisada_CF.docx", b"active CF input")
+        inventory, _ = archive.inventory_tree(self.paper)
+        files = {item.path: item for item in inventory.files}
+        self.assertEqual(files["manuscript_sources/source.json"].source, source)
+        self.assertIn(name, files)
+        self.assertFalse(any(p.startswith("revision_profesional_") for p in files))
+        self.assertNotIn("TESIS_FINAL_07_09_2026 .docx", files)
+        self.assertNotIn("Tesis_revisada_CF.docx", files)
+        self.assertEqual(archive.local_input_path(self.paper, "manuscript_sources/source.json"), source)
+        output = self.build("archived-inputs")
+        packed = {}
+        for shard in output.rglob("*.zip"):
+            with zipfile.ZipFile(shard) as handle:
+                packed.update({p: handle.read(p) for p in handle.namelist()})
+        self.assertEqual(packed["Paper/manuscript_sources/source.json"], b"retained source")
+        self.assertEqual(packed["Paper/" + name], b"sanitized public thesis")
+        self.assertFalse(any("private-original" in p or "revision_profesional_" in p for p in packed))
+        self.test_canonical_exclusions_match()
+
+    def test_archived_input_parent_symlinks_are_rejected(self) -> None:
+        outside = self.base / "external-inputs"
+        (outside / "manuscript_sources").mkdir(parents=True)
+        (outside / "manuscript_sources/source.json").write_bytes(b"external")
+        review = self.paper / "revision_profesional_20260906"
+        review.mkdir()
+        (review / "insumos").symlink_to(outside, target_is_directory=True)
+        with self.assertRaisesRegex(ValueError, "symlink"):
+            archive.inventory_tree(self.paper)
+
     def test_canonical_exclusions_match(self) -> None:
         canonical = PAPER / "scripts/utilities/01_validate_bundle.py"
         digest = archive.assert_canonical_exclusions(canonical)

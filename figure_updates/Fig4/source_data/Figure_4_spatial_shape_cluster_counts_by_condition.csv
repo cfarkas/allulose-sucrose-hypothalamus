@@ -1,0 +1,13 @@
+cohort,endpoint,region,condition,total_clusters,clustered_positives,total_positive_cells,animals,animals_with_clusters,marker_available_animals,interpretation
+POMC,cfos,ARC,Allulose,820.0,3769.0,5022.0,6,6,6,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,cfos,ARC,Sucrose,745.0,2902.0,4122.0,5,5,5,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,cfos,ARC,Water,321.0,1416.0,2082.0,3,3,3,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,cfos,ME,Allulose,70.0,314.0,373.0,6,6,6,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,cfos,ME,Sucrose,64.0,253.0,300.0,5,5,5,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,cfos,ME,Water,41.0,150.0,203.0,3,3,3,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,marker_cfos,ARC,Allulose,107.0,421.0,511.0,6,6,6,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,marker_cfos,ARC,Sucrose,88.0,286.0,357.0,5,4,4,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,marker_cfos,ARC,Water,56.0,199.0,266.0,3,3,3,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,marker_cfos,ME,Allulose,3.0,7.0,9.0,6,2,6,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,marker_cfos,ME,Sucrose,2.0,4.0,6.0,5,2,4,"Descriptive totals; animals/cages, not clusters, are the comparison units"
+POMC,marker_cfos,ME,Water,5.0,11.0,13.0,3,2,3,"Descriptive totals; animals/cages, not clusters, are the comparison units"

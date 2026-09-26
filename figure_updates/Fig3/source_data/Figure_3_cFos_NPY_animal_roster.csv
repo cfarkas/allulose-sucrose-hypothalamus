@@ -1,0 +1,12 @@
+animal_id,condition,platform,biological_cohort,cage,sections
+E7_FR7-1,Sucrose,Zeiss_legacy,single_bottle_2025,unknown,1
+E7_FR7-5,Sucrose,Zeiss_legacy,single_bottle_2025,unknown,1
+E8_FR6-1,Allulose,Zeiss_legacy,single_bottle_2025,unknown,1
+E8_FR6-3,Allulose,Zeiss_legacy,single_bottle_2025,unknown,1
+E8_FR6-4,Allulose,Zeiss_legacy,single_bottle_2025,unknown,1
+E9_FR8-1,Sucrose,Zeiss_legacy,single_bottle_2025,unknown,1
+WATER_NPY1,Water,Leica_SP8,legacy_Water,unknown,1
+WATER_NPY2,Water,Leica_SP8,legacy_Water,unknown,1
+WATER_NPY3,Water,Leica_SP8,Water_2026,unknown,1
+WATER_NPY4,Water,Zeiss_LSM780,Water_2026_LSM780,unknown,1
+WATER_NPY5,Water,Zeiss_LSM780,Water_2026_LSM780,unknown,1

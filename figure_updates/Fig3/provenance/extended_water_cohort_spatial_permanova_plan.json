@@ -1,0 +1,29 @@
+{
+  "schema": "fig3-keyence-spatial-permanova-v1",
+  "features": [
+    "core_enrichment",
+    "cluster_excess"
+  ],
+  "feature_handling": "each measure is tested separately; there is no joint two-measure test",
+  "feature_question": "spatial organization conditional on positive-cell abundance",
+  "scaling": "pooled mean and sample SD within the eligible analysis set; fixed under every permutation",
+  "distance": "Euclidean on pooled standardized features",
+  "missingness": "complete cases per endpoint; never impute conditional metrics for zero positive cells",
+  "primary_contrast": "Allulose versus Sucrose per measure, condition after platform and biological cohort",
+  "primary_statistic": "partial pseudo-F from reduced/full multivariate residual sums of squares",
+  "single_shared_platform_cohort": "If sugar animals share one platform and biological cohort, the reduced design is intercept-only and this is an ordinary within-cohort comparison, not platform adjustment",
+  "primary_effect_size": "partial R-squared = condition sum of squares / reduced-model residual sum of squares",
+  "primary_permutations": "all unique label allocations preserving condition counts within platform by biological_cohort strata",
+  "exploratory_omnibus": "unrestricted exact three-condition animal-label permutation test per measure; with one standardized feature the pseudo-F is the ordinary one-way F and the null is an exhaustive enumeration of animal-label allocations",
+  "multiplicity": "Holm across the four single-measure tests, two endpoints by two measures, within each family",
+  "per_measure": "Core enrichment and clustering excess are tested separately. No joint two-measure test is performed, so no multivariate dispersion diagnostic is needed: the single-measure analogue is the Brown-Forsythe equal-variance test reported in abundance_robust_statistics.csv.",
+  "experimental_unit": "biological animal; cage independence remains unresolved unless authoritative cage metadata establish it",
+  "source_references": [
+    "https://vegandevs.github.io/vegan/reference/adonis.html",
+    "https://vegandevs.github.io/vegan/reference/betadisper.html",
+    "https://vegandevs.github.io/vegan/reference/permutest.betadisper.html"
+  ],
+  "eligibility_source": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/spatial_eligibility.csv",
+  "eligibility_sha256": "5ef02da35a5eaa53ba8f3638e7a933f430a15569553e191aed789f89ff81cc99",
+  "selection_caveat": "exploratory after endpoint-specific within-condition IQR exclusion; filter held fixed during permutations, not selection-adjusted inference"
+}
