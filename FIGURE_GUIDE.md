@@ -51,38 +51,36 @@ Figure 2 describes the oral-challenge protocol and regional hypothalamic c-FOS
 labeling. Its analysis scripts and inputs come from the Zenodo archives;
 reproduced figures, source values and legends are saved in `Paper/Fig2/`.
 
-## Figure 3: NPY-associated labeling and spatial profiles
+## Figure 3: NPY-associated labeling and spatial clustering
 
 [Figure 3](figure_updates/Fig3/) contains microscopy and nuclear maps for water,
 sucrose and allulose, with investigator-reviewed anatomy on native DAPI images.
 The complete figure has panels A–I. Panels E/F/G occupy the middle row and
-spatial profiles H/I appear below.
+spatial curves H/I appear below. The expanded cohort has 5/3/3
+water/sucrose/allulose animals, each contributing one accepted field.
 
-Figure 3G illustrates six rings around a schematic third ventricle. The ring
-origin is the mean position of the field's eligible DAPI nuclei. Ring boundaries
-place approximately equal numbers of eligible nuclei in each ring, so inner
-rings 1–2 contain approximately one-third of the nuclei. Equal nuclear counts
-do not imply equal areas, thicknesses or atlas-registered anatomy.
+Figure 3G illustrates positive-cell pair counting in reviewed allulose field
+E8_FR6-4. Curves H/I compare clustering over 20–150 µm using exact
+random-labeling moments conditional on cell positions, tissue sides and
+positive counts. The global envelope controls across radii; Holm correction
+covers the two endpoints. These distances describe proximity, not anatomical
+subregions or connectivity.
 
-The schematic uses illustrative DAPI positions, with 60 nuclei per ring,
-concentric boundaries and inner rings near the floor of the ventricle. A
-DAPI-mean key identifies the origin. One equation defines the within-ring
-percentages: H counts c-FOS-positive nuclei, I counts c-FOS/NPY double-positive
-nuclei, and both use all eligible DAPI nuclei in that ring as the denominator.
-The NPY analysis uses one field per animal. All 108 animal-by-ring percentages
-agree with their stored counts; the six nuclear counts for each animal differ
-by at most one.
+The total c-FOS comparison gives p=0.220130. The NPY-associated comparison gives
+p=0.0285714 and Holm p=0.0571429. WATER_NPY3 and WATER_NPY4 have zero and one
+double-positive nuclei and no estimable marker-associated curve; WATER_NPY5
+has two and is included. Thus panel I uses 3/3/3 animals. Both added water
+animals remain in the whole-field abundance analysis, whose enumerated Welch
+omnibus p values are 0.0746753 (c-FOS/DAPI) and 0.0166667 (c-FOS/NPY); these
+are unadjusted, and allulose–sucrose pairwise p values are 0.100.
 
-The [shared renderer](figure_updates/scripts/shared/spatial_ring_cartoon.py)
-reproduces the schematic. Figure 4 refers to this same illustration. The NPY
-profile PERMANOVA gives p=0.010714 and q=0.021429; the dispersion test gives
-p=0.014286 and q=0.028571.
-
-Radial shell methods have published precedents. Mehta et al. (2013),
-[IMACULAT](https://doi.org/10.1371/journal.pone.0061386), used equal-area
-elliptical shells within individual nuclei. This exploratory tissue-field
-implementation uses approximately equal DAPI nuclear counts and does not
-establish anatomical or functional validation of those bands.
+The [portable numerical bundle](figure_updates/Fig3/source_data/current_statistics/)
+recomputes these values with `scripts/shared/recheck_current_statistics.py`.
+The former six-shell PERMANOVA and dispersion outputs remain historical.
+Two added Zeiss water acquisitions improve instrument overlap, but mixed
+acquisition/staining batches and unknown NPY cage membership still constrain
+inference. Exact enumeration removes simulation error; finite-sample validity
+requires exchangeability.
 
 ## Figure 4: POMC labeling and microscopy
 
@@ -95,9 +93,14 @@ cage-mean p=0.200. The direction is consistent across 0.5/1.0/1.5 size threshold
 nominal significance depends on the criterion. See the
 [size-filter methods and sensitivity analysis](figure_updates/Fig4/provenance/POMC_SIZE_QC_20260909.md).
 
-POMC rings are constructed within each reconstructed section. Counts from
-corresponding rings are summed across sections before calculating each animal's
-six percentages. The spatial double-positive comparison gives p=q=0.920080.
+Current panels I/J use ARC clustering curves and global envelopes across
+20–150 µm. Animal curves are averaged equally within biological cages.
+The c-FOS endpoint includes 14 animals in 2/3/3 water/sucrose/allulose cages
+(p=0.592857); the POMC-associated endpoint includes 13 animals in 2/2/3 cages
+(p=0.714286). Both two-endpoint Holm values are 1.000. Sparse positive labeling
+precludes the corresponding ME analysis. The
+[portable numerical bundle](figure_updates/Fig4/source_data/current_statistics/)
+contains the current inputs and results; the former shell tests are historical.
 
 Panel F and the POMC/NPY-GFP inset display measured channel intensities within
 accepted marker regions. POMC uses the full-field normalization and amber tint

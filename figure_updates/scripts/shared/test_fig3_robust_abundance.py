@@ -20,6 +20,20 @@ ALLULOSE = np.array([5.67, 5.54, 9.05])
 
 
 class RobustAbundanceTests(unittest.TestCase):
+    def test_two_group_omnibus_agrees_with_squared_studentized_test(self):
+        left, right = np.array([1., 2., 3.]), np.array([4., 5., 6.])
+        omnibus = robust.exact_permutation_welch_anova([left, right])
+        pairwise = robust.exact_studentized_permutation(left, right)
+        self.assertAlmostEqual(omnibus["p_value"], pairwise["p_value"])
+        self.assertAlmostEqual(omnibus["statistic"], pairwise["statistic"] ** 2)
+        self.assertEqual(omnibus["enumerated_labelings"], 20)
+
+    def test_degenerate_permutation_is_not_invented_as_infinite_evidence(self):
+        result = robust.exact_permutation_welch_anova(
+            [np.array([0., 1., 2.]), np.array([0., 3., 4.]), np.array([0., 5., 6.])])
+        self.assertTrue(np.isnan(result["p_value"]))
+        self.assertEqual(result["status"], "not_estimable_degenerate_permutation")
+
     def test_mann_whitney_null_matches_enumeration(self):
         for left, right in ((2, 2), (3, 3), (4, 3), (5, 3), (3, 5), (2, 5), (6, 4)):
             counts = robust.mann_whitney_null_counts(left, right)

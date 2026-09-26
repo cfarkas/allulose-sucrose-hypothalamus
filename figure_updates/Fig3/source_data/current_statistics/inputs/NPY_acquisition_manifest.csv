@@ -1,0 +1,12 @@
+cohort,animal_id,condition,acquisition_id,section,cage,genotype,sex,geometry_path,pixel_x_um,pixel_y_um,include_acquisition,acquisition_reason,region_source
+NPY,WATER_NPY1,Water,WATER_NPY1__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/WATER_NPY1__S01.npz,0.5681819454163751,0.5681817541387812,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,WATER_NPY2,Water,WATER_NPY2__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/WATER_NPY2__S01.npz,0.565421290151314,0.5654212913553895,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,WATER_NPY3,Water,WATER_NPY3__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/WATER_NPY3__S01.npz,0.5687380073800737,0.5687377997179125,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,E7_FR7-1,Sucrose,E7_FR7-1__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/E7_FR7-1__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,E7_FR7-5,Sucrose,E7_FR7-5__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/E7_FR7-5__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,E9_FR8-1,Sucrose,E9_FR8-1__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/E9_FR8-1__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,E8_FR6-1,Allulose,E8_FR6-1__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/E8_FR6-1__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,E8_FR6-3,Allulose,E8_FR6-3__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/E8_FR6-3__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,E8_FR6-4,Allulose,E8_FR6-4__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/E8_FR6-4__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,WATER_NPY4,Water,WATER_NPY4__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/WATER_NPY4__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation
+NPY,WATER_NPY5,Water,WATER_NPY5__S01,S01,unknown,NPY-GFP,unknown,inputs/geometry/WATER_NPY5__S01.npz,0.664212669961432,0.664212669961432,True,single accepted field,sampled field; no transferable complete ARC annotation

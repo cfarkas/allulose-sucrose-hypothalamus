@@ -1,0 +1,25 @@
+{
+  "schema": "fig3-robust-abundance-v1",
+  "motivation": "The Water group has a wider observed range with acquisition-batch differences; report unequal-variance statistics alongside the original ANOVA.",
+  "equal_variance_check": "Brown-Forsythe (Levene on absolute deviations from the group median)",
+  "omnibus": "Welch's F with a fully enumerated label-permutation reference distribution",
+  "validity": "Exact under exchangeability; asymptotic studentization robustness does not guarantee validity at n=3-5 under unequal variances or batch confounding.",
+  "parametric_omnibus": "Welch's unequal-variance one-way ANOVA, reported as a comparison only",
+  "resolution_limit": "minimum_attainable_p records the smallest p each exact test can return at these group sizes; a 3-versus-3 contrast cannot fall below 0.10",
+  "pairwise": "exact studentized (Welch t) permutation over all distinct animal-label allocations",
+  "effect_size": "Hodges-Lehmann median difference with an exact Mann-Whitney rank interval; Cliff's delta",
+  "retained_for_comparison": [
+    "classical one-way ANOVA",
+    "exact two-sided Mann-Whitney"
+  ],
+  "multiplicity": "nominal, unadjusted, matching the established Figure 3 abundance family",
+  "alpha": 0.05,
+  "unit": "biological animal",
+  "caveat": "Exploratory. The Water group's dispersion coincides with acquisition batch, so an unequal-variance test describes the heterogeneity but cannot separate a treatment effect from acquisition.",
+  "references": [
+    "Welch 1951 Biometrika 38:330",
+    "Brown & Forsythe 1974 JASA 69:364",
+    "Janssen 1997 Statist. Probab. Lett. 36:9",
+    "Hodges & Lehmann 1963 Ann. Math. Statist. 34:598"
+  ]
+}

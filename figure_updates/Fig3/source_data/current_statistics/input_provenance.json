@@ -1,0 +1,77 @@
+{
+  "cohort": "NPY",
+  "source_analysis": "analyses/fig3_water_extended_20260924",
+  "source_cell_table_sha256": "d1a20abcd6f7deb1151f43823d6847249cdab932f3d6e5bb6325f4ebe7d81d70",
+  "source_acquisition_manifest_sha256": "20390665ec743c66930bc0e1093fcbdf6b1a6998b488f26568fc50918bb3f4d6",
+  "cell_columns_retained": [
+    "acquisition_id",
+    "region",
+    "y_px",
+    "x_px",
+    "cell_id",
+    "in_tissue",
+    "accepted_legacy",
+    "marker_channel_present",
+    "x_um",
+    "y_um",
+    "is_cfos"
+  ],
+  "geometry": [
+    {
+      "acquisition_id": "WATER_NPY1__S01",
+      "path": "inputs/geometry/WATER_NPY1__S01.npz",
+      "sha256": "2ee1af7d343807b6c790d510a3a6197b9a584bee6387852833664e2ca3d97f02"
+    },
+    {
+      "acquisition_id": "WATER_NPY2__S01",
+      "path": "inputs/geometry/WATER_NPY2__S01.npz",
+      "sha256": "0c4b493def83023566665751f557d2d7630148900c6ce0e18bd4660a53cae7b9"
+    },
+    {
+      "acquisition_id": "WATER_NPY3__S01",
+      "path": "inputs/geometry/WATER_NPY3__S01.npz",
+      "sha256": "1063964a845d6f33e7eb1a777426e87a7b3a4c433a49bb1ff47b6de33a4f4c52"
+    },
+    {
+      "acquisition_id": "E7_FR7-1__S01",
+      "path": "inputs/geometry/E7_FR7-1__S01.npz",
+      "sha256": "eda95bee0890ed7e722d9991b6df4b4d2d9c384fea4ded3085b408e64833bf64"
+    },
+    {
+      "acquisition_id": "E7_FR7-5__S01",
+      "path": "inputs/geometry/E7_FR7-5__S01.npz",
+      "sha256": "830c1d241ce529d09ac12a4001737bb9d27f66d428e1197b6d4215d8b0e205f0"
+    },
+    {
+      "acquisition_id": "E9_FR8-1__S01",
+      "path": "inputs/geometry/E9_FR8-1__S01.npz",
+      "sha256": "100e0f28a4d85c6829aa98df414e059301fab51d32fa15c843852ddd7bdf5f48"
+    },
+    {
+      "acquisition_id": "E8_FR6-1__S01",
+      "path": "inputs/geometry/E8_FR6-1__S01.npz",
+      "sha256": "e8517151f2b0168240bc87b43f495c20e91bd9b441021a2053fd4bb9e87da871"
+    },
+    {
+      "acquisition_id": "E8_FR6-3__S01",
+      "path": "inputs/geometry/E8_FR6-3__S01.npz",
+      "sha256": "f0a58cb7bf643d9a18280c627ee10c3366ae5492750046d8dab1d34d5be19b56"
+    },
+    {
+      "acquisition_id": "E8_FR6-4__S01",
+      "path": "inputs/geometry/E8_FR6-4__S01.npz",
+      "sha256": "8b9a5d463ec0cbe9af8ab498deb65633d6271bacc04106c6b983232832f5768d"
+    },
+    {
+      "acquisition_id": "WATER_NPY4__S01",
+      "path": "inputs/geometry/WATER_NPY4__S01.npz",
+      "sha256": "8eacd7abfa62a45bbdd7bd725a35bc910b8702738b5aa8ffce23a5356f7a2ce3"
+    },
+    {
+      "acquisition_id": "WATER_NPY5__S01",
+      "path": "inputs/geometry/WATER_NPY5__S01.npz",
+      "sha256": "b558a5d2753a806ca78a72e30d190ce1824ef34ffe3ffd3c1a0ba1e0595434ce"
+    }
+  ],
+  "scope": "Numerical reproduction after reviewed segmentation and classification; raw microscopy is not included."
+}

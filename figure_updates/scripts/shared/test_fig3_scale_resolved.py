@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import sys
 import unittest
+import tempfile
 from itertools import combinations
 from math import comb
 from pathlib import Path
@@ -34,6 +35,35 @@ def brute_force_moments(xy, n_positive, radii):
 
 
 class ScaleResolvedTests(unittest.TestCase):
+    def test_identical_curves_return_one(self):
+        labels = np.array(["Water"] * 3 + ["Sucrose"] * 3 + ["Allulose"] * 3)
+        result = scale.envelope_test(np.ones((9, 4)), labels, np.arange(4))
+        self.assertEqual(result["p_value"], 1.)
+        self.assertEqual(result["extreme_allocations"], result["allocations"])
+        self.assertTrue(np.isfinite(result["critical_curve"]).all())
+
+    def test_constant_radius_does_not_change_the_test(self):
+        labels = np.array(["Water"] * 3 + ["Sucrose"] * 3 + ["Allulose"] * 3)
+        values = np.random.default_rng(13).normal(size=(9, 2))
+        reference = scale.envelope_test(values, labels, np.arange(2))
+        result = scale.envelope_test(np.column_stack([values, np.ones(9)]), labels, np.arange(3))
+        self.assertEqual(result["p_value"], reference["p_value"])
+
+    def test_invalid_values_are_not_silently_discarded(self):
+        labels = np.array(["Water"] * 3 + ["Sucrose"] * 3 + ["Allulose"] * 3)
+        values = np.ones((9, 3)); values[0, 1] = np.nan
+        with self.assertRaises(ValueError):
+            scale.envelope_test(values, labels, np.arange(3))
+
+    def test_archived_geometry_uses_relocated_paper_tree(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "relocated"
+            (root / "scripts/shared").mkdir(parents=True)
+            bundle = root / "analyses/cohort"; bundle.mkdir(parents=True)
+            local = bundle / "geometry/a.npz"; local.parent.mkdir(); local.touch()
+            self.assertEqual(scale.resolve_geometry_path(
+                "/old/server/Paper/analyses/cohort/geometry/a.npz", bundle), local)
+
     def setUp(self):
         rng = np.random.default_rng(20260924)
         self.xy = rng.uniform(0, 120, size=(9, 2))

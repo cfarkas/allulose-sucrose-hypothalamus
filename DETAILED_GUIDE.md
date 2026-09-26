@@ -50,10 +50,12 @@ before installing the generated analyses and figure files into `Paper/`. Rerunni
 `python3 reproduce.py --archived-release` repeats the figure calculations. The data, environments,
 and logs are ignored by Git and stay on your computer.
 
-This repository is the small, public reconstruction companion for:
+This guide describes the archived release and its reconstruction workflow.
+For the September 2026 NPY/POMC updates, use the current statistical bundle
+and instructions in [README.md](README.md) and [FIGURE_GUIDE.md](FIGURE_GUIDE.md).
+The manuscript's current working title is:
 
-> Oral allulose after prior familiarization is associated with a distinct
-> spatial c-FOS/NPY profile without detectable POMC or glial activation in mice
+> Hypothalamic c-FOS labeling after oral allulose and sucrose exposure in mice
 
 Repository: [https://github.com/cfarkas/allulose-sucrose-hypothalamus](https://github.com/cfarkas/allulose-sucrose-hypothalamus)
 Release: `v1.0.0`
