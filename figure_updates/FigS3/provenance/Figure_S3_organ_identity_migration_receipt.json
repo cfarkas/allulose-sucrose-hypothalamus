@@ -1,0 +1,8 @@
+{
+  "audit_table": "/media/server/STORAGE/Apotome/Paper/FigS3/provenance/Figure_S3_organ_identity_migration_audit.csv",
+  "correction": "Liver/Kidney labels swapped; pixels and neural predictions preserved",
+  "created_utc": "2026-08-28T17:18:24.017191+00:00",
+  "samples": 24,
+  "status": "complete",
+  "version": "figs3-organ-identity-audit-1.0"
+}

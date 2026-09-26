@@ -12,7 +12,8 @@ using the same channel display settings, and adds dashed white tissue
 and ventricular guides. Panels G-H show compact
 animal-level results with vertical primary p-value blocks. Detailed raw ANOVA/MWU
 methods and cage sensitivities are written to the legend and deterministic TXT/CSV
-outputs.
+outputs. With --shape-spatial-dir, externally computed closed-shape and cluster
+panels plus their bilingual legends replace I/J, preserving A–H and their analyses.
 """
 
 from __future__ import annotations
@@ -211,16 +212,42 @@ def spanish_spatial_variants(paths: Sequence[Path]) -> tuple[Path, Path]:
     return variants
 
 
+def shape_spatial_legends(args) -> Optional[dict]:
+    """Read the supplied spatial method's descriptions, without legacy statistics."""
+    folder = getattr(args, 'shape_spatial_dir', None)
+    if folder is None:
+        return None
+    path = Path(folder).expanduser().resolve() / 'legends.json'
+    legends = json.loads(path.read_text(encoding='utf-8'))
+    for lang in ('en', 'es'):
+        for letter in ('I', 'J'):
+            if not isinstance(legends.get(lang, {}).get(letter), str) or not legends[lang][letter].strip():
+                raise ValueError(f'Missing {lang} panel {letter} legend in {path}')
+    return legends
+
+
+def labeled_spatial_description(letter: str, text: str) -> str:
+    text = text.strip()
+    return (text if text.startswith(f'({letter})') else f'({letter}) {text}') + '\n'
+
+
 def resolve_spatial_panels(args) -> tuple[Path, Path]:
     """Locate the two spatial occurrence panels drawn as I and J.
 
-    Explicit --panel-i/--panel-j win; otherwise they are read from --spatial-dir,
+    --shape-spatial-dir selects a complete replacement bundle. Otherwise explicit
+    --panel-i/--panel-j win; panels are then read from --spatial-dir,
     which defaults to a "spatial" directory beside the analysis this figure is
     built from. Missing panels are a hard error rather than a silently shorter
     figure, because the panel letters are cited by the manuscript.
     """
     explicit = (args.panel_i, args.panel_j)
-    if any(path is not None for path in explicit):
+    shape_dir = getattr(args, 'shape_spatial_dir', None)
+    if shape_dir is not None:
+        if args.spatial_dir is not None or any(path is not None for path in explicit):
+            raise ValueError('Use --shape-spatial-dir by itself, without --spatial-dir or --panel-i/--panel-j')
+        shape_spatial_legends(args)
+        resolved = tuple(Path(shape_dir).expanduser().resolve() / name for name in SPATIAL_PANEL_NAMES)
+    elif any(path is not None for path in explicit):
         if not all(path is not None for path in explicit):
             raise SystemExit("Pass both --panel-i and --panel-j, or neither")
         resolved = tuple(Path(path).expanduser().resolve() for path in explicit)
@@ -311,6 +338,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--inset-field-um", type=float, default=50.0)
     p.add_argument("--inset-scalebar-um", type=float, default=20.0)
     p.add_argument("--dpi", type=int, default=600)
+    p.add_argument("--shape-spatial-dir", type=Path, default=None,
+                   help="Closed-shape spatial panels and bilingual legends.json replacing panels I/J.")
     p.add_argument("--spatial-dir", type=Path, default=None,
                    help=("Output directory of 05_analyze_spatial_distributions.py, holding "
                          "the two spatial occurrence panels rendered as panels I and J. "
@@ -3181,12 +3210,15 @@ def save_plot_panel(path: Path, values: pd.DataFrame, column: str, ylabel: str, 
 
 
 def spatial_legend_descriptions(args: argparse.Namespace) -> Dict[str, str]:
-    """Legend text for panels I and J, quoting the spatial analysis's own numbers.
+    """Read replacement legends in shape mode, otherwise quote the original analysis.
 
     The statistics are read back from exact_spatial_permanova.csv rather than
     recomputed here, so the figure can never state a p-value the analysis did not
     produce.
     """
+    shape_legends = shape_spatial_legends(args)
+    if shape_legends is not None:
+        return {letter:labeled_spatial_description(letter, shape_legends['en'][letter]) for letter in ('I','J')}
     panel_i, _panel_j = resolve_spatial_panels(args)
     summary_path = panel_i.parent / "exact_spatial_permanova.csv"
     if not summary_path.is_file():
@@ -3381,6 +3413,18 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
         "membership, count, overlap call, or quantitative endpoint.\n"
     )
     spatial_descriptions = spatial_legend_descriptions(args)
+    shape_legends = shape_spatial_legends(args)
+    spatial_context = (
+        '' if shape_legends is not None else
+        "Ring construction is illustrated once in Figure 3G. Corresponding-ring positive and DAPI counts are summed across each animal's sections before calculating percentages.\n"
+    )
+    quantitative_context = (
+        "Bars are mean ± SD; dots are biological animals; crosses mark Tukey-IQR values retained in inference. Animal omnibus values use ordinary one-way ANOVA; W–S/W–A/S–A values use unadjusted exact two-sided MWU. Cage-mean sensitivity uses the same ANOVA/MWU family, while cage-summed numerator/denominator sensitivity uses exact binomial deviance; low positive denominators are retained (W, Water; S, Sucrose; A, Allulose).\n"
+    )
+    quantitative_statistics_heading = f"Animal-level values source: {values_path}.\n\nStatistics:\n"
+    if shape_legends is not None:
+        quantitative_context = "For panels G–H, " + quantitative_context[0].lower() + quantitative_context[1:]
+        quantitative_statistics_heading = f"Animal-level values source for panels G–H: {values_path}.\n\nStatistics for panels G–H:\n"
     master = (
         "Figure ARC/ME.\n\n"
         + common_alignment + scale_text
@@ -3392,9 +3436,9 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
         + "(H) Animal-level c-FOS∧POMC/total-POMC ratios in ME and ARC.\n"
         + spatial_descriptions["I"]
         + spatial_descriptions["J"]
-        + "Ring construction is illustrated once in Figure 3G. Corresponding-ring positive and DAPI counts are summed across each animal's sections before calculating percentages.\n"
-        + "Bars are mean ± SD; dots are biological animals; crosses mark Tukey-IQR values retained in inference. Animal omnibus values use ordinary one-way ANOVA; W–S/W–A/S–A values use unadjusted exact two-sided MWU. Cage-mean sensitivity uses the same ANOVA/MWU family, while cage-summed numerator/denominator sensitivity uses exact binomial deviance; low positive denominators are retained (W, Water; S, Sucrose; A, Allulose).\n"
-        + f"Animal-level values source: {values_path}.\n\nStatistics:\n"
+        + spatial_context
+        + quantitative_context
+        + quantitative_statistics_heading
         + "\n".join(stat_lines) + "\n"
     )
     (outdir / f"{args.figure_name}_LEGEND.txt").write_text(master, encoding="utf-8")
@@ -3467,18 +3511,31 @@ def write_legends(outdir: Path, args: argparse.Namespace, chosen: pd.Series, ins
             "las secciones de cada animal antes de calcular los porcentajes."
         ),
     }
+    if shape_legends is not None:
+        for letter in ('I','J'):
+            spanish_panels[f'{letter}_{PANEL_FILE_SUFFIXES[letter]}'] = labeled_spatial_description(letter, shape_legends['es'][letter]).strip()
+    spanish_spatial_methods = (
+        '' if shape_legends is not None else
+        "Los paneles I/J usan PERMANOVA exacta por permutación de etiquetas animales y corrección BH sobre las dos variables. "
+    )
     spanish_shared = (
         "La unidad biológica es el animal. Las barras muestran media ± DE, los puntos "
         "son animales y las cruces señalan valores fuera de las cercas de Tukey, que "
         "se conservaron. Los valores globales usan ANOVA ordinario de una vía y las "
         "comparaciones Agua–Sacarosa, Agua–Alulosa y Sacarosa–Alulosa usan Mann–Whitney "
         "exacta bilateral sin ajuste. Las sensibilidades usan medias por jaula y una "
-        "desviancia binomial exacta sobre recuentos sumados por jaula. Los paneles I/J "
-        "usan PERMANOVA exacta por permutación de etiquetas animales y corrección BH "
-        "sobre las dos variables. Todas las regiones ARC/ME/VMN cuantificadas proceden "
+        "desviancia binomial exacta sobre recuentos sumados por jaula. "
+        + spanish_spatial_methods
+        + "Todas las regiones ARC/ME/VMN cuantificadas proceden "
         "de la anotación HIL nativa completa; células y secciones no son réplicas "
         "biológicas. Se excluyeron máscaras POMC menores que el área media de DAPI en la misma sección y región, mediante la misma regla en todos los tratamientos. Se conservaron las imágenes, máscaras originales y anatomía aceptada."
     )
+    if shape_legends is not None:
+        spanish_shared = spanish_shared.replace(
+            "La unidad biológica es el animal. Las barras muestran",
+            "En G–H, la unidad biológica es el animal. En estos paneles, las barras muestran",
+            1,
+        ).replace("Los valores globales usan", "Los valores globales de G–H usan", 1)
     spanish_master = (
         "Figura 4. POMC/c-FOS en ARC y ME con anatomía HIL aceptada.\n\n"
         + "\n".join(spanish_panels.values())
@@ -4055,6 +4112,30 @@ def make_figure(args: argparse.Namespace) -> Tuple[Path, ...]:
         "panel_F_wall_geometry_drawn": False,
         **{f"human_review_{key}": value for key, value in review_provenance.items()},
     })
+    if getattr(args, 'shape_spatial_dir', None) is not None:
+        shape_dir = Path(args.shape_spatial_dir).expanduser().resolve()
+        shape_legend_path = shape_dir/'legends.json'
+        spatial_receipt_path = provenance_dir/'shape_spatial_source_manifest.json'
+        spatial_receipt = {
+            'schema': 'figure4_shape_spatial_integration_v1',
+            'analysis_changed': True,
+            'nonspatial_analysis_changed': False,
+            'shape_spatial_source': str(shape_dir),
+            'legend_source': str(shape_legend_path),
+            'legend_sha256': sha256_file(shape_legend_path),
+            'panels': {
+                key: {'source': str(path), 'sha256': sha256_file(path)}
+                for key, path in [('I_en',spatial_i),('J_en',spatial_j),('I_es',spanish_spatial_i),('J_es',spanish_spatial_j)]
+            },
+        }
+        spatial_receipt_path.write_text(json.dumps(spatial_receipt, indent=2)+'\n', encoding='utf-8')
+        manifest.update({
+            'analysis_changed': True,
+            'nonspatial_analysis_changed': False,
+            'shape_spatial_source': str(shape_dir),
+            'shape_spatial_receipt': str(spatial_receipt_path),
+            'shape_spatial_receipt_sha256': sha256_file(spatial_receipt_path),
+        })
     for marker_name, marker_record in cellpose_provenance.items():
         safe_marker = marker_name.lower().replace("-", "")
         for key, value in marker_record.items():

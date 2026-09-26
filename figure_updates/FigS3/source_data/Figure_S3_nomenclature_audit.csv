@@ -1,0 +1,8 @@
+field,raw_value,standardized_value,rule
+treatment,AGUA,Water,"trim, remove accents, map Spanish label; AGUA_Sin_cerebro retains note"
+treatment,AGUA_Sin_cerebro,Water,"trim, remove accents, map Spanish label; AGUA_Sin_cerebro retains note"
+treatment,ALULOSA,Allulose,"trim, remove accents, map Spanish label; AGUA_Sin_cerebro retains note"
+treatment,SACAROSA,Sucrose,"trim, remove accents, map Spanish label; AGUA_Sin_cerebro retains note"
+organ,BAZO,Spleen,"trim, remove accents, map Spanish organ label"
+organ,HÍGADO,Liver,"trim, remove accents, map Spanish organ label"
+organ,RIÑÓN,Kidney,"trim, remove accents, map Spanish organ label"

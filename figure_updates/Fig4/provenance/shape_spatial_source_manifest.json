@@ -1,0 +1,53 @@
+{
+  "schema": "figure4_arc_scale_resolved_spatial_v1",
+  "analysis_dir": "analyses/fig4_scale_resolved_20260925",
+  "region": "ARC",
+  "me_analysed": false,
+  "unit": "biological cage",
+  "panel_renderer": "scripts/shared/fig4_scale_resolved_panels.py",
+  "panel_receipt": {
+    "schema": "fig4-scale-resolved-panels-v1",
+    "analysis_dir": "/media/server/STORAGE/Apotome/Paper/analyses/fig4_scale_resolved_20260925",
+    "output_dir": "/media/server/STORAGE/Apotome/Paper/analyses/fig4_scale_resolved_20260925/panels/Fig4",
+    "dpi": 600,
+    "region": "ARC",
+    "unit": "biological cage",
+    "me_analysed": false,
+    "endpoints": {
+      "cfos": "I",
+      "marker_cfos": "J"
+    },
+    "files": [
+      "Figure4_Spatial_cFOS_occurrence.pdf",
+      "Figure4_Spatial_cFOS_occurrence.png",
+      "Figure4_Spatial_cFOS_POMC_occurrence.pdf",
+      "Figure4_Spatial_cFOS_POMC_occurrence.png",
+      "Figure4_Spatial_cFOS_occurrence_spanish.pdf",
+      "Figure4_Spatial_cFOS_occurrence_spanish.png",
+      "Figure4_Spatial_cFOS_POMC_occurrence_spanish.pdf",
+      "Figure4_Spatial_cFOS_POMC_occurrence_spanish.png",
+      "legends.json"
+    ]
+  },
+  "shape_spatial_source": "analyses/fig4_scale_resolved_20260925/assembled/Fig4/spatial_panels",
+  "legend_source": "analyses/fig4_scale_resolved_20260925/assembled/Fig4/spatial_panels/legends.json",
+  "legend_sha256": "dc5d2719a1fefa7a2909266bd089dcad0e4863ebe2581f0de21273c38e01f637",
+  "panels": {
+    "I_en": {
+      "source": "analyses/fig4_scale_resolved_20260925/assembled/Fig4/spatial_panels/Figure4_Spatial_cFOS_occurrence.png",
+      "sha256": "0e0eec27ae0dfb598eadf4da443c233f86e47c669a7ee546f1f7ea325046f7e8"
+    },
+    "I_es": {
+      "source": "analyses/fig4_scale_resolved_20260925/assembled/Fig4/spatial_panels/Figure4_Spatial_cFOS_occurrence_spanish.png",
+      "sha256": "22e047ac10b7e8a8378b2251d44f44fa1d2e8f1de4244cd75b0b348686dfe1ec"
+    },
+    "J_en": {
+      "source": "analyses/fig4_scale_resolved_20260925/assembled/Fig4/spatial_panels/Figure4_Spatial_cFOS_POMC_occurrence.png",
+      "sha256": "0157fe47f453a54361d2627b92db8673a97bc5f5a550d8890454426677361dd9"
+    },
+    "J_es": {
+      "source": "analyses/fig4_scale_resolved_20260925/assembled/Fig4/spatial_panels/Figure4_Spatial_cFOS_POMC_occurrence_spanish.png",
+      "sha256": "0090169f35faee22cb42ba0892d68c9407ef669c554524a0984265202b1307c5"
+    }
+  }
+}

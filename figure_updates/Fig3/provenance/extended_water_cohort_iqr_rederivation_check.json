@@ -1,0 +1,23 @@
+{
+  "schema": "fig3-water-extended-rederivation-check-v1",
+  "status": "PASS",
+  "spatial_directory": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/spatial",
+  "differences": [],
+  "added_animals": [
+    "WATER_NPY4",
+    "WATER_NPY5"
+  ],
+  "cohort_animals": [
+    "E7_FR7-1",
+    "E7_FR7-5",
+    "E8_FR6-1",
+    "E8_FR6-3",
+    "E8_FR6-4",
+    "E9_FR8-1",
+    "WATER_NPY1",
+    "WATER_NPY2",
+    "WATER_NPY3",
+    "WATER_NPY4",
+    "WATER_NPY5"
+  ]
+}

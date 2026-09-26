@@ -1,0 +1,24 @@
+{
+  "schema": "fig3-keyence-spatial-permanova-v1",
+  "status": "PASS",
+  "inputs": {
+    "animal_roster.csv": "800cf58500caade167e6d8266ee2c50a2ca1b7595355aba984951864f352a1f0",
+    "animal_metrics.csv": "2a0cb8f60afe6aaf782eb819225d9ca74474dbee07281ecef869a78feea4f003",
+    "spatial_eligibility.csv": "5ef02da35a5eaa53ba8f3638e7a933f430a15569553e191aed789f89ff81cc99"
+  },
+  "script_sha256": "c1d62c13b88305e0838b05a3b2f3f6a6e791757561a8a0569e7bbf7b3696588a",
+  "plan_sha256": "ed83f9fcefc72e19b3d5aae866665fa16d6be7af68a3dd3e4934431747fd45aa",
+  "recorded_animal_count": 11,
+  "animal_ids_unique": true,
+  "no_missing_features_imputed": true,
+  "permutation_unit": "biological animal",
+  "endpoint_count": 2,
+  "primary_family_size": 4,
+  "exploratory_family_size": 4,
+  "per_measure_tests": 4,
+  "per_measure_family": "Holm across the four single-measure exact tests",
+  "joint_two_measure_test": "not performed; each displayed measure is tested on its own",
+  "caveat": "Cage independence unresolved; observational exchangeability assumptions remain.",
+  "conditional_on_data_dependent_selection": true,
+  "selection_caveat": "exploratory after endpoint-specific within-condition IQR exclusion; filter held fixed during permutations, not selection-adjusted inference"
+}

@@ -1,3 +1,13 @@
+20 SEPTEMBER 2026: CLOSED MARKER CONTOURS AND ACTIVATED-CELL CLUSTERS
+
+Figures 3 and 4 now replace the radial-shell panels with closed marker-density
+contours and connected groups of at least two c-FOS-positive cells. Rebuild and
+assemble these current figures with:
+  ./scripts/run_shape_spatial_figures.sh
+Methods, condition summaries, source tables and verification:
+  analyses/spatial_shape_20260920/README.md
+The older shell reproduction commands below are historical for Figures 3–4.
+
 APOTOME PAPER — REPRODUCTION RUN-BOOK
 =====================================
 
@@ -45,7 +55,7 @@ Current numbering
 -----------------
   Fig1    behavior, experiment 1
   Fig2    design/anatomy/microscopy/c-FOS
-  Fig3    c-FOS/NPY; frozen-reference protected
+  Fig3    c-FOS/NPY; eleven animals (Water 5, Sucrose 3, Allulose 3)
   Fig4    POMC/c-FOS ARC/ME
   Fig5    GFAP/Iba1 microglia
   FigS1   single-bottle males
@@ -82,11 +92,83 @@ Without --force, Figure 3 is rebuilt and verified against its frozen reference
 but its promoted bytes remain unchanged. The compatibility option --promote is
 accepted but no longer needed.
 
+Figure 3 revision line
+----------------------
+The certified path above reproduces the frozen Figure 3 reference. The current
+published Figure 3 comes from its own revision line and is rebuilt separately:
+
+  ./scripts/run_fig3_new_water_cohort.sh
+
+This verifies the hash-bound cohort inputs, runs the numerical test suites,
+recomputes the statistics, renders bilingual A-I panels, assembles, validates
+and publishes into Fig3/. It needs no GPU. Fig3/07_rebuild_complete_figure3.sh
+routes here, and Figure 4 is left untouched.
+
+The cohort is eleven animals: the original nine plus two Water controls
+acquired on 24 September 2026 (WATER_NPY4 and WATER_NPY5, specimens N132-5 and
+N132-3) on the same Zeiss LSM 780 and objective as the Sucrose and Allulose
+fields. To re-derive those two animals from their CZI files, which needs a CUDA
+GPU with at least 12 GiB free:
+
+  ./scripts/run_fig3_new_water_cohort.sh --from-raw
+
+That path runs channel extraction, Cellpose segmentation, the cell tables and
+the eleven-animal spatial analysis before the steps above. Its individual
+commands are:
+
+  /path/to/microscopy_extract/bin/python Fig3/00c_extract_new_water_channels.py
+  /path/to/cellpose_env/bin/python Fig3/00d_segment_new_water_cellpose_gpu.py
+  /path/to/python Fig3/00e_mirror_new_water_raw_data.py
+
+The third copies the acquisitions and their derived channels and masks into
+Fig3/raw_data as independent payloads and refreshes that directory's manifests.
+
+Because the Water group's variance greatly exceeds the sugar groups' and
+coincides with acquisition batch, Figure 3's abundance panels report Welch's
+robust F with an exactly enumerated permutation null, a Brown-Forsythe test of
+equal variance, and exact studentized permutation contrasts, with the classical
+ANOVA and exact Mann-Whitney tests retained beside them. Methods and results:
+
+  analyses/fig3_water_extended_20260924/README.md
+
 The canonical installer never writes raw_data, raw, scripts, hil_review, legacy
 or README.txt. It audits all raw file metadata and all active script hashes both
 before and after installation. Superseded generated analyses are moved outside
 Paper to a recoverable /tmp path; no new in-tree legacy figure copy is created.
 Completed Figure S3 is validated, rebuilt and installed with the other figures.
+
+Figure 4 revision line
+----------------------
+Panels I and J of Figure 4 report the same scale-resolved analysis as Figure 3
+panels H and I, restricted to the arcuate nucleus. For every animal the number
+of pairs of activated cells closer than r is counted within each acquisition
+and tissue side, for r from 20 to 150 micrometres, and expressed in standard
+deviations from that animal's own conditional random-labelling null, whose mean
+and variance are exact. The independent unit is the biological cage, as it
+already was for panels G and H, and conditions are compared with a studentized
+maximum-deviation global envelope test over an exhaustive enumeration of
+cage-label allocations. Both endpoints are null: p = 0.593 for c-FOS among
+DAPI-associated centroids and p = 0.714 for c-FOS among POMC-positive
+centroids, with neither observed curve leaving its envelope at any distance.
+
+The median eminence is not analysed in I and J. It retains 74 marker-associated
+cells with 28 activated across 11 animals, and only 6 of those animals have two
+or more activated cells, too sparse to define a curve. Panels G and H still
+report both regions. The earlier contour-enrichment and clustered-fraction
+panels are archived with their comparison receipts and their source tables are
+unchanged.
+
+Rebuild Figure 4 from the Paper root. It needs no GPU and no raw microscopy:
+
+  ./scripts/run_fig4_scale_resolved.sh --publish
+
+Without --publish the figure is staged in
+analyses/fig4_scale_resolved_20260925/assembled/Fig4 and nothing in Fig4 is
+touched. Either way the assembler refuses to write unless panels A-H, their
+standalone files and every source-data table are byte identical to the archived
+pre-revision state. Methods and results:
+
+  analyses/fig4_scale_resolved_20260925/README.md
 
 Supplementary Figure S5
 -----------------------

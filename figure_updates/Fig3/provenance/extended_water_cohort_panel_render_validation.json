@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "pdf_count": 10,
+  "all_text_inside_canvas": true,
+  "text_bound_tolerance_pt": 0.5,
+  "render_receipt_sha256": "a9b0617972c8a82a2e1f79bcd3a81794125dad02b6dfe9650a424b36e8d5ea18",
+  "validator_sha256": "0b033ff667c0e96384467c80a680fdfe497fa0178248e25f288edaa14e50954d",
+  "panels": [
+    {
+      "path": "quantitative_inputs/Figure_3_cFos_NPY_Panel_D.pdf",
+      "sha256": "a4f38b5b3a580eec6ecb01b722e85880c2ca7975acacdc2b562b6092c9cd472b",
+      "page_size_pt": [
+        311.052001953125,
+        252.8470001220703
+      ],
+      "text_spans_checked": 15,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "quantitative_inputs/Figure_3_cFos_NPY_Panel_D_spanish.pdf",
+      "sha256": "a213b4a768c6ad9b88a0c83838f35db1d296ed6659ede14255b918059c6abdda",
+      "page_size_pt": [
+        311.052001953125,
+        252.8470001220703
+      ],
+      "text_spans_checked": 15,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "quantitative_inputs/Figure_3_cFos_NPY_Panel_E.pdf",
+      "sha256": "13cf867cd724b1c285829194ccccb897b15c3420603fd0ff078fce12dfe91baa",
+      "page_size_pt": [
+        311.052001953125,
+        252.8470001220703
+      ],
+      "text_spans_checked": 14,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "quantitative_inputs/Figure_3_cFos_NPY_Panel_E_spanish.pdf",
+      "sha256": "913766a820d7e21f7e1075659ed053c704a3645bba1b814b0dc218c1971470b6",
+      "page_size_pt": [
+        311.052001953125,
+        252.8470001220703
+      ],
+      "text_spans_checked": 14,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "spatial_panels/Fig3/Spatial_shape_definition_NPY.pdf",
+      "sha256": "89d1a7cef5fda844d3b508858f371926a686f54f118f22da1c89018da90b0fff",
+      "page_size_pt": [
+        288.0,
+        234.1085662841797
+      ],
+      "text_spans_checked": 16,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "spatial_panels/Fig3/Spatial_shape_definition_NPY_spanish.pdf",
+      "sha256": "6cf3b96bfbec82f7b33368f8761186b6f7b10379dd37b00f4f13410b23c9a1e4",
+      "page_size_pt": [
+        288.0,
+        234.1085662841797
+      ],
+      "text_spans_checked": 16,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+      "sha256": "12ead46d947e9f22b7d2dfc8d447937537efdd022d7c43eb78e97fd4750bbc80",
+      "page_size_pt": [
+        475.20001220703125,
+        224.63999938964844
+      ],
+      "text_spans_checked": 42,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "spatial_panels/Fig3/en/Figure3_Spatial_cFOS_occurrence.pdf",
+      "sha256": "8e1f01e3aeb5539df4307759c084d02aa3d6b462f4bd4f51bace8720d9f8f625",
+      "page_size_pt": [
+        475.20001220703125,
+        224.63999938964844
+      ],
+      "text_spans_checked": 42,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
+      "sha256": "6eaebad3171e8d6f23c998a28a6fa18efbbb77a85afad3c9d6216ff3c794f90b",
+      "page_size_pt": [
+        475.20001220703125,
+        224.63999938964844
+      ],
+      "text_spans_checked": 42,
+      "text_outside_canvas": []
+    },
+    {
+      "path": "spatial_panels/Fig3/es/Figure3_Spatial_cFOS_occurrence.pdf",
+      "sha256": "f8d6fa7fe53a9ae3d934fd0a976591e43a7b39b04a770791fc6060aa7d44f2ac",
+      "page_size_pt": [
+        475.20001220703125,
+        224.63999938964844
+      ],
+      "text_spans_checked": 42,
+      "text_outside_canvas": []
+    }
+  ]
+}

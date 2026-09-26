@@ -1,0 +1,9 @@
+endpoint,analysis,feature,pooled_mean,pooled_sd,retained,n_animals
+cfos,three_condition,core_enrichment,1.4192412102873555,0.6344445144522979,True,11
+cfos,three_condition,cluster_excess,0.16803622041247107,0.052934032601260714,True,11
+cfos,sugar_platform_adjusted,core_enrichment,1.7046011629255133,0.38047850071768674,True,6
+cfos,sugar_platform_adjusted,cluster_excess,0.17336878145214848,0.045841314728171746,True,6
+marker_cfos,three_condition,core_enrichment,1.0119917003540786,0.06736018184031706,True,9
+marker_cfos,three_condition,cluster_excess,0.05212358712422997,0.12663557898500608,True,9
+marker_cfos,sugar_platform_adjusted,core_enrichment,0.9934052541243136,0.07607722382928306,True,6
+marker_cfos,sugar_platform_adjusted,cluster_excess,0.09433603193290803,0.13807708980097647,True,6

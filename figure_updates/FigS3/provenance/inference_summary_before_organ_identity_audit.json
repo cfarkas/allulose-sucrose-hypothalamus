@@ -1,0 +1,2248 @@
+{
+  "complete_slides": 24,
+  "created_utc": "2026-08-28T16:58:10.970306+00:00",
+  "cross_species_validated": false,
+  "failed_slides": [],
+  "model": "HistoPLUS-20x",
+  "model_license": "CC-BY-NC-ND-4.0",
+  "prepared_slides": 0,
+  "publication_interpretation": "exploratory model-predicted nuclear phenotypes",
+  "receipts": [
+    {
+      "amp": false,
+      "batch_size": 4,
+      "biological_unit": "animal",
+      "candidate_tiles": 665,
+      "cell_count": 85693,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-001/conversion_receipt.json",
+      "conversion_receipt_sha256": "f23d9caba477c257415d29b9d14d796d06c52c6a8c563fe9ad732cae6f17f47d",
+      "created_utc": "2026-08-28T15:37:40.806182+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 332.75095653533936,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 7552011264,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-001/organ_label_mask.png",
+      "organ_label_mask_sha256": "5742177ab9a1e82fef97cce109c5b1651f196b59b7a8f1198a226c2772718cc1",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/candidate_tile_manifest.csv",
+          "sha256": "b50de39e06ef02ef04476804ee6b9c53fbda620201e287c57197d98ce64f082d",
+          "size_bytes": 91460
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/cells.parquet",
+          "sha256": "0e770c009d210def1862444dbe73086e043252520b3f854f9a1efde1845be953",
+          "size_bytes": 22900066
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/phenotype_summary.csv",
+          "sha256": "8f840d322b2bbee367283dfe47245b8847bf8c9f54f39ddef117d3fa9f82b8c3",
+          "size_bytes": 7028
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/representative_histoplus_overlay.png",
+          "sha256": "355a99f4df57fbe0367f4870f90be1e322de524f2ad36f9b8e8b9782d9b929ac",
+          "size_bytes": 1514108
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/selected_tile_manifest.csv",
+          "sha256": "16b2300756f0c6acae61156badd6d22029c1cc473d9b917bfd36c50c4a9a1ee2",
+          "size_bytes": 11233
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/selected_tiles_overview.png",
+          "sha256": "46f338ccfb6e8ed25bcee9309eb393a64bfd1e744903026ef8f2b7ce1d38e3c3",
+          "size_bytes": 2029990
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/tile_class_counts.csv",
+          "sha256": "2bf5919ad580b7f57d57a27e50478353f44ccc954ac2cb089341da01d2554323",
+          "size_bytes": 6406
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/tile_cv_features.csv",
+          "sha256": "21bdecf8d0093929611753c503fc668db48ca44b72a2cfc95ddd1ddd40e22169",
+          "size_bytes": 19210
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-001/provisional_tile_pixel_qc.csv",
+          "sha256": "ca5b4ccfbdbc50b8f7faf26e14c8de7641de14bf1796b8d3da899a2c1c9a985f",
+          "size_bytes": 5651
+        }
+      },
+      "postprocess_workers": 4,
+      "precision": "float32",
+      "representative_tile_uid": "m26-001_liver_023",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-001",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-001/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide polygon helper on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 958,
+      "cell_count": 74568,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-002/conversion_receipt.json",
+      "conversion_receipt_sha256": "bde601be6ae8e262b0b44645bf5e16b3844d324877004da8fb888d81632526c0",
+      "created_utc": "2026-08-28T15:43:38.617624+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 319.99204874038696,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-002/organ_label_mask.png",
+      "organ_label_mask_sha256": "918f45a90abd767bb7bd9008df617d634eac9a748c0a97cf973a62d9eb30d0d7",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/candidate_tile_manifest.csv",
+          "sha256": "f8216ba7738cdbf40b7c79b452c869d32fa19b5cc54a27d910a06ca5f7806dbf",
+          "size_bytes": 131356
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/cells.parquet",
+          "sha256": "6e50041fff4826e5d1d8f84669180ff56dfc1c1d413d61681d5f60c922f1dc52",
+          "size_bytes": 21598877
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/phenotype_summary.csv",
+          "sha256": "113f7e88d14f727276e27713ddcc50f4cd5633ae95ee8a3360b7ff964bcb9d69",
+          "size_bytes": 6876
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/representative_histoplus_overlay.png",
+          "sha256": "8338d5499b6be0310c11573b08247235882b1236b195c260f3fb51b40c95d205",
+          "size_bytes": 1636235
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/selected_tile_manifest.csv",
+          "sha256": "1e673c27eccbd70f302463e33b852fe1648fc758d8e5e969bf9676188995dddc",
+          "size_bytes": 11246
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/selected_tiles_overview.png",
+          "sha256": "f90e18c0be2c961d4f31688ad5651160824754d27189d110bd2a8913f5770c99",
+          "size_bytes": 2474326
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/tile_class_counts.csv",
+          "sha256": "b431c44431b2a9dfd645813ebe667b32acb69f73f3401e5bd5ef910a8134b934",
+          "size_bytes": 6386
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/tile_cv_features.csv",
+          "sha256": "4dda30f28c2c010e9881cc66e909570758894ba04dbe818ed25ba5b151c054e7",
+          "size_bytes": 19280
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-002/provisional_tile_pixel_qc.csv",
+          "sha256": "10f64b85c0a244bc886cdb3303c0463c3f934488ba23ed7c1307de2f38bd52d3",
+          "size_bytes": 5647
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-002_kidney_012",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-002",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-002/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide polygon helper on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 4,
+      "biological_unit": "animal",
+      "candidate_tiles": 612,
+      "cell_count": 67199,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-003/conversion_receipt.json",
+      "conversion_receipt_sha256": "9c517591e86c355898cec6a95f65909ae69f667035ecb1207503e509bac09bfc",
+      "created_utc": "2026-08-28T15:31:28.183525+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 337.3102853298187,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 7552011264,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-003/organ_label_mask.png",
+      "organ_label_mask_sha256": "41e362d18fe20cd629c90135c33daf0bb69fb5f7600970cefe6324649e2306eb",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/candidate_tile_manifest.csv",
+          "sha256": "a529f7dc3b5faf5da207fed85e08397decce02a9228bea4bd922c8603c1f0f09",
+          "size_bytes": 84408
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/cells.parquet",
+          "sha256": "5150717787defbc96b5d112f256fc5d19360e5f18c6a1dff8fb3db8e7671d97d",
+          "size_bytes": 20049575
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/phenotype_summary.csv",
+          "sha256": "074de6db0f74a01bd429ae4018bf501b9b2c76feee52ce1bb73c2ad48f22a3c6",
+          "size_bytes": 6927
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/representative_histoplus_overlay.png",
+          "sha256": "693312d3ad1c2a1c17a2c1384e8e9f8bda61fa4addc55b5c0774ed947b52ca76",
+          "size_bytes": 1523260
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/selected_tile_manifest.csv",
+          "sha256": "206e8ca7357cc2bad7127c2389746bebbbbbb3f38a5471ce615aca609be025a6",
+          "size_bytes": 11248
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/selected_tiles_overview.png",
+          "sha256": "57541b6a863b900ca24e113dad8528301786779ce232e74c262037179f281566",
+          "size_bytes": 1695604
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/tile_class_counts.csv",
+          "sha256": "6b3a980d8420811544f429442a0a697931e48410aa76152f3d027638952d92c9",
+          "size_bytes": 6514
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/tile_cv_features.csv",
+          "sha256": "17ae4a219abafa746a1a6faea6d5dd0b4ef705ae9b4fc4325d689fcaeb836061",
+          "size_bytes": 19409
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-003/provisional_tile_pixel_qc.csv",
+          "sha256": "f7f902a8fb997185330da69c16389b527e43572122d00a65786cd9d053e836fb",
+          "size_bytes": 5643
+        }
+      },
+      "postprocess_workers": 4,
+      "precision": "float32",
+      "representative_tile_uid": "m26-003_liver_006",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-003",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-003/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide polygon helper on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 748,
+      "cell_count": 80546,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-004/conversion_receipt.json",
+      "conversion_receipt_sha256": "e4d4a4aa8764d08acc2437c8c5a202e2b3c4627f761499eb97b0871db7e28c0b",
+      "created_utc": "2026-08-28T16:06:34.822342+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 146.05474257469177,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-004/organ_label_mask.png",
+      "organ_label_mask_sha256": "691565c2e2298829d59ddde9fe3c343df4d0ab750db370206cea38796b7e3d61",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/candidate_tile_manifest.csv",
+          "sha256": "c5f40fb3de7ec943e868b1643bdbe16af1f8a311b5065debfb8a9b2cb5498195",
+          "size_bytes": 102814
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/cells.parquet",
+          "sha256": "36ed2815ec89a81eaaec9c4164e3db36993e2b23e521fe8a46d19b8f77be67fc",
+          "size_bytes": 21835350
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/phenotype_summary.csv",
+          "sha256": "a07589b13c6d0fa2d307a82f2128cbcd54a01f1b667c1498642661dfd7b9fbaf",
+          "size_bytes": 6868
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/representative_histoplus_overlay.png",
+          "sha256": "19907ab622e1db9970cd007ba9b8453fab0101e0e7be4fee80ddd9f08ce80fc7",
+          "size_bytes": 1664437
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/selected_tile_manifest.csv",
+          "sha256": "83ec9e8b57f30890d7bad5d58fa69c7eb9719db0ba9ffb952e5a8b702e2b7d19",
+          "size_bytes": 11242
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/selected_tiles_overview.png",
+          "sha256": "55eba2ab51056653dded03063b0bf98b01677942aedd59de80da0e3d464ec65d",
+          "size_bytes": 2072189
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/tile_class_counts.csv",
+          "sha256": "9d030296a879c0a87ec814e2e35d647a395eab0e314e8fe225a6defc759e495e",
+          "size_bytes": 6441
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/tile_cv_features.csv",
+          "sha256": "3b6fd76beabf9efef9e8157ecf512a1f6bfe9a4b190735555c227c4c31ee2d38",
+          "size_bytes": 19259
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-004/provisional_tile_pixel_qc.csv",
+          "sha256": "7975d082af6dc89361360c0a2b28e48476d26f71108e49a3dc84e43b05656a84",
+          "size_bytes": 5646
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-004_kidney_006",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-004",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-004/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 813,
+      "cell_count": 69819,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-005/conversion_receipt.json",
+      "conversion_receipt_sha256": "9df3d0f7baafc48da71f339c48895aa58944905cb13038b9d1b137b59cae914a",
+      "created_utc": "2026-08-28T16:08:58.848086+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 143.9326786994934,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-005/organ_label_mask.png",
+      "organ_label_mask_sha256": "0f8adf51d07df559b5388c080c5c50447164866f2898056a99a6bb0cf59db3d6",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/candidate_tile_manifest.csv",
+          "sha256": "40fb45cff54a349682103a0c2d402429615a89dce55b4943bae5ca0b096a01f0",
+          "size_bytes": 111706
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/cells.parquet",
+          "sha256": "e6e3d5ccef01b67f925cb6e29d4f3cfad2b6d04c7ef2a4ccbb2366a348ebae9f",
+          "size_bytes": 20323922
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/phenotype_summary.csv",
+          "sha256": "f6e7e2e46c6c95268206a1e108575969d3eb8bc43168f3ae99aa4508f9d705d1",
+          "size_bytes": 7015
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/representative_histoplus_overlay.png",
+          "sha256": "3b9037d4892ac1760d72daf8ed981c170717f7a59388a4ff05f7de75450148e1",
+          "size_bytes": 1524805
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/selected_tile_manifest.csv",
+          "sha256": "541be82dce23f47605dfc1aa0be4be9c6b9b3a39bd886e8fde89160e9cb8f637",
+          "size_bytes": 11249
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/selected_tiles_overview.png",
+          "sha256": "c8f802ad7be9ea50ad870534ed077c6073a417bf34552270864f0623eb0fff13",
+          "size_bytes": 1863993
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/tile_class_counts.csv",
+          "sha256": "b7df8f44017d6ab8e2c09f48004978b95b535bb323ebffaf10f5da6e8734911f",
+          "size_bytes": 6486
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/tile_cv_features.csv",
+          "sha256": "37e3a4abd0ebbde861ad3c321537ead5232693dd4f01735e9908d900f75e125e",
+          "size_bytes": 19318
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-005/provisional_tile_pixel_qc.csv",
+          "sha256": "20ffa0ffe262120e1cb0c4eb05040bcf960895bf4b768705535a2bd93fcb5796",
+          "size_bytes": 5639
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-005_liver_016",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-005",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-005/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 807,
+      "cell_count": 85806,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-006/conversion_receipt.json",
+      "conversion_receipt_sha256": "d2e6baf7e86d6ef3568d8603b6c17969f409745633d18e99bfe1351eee914a92",
+      "created_utc": "2026-08-28T16:11:24.321199+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 145.36180710792542,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-006/organ_label_mask.png",
+      "organ_label_mask_sha256": "8fa36f417193f1b52ea3df5321d1b44a151552f57bcbd83b69d76c500740f7fd",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/candidate_tile_manifest.csv",
+          "sha256": "135f258a70048e2b278dba382542edf75056920f8d22967e0496e253cadcff0e",
+          "size_bytes": 110926
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/cells.parquet",
+          "sha256": "f2101cb0f146048221551664b751912897e5d72f83487ba8c0e544e8d26386eb",
+          "size_bytes": 24247101
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/phenotype_summary.csv",
+          "sha256": "ad2be724eec58c57b42af2623d3808270ef14f9e520e840c9ba701889562b1c5",
+          "size_bytes": 6902
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/representative_histoplus_overlay.png",
+          "sha256": "ebb760cc3152714792d0d8d220f705a8b03d92e2365530e69ef4a5189ea3b5d1",
+          "size_bytes": 1348997
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/selected_tile_manifest.csv",
+          "sha256": "71c9ae8820a0fb9531dd8a80ff5e2b699a0258c12a5a6e0359d41c2754b785e4",
+          "size_bytes": 11247
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/selected_tiles_overview.png",
+          "sha256": "51b19174a86005daed2674303a40406520276c03237b65ab248550137d39fbc9",
+          "size_bytes": 2185104
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/tile_class_counts.csv",
+          "sha256": "215b7fddba9f7f628bd79ec2fed1160691df4e57e937f4b2cc92c06e6897b95b",
+          "size_bytes": 6536
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/tile_cv_features.csv",
+          "sha256": "67cf85e0775dc8dab15cda7fe66f3d110dcf5df9ca01cd969ae76fc1211580e6",
+          "size_bytes": 19397
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-006/provisional_tile_pixel_qc.csv",
+          "sha256": "4bca941e0f11765153e144d1ecc9a08fb51d9bfc20ae124e9fc74d8078578662",
+          "size_bytes": 5641
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-006_liver_005",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-006",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-006/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 797,
+      "cell_count": 76495,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-007/conversion_receipt.json",
+      "conversion_receipt_sha256": "91669260ede43772da3560ec59e04ea27c15a8512e5f45fce8dd003b42a7bfea",
+      "created_utc": "2026-08-28T16:13:49.829780+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 145.40972900390625,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-007/organ_label_mask.png",
+      "organ_label_mask_sha256": "6d8d6c612ad2e634d648aef948f5dce646545c2fd9dec03ff8f062009e419293",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/candidate_tile_manifest.csv",
+          "sha256": "f821447b8318e5d30ef34706971d8a500633cf4e117b12911030b7d9f0a420cd",
+          "size_bytes": 109502
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/cells.parquet",
+          "sha256": "5bb87d8b92e0b7285aec53c42a23f7984f4ae75b68ba20b3f7bc83faaff9b53f",
+          "size_bytes": 20661781
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/phenotype_summary.csv",
+          "sha256": "5d22c1af64917f1b13c7947d9bc118c79cedc7ae4d8ff156147ed5b11db4ca8a",
+          "size_bytes": 6900
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/representative_histoplus_overlay.png",
+          "sha256": "2f3d2469c8f81a3e4b2b9d26fd3cf564e93c927f6134c822e36c8f41fd43c00a",
+          "size_bytes": 1541590
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/selected_tile_manifest.csv",
+          "sha256": "6f98cc3c6b6482e55e2ce12bfef3aefc39dbc1954f73f4b8335b4ebc5632897d",
+          "size_bytes": 11251
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/selected_tiles_overview.png",
+          "sha256": "7cca22db6f5a633d38b4c382c71b671583f148ffe6e3620cdc95343de066d409",
+          "size_bytes": 1938801
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/tile_class_counts.csv",
+          "sha256": "d267caecbeec16b1cb83d6041e4526a5a6c7ec47db81fee305b574d4321fcd5a",
+          "size_bytes": 6533
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/tile_cv_features.csv",
+          "sha256": "48f7d72cedac9d66ae2cea2bee93e6b614359e62a2194d96033b691fc8b352a0",
+          "size_bytes": 19338
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-007/provisional_tile_pixel_qc.csv",
+          "sha256": "e7f417127b2e81c4ec9d88375304742024e82bd4bde67d5db529fd615ce0e78f",
+          "size_bytes": 5631
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-007_liver_001",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-007",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-007/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 589,
+      "cell_count": 78320,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-008/conversion_receipt.json",
+      "conversion_receipt_sha256": "b510ab0f19c9e14777307abeaa6f93c6a92412dc8eb69f80dc5b9970a1d0b93e",
+      "created_utc": "2026-08-28T16:16:15.714459+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 145.7868673801422,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-008/organ_label_mask.png",
+      "organ_label_mask_sha256": "3f70f2ac661f86846e81131c6666a3fa67ebe0e5106d3632e8b866bde2e45335",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/candidate_tile_manifest.csv",
+          "sha256": "618d58930a615c7faa43fa8d766cc18acfc0226db60d3d9b59d5ef2887e0fefe",
+          "size_bytes": 81132
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/cells.parquet",
+          "sha256": "5a10dd2bea51f9b63d582a01c0e41609d97ac053d6c8c8a698e5774cf906a57f",
+          "size_bytes": 20795186
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/phenotype_summary.csv",
+          "sha256": "6d83ff9c1de7ac030cac675ec943b2b62a61a0567df50454f157297637a053e5",
+          "size_bytes": 6847
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/representative_histoplus_overlay.png",
+          "sha256": "5b7577cdacfcb21ccb7a079f4895b20a11dbb582cca5a85bc3cc4e67ed0cc170",
+          "size_bytes": 1446749
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/selected_tile_manifest.csv",
+          "sha256": "3a5dc61c2c7e94710fbcd86e7b8df4be5f0deb7ac721b031e49b5b3bfe321049",
+          "size_bytes": 11236
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/selected_tiles_overview.png",
+          "sha256": "f26b7b782fc52426d7afbb75e35d6810d229417ad0201bb23af87330112771d7",
+          "size_bytes": 1948068
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/tile_class_counts.csv",
+          "sha256": "9d1e1fa4c748924c5263c1b53f0835184bbd3ed08dbba921784df83efb230e20",
+          "size_bytes": 6628
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/tile_cv_features.csv",
+          "sha256": "db9230fbb5b3d9f9b7550853d60ca5970f74ef4f9988dd3e20a7d3311873dd88",
+          "size_bytes": 19405
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-008/provisional_tile_pixel_qc.csv",
+          "sha256": "f4bc789ef0ef603d51b2bdad39dbe0ed020b2c35cabfd00f61dcff40720e7dee",
+          "size_bytes": 5640
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-008_liver_002",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-008",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-008/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 1079,
+      "cell_count": 52436,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-009/conversion_receipt.json",
+      "conversion_receipt_sha256": "cd929298c3dc6faacbed6db57c82f106c83c5c4daf9102eebf44c2b4ff891fa4",
+      "created_utc": "2026-08-28T16:18:24.225870+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 128.42713141441345,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-009/organ_label_mask.png",
+      "organ_label_mask_sha256": "b6ff4fd208978f86c749fd38609f21b39442701df8cc9eaf0cbb18ff6a9e5ae0",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/candidate_tile_manifest.csv",
+          "sha256": "42e7ecf6ebc0d65f07be655b7a7f5f56ac3ca970c0561212e04e146d824d6651",
+          "size_bytes": 147786
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/cells.parquet",
+          "sha256": "3e160a8062110fbb361c18a728afdc28758410d5197ec0fb4c4c1f277e419c0d",
+          "size_bytes": 14943496
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/phenotype_summary.csv",
+          "sha256": "e2ede1ec1ab26e20e557b7c05c83e70be3a1cd1745912624bcd7ffceb8b7fe7c",
+          "size_bytes": 6869
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/representative_histoplus_overlay.png",
+          "sha256": "0b678c912ec2c668fe28f5d62a2ff204c876bc2fec46d1f7b5cbbd680e539544",
+          "size_bytes": 1477759
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/selected_tile_manifest.csv",
+          "sha256": "96408c44e46bce7dc3d0287101cf4970c2ae8a784a95752fa3383d185f036c10",
+          "size_bytes": 11250
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/selected_tiles_overview.png",
+          "sha256": "33f785f615b36ee7acded38ee9893fbcea913053fb5e921ec0b3e9ae04e97a9d",
+          "size_bytes": 2866953
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/tile_class_counts.csv",
+          "sha256": "390d9d5e5006cc15377c06b9130c2ba1d5882f7b6533a8ff8b9a0149291a77aa",
+          "size_bytes": 6538
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/tile_cv_features.csv",
+          "sha256": "d5f05bd58c12efab5fedd53f66beee5216bc87116ccac8f36ad74df1159cc2b9",
+          "size_bytes": 19404
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-009/provisional_tile_pixel_qc.csv",
+          "sha256": "b817d6fe8b26c098b750bd83bfe962b156f47af494b7a99fb32af536dd3e8c34",
+          "size_bytes": 5657
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-009_liver_013",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-009",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-009/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 385,
+      "cell_count": 69775,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-010/conversion_receipt.json",
+      "conversion_receipt_sha256": "d687b636a9dc3d49c6103b360ee110344ac65523b9630b56a3fd96d8c68c9c03",
+      "created_utc": "2026-08-28T16:20:37.860458+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 133.55193948745728,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-010/organ_label_mask.png",
+      "organ_label_mask_sha256": "11d3da0fc4db647967c85505d153dcd9023cdbe99bd644fa52d810b6fe563093",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/candidate_tile_manifest.csv",
+          "sha256": "c686606825dc76fa0759dfe268ce90c119fd7e3c4fa461d1258da203a71ceee4",
+          "size_bytes": 53530
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/cells.parquet",
+          "sha256": "3259b63d7c3609424f85f9d70f74a6d8c7feb1ffdc75740e0a0bf926d3bce5a2",
+          "size_bytes": 18008069
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/phenotype_summary.csv",
+          "sha256": "7d5e72d27699f0f99a01681caace919c61109371deb664d547db8ee0def1b9a8",
+          "size_bytes": 6850
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/representative_histoplus_overlay.png",
+          "sha256": "660aa744e899bdb4e4e9b0e2e5aea2675e3e7345c2359acb84498e34b915618e",
+          "size_bytes": 1394550
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/selected_tile_manifest.csv",
+          "sha256": "92a4a015dce063322e096f3f4f7ef1d5c4a1cecb060869bcfcb591ee6c50abd5",
+          "size_bytes": 11215
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/selected_tiles_overview.png",
+          "sha256": "0e71f5d6dc84b27c239b7abe03ffee0762b7c12f1c7dd932c641a55393231395",
+          "size_bytes": 1522658
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/tile_class_counts.csv",
+          "sha256": "3f0bb32291649bc578c62bf701fec1320578d1562aa98698ca91cbd6d5f0655b",
+          "size_bytes": 6599
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/tile_cv_features.csv",
+          "sha256": "80f3000ad0c6ef34cbcd71664c6d3fc6b3cfa815536568b79bb88a4f073c556a",
+          "size_bytes": 19452
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-010/provisional_tile_pixel_qc.csv",
+          "sha256": "c8d7420c501f6b3becdfae773d8dde3699af6053fbee67f0be503e22330589e0",
+          "size_bytes": 5632
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-010_liver_019",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-010",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-010/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 565,
+      "cell_count": 79629,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-011/conversion_receipt.json",
+      "conversion_receipt_sha256": "65e44d8474994ec692178accda3d9a3fc6f947f191f5117d6dfe993fea5d3b8b",
+      "created_utc": "2026-08-28T16:22:54.641036+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 136.70664429664612,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-011/organ_label_mask.png",
+      "organ_label_mask_sha256": "b81661317ada77ba2e1d65ca92faef5590a941183ceaa27efa88dda2670f8e0e",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/candidate_tile_manifest.csv",
+          "sha256": "a37454e96b02ee6aa2daa75e0a9be72b734f5891192dff68248a3e2e506c417b",
+          "size_bytes": 77827
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/cells.parquet",
+          "sha256": "2016a51b0168230efb0d092ae6ea0e5c1050c6b63817a4e6e88f95c04f158d84",
+          "size_bytes": 22371501
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/phenotype_summary.csv",
+          "sha256": "c83addf37342dfc9eead418ef7be833ca687be9817b351693bcbcd6963bba08e",
+          "size_bytes": 6855
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/representative_histoplus_overlay.png",
+          "sha256": "c67568545903b58c62171085844f62eb844155f582b3a75952074be72ea1d62f",
+          "size_bytes": 1363643
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/selected_tile_manifest.csv",
+          "sha256": "e305f5ee955a8f05820ca01ba6ab53de445010d2ce92ae2db1d7b773c818d71d",
+          "size_bytes": 11228
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/selected_tiles_overview.png",
+          "sha256": "d0d69bf79056998022929c7441a0d776d0a07d0d290374fa273a53ea998751c8",
+          "size_bytes": 1670535
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/tile_class_counts.csv",
+          "sha256": "b67f4501a088f1d10cc88bea63462477ce406a4262090c131c6ba387bbc7dce1",
+          "size_bytes": 6643
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/tile_cv_features.csv",
+          "sha256": "4149c5b83b85ba51d42e111d21b81aa8b9ab08ddd2756fa86f7ca6ca96f4ff9e",
+          "size_bytes": 19422
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-011/provisional_tile_pixel_qc.csv",
+          "sha256": "b186584f1776192178b638e6f0068fe639442e2ccf56cdc914e1a200b07a0458",
+          "size_bytes": 5640
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-011_liver_007",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-011",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-011/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 762,
+      "cell_count": 86319,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-012/conversion_receipt.json",
+      "conversion_receipt_sha256": "7a81b9eba1341b28f93557de5cb00ef3084be5facd605efb3a269e390b3ffe44",
+      "created_utc": "2026-08-28T16:25:19.939737+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 145.09307265281677,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-012/organ_label_mask.png",
+      "organ_label_mask_sha256": "a506fd2173b8da6345e3da5df804293fbf667ba776b6f5d485120571cb2bf316",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/candidate_tile_manifest.csv",
+          "sha256": "d41a0c8d96596a23bba509e60d0dafeac93e83855929249edb603bc057a2bfd2",
+          "size_bytes": 104676
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/cells.parquet",
+          "sha256": "3d1b0b6148ebe10ed6bc879f15f338f9624dcffa670a76b7f5597ff75d2ec7b8",
+          "size_bytes": 23743874
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/phenotype_summary.csv",
+          "sha256": "648e86a453c9fc2a4352d7f3a4fd03758c2953cd6f3013e626a914fb7ccd7684",
+          "size_bytes": 7050
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/representative_histoplus_overlay.png",
+          "sha256": "8d25b6bda5f3dd9762fcc69271a116cdcb65b27571037a74daae65e136498f37",
+          "size_bytes": 1406527
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/selected_tile_manifest.csv",
+          "sha256": "d702b2178d00c6b2412844a5f4894efa03b6ec961cdc76af4cd23947f2e54e9f",
+          "size_bytes": 11245
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/selected_tiles_overview.png",
+          "sha256": "f9b6d31995cadb0e189e2719b363fea37219a3b526edd02f7aa7e1bed82c47f3",
+          "size_bytes": 2323188
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/tile_class_counts.csv",
+          "sha256": "6abcc4bbe16428d92b13f4f222be862f7ab538fda81ff7df94922984a9119a13",
+          "size_bytes": 6554
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/tile_cv_features.csv",
+          "sha256": "640f24209a03f4813d842a73990333d3a96baa59ccda31d381809e8536f4f38b",
+          "size_bytes": 19260
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-012/provisional_tile_pixel_qc.csv",
+          "sha256": "15aa9e2bd614e6bdc85c2ccf34ad976af42a4c88f6395852d3091a0a30461186",
+          "size_bytes": 5637
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-012_liver_003",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-012",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-012/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 631,
+      "cell_count": 79345,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-013/conversion_receipt.json",
+      "conversion_receipt_sha256": "8a4740e3ea5653b458c1037854668a13fb05f15cd6e9f8696cac58d6f64768f1",
+      "created_utc": "2026-08-28T16:27:46.110642+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 146.07246041297913,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-013/organ_label_mask.png",
+      "organ_label_mask_sha256": "545fc807aaf5a6862b9025f640d3db64740bd57ad053288ff7530774b8f5716f",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/candidate_tile_manifest.csv",
+          "sha256": "24dcf2bf37e4d9973c979613e074f441214767b2440a4955659215e08223fc03",
+          "size_bytes": 86956
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/cells.parquet",
+          "sha256": "88fb25cca26d7f5d2d74cf40784b882b086558ef79067972cb16dcbaea56dbe9",
+          "size_bytes": 21398280
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/phenotype_summary.csv",
+          "sha256": "0a7b347bdb28335bdf0a9ca523bd28d2678facf0d9e3e37b166de59ab1232d53",
+          "size_bytes": 7089
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/representative_histoplus_overlay.png",
+          "sha256": "7f66f44325cede4f0aa2b94d235cd5cffae11c6d14110e549d3d31ebdc4a48bb",
+          "size_bytes": 1355086
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/selected_tile_manifest.csv",
+          "sha256": "0f86b724bf147302ec88d6d22ebc3ba27128cfb0be61f588113a71176056417b",
+          "size_bytes": 11241
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/selected_tiles_overview.png",
+          "sha256": "123e9573e5dfb6fcac396d7656bdf68c0b0facb74de2276d1bfa22182ca2ae2d",
+          "size_bytes": 1970224
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/tile_class_counts.csv",
+          "sha256": "8c5076f9393d7b97c6cf5e45fb1bbd8b8fd0b7f1cab81bc45c0420973ae27613",
+          "size_bytes": 6682
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/tile_cv_features.csv",
+          "sha256": "6546cddeda3acee2e0736072a300fd2ee1cdbbcfae6bf34c11e47e4d6f491314",
+          "size_bytes": 19456
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-013/provisional_tile_pixel_qc.csv",
+          "sha256": "aa78fce05680924a6a6b05891e1bf9e16c4d96cc817c6d1039d64c62e5ee7fc5",
+          "size_bytes": 5646
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-013_liver_003",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-013",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-013/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 652,
+      "cell_count": 74811,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-014/conversion_receipt.json",
+      "conversion_receipt_sha256": "3acc04d13aaab3001c0ca28661ca3ac35aac3c82c93a8ef59df7a572be4e34d7",
+      "created_utc": "2026-08-28T16:30:10.311573+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 144.1118199825287,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-014/organ_label_mask.png",
+      "organ_label_mask_sha256": "80b1e62dc992954711d83c1b5fab792097974f64cfc5c981ac6616770bb565da",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/candidate_tile_manifest.csv",
+          "sha256": "68c19a379277a102048498914eb6ca0df40c42cb25329db2d3fb6d5ca0e43316",
+          "size_bytes": 89743
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/cells.parquet",
+          "sha256": "cdd5851381b1f9c873fd2dcd2873134dd5810362ff9e8329a35ede66879e6dac",
+          "size_bytes": 18857476
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/phenotype_summary.csv",
+          "sha256": "c926155b546027bdb2ee34c6d2d52060613637050a321ff6b78ae682f3dff5c4",
+          "size_bytes": 6930
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/representative_histoplus_overlay.png",
+          "sha256": "8586e7465757d5e2a9dc671f552a7db93c2b93329939432a9cf26231ee887d45",
+          "size_bytes": 1463118
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/selected_tile_manifest.csv",
+          "sha256": "e75932620cdf0f20ce2153e225f0e501240d6e1c01fb4172abb73ae3a75a5bbe",
+          "size_bytes": 11236
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/selected_tiles_overview.png",
+          "sha256": "450215d1aba052ed85a0da7d197ff4509f3d51cf03ca8d61702932a5afb1c300",
+          "size_bytes": 2156836
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/tile_class_counts.csv",
+          "sha256": "8e32790eb24d4639832d03d472ecd9718506a4774dedf5abc9973cf05fa2f697",
+          "size_bytes": 6575
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/tile_cv_features.csv",
+          "sha256": "5ad7ff27d563de2466b21e83e6d7aa4c0c3ad27854354b26b6f2fc4edeefe605",
+          "size_bytes": 19408
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-014/provisional_tile_pixel_qc.csv",
+          "sha256": "c39a76897353a18000a4b515f28c1367e7ce3173ab00290893376956ce734945",
+          "size_bytes": 5634
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-014_liver_018",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-014",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-014/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 632,
+      "cell_count": 69480,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-015/conversion_receipt.json",
+      "conversion_receipt_sha256": "fae3b296f65a46790d458c975ef5bc5da4aabee8905ae9383f4e9802a25be111",
+      "created_utc": "2026-08-28T16:32:16.242698+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 125.84485411643982,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-015/organ_label_mask.png",
+      "organ_label_mask_sha256": "203e31c43820a17ad6a69d8d96f196a0d4041f13c744eeb5244e97256b108dab",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/candidate_tile_manifest.csv",
+          "sha256": "28488df54e42e57f7c16c7e1b0358a0eeb429e9cd7e6e2d53fcd86d93f6fac63",
+          "size_bytes": 87039
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/cells.parquet",
+          "sha256": "33abdc0a22888b751647f3695e97c0b3b03d6b7b5363cf391981fdc7138d996d",
+          "size_bytes": 18811988
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/phenotype_summary.csv",
+          "sha256": "e0742b447e614738e5d27bd950a20133199332397ddfc487289d74e533c45cfe",
+          "size_bytes": 6739
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/representative_histoplus_overlay.png",
+          "sha256": "f5b42bf6f029d202a89b0c9bf12be3599eeb5ceb30503eeee00d9b8c634afb76",
+          "size_bytes": 1493405
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/selected_tile_manifest.csv",
+          "sha256": "1f326dc173b23dbd965ce45c05e1f9bdd02986c72b644038af5d3f399c21c119",
+          "size_bytes": 11240
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/selected_tiles_overview.png",
+          "sha256": "7a8215f4f1314472b8fa65b979d0400973549e3b8a6ebd7706827878b6c763ae",
+          "size_bytes": 1808801
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/tile_class_counts.csv",
+          "sha256": "fdf9ca6a84e8d21855ecf7572ae5796ab26af0c6aa2076c83142a8d4ff251acf",
+          "size_bytes": 6360
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/tile_cv_features.csv",
+          "sha256": "e36bbbf853412ce23754741f1c83914c0aa42a5539218dc8d88e27b20c60a3d2",
+          "size_bytes": 19192
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-015/provisional_tile_pixel_qc.csv",
+          "sha256": "dae1bc2463345e7279c20ad629b345e1df3d8fa4990273b12f5488e37df3a34e",
+          "size_bytes": 5640
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-015_liver_017",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-015",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-015/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Water",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 943,
+      "cell_count": 60861,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-016/conversion_receipt.json",
+      "conversion_receipt_sha256": "b5ea994d94da7444f7139fefc2bb2bde2e0c1029da6445783e26176467b23bac",
+      "created_utc": "2026-08-28T16:34:31.705057+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 135.36893558502197,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-016/organ_label_mask.png",
+      "organ_label_mask_sha256": "58c2d6326956cd1b1a3fdf0df7307c4b2ade1209d50ce59be73c9dd00a86091d",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/candidate_tile_manifest.csv",
+          "sha256": "8771c5e8504c3dcbfa36ee57527ce4fd0070eeb975a8ff6d3b7d6bb1fb476045",
+          "size_bytes": 129188
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/cells.parquet",
+          "sha256": "e23fb58deb38b084e3925a797636c6d7e2a9cbec23bfa1d13c009976059446fa",
+          "size_bytes": 15885369
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/phenotype_summary.csv",
+          "sha256": "74d560a344bc6a9b2a0d80e376d0441aca23127969f0bc53257f720c1fd55444",
+          "size_bytes": 6839
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/representative_histoplus_overlay.png",
+          "sha256": "d1b0327cb4dfda20769b1c3fd5f1f0ac1678d2acdab0e3ab2a70e5e341562876",
+          "size_bytes": 1454769
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/selected_tile_manifest.csv",
+          "sha256": "4df9312b5e3a47478b41721f6b77b12402e976f650ed72e7266de950f419759a",
+          "size_bytes": 11252
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/selected_tiles_overview.png",
+          "sha256": "50e81344d217a80a5630d96a627f5f393d0151235574aea3a51463418cad8587",
+          "size_bytes": 2116274
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/tile_class_counts.csv",
+          "sha256": "53634cdb8847c37af0c001fc46c38d578d2f1b356977cd4e50d566ed690dfcb6",
+          "size_bytes": 6356
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/tile_cv_features.csv",
+          "sha256": "9a4053a85aa0e1b09aa2fc266964dce6ed0f33fa595c99fd5835ae4ce2e8b5cc",
+          "size_bytes": 19140
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-016/provisional_tile_pixel_qc.csv",
+          "sha256": "5784851270a746c196e503cd02f5bd85c0cd8c33cb3af79bf58d72c3d8535afc",
+          "size_bytes": 5638
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-016_liver_004",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-016",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-016/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Water",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 825,
+      "cell_count": 74934,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-017/conversion_receipt.json",
+      "conversion_receipt_sha256": "95db313bf4765250a2dd6d78b444402add273f389171b2b92dfae8871b7085a5",
+      "created_utc": "2026-08-28T16:37:17.036996+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 165.2280080318451,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-017/organ_label_mask.png",
+      "organ_label_mask_sha256": "4b03f6ebc97db66650bcf458994c946952d4ed9a88895680bfc338c688a154af",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/candidate_tile_manifest.csv",
+          "sha256": "26e2655c169109187c8290d5969ef5d9cabb19089e6f8c2e002d15325dc951d2",
+          "size_bytes": 113225
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/cells.parquet",
+          "sha256": "90460dfd90d3d80e3f72836e711cbf2e9a21d8c23a01aa69df949caa0151f375",
+          "size_bytes": 20299989
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/phenotype_summary.csv",
+          "sha256": "fba531805d361cb58b7148c546925ccaab62027de4cd9b7ac5386727e087f3ee",
+          "size_bytes": 6947
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/representative_histoplus_overlay.png",
+          "sha256": "276d79867b5372a09574de2e635e637871671cb00b51037dddc46363b19b202a",
+          "size_bytes": 1383085
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/selected_tile_manifest.csv",
+          "sha256": "80b5926946ce19be2b70fef54349d85bf84562231bc206c69006d82eb4667c9e",
+          "size_bytes": 11247
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/selected_tiles_overview.png",
+          "sha256": "f1228f920eb3173fa0fb2a7ae4149ec2b523f542a8514e9e1afc647d5c5faf6c",
+          "size_bytes": 2277353
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/tile_class_counts.csv",
+          "sha256": "86d133fec354ad263d13b135c759fc3995f3a86ed66cc4aae8db70986df4fdb3",
+          "size_bytes": 6342
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/tile_cv_features.csv",
+          "sha256": "ae2dcbed4688a53873d2d9d55455be0ed0edf0f79ac84b60eba9fabd6d036e38",
+          "size_bytes": 19168
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-017/provisional_tile_pixel_qc.csv",
+          "sha256": "5ca59c56120803ef79cb9fbebe91959966397809d3166fbf317ff81c940ace1c",
+          "size_bytes": 5635
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-017_liver_016",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-017",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-017/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Water",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 687,
+      "cell_count": 73741,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-018/conversion_receipt.json",
+      "conversion_receipt_sha256": "0ce9560f401f7c1a8d12d170c3c0b03a9fb1d197994a8a4fea6c453961b40ec0",
+      "created_utc": "2026-08-28T16:39:48.311293+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 150.99699640274048,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-018/organ_label_mask.png",
+      "organ_label_mask_sha256": "34a31c61c52d786804ec91414969194b1432498a5cb88b2c94d410c8d08af43f",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/candidate_tile_manifest.csv",
+          "sha256": "97d41a7c124caf9374f53ef7f5715bf58699f10a62b8114b30f91fc518006221",
+          "size_bytes": 94460
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/cells.parquet",
+          "sha256": "30906404c9c10088899e092f03daeb896e0be2140e4aae9621bc20e08e6f4a07",
+          "size_bytes": 19544928
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/phenotype_summary.csv",
+          "sha256": "a929d8484ef1166cc2234de3f9299a6ad5f76ed6232970ebb7150a728f1236cf",
+          "size_bytes": 6807
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/representative_histoplus_overlay.png",
+          "sha256": "32e278276a13ae476e793da0cea9a63456c9ffce38501f87c5acc4325690bcfe",
+          "size_bytes": 1502805
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/selected_tile_manifest.csv",
+          "sha256": "63280a90bb56477feb06f3039e5e61e5abae7b571af1887f36336cd569dfd6bd",
+          "size_bytes": 11240
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/selected_tiles_overview.png",
+          "sha256": "2ca9238b0aaf80b1b963d1d9b71ec1ee528fa0082d60c25fc363b5914b5962fa",
+          "size_bytes": 1179556
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/tile_class_counts.csv",
+          "sha256": "61e99b939712f595c5cb2e6333ba5723a30b9eda5506d38df9bce3a42574cc85",
+          "size_bytes": 6138
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/tile_cv_features.csv",
+          "sha256": "dfbde7ebad1c4ceb1e88c858ce19edd3da52233abf45ce061d12c57f89f7f4e1",
+          "size_bytes": 19203
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-018/provisional_tile_pixel_qc.csv",
+          "sha256": "6e48fe7dd8846646ef375bc9ce8c86dd74765a5c40b4646f8bd9756e0a37d431",
+          "size_bytes": 5623
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-018_liver_004",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-018",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-018/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Water",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 620,
+      "cell_count": 72744,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-019/conversion_receipt.json",
+      "conversion_receipt_sha256": "3b71d082d3344f3c3a0efdced215dd0a8351af4d65b0036f9a34fa89d6d8f3ea",
+      "created_utc": "2026-08-28T16:42:19.473963+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 151.0448887348175,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-019/organ_label_mask.png",
+      "organ_label_mask_sha256": "28c3aa58a07773da0154fedc6d565c3a0ac1e645c3a5af5c6abd330c5023a861",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/candidate_tile_manifest.csv",
+          "sha256": "e2f30c2426e8184213b87679205800e11706d31fed4468e4ac72b5c07b376851",
+          "size_bytes": 85425
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/cells.parquet",
+          "sha256": "24ea654c1dc2b59eecd2e097d63fe52984210735c868d2a887945e3377c21787",
+          "size_bytes": 20164118
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/phenotype_summary.csv",
+          "sha256": "6867efcc7850aa7b0faf8985f38236b73ff454fa3ded7387af6e0c251be4088f",
+          "size_bytes": 6704
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/representative_histoplus_overlay.png",
+          "sha256": "773b93aebc44876ea877d201492dc08ae186fd6abb8cbf53a2a4941ade9d26e4",
+          "size_bytes": 1331314
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/selected_tile_manifest.csv",
+          "sha256": "458b85718a16a73b19182e5a25b3d3d5bf60bcefe10bc86103d524b473f506bf",
+          "size_bytes": 11245
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/selected_tiles_overview.png",
+          "sha256": "1e4eabbbb3ad7be2b308b54e1c79a1dedbcfc597d471c11686630d117cd57f50",
+          "size_bytes": 1680829
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/tile_class_counts.csv",
+          "sha256": "20fc37cddb11d375f6664e9e696edd49572771cee01a9dcba10b728a9818b692",
+          "size_bytes": 6271
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/tile_cv_features.csv",
+          "sha256": "e6471d3b45b703fdf4d63659420958396175ae7430dd5c864ad17fcc407d3530",
+          "size_bytes": 19152
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-019/provisional_tile_pixel_qc.csv",
+          "sha256": "a34ff363e0e4a1d5de82adf5bbead2c151812b1618617272d032480afa9b73c2",
+          "size_bytes": 5639
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-019_liver_003",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-019",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-019/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Water",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 518,
+      "cell_count": 88766,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-020/conversion_receipt.json",
+      "conversion_receipt_sha256": "d4933e40659c5777e2509752364c42b4f973bb5162a861ec2dc1ad373e282ede",
+      "created_utc": "2026-08-28T16:45:08.294755+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 168.7182424068451,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-020/organ_label_mask.png",
+      "organ_label_mask_sha256": "08a76c530dea2f78fedb2aa178c797f78f6d43501214b89f134e51b2ea6deb7a",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/candidate_tile_manifest.csv",
+          "sha256": "9da3fe71ed4f04d5b751370a2dd6fb916129d09530ae660ac32b1241edbb1bc5",
+          "size_bytes": 71622
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/cells.parquet",
+          "sha256": "445e420dfee4c58ea2b4a0a227c585d9282143d3eb6bcbe829d3fe303c4ad31a",
+          "size_bytes": 23965492
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/phenotype_summary.csv",
+          "sha256": "799e58089eed2a30dcabfc641fd7e391ec66d90e1d62a8f72e909d89a08c3270",
+          "size_bytes": 6848
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/representative_histoplus_overlay.png",
+          "sha256": "1b57235f3246baedfcdec3a9489233081a68b758c3c0333b1309e6de3b6b5a2c",
+          "size_bytes": 1316822
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/selected_tile_manifest.csv",
+          "sha256": "caaa53d2febe4cb38afb72919ea6a1b4beb1c92b46d0e3a69f0fd9a8ed741e09",
+          "size_bytes": 11243
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/selected_tiles_overview.png",
+          "sha256": "48b1275df246faf5c25c774e9a55aa7ef85b01fa2da3f41507c118a916b13d5d",
+          "size_bytes": 1558818
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/tile_class_counts.csv",
+          "sha256": "6ba4db0cf4dc5bcbc98b36e53b76c4764ab02970b675a84360533558ab779ff9",
+          "size_bytes": 6320
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/tile_cv_features.csv",
+          "sha256": "f189249a3da1c9560a0b9fb771fd35ddd087e2fc54d9613c3fd00b86f66979fa",
+          "size_bytes": 19236
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-020/provisional_tile_pixel_qc.csv",
+          "sha256": "f72b0a17a85be99464dc6ba79b968686400b956c93a506348956a3b0e8e3fb89",
+          "size_bytes": 5634
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-020_liver_007",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-020",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-020/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Water",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 680,
+      "cell_count": 76050,
+      "cohort": "NPY",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-021/conversion_receipt.json",
+      "conversion_receipt_sha256": "4f077faa05d620a95bb76b3f62e77aaba91bc82ecb9372a578df8aa6677feb60",
+      "created_utc": "2026-08-28T16:47:43.764225+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 155.37277507781982,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-021/organ_label_mask.png",
+      "organ_label_mask_sha256": "21808f657de7dbf73f3acc5b2056a58ae611c69fce5ddd4f0c9192170ae314dc",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/candidate_tile_manifest.csv",
+          "sha256": "98a65923f2950dfd90f9261ef36aa131ff69eb8d02c0e7cf1faba11e5a7f345f",
+          "size_bytes": 93561
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/cells.parquet",
+          "sha256": "7b7eeb831fab4fc7b6b8820764d95af0ada8e383d38ab360bdbf900e229b37a7",
+          "size_bytes": 19836978
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/phenotype_summary.csv",
+          "sha256": "6c2bbeabe1862dd143a5166bb242a75d17ca36fb469373a0e5cf5336f6236ddf",
+          "size_bytes": 6926
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/representative_histoplus_overlay.png",
+          "sha256": "7538c4b3521e03c13a8c376c57a8b6ec673301dc1f40e3637219858cb88c8731",
+          "size_bytes": 1393478
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/selected_tile_manifest.csv",
+          "sha256": "780d115e35d3807aad8fd2a0aebf3cd615bf36483ecc71f6a7854022823aaac9",
+          "size_bytes": 11245
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/selected_tiles_overview.png",
+          "sha256": "c5b20cf1149f0eebe82f10278f50550e21d049e19681edef72450e1a0ad0c678",
+          "size_bytes": 1595126
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/tile_class_counts.csv",
+          "sha256": "3975801208d0b57fe8ed950d9b3a893c31351bde8a0902d0d8057e3ac0dc66ad",
+          "size_bytes": 6338
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/tile_cv_features.csv",
+          "sha256": "3201095d7db81ae5da5733463bcf0e6c3dd34fee3784915ce247d0d0de329d1d",
+          "size_bytes": 19243
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-021/provisional_tile_pixel_qc.csv",
+          "sha256": "0650febaca87db97ad19bd315a663f523e0476d1f0f5feeccd76b8e685bd340a",
+          "size_bytes": 5663
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-021_liver_005",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-021",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-021/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Water",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 588,
+      "cell_count": 73391,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-022/conversion_receipt.json",
+      "conversion_receipt_sha256": "3bc5663f27a0913b4763fa96c03829e8f82e95fc4b931309a9584cb18db81077",
+      "created_utc": "2026-08-28T16:50:15.878131+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 152.00349259376526,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-022/organ_label_mask.png",
+      "organ_label_mask_sha256": "e6367e1ad686a666cbae9f1de187a7a50d532e5371fc7b57ada54db02387ef7e",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/candidate_tile_manifest.csv",
+          "sha256": "87c728d1a3299b92e5e8d788db729b37a345df2b12240ec4451095acd264e166",
+          "size_bytes": 81039
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/cells.parquet",
+          "sha256": "09fb3e75e396337f9dbc6f15949e12b5d0a5fc28989bb4487e687d3f457aadbc",
+          "size_bytes": 19307401
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/phenotype_summary.csv",
+          "sha256": "61d47c1107fd0609320872b46574839ed0a9eb95017f7e604783df41e463d1c0",
+          "size_bytes": 6916
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/representative_histoplus_overlay.png",
+          "sha256": "ddf84e326acc130688ee13c449f3f2e1b9c1f1d86be9a31873dcc216a245b18b",
+          "size_bytes": 1310272
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/selected_tile_manifest.csv",
+          "sha256": "dd73f507855ec8953c41edcdd416aa809305518967e22fbb519d135fa8468c08",
+          "size_bytes": 11240
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/selected_tiles_overview.png",
+          "sha256": "4f080a26d027cd7ba6a923e3f5fac592742e36ddde7bc50aef6fe1e19ab52a3b",
+          "size_bytes": 1684695
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/tile_class_counts.csv",
+          "sha256": "73e8776cc66c73b85bbd6c5a87179c96366263c3888371770b8d65e8e96d3a1b",
+          "size_bytes": 6583
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/tile_cv_features.csv",
+          "sha256": "61a0c3f3372eaf7ca54f17173929f1c4fd4b280d979c362b7af68137302ced78",
+          "size_bytes": 19370
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-022/provisional_tile_pixel_qc.csv",
+          "sha256": "f69f287d6a5457900b0f6451722f1eeb0c8364aab41201faebc18f070c364ce6",
+          "size_bytes": 5623
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-022_liver_023",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-022",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-022/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Allulose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 601,
+      "cell_count": 62222,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-023/conversion_receipt.json",
+      "conversion_receipt_sha256": "dfb777eedae62322024a88edd4c9d34f7c5918424e31059ec2c7cdd453d086b7",
+      "created_utc": "2026-08-28T16:52:46.469166+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 150.49030828475952,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-023/organ_label_mask.png",
+      "organ_label_mask_sha256": "72bea8c9c356fdaacc236b5d8ba96405d03fc180d7136889df0d559929abefeb",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/candidate_tile_manifest.csv",
+          "sha256": "cb73473bc736bf6fbe31fe8b70b3157ffcf13c562eea3879e5147de3fa000cd2",
+          "size_bytes": 82793
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/cells.parquet",
+          "sha256": "c13bc681aac1a9c24391983e6f9bd677a2d6bef0074ab1644e91fb43675824b1",
+          "size_bytes": 15456996
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/phenotype_summary.csv",
+          "sha256": "2a54388f1673d3c6d34113039f5158765dfebe883481ed94ec872d62fefdc9f8",
+          "size_bytes": 6860
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/representative_histoplus_overlay.png",
+          "sha256": "c074e0780bf83d50b2a54afd2ffae6341a457a6c3fa34bca4d03e65076fa116e",
+          "size_bytes": 1253918
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/selected_tile_manifest.csv",
+          "sha256": "9022337e1bc2177a79ed131325297e14217c1bd44e7c1c8cdba039a8bd60ad32",
+          "size_bytes": 11241
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/selected_tiles_overview.png",
+          "sha256": "e54180eb69ebe159d24c8e121ca812be40109c48effcc8b84e7ff96bf87da238",
+          "size_bytes": 1658887
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/tile_class_counts.csv",
+          "sha256": "0edbbaad1dca870a3f7a4e1b5d56272d5d421813fdad15fc2116956d697b8c76",
+          "size_bytes": 6523
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/tile_cv_features.csv",
+          "sha256": "1419688c914070dc77b317dfdcbe3c6e35e6f46ca8ba18b14e84e7cffe967e0d",
+          "size_bytes": 19319
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-023/provisional_tile_pixel_qc.csv",
+          "sha256": "6ee7e1dcc6bc13ead8f0712123667268edccea22df53e3189057006f0e123261",
+          "size_bytes": 5624
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-023_liver_004",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-023",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-023/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    },
+    {
+      "amp": false,
+      "batch_size": 6,
+      "biological_unit": "animal",
+      "candidate_tiles": 748,
+      "cell_count": 75455,
+      "cohort": "POMC",
+      "conversion_receipt": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-024/conversion_receipt.json",
+      "conversion_receipt_sha256": "b56c2b9c113ff10f491db543be9ee245fafc398b23927ebf53af050a576c1af5",
+      "created_utc": "2026-08-28T16:55:47.509658+00:00",
+      "cross_species_validated": false,
+      "device": "cuda",
+      "elapsed_seconds": 180.95604491233826,
+      "extrapolated_to_whole_organ": false,
+      "gpu_name": "NVIDIA RTX A5000",
+      "gpu_peak_memory_bytes": 11035838464,
+      "interpretation_label": "exploratory model-predicted nuclear phenotypes",
+      "model": "HistoPLUS-20x",
+      "model_license": "CC-BY-NC-ND-4.0",
+      "model_weight_file": "/home/server/.cache/histoplus/histoplus_cellvit_segmentor_20x.pt",
+      "model_weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc",
+      "organ_label_mask": "/media/server/STORAGE/Apotome/Paper/FigS3/organ_segmentation/m26-024/organ_label_mask.png",
+      "organ_label_mask_sha256": "14d296dabe617cb7cdc904fe113b64b9396de86087c96207378c68e6bc94683b",
+      "outputs": {
+        "candidate_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/candidate_tile_manifest.csv",
+          "sha256": "6f76c6d71f043937153206421a25aafcb00b8ca0fb2b72b8989c102a61a48cbc",
+          "size_bytes": 102782
+        },
+        "cells_parquet": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/cells.parquet",
+          "sha256": "57a70a2b4f2dbd9786fb7405bd5265c2e4fdf6cd68975e3db2b97b9e78cb4bd8",
+          "size_bytes": 21337181
+        },
+        "phenotype_summary": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/phenotype_summary.csv",
+          "sha256": "db450844f2c44f738fa6956aa27ef3e37d2b42b762693785b109c0a9809db456",
+          "size_bytes": 6999
+        },
+        "representative_overlay": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/representative_histoplus_overlay.png",
+          "sha256": "cffa4197b18481ddb9711c9ad9b4781415c73e0b834cf38ea7d9a6db8734331c",
+          "size_bytes": 1468099
+        },
+        "selected_tile_manifest": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/selected_tile_manifest.csv",
+          "sha256": "1316a51a51814e5a6f8661f436a301e23041731e81454c9aab121f9f9baa0fb5",
+          "size_bytes": 11253
+        },
+        "selected_tiles_overview": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/selected_tiles_overview.png",
+          "sha256": "02872689e9adb6772edbf0660f8bd367a62abf88b022d5eaca38db26aecb84ca",
+          "size_bytes": 2107649
+        },
+        "tile_class_counts": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/tile_class_counts.csv",
+          "sha256": "363e81d7d12002edc5b0c78f260e6f35054a35209a34d40f1e1a7ee08365f13e",
+          "size_bytes": 6484
+        },
+        "tile_cv_features": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/tile_cv_features.csv",
+          "sha256": "7d6186c5b4b3c160ebeeb670c5ed8fc9b4f8ba77515339558f8c88b816ab1ee5",
+          "size_bytes": 19397
+        },
+        "tile_pixel_qc": {
+          "path": "/media/server/STORAGE/Apotome/Paper/FigS3/histoplus/m26-024/provisional_tile_pixel_qc.csv",
+          "sha256": "ec2812897082d0e8ad0a0fa87151af4962eeb5d083064287615c2d5cb2a7dd75",
+          "size_bytes": 5647
+        }
+      },
+      "postprocess_workers": 6,
+      "precision": "float32",
+      "representative_tile_uid": "m26-024_kidney_008",
+      "run_status": "verified_existing",
+      "runner_version": "figs3-lazyslide-histoplus-1.1",
+      "sample_id": "m26-024",
+      "sampling_design": "deterministic spatial farthest-point within each CV organ mask",
+      "sampling_seed": 1707,
+      "selected_tiles": 72,
+      "selected_tiles_by_organ": {
+        "Kidney": 24,
+        "Liver": 24,
+        "Spleen": 24
+      },
+      "source_l0_tiff": "/media/server/STORAGE/Apotome/Paper/FigS3/exports/m26-024/1_L0_rgb.tif",
+      "source_mpp": 0.26178,
+      "status": "complete",
+      "target_mpp": 0.5,
+      "tile_size_px": 840,
+      "tiles_per_organ": 24,
+      "treatment": "Sucrose",
+      "vectorization": "LazySlide-equivalent contour and probability operations on tight padded instance crops"
+    }
+  ],
+  "requested_slides": 24,
+  "runner_version": "figs3-lazyslide-histoplus-1.1",
+  "status": "complete",
+  "weight_sha256": "aa19dc31c109c0a4fcf7bd773559c45480cee792a331ae0a9ffe42eb08267bfc"
+}

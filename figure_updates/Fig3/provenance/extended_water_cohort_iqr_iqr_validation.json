@@ -1,0 +1,33 @@
+{
+  "schema": "fig3-keyence-iqr-main-v1",
+  "status": "PASS",
+  "unfiltered_inputs_unchanged": true,
+  "condition_counts": {
+    "Allulose": 3,
+    "Sucrose": 3,
+    "Water": 5
+  },
+  "unfiltered_source_directory": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs",
+  "input_sha256": {
+    "animal_plot_values.csv": "3051df0d0c08707753730e3454e6341e6a4538bdd39a7df41f8902a45ce5b895",
+    "animal_metrics.csv": "45897e2f408e4b324cc198466a621089a9b72f573afe2a45ec7fabe6fcc68dc3",
+    "unit_metrics.csv": "6c0389e517dee647c1d583628df3e63536f352f950a08ddd374cf1375d8e70a9",
+    "animal_roster.csv": "800cf58500caade167e6d8266ee2c50a2ca1b7595355aba984951864f352a1f0",
+    "stratum_metrics.csv": "d37e9983fbd8a4d1c6ab5027e17836a792255630c78ce66ff274e5f1b4516bb3",
+    "cluster_membership.csv.gz": "571c3a59ff9a8341b26eb5c4197d95be8c79777b055cf7fc66641db331368df7"
+  },
+  "script_sha256": "d265de09a9ce89c1f8738f044918fd614dde3455940fa5802d3bf4f07a7c94dc",
+  "recorded_animals": 11,
+  "source_recorded_animals": 11,
+  "cohort_excluded_animals": [],
+  "cohort_selection_precedes_IQR": true,
+  "raw_animal_rows_retained": 22,
+  "raw_unit_rows_retained": 22,
+  "missing_values_never_flagged": true,
+  "single_pass_fences": true,
+  "strict_fences": true,
+  "quantile_method": "linear",
+  "selection_caveat": "Exploratory after endpoint-specific within-condition IQR exclusion; filter held fixed during permutations, not selection-adjusted inference. Small groups give unstable quartiles; flags do not establish measurement error.",
+  "exclusions": [],
+  "spatial_statistics_status": "PASS"
+}

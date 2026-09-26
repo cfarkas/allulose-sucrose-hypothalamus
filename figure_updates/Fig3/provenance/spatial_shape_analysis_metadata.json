@@ -1,0 +1,259 @@
+{
+  "schema": "fig3-water-extended-cohort-analysis-v1",
+  "cohort_animal_ids": [
+    "E7_FR7-1",
+    "E7_FR7-5",
+    "E8_FR6-1",
+    "E8_FR6-3",
+    "E8_FR6-4",
+    "E9_FR8-1",
+    "WATER_NPY1",
+    "WATER_NPY2",
+    "WATER_NPY3",
+    "WATER_NPY4",
+    "WATER_NPY5"
+  ],
+  "condition_counts": {
+    "Allulose": 3,
+    "Sucrose": 3,
+    "Water": 5
+  },
+  "added_animals": [
+    "WATER_NPY4",
+    "WATER_NPY5"
+  ],
+  "independent_of_other_experiments": true,
+  "immutable_input_manifest": {
+    "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/seed_manifest.json",
+    "sha256": "859773de2d88ef09ec1eea03ddd28c349cb3c61f9b27d9890b26d469038a0138"
+  },
+  "input_files": [
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/animal_metrics.csv",
+      "sha256": "45897e2f408e4b324cc198466a621089a9b72f573afe2a45ec7fabe6fcc68dc3"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/animal_plot_values.csv",
+      "sha256": "3051df0d0c08707753730e3454e6341e6a4538bdd39a7df41f8902a45ce5b895"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/animal_roster.csv",
+      "sha256": "800cf58500caade167e6d8266ee2c50a2ca1b7595355aba984951864f352a1f0"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/cluster_membership.csv.gz",
+      "sha256": "571c3a59ff9a8341b26eb5c4197d95be8c79777b055cf7fc66641db331368df7"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/bandwidth_sensitivity_condition_summary.csv",
+      "sha256": "d886e87d99cb3a28092709dda0327aab1ca571c008c665cdebbf01aafee30ed3"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contour_manifest.csv",
+      "sha256": "5c480c7731aeca1a9e299bba8da558bfec6cee8a108bc01a8f306655b8b09445"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E7_FR7-1__S01_FIELD_side1.npz",
+      "sha256": "e40329c290533acf4dc98a0912dc530d1ea5cad2fbd450717e8434de15dca473"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E7_FR7-1__S01_FIELD_side2.npz",
+      "sha256": "f25a469368c82d402d4893e883349c66efac94bce7a3ad04da356f78067c5b60"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E7_FR7-5__S01_FIELD_side1.npz",
+      "sha256": "7407882ad599ffd0d737eb5052492ddf74b5908cdf65afecbdf408720f74f652"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E7_FR7-5__S01_FIELD_side2.npz",
+      "sha256": "689d0d6da15b9776d8d37486df49002a1c5ec7b37fc6b23df9e252325a4fc1f3"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E8_FR6-1__S01_FIELD_side1.npz",
+      "sha256": "5fd0fa695d90aca5884830a3fc38421df1c0b680e8c2e18c1d78d451c5460f2f"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E8_FR6-1__S01_FIELD_side2.npz",
+      "sha256": "3dc4d96c2272518aeb191eef509e04e5a0a9f329bbf980f274af4f16831c647d"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E8_FR6-3__S01_FIELD_side1.npz",
+      "sha256": "e5059be76799ce2fc926ed73478fff161ae00f3eb783eaf570867e5276f7a04a"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E8_FR6-3__S01_FIELD_side2.npz",
+      "sha256": "6f1a26e0848e28e25e96fd8f3b2180c3e604e9ace12d6cec64a45a15b784c349"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E8_FR6-4__S01_FIELD_side1.npz",
+      "sha256": "71b2fd7c4d1694e514505df8d0212d16499844859172caeb136a5af05ec71c46"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E8_FR6-4__S01_FIELD_side2.npz",
+      "sha256": "bb562d4583056ef36f8f5bdd77cbe8175d35d9dc1738bdf8f68923419b9028a3"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E9_FR8-1__S01_FIELD_side1.npz",
+      "sha256": "3d3b6e83e23d5b8ccf63672af695947ff19b2684094a6cf8829f513e01046acd"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_E9_FR8-1__S01_FIELD_side2.npz",
+      "sha256": "b4d8fa8c8eeb20a3fe6c608b29577b71f8c32972b1efa2a739563bbaeba13607"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY1__S01_FIELD_side1.npz",
+      "sha256": "8a9871db97a799c883e8f08ef27009d07f97076b2191985c8964601ab2109f59"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY1__S01_FIELD_side2.npz",
+      "sha256": "db735669cb6855c0c3db2e3fb6e088c4a7776c9fe629e1b676ae9661a356ccff"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY2__S01_FIELD_side1.npz",
+      "sha256": "c5f31d9f09460bb943d797a311dc614cc83d9c3afad1b78cd0a0eb5efcd5622a"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY2__S01_FIELD_side2.npz",
+      "sha256": "e9171434aab867f05a1cc7f15199f7763b3fe8ef7f2dd2825108c52c4735cda0"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY3__S01_FIELD_side1.npz",
+      "sha256": "c4732b404d9716abb93b86b64280e588bdf28fa970e4cf092ca3f609584d129a"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY3__S01_FIELD_side2.npz",
+      "sha256": "0e801e36d4c683339da6771710a54312d28b6e841064bae82524a6bbcaa99e50"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY4__S01_FIELD_side1.npz",
+      "sha256": "d68b1ff532514a466b6d5637d323f730dc45eced30a4511f1ed00696e5319eb7"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY4__S01_FIELD_side2.npz",
+      "sha256": "4b9674597b0239340c2322ccb9aec381a10606594cdf6274b676a95d39444130"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY5__S01_FIELD_side1.npz",
+      "sha256": "a3fd5c11d37250b99f6db8e87529f575caa5454215230c63afda8eb36048a3bc"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/contours/NPY_WATER_NPY5__S01_FIELD_side2.npz",
+      "sha256": "3b6f3eb61964c0e4a0485fd5daf444448c9d803e7e5d447a1e23d42dba51e404"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/example_npy.npz",
+      "sha256": "16bccb4d9b5051cc4fc1cba5f361364b35ef53f3441159696664f9046aec7a0d"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/E7_FR7-1__S01_geometry.npz",
+      "sha256": "eda95bee0890ed7e722d9991b6df4b4d2d9c384fea4ded3085b408e64833bf64"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/E7_FR7-5__S01_geometry.npz",
+      "sha256": "830c1d241ce529d09ac12a4001737bb9d27f66d428e1197b6d4215d8b0e205f0"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/E8_FR6-1__S01_geometry.npz",
+      "sha256": "e8517151f2b0168240bc87b43f495c20e91bd9b441021a2053fd4bb9e87da871"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/E8_FR6-3__S01_geometry.npz",
+      "sha256": "f0a58cb7bf643d9a18280c627ee10c3366ae5492750046d8dab1d34d5be19b56"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/E8_FR6-4__S01_geometry.npz",
+      "sha256": "8b9a5d463ec0cbe9af8ab498deb65633d6271bacc04106c6b983232832f5768d"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/E9_FR8-1__S01_geometry.npz",
+      "sha256": "100e0f28a4d85c6829aa98df414e059301fab51d32fa15c843852ddd7bdf5f48"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/WATER_NPY1__S01_geometry.npz",
+      "sha256": "2ee1af7d343807b6c790d510a3a6197b9a584bee6387852833664e2ca3d97f02"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/WATER_NPY2__S01_geometry.npz",
+      "sha256": "0c4b493def83023566665751f557d2d7630148900c6ce0e18bd4660a53cae7b9"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/WATER_NPY3__S01_geometry.npz",
+      "sha256": "1063964a845d6f33e7eb1a777426e87a7b3a4c433a49bb1ff47b6de33a4f4c52"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/WATER_NPY4__S01_geometry.npz",
+      "sha256": "8eacd7abfa62a45bbdd7bd725a35bc910b8702738b5aa8ffce23a5356f7a2ce3"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/geometry/WATER_NPY5__S01_geometry.npz",
+      "sha256": "b558a5d2753a806ca78a72e30d190ce1824ef34ffe3ffd3c1a0ba1e0595434ce"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/inputs/NPY_acquisition_manifest.csv",
+      "sha256": "20390665ec743c66930bc0e1093fcbdf6b1a6998b488f26568fc50918bb3f4d6"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/runtime/inputs/NPY_cells.csv.gz",
+      "sha256": "d1a20abcd6f7deb1151f43823d6847249cdab932f3d6e5bb6325f4ebe7d81d70"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/source_provenance.json",
+      "sha256": "f381c73ab03e95b2d2ea76eaf0250905790f8e9e929efc5f43bfdc7313abca8d"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/stratum_metrics.csv",
+      "sha256": "d37e9983fbd8a4d1c6ab5027e17836a792255630c78ce66ff274e5f1b4516bb3"
+    },
+    {
+      "path": "/media/server/STORAGE/Apotome/Paper/analyses/fig3_water_extended_20260924/original_inputs/unit_metrics.csv",
+      "sha256": "6c0389e517dee647c1d583628df3e63536f352f950a08ddd374cf1375d8e70a9"
+    }
+  ],
+  "analysis_script_sha256": "94bfb3095633ba321d24778dae88634d0567d7cf3819c1ad9da5c11a68e63286",
+  "iqr_script_sha256": "d265de09a9ce89c1f8738f044918fd614dde3455940fa5802d3bf4f07a7c94dc",
+  "statistics_script_sha256": "c1d62c13b88305e0838b05a3b2f3f6a6e791757561a8a0569e7bbf7b3696588a",
+  "robust_abundance_script_sha256": "71f791c15c10aaaf06062621b2ae2f92fa046bb235432fc30cb15006fcd76f36",
+  "scale_resolved_script_sha256": "b3221cd6c32df147fba9f4ff975bdb04647ff0ed8727152cd3b24b028fd02ac3",
+  "scale_resolved": {
+    "radii_um": [
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0
+    ],
+    "test": "one-way F at each radius, studentized by its permutation mean and standard deviation, maximum taken over radii",
+    "endpoints": 2
+  },
+  "joint_two_measure_test": "not performed; core enrichment and clustering excess are tested separately",
+  "unequal_variance_tests": {
+    "equal_variance_check": "Brown-Forsythe",
+    "omnibus": "Welch one-way ANOVA",
+    "pairwise": "exact studentized (Welch t) permutation",
+    "effect_size": "Hodges-Lehmann shift with exact rank interval; Cliff's delta",
+    "rows": 49,
+    "reason": "The Water group's variance greatly exceeds the sugar groups' and coincides with acquisition batch"
+  },
+  "parameters": {
+    "k": 6,
+    "edge_cap_um": 75.0,
+    "bandwidth_um": 40.0,
+    "grid_um": 5.0,
+    "contour_mass": 0.8,
+    "minimum_marker_anchors": 5
+  },
+  "interpretation": "Original nine animals plus further Water controls on the sugar cohort's own microscope; abundance and spatial IQR rules applied per endpoint; acquisition session and staining batch still differ between Water and the sugar groups",
+  "spatial_recomputation": "Spatial features recomputed for every animal under a declared measurement change; see declared_methodology_change",
+  "declared_methodology_change": "Marker density footprint changed from a raw truncated-kernel sum to a Diggle edge-corrected estimate; kernel mass falling outside DAPI-supported tissue is now divided out, so the 80% contour is no longer pulled away from the tissue boundary where the arcuate marker band lies.",
+  "original_spatial_values_changed": 17,
+  "native_masks_modified": false
+}

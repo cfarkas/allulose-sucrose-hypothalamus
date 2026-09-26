@@ -1,0 +1,32 @@
+{
+  "schema": "marker-shape-clusters-v1",
+  "checks": {
+    "source_cell_ids_unique": true,
+    "cell_coordinates_finite": true,
+    "condition_assignment_consistent": true,
+    "graph_edges_unique": true,
+    "graph_edges_tissue_constrained": true,
+    "positive_counts_in_range": true,
+    "clustered_counts_in_range": true,
+    "cluster_expected_counts_in_range": true,
+    "shape_positive_counts_in_range": true,
+    "shape_counts_exclude_unsupported_strata": true,
+    "minimum_component_size_two": true,
+    "component_memberships_unique": true,
+    "twelve_planned_contrasts_per_metric": true,
+    "positive_exact_pvalues": true,
+    "zero_positive_fractions_missing": true,
+    "zero_positive_shape_enrichment_missing": true,
+    "supported_contours_capture_target_mass": true,
+    "cage_condition_assignment_consistent": true,
+    "memberships_reconcile_with_animal_clustered_counts": true,
+    "all_pass": true
+  },
+  "animal_rows": 74,
+  "unit_rows": 50,
+  "strata": 536,
+  "clustered_cell_memberships": 11321,
+  "individual_pvalues_computed": false,
+  "elapsed_seconds": 5.041661977767944,
+  "workers": 75
+}
