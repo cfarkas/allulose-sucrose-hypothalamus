@@ -15,9 +15,10 @@ separately from that fixed archive.
 
 The current Figure 3 includes **five water, three sucrose and three allulose
 animals**. Its NPY-associated spatial comparison uses three estimable water
-animals and gives nominal p=0.0285714, **Holm p=0.0571429**. The Figure 4
-spatial comparisons use biological cages and are nonsignificant. These are
-exploratory analyses with acquisition/batch and independence limitations.
+animals and does not reach significance after correction for multiple
+comparisons. The Figure 4 spatial comparisons use biological cages and are
+nonsignificant. These are exploratory analyses with acquisition/batch and
+independence limitations.
 
 The [27 September interpretation notes](MICROSCOPY_AND_INTERPRETATION.md) explain
 what ROI normalization controls, why magnification alone does not invalidate
