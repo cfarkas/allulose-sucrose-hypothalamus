@@ -1,0 +1,45 @@
+Figure GFAP/Iba1 microglia ARC/ME/VMN.
+
+(A) Representative Iba1/DAPI section from FR722, S03. Iba1 is magenta and DAPI is blue; the high-contrast yellow 112 x 112-px source box (x=490-602, y=270-382) is centered on QC-valid cell fr722__s03__iba1_00113 and matches the enlarged inset. The immediately adjacent right-hand ROI view uses the identical source DAPI and source-pixel bounds and shows the exact accepted subset ARC, ME, VMN (ARC cyan, ME orange, VMN magenta) with bold colored contours and a dark contrast halo; omitted ROIs remain missing, HIL-accepted at 2026-08-24T21:56:12Z from manual_replacement_polygons; mask SHA-256 364f07dd95b16021b997eaa844ffde091b0c4ee6ce1a26f76a6f85ed8dba85f5.
+(B) Representative GFAP/DAPI section from FR8-1, S04. GFAP is cyan-green and DAPI is blue; the inset is centered at x=460.0, y=477.0 px. The immediately adjacent right-hand ROI view uses the identical source DAPI and source-pixel bounds and shows the exact accepted subset ARC, ME, VMN (ARC cyan, ME orange, VMN magenta) with bold colored contours and a dark contrast halo; omitted ROIs remain missing, HIL-accepted at 2026-08-25T01:55:26Z from manual_replacement_polygons; mask SHA-256 ed30517270fcd833d65e19e5e8b561f6369622f8ec5642892501a930c4e16480.
+(C) Implemented TinyMorphCNN. Three-channel 96 x 96 inputs encode background-corrected Iba1 intensity, the cell mask, and skeleton/distance morphology. Four convolutional blocks, global-average pooling, dropout, and softmax predict Ramified, Rod-like, Activated, or Amoeboid morphology. The hybrid run trained on 17,112 high-confidence morphometric pseudo-labels using a whole-animal 80/20 split. Displayed patches are deterministic within-class representatives that passed classifier, object-size, morphometry, centering, connected-component, and border-integrity QC; a neutral placeholder is shown when no prediction passes, with no out-of-QC fallback. Ramified: 1 selected from 4789 predictions (selected after checking 1 patch). Rod-like: 1 selected from 5591 predictions (selected after checking 1 patch). Activated: 1 selected from 8982 predictions (selected after checking 1 patch). Amoeboid: 1 selected from 1679 predictions (selected after checking 1 patch).
+(D) Within-region CNN-predicted microglial-state percentages for the representative Iba1 section from FR722, S03. Grouped bars show Ramified, Rod-like, Activated, and Amoeboid assignments separately for ARC, ME, and VMN; n denotes QC-accepted cells. This representative-section summary is descriptive and no inferential test is applied.
+(E) GFAP quantification workflow for the representative raw GFAP/DAPI field and final GFAP-positive mask in panel B. P0.5-P99.8 normalization is used only to create the positive mask; a 35-um grey-opening background is subtracted and the section threshold is max(0.8 x Otsu, median + 3 x normalized MAD). Objects smaller than 8 um2 are removed. GFAP-positive area is normalized by ROI pixels. Quantitative integrated intensity is background-corrected on the unscaled raw exported channel, then normalized by ROI area before animal-level aggregation.
+(F) Vertical channel-separated analysis-mask cartoons from the exact panel A field (FR722, S03; source bounds 0,0,960,720). DAPI nuclei are blue (6,290 labeled instances; 217,058 positive pixels), final QC-accepted Iba1-positive cells are red-magenta (397 labeled cells; 31,913 positive pixels), and the final threshold-derived GFAP-positive signal is green (9,273 positive pixels; pixels, not cells). Every channel uses the same DAPI-derived tissue visualization envelope and the same pixel-identical HIL-accepted/final ARC, ME, and VMN mask; the tissue envelope is visualization support, not an anatomical ROI or quantitative denominator.
+(G) Raw-scale background-corrected Iba1 signal per analyzed regional area.
+(H) Exploratory fraction of segmented Iba1-positive cells assigned to the activated morphology grouping (Activated plus Amoeboid) by the pseudo-label-trained classifier.
+(I) Raw-scale background-corrected GFAP signal per analyzed regional area.
+
+ARC, ME, and VMN are shown in canonical annotation-code order in all quantitative panels. Bars are animal means and error bars are SD; circles are individual biological animals and crosses identify values outside within-condition Tukey 1.5-IQR fences. All finite animal values, including marked outliers, were retained. Primary global values are ordinary one-way ANOVA p values. Pairwise W-S, W-A, and S-A values are raw exact two-sided Mann–Whitney U p values. Cage sensitivity uses unweighted cage means with one-way ANOVA and exact MWU. Panel H also uses raw exact cage-label binomial deviance on cage-summed activated/total microglia counts. Positive low denominators are retained; a zero denominator is an intrinsically undefined animal ratio but its 0/0 counts remain in the cage sum. No outcome-dependent filtering is used (W, Water; S, Sucrose; A, Allulose). Animals available anywhere in the dataset were Water n=3, Sucrose n=6, and Allulose n=6; actual finite animal Ns can be smaller for an endpoint/region.
+
+ARC/ME/VMN provenance: all statistics and representative fields are gated on exactly 61/61 native image-by-image HIL reviews; registration-derived or unreviewed automated masks are forbidden. The displayed accepted segmentations and the final analysis masks are pixel-identical and use the same source-pixel bounds as their adjacent microscopy fields. Classifier provenance: this was a hybrid pseudo-label CNN, not an expert-annotated supervised classifier. Its validation metric measures agreement with K-means morphometric pseudo-labels and must not be interpreted as biological accuracy. Panels C, D, and H are classifier-dependent and exploratory: panel C documents the classifier and examples, panel D is a descriptive representative-section composition, and panel H is the exploratory quantitative activated fraction. Microglial cells, DAPI nuclei, fluorescence signals, and area denominators are assigned with the same final ARC/ME/VMN mask; the projected-wall classification is retained as an audit vote. Raw exported intensity remains vulnerable to acquisition/batch differences. The Water cohort is smaller and confounded with sex/genotype in the available material.
+
+Animal-level data source: analysis/per_animal_region_summary.csv
+Classifier metadata: analysis/microglia_classifier_metadata.json
+
+Statistics (all finite animal-level values):
+Panel G, Iba1 corrected signal per animal, ARC: one-way ANOVA p = 0.919, MWU W-S p = 0.381, MWU W-A p = 0.381, MWU S-A p = 0.818.
+Panel G, Iba1 corrected signal per animal, ME: one-way ANOVA p = 0.828, MWU W-S p = 1.000, MWU W-A p = 1.000, MWU S-A p = 1.000.
+Panel G, Iba1 corrected signal per animal, VMN: one-way ANOVA p = 0.585, MWU W-S p = 0.548, MWU W-A p = 0.905, MWU S-A p = 0.589.
+Panel H, Activated microglia per animal, ARC: one-way ANOVA p = 0.055, MWU W-S p = 0.048, MWU W-A p = 0.381, MWU S-A p = 0.026.
+Panel H, Activated microglia per animal, ME: one-way ANOVA p = 0.122, MWU W-S p = 0.036, MWU W-A p = 1.000, MWU S-A p = 0.095.
+Panel H, Activated microglia per animal, VMN: one-way ANOVA p = 0.173, MWU W-S p = 0.167, MWU W-A p = 0.714, MWU S-A p = 0.132.
+Panel I, GFAP corrected signal per animal, ARC: one-way ANOVA p = 0.316, MWU W-S p = 0.714, MWU W-A p = 0.167, MWU S-A p = 0.485.
+Panel I, GFAP corrected signal per animal, ME: one-way ANOVA p = 0.992, MWU W-S p = 1.000, MWU W-A p = 1.000, MWU S-A p = 1.000.
+Panel I, GFAP corrected signal per animal, VMN: one-way ANOVA p = 0.733, MWU W-S p = 0.714, MWU W-A p = 0.548, MWU S-A p = 0.485.
+
+Cage-mean sensitivity:
+Cage G, Iba1 corrected signal per animal, ARC: one-way ANOVA p = 0.869, MWU W-S p = 0.800, MWU W-A p = 0.800, MWU S-A p = 1.000.
+Cage G, Iba1 corrected signal per animal, ME: one-way ANOVA p = 0.874, MWU W-S p = 0.800, MWU W-A p = 0.800, MWU S-A p = 0.700.
+Cage G, Iba1 corrected signal per animal, VMN: one-way ANOVA p = 0.493, MWU W-S p = 0.400, MWU W-A p = 0.800, MWU S-A p = 0.700.
+Cage H, Activated microglia per animal, ARC: one-way ANOVA p = 0.103, MWU W-S p = 0.200, MWU W-A p = 0.800, MWU S-A p = 0.200.
+Cage H, Activated microglia per animal, ME: one-way ANOVA p = 0.525, MWU W-S p = 0.200, MWU W-A p = 1.000, MWU S-A p = 0.700.
+Cage H, Activated microglia per animal, VMN: one-way ANOVA p = 0.481, MWU W-S p = 0.800, MWU W-A p = 1.000, MWU S-A p = 0.400.
+Cage I, GFAP corrected signal per animal, ARC: one-way ANOVA p = 0.152, MWU W-S p = 0.800, MWU W-A p = 0.400, MWU S-A p = 0.200.
+Cage I, GFAP corrected signal per animal, ME: one-way ANOVA p = 0.860, MWU W-S p = 0.800, MWU W-A p = 0.800, MWU S-A p = 0.700.
+Cage I, GFAP corrected signal per animal, VMN: one-way ANOVA p = 0.577, MWU W-S p = 0.800, MWU W-A p = 0.200, MWU S-A p = 1.000.
+
+Activated-count sensitivity:
+Count H, ARC: D exact p = 0.125, D W-S p = 0.200, D W-A p = 0.400, D S-A p = 0.200.
+Count H, ME: D exact p = 0.179, D W-S p = 0.100, D W-A p = 1.000, D S-A p = 0.300.
+Count H, VMN: D exact p = 0.400, D W-S p = 0.400, D W-A p = 0.600, D S-A p = 0.400.

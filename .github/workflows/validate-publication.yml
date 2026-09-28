@@ -23,10 +23,10 @@ jobs:
         run: python3 validate_figure_updates.py
 
       - name: Verify saved microglial choices and portable data
-        run: python3 figure_updates/Fig5/12_microglial_choices.py --validate-only
+        run: python3 figures/Fig5/12_microglial_choices.py --validate-only
 
       - name: Test saved versus independent microglial choices
-        run: python3 -m unittest discover -s figure_updates/scripts/shared/tests -p test_microglia_choices.py -v
+        run: python3 -m unittest discover -s figures/scripts/shared/tests -p test_microglia_choices.py -v
 
   figure-s6:
     runs-on: ubuntu-latest
@@ -40,14 +40,14 @@ jobs:
       - name: Install figure environment
         run: python -m pip install -r requirements-figures.txt
       - name: Test statistical edge cases and portable Figure S3 paths
-        run: python -m unittest discover -s figure_updates/scripts/shared -p 'test_fig*py' -v
+        run: python -m unittest discover -s figures/scripts/shared -p 'test_fig*py' -v
       - name: Recompute current NPY and POMC statistics from cell coordinates
-        run: python figure_updates/scripts/shared/recheck_current_statistics.py
+        run: python figures/scripts/shared/recheck_current_statistics.py
       - name: Test native microscopy inside marker ROIs
-        run: python -m unittest discover -s figure_updates/Fig4/tests -p test_pomc_microscopy.py -v
+        run: python -m unittest discover -s figures/Fig4/tests -p test_pomc_microscopy.py -v
       - name: Recompute and render supplementary Figure S6
-        run: python figure_updates/FigS6/01_make_figure_s6_microglia_classifier.py --output-dir /tmp/figure-s6 --dpi 600
+        run: python figures/FigS6/01_make_figure_s6_microglia_classifier.py --output-dir /tmp/figure-s6 --dpi 600
       - name: Validate bilingual panels and publication outputs
-        run: python figure_updates/scripts/utilities/07_validate_figure_outputs.py --figure FigS6 --root /tmp/figure-s6
+        run: python figures/scripts/utilities/07_validate_figure_outputs.py --figure FigS6 --root /tmp/figure-s6
       - name: Test supplementary-data archive routing
-        run: python -m unittest discover -s figure_updates/release/tests -p test_build_archives.py -v
+        run: python -m unittest discover -s figures/release/tests -p test_build_archives.py -v

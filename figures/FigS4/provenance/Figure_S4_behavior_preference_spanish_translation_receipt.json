@@ -1,0 +1,22 @@
+{
+  "Allulose": "Alulosa",
+  "Body-weight change": "Cambio de peso corporal",
+  "Cage summaries, mean +/- SD": "Media por jaula ± DE",
+  "Cage summaries, mean +/- SD ": "Media por jaula ± DE",
+  "Change from baseline (g)": "Cambio desde basal (g)",
+  "Consumption (g/cage/day)": "Consumo (g/jaula/día)",
+  "Food (g/cage/day)": "Alimento (g/jaula/día)",
+  "Food consumption": "Consumo de alimento",
+  "One-way ANOVA p = 0.0038\nMWU W-S p = 0.2\nMWU W-A p = 0.2\nMWU S-A p = 0.1": "ANOVA de una vía p = 0.0038\nMWU Ag-Sac p = 0.2\nMWU Ag-Alu p = 0.2\nMWU Sac-Alu p = 0.1",
+  "One-way ANOVA p = 0.6612\nMWU W-S p = 1\nMWU W-A p = 0.4\nMWU S-A p = 0.7": "ANOVA de una vía p = 0.6612\nMWU Ag-Sac p = 1\nMWU Ag-Alu p = 0.4\nMWU Sac-Alu p = 0.7",
+  "One-way ANOVA p = 1.4e-05\nMWU W-S p = 0.2\nMWU W-A p = 0.8\nMWU S-A p = 0.1": "ANOVA de una vía p = 1.4e-05\nMWU Ag-Sac p = 0.2\nMWU Ag-Alu p = 0.8\nMWU Sac-Alu p = 0.1",
+  "One-way ANOVA p = 4.6e-05\nMWU W-S p = 0.2\nMWU W-A p = 1\nMWU S-A p = 0.1": "ANOVA de una vía p = 4.6e-05\nMWU Ag-Sac p = 0.2\nMWU Ag-Alu p = 1\nMWU Sac-Alu p = 0.1",
+  "One-way ANOVA p = 7.2e-05\nMWU W-S p = 0.2\nMWU W-A p = 0.8\nMWU S-A p = 0.1": "ANOVA de una vía p = 7.2e-05\nMWU Ag-Sac p = 0.2\nMWU Ag-Alu p = 0.8\nMWU Sac-Alu p = 0.1",
+  "Solution / total fluid": "Solución / líquido total",
+  "Solution-side bottle": "Botella del lado de la solución",
+  "Study day": "Día del estudio",
+  "Sucrose": "Sacarosa",
+  "Two-bottle solution-side share": "Fracción de solución (dos botellas)",
+  "Water": "Agua",
+  "Water-side bottle": "Botella del lado del agua"
+}

@@ -1,0 +1,5 @@
+Figura 5. Microglía Iba1 y señal GFAP en ARC/ME/VMN.
+
+(I) Señal GFAP corregida por fondo y normalizada por área regional analizada.
+
+ARC, ME y VMN se muestran en el orden canónico del código de anotación. Las barras son medias animales con DE, los círculos son animales biológicos y las cruces señalan valores fuera de las cercas de Tukey, conservados en el análisis. Los valores globales usan ANOVA ordinario de una vía y las comparaciones Agua–Sacarosa, Agua–Alulosa y Sacarosa–Alulosa usan Mann–Whitney exacta bilateral sin ajuste. La sensibilidad emplea medias por jaula y, para el recuento activado, desviancia binomial exacta con etiquetas de jaula. Las 61 de 61 secciones usan máscaras ARC/ME/VMN nativas revisadas imagen por imagen. Sin embargo, los paneles C, D y H dependen de un clasificador entrenado con pseudoetiquetas y siguen siendo exploratorios; su exactitud biológica no ha sido validada independientemente.

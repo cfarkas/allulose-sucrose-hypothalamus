@@ -1,0 +1,64 @@
+endpoint,region,test,comparison,n,mean,sd,statistic,p_value_raw,effect_size,experimental_unit,extreme_labelings,enumerated_labelings,permutation_exhaustive,p_value_method,df_between,df_within,n_left,n_right,effect_size_definition
+iba1_corrected_intensity_per_um2,ARC,descriptive,Water,3,6.361650132718654,0.38457126138434194,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,ARC,descriptive,Sucrose,6,6.594547034112313,0.8455397966341657,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,ARC,descriptive,Allulose,6,6.50708773139817,0.8746581018550297,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,ARC,One_way_ANOVA,Water|Sucrose|Allulose,15,,,0.08485063000478561,0.9191956746832941,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,12.0,,,
+iba1_corrected_intensity_per_um2,ARC,Mann_Whitney_U_two_sided,Water|Sucrose,9,,,5.0,0.38095238095238093,0.4444444444444444,animal,32.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Sucrose minus Water)
+iba1_corrected_intensity_per_um2,ARC,Mann_Whitney_U_two_sided,Water|Allulose,9,,,5.0,0.38095238095238093,0.4444444444444444,animal,32.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Allulose minus Water)
+iba1_corrected_intensity_per_um2,ARC,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,20.0,0.8181818181818182,-0.1111111111111111,animal,756.0,924.0,True,exhaustive independent-label permutation of rank-sum/U,,,6.0,6.0,Cliff's delta (Allulose minus Sucrose)
+iba1_corrected_intensity_per_um2,ME,descriptive,Water,3,9.211394697728783,1.5521286887690207,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,ME,descriptive,Sucrose,5,8.183675909963304,2.7331773249033104,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,ME,descriptive,Allulose,5,8.702642857684415,2.1341334976249122,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,ME,One_way_ANOVA,Water|Sucrose|Allulose,13,,,0.19230777099495122,0.8280334592532754,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,10.0,,,
+iba1_corrected_intensity_per_um2,ME,Mann_Whitney_U_two_sided,Water|Sucrose,8,,,8.0,1.0,-0.06666666666666667,animal,56.0,56.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,5.0,Cliff's delta (Sucrose minus Water)
+iba1_corrected_intensity_per_um2,ME,Mann_Whitney_U_two_sided,Water|Allulose,8,,,8.0,1.0,-0.06666666666666667,animal,56.0,56.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,5.0,Cliff's delta (Allulose minus Water)
+iba1_corrected_intensity_per_um2,ME,Mann_Whitney_U_two_sided,Sucrose|Allulose,10,,,12.0,1.0,0.04,animal,252.0,252.0,True,exhaustive independent-label permutation of rank-sum/U,,,5.0,5.0,Cliff's delta (Allulose minus Sucrose)
+iba1_corrected_intensity_per_um2,VMN,descriptive,Water,3,4.786475366766656,0.4799819287292857,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,VMN,descriptive,Sucrose,6,5.190881483956314,0.8586679462796287,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,VMN,descriptive,Allulose,6,4.885951373796698,0.3078986462331518,,,,animal,,,,,,,,,
+iba1_corrected_intensity_per_um2,VMN,One_way_ANOVA,Water|Sucrose|Allulose,15,,,0.5599501914498103,0.5854694671763295,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,12.0,,,
+iba1_corrected_intensity_per_um2,VMN,Mann_Whitney_U_two_sided,Water|Sucrose,9,,,6.0,0.5476190476190477,0.3333333333333333,animal,46.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Sucrose minus Water)
+iba1_corrected_intensity_per_um2,VMN,Mann_Whitney_U_two_sided,Water|Allulose,9,,,10.0,0.9047619047619048,-0.1111111111111111,animal,76.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Allulose minus Water)
+iba1_corrected_intensity_per_um2,VMN,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,22.0,0.5887445887445888,-0.2222222222222222,animal,544.0,924.0,True,exhaustive independent-label permutation of rank-sum/U,,,6.0,6.0,Cliff's delta (Allulose minus Sucrose)
+activated_microglia_fraction,ARC,descriptive,Water,3,0.5194120298391465,0.022001136017849317,,,,animal,,,,,,,,,
+activated_microglia_fraction,ARC,descriptive,Sucrose,6,0.48853904773522866,0.017149228061405297,,,,animal,,,,,,,,,
+activated_microglia_fraction,ARC,descriptive,Allulose,6,0.5104442684266812,0.01684640742701523,,,,animal,,,,,,,,,
+activated_microglia_fraction,ARC,One_way_ANOVA,Water|Sucrose|Allulose,15,,,3.7202844141339986,0.05531382193125301,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,12.0,,,
+activated_microglia_fraction,ARC,Mann_Whitney_U_two_sided,Water|Sucrose,9,,,17.0,0.047619047619047616,-0.8888888888888888,animal,4.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Sucrose minus Water)
+activated_microglia_fraction,ARC,Mann_Whitney_U_two_sided,Water|Allulose,9,,,13.0,0.38095238095238093,-0.4444444444444444,animal,32.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Allulose minus Water)
+activated_microglia_fraction,ARC,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,4.0,0.025974025974025976,0.7777777777777778,animal,24.0,924.0,True,exhaustive independent-label permutation of rank-sum/U,,,6.0,6.0,Cliff's delta (Allulose minus Sucrose)
+activated_microglia_fraction,ME,descriptive,Water,3,0.5074309978768577,0.025263590014051523,,,,animal,,,,,,,,,
+activated_microglia_fraction,ME,descriptive,Sucrose,5,0.43321300244963046,0.038023544017228954,,,,animal,,,,,,,,,
+activated_microglia_fraction,ME,descriptive,Allulose,5,0.4992232469530495,0.07288220017150726,,,,animal,,,,,,,,,
+activated_microglia_fraction,ME,One_way_ANOVA,Water|Sucrose|Allulose,13,,,2.6164979286998826,0.12191955816110658,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,10.0,,,
+activated_microglia_fraction,ME,Mann_Whitney_U_two_sided,Water|Sucrose,8,,,15.0,0.03571428571428571,-1.0,animal,2.0,56.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,5.0,Cliff's delta (Sucrose minus Water)
+activated_microglia_fraction,ME,Mann_Whitney_U_two_sided,Water|Allulose,8,,,7.0,1.0,0.06666666666666667,animal,56.0,56.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,5.0,Cliff's delta (Allulose minus Water)
+activated_microglia_fraction,ME,Mann_Whitney_U_two_sided,Sucrose|Allulose,10,,,4.0,0.09523809523809523,0.68,animal,24.0,252.0,True,exhaustive independent-label permutation of rank-sum/U,,,5.0,5.0,Cliff's delta (Allulose minus Sucrose)
+activated_microglia_fraction,VMN,descriptive,Water,3,0.5366072952069111,0.0449963221565799,,,,animal,,,,,,,,,
+activated_microglia_fraction,VMN,descriptive,Sucrose,6,0.4890411492999185,0.04040056588108384,,,,animal,,,,,,,,,
+activated_microglia_fraction,VMN,descriptive,Allulose,6,0.5192074539224438,0.025618785385130682,,,,animal,,,,,,,,,
+activated_microglia_fraction,VMN,One_way_ANOVA,Water|Sucrose|Allulose,15,,,2.0380995959203343,0.17297653939041566,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,12.0,,,
+activated_microglia_fraction,VMN,Mann_Whitney_U_two_sided,Water|Sucrose,9,,,15.0,0.16666666666666666,-0.6666666666666666,animal,14.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Sucrose minus Water)
+activated_microglia_fraction,VMN,Mann_Whitney_U_two_sided,Water|Allulose,9,,,11.0,0.7142857142857143,-0.2222222222222222,animal,60.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Allulose minus Water)
+activated_microglia_fraction,VMN,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,8.0,0.13203463203463203,0.5555555555555556,animal,122.0,924.0,True,exhaustive independent-label permutation of rank-sum/U,,,6.0,6.0,Cliff's delta (Allulose minus Sucrose)
+gfap_corrected_intensity_per_um2,ARC,descriptive,Water,3,7.848034333940832,2.578422615917542,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,ARC,descriptive,Sucrose,6,6.519280126801484,2.5676453080755146,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,ARC,descriptive,Allulose,6,4.929587429476905,2.8523393594926585,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,ARC,One_way_ANOVA,Water|Sucrose|Allulose,15,,,1.2701624933822377,0.31596777775122503,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,12.0,,,
+gfap_corrected_intensity_per_um2,ARC,Mann_Whitney_U_two_sided,Water|Sucrose,9,,,11.0,0.7142857142857143,-0.2222222222222222,animal,60.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Sucrose minus Water)
+gfap_corrected_intensity_per_um2,ARC,Mann_Whitney_U_two_sided,Water|Allulose,9,,,15.0,0.16666666666666666,-0.6666666666666666,animal,14.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Allulose minus Water)
+gfap_corrected_intensity_per_um2,ARC,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,23.0,0.48484848484848486,-0.2777777777777778,animal,448.0,924.0,True,exhaustive independent-label permutation of rank-sum/U,,,6.0,6.0,Cliff's delta (Allulose minus Sucrose)
+gfap_corrected_intensity_per_um2,ME,descriptive,Water,3,6.383335736854005,2.556300543215855,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,ME,descriptive,Sucrose,5,6.512675650695472,4.828732587797108,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,ME,descriptive,Allulose,5,6.184446408949168,3.6420849313700736,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,ME,One_way_ANOVA,Water|Sucrose|Allulose,13,,,0.008536232260755677,0.9915073145255044,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,10.0,,,
+gfap_corrected_intensity_per_um2,ME,Mann_Whitney_U_two_sided,Water|Sucrose,8,,,7.0,1.0,0.06666666666666667,animal,56.0,56.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,5.0,Cliff's delta (Sucrose minus Water)
+gfap_corrected_intensity_per_um2,ME,Mann_Whitney_U_two_sided,Water|Allulose,8,,,7.0,1.0,0.06666666666666667,animal,56.0,56.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,5.0,Cliff's delta (Allulose minus Water)
+gfap_corrected_intensity_per_um2,ME,Mann_Whitney_U_two_sided,Sucrose|Allulose,10,,,13.0,1.0,-0.04,animal,252.0,252.0,True,exhaustive independent-label permutation of rank-sum/U,,,5.0,5.0,Cliff's delta (Allulose minus Sucrose)
+gfap_corrected_intensity_per_um2,VMN,descriptive,Water,3,0.5807061935824532,0.21159042264037986,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,VMN,descriptive,Sucrose,6,0.7012443669970779,0.3476056004118001,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,VMN,descriptive,Allulose,6,0.7513531212701455,0.2840101443286724,,,,animal,,,,,,,,,
+gfap_corrected_intensity_per_um2,VMN,One_way_ANOVA,Water|Sucrose|Allulose,15,,,0.3194495236365365,0.7325411174118689,,animal,,,,ordinary equal-variance one-way ANOVA F,2.0,12.0,,,
+gfap_corrected_intensity_per_um2,VMN,Mann_Whitney_U_two_sided,Water|Sucrose,9,,,7.0,0.7142857142857143,0.2222222222222222,animal,60.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Sucrose minus Water)
+gfap_corrected_intensity_per_um2,VMN,Mann_Whitney_U_two_sided,Water|Allulose,9,,,6.0,0.5476190476190477,0.3333333333333333,animal,46.0,84.0,True,exhaustive independent-label permutation of rank-sum/U,,,3.0,6.0,Cliff's delta (Allulose minus Water)
+gfap_corrected_intensity_per_um2,VMN,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,13.0,0.48484848484848486,0.2777777777777778,animal,448.0,924.0,True,exhaustive independent-label permutation of rank-sum/U,,,6.0,6.0,Cliff's delta (Allulose minus Sucrose)

@@ -1,0 +1,97 @@
+sensitivity_family,endpoint,region,cage,condition,value,numerator,denominator,n_animals_total,n_animals_estimable,n_zero_denominator_animals,aggregation,no_outcome_dependent_filtering
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA1,Allulose,0.5130960376091337,764.0,1489.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA3,Allulose,0.49774774774774777,663.0,1332.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA5,Allulose,0.5206611570247934,630.0,1210.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA2,Sucrose,0.5026819923371647,656.0,1305.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA4,Sucrose,0.4683663833805477,496.0,1059.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA8,Sucrose,0.4934640522875817,604.0,1224.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA6,Water,0.5160680529300568,273.0,529.0,1,1,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ARC,JAULA7,Water,0.5224489795918368,768.0,1470.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA1,Allulose,0.5098901098901099,232.0,455.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA3,Allulose,0.5544554455445545,112.0,202.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA5,Allulose,0.375,18.0,48.0,1,1,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA2,Sucrose,0.4375,42.0,96.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA4,Sucrose,0.3764705882352941,64.0,170.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA8,Sucrose,0.44954128440366975,49.0,109.0,1,1,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA6,Water,0.4782608695652174,77.0,161.0,1,1,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,ME,JAULA7,Water,0.5219399538106235,226.0,433.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA1,Allulose,0.5142630744849446,649.0,1262.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA3,Allulose,0.537719298245614,613.0,1140.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA5,Allulose,0.4981751824817518,819.0,1644.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA2,Sucrose,0.5050985723997281,743.0,1471.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA4,Sucrose,0.4376731301939058,316.0,722.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA8,Sucrose,0.510053619302949,761.0,1492.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA6,Water,0.4879518072289157,324.0,664.0,1,1,0,sum activated microglia / sum total microglia within cage,True
+cage_count_binomial_deviance,activated_microglia_fraction,VMN,JAULA7,Water,0.5627769571639586,762.0,1354.0,2,2,0,sum activated microglia / sum total microglia within cage,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA1,Allulose,0.5117689938585461,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA3,Allulose,0.4977941176470588,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA5,Allulose,0.5217696937744387,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA2,Sucrose,0.5022295180666221,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA4,Sucrose,0.47001960638324275,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA8,Sucrose,0.49336801875582104,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA6,Water,0.5160680529300568,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ARC,JAULA7,Water,0.5210840182936914,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA1,Allulose,0.5104872881355932,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA3,Allulose,0.5500708292470307,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA5,Allulose,0.375,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA2,Sucrose,0.44545454545454544,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA4,Sucrose,0.4128073184676958,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA8,Sucrose,0.4495412844036697,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA6,Water,0.4782608695652174,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,ME,JAULA7,Water,0.5220160620326779,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA1,Allulose,0.5160399458771735,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA3,Allulose,0.540406738083227,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA5,Allulose,0.5011756778069307,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA2,Sucrose,0.5075961239642499,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA4,Sucrose,0.4491355463347164,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA8,Sucrose,0.5103917776007889,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA6,Water,0.4879518072289157,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,activated_microglia_fraction,VMN,JAULA7,Water,0.5609350391959087,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA1,Allulose,4.617741962339283,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA3,Allulose,6.609492401209445,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA5,Allulose,3.5615279248819895,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA2,Sucrose,6.747188886348328,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA4,Sucrose,5.541801203709478,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA8,Sucrose,7.268850290346647,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA6,Water,10.366209091164174,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ARC,JAULA7,Water,6.5889469553291615,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA1,Allulose,6.14361495990452,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA3,Allulose,7.930083489874371,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA5,Allulose,2.774835145188057,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA2,Sucrose,8.340398080537046,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA4,Sucrose,6.358496463004939,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA8,Sucrose,3.165589166393392,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA6,Water,8.376142246148166,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,ME,JAULA7,Water,5.386932482206924,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA1,Allulose,0.6764039791807077,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA3,Allulose,0.9503995934870819,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA5,Allulose,0.6272557911426468,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA2,Sucrose,0.9400737205444644,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA4,Sucrose,0.45591123171184283,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA8,Sucrose,0.7077481487349262,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA6,Water,0.4921206926933744,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,gfap_corrected_intensity_per_um2,VMN,JAULA7,Water,0.6249989440269926,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA1,Allulose,6.957065926488962,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA3,Allulose,6.944814916180269,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA5,Allulose,5.619382351525278,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA2,Sucrose,6.730274485785364,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA4,Sucrose,7.095411129373466,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA8,Sucrose,5.95795548717811,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA6,Water,6.081950118164513,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ARC,JAULA7,Water,6.5015001399957235,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA1,Allulose,9.106153372768121,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA3,Allulose,9.827900602908027,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA5,Allulose,5.645106337069777,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA2,Sucrose,9.094832599868539,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA4,Sucrose,7.323036743922943,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA8,Sucrose,8.082640862233557,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA6,Water,7.904023714531813,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,ME,JAULA7,Water,9.86508018932727,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA1,Allulose,4.732208039143799,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA3,Allulose,5.153187312288823,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA5,Allulose,4.7724587699574705,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA2,Sucrose,5.303286022591582,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA4,Sucrose,5.538472839812801,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA8,Sucrose,4.73088558946456,,,2,2,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA6,Water,5.101135983101609,,,1,1,0,unweighted mean of finite animal-level values,True
+cage_mean_anova,iba1_corrected_intensity_per_um2,VMN,JAULA7,Water,4.62914505859918,,,2,2,0,unweighted mean of finite animal-level values,True

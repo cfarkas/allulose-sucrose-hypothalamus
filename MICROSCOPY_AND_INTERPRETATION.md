@@ -1,9 +1,8 @@
-# Acquisition comparability and interpretation — 27 September 2026
+# Acquisition comparability and interpretation
 
 Magnification alone does not invalidate measurements made within regions of
 interest (ROIs). Comparability depends on the physical tissue sampled, optical
-sectioning, signal detection and the endpoint being measured. The numerical
-analyses remain those audited on 26 September; this note clarifies their scope.
+sectioning, signal detection and the endpoint being measured.
 
 ## What ROI quantification controls
 
@@ -31,10 +30,10 @@ sampling; magnification labels alone are insufficient. Instrument and detector
 settings also affect quantitative fluorescence. See [Waters, 2009](https://doi.org/10.1083/jcb.200903097)
 and [Montero Llopis et al., 2021](https://doi.org/10.1038/s41592-021-01156-w).
 
-## The current NPY cohort
+## The NPY cohort
 
 The documented objectives are 20×, 25× and 40×. No 35× objective is identified in
-the current NPY acquisition records.
+the NPY acquisition records.
 
 | Animals | Acquisition | Analysis pixel pitch | NPY-associated spatial eligibility |
 |---|---|---|---|
@@ -55,8 +54,7 @@ Pixel pitches are also much smaller than the tested 20–150 µm distances. Thos
 facts support using physically calibrated coordinates, but do not validate the
 equivalence of label detection, optical depth or sampling across instruments.
 
-The new water acquisitions improve instrument/objective overlap and match the
-sugar images' analysis pixel pitch. Resampling is scale harmonization, not an
+WATER_NPY4–5 share the sugar images' instrument/objective and analysis pixel pitch. Resampling is scale harmonization, not an
 optical or staining calibration. Maximum projections through different depths
 can also change overlap and apparent co-localization. The conditional spatial
 null controls observed positions and counts; it cannot recover unobserved cells.
@@ -69,8 +67,8 @@ proof that the observed pattern is an imaging artifact. Paired imaging of the
 same tissue with each setup, or independent matched acquisitions with detection
 validation, would quantify that bias more directly.
 
-Sources: [acquisition scale manifest](https://github.com/cfarkas/allulose-sucrose-hypothalamus/blob/main/figure_updates/Fig3/source_data/current_statistics/inputs/NPY_acquisition_manifest.csv),
-[spatial eligibility](https://github.com/cfarkas/allulose-sucrose-hypothalamus/blob/main/figure_updates/Fig3/source_data/current_statistics/spatial_eligibility.csv),
+Sources: [acquisition scale manifest](https://github.com/cfarkas/allulose-sucrose-hypothalamus/blob/main/figures/Fig3/source_data/current_statistics/inputs/NPY_acquisition_manifest.csv),
+[spatial eligibility](https://github.com/cfarkas/allulose-sucrose-hypothalamus/blob/main/figures/Fig3/source_data/current_statistics/spatial_eligibility.csv),
 and the acquisition descriptions accompanying the manuscript. The same NPY
 instrument concern should not automatically be transferred to the separate
 POMC/glial acquisitions, which used the Keyence platform.
@@ -91,9 +89,9 @@ POMC/glial acquisitions, which used the Keyence platform.
 - No significant Iba1/GFAP intensity difference does not establish unchanged
   glial numbers or function. Predicted morphology classes describe shapes;
   agreement with human shape labels does not validate inflammatory activity.
-- The NPY-associated spatial result remains nominal p=0.0285714 and
-  **Holm p=0.0571429**. The relative predicted hepatic epithelial-like ratio
-  remains **4.06, BH q=0.02418**; it is not a fourfold hepatocyte count.
+- The NPY-associated spatial comparison does not meet the significance
+  threshold after correction for multiple comparisons. Hepatic epithelial-like
+  effects describe relative predicted phenotype composition, not absolute
+  hepatocyte abundance.
 
-These clarifications change interpretation and reporting, not cell labels,
-sample inclusion rules, computed estimates or p values.
+These limits apply when interpreting the measured markers and model outputs.

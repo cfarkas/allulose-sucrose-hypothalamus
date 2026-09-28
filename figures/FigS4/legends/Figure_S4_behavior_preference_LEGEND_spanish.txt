@@ -1,0 +1,9 @@
+Figura S4. Experimento 2 de conducta con dos botellas y peso corporal a nivel de jaula.
+
+(A) Consumo de la botella de solución por jaula y promedio de siete días por jaula; las barras muestran media ± DE.
+(B) Consumo de la botella de agua por jaula y promedio de siete días por jaula; las barras muestran media ± DE.
+(C) Fracción diaria asignada a la botella de solución. En controles Agua corresponde a la asignación al lado de la botella 2; la línea discontinua marca 0,5.
+(D) Consumo compartido de alimento por jaula y promedio de siete días por jaula; la jaula es la unidad experimental.
+(E) Cambio de peso corporal desde basal, promediado entre los dos ratones por jaula; la inferencia usa una media final-menos-basal por jaula.
+
+La jaula es la unidad experimental en todos los análisis (Agua n=2, Alulosa n=3 y Sacarosa n=3). Los valores globales son valores p de ANOVA ordinario de una vía. Las comparaciones Agua–Sacarosa, Agua–Alulosa y Sacarosa–Alulosa usan valores p exactos bilaterales de Mann–Whitney sin ajuste por multiplicidad. Los puntos son jaulas, las barras muestran media ± DE y las cruces señalan valores fuera de las cercas de Tukey de 1,5 RIC, que se conservaron en todos los análisis. Las entradas del día 0 son masas de inicialización y no consumo; los días 1–7 forman la ventana principal. En controles Agua, la fracción de la botella 2 mide asignación lateral, no preferencia por edulcorante. Los tamaños de muestra son pequeños y no se formula una conclusión confirmatoria.

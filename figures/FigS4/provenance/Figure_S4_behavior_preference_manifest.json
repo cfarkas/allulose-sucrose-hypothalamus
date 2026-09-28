@@ -1,0 +1,90 @@
+{
+  "analysis_directory": "/tmp/apotome_full_rebuild_QQFR7qfh/FigS4/analysis",
+  "analysis_status": "exploratory cage-level one-way ANOVA with exact pairwise MWU",
+  "dpi": 600,
+  "experimental_units": {
+    "body_weight": "cage mean of two mouse changes",
+    "intake": "cage"
+  },
+  "figure": "Figure_S4_behavior_preference",
+  "formats": [
+    "pdf",
+    "png"
+  ],
+  "graphics": [
+    "Figure_S4_behavior_preference.pdf",
+    "Figure_S4_behavior_preference.png",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution.png",
+    "panels/Figure_S4_behavior_preference_Panel_B_water.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_B_water.png",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction.png",
+    "panels/Figure_S4_behavior_preference_Panel_D_food.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_D_food.png",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight.png",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution_spanish.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution_spanish.png",
+    "panels/Figure_S4_behavior_preference_Panel_B_water_spanish.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_B_water_spanish.png",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction_spanish.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction_spanish.png",
+    "panels/Figure_S4_behavior_preference_Panel_D_food_spanish.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_D_food_spanish.png",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight_spanish.pdf",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight_spanish.png"
+  ],
+  "graphics_sha256": {
+    "Figure_S4_behavior_preference.pdf": "214f3d00ef31015bb401f15865f21fe2c464fa2cd2e0c1833655889596f477c3",
+    "Figure_S4_behavior_preference.png": "8ec63ae2377a529c1f966472ef0f5b67b58a0495b841ac79d3dad39bd9086b4a",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution.pdf": "2029623b460d12511c926d572d605585fd195ad09fdabf3fdf0119a435ef92e8",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution.png": "c3706a4d3cfe216c0bd54dcd8524008529555efc29f08ecfa8d48b6cf6830095",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution_spanish.pdf": "0f7c67e4d9de210b6e71e7d0659ca7f6936032368a1bc9cc44645441412323b8",
+    "panels/Figure_S4_behavior_preference_Panel_A_solution_spanish.png": "7cc889dcec72be9ab990bcb0df2d60f607f65971bc5e9685088a7ae872c4c360",
+    "panels/Figure_S4_behavior_preference_Panel_B_water.pdf": "ba3c72b664276250d6dc18d18c43ef8b4a9cbe28d030757f9749489e92ab5774",
+    "panels/Figure_S4_behavior_preference_Panel_B_water.png": "3e24e90f023e7cdf5e5acec53367aaa3d2de5a0f22e44dd5bd0d8ddb5ac73969",
+    "panels/Figure_S4_behavior_preference_Panel_B_water_spanish.pdf": "110fdb5805c14b3570ced700107d8edbc4a9ab84ab222a1399b715fecbb51256",
+    "panels/Figure_S4_behavior_preference_Panel_B_water_spanish.png": "ca57f7abf8c9a254f761610529989ea0995c8c0f1330f28b1fe3f44661e6b5ec",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction.pdf": "f0e09b5caa4686a98bec4e7e9a0f9b641ec3462fad82b8b46e52b2ab93b26eca",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction.png": "ff184f62e06ef5d19c38043f3fd82e56b5da99902ae81e1d30077781d529d2b3",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction_spanish.pdf": "b1ff55b3496e849ed490ca5d9b552130192370d737fa53283358807e711623fe",
+    "panels/Figure_S4_behavior_preference_Panel_C_solution_fraction_spanish.png": "663b4c32e3f91d0877da577b011ee75332589d26562f53e49864be5f42e19c3a",
+    "panels/Figure_S4_behavior_preference_Panel_D_food.pdf": "f13267a787ed92f54c697f08e46bbeb1fe9262ce26b209df261a03afa90f9386",
+    "panels/Figure_S4_behavior_preference_Panel_D_food.png": "269ec1550e71ba50ed47a3e87fdb50b6ce251a6c7f44dd6c888c8206d6524264",
+    "panels/Figure_S4_behavior_preference_Panel_D_food_spanish.pdf": "affed4515aebeb35f7b1e516375dabef3f170c5e823c2a3ffacdc2303bea67ea",
+    "panels/Figure_S4_behavior_preference_Panel_D_food_spanish.png": "07224c849cc8b651b1b5b44c9f54b5bf0dabb3ba2e5fbbda492e874267878efd",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight.pdf": "812fc605ffcd95b561aa360dba76808c9e9127247df8cd7683d08f51a941bffd",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight.png": "caf4c56a9f8d7e14e2cf4bb849c0b6c52f7adeb1224c80ff2b2bd081ca610887",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight_spanish.pdf": "af26b3d6161e23de38eeb8907f4de42709ee3f64a2d37c6cba510dbd7f3d5523",
+    "panels/Figure_S4_behavior_preference_Panel_E_body_weight_spanish.png": "9241f0f81cb55c2567d0faddb78d7ba16712eab467171b01628c9df04751d437"
+  },
+  "language_contract": {
+    "combined_figure": "English only",
+    "crop_geometry": "Spanish and English pairs use identical fixed crop boxes",
+    "spanish_translation_receipt": "provenance/Figure_S4_behavior_preference_spanish_translation_receipt.json",
+    "spanish_translation_receipt_sha256": "6893ee032c1abaa1a3b8637f73f27264024954c4d11e34f0e255f1a6d876b4b4",
+    "standalone_panels": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "output_directory": "/tmp/apotome_full_rebuild_QQFR7qfh/FigS4/figure",
+  "panel_export_method": "exact crops of live axes in the combined rendered figure",
+  "renderer": "/media/server/STORAGE/Apotome/Paper/FigS4/02_make_figure_s4_behavior_preference.py",
+  "renderer_sha256": "c1af019e6359f19053c7071dccb41eda1b69a88ba9c4af2102f4008e89844cd4",
+  "statistics": {
+    "global": "ordinary equal-variance one-way ANOVA with cage as experimental unit",
+    "multiplicity_adjustment": "none",
+    "pairwise": "raw exact exhaustive two-sided Mann-Whitney U; W-S, W-A, S-A"
+  },
+  "subpanels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "workbook": "/media/server/STORAGE/Apotome/Paper/FigS4/raw_data/UCSC_MICE.xlsx",
+  "workbook_sha256": "9759e888643b82c3f4edac5d0a2eb3d76d1dcfcabe700a1851ed47002ab1d657"
+}

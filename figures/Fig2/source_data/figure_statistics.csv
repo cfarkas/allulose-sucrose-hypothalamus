@@ -1,0 +1,29 @@
+endpoint,region,test,comparison,n,mean,sd,p_value_raw,statistic,df_between,df_within,effect_size,p_value_method,n_left,n_right,effect_size_definition,permutation_exhaustive,permutations_evaluated,permutations_total,p_value_holm_across_four_regions
+cfos_over_dapi_recomputed,ARC,descriptive,Water,4,0.056822332873427944,0.04499560876224041,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,ARC,descriptive,Sucrose,6,0.038277253842065616,0.024017558408370773,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,ARC,descriptive,Allulose,6,0.08051143046024058,0.03399168201062084,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,ARC,One_way_ANOVA,Water|Sucrose|Allulose,16,,,0.13263744932024787,2.369268312010095,2.0,13.0,,ordinary equal-variance one-way ANOVA F,,,,,,,0.5305497972809915
+cfos_over_dapi_recomputed,ARC,Mann_Whitney_U_two_sided,Water|Sucrose,10,,,0.6095238095238096,,,,-0.25,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Sucrose minus Water),True,210.0,210.0,
+cfos_over_dapi_recomputed,ARC,Mann_Whitney_U_two_sided,Water|Allulose,10,,,0.6095238095238096,,,,0.25,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Allulose minus Water),True,210.0,210.0,
+cfos_over_dapi_recomputed,ARC,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,0.04112554112554113,,,,0.7222222222222222,exhaustive independent-label permutation of rank-sum/U,6.0,6.0,Cliff's delta (Allulose minus Sucrose),True,924.0,924.0,
+cfos_over_dapi_recomputed,ME,descriptive,Water,4,0.012306115793078169,0.009194121609562378,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,ME,descriptive,Sucrose,4,0.006157751162024292,0.003095057320883193,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,ME,descriptive,Allulose,6,0.01404262597497531,0.012326004452961252,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,ME,One_way_ANOVA,Water|Sucrose|Allulose,14,,,0.4664954203826699,0.8178928475558485,2.0,11.0,,ordinary equal-variance one-way ANOVA F,,,,,,,0.9329908407653398
+cfos_over_dapi_recomputed,ME,Mann_Whitney_U_two_sided,Water|Sucrose,8,,,0.34285714285714286,,,,-0.5,exhaustive independent-label permutation of rank-sum/U,4.0,4.0,Cliff's delta (Sucrose minus Water),True,70.0,70.0,
+cfos_over_dapi_recomputed,ME,Mann_Whitney_U_two_sided,Water|Allulose,10,,,0.9142857142857143,,,,0.08333333333333333,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Allulose minus Water),True,210.0,210.0,
+cfos_over_dapi_recomputed,ME,Mann_Whitney_U_two_sided,Sucrose|Allulose,10,,,0.47619047619047616,,,,0.3333333333333333,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Allulose minus Sucrose),True,210.0,210.0,
+cfos_over_dapi_recomputed,VMN,descriptive,Water,4,0.05863363602861474,0.05626443412447606,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,VMN,descriptive,Sucrose,6,0.03080599886966008,0.022195066438747076,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,VMN,descriptive,Allulose,6,0.04376498820392865,0.033960623474537086,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,VMN,One_way_ANOVA,Water|Sucrose|Allulose,16,,,0.5208878895377931,0.6860653563918014,2.0,13.0,,ordinary equal-variance one-way ANOVA F,,,,,,,0.9329908407653398
+cfos_over_dapi_recomputed,VMN,Mann_Whitney_U_two_sided,Water|Sucrose,10,,,0.7619047619047619,,,,-0.16666666666666666,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Sucrose minus Water),True,210.0,210.0,
+cfos_over_dapi_recomputed,VMN,Mann_Whitney_U_two_sided,Water|Allulose,10,,,0.7619047619047619,,,,-0.16666666666666666,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Allulose minus Water),True,210.0,210.0,
+cfos_over_dapi_recomputed,VMN,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,0.5887445887445888,,,,0.2222222222222222,exhaustive independent-label permutation of rank-sum/U,6.0,6.0,Cliff's delta (Allulose minus Sucrose),True,924.0,924.0,
+cfos_over_dapi_recomputed,OTHERS,descriptive,Water,4,0.04139047092609491,0.021392420084319963,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,OTHERS,descriptive,Sucrose,6,0.02524571440404567,0.017002841142485754,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,OTHERS,descriptive,Allulose,6,0.04747699684655521,0.02015673700727426,,,,,,,,,,,,,
+cfos_over_dapi_recomputed,OTHERS,One_way_ANOVA,Water|Sucrose|Allulose,16,,,0.16343912014165743,2.0888596907441217,2.0,13.0,,ordinary equal-variance one-way ANOVA F,,,,,,,0.5305497972809915
+cfos_over_dapi_recomputed,OTHERS,Mann_Whitney_U_two_sided,Water|Sucrose,10,,,0.3523809523809524,,,,-0.4166666666666667,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Sucrose minus Water),True,210.0,210.0,
+cfos_over_dapi_recomputed,OTHERS,Mann_Whitney_U_two_sided,Water|Allulose,10,,,0.7619047619047619,,,,0.16666666666666666,exhaustive independent-label permutation of rank-sum/U,4.0,6.0,Cliff's delta (Allulose minus Water),True,210.0,210.0,
+cfos_over_dapi_recomputed,OTHERS,Mann_Whitney_U_two_sided,Sucrose|Allulose,12,,,0.09307359307359307,,,,0.6111111111111112,exhaustive independent-label permutation of rank-sum/U,6.0,6.0,Cliff's delta (Allulose minus Sucrose),True,924.0,924.0,

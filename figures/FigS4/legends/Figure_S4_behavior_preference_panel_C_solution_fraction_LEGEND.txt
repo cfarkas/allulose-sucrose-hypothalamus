@@ -1,0 +1,5 @@
+Figure S4. Experiment 2 two-bottle behavior and cage-level body weight.
+
+(C) Daily solution-side share, solution/(solution+water). In Water controls this is bottle-2 share and therefore measures side allocation rather than sweetener preference. The dashed line marks 0.5.
+
+Cage is the experimental unit throughout (Water n=2, Allulose n=3, Sucrose n=3). Global values are ordinary one-way ANOVA p values. Pairwise W-S, W-A, and S-A values are raw exact two-sided Mann-Whitney U p values; no pairwise multiplicity adjustment is applied. With these cage counts, ANOVA assumptions are weakly assessable and no confirmatory claim is made. Dots are cages; bars are mean +/- SD. Crosses mark within-condition Tukey 1.5-IQR outliers, which remain in all analyses. Day 0 intake entries are initialization masses, not consumption, and were excluded; days 1-7 form the primary window. Hoja 3 versus Hoja 4 reconciliation found refill-adjacent solution discrepancies and one food discrepancy; Hoja 4 values were retained as the intended daily sheet, and a source-discrepancy-robust sensitivity excludes implicated dates. Sex/genotype adjustment was not possible from Hoja 4.

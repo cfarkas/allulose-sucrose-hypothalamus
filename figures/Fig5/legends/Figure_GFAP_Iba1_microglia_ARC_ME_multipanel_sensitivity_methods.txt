@@ -1,0 +1,10 @@
+Figure 5 multipanel sensitivity methods
+
+Primary visible inference uses animals: ordinary one-way ANOVA globally and raw exact two-sided MWU for W-S, W-A, and S-A.
+Cage-mean sensitivity uses an unweighted mean of finite animal values within each cage, then ordinary one-way ANOVA and raw exact two-sided MWU.
+Activated-count sensitivity is restricted to panel H. Activated (Activated + Amoeboid) and total QC-accepted microglia counts are summed within cage. Raw exact whole-cage-label binomial-deviance tests are global and pairwise.
+No outcome-dependent filtering is used. Positive low denominators are retained. Zero denominators make an animal ratio intrinsically non-estimable but its valid 0/0 count pair remains in the cage sum; every cage must have a positive aggregate denominator.
+All exact tests enumerate every fixed-count labeling; numerator and denominator move together with the cage.
+
+Cage count formula:
+D = 2*sum_g[y_g*log(y_g/(n_g*p)) + (n_g-y_g)*log((n_g-y_g)/(n_g*(1-p)))], p = sum(y)/sum(n).

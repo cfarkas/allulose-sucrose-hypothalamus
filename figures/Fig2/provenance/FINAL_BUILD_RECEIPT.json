@@ -1,0 +1,25 @@
+{
+  "animals_are_n": true,
+  "builder_sha256": "d5c7051fdaf4eed8d821b798d9ac37595e9340e9abb83bceaf8e4862f8471166",
+  "created_utc": "2026-09-04T21:47:01.880361+00:00",
+  "dpi": 600,
+  "graphics": 18,
+  "iqr_outliers_flagged_not_removed": true,
+  "isolated_subpanels_bilingual": true,
+  "live_Paper_mutated": false,
+  "master_language": "en",
+  "master_pdf": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/Figure_2.pdf",
+  "master_pdf_sha256": "69f937c54e8358deb8b5e2466e3ab7aca492184aed13af6ff6b0fcc5d8c02782",
+  "master_png": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/Figure_2.png",
+  "master_png_sha256": "7cf2ffa5cb174f27e0286d2724a47ebd6913617e80dcacde46d8918ad91bd371",
+  "microscopy_aspect_preserved": true,
+  "n_at_least_3_every_condition_region": true,
+  "panel_b_and_c_equal_width": true,
+  "panels": [
+    "A experimental timeline",
+    "B accepted HIL ARC/ME/VMN anatomy",
+    "C native microscopy",
+    "D animal-level statistics in the Figure 3 style"
+  ],
+  "status": "PASS"
+}

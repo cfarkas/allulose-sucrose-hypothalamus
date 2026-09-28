@@ -1,0 +1,50 @@
+{
+  "files": [
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/Figure_2.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_A_experimental_timeline.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_A_experimental_timeline_spanish.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_B_human_regions.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_B_human_regions_spanish.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_C_native_microscopy.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_C_native_microscopy_spanish.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_D_animal_statistics.pdf"
+    },
+    {
+      "Type3_absent": true,
+      "pages": 1,
+      "path": "/tmp/apotome_fig2_internal_0xqHtta1/render/outputs/panels/Panel_D_animal_statistics_spanish.pdf"
+    }
+  ],
+  "status": "PASS"
+}

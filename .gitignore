@@ -18,4 +18,4 @@ __pycache__/
 /.figure-update-backups/
 /.figures-venv/
 /figure-renders/
-/figure_updates/analyses/
+/figures/analyses/

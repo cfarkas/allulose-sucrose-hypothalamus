@@ -1,7 +1,7 @@
 {
   "schema": "apotome-figure-updates-v1",
-  "date": "2026-09-26",
-  "description": "Audit of current NPY and POMC statistics: guarded degenerate permutation cases, portable cell-coordinate recomputation, clarified exchangeability assumptions, complete figure script mirrors, and Figure S3 launcher fixes. Includes documented TinyMorphCNN/DINOv2 architecture, fitting settings and computational resources.",
+  "date": "2026-09-28",
+  "description": "Figures 1\u20135 and S1\u2013S8: English masters, English/Spanish individual panels, captions, source tables, analysis scripts and reproduction instructions.",
   "base_manifest_sha256": "df2ebb51339fdc3cc84dd8bbfb232647570d7e2cd0f12c19a5538ff7b7dd071d",
   "archived_figure_count": 10,
   "updated_figure_count": 4,
@@ -23,10 +23,10 @@
     },
     {
       "path": "Fig1/02_make_figure_1_behavior.py",
-      "sha256": "751185002bbb969c558cc65cb8d435003edcd182bf785069054955f4549a78b6",
-      "size": 40957,
+      "sha256": "f2aea7383ae1857aa9ad62e14cdb6946f19e577a2525d2b76e2ff18feef8b331",
+      "size": 42254,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig1/03_estimate_sample_size_monte_carlo.py",
@@ -51,10 +51,10 @@
     },
     {
       "path": "Fig1/README.txt",
-      "sha256": "6374788432d6c667da1d108e405058c2bd2eaa1a90ade5b92e1194cac47ee4fa",
-      "size": 5019,
+      "sha256": "a1d8648bdb12b31d4f6e0ab40ec452984c4da3a16b76f3587adf6e359f2df3cb",
+      "size": 2285,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig1/legends/Figure_1_behavior_experiment_1_LEGEND.txt",
@@ -470,6 +470,342 @@
       "change": "unchanged"
     },
     {
+      "path": "Fig2/00_create_conda_envs.sh",
+      "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
+      "size": 4242,
+      "mode": "0755",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/00_validate_raw_bundle.py",
+      "sha256": "5a3b79fb0ab392e29c7ae96f7334d58b6872429fc214806e2810386e0baff880",
+      "size": 31078,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/01_analyze_global_cfos.py",
+      "sha256": "c6515c3e05c7f33efc8c59fda1f5f33487bd82738b1e6ad7abf3a4588242cafe",
+      "size": 65766,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/02_stage_analysis.py",
+      "sha256": "f70944f6fda571efcc39e6e68ef8735de357115d9d7ddd0e6db1c1dcfdba349f",
+      "size": 4011,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/03_reconstruct_microscopy_engine.py",
+      "sha256": "93bba76658d1fa620b107f2ee83e16631504228a62d98f0ffe2190952488348f",
+      "size": 44184,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/04_stage_microscopy.py",
+      "sha256": "c419fa553ca2e0de388aecdb451f4c68fcddabdaa58a7529ad7fa80fc1801a4f",
+      "size": 7958,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/05_stage_human_regions.py",
+      "sha256": "40736bbe8086fe1b6c651454788981a3e91b3a7de5ae3cd101bed01f79f0da35",
+      "size": 17502,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/06_make_figure_2.py",
+      "sha256": "d5c7051fdaf4eed8d821b798d9ac37595e9340e9abb83bceaf8e4862f8471166",
+      "size": 49223,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/07_run_all.sh",
+      "sha256": "bea9e15507f862b4f0c52b82a242c2549858a8f06307729da389ea66ddf593a4",
+      "size": 3025,
+      "mode": "0755",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/08_organize_raw_qc.py",
+      "sha256": "aced6c6818ca31cd8981303a222804d062742511db51ae95d4f9dafecdbbc477",
+      "size": 6871,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/09_rebuild_hil_inputs.py",
+      "sha256": "8aad3d2291815a01eadee176e03adc973b03b364e4dbccd136a687042af74439",
+      "size": 27160,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/Figure_2.pdf",
+      "sha256": "69f937c54e8358deb8b5e2466e3ab7aca492184aed13af6ff6b0fcc5d8c02782",
+      "size": 25601597,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/Figure_2.png",
+      "sha256": "7cf2ffa5cb174f27e0286d2724a47ebd6913617e80dcacde46d8918ad91bd371",
+      "size": 33948732,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/README.txt",
+      "sha256": "91ecba2a06e885d511c7c065a8b2163abfbac250bc94005d02f151be33aae920",
+      "size": 2654,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/experimental_timeline_with_npy_gfp_mice.pdf",
+      "sha256": "3836aba06d18446a9557191afdcedda9b715924c9d7dae02be33cb4fd0b516c7",
+      "size": 7663782,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/legends/Figure_2_legend.txt",
+      "sha256": "f7669ad5e77fa427244d9f404e9c4165e1a343570c1811ef6e63319877b50009",
+      "size": 2221,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/legends/Figure_2_legend_spanish.txt",
+      "sha256": "e1fc70a6c25a3e08bc5ec99221db5c6c00edbb5b17c360f43cd3af17c60ccfe2",
+      "size": 2467,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_A_experimental_timeline.pdf",
+      "sha256": "50a380c07a4c2dff02e2f8b5d85a05c30ef5a7133ac76361b40cbf9a6e86b724",
+      "size": 3748220,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_A_experimental_timeline.png",
+      "sha256": "9eb85c4f41360d0b40f022f296f29a9871d3ffd7de84aee94320b8942890da6b",
+      "size": 4136028,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_A_experimental_timeline_spanish.pdf",
+      "sha256": "839489e6eccfc0722cb8926a78a0a2043cb9030ec24799907d476cfe12f79b38",
+      "size": 2894078,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_A_experimental_timeline_spanish.png",
+      "sha256": "1b26880103c0d43cf12d3546787c53647e5a4ee1921e1abfa451260fe69663e4",
+      "size": 3194930,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_B_human_regions.pdf",
+      "sha256": "30ba7473d30cbe6ef254b1bf0c11de86f0c3e30a555529454faafb5c93708c49",
+      "size": 12189782,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_B_human_regions.png",
+      "sha256": "41620698901d1db70f53275001619cf09a8bf05364b05c0f7c6996c6e9275997",
+      "size": 17783741,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_B_human_regions_spanish.pdf",
+      "sha256": "bd8a4884d47b35f0df263a089da237004c67ec374f77aa240a465bb2eec05b02",
+      "size": 12189243,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_B_human_regions_spanish.png",
+      "sha256": "dbbc0dd93cf9a2a2849813c1b3b841f7e0ea50a70263e8a8a100bdb737b369e2",
+      "size": 17784951,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_C_native_microscopy.pdf",
+      "sha256": "6913e2c070eea976cccc3939f5fb799ac477872686ba35bad8e6b2cd8e00201d",
+      "size": 21118024,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_C_native_microscopy.png",
+      "sha256": "e52b102416585189c2333e675301d81b77f2ce4a152d4a8b99b501f888da4a60",
+      "size": 24710911,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_C_native_microscopy_spanish.pdf",
+      "sha256": "8c3cd8f0fefb3e2edd6c2b1b2ab78b1bfcc53047661dbda13f2c1644f646aeca",
+      "size": 21117595,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_C_native_microscopy_spanish.png",
+      "sha256": "cac1eb9bcfba420fe0179d7fae831ecc540a4b9598088b4fa8465a1c09f9eb29",
+      "size": 24716108,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_D_animal_statistics.pdf",
+      "sha256": "8b021f87e1efc7f845317447ff6c250a9553b32cece153efc824a9006e65e608",
+      "size": 27469,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_D_animal_statistics.png",
+      "sha256": "7cd799747c00d12656aeb70096fa2d1a19ccea1fcbecf15ff50a5276074bbe71",
+      "size": 895511,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_D_animal_statistics_spanish.pdf",
+      "sha256": "47022d6b555f280d142bbdbd7a63ec7b27eb1278209c4f586fc5c5dcb6eafea6",
+      "size": 27382,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/panels/Panel_D_animal_statistics_spanish.png",
+      "sha256": "92353ea64e4cf9060e118ed6be16e53ccb6d81df0ad23a8890ebc30e472da326",
+      "size": 928187,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/provenance/FINAL_BUILD_RECEIPT.json",
+      "sha256": "82e88923cea484086db0b8ef838b53e0b8c15981afed615274c96bf0e66954eb",
+      "size": 1006,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/provenance/OUTPUT_SHA256_MANIFEST.csv",
+      "sha256": "43932149ffb2fabf536407c18b873caf3cd63e878c8fa1a6c06940f7f045f90a",
+      "size": 2190,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/provenance/PDF_FONT_PAGE_AUDIT.json",
+      "sha256": "4cfbf2cc8f148f05c4aa9066a65b15aa83ff6597221a06d882062b1c22eec0cd",
+      "size": 1515,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/provenance/independent_anova_recomputation.csv",
+      "sha256": "840741b31ce89fb3e80dd7a46ec98d7ec900a8000298b4c0a9e845ae0e6c451c",
+      "size": 475,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/provenance/panel_A_timeline_raster.png",
+      "sha256": "617092a6650b259fd5cb95da69c65515c0490eff1cd9bb58c7d35c3db5ea9857",
+      "size": 3390208,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/provenance/panel_A_timeline_raster_spanish.png",
+      "sha256": "ba3a874e062e78776579260f7db2d7cb4cc9122af03ab5215ecbde40dd0ad0ed",
+      "size": 2609977,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/provenance/scalebar_geometry.csv",
+      "sha256": "16237e1bfe3f0ed2a1bb214f4c68fd38852126dac355a7e78dba7b14f807954a",
+      "size": 2000,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/animal_region_values.csv",
+      "sha256": "3bfc89be629613cf530831668816f53caefb94de92292b79f91ac8f425048526",
+      "size": 23144,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/figure_statistics.csv",
+      "sha256": "219bdd3677d6e29483b87756883ddaa9b03bfc8f6dbcf98122a0d4e7670caf54",
+      "size": 5054,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/native_display_sources.csv",
+      "sha256": "37db39b1785a53352507c85cd395e3b72a9ea62df1b7a43c05109b1ea1f23b05",
+      "size": 2758,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/outlier_audit.csv",
+      "sha256": "043b0266907c21f7b5ea5c4716b171f02ffaf814286b2ed4702f28cb71af111a",
+      "size": 26179,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/panel_B_human_region_artist_values.csv",
+      "sha256": "eb673f988dc3341e9b72f11f0823e023ab388c69f68cb6696464691549839868",
+      "size": 2417,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/panel_B_human_regions_manifest.json",
+      "sha256": "9b547de795bb01bcafaaa5e7c7e220ca541e42cb767e7165caeb861c656596a6",
+      "size": 46854,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/panel_C_field_manifest.csv",
+      "sha256": "812e58c9546b351705bb6a3b4dc65e0da0bd111dae64aa18f16d2142d45c9dc4",
+      "size": 17352,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig2/source_data/panel_D_statistics_artist_values.csv",
+      "sha256": "29ede8016e14ddae16874e5ab9b0ebb6e4b552b004903483dacedec3a482a8ca",
+      "size": 8142,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
       "path": "Fig3/00_create_conda_envs.sh",
       "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
       "size": 4242,
@@ -618,10 +954,10 @@
     },
     {
       "path": "Fig3/README.txt",
-      "sha256": "bfaf301239aea5710be07d7ee3cc0bb1f1518bb3d276fe1aa5b399fdd27f4ed1",
-      "size": 3847,
+      "sha256": "7ef777c9dde68dc610ee2479b7ec6bd45ebf75426fd8b4a1956930c58c91a1dc",
+      "size": 3313,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig3/hil_review/sucrose_ventricle_20260908_v1/review_inputs/REVIEW_INPUT_MANIFEST.json",
@@ -2602,7 +2938,7 @@
       "sha256": "843d8491df7801f64f81220a7b4dd5f11bacbc7cf6ed761c10bc5cdeefc907fc",
       "size": 34392,
       "mode": "0644",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/Figure_3_cFos_NPY_animal_plot_values.csv",
@@ -2791,175 +3127,175 @@
       "sha256": "467dcc40a2b3096d80314f5471f3bf122f9957720ba49edeefe5883f9acd00a4",
       "size": 1478,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/abundance_robust_plan.json",
       "sha256": "7f6b77fa005271d165d2bb2e2e1cbe1e7118c8ca2214ec63801ca385edd92f6f",
       "size": 1680,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/abundance_robust_statistics.csv",
       "sha256": "843d8491df7801f64f81220a7b4dd5f11bacbc7cf6ed761c10bc5cdeefc907fc",
       "size": 34392,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/animal_metrics.csv",
       "sha256": "2a0cb8f60afe6aaf782eb819225d9ca74474dbee07281ecef869a78feea4f003",
       "size": 5758,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/animal_plot_values.csv",
       "sha256": "046238b7ada48f1b5f3f149b89bff7820af9b2c2efcb1e4f1e3191cef31c273b",
       "size": 2258,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/input_provenance.json",
       "sha256": "43ac11e99f3867f107113e72d5213a702bed211f79ed25416670b2b87952ff31",
       "size": 2732,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/NPY_acquisition_manifest.csv",
       "sha256": "e20558088b880619c56655ba1d2305f54205b58b1fda8479a3bbcf126531cca3",
       "size": 2550,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/NPY_cells.csv.gz",
       "sha256": "43def176d66bf3ca9d6f178b072acc257bb58fa8c2c342e93fb4871457aa2afc",
       "size": 1820704,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/E7_FR7-1__S01.npz",
       "sha256": "eda95bee0890ed7e722d9991b6df4b4d2d9c384fea4ded3085b408e64833bf64",
       "size": 18007,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/E7_FR7-5__S01.npz",
       "sha256": "830c1d241ce529d09ac12a4001737bb9d27f66d428e1197b6d4215d8b0e205f0",
       "size": 26196,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/E8_FR6-1__S01.npz",
       "sha256": "e8517151f2b0168240bc87b43f495c20e91bd9b441021a2053fd4bb9e87da871",
       "size": 22025,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/E8_FR6-3__S01.npz",
       "sha256": "f0a58cb7bf643d9a18280c627ee10c3366ae5492750046d8dab1d34d5be19b56",
       "size": 19716,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/E8_FR6-4__S01.npz",
       "sha256": "8b9a5d463ec0cbe9af8ab498deb65633d6271bacc04106c6b983232832f5768d",
       "size": 19441,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/E9_FR8-1__S01.npz",
       "sha256": "100e0f28a4d85c6829aa98df414e059301fab51d32fa15c843852ddd7bdf5f48",
       "size": 16550,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/WATER_NPY1__S01.npz",
       "sha256": "2ee1af7d343807b6c790d510a3a6197b9a584bee6387852833664e2ca3d97f02",
       "size": 94850,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/WATER_NPY2__S01.npz",
       "sha256": "0c4b493def83023566665751f557d2d7630148900c6ce0e18bd4660a53cae7b9",
       "size": 160259,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/WATER_NPY3__S01.npz",
       "sha256": "1063964a845d6f33e7eb1a777426e87a7b3a4c433a49bb1ff47b6de33a4f4c52",
       "size": 34937,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/WATER_NPY4__S01.npz",
       "sha256": "8eacd7abfa62a45bbdd7bd725a35bc910b8702738b5aa8ffce23a5356f7a2ce3",
       "size": 34964,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/inputs/geometry/WATER_NPY5__S01.npz",
       "sha256": "b558a5d2753a806ca78a72e30d190ce1824ef34ffe3ffd3c1a0ba1e0595434ce",
       "size": 42406,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/scale_resolved_curves.csv",
       "sha256": "9ea3b92f389c0bc4f27491e110210bb25aacc885c2425b55890511f5968e9999",
       "size": 42066,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/scale_resolved_envelope.csv",
       "sha256": "5d678582dad6b6f05416caf6031c257966e759a626588e300c4fa5cc2a2c8dba",
       "size": 3007,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/scale_resolved_plan.json",
       "sha256": "772f1d254233d42f73596bae966051ab7aff158c3da0db5343335769079e0d10",
       "size": 2091,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/scale_resolved_strata.csv.gz",
       "sha256": "13abfc997a17b868406a4ae438c2b1f16dd6c49fe0fe034496cb9c14ae07573f",
       "size": 18016,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/scale_resolved_test.csv",
       "sha256": "fc39922afc1ca9d13113a7daa015040aac4cd37e1879f5957e0fd23437c7dfa5",
       "size": 1612,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/source_data/current_statistics/spatial_eligibility.csv",
       "sha256": "5ef02da35a5eaa53ba8f3638e7a933f430a15569553e191aed789f89ff81cc99",
       "size": 1403,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig3/spatial_panels/en/Figure3_Spatial_cFOS_NPY_occurrence.pdf",
@@ -3075,10 +3411,10 @@
     },
     {
       "path": "Fig4/09_relayout_arc_scale_resolved.py",
-      "sha256": "e0d0b3b353129359a57432a6b34fe4e89ef020b3198efb789b3506a150cbcfde",
-      "size": 25285,
+      "sha256": "e3406dbf23c07a403034fe53f7add1a99ccd6c6ddca098e2e8a33e163eae9f1f",
+      "size": 25327,
       "mode": "0755",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/Figure_4.pdf",
@@ -3096,10 +3432,10 @@
     },
     {
       "path": "Fig4/README.txt",
-      "sha256": "5eea18c4d49efe7a13ce63e5f5310f70fc48a37bc60fee5f792bbfb2da72dd2f",
-      "size": 2977,
+      "sha256": "1a91a24bcd066eb8ebd33e4fc9011d42b5b8ffe894771202b2b74ae0586cce00",
+      "size": 3097,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "Fig4/legends/Figure_4_LEGEND.txt",
@@ -3911,588 +4247,588 @@
       "sha256": "ca3ac40d39c31531bf2a0c804cc64215598145b6d03ac15c77b5805060154338",
       "size": 1479,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/input_provenance.json",
       "sha256": "8829347a9ae7d2b6b1370fb2f581dc322b0ba8dc9535b58b67fe0c7d9f7dc241",
       "size": 14393,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/POMC_acquisition_manifest.csv",
       "sha256": "250945ee5e84f252a1dda9c862180777fb9c164a3191f8333684b651b18473ab",
       "size": 22238,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/POMC_cells.csv.gz",
       "sha256": "055ae6c417811ac5e6d25f4d428e617f24e022e1e20767c7d676adad421c2520",
       "size": 8665554,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-1__S01.npz",
       "sha256": "2c50805e8a666962ec595497340df83abb656307d1686ce3eeae2ef75dbef154",
       "size": 27631,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-1__S02.npz",
       "sha256": "87db4bce327b814d4e16694bbb731cc4f32d25134a30fda0931a5e9d95b7c5d9",
       "size": 26533,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-1__S03.npz",
       "sha256": "6ef468344d201d8e918af57bda40639fa461716f5b50ce7652810e76cacbacc2",
       "size": 27870,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-1__S04.npz",
       "sha256": "94ab92cbc6eb634a3e0d7657cc55fc74e1237b8b0c02114872b51338ce5d1831",
       "size": 26644,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-1__S05.npz",
       "sha256": "7792cbe4a8adfac01b61387b544c40c969a5e620ce6c1e2b6f0a1c9bf5083eee",
       "size": 28418,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-2__S01.npz",
       "sha256": "bdd11f78483f6f6aa9ff837c096da2aa7584ea1a81bf9bed53738aba43eb951c",
       "size": 26838,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-2__S02.npz",
       "sha256": "d3d3c0af79b88546bf47f4bca00473c5c92ec81ceff15eb23ea80d30704fb39b",
       "size": 27517,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-2__S03.npz",
       "sha256": "22ed514728f105dde3053e1293504e7117b865ab438b1befd694bb1e344f32f5",
       "size": 27463,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-2__S04.npz",
       "sha256": "2180195e623b0f3d5e28ec58d80c97730e76bc8dfb248c740e8b3eef0b69e511",
       "size": 28334,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-2__S05.npz",
       "sha256": "c33b572015d4ee1de29b0cfc47fbb4ed7ab53a4b6d567f4968a2c68c8fb4a70e",
       "size": 28585,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-3__S01.npz",
       "sha256": "19152607bb6ac45fc0ea29d5dd426a4f5660a36b9e41f9e5c1ba1b8cc102022c",
       "size": 28673,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-3__S02.npz",
       "sha256": "3ff751cbe81ff34b84c7451b7adc094a51ec37e8fa8cc439b2006212ca8f0408",
       "size": 28950,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-3__S03.npz",
       "sha256": "05ebaa4cbec5479fdf0dfecb77e94533b412ffcb7f8f4f85564a5a6e3d7226d2",
       "size": 27383,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-3__S04.npz",
       "sha256": "d099f192ed4a6689eb144f87dd2b4a5d5339fadf823c7613c04c1be9347de768",
       "size": 28577,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-3__S05.npz",
       "sha256": "a2aa02831b7f8c98bfb81b3eec3e768e01c2c2652cf490b87eeb6c3fe58b8d56",
       "size": 27032,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-5__S01.npz",
       "sha256": "510d4ad5651fab513a8f60961ab8ca118d9c5c752c118c7846b6beb6f6ed02aa",
       "size": 29713,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-5__S02.npz",
       "sha256": "0797e651ddef2c54180eb820211611db159bc69268357436c6aacdc607d1fa9a",
       "size": 26619,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-5__S03.npz",
       "sha256": "9f526a7b34a26e48f43f22c6af67336e9e98eb35f2cb35f4bb71ead2690eb1f3",
       "size": 28223,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-5__S04.npz",
       "sha256": "dbe7d468d161f93391f9ed3ca304fb6d66dd081dc039a652355191cce5c347e9",
       "size": 28470,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR6-5__S05.npz",
       "sha256": "7dd56e8540086ac47415dfa895466ee5e1246ad2b991726d9820bf2e114b792e",
       "size": 29037,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-1__S01.npz",
       "sha256": "80b5eaffa9372409f55e24c88cd5dac5fe864474df5462e62f4e14246ffe6f83",
       "size": 29966,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-1__S02.npz",
       "sha256": "1e297f5258064f4e41722492fbc346b12e42e62f0cc8510dc688a346a90a7a4b",
       "size": 29038,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-1__S03.npz",
       "sha256": "7d78c68353714e05ef5f3e373220a1b5f3e0674e996ae855b1c976818d0b3220",
       "size": 28105,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-1__S04.npz",
       "sha256": "4ed879b058d85f45df38f12c7713760ca30c9809d0626f032f29af4b91301096",
       "size": 28826,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-1__S05.npz",
       "sha256": "05f25a1d73002612412e45941f34cd8025271160c775b9485e7b61fb368ef7bc",
       "size": 27624,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-2__S01.npz",
       "sha256": "57dc427b3fc948f34e217a8ba4f3c915f883ea1b25bb955dcf22335c32b263e1",
       "size": 25495,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-2__S02.npz",
       "sha256": "6bb5bda504ae15d13cdcf148cc87002d22cf75647c1c4751c7f0d799f2b20a05",
       "size": 28543,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-2__S03.npz",
       "sha256": "f3b84986c490d3228129cc105adaa65bc1896c2f83d5d684f0f88b79efb04116",
       "size": 26472,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-2__S04.npz",
       "sha256": "13a5a1aef61eefc3bc71f532e95b2a37a3b695bb5cde40980d541e43f14f4499",
       "size": 27765,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-2__S05.npz",
       "sha256": "5e7b9e1c58b21d47f553d9ed6daea982fc1682e20506488792d398f416b56f93",
       "size": 27653,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-3__S01.npz",
       "sha256": "eed0aaec4e01f5fd206d765d89a2404586651aafb9abfd42daa68285822ca2e4",
       "size": 25607,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-3__S02.npz",
       "sha256": "4a38c5b6c2f9a5f9911e61b6611a6f066de1f8e31125362d4419c51d51bcc654",
       "size": 24782,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-3__S03.npz",
       "sha256": "402595122df43b4eaa71a00796d193fc4b42289f3376601599c19856d8873c4e",
       "size": 27737,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-3__S04.npz",
       "sha256": "824e75aabf33cf198d6dfb02c489dd4905f39073007b663d9d5305f4b84f537d",
       "size": 26877,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-3__S05.npz",
       "sha256": "47096ac9f71c49c7ea40321c0ab4c70e3cc762283644c4e2d25bff2e9187ee5a",
       "size": 26022,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-4__S01.npz",
       "sha256": "3a4bf6d6d7aa20b703feb2884ffd68bdf5aebbc7498979b79794989886825eab",
       "size": 27395,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-4__S02.npz",
       "sha256": "aeac5e2803d9b67922ccd5137bb50834aea4a313a348c6f2136666c0be9d7e3a",
       "size": 28118,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-4__S03.npz",
       "sha256": "75cd91391f1049afa11d4c941286dcc0644af514d22385f9b6f8800b2adcca86",
       "size": 26391,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-4__S04.npz",
       "sha256": "0f56efb412b651412320ab5fb5fe4e62d0b4396953aa67d84d7b2203beddbd32",
       "size": 28706,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR7-4__S05.npz",
       "sha256": "d36f8c62b0c47ae05c1d5f144e570222ca183db153cd72f10a22b2ae653c5e2a",
       "size": 25921,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR721(R)__S01.npz",
       "sha256": "e43a4e7f3b5d0bb57db7ea33a9033ce2dcfbc29fa03fd616ec287f5cafe6047e",
       "size": 25421,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR721(R)__S02.npz",
       "sha256": "acb4437b1489f3bf3198aa1b67904d91a9db801906ffd689fc618c8b12b2dc05",
       "size": 24454,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722(R)__S01.npz",
       "sha256": "ba385ea9a7156d5df51c87d3cf3146830fb4b021337087fce06cc06b4c5cddce",
       "size": 29547,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722(R)__S02.npz",
       "sha256": "9eb3bd63600a4eb8cd367b82e708f2f7518d7e3cc7802a04be8c30e1310b377c",
       "size": 26269,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722(R)__S03.npz",
       "sha256": "43d32a8b9c86007a9f029c114bd442f813d76ef418f313084dedb97afb7c928a",
       "size": 28619,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722(RV)__S01.npz",
       "sha256": "cf2332f663f762c4af450fc8db0f548379f9a6d573a3126f7bb9e901e387650d",
       "size": 29544,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722(RV)__S02.npz",
       "sha256": "95e41fdcda187510a09efd22876278b66c42c69c4ead299f62b6f4cc9b458959",
       "size": 29852,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722(RV)__S03.npz",
       "sha256": "c782ba44b80042eb206e1d9fc8f88bed93ce934d3517c773bbd33362be8e8447",
       "size": 27889,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722(RV)__S04.npz",
       "sha256": "a8d40051df27018fd83518959bbf208a975180f2474db5b84c7a81d895756eb2",
       "size": 30835,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722__S01.npz",
       "sha256": "2f3b5014845cae50e60fb0925bd8f8e530039ea6352393035277b284b1cd46e6",
       "size": 28408,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722__S02.npz",
       "sha256": "1a14439ca1e86f78e3a3e85da54cf015d79e4fcce7b82461e195da5167a1e66c",
       "size": 26242,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722__S03.npz",
       "sha256": "45ce6d5f97ba664792415770ca3074ff84761da69a66304b46fe5400b0865299",
       "size": 27482,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722__S04.npz",
       "sha256": "520e49cca0b9b8051a560e64147f8adbc703cc3f8322f6503ae3a3a120e5c734",
       "size": 26974,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR722__S05.npz",
       "sha256": "3709ee260810223a4f4cd386dc4033af9730b93cde5889a3534776ed24cc5a48",
       "size": 28282,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR723__S01.npz",
       "sha256": "526c053e93d5d27f61740c105f2a79f9bee77c52e667e675501e10a1b8a50d7b",
       "size": 22620,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR723__S02.npz",
       "sha256": "542f017e586b48c9e40c17293c14f4917267411d699e928b706770c4d8eb1391",
       "size": 26028,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR723__S03.npz",
       "sha256": "bc09b92d7d9f0cfe211edfd830153a77f240062628016c2f27f0dd2642b85fbe",
       "size": 24688,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR723__S04.npz",
       "sha256": "6fe126f66870c7395c8b6343944f8b7ec212bb9a463bba74782301b64f0463c8",
       "size": 25828,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR723__S05.npz",
       "sha256": "4f79ef8107545f5d634bd730a11d573b0b16be076b31f5566aaaffa70cb6cb6b",
       "size": 24406,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR724(R)__S01.npz",
       "sha256": "8b1551a92a13a001ffa389e707dc962af821da5762427fcd43aa4d16cf139088",
       "size": 24849,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR724(R)__S02.npz",
       "sha256": "bb73125d371873edb124bf747f74727c666e22a8da14c5a419c16f61b0e1c5c0",
       "size": 26324,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR724__S01.npz",
       "sha256": "2c5db2635f4e6d77622a7d740913879c8bf43f90a120cc47243d12b11727a7b2",
       "size": 28327,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR724__S02.npz",
       "sha256": "d63f31ad8e1ce7d4005c19241fe51b79fec620490c21157786feebefc4a0f1c0",
       "size": 26032,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR724__S03.npz",
       "sha256": "d0d540b6134243b4014ee995292eae277c5e948e4247fe3510fadb0eda7e4559",
       "size": 25313,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR724__S04.npz",
       "sha256": "54047b3297fc96df3a38a59aac43b8befab72d58e33ecf92275ef838643a9cdd",
       "size": 26409,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR724__S05.npz",
       "sha256": "f00997cd04a367d660b6169d77e2dee5809ad75675f7fbde6402a4af82e08ea1",
       "size": 27629,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-1(R)__S01.npz",
       "sha256": "5fe270e031deb78bfb687302f4edbceff010e2e927e76b62860c1b1e1ad18738",
       "size": 27233,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-1(R)__S02.npz",
       "sha256": "2e56f50d4e0576159495345948f8370aad4ebbe1c9b9c4b0e9a881235ba571f8",
       "size": 26389,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-1(R)__S03.npz",
       "sha256": "a0a5218e1c010ec1fafb59508a0981d1115fab4cb6aa9c2864d111d241a776f3",
       "size": 28254,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-1(R)__S04.npz",
       "sha256": "3e7910cfd751f610a3a45d5f5473baaa5f27d2e89c7da93f192e04680953b37a",
       "size": 19008,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-3__S01.npz",
       "sha256": "ae19785659fd9704c368dd7e96bcae0dc987aff40d7ee234ddb3c41ef07e69e7",
       "size": 20127,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-3__S02.npz",
       "sha256": "3b843c972dc1f827b02e32fc422841ffcf1a64cb21627b6ee5a67d2891acc8f1",
       "size": 27056,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-3__S03.npz",
       "sha256": "10100c77bb2a516d4c705084e28563317c016cd6017d63e35a86ec78ba07be83",
       "size": 25915,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-3__S04.npz",
       "sha256": "6f9d8a5f9cb371e2c0c8239133f23e6536cc5555af03ceaf32e125ec5527283c",
       "size": 26159,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/inputs/geometry/FR8-3__S05.npz",
       "sha256": "207fbd21157bf961fbd3f5a0153e13d9cb0cc162c6b40d5dc25e9f469d8e7005",
       "size": 27460,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/scale_resolved_curves.csv",
       "sha256": "3c361a50ffd18d795a53a77fc3505e31a3a3a737c6827c6512fe69a42cba265f",
       "size": 53606,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/scale_resolved_envelope.csv",
       "sha256": "b63af7c23b5e4d78ab9c918b7b138d43f159c648f2bc4cfa24d5296d4992aa43",
       "size": 3007,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/scale_resolved_plan.json",
       "sha256": "918d251430d523fc5a8b5df9f0c446df7c120faeac1f65347026d025ef794883",
       "size": 1997,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/scale_resolved_strata.csv.gz",
       "sha256": "90606408798ac6d77475c32e9fe5d2291cb9ec855edbafac8f7f1e6e1d96cf67",
       "size": 102654,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/current_statistics/scale_resolved_test.csv",
       "sha256": "026345741ce0ecb9251577bd91dab06d3f33c25c918dfba25e18126fd9eb9517",
       "size": 1390,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig4/source_data/multipanel_denominator_audit.csv",
@@ -4542,6 +4878,13 @@
       "size": 5852,
       "mode": "0644",
       "change": "unchanged"
+    },
+    {
+      "path": "Fig4/spatial_panels/README.txt",
+      "sha256": "d8d2aaf1d48004723959dd686b2c7c5dd33d06081b83f40ab39fde2def2ac613",
+      "size": 550,
+      "mode": "0644",
+      "change": "added"
     },
     {
       "path": "Fig4/tests/test_pomc_microscopy.py",
@@ -4656,11 +4999,179 @@
       "change": "unchanged"
     },
     {
-      "path": "Fig5/README.txt",
-      "sha256": "40ca53303a274369455d5dd37cbef47b2cc8b644f2e6af8be557bdae8f7d2482",
-      "size": 13121,
+      "path": "Fig5/Figure_5.pdf",
+      "sha256": "164b68e93f19dd9b863212168ed5569aef22975cddab07214840cc965a631d9d",
+      "size": 5742554,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "added"
+    },
+    {
+      "path": "Fig5/Figure_5.png",
+      "sha256": "62d11f5e6ae5d41b1dd02b9420e5b0462ef7e8a0702c85340adaaa467c0d0692",
+      "size": 9053763,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/README.txt",
+      "sha256": "334b9dc479477fbea449ff64ffc7bc3dcc4185af2e891fd8506c66c91dcbc5c7",
+      "size": 3447,
+      "mode": "0644",
+      "change": "updated"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_LEGEND.txt",
+      "sha256": "700051a674a98407cf6810a0fbe57d8e445a194a2cc602809fcdaa9123b15b25",
+      "size": 9064,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_LEGEND_spanish.txt",
+      "sha256": "98839baf995f1a61ea2e2912cb44a5f8b5179bb04a1833f13d34be2f480674ce",
+      "size": 2309,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_caption.txt",
+      "sha256": "700051a674a98407cf6810a0fbe57d8e445a194a2cc602809fcdaa9123b15b25",
+      "size": 9064,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_multipanel_sensitivity_methods.txt",
+      "sha256": "9c3e573928588db1ed9e6e154100df70510a5b9ec6752b599e5b8ca691ee1ce4",
+      "size": 1014,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_A_Iba1_microscopy_LEGEND.txt",
+      "sha256": "daa287410a60e15fe38cae51365881503a7a4704eccc82e37b335cbff7eb8f1e",
+      "size": 1722,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_A_Iba1_microscopy_LEGEND_spanish.txt",
+      "sha256": "c92df9d03fec90a8044cc7d4a8b86bb1297bda3df9f41c777d959a9e8fb5c3e4",
+      "size": 1088,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_B_GFAP_microscopy_LEGEND.txt",
+      "sha256": "d74c6c54cd431d03df815c222039b897e6106d6479edc058efa9e9a5989438c2",
+      "size": 1615,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_B_GFAP_microscopy_LEGEND_spanish.txt",
+      "sha256": "794273ecc6c9bb3a3b6ac54e9d41fac63a53c3991f3b328a34c444a1a90d5e53",
+      "size": 1026,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_C_microglia_CNN_LEGEND.txt",
+      "sha256": "f8ca595b3add6096f48f08e3675fb4e06b2f016205b1572da301332d6577e484",
+      "size": 2030,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_C_microglia_CNN_LEGEND_spanish.txt",
+      "sha256": "3753aa4882616eb2b330d1c2e60a07c93ac3338e86826eb7b3724a881f3a80ba",
+      "size": 1124,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_D_microglia_state_composition_LEGEND.txt",
+      "sha256": "6c5482b039c158dafc1baaf7270a923470f906cb05f7e5e298ec38c7527873ad",
+      "size": 1399,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_D_microglia_state_composition_LEGEND_spanish.txt",
+      "sha256": "975a8f2f28cd89ee9e57d17f33c8735ea224913fbb9319764e4093199f2274aa",
+      "size": 1017,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_E_GFAP_workflow_LEGEND.txt",
+      "sha256": "51177b59d8ad6a4a91a3906174e5df911dd5e5d70f99dc2349646d8de5ea6b83",
+      "size": 1612,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_E_GFAP_workflow_LEGEND_spanish.txt",
+      "sha256": "62c82e8aae40365bdbc8445eaeeeb34bef99f07c2f15667471f6586fb3d6e01e",
+      "size": 1079,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_F_DAPI_Iba1_GFAP_mask_cartoon_LEGEND.txt",
+      "sha256": "be85cbc839f94da2624b6f6dc8bec5b7cf5f279f3d183a12fb41475fe70448a9",
+      "size": 1703,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_F_DAPI_Iba1_GFAP_mask_cartoon_LEGEND_spanish.txt",
+      "sha256": "06dc2293be1466ef43d3d848b0add739ffbc392c34fb39680c1a6c93902d6b1e",
+      "size": 1013,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_G_Iba1_signal_LEGEND.txt",
+      "sha256": "93cf12d72006323f23d2112bee592c03a343036dac1d2445101df62539955ba6",
+      "size": 1137,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_G_Iba1_signal_LEGEND_spanish.txt",
+      "sha256": "50e9eaf969dc01852fc956f2fdb15e9cc2c707c00da3cbf6a81328907fc76699",
+      "size": 949,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_H_activated_microglia_LEGEND.txt",
+      "sha256": "f7de31b5a17852006580af66265480b8557c3e2b1a0338ddfa5b0264c996b334",
+      "size": 1232,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_H_activated_microglia_LEGEND_spanish.txt",
+      "sha256": "a94ffd36b6a257772300f6d762d188a09078612327762e4c9cca2f8e90411c3b",
+      "size": 1016,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_I_GFAP_signal_LEGEND.txt",
+      "sha256": "163c3d8b06de8e8edb66775057b08afec6ee3898f40659142ba37dabe2af6791",
+      "size": 1137,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/legends/Figure_GFAP_Iba1_microglia_ARC_ME_panel_I_GFAP_signal_LEGEND_spanish.txt",
+      "sha256": "206567bcc6c24cb1c03ba2d5f64ba5096e9e641415f6a17744f3adf8f9914ec0",
+      "size": 949,
+      "mode": "0644",
+      "change": "added"
     },
     {
       "path": "Fig5/microglial_review_data/README.txt",
@@ -4754,18 +5265,319 @@
       "change": "unchanged"
     },
     {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_A.pdf",
+      "sha256": "65d88f1e1a690657ac445f481bb232e63ccf4e64b9476afbdea8ebf4fa49c7b5",
+      "size": 2892936,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_A.png",
+      "sha256": "6ec400fd19643158dab88502a5f49eab5b85e648ea32146e3493650a696ff669",
+      "size": 3034749,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_A_spanish.pdf",
+      "sha256": "a98d7b93b923fdb68098641d1bd991f9a483b9d92051db80e74d326541d518e8",
+      "size": 2893291,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_A_spanish.png",
+      "sha256": "44bdcf6d8b2b0be650709b4ad615446ddf633135a815425cf94ffe98ce5b518d",
+      "size": 3036280,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_B.pdf",
+      "sha256": "ce901e5bcf9f37becadd203217fd24b42bb49ad8f43cc5464dfef75c0b7863a9",
+      "size": 2344146,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_B.png",
+      "sha256": "55f2dced4b860ef9c177a3d195cc7ada7bfc01122dc513542ef806871333d373",
+      "size": 2530590,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_B_spanish.pdf",
+      "sha256": "49d6d00981c354ce93669ada81d53a4e3c5596dad05057ec5be84d5c11c23e2f",
+      "size": 2344139,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_B_spanish.png",
+      "sha256": "a3518afa715e942352546c63c710d925eb38b9d69eb776a447889de2a5608c96",
+      "size": 2529995,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_C.pdf",
+      "sha256": "2b529ff3802bd6510a8077fc39fbf49f927add00a8ced1d96c37316a1a97239d",
+      "size": 75591,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_C.png",
+      "sha256": "83fd28c48018cb2422969876c79d8dba62673704e6912d36d22270346603469e",
+      "size": 486788,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_C_spanish.pdf",
+      "sha256": "05891f0cf148d29d5e79e23199ef7189863e95c40408bb95448b030e09a9a1f5",
+      "size": 75929,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_C_spanish.png",
+      "sha256": "3aafb9656953c37f1b1986ae0a06a449541ba7411b822125af723412576cc7f2",
+      "size": 536069,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_D.pdf",
+      "sha256": "6e61b4f252076ecaaaed6b742b911cabf9fcf2d025be85c57e031976af8b23c5",
+      "size": 19696,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_D.png",
+      "sha256": "887dadd4fe0cce1564945376b19d1f4ca6fdee8722247795a242a4b3b3898e4a",
+      "size": 124104,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_D_spanish.pdf",
+      "sha256": "b8784edcac747a6ff1fe6848c8f8550afffa84f996597dda13c645f9d5982fea",
+      "size": 20067,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_D_spanish.png",
+      "sha256": "864dde22be079288feeac17ba7b8e7add3beab9a02318f1a07d09621a95cd95e",
+      "size": 134166,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_E.pdf",
+      "sha256": "9eae888f8f110a730a69cc438f1f5d2b0fd74429f31aa52aaa954a150d4bb3d6",
+      "size": 53274,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_E.png",
+      "sha256": "382f01417949b6c580a33046267e0bd8848b7151b6ca7d7acb322bc5f280e839",
+      "size": 188975,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_E_spanish.pdf",
+      "sha256": "abed0c7a6e09a9c1132cb658b620b0f8f6e26c3417d47cddd119d1fdadb01326",
+      "size": 52653,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_E_spanish.png",
+      "sha256": "49bad99294e897167980307466b8b9a75b66ca676186be54a9c30b9083b21081",
+      "size": 198923,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_F.pdf",
+      "sha256": "08a5b1426c8d5cd7345e13376e697c1ca2d70999a9ad4395733e62ef42608e5a",
+      "size": 404922,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_F.png",
+      "sha256": "2c43ddc6c49f3954633228d9d1f6de35586db0bd3e51196a1fa9f28c4e0e527b",
+      "size": 1064621,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_F_spanish.pdf",
+      "sha256": "9fa4925a854fd040e64bb3acc89a167aace83c96d9616c5b0fd7f7532cb9da74",
+      "size": 404836,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_F_spanish.png",
+      "sha256": "e395c48b3939a6375df7167c244676642be492e9195648d9ce5ab990761afe6e",
+      "size": 1062933,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_G.pdf",
+      "sha256": "f0d1b1f61a5aa01f50a110b20f283002c2875d0204326bde9b1305124581c106",
+      "size": 24805,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_G.png",
+      "sha256": "a99921d7e7fd68ba6a637d659276f138b64b3c60d7122f2b8886e3641516494a",
+      "size": 442779,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_G_spanish.pdf",
+      "sha256": "f18dd471c4163fba77d2a4c99d1f0ee60e3a83563a52cf0849910d3e4b768296",
+      "size": 24566,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_G_spanish.png",
+      "sha256": "9a1b1745b7978971c4c4e419879c3142d48ba48065258091c2072377d6e13369",
+      "size": 460577,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_H.pdf",
+      "sha256": "a4b1aa84c6518412a55a8da2662ecc36c6fa05aab3ef0359cefe2713ff9f6212",
+      "size": 24641,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_H.png",
+      "sha256": "0e87fbcff92cc0c8de4ee454b59835fc744468e6ac67e851d551f0b675c11304",
+      "size": 435056,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_H_spanish.pdf",
+      "sha256": "abf114898dd81a0b3fedeb85c6e47ceb73319bb611e25828d13982aad6c2952d",
+      "size": 23534,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_H_spanish.png",
+      "sha256": "1b586741dbaac4f99b24bc06fb17840f072e2e8699030e5eed8c2d3aa278c349",
+      "size": 439490,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_I.pdf",
+      "sha256": "d9fe7a2670ca860065a6b8542d8dca008b0df83bd9742aaad671ca69f6c77958",
+      "size": 24151,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_I.png",
+      "sha256": "8e0d1bc063bd469daab33f06e5a9aab839258438cdb89b3d881589a2d71d7b95",
+      "size": 433012,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_I_spanish.pdf",
+      "sha256": "bcab1cd351905483d920d518f939f3b5fb6325e34d96f18f10530b8fe6c17263",
+      "size": 23911,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/panels/Figure_GFAP_Iba1_microglia_ARC_ME_Panel_I_spanish.png",
+      "sha256": "49cf1f19316ed4e3617642288900edf1e27c0ddfd332989b15d759c59a642597",
+      "size": 447982,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/provenance/Figure_GFAP_Iba1_microglia_ARC_ME_spanish_translation_receipt.json",
+      "sha256": "9ddba490a3373aad1689f6264631f3216df5f842b1b3950e1ff9f96f8b48d6de",
+      "size": 4192,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/source_data/Figure_GFAP_Iba1_microglia_ARC_ME_all_HIL_final_mask_audit.csv",
+      "sha256": "61de34442200bcbb0c87a059fcf5ae6303aad92ce21e890007e7bc8f1a5e71ff",
+      "size": 73319,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/source_data/Figure_GFAP_Iba1_microglia_ARC_ME_animal_values_recomputed.csv",
+      "sha256": "51284c2e0bf042a9374f5d226fed1a8e2a65732e5e3ee58474ec6b549241e607",
+      "size": 29483,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/source_data/Figure_GFAP_Iba1_microglia_ARC_ME_multipanel_denominator_audit.csv",
+      "sha256": "3d485c3faa9df3c81e9092d7a4759fca49a26b987dbbac95a3e7fc8428a194f6",
+      "size": 5363,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/source_data/Figure_GFAP_Iba1_microglia_ARC_ME_multipanel_sensitivity_cage_values.csv",
+      "sha256": "b0b8e702f92e253df1bfa8c53daa4a13c2221980c428e5dff4d54d3c9d1c6a2c",
+      "size": 14735,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/source_data/Figure_GFAP_Iba1_microglia_ARC_ME_multipanel_sensitivity_statistics.csv",
+      "sha256": "e6c144d69a52021c0abbcd30ce685ccf0eeeb0c988e965eb7d1fc87bd116e974",
+      "size": 15734,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "Fig5/source_data/Figure_GFAP_Iba1_microglia_ARC_ME_statistics.csv",
+      "sha256": "df4f2855fd0050b39ce1e87807538952b6b917482040f4921191dc41af82aeb5",
+      "size": 11469,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
       "path": "Fig5/source_data/deep_learning_implementation.json",
       "sha256": "152967edd57a194331235b79c3fa434e20d2b1e4c4ff3417bdc0188ec844db98",
       "size": 7934,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "Fig5/source_data/deep_learning_implementation.md",
       "sha256": "444f30b0eabaccab27124066c59d74373fccff1b85812e89d7868b58d7d37fc1",
       "size": 2822,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "FigS1/00_create_conda_envs.sh",
@@ -4783,10 +5595,10 @@
     },
     {
       "path": "FigS1/02_make_figure_s1_male.py",
-      "sha256": "98fed49db7a201921b937a0dc6abf8970e1599418082df46953c9c75656ede06",
-      "size": 46623,
+      "sha256": "b832049f0526c0a63b8a771ed36d3d9903b3b803c25a62c1ff225f1f52661edb",
+      "size": 46796,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS1/Figure_S1_single_bottle_male.pdf",
@@ -4804,10 +5616,10 @@
     },
     {
       "path": "FigS1/README.txt",
-      "sha256": "4d63845381bd753da353197a5c193c5f2a1a3fbcea6af1432e106f4784bda48b",
-      "size": 1414,
+      "sha256": "9c16bd2446a9252192839071b46fa96a14ea587da8f7156964d08b294f655640",
+      "size": 1624,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS1/legends/Figure_S1_single_bottle_male_LEGEND.txt",
@@ -5168,10 +5980,10 @@
     },
     {
       "path": "FigS2/02_make_figure_s2_female.py",
-      "sha256": "fdcd513c18abc3f268fc8aede9847daa33d346cc0c17a614eae0b14637d0e7ae",
-      "size": 46627,
+      "sha256": "4ec5e19d1a95f4d5618412f048270cc29813e6047b680ee62fdbb7a80bfd0567",
+      "size": 46893,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS2/Figure_S2_single_bottle_female.pdf",
@@ -5189,10 +6001,10 @@
     },
     {
       "path": "FigS2/README.txt",
-      "sha256": "2e72a1620c4dc785d23b491b0178045d8ad7ae6133eb946f84f7e0574c2a2db0",
-      "size": 1494,
+      "sha256": "2e5d7b925f47542bb8c85919fe82afcc1753215b30df8c28ed589082f3e67491",
+      "size": 1717,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS2/legends/Figure_S2_single_bottle_female_LEGEND.txt",
@@ -5542,7 +6354,7 @@
       "sha256": "9ff65c63d94dc09d474485f6445950b6ec4b8493c0bf732223a71fc43b63925e",
       "size": 3915,
       "mode": "0755",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "FigS3/01_prepare_metadata.py",
@@ -5584,7 +6396,7 @@
       "sha256": "7f6cba6d5e8866a719aa5b5563bad7efbc1cda00ebdb52590a3eb023252a6515",
       "size": 1669,
       "mode": "0755",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "FigS3/07_validate_figure_s3.py",
@@ -5616,17 +6428,17 @@
     },
     {
       "path": "FigS3/README.txt",
-      "sha256": "91db4838fe5261c953224bf198c3dc1f65746d8967e1acb86be5fe6309b0d91b",
-      "size": 11166,
+      "sha256": "7157d6018c5a19a2bf0b941b52141601a7556fdb875f92eef3a83f61d52c794e",
+      "size": 3491,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS3/figs3_common.py",
       "sha256": "3d12b69cee2cae68ca52ada668e431f4e341c021f3042705df3735f60ce83c90",
       "size": 4563,
       "mode": "0644",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "FigS3/legends/Figure_S3_LEGEND.txt",
@@ -6161,6 +6973,342 @@
       "change": "unchanged"
     },
     {
+      "path": "FigS4/00_create_conda_envs.sh",
+      "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
+      "size": 4242,
+      "mode": "0755",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/01_analyze_behavior_experiment2.py",
+      "sha256": "f4225fb5c3dec3fb34a6719ec3c6d0ea7775f19d72a0bde428620840b8a87537",
+      "size": 50670,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/02_make_figure_s4_behavior_preference.py",
+      "sha256": "dc9b0a0ecf6bfc3867c40c14331fb89a69f98cae17ac0c4fd957e954c1e4eeb6",
+      "size": 36705,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/Figure_S4_behavior_preference.pdf",
+      "sha256": "214f3d00ef31015bb401f15865f21fe2c464fa2cd2e0c1833655889596f477c3",
+      "size": 49853,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/Figure_S4_behavior_preference.png",
+      "sha256": "8ec63ae2377a529c1f966472ef0f5b67b58a0495b841ac79d3dad39bd9086b4a",
+      "size": 2947035,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/README.txt",
+      "sha256": "a48fefd924b212e118480eb38ba63676e623c2b2f9672437872b70ea4a685306",
+      "size": 2035,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_LEGEND.txt",
+      "sha256": "a15c2afa9f4fafd88c997bff6652deb874b4fdeb25064d0284085356eed3163e",
+      "size": 2994,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_LEGEND_spanish.txt",
+      "sha256": "c5da719dbb255c77d677e862e2185a8da015af01025643946332f62b57f54885",
+      "size": 1536,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_Panel_A_spanish_LEGEND.txt",
+      "sha256": "7792b532deb0ded2b922bad8325d050da51aeeaa442e82edd66bc1501cb3781b",
+      "size": 260,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_Panel_B_spanish_LEGEND.txt",
+      "sha256": "5430071f370371adebd595506b21889ea89eac464a47a40842d053fff37fc746",
+      "size": 255,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_Panel_C_spanish_LEGEND.txt",
+      "sha256": "aef2918c6b21d4f79e2ae5c87eb67089254622032552a0b623a974d862fd6930",
+      "size": 303,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_Panel_D_spanish_LEGEND.txt",
+      "sha256": "8f0d302dddf48c77b0625dbf8b899a1b7cf76b5a0b7d36014c019f2f024e46ae",
+      "size": 259,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_Panel_E_spanish_LEGEND.txt",
+      "sha256": "7d0c982bfc02d2f716be037953cae17c701630e3c72eb4422bd10b0ddfff424e",
+      "size": 283,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_caption.txt",
+      "sha256": "a15c2afa9f4fafd88c997bff6652deb874b4fdeb25064d0284085356eed3163e",
+      "size": 2994,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_panel_A_solution_LEGEND.txt",
+      "sha256": "07a8f37d52dd7573837dc5aeb4b42f81216221086e36a0d0e645b06953a3faaf",
+      "size": 1191,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_panel_B_water_LEGEND.txt",
+      "sha256": "d2874d72542fbff25410ce86b72b543a88daca429390f29ce470600f9978c76f",
+      "size": 1085,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_panel_C_solution_fraction_LEGEND.txt",
+      "sha256": "9aad03c0e05dd52c588ea504f1534cef345a4893a0499c2ed1099f8ca9b29441",
+      "size": 1164,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_panel_D_food_LEGEND.txt",
+      "sha256": "ac67a16f0b5c7dce4ae39e7e4c003ab1e9396f09d58da9d8b44a3c8125bea199",
+      "size": 1078,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/legends/Figure_S4_behavior_preference_panel_E_body_weight_LEGEND.txt",
+      "sha256": "baa8d3cfe6bb58eb3c8d51f5f6daf011ffd202dea5d66e6515ae0f79e8f05af9",
+      "size": 1154,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_A_solution.pdf",
+      "sha256": "2029623b460d12511c926d572d605585fd195ad09fdabf3fdf0119a435ef92e8",
+      "size": 44994,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_A_solution.png",
+      "sha256": "c3706a4d3cfe216c0bd54dcd8524008529555efc29f08ecfa8d48b6cf6830095",
+      "size": 503194,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_A_solution_spanish.pdf",
+      "sha256": "0f7c67e4d9de210b6e71e7d0659ca7f6936032368a1bc9cc44645441412323b8",
+      "size": 43568,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_A_solution_spanish.png",
+      "sha256": "7cc889dcec72be9ab990bcb0df2d60f607f65971bc5e9685088a7ae872c4c360",
+      "size": 501310,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_B_water.pdf",
+      "sha256": "ba3c72b664276250d6dc18d18c43ef8b4a9cbe28d030757f9749489e92ab5774",
+      "size": 45315,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_B_water.png",
+      "sha256": "3e24e90f023e7cdf5e5acec53367aaa3d2de5a0f22e44dd5bd0d8ddb5ac73969",
+      "size": 572811,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_B_water_spanish.pdf",
+      "sha256": "110fdb5805c14b3570ced700107d8edbc4a9ab84ab222a1399b715fecbb51256",
+      "size": 43900,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_B_water_spanish.png",
+      "sha256": "ca57f7abf8c9a254f761610529989ea0995c8c0f1330f28b1fe3f44661e6b5ec",
+      "size": 570232,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_C_solution_fraction.pdf",
+      "sha256": "f0e09b5caa4686a98bec4e7e9a0f9b641ec3462fad82b8b46e52b2ab93b26eca",
+      "size": 45521,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_C_solution_fraction.png",
+      "sha256": "ff184f62e06ef5d19c38043f3fd82e56b5da99902ae81e1d30077781d529d2b3",
+      "size": 463716,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_C_solution_fraction_spanish.pdf",
+      "sha256": "b1ff55b3496e849ed490ca5d9b552130192370d737fa53283358807e711623fe",
+      "size": 44099,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_C_solution_fraction_spanish.png",
+      "sha256": "663b4c32e3f91d0877da577b011ee75332589d26562f53e49864be5f42e19c3a",
+      "size": 474345,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_D_food.pdf",
+      "sha256": "f13267a787ed92f54c697f08e46bbeb1fe9262ce26b209df261a03afa90f9386",
+      "size": 45034,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_D_food.png",
+      "sha256": "269ec1550e71ba50ed47a3e87fdb50b6ce251a6c7f44dd6c888c8206d6524264",
+      "size": 531256,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_D_food_spanish.pdf",
+      "sha256": "affed4515aebeb35f7b1e516375dabef3f170c5e823c2a3ffacdc2303bea67ea",
+      "size": 43612,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_D_food_spanish.png",
+      "sha256": "07224c849cc8b651b1b5b44c9f54b5bf0dabb3ba2e5fbbda492e874267878efd",
+      "size": 535476,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_E_body_weight.pdf",
+      "sha256": "812fc605ffcd95b561aa360dba76808c9e9127247df8cd7683d08f51a941bffd",
+      "size": 44519,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_E_body_weight.png",
+      "sha256": "caf4c56a9f8d7e14e2cf4bb849c0b6c52f7adeb1224c80ff2b2bd081ca610887",
+      "size": 916634,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_E_body_weight_spanish.pdf",
+      "sha256": "af26b3d6161e23de38eeb8907f4de42709ee3f64a2d37c6cba510dbd7f3d5523",
+      "size": 43098,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/panels/Figure_S4_behavior_preference_Panel_E_body_weight_spanish.png",
+      "sha256": "9241f0f81cb55c2567d0faddb78d7ba16712eab467171b01628c9df04751d437",
+      "size": 919449,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/provenance/Figure_S4_behavior_preference_manifest.json",
+      "sha256": "d2d3c2357a0639ef6bd4dc0615e68fe03f984bad4d1fa75a1a6e777ba3c9c0dc",
+      "size": 6127,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/provenance/Figure_S4_behavior_preference_spanish_translation_receipt.json",
+      "sha256": "6893ee032c1abaa1a3b8637f73f27264024954c4d11e34f0e255f1a6d876b4b4",
+      "size": 1599,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/source_data/Figure_S4_behavior_preference_hoja3_hoja4_intake_validation.csv",
+      "sha256": "420add07a61bcbb3599e2b90d0f8e14cddf43a9c5bcd9b3a701693a5cb81dcef",
+      "size": 43510,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/source_data/Figure_S4_behavior_preference_legacy_analysis_audit.csv",
+      "sha256": "49b42daba2f91b6577ba06afeaa6f7766eae9360e5a962edf5e2ee438827015f",
+      "size": 5935,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/source_data/Figure_S4_behavior_preference_plotted_cage_values.csv",
+      "sha256": "b7dfaf3bb9b53b7a667d5a3a98f083e649653bff0f09237c1ff5aed761b9813e",
+      "size": 6537,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/source_data/Figure_S4_behavior_preference_plotted_cage_weight_trajectories.csv",
+      "sha256": "87e3e7b9bdff9b31bab5f1bac75f80946d09ba6dc8ae07ad9b2329e824f2817d",
+      "size": 2619,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/source_data/Figure_S4_behavior_preference_sources.csv",
+      "sha256": "9027b32d402b903068088011cf0a4cfe38a313a789e0c3343770e2aeb8f5b853",
+      "size": 1932,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/source_data/Figure_S4_behavior_preference_statistics.csv",
+      "sha256": "7fbfef5d038ba54b72906ae0d2ca5c59b31925c3007ce12be6e77ea507758df3",
+      "size": 6531,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "FigS4/spanish_panel_text.py",
+      "sha256": "bb26de2bd5ca9057e50ff5c157c30a98b2a063c14caa0c38015f20ba3d4d4012",
+      "size": 4519,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
       "path": "FigS5/00_create_conda_envs.sh",
       "sha256": "042150e0f6fd2515ef194df936a904afcc2bff0a7e488a960b67f4209841aa39",
       "size": 4242,
@@ -6232,10 +7380,10 @@
     },
     {
       "path": "FigS5/README.txt",
-      "sha256": "9553986e4f930dfeea752e070c014a4062e03e850bf93bf6758a4b97b201192d",
-      "size": 4467,
+      "sha256": "3a92ef5e8e1597f0312ad29cdc2f10d1c172d47e5ae2b0270e924f808b867d63",
+      "size": 2681,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS5/hil_review/human_final_including_NPY_M_20260908/ANNOTATION_COMPLETE.txt",
@@ -7233,10 +8381,10 @@
     },
     {
       "path": "FigS6/README.txt",
-      "sha256": "8dae78e5bbaec11738e80060122670caa3a0c7af36d1d4ff199e52ad9bbf38f0",
-      "size": 4162,
+      "sha256": "a2ead663ac30f0175acf3f9a2a0dfde18037b714f2f6ec1d9724beef466f9228",
+      "size": 2214,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS6/legends/Figure_S6_LEGEND.txt",
@@ -7611,66 +8759,66 @@
     },
     {
       "path": "FigS7/README.txt",
-      "sha256": "97ef6c0143d380897bcb3dfb50c8ef74923b857089755c16e91f48d7c10cb72f",
-      "size": 979,
+      "sha256": "d93ce1b662c5fd5652f94d2c579ba82d0f4fecfbbd5a0fa3c951b4ad0569f09c",
+      "size": 1534,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_LEGEND.txt",
-      "sha256": "23df15f80f854dba161f986b851ed931fe53a79601efbc64bcd7ad959b5d3836",
-      "size": 962,
+      "sha256": "66fcbaa78263a68dc791145b92c406183be49c9c20b7f019ef8792ff744ac43a",
+      "size": 1016,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_LEGEND_spanish.txt",
-      "sha256": "1ba7e700ef70d7d57344e34b1d4ac39c1d0a7e062213bc0c3202f2b8bf73eacb",
-      "size": 1145,
+      "sha256": "f34c01c1b02655e16e6adde5781354157df5cf08d93d20d2015f25dc063f3c1f",
+      "size": 1214,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_Panel_A_LEGEND.txt",
-      "sha256": "60aaa73be972fdea992be582c8d2bb328b7449aae2453f1a3c17f5575e45633e",
-      "size": 980,
+      "sha256": "36a31a06a9df5f4cd9e77c9e4349d6b2879d9aeac6c64c5e03f6e494dae5ea22",
+      "size": 1034,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_Panel_A_LEGEND_spanish.txt",
-      "sha256": "c5332b4f7a33da8640a44cf651b5d214d836853e80d300e8c149ebadbed75466",
-      "size": 1162,
+      "sha256": "8eea3918491d8d8d5ec58473f4c7d39d6886fb66a5ed139248789c13196b3607",
+      "size": 1231,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_Panel_B_LEGEND.txt",
-      "sha256": "87388e3326b65d311f32f6028dbe6f9e32fce40ba1b02362786ee9edd0bef2f4",
-      "size": 980,
+      "sha256": "b5542a693775cfed2320261e64698b3ec8a1576821b3bf49cac2e102c5333069",
+      "size": 1034,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_Panel_B_LEGEND_spanish.txt",
-      "sha256": "905ad65a077058712739f8dc60c32062d43b750dfaac8e574487e09307c4d2b2",
-      "size": 1162,
+      "sha256": "e170e23d7401059c4ab375f6a432bcd1db8938bec35712aa0c439ed2f02ed399",
+      "size": 1231,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_Panel_C_LEGEND.txt",
-      "sha256": "a87d5401c8a43f0794e6f444e5afd613160f6ee59bfbb0517c5cb455fb441abe",
-      "size": 980,
+      "sha256": "c138f3861e1b6c3c6105ffe0fb7966e896b66e8d88b6b767e52a8433ba6416aa",
+      "size": 1034,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/legends/Figure_S7_Panel_C_LEGEND_spanish.txt",
-      "sha256": "f9ce46dff50142d60657b1f180db273aabae490ee79bf3261b768a895b711269",
-      "size": 1162,
+      "sha256": "6518755573f3b783d387bb42b22da4bdcecd612d892f451e7b02e0b16758aa9a",
+      "size": 1231,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/panels/Figure_S7_Panel_A.pdf",
@@ -7779,10 +8927,10 @@
     },
     {
       "path": "FigS7/provenance/render_receipt.json",
-      "sha256": "772135cf6d193c3796c8946887bb621fb2960c5bffdaced7c925e148c7c90647",
-      "size": 6899,
+      "sha256": "f9620e4865fe3c316e74f4e0296e9c7dd8ee06364eb078cb110ae8a97131d62b",
+      "size": 6904,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS7/provenance/replay_check_20260909.json",
@@ -7926,10 +9074,10 @@
     },
     {
       "path": "FigS8/README.txt",
-      "sha256": "bbdb01ac15eec9b39aa1acfeec99fd34575973aa45a9accbce161ef5d183dd3d",
-      "size": 623,
+      "sha256": "43b720ad3280c2794c2549dab2cf0fe1f0f3f073ffd6ca7c54550e3fede18547",
+      "size": 1583,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "FigS8/legends/Figure_S8_LEGEND.txt",
@@ -8066,17 +9214,17 @@
     },
     {
       "path": "README.txt",
-      "sha256": "81e7030eb762965b63e7cf087b9131ab2c14cb6eb2050c31f4b2c09dd8c0a14e",
-      "size": 16267,
+      "sha256": "46a1a44f5da26e8aa8a79c9350715e0edf1b64bf9f152343e157eaefaac08d9f",
+      "size": 3473,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "release/README.md",
-      "sha256": "43e878e754f2f757ef941eefa32d8984942885f23c84bd552cd62aa00c6a8844",
-      "size": 11462,
+      "sha256": "1e90a401e637c9e5547e280cf2ebe303e6d0144410b57dbbf2791888da763209",
+      "size": 11455,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "release/build_archives.py",
@@ -8094,10 +9242,10 @@
     },
     {
       "path": "release/export_figure_updates.py",
-      "sha256": "19e9e17aeade49f51b5c3d420b6b76c439ccfc57bef4ecbc28247d1f17e5b6df",
-      "size": 4379,
+      "sha256": "700ebc9c1bb64a874f6645cf4daff5a2b15a84076ac6d9c66abef49094078072",
+      "size": 4365,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "release/finalize_archives.py",
@@ -8115,10 +9263,10 @@
     },
     {
       "path": "release/github_public/figure_updates.py",
-      "sha256": "9b432082d6871195ff7e008713d04dee5a120d38b23499030b7e042ab145f246",
-      "size": 7762,
+      "sha256": "ab347c1002849a941a5f9010d04117f00d327da53407c0ab561469042f8fcb51",
+      "size": 7754,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "release/github_public/prepare_repository.py",
@@ -8157,8 +9305,8 @@
     },
     {
       "path": "release/refresh_github_figure_updates.py",
-      "sha256": "13697efc5c23e1b4f097d72b994e3879d8595d4f1af87d08bd9218268a46db9b",
-      "size": 7665,
+      "sha256": "38d575f7227db917fac965f7965c83cf29c1aa6687b24b9717e7ff2f7c62e782",
+      "size": 7644,
       "mode": "0644",
       "change": "updated"
     },
@@ -8255,10 +9403,10 @@
     },
     {
       "path": "scripts/Fig1/02_make_figure_1_behavior.py",
-      "sha256": "751185002bbb969c558cc65cb8d435003edcd182bf785069054955f4549a78b6",
-      "size": 40957,
+      "sha256": "f2aea7383ae1857aa9ad62e14cdb6946f19e577a2525d2b76e2ff18feef8b331",
+      "size": 42254,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/Fig1/03_estimate_sample_size_monte_carlo.py",
@@ -8266,6 +9414,76 @@
       "size": 5646,
       "mode": "0644",
       "change": "unchanged"
+    },
+    {
+      "path": "scripts/Fig2/00_validate_raw_bundle.py",
+      "sha256": "5a3b79fb0ab392e29c7ae96f7334d58b6872429fc214806e2810386e0baff880",
+      "size": 31078,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/01_analyze_global_cfos.py",
+      "sha256": "c6515c3e05c7f33efc8c59fda1f5f33487bd82738b1e6ad7abf3a4588242cafe",
+      "size": 65766,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/02_stage_analysis.py",
+      "sha256": "f70944f6fda571efcc39e6e68ef8735de357115d9d7ddd0e6db1c1dcfdba349f",
+      "size": 4011,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/03_reconstruct_microscopy_engine.py",
+      "sha256": "93bba76658d1fa620b107f2ee83e16631504228a62d98f0ffe2190952488348f",
+      "size": 44184,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/04_stage_microscopy.py",
+      "sha256": "c419fa553ca2e0de388aecdb451f4c68fcddabdaa58a7529ad7fa80fc1801a4f",
+      "size": 7958,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/05_stage_human_regions.py",
+      "sha256": "40736bbe8086fe1b6c651454788981a3e91b3a7de5ae3cd101bed01f79f0da35",
+      "size": 17502,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/06_make_figure_2.py",
+      "sha256": "d5c7051fdaf4eed8d821b798d9ac37595e9340e9abb83bceaf8e4862f8471166",
+      "size": 49223,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/07_run_all.sh",
+      "sha256": "bea9e15507f862b4f0c52b82a242c2549858a8f06307729da389ea66ddf593a4",
+      "size": 3025,
+      "mode": "0755",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/08_organize_raw_qc.py",
+      "sha256": "aced6c6818ca31cd8981303a222804d062742511db51ae95d4f9dafecdbbc477",
+      "size": 6871,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/Fig2/09_rebuild_hil_inputs.py",
+      "sha256": "8aad3d2291815a01eadee176e03adc973b03b364e4dbccd136a687042af74439",
+      "size": 27160,
+      "mode": "0644",
+      "change": "added"
     },
     {
       "path": "scripts/Fig3/00_extract_water3_channels.py",
@@ -8437,10 +9655,10 @@
     },
     {
       "path": "scripts/Fig4/09_relayout_arc_scale_resolved.py",
-      "sha256": "e0d0b3b353129359a57432a6b34fe4e89ef020b3198efb789b3506a150cbcfde",
-      "size": 25285,
+      "sha256": "e3406dbf23c07a403034fe53f7add1a99ccd6c6ddca098e2e8a33e163eae9f1f",
+      "size": 25327,
       "mode": "0755",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/Fig5/01_analyze_gfap_iba1_microglia.py",
@@ -8542,17 +9760,17 @@
     },
     {
       "path": "scripts/FigS1/02_make_figure_s1_male.py",
-      "sha256": "98fed49db7a201921b937a0dc6abf8970e1599418082df46953c9c75656ede06",
-      "size": 46623,
+      "sha256": "b832049f0526c0a63b8a771ed36d3d9903b3b803c25a62c1ff225f1f52661edb",
+      "size": 46796,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/FigS1/spanish_panel_text.py",
       "sha256": "bb26de2bd5ca9057e50ff5c157c30a98b2a063c14caa0c38015f20ba3d4d4012",
       "size": 4519,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS2/01_analyze_single_bottle_female.py",
@@ -8563,85 +9781,99 @@
     },
     {
       "path": "scripts/FigS2/02_make_figure_s2_female.py",
-      "sha256": "fdcd513c18abc3f268fc8aede9847daa33d346cc0c17a614eae0b14637d0e7ae",
-      "size": 46627,
+      "sha256": "4ec5e19d1a95f4d5618412f048270cc29813e6047b680ee62fdbb7a80bfd0567",
+      "size": 46893,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/FigS2/spanish_panel_text.py",
       "sha256": "bb26de2bd5ca9057e50ff5c157c30a98b2a063c14caa0c38015f20ba3d4d4012",
       "size": 4519,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/00_check_environment.sh",
       "sha256": "9ff65c63d94dc09d474485f6445950b6ec4b8493c0bf732223a71fc43b63925e",
       "size": 3915,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/01_prepare_metadata.py",
       "sha256": "35f3b90c1f0b4ac89284d0338b64e39c1c798c25ce3ecaa67222d225dde502bb",
       "size": 10418,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/02_export_mds_levels.py",
       "sha256": "4849d2c27ca59921ab96ab24a806f451eb1954d50d1ffc8ee94536c588f73c12",
       "size": 18229,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/03_segment_organs.py",
       "sha256": "8e815f61f33103c1f0be844324c26ca122d8af0ac85a73379a9fe6466ec15fff",
       "size": 13321,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/04_run_histoplus_gpu.py",
       "sha256": "d3c2c365df1050108994f26b2e7e4a05cb9141a8b8d22ef65e8335dfbfa6975f",
       "size": 46329,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/05_analyze_make_figure.py",
       "sha256": "8a11cb0b7fd26150e7cb1539d785b6190ed06c26948f9d7910c6f166196f58a3",
       "size": 108370,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/06_run_figure_s3.sh",
       "sha256": "7f6cba6d5e8866a719aa5b5563bad7efbc1cda00ebdb52590a3eb023252a6515",
       "size": 1669,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/07_validate_figure_s3.py",
       "sha256": "45e694e94b2959485f670c14815eeb28d89582a7500a4925edd130249863d544",
       "size": 24207,
       "mode": "0755",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/08_relabel_inference_organs.py",
       "sha256": "872921cce446a645c3c8585378104816901ef83f2c235d02e5beb314203487a1",
       "size": 11465,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS3/figs3_common.py",
       "sha256": "3d12b69cee2cae68ca52ada668e431f4e341c021f3042705df3735f60ce83c90",
       "size": 4563,
+      "mode": "0644",
+      "change": "unchanged"
+    },
+    {
+      "path": "scripts/FigS4/01_analyze_behavior_experiment2.py",
+      "sha256": "f4225fb5c3dec3fb34a6719ec3c6d0ea7775f19d72a0bde428620840b8a87537",
+      "size": 50670,
+      "mode": "0644",
+      "change": "added"
+    },
+    {
+      "path": "scripts/FigS4/02_make_figure_s4_behavior_preference.py",
+      "sha256": "dc9b0a0ecf6bfc3867c40c14331fb89a69f98cae17ac0c4fd957e954c1e4eeb6",
+      "size": 36705,
       "mode": "0644",
       "change": "added"
     },
@@ -8650,7 +9882,7 @@
       "sha256": "bb26de2bd5ca9057e50ff5c157c30a98b2a063c14caa0c38015f20ba3d4d4012",
       "size": 4519,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/FigS5/01_export_czi_zstacks.py",
@@ -8724,10 +9956,10 @@
     },
     {
       "path": "scripts/README.txt",
-      "sha256": "ddb80b613e7eb028a3a5623d8278c54c0d56a458dad3a00fe17aec20ad73f0d7",
-      "size": 4694,
+      "sha256": "c0dcb9a202f5f5cc2dcb0f10487d188fe60f71e35095972699990094cc6a56b7",
+      "size": 2371,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/setup/00_create_conda_envs.sh",
@@ -8860,14 +10092,14 @@
       "sha256": "292e03788731b98cbd12c522d1389386882d40df9ef777bc62fe747df9343380",
       "size": 19408,
       "mode": "0644",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "scripts/shared/fig3_scale_resolved.py",
       "sha256": "51ca62236f1a8d67c944396f34f9fd6c51e60f5cfaac9007b95ce4f55d0b96aa",
       "size": 20157,
       "mode": "0644",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "scripts/shared/fig4_scale_resolved_panels.py",
@@ -8899,10 +10131,10 @@
     },
     {
       "path": "scripts/shared/publish_fig3_keyence_extension.py",
-      "sha256": "4f5349899ca8c826e2a003023fd580e662975c7fecc52acc868b7ec3d40638ad",
-      "size": 25690,
+      "sha256": "52b9e9d023cdfa56f1359554a13092abe89e781eaa87222b9b3c997d8786be01",
+      "size": 25248,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/shared/publish_shape_spatial_figures.py",
@@ -8913,17 +10145,17 @@
     },
     {
       "path": "scripts/shared/recheck_current_statistics.py",
-      "sha256": "d1cb46edac81ec44eeedea22c58b8e995306df99561204293fb5f7525098409b",
-      "size": 2881,
+      "sha256": "7bfe35ea39801c673de2cf732bb30a4f6628d9c10e78037cabc663da921c0964",
+      "size": 2874,
       "mode": "0644",
-      "change": "added"
+      "change": "updated"
     },
     {
       "path": "scripts/shared/render_method_figures.py",
-      "sha256": "92a601f04522a2991e8597805ab753cdf58a0929483a76667cd6a0b08b434d03",
-      "size": 11967,
+      "sha256": "d71879d10966a9a70bb25b0ac9be66cc90f52eb1f19e78317ba9a329f037e0b0",
+      "size": 12090,
       "mode": "0644",
-      "change": "unchanged"
+      "change": "updated"
     },
     {
       "path": "scripts/shared/shape_spatial_analysis.py",
@@ -8972,21 +10204,21 @@
       "sha256": "2ec031cc838f7dd3e39e57af97fbec6b565b0485890d94c108104914e6864acf",
       "size": 8058,
       "mode": "0644",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "scripts/shared/test_fig3_scale_resolved.py",
       "sha256": "6d221e780c55e40ec41c48c9df66f38dea1cfbd80f095874a3d8f6d9549c7ac5",
       "size": 7918,
       "mode": "0644",
-      "change": "updated"
+      "change": "unchanged"
     },
     {
       "path": "scripts/shared/test_figs3_paths.py",
       "sha256": "3a62d7d9a72979e6a5f57716dbaa0ed71ca11a1cc08ea8b225dfee8429b11b1c",
       "size": 1089,
       "mode": "0644",
-      "change": "added"
+      "change": "unchanged"
     },
     {
       "path": "scripts/shared/test_shape_spatial_analysis.py",
